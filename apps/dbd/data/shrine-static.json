@@ -1,0 +1,60 @@
+{
+ "kind": "snapshot",
+ "shrineId": 607,
+ "pulledAt": "2026-08-31T17:49:17.652Z",
+ "startsAt": "2026-08-25T15:00:00.000Z",
+ "endsAt": "2026-09-01T14:59:59.000Z",
+ "perks": [
+  {
+   "perk": "BloodHound",
+   "resolved": true,
+   "name": "Bloodhound",
+   "role": "killer",
+   "character": "Bob",
+   "icon": "/island/apps/dbd/./sprites/IconPerks_bloodhound.png",
+   "iconRemote": "https://deadbydaylight.wiki.gg/images/IconPerks_bloodhound.png",
+   "bloodpoints": 100000,
+   "shards": 2000
+  },
+  {
+   "perk": "K22P03",
+   "resolved": true,
+   "name": "Coup de Grâce",
+   "role": "killer",
+   "character": "K22",
+   "icon": "/island/apps/dbd/./sprites/IconPerks_coupDeGrace.png",
+   "iconRemote": "https://deadbydaylight.wiki.gg/images/IconPerks_coupDeGr%C3%A2ce.png",
+   "bloodpoints": 100000,
+   "shards": 2000
+  },
+  {
+   "perk": "S48P02",
+   "resolved": true,
+   "name": "Last Stand",
+   "role": "survivor",
+   "character": "S48",
+   "icon": "/island/apps/dbd/./sprites/IconPerks_lastStand.png",
+   "iconRemote": "https://deadbydaylight.wiki.gg/images/IconPerks_lastStand.png",
+   "bloodpoints": 100000,
+   "shards": 2000
+  },
+  {
+   "perk": "S49P02",
+   "resolved": true,
+   "name": "ONE-TWO-THREE-FOUR!",
+   "role": "survivor",
+   "character": "S49",
+   "icon": "/island/apps/dbd/./sprites/IconPerks_OneTwoThreeFour.png",
+   "iconRemote": "https://deadbydaylight.wiki.gg/images/IconPerks_OneTwoThreeFour.png",
+   "bloodpoints": 100000,
+   "shards": 2000
+  }
+ ],
+ "live": {
+  "endpoint": "https://dbd.tricky.lol/api/shrine",
+  "browserFetchable": false,
+  "corsVerdict": "CORS BLOCKED - no Access-Control-Allow-Origin header. A browser on https://bluefiiish.github.io CANNOT fetch this endpoint directly; a live shrine widget needs a proxy or a scheduled re-pull of data/shrine-static.json.",
+  "note": "No Access-Control-Allow-Origin header: a browser on another origin cannot fetch this. A live widget needs a proxy, or this snapshot must be refreshed by re-running the pipeline weekly."
+ },
+ "source": "dbd.tricky.lol"
+}

@@ -1,0 +1,59 @@
+[
+ {
+  "id": "bakurani",
+  "name": "Bakurani",
+  "category": "Map",
+  "sourceSection": "bakurani",
+  "size": "12x12km",
+  "controlZoneDiameter": "2km",
+  "controlZonePlacement": "Dynamic",
+  "pointsOfInterest": [
+   "Drills",
+   "Factory zone"
+  ],
+  "terrain": [
+   "Rocky ground",
+   "Woodland",
+   "Forest",
+   "Mountains",
+   "Farmland",
+   "Sunflower fields"
+  ],
+  "dataCompleteness": "partial",
+  "summary": "Map - size 12x12km, landmarks Drills / Factory zone, terrain Rocky ground / Woodland / Forest / Mountains / Farmland / Sunflower fields.",
+  "sourceUrl": "https://wardogshandbook.com/Maps#bakurani",
+  "beginner": {
+   "whatItIs": "A twelve-by-twelve kilometre map of wooded hills with one built-up factory area at its centre and open farmland scattered around it.",
+   "whyItMatters": "It fights two completely different ways depending on where the Control Zone lands - tight and close in the factory, long and exposed across the fields - and the zone moves, so you cannot pick one loadout and be right all match.",
+   "whenToUseIt": "Carry something that works at the range you can see. If the zone has settled on open ground, the close-quarters kit that just won you the factory is the wrong one to buy back."
+  },
+  "icon": "/island/apps/wardogs/./sprites/maps-bakurani.webp"
+ },
+ {
+  "id": "ozeti",
+  "name": "Ozeti",
+  "category": "Map",
+  "sourceSection": "ozeti",
+  "pointsOfInterest": [
+   "Church",
+   "Soccer field",
+   "Pool"
+  ],
+  "terrain": [
+   "Rolling hills",
+   "Rocky ground",
+   "Vegetation"
+  ],
+  "dataCompleteness": "partial",
+  "summary": "Map - landmarks Church / Soccer field / Pool, terrain Rolling hills / Rocky ground / Vegetation.",
+  "sourceUrl": "https://wardogshandbook.com/Maps#ozeti",
+  "beginner": {
+   "whatItIs": "The second Closed Beta map, and the one almost nothing has been published about. Two things are stated about it: the ground is rocky and rolls rather than lying flat, and there is a single landmark cluster near the middle made up of a church, a sports pitch and a swimming pool.",
+   "whyItMatters": "Its size, where the contested zone sits and every point of interest outside that cluster are simply not public yet, so you cannot plan for this map the way you can plan for Bakurani. What you can lean on is the shape of it: broken, rolling ground cuts sightlines far more than the flat fields on the other map do, and that one cluster is the only place anybody yet has a reason to head for.",
+   "whenToUseIt": "Go in expecting to learn it rather than to work it. Take a loadout that is comfortable at medium range instead of committing to a sniper or a shotgun, get eyes on the church cluster early because the only named place on a map is where people gather, and check this page again after Early Access on 2026-09-10 fills in the blanks."
+  },
+  "icon": "/island/apps/wardogs/./sprites/maps-ozeti.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

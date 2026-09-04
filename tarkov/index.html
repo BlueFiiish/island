@@ -1,0 +1,376 @@
+<!DOCTYPE html><html lang="en" data-route="tarkov" class="fi-nojs"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Tarkov | Fiiiish Island</title><meta name="description" content="The full Escape from Tarkov wiki - every item, quest, trader and map - plus a loadout kit generator and quest progress tracking. The web edition of the Fiiish Pilot desktop overlay."><link rel="canonical" href="https://bluefiiish.github.io/island/tarkov/"><meta name="theme-color" content="#0d0e0c"><meta name="color-scheme" content="dark"><link rel="icon" href="/island/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/island/manifest.webmanifest"><link rel="apple-touch-icon" sizes="180x180" href="/island/icons/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Island"><meta property="og:type" content="website"><meta property="og:site_name" content="Fiiiish Island"><meta property="og:title" content="Tarkov | Fiiiish Island"><meta property="og:description" content="The full Escape from Tarkov wiki - every item, quest, trader and map - plus a loadout kit generator and quest progress tracking. The web edition of the Fiiish Pilot desktop overlay."><meta property="og:url" content="https://bluefiiish.github.io/island/tarkov/"><meta property="og:image" content="https://bluefiiish.github.io/island/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://bluefiiish.github.io/island/og.png"><link rel="preload" href="/island/fonts/inter-tight-400.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/island/fonts/fonts.css"><script src="/island/config.js"></script><link rel="stylesheet" href="/island/apps/tarkov/css/hub.css"><link rel="stylesheet" href="/island/apps/tarkov/css/tarkov-island.css"><!-- Maps tab detail pane (the tabbed dossier). One file, shared verbatim
+         with the Electron hub (src/renderer/hub-maps-dossier.css); every
+         selector is `mdx-`-prefixed and only appears inside that one pane. --><link rel="stylesheet" href="/island/apps/tarkov/css/hub-maps-dossier.css"><!-- Interactive map (Maps tab). Vendored Leaflet 1.9.4 + the ported marker
+         styling; both are inert until the map is opened. --><link rel="stylesheet" href="/island/apps/tarkov/css/leaflet.css"><link rel="stylesheet" href="/island/apps/tarkov/css/tarkov-map.css"><link rel="stylesheet" href="/island/_astro/dbd.D4vV-_Ph.css"></head> <body class="fi-body"> <a class="fi-skip fi-chrome" href="#hub-root">Skip to content</a> <header class="fi-topbar fi-chrome"> <div class="fi-wrap fi-topbar__inner"> <button class="fi-brand" type="button" id="fi-brand" aria-expanded="false" aria-controls="fi-sheet"> <span class="fi-brand__fi">Fiiiish</span><span>Island</span> <span class="fi-brand__caret" aria-hidden="true">&#9660;</span> <span class="fi-sr">Open sections menu</span> </button> <span class="fi-topbar__route">Tarkov</span> <div class="fi-topbar__right"> <span class="fi-stamp" title="synced 2026-08-28"><span class="fi-stamp__main">synced 2026-08-28</span></span> <span class="fi-authslot" data-fi-auth hidden></span> </div> </div> </header> <nav class="fi-rail fi-chrome" aria-label="Sections"> <div class="fi-wrap fi-rail__inner"> <a class="fi-railitem" href="/island/">Island</a> <a class="fi-railitem" href="/island/rust/"> <span class="fi-railitem__dot" style="color:#ce422b" aria-hidden="true"></span> Rust  </a><a class="fi-railitem" href="/island/terraria/"> <span class="fi-railitem__dot" style="color:#59d98a" aria-hidden="true"></span> Terraria  </a><a class="fi-railitem" href="/island/isaac/"> <span class="fi-railitem__dot" style="color:#2ea0e0" aria-hidden="true"></span> Isaac  </a><a class="fi-railitem" href="/island/dbd/"> <span class="fi-railitem__dot" style="color:#a3212a" aria-hidden="true"></span> DBD Companion  </a><a class="fi-railitem" href="/island/wardogs/"> <span class="fi-railitem__dot" style="color:#5b7a8c" aria-hidden="true"></span> WARDOGS  </a><a class="fi-railitem" href="/island/poe2/"> <span class="fi-railitem__dot" style="color:#8a1f22" aria-hidden="true"></span> Path of Exile 2 <span class="fi-railitem__wip fi-mono" aria-label="in progress">wip</span> </a><a class="fi-railitem" href="/island/elden/"> <span class="fi-railitem__dot" style="color:#d6a84c" aria-hidden="true"></span> Elden Ring <span class="fi-railitem__wip fi-mono" aria-label="in progress">wip</span> </a><a class="fi-railitem" href="/island/smite/"> <span class="fi-railitem__dot" style="color:#c9a227" aria-hidden="true"></span> SMITE 2  </a><a class="fi-railitem" href="/island/tarkov/" aria-current="page"> <span class="fi-railitem__dot" style="color:#9a8866" aria-hidden="true"></span> Tarkov  </a><a class="fi-railitem" href="/island/clips/"> <span class="fi-railitem__dot" style="color:#00e5ff" aria-hidden="true"></span> Clips  </a> </div> </nav>  <div class="fi-sheet fi-chrome" id="fi-sheet" hidden> <div class="fi-sheet__scrim" data-fi-close></div> <div class="fi-sheet__panel" role="dialog" aria-modal="true" aria-label="Menu"> <div class="fi-sheet__head"> <span class="fi-label">Fiiiish Island</span> <button class="fi-sheet__close" type="button" data-fi-close aria-label="Close">&times;</button> </div> <p class="fi-sheet__eyebrow fi-mono">Menu</p> <div class="fi-sheet__list"> <a class="fi-navcard" href="/island/" style="--fi-card-accent:var(--gold)"> <span class="fi-navcard__tile" aria-hidden="true">&#127918;</span> <span class="fi-navcard__body"> <span class="fi-navcard__name">Games</span> <span class="fi-navcard__sub">Every game on the island, back at the shelf.</span> </span> </a> <a class="fi-navcard" href="/island/import/" style="--fi-card-accent:var(--muted)"> <span class="fi-navcard__tile" aria-hidden="true">&#128230;</span> <span class="fi-navcard__body"> <span class="fi-navcard__name">Import &amp; Backup</span> <span class="fi-navcard__sub">Move your saves and pins to another phone. No account, no tokens.</span> </span> </a> <span class="fi-navcard fi-navcard--soon" style="--fi-card-accent:var(--muted-dim)" aria-disabled="true"> <span class="fi-navcard__tile" aria-hidden="true">&#128100;</span> <span class="fi-navcard__body"> <span class="fi-navcard__name">Profile</span> <span class="fi-navcard__sub">Accounts and cloud sync are coming.</span> </span> <span class="fi-navcard__soon">soon</span> </span> <a class="fi-navcard" href="/island/settings/" style="--fi-card-accent:var(--muted)"> <span class="fi-navcard__tile" aria-hidden="true">&#9881;</span> <span class="fi-navcard__body"> <span class="fi-navcard__name">Settings</span> <span class="fi-navcard__sub">Version, updates and what this app is storing.</span> </span> </a>  <a class="fi-navcard" id="fi-navcard-hq" href="/island/hq/" style="--fi-card-accent:#e0b45a" hidden> <span class="fi-navcard__tile" aria-hidden="true">&#127899;</span> <span class="fi-navcard__body"> <span class="fi-navcard__name">HQ</span> <span class="fi-navcard__sub">Recordings inbox and edit pipelines on the PC.</span> </span> </a> </div> <p class="fi-sheet__foot"> <span class="fi-sheet__heart" aria-hidden="true">&#9829;</span> Support on Patreon &mdash; coming soon
+</p> </div> </div>  <script>
+  (function () {
+    try {
+      if (!window.localStorage.getItem('island.hq.token')) return;
+      var el = document.getElementById('fi-navcard-hq');
+      if (el) el.hidden = false;
+    } catch (e) {
+      /* no storage access: leave HQ hidden */
+    }
+  })();
+</script> <!-- Progress toolbar. Sits above the hub; the hub's own Kit view has the
+         level / faction / trader-loyalty editors and the quest tabs have
+         per-quest done-marking (both already in the ported modules). This bar
+         is the ZERO-typing on-ramp: connect TarkovTracker or import from the
+         Pilot, and quests + traders + the kit generator auto-fill. --> <div class="tk-toolbar fi-chrome"> <span class="tk-toolbar__label">My progress</span> <!-- Connected / last-sync readout. Filled by the wiring on load. --> <span id="tk-conn-state" class="tk-conn-state" role="status" aria-live="polite">Not connected</span> <!-- ONE warm CTA. The four cold buttons (TarkovTracker / Pilot import /
+           guess traders / desktop download) fold behind this single expander so
+           the strip stays a one-line invitation. Every id + control below is
+           unchanged, so hub-connect.js and the inline wiring still bind. --> <details class="tk-track"> <summary class="tk-track__summary">Track my progress</summary> <div class="tk-track__body"> <p class="tk-track__lead">Get the Fiiish Pilot app and your quests, level and
+            map position sync here automatically &mdash; it reads the game's own logs,
+            no account needed.</p> <!-- Way 1: the Fiiish Pilot desktop app, LIVE. This is now the LEAD path -
+           Pilot v0.2.1 reads Tarkov's own log files (with a backfill of past
+           sessions) and pushes quests + level here with zero manual upkeep.
+           Opt-in and manual: the page never probes 127.0.0.1 until this button
+           is pressed once, and the choice is then remembered so a returning
+           player is linked on load. Everything below degrades to exactly
+           today's site when the app is not running - see js/hub-pilot-connect.js. --> <div class="tk-pilot"> <p class="tk-pilot__lead">
+Turn on Browser link in the Pilot's settings (tray icon), then connect
+          here &mdash; your quests, level and live map position sync automatically.
+</p> <div class="tk-pilot__row"> <button id="tk-pilot-connect" type="button" class="tk-btn tk-btn--primary">Connect Pilot app</button> <span id="tk-pilot-state" class="tk-status" role="status" aria-live="polite">Pilot app not connected</span> </div> <p id="tk-pilot-hint" class="tk-connect__hint" hidden></p> </div> <!-- Way 2: TarkovTracker. A <details> panel so the token/paste UI is out
+           of the way until wanted. Demoted below Pilot - it requires an
+           account and manual checklist upkeep, so it's the alternative now,
+           not the lead. --> <details id="tk-connect" class="tk-connect"> <summary class="tk-connect__summary">Use TarkovTracker instead (manual account)</summary> <div class="tk-connect__body"> <p class="tk-connect__lead">
+Already keep a
+<a href="https://tarkovtracker.org/settings" target="_blank" rel="noopener noreferrer">TarkovTracker</a>
+account? Auto-fill your completed quests, level and trader loyalty from it instead.
+            Generate an API token at TarkovTracker &rarr; Settings &rarr; API Tokens,
+            paste it below and hit Connect &mdash; it fetches your progress for you.
+</p> <div class="tk-connect__row"> <label class="tk-connect__field"> <span>API token</span> <input id="tk-tt-token" type="password" autocomplete="off" spellcheck="false" placeholder="PVP_... / PVE_..."> </label> <button id="tk-tt-connect" type="button" class="tk-btn tk-btn--primary">Connect</button> <button id="tk-tt-refresh" type="button" class="tk-btn" hidden>Refresh</button> <button id="tk-tt-disconnect" type="button" class="tk-btn tk-btn--ghost" hidden>Disconnect</button> </div> <!-- Fallback path. Connect normally fetches via the CORS proxy Worker
+               (tt-proxy.bluefiiish.workers.dev); this paste box is here for when
+               the Worker is unreachable or a user prefers to paste offline. --> <details id="tk-tt-paste-wrap" class="tk-connect__paste"> <summary>Or paste progress JSON manually (fallback)</summary> <p class="tk-connect__hint">
+Open
+<code>https://api.tarkovtracker.org/api/v2/progress</code>
+with your token (or export from TarkovTracker) and paste the JSON here.
+</p> <textarea id="tk-tt-json" rows="4" spellcheck="false" placeholder="{ &quot;data&quot;: { &quot;tasksProgress&quot;: [ ... ], &quot;playerLevel&quot;: 42, &quot;pmcFaction&quot;: &quot;USEC&quot; } }"></textarea> <button id="tk-tt-load" type="button" class="tk-btn tk-btn--primary">Load pasted progress</button> </details> <p id="tk-tt-status" class="tk-status tk-connect__status" role="status" aria-live="polite"></p> </div> </details> <!-- Way 3: Fiiish Pilot desktop export --> <label class="tk-connect__file">
+Import from Fiiish Pilot
+<input id="tk-import-file" type="file" accept=".json,application/json"> </label> <!-- No-account fallback --> <button id="tk-guess-traders" type="button" class="tk-btn">Guess my trader levels</button> <span id="tk-import-status" class="tk-status" role="status" aria-live="polite"></span> <!-- Minimal Pilot download entry point. Points at the friend-facing
+           walkthrough (install steps + SmartScreen guidance), not a
+           version-pinned installer link - see the pilotUrl comment above. The
+           full /tarkov/pilot showcase (hero, ban-safety, web-vs-desktop table)
+           is deferred to P4 - this keeps the desktop app one click away in the
+           meantime. --> <a class="tk-download" href="https://bluefiiish.github.io/fiiish-pilot/" rel="noopener">
+Get the Fiiish Pilot desktop app &mdash; free, with install guide
+</a> </div> </details> </div> <!-- The hub DOM, verbatim from src/renderer/hub.html, wrapped in #hub-root
+         so hub.css's scoped resets and palette cannot touch the shell chrome.
+         Every id start() queries unguarded is reproduced here. --> <div id="hub-root"> <div id="hub"> <nav id="hub-nav"> <div class="brand">FIIISH<span>PILOT</span></div> <button id="palette-open" class="palette-open" type="button" title="Search items, quests, traders and maps (Ctrl+K)"> <span class="palette-open-label">Search</span> <span class="palette-open-key">Ctrl K</span> </button> <div id="hub-nav-items"></div> </nav> <main id="hub-main"></main> <!-- Phone-only: returns from a detail overlay to the list. Wired in
+             hub.js; hidden entirely >720px and until a detail is open. --> <button id="hub-back" class="hub-back" type="button" aria-label="Back to list">&lsaquo; Back</button> </div> <footer id="hub-footer"> <span id="sync-state" class="sync-state"></span> <span id="sync-age"></span> <span id="hub-notice" class="hub-notice hidden"> <span id="hub-notice-text"></span> <button id="hub-notice-dismiss" type="button" title="Dismiss">x</button> </span> <button id="update-line" class="update-line hidden" type="button"></button> <button id="sync-now" type="button">Sync now</button> </footer> <div id="hub-palette" class="palette hidden"> <div class="palette-card"> <input id="palette-input" class="palette-input" type="search" placeholder="Search items, quests, traders, maps..." spellcheck="false" autocomplete="off"> <div id="palette-chips" class="palette-chips"></div> <div id="palette-results" class="palette-results"></div> <div id="palette-hint" class="palette-hint"></div> </div> </div> <div id="hub-boot" class="boot hidden"> <div class="boot-card"> <div class="boot-title">Fiiish Pilot</div> <div id="hub-boot-msg">Starting...</div> <div id="hub-boot-progress" class="boot-progress"></div> <button id="hub-boot-retry" type="button" class="hidden">Try again</button> </div> </div> </div> <script>(function(){const swUrl = "/island/sw.js";
+const scope = "/island/";
+
+  document.documentElement.classList.remove('fi-nojs');
+
+  (function () {
+    var brand = document.getElementById('fi-brand');
+    var sheet = document.getElementById('fi-sheet');
+    if (!brand || !sheet) return;
+    var open = function (v) {
+      sheet.hidden = !v;
+      brand.setAttribute('aria-expanded', v ? 'true' : 'false');
+      document.documentElement.style.overflow = v ? 'hidden' : '';
+      if (v) {
+        var first = sheet.querySelector('a, button');
+        if (first) first.focus();
+      }
+    };
+    brand.addEventListener('click', function () {
+      open(sheet.hidden);
+    });
+    sheet.addEventListener('click', function (e) {
+      if (e.target.hasAttribute('data-fi-close')) {
+        open(false);
+        brand.focus();
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (sheet.hidden) return;
+      if (e.key === 'Escape') {
+        open(false);
+        brand.focus();
+        return;
+      }
+      // Focus trap: Tab cycles within the open dialog, never escaping to the
+      // page behind the scrim.
+      if (e.key === 'Tab') {
+        var f = sheet.querySelectorAll('a[href], button:not([disabled])');
+        if (!f.length) return;
+        var first = f[0];
+        var last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        } else if (!sheet.contains(document.activeElement)) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    });
+  })();
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register(swUrl, { scope: scope }).catch(function () {});
+    });
+  }
+})();</script> <!-- Config BEFORE the adapter: the adapter reads globalThis.PILOT_WEB_CONFIG
+         inside install(), which runs on load because document exists. --> <script>(function(){const dataBase = "/island/apps/tarkov/data/regular";
+const imgBase = "/island/apps/tarkov/data/img";
+
+      window.PILOT_WEB_CONFIG = { dataBase, imgBase };
+    })();</script> <script src="/island/apps/tarkov/js/hub-web-adapter.js"></script> <script src="/island/apps/tarkov/js/kit.js"></script> <script src="/island/apps/tarkov/js/hub-items.js"></script> <script src="/island/apps/tarkov/js/hub-quests.js"></script> <script src="/island/apps/tarkov/js/hub-traders.js"></script> <script src="/island/apps/tarkov/js/hub-maps.js"></script> <!-- The interactive map, WEB ONLY. hub-maps.js feature-detects globalThis.L
+         + globalThis.PilotHubMapsInteractive and only grows the "open
+         interactive map" affordance when both are here, so the Electron hub
+         window (which loads neither) is unchanged. Order matters: Leaflet
+         defines L, floors.js defines PilotFloors, and the view module reads
+         both plus PilotHubMaps.sanitizeSvg from hub-maps.js above. --> <script src="/island/apps/tarkov/js/leaflet.js"></script> <script src="/island/apps/tarkov/js/floors.js"></script> <script src="/island/apps/tarkov/js/hub-maps-interactive.js"></script> <script src="/island/apps/tarkov/js/hub-kit.js"></script> <script src="/island/apps/tarkov/js/hub-search.js"></script> <script src="/island/apps/tarkov/js/hub.js"></script> <!-- Connect-my-progress logic. After hub.js so hubAPI, PilotKit and
+         PilotHubWebHost are all installed; the wiring below drives it. --> <script src="/island/apps/tarkov/js/hub-connect.js"></script> <!-- The Pilot LIVE LINK (SSE + commands against 127.0.0.1:8852). After
+         hub.js so PilotHubWebHost / hubAPI exist for the inbound quest and
+         profile pushes, and after hub-maps*.js so both feature-detect the
+         globalThis.PilotLive it installs. It owns its own toolbar wiring, so
+         there is no inline script for it (inline bytes count against the
+         shell JS budget; a /apps/ script does not). --> <script src="/island/apps/tarkov/js/hub-pilot-connect.js"></script> <!-- Progress import wiring. Runs after hub.js so globalThis.hubAPI,
+         PilotKit and PilotHubWebHost are all installed. --> <script>
+      (function () {
+        var fileEl = document.getElementById('tk-import-file');
+        var guessEl = document.getElementById('tk-guess-traders');
+        var statusEl = document.getElementById('tk-import-status');
+        function setStatus(msg, bad) {
+          if (!statusEl) return;
+          statusEl.textContent = msg || '';
+          statusEl.classList.toggle('bad', !!bad);
+        }
+        // A Pilot quest-state.json is { updatedAt, source, state: {...} }; a
+        // TarkovTracker export or a bare map may arrive without the wrapper.
+        function unwrapQuestState(doc) {
+          if (doc && typeof doc === 'object' && doc.state && typeof doc.state === 'object') return doc.state;
+          if (doc && typeof doc === 'object' && doc.questState && typeof doc.questState === 'object') return doc.questState;
+          return doc;
+        }
+        if (fileEl) {
+          fileEl.addEventListener('change', function () {
+            var f = fileEl.files && fileEl.files[0];
+            if (!f) return;
+            var reader = new FileReader();
+            reader.onload = function () {
+              try {
+                var doc = JSON.parse(String(reader.result));
+                var host = window.PilotHubWebHost;
+                if (!host || typeof host.importQuestState !== 'function') {
+                  setStatus('Import unavailable - hub not ready', true);
+                  return;
+                }
+                var applied = host.importQuestState(unwrapQuestState(doc));
+                var n = applied ? Object.keys(applied).length : 0;
+                if (n === 0) setStatus('No recognised quests in that file', true);
+                else setStatus('Imported ' + n + ' quest states');
+              } catch (e) {
+                setStatus('Import failed - not valid JSON', true);
+              }
+              fileEl.value = '';
+            };
+            reader.onerror = function () { setStatus('Could not read that file', true); };
+            reader.readAsText(f);
+          });
+        }
+        if (guessEl) {
+          guessEl.addEventListener('click', function () {
+            var Kit = window.PilotKit;
+            var api = window.hubAPI;
+            var host = window.PilotHubWebHost;
+            if (!Kit || !api || !host || typeof Kit.estimateTraderLevels !== 'function') {
+              setStatus('Not ready yet - try again in a moment', true);
+              return;
+            }
+            setStatus('Estimating from your quest progress...');
+            Promise.all([api.readData('wiki/quests.json'), api.readData('wiki/traders.json')])
+              .then(function (res) {
+                var quests = res[0] ? JSON.parse(res[0]) : null;
+                var traders = res[1] ? JSON.parse(res[1]) : null;
+                if (!quests || !traders) throw new Error('data missing');
+                var stored = host.getStored();
+                var est = Kit.estimateTraderLevels({
+                  quests: quests,
+                  questState: stored.questState,
+                  traders: traders,
+                  playerLevel: stored.playerLevel,
+                });
+                var map = {};
+                var uncertain = 0;
+                Object.keys(est).forEach(function (id) {
+                  map[id] = est[id].level;
+                  if (est[id].uncertain) uncertain++;
+                });
+                api.saveProfile({ traderLevels: map });
+                var msg = 'Set loyalty for ' + Object.keys(map).length + ' traders';
+                if (uncertain) msg += ' (' + uncertain + ' are estimates - open the Kit tab to adjust)';
+                setStatus(msg);
+              })
+              .catch(function () { setStatus('Could not estimate trader levels', true); });
+          });
+        }
+      })();
+    </script> <!-- Connect-my-progress wiring: TarkovTracker token/paste + live state.
+         Runs after hub.js + hub-connect.js. Uses window.PilotTTConnect for all
+         logic and the adapter globals for the writes. --> <script>
+      (function () {
+        var TT = window.PilotTTConnect;
+        var $ = function (id) { return document.getElementById(id); };
+        var connState = $('tk-conn-state');
+        var tokenEl = $('tk-tt-token');
+        var connectBtn = $('tk-tt-connect');
+        var refreshBtn = $('tk-tt-refresh');
+        var disconnectBtn = $('tk-tt-disconnect');
+        var jsonEl = $('tk-tt-json');
+        var loadBtn = $('tk-tt-load');
+        var pasteWrap = $('tk-tt-paste-wrap');
+        var statusEl = $('tk-tt-status');
+        if (!TT) return; // module failed to load - the panel just stays inert
+
+        function setStatus(msg, bad) {
+          if (!statusEl) return;
+          statusEl.textContent = msg || '';
+          statusEl.classList.toggle('bad', !!bad);
+        }
+
+        // Human "last synced" line. TarkovTracker gives no per-task time, so
+        // this is when WE last pulled/pasted.
+        function fmtWhen(ts) {
+          if (!ts) return '';
+          var d = new Date(ts);
+          if (isNaN(d.getTime())) return '';
+          try { return d.toLocaleString(); } catch (e) { return d.toISOString(); }
+        }
+
+        function renderState() {
+          var sync = TT.getSync();
+          var hasToken = !!TT.getToken();
+          if (refreshBtn) refreshBtn.hidden = !hasToken;
+          if (disconnectBtn) disconnectBtn.hidden = !(hasToken || sync);
+          if (tokenEl && hasToken && !tokenEl.value) tokenEl.value = TT.getToken();
+          if (!connState) return;
+          if (sync) {
+            var who = sync.displayName ? (' as ' + sync.displayName) : '';
+            var bits = sync.finished + ' quests';
+            if (sync.playerLevel != null) bits += ', LL' + sync.playerLevel;
+            if (sync.traders) bits += ', ' + sync.traders + ' traders';
+            connState.textContent = 'Connected' + who + ' - ' + bits + ' - synced ' + fmtWhen(sync.at);
+            connState.classList.add('on');
+          } else {
+            connState.textContent = 'Not connected';
+            connState.classList.remove('on');
+          }
+        }
+
+        // quests.json + traders.json, fetched once through the adapter and
+        // reused for trader estimation on every apply.
+        var dataPromise = null;
+        function loadData() {
+          if (dataPromise) return dataPromise;
+          var api = window.hubAPI;
+          if (!api) return Promise.resolve({ quests: null, traders: null });
+          dataPromise = Promise.all([api.readData('wiki/quests.json'), api.readData('wiki/traders.json')])
+            .then(function (res) {
+              return {
+                quests: res[0] ? JSON.parse(res[0]) : null,
+                traders: res[1] ? JSON.parse(res[1]) : null,
+              };
+            })
+            .catch(function () { dataPromise = null; return { quests: null, traders: null }; });
+          return dataPromise;
+        }
+
+        function applyPayload(payload, label) {
+          var host = window.PilotHubWebHost;
+          var api = window.hubAPI;
+          if (!host || !api) { setStatus('Hub not ready - try again in a moment', true); return; }
+          setStatus('Applying ' + label + '...');
+          return loadData().then(function (data) {
+            var summary;
+            try {
+              summary = TT.apply(payload, { api: api, host: host, quests: data.quests, traders: data.traders });
+            } catch (e) {
+              setStatus((e && e.message) ? e.message : 'Could not read that progress', true);
+              return;
+            }
+            if (!summary.tasks && summary.playerLevel == null && !summary.traders) {
+              setStatus('Nothing recognised in that progress', true);
+              return;
+            }
+            var msg = 'Loaded ' + summary.finished + ' completed';
+            if (summary.failed) msg += ', ' + summary.failed + ' failed';
+            msg += ' quests';
+            if (summary.playerLevel != null) msg += ', level ' + summary.playerLevel;
+            if (summary.faction) msg += ', ' + summary.faction.toUpperCase();
+            if (summary.traders) {
+              msg += ', ' + summary.traders + ' trader levels';
+              if (summary.traderSource === 'estimate') msg += ' (estimated - adjust in the Kit tab)';
+            }
+            setStatus(msg);
+            renderState();
+          });
+        }
+
+        function doFetch(token) {
+          setStatus('Contacting TarkovTracker...');
+          TT.fetchProgress(token).then(function (payload) {
+            applyPayload(payload, 'your TarkovTracker progress');
+          }).catch(function (err) {
+            if (err && err.kind === 'cors') {
+              // The proxy Worker was unreachable (offline / down). Surface the
+              // paste path as a fallback; the token is saved for a retry.
+              if (pasteWrap) pasteWrap.open = true;
+              setStatus('Could not reach the connect service right now. '
+                + 'Your token is saved - retry in a moment, or paste your progress JSON below.', true);
+            } else if (err && err.kind === 'auth') {
+              setStatus(err.message, true);
+            } else {
+              setStatus((err && err.message) ? err.message : 'Could not reach TarkovTracker', true);
+            }
+            renderState();
+          });
+        }
+
+        if (connectBtn) {
+          connectBtn.addEventListener('click', function () {
+            var token = (tokenEl && tokenEl.value || '').trim();
+            if (!token) { setStatus('Paste your API token first', true); return; }
+            TT.setToken(token);
+            renderState();
+            doFetch(token);
+          });
+        }
+        if (refreshBtn) {
+          refreshBtn.addEventListener('click', function () {
+            var token = TT.getToken();
+            if (!token) { setStatus('No saved token - connect first', true); return; }
+            doFetch(token);
+          });
+        }
+        if (loadBtn) {
+          loadBtn.addEventListener('click', function () {
+            var raw = (jsonEl && jsonEl.value || '').trim();
+            if (!raw) { setStatus('Paste the progress JSON first', true); return; }
+            var payload;
+            try { payload = JSON.parse(raw); }
+            catch (e) { setStatus('That is not valid JSON', true); return; }
+            applyPayload(payload, 'pasted progress');
+          });
+        }
+        if (disconnectBtn) {
+          disconnectBtn.addEventListener('click', function () {
+            TT.setToken('');
+            TT.clearSync();
+            if (tokenEl) tokenEl.value = '';
+            setStatus('Disconnected. Your imported progress is kept.');
+            renderState();
+          });
+        }
+
+        renderState();
+      })();
+    </script> </body> </html>

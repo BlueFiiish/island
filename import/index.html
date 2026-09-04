@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="en" data-route="home" class="fi-nojs"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Export &amp; import | Fiiiish Island</title><meta name="description" content="Back up everything the Island has saved in this browser, or restore it onto another device."><link rel="canonical" href="https://bluefiiish.github.io/island/import/"><meta name="robots" content="noindex"><meta name="theme-color" content="#0a0a0c"><meta name="color-scheme" content="dark"><link rel="icon" href="/island/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/island/manifest.webmanifest"><link rel="apple-touch-icon" sizes="180x180" href="/island/icons/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Island"><meta property="og:type" content="website"><meta property="og:site_name" content="Fiiiish Island"><meta property="og:title" content="Export &#38; import | Fiiiish Island"><meta property="og:description" content="Back up everything the Island has saved in this browser, or restore it onto another device."><meta property="og:url" content="https://bluefiiish.github.io/island/import/"><meta property="og:image" content="https://bluefiiish.github.io/island/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://bluefiiish.github.io/island/og.png"><link rel="preload" href="/island/fonts/inter-tight-400.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/island/fonts/fonts.css"><script src="/island/config.js"></script><link rel="stylesheet" href="/island/_astro/dbd.D4vV-_Ph.css"></head> <body class="fi-body"> <a class="fi-skip fi-chrome" href="#main">Skip to content</a> <header class="fi-topbar fi-chrome"> <div class="fi-wrap fi-topbar__inner"> <button class="fi-brand" type="button" id="fi-brand" aria-expanded="false" aria-controls="fi-sheet"> <span class="fi-brand__fi">Fiiiish</span><span>Island</span> <span class="fi-brand__caret" aria-hidden="true">&#9660;</span> <span class="fi-sr">Open sections menu</span> </button>  <div class="fi-topbar__right">  <span class="fi-authslot" data-fi-auth hidden></span> </div> </div> </header> <nav class="fi-rail fi-chrome" aria-label="Sections"> <div class="fi-wrap fi-rail__inner"> <a class="fi-railitem" href="/island/">Island</a> <a class="fi-railitem" href="/island/rust/"> <span class="fi-railitem__dot" style="color:#ce422b" aria-hidden="true"></span> Rust  </a><a class="fi-railitem" href="/island/terraria/"> <span class="fi-railitem__dot" style="color:#59d98a" aria-hidden="true"></span> Terraria  </a><a class="fi-railitem" href="/island/isaac/"> <span class="fi-railitem__dot" style="color:#2ea0e0" aria-hidden="true"></span> Isaac  </a><a class="fi-railitem" href="/island/dbd/"> <span class="fi-railitem__dot" style="color:#a3212a" aria-hidden="true"></span> DBD Companion  </a><a class="fi-railitem" href="/island/wardogs/"> <span class="fi-railitem__dot" style="color:#5b7a8c" aria-hidden="true"></span> WARDOGS  </a><a class="fi-railitem" href="/island/poe2/"> <span class="fi-railitem__dot" style="color:#8a1f22" aria-hidden="true"></span> Path of Exile 2 <span class="fi-railitem__wip fi-mono" aria-label="in progress">wip</span> </a><a class="fi-railitem" href="/island/elden/"> <span class="fi-railitem__dot" style="color:#d6a84c" aria-hidden="true"></span> Elden Ring <span class="fi-railitem__wip fi-mono" aria-label="in progress">wip</span> </a><a class="fi-railitem" href="/island/smite/"> <span class="fi-railitem__dot" style="color:#c9a227" aria-hidden="true"></span> SMITE 2  </a><a class="fi-railitem" href="/island/tarkov/"> <span class="fi-railitem__dot" style="color:#9a8866" aria-hidden="true"></span> Tarkov  </a><a class="fi-railitem" href="/island/clips/"> <span class="fi-railitem__dot" style="color:#00e5ff" aria-hidden="true"></span> Clips  </a> </div> </nav>  <div class="fi-sheet fi-chrome" id="fi-sheet" hidden> <div class="fi-sheet__scrim" data-fi-close></div> <div class="fi-sheet__panel" role="dialog" aria-modal="true" aria-label="Menu"> <div class="fi-sheet__head"> <span class="fi-label">Fiiiish Island</span> <button class="fi-sheet__close" type="button" data-fi-close aria-label="Close">&times;</button> </div> <p class="fi-sheet__eyebrow fi-mono">Menu</p> <div class="fi-sheet__list"> <a class="fi-navcard" href="/island/" style="--fi-card-accent:var(--gold)"> <span class="fi-navcard__tile" aria-hidden="true">&#127918;</span> <span class="fi-navcard__body"> <span class="fi-navcard__name">Games</span> <span class="fi-navcard__sub">Every game on the island, back at the shelf.</span> </span> </a> <a class="fi-navcard" href="/island/import/" style="--fi-card-accent:var(--muted)" aria-current="page"> <span class="fi-navcard__tile" aria-hidden="true">&#128230;</span> <span class="fi-navcard__body"> <span class="fi-navcard__name">Import &amp; Backup</span> <span class="fi-navcard__sub">Move your saves and pins to another phone. No account, no tokens.</span> </span> </a> <span class="fi-navcard fi-navcard--soon" style="--fi-card-accent:var(--muted-dim)" aria-disabled="true"> <span class="fi-navcard__tile" aria-hidden="true">&#128100;</span> <span class="fi-navcard__body"> <span class="fi-navcard__name">Profile</span> <span class="fi-navcard__sub">Accounts and cloud sync are coming.</span> </span> <span class="fi-navcard__soon">soon</span> </span> <a class="fi-navcard" href="/island/settings/" style="--fi-card-accent:var(--muted)"> <span class="fi-navcard__tile" aria-hidden="true">&#9881;</span> <span class="fi-navcard__body"> <span class="fi-navcard__name">Settings</span> <span class="fi-navcard__sub">Version, updates and what this app is storing.</span> </span> </a>  <a class="fi-navcard" id="fi-navcard-hq" href="/island/hq/" style="--fi-card-accent:#e0b45a" hidden> <span class="fi-navcard__tile" aria-hidden="true">&#127899;</span> <span class="fi-navcard__body"> <span class="fi-navcard__name">HQ</span> <span class="fi-navcard__sub">Recordings inbox and edit pipelines on the PC.</span> </span> </a> </div> <p class="fi-sheet__foot"> <span class="fi-sheet__heart" aria-hidden="true">&#9829;</span> Support on Patreon &mdash; coming soon
+</p> </div> </div>  <script>
+  (function () {
+    try {
+      if (!window.localStorage.getItem('island.hq.token')) return;
+      var el = document.getElementById('fi-navcard-hq');
+      if (el) el.hidden = false;
+    } catch (e) {
+      /* no storage access: leave HQ hidden */
+    }
+  })();
+</script> <main class="fi-shell fi-chrome" id="main">  <section class="fi-wrap fi-hero"> <p class="fi-hero__eyebrow">Your data</p> <h1>Export &amp; import</h1> <p class="fi-hero__sub">
+Pins, raid plans, quest and research progress - all of it is saved in this browser and nowhere else. Download it
+      as a file to move it to another phone, or load a file to restore it.
+</p> <p class="fi-note"> <b>What the file holds:</b> your saved progress only. Drop links, sign-in tokens and anything else that acts as a
+      password are left out on purpose, so the file is safe to send to yourself - or to me if something breaks. Your
+      clips drop link stays on the device Josia sent it to; ask for a fresh one on a new phone.
+</p> <hr class="fi-rule fi-hero__rule"> </section> <section class="fi-wrap fi-section"> <div class="fi-panel"> <h2>Export</h2> <p id="fi-export-summary" class="fi-note">Reading this browser&hellip;</p> <div class="fi-row" style="margin-top:var(--s4)"> <button class="fi-btn" type="button" id="fi-export">Download my data</button> </div> </div> <div class="fi-panel"> <h2>Import</h2> <p>
+Load a file exported from another device. Only known progress keys are restored - anything else in the file is
+        ignored and counted for you. Restored keys replace the ones here with the same name; anything not in the file is
+        left alone.
+</p> <div class="fi-row" style="margin-top:var(--s4)"> <label class="fi-btn fi-btn--ghost" for="fi-import-file">Choose a file&hellip;</label> <input id="fi-import-file" type="file" accept="application/json,.json" class="fi-sr"> <span class="fi-file" id="fi-import-status"></span> </div> </div> </section>  </main> <footer class="fi-foot fi-chrome"> <div class="fi-wrap fi-foot__inner">  <p class="fi-foot__line">
+Fiiiish Island &middot; a non-commercial fan project by BlueFiiish &middot; 2026. Not affiliated with, endorsed
+      by, or sponsored by any game publisher. All game names, data and imagery belong to their respective owners.
+</p> </div> </footer> <script>(function(){const swUrl = "/island/sw.js";
+const scope = "/island/";
+
+  document.documentElement.classList.remove('fi-nojs');
+
+  (function () {
+    var brand = document.getElementById('fi-brand');
+    var sheet = document.getElementById('fi-sheet');
+    if (!brand || !sheet) return;
+    var open = function (v) {
+      sheet.hidden = !v;
+      brand.setAttribute('aria-expanded', v ? 'true' : 'false');
+      document.documentElement.style.overflow = v ? 'hidden' : '';
+      if (v) {
+        var first = sheet.querySelector('a, button');
+        if (first) first.focus();
+      }
+    };
+    brand.addEventListener('click', function () {
+      open(sheet.hidden);
+    });
+    sheet.addEventListener('click', function (e) {
+      if (e.target.hasAttribute('data-fi-close')) {
+        open(false);
+        brand.focus();
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (sheet.hidden) return;
+      if (e.key === 'Escape') {
+        open(false);
+        brand.focus();
+        return;
+      }
+      // Focus trap: Tab cycles within the open dialog, never escaping to the
+      // page behind the scrim.
+      if (e.key === 'Tab') {
+        var f = sheet.querySelectorAll('a[href], button:not([disabled])');
+        if (!f.length) return;
+        var first = f[0];
+        var last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        } else if (!sheet.contains(document.activeElement)) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    });
+  })();
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register(swUrl, { scope: scope }).catch(function () {});
+    });
+  }
+})();</script> </body></html> <script>(function(){const RESTORE_KEYS = ["cc_pins","dbd_tracker_v1","elden_planner_v1","elden_prefs_v1","elden_tracker_v1","fi.install.dismissed","isaac_tracker_v2","isaacpilot.spoilers","island.clips.who","island.tarkov.profile.v1","island.tarkov.tt.sync.v1","poe2_companion_v1","rc_favs","rc_raidcart","tr_mods","wardogs_companion_v1"];
+const RESTORE_PREFIXES = ["rc_tech_wb"];
+
+  (function () {
+    var VERSION = 1;
+
+    // Anything that looks like a credential never leaves this browser in a file
+    // we tell people to share. Broad on purpose: a false positive costs one
+    // ignored preference, a false negative hands over a bearer token.
+    var CREDENTIAL = /token|auth|secret|^sb-/i;
+    // Supabase writes its session here. Refused on restore no matter what any
+    // allowlist says - a planted session is a signed-in attacker.
+    var SUPABASE_SESSION = /^sb-.*-auth-token$/i;
+
+    var allowKeys = {};
+    for (var ai = 0; ai < RESTORE_KEYS.length; ai++) allowKeys[RESTORE_KEYS[ai]] = true;
+
+    function restorable(k) {
+      if (SUPABASE_SESSION.test(k)) return false;
+      if (CREDENTIAL.test(k)) return false;
+      if (allowKeys[k]) return true;
+      for (var i = 0; i < RESTORE_PREFIXES.length; i++) {
+        if (k.indexOf(RESTORE_PREFIXES[i]) === 0) return true;
+      }
+      return false;
+    }
+
+    /** Everything saved here MINUS credentials. Returns {data, excluded}. */
+    function snapshot() {
+      var out = {};
+      var excluded = 0;
+      for (var i = 0; i < localStorage.length; i++) {
+        var k = localStorage.key(i);
+        if (k === null) continue;
+        if (CREDENTIAL.test(k)) {
+          excluded++;
+          continue;
+        }
+        out[k] = localStorage.getItem(k);
+      }
+      return { data: out, excluded: excluded };
+    }
+
+    function bytesOf(obj) {
+      var n = 0;
+      for (var k in obj) n += k.length + (obj[k] || '').length;
+      return n;
+    }
+
+    var summary = document.getElementById('fi-export-summary');
+    var snap = snapshot();
+    var data = snap.data;
+    var count = Object.keys(data).length;
+    var left = snap.excluded
+      ? ' · ' + snap.excluded + ' drop link' + (snap.excluded === 1 ? '' : 's') + '/token left out'
+      : '';
+    summary.textContent = count
+      ? count + ' saved item' + (count === 1 ? '' : 's') + ' · about ' + Math.max(1, Math.round(bytesOf(data) / 1024)) + ' kB' + left
+      : 'Nothing saved in this browser yet.' + left;
+
+    document.getElementById('fi-export').addEventListener('click', function () {
+      var payload = {
+        fiiiishIsland: VERSION,
+        exportedAt: new Date().toISOString(),
+        origin: location.origin,
+        // Credential-free by construction - see CREDENTIAL above.
+        data: snapshot().data,
+      };
+      var blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = 'fiiiish-island-' + new Date().toISOString().slice(0, 10) + '.json';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(function () {
+        URL.revokeObjectURL(url);
+      }, 2000);
+    });
+
+    var status = document.getElementById('fi-import-status');
+    document.getElementById('fi-import-file').addEventListener('change', function (e) {
+      var file = e.target.files && e.target.files[0];
+      if (!file) return;
+      var reader = new FileReader();
+      reader.onload = function () {
+        var parsed;
+        try {
+          parsed = JSON.parse(String(reader.result));
+        } catch (err) {
+          status.textContent = "That file isn't readable JSON.";
+          return;
+        }
+        if (!parsed || !parsed.fiiiishIsland || typeof parsed.data !== 'object') {
+          status.textContent = "That doesn't look like a Fiiiish Island export.";
+          return;
+        }
+        var keys = Object.keys(parsed.data);
+        var accepted = keys.filter(restorable);
+        var rejected = keys.length - accepted.length;
+        if (!accepted.length) {
+          status.textContent = rejected
+            ? 'Nothing restored - none of the ' + rejected + ' key(s) in that file belong to the Island.'
+            : 'That file has nothing in it.';
+          return;
+        }
+        var ask =
+          'Restore ' +
+          accepted.length +
+          ' saved item(s) into this browser? Matching keys are overwritten.' +
+          (rejected ? '\n\n' + rejected + ' other key(s) in the file will be ignored.' : '');
+        if (!confirm(ask)) {
+          status.textContent = 'Cancelled.';
+          return;
+        }
+        var wrote = 0;
+        for (var i = 0; i < accepted.length; i++) {
+          try {
+            // String() so a nested object/array in a crafted file cannot reach
+            // an app's JSON.parse as something other than the string it expects.
+            localStorage.setItem(accepted[i], String(parsed.data[accepted[i]]));
+            wrote++;
+          } catch (err) {
+            /* quota - keep going, report the shortfall */
+          }
+        }
+        status.textContent =
+          'Restored ' + wrote + ' of ' + accepted.length + '.' + (rejected ? ' Ignored ' + rejected + ' unknown key(s).' : '') +
+          ' Reload a route to see it.';
+      };
+      reader.readAsText(file);
+    });
+  })();
+})();</script>

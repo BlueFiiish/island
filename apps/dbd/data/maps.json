@@ -1,0 +1,1048 @@
+{
+ "realms": {
+  "Withered Isle": {
+   "name": "Withered Isle",
+   "maps": [
+    "Apl_Level_01",
+    "Apl_Level_02",
+    "Apl_Shack",
+    "Mtr_Level",
+    "Mtr_Level_1"
+   ]
+  },
+  "Crotus Prenn Asylum": {
+   "name": "Crotus Prenn Asylum",
+   "maps": [
+    "Asy_Asylum",
+    "Asy_Chapel"
+   ]
+  },
+  "Red Forest": {
+   "name": "Red Forest",
+   "maps": [
+    "Brl_MaHouse",
+    "Brl_Temple"
+   ]
+  },
+  "Raccoon City": {
+   "name": "Raccoon City",
+   "maps": [
+    "Ecl_Level_01",
+    "Ecl_Level_WestSide"
+   ]
+  },
+  "Springwood": {
+   "name": "Springwood",
+   "maps": [
+    "eng_street_01",
+    "eng_street_02",
+    "eng_street_03",
+    "eng_street_04",
+    "eng_street_05"
+   ]
+  },
+  "Gideon Meat Plant": {
+   "name": "Gideon Meat Plant",
+   "maps": [
+    "Fin_Hideout"
+   ]
+  },
+  "Coldwind Farm": {
+   "name": "Coldwind Farm",
+   "maps": [
+    "Frm_Barn",
+    "Frm_CornField",
+    "Frm_Farmhouse",
+    "Frm_Silo",
+    "Frm_Slaughterhouse"
+   ]
+  },
+  "Ormond": {
+   "name": "Ormond",
+   "maps": [
+    "Glo_Level_01",
+    "Kny_Cottage",
+    "Kny_Cottage02",
+    "Kny_Cottage03"
+   ]
+  },
+  "Léry's Memorial Institute": {
+   "name": "Léry's Memorial Institute",
+   "maps": [
+    "hos_treatment"
+   ]
+  },
+  "Yamaoka Estate": {
+   "name": "Yamaoka Estate",
+   "maps": [
+    "Hti_Manor",
+    "Hti_Manor02",
+    "Hti_Shrine",
+    "Hti_Shrine02"
+   ]
+  },
+  "The MacMillan Estate": {
+   "name": "The MacMillan Estate",
+   "maps": [
+    "Ind_CoalTower",
+    "Ind_CoalTower02",
+    "Ind_Forest",
+    "Ind_Forest02",
+    "Ind_Foundry",
+    "Ind_Foundry02",
+    "Ind_Mine",
+    "Ind_Mine02",
+    "ind_storehouse",
+    "ind_storehouse02"
+   ]
+  },
+  "Forsaken Boneyard": {
+   "name": "Forsaken Boneyard",
+   "maps": [
+    "Ion_Level_01",
+    "Ion_Shack"
+   ]
+  },
+  "Autohaven Wreckers": {
+   "name": "Autohaven Wreckers",
+   "maps": [
+    "Jnk_Garage",
+    "jnk_gasstation",
+    "Jnk_Lodge",
+    "Jnk_Office",
+    "Jnk_Scrapyard"
+   ]
+  },
+  "Hawkins National Laboratory": {
+   "name": "Hawkins National Laboratory",
+   "maps": [
+    "Qat_Lab"
+   ]
+  },
+  "The Decimated Borgo": {
+   "name": "The Decimated Borgo",
+   "maps": [
+    "Qtm_Level_01",
+    "Qtm_Level_02"
+   ]
+  },
+  "Sleepless District": {
+   "name": "Sleepless District",
+   "maps": [
+    "Qui_Level_01"
+   ]
+  },
+  "Haddonfield": {
+   "name": "Haddonfield",
+   "maps": [
+    "sub_street"
+   ]
+  },
+  "Backwater Swamp": {
+   "name": "Backwater Swamp",
+   "maps": [
+    "Swp_GrimPantry",
+    "Swp_PaleRose"
+   ]
+  },
+  "Dvarka Deepwood": {
+   "name": "Dvarka Deepwood",
+   "maps": [
+    "Uba_Level_01",
+    "Wrm_Level_01"
+   ]
+  },
+  "Grave of Glenvale": {
+   "name": "Grave of Glenvale",
+   "maps": [
+    "Ukr_Saloon"
+   ]
+  },
+  "Silent Hill": {
+   "name": "Silent Hill",
+   "maps": [
+    "Wal_Level_01"
+   ]
+  }
+ },
+ "maps": {
+  "Apl_Level_01": {
+   "id": "Apl_Level_01",
+   "name": "Greenville Square",
+   "alias": "greenvillesquare",
+   "realm": "Withered Isle",
+   "killers": [],
+   "dlc": "Applepie",
+   "chapter": "Applepie",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "A thin slice of small-town Americana, long abandoned, long forgotten.<br><br>Greenville was always meant to be a place for those who felt like they didn’t belong, a town founded by pilgrims fleeing persecution. Those pilgrims still watch over the environment, their fierce determination lovingly portrayed in a statue that stands tall in the center of town.<br><br>Now in the Entity’s Realm, something wanders freely along the overgrown streets: a writhing creature responsible for a string of disappearances across the country going back decades. Even the local cinema, a hub of fantasy and escapism, provides no sanctuary from the evil that will never die.",
+   "source": "dbd.tricky.lol"
+  },
+  "Apl_Level_02": {
+   "id": "Apl_Level_02",
+   "name": "Freddy Fazbear's Pizza",
+   "alias": null,
+   "realm": "Withered Isle",
+   "killers": [],
+   "dlc": "Applepie",
+   "chapter": "Applepie",
+   "image": "/island/apps/dbd/./sprites/IconMap_Apl_Level02.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Apl_Level02.png",
+   "imageFile": "IconMap_Apl_Level02.png",
+   "description": "The rotting brainchild of a sadistic murderer still stands over the grassy plains. A place of joy for some, and unspeakable terror for others. Do not let the bright colors and parlor tricks deceive you; many have died within these walls, and many more will die still.",
+   "source": "dbd.tricky.lol"
+  },
+  "Apl_Shack": {
+   "id": "Apl_Shack",
+   "name": "Fallen Refuge",
+   "alias": "fallenrefuge",
+   "realm": "Withered Isle",
+   "killers": [],
+   "dlc": "Applepie",
+   "chapter": "Applepie",
+   "image": "/island/apps/dbd/./sprites/IconMap_Apl_Shack.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Apl_Shack.png",
+   "imageFile": "IconMap_Apl_Shack.png",
+   "description": "Amid the overgrown grass, a new structure rose from the darkness. Twisted and contorted as if from a dream, melding the architecture of a prison tower—an erstwhile safe haven for the survivors of an apocalyptic outbreak—and a hospital that once healed the people of King County.<br><br>Its cruel form stretches into the night sky, a mockery of what these structures represented. Symbols of security and compassion, corrupted into cruel reminders that those in the Entity's realm are always watched… and can never leave.",
+   "source": "dbd.tricky.lol"
+  },
+  "Asy_Asylum": {
+   "id": "Asy_Asylum",
+   "name": "Disturbed Ward",
+   "alias": "disturbedward",
+   "realm": "Crotus Prenn Asylum",
+   "killers": [],
+   "dlc": "lastBreath",
+   "chapter": "The Last Breath Chapter",
+   "image": "/island/apps/dbd/./sprites/IconMap_Asy_Asylum.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Asy_Asylum.png",
+   "imageFile": "IconMap_Asy_Asylum.png",
+   "description": "The last standing structure after the fire that still shows the grandeur of the original architecture. Its two floors and dark basement leave behind nothing of the tale of horrors that took place here. Nothing but memories linger in the abandoned rooms.",
+   "source": "dbd.tricky.lol"
+  },
+  "Asy_Chapel": {
+   "id": "Asy_Chapel",
+   "name": "Father Campbell's Chapel",
+   "alias": "fathercampbellschapel",
+   "realm": "Crotus Prenn Asylum",
+   "killers": [
+    "Clown"
+   ],
+   "dlc": "Guam",
+   "chapter": "Curtain Call Chapter",
+   "image": "/island/apps/dbd/./sprites/IconMap_Asy_Chapel.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Asy_Chapel.png",
+   "imageFile": "IconMap_Asy_Chapel.png",
+   "description": "Nestled in a quiet part of the grounds, Father Campbell’s Chapel was a haven from the horrors of the rest of the asylum. Those patients whose illnesses were less severe were given the run of the place and many would come here for refuge, to communicate with God and confess their sins.<br><br>Sadly, Father Campbell’s legacy of good works counted for nothing when the Nurse’s mind snapped, and he drew his final breath in the confessional that had helped so many.<br><br>Now the chapel has been joined by a strange companion: a carny’s caravan, pulled by a shadowy horse. It has long traveled through The Fog, moving from realm to realm, and now temporarily camps here.<br><br>Beware: only a fool would let the bright colors seduce them into visiting.",
+   "source": "dbd.tricky.lol"
+  },
+  "Brl_MaHouse": {
+   "id": "Brl_MaHouse",
+   "name": "Mother's Dwelling",
+   "alias": "mothersdwelling",
+   "realm": "Red Forest",
+   "killers": [
+    "Bear"
+   ],
+   "dlc": "boreal",
+   "chapter": "A Lullaby for the Dark Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "Deep in a forest with many names lies a hidden home. The family that once lived there was dependent on the forest… and was broken by it. More than a century old, the dwelling is in surprisingly good condition, though it shows signs of often being patched and mended. The forest holds the house tightly in its grasp, growing over and around it like a second skin. Only once inside is it clear that someone still lives there. It is warm and welcoming and lovingly decorated, with a large living space, a bedroom and a corner dedicated for little ones. Here they are protected from the harsh winter of the northern forest.",
+   "source": "dbd.tricky.lol"
+  },
+  "Brl_Temple": {
+   "id": "Brl_Temple",
+   "name": "The Temple of Purgation",
+   "alias": "templeofpurgation",
+   "realm": "Red Forest",
+   "killers": [],
+   "dlc": "mali",
+   "chapter": "mali",
+   "image": "/island/apps/dbd/./sprites/IconMap_Brl_Temple.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Brl_Temple.png",
+   "imageFile": "IconMap_Brl_Temple.png",
+   "description": "The half-forgotten temple complex dedicated to the cleansing of the High Priestess’s followers. The vertiginous hypostyle hall was believed to hold the weight of the heavens.<br><br>Stolen from the memories of The Plague, the temple was planted in the howling Red Forest, whose winds eroded its smooth edges. It now stands as a beacon of fear, visible from all cardinal points.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ecl_Level_01": {
+   "id": "Ecl_Level_01",
+   "name": "Raccoon City Police Station East Wing",
+   "alias": "racconcitypolicestation",
+   "realm": "Raccoon City",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "The smell of blood and festering limbs permeated the concrete walls of the Raccoon City police station. Once an art museum, the building was converted into a precinct at the heart of the city. But when evil took residence, the station showed one last terrifying exhibition: corpses crowding narrow corridors, blood smeared on shattered windows, and festering flesh dripping down the stairs.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ecl_Level_WestSide": {
+   "id": "Ecl_Level_WestSide",
+   "name": "Raccoon City Police Station West Wing",
+   "alias": null,
+   "realm": "Raccoon City",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "The smell of blood and festering limbs permeated the concrete walls of the Raccoon City police station. Once an art museum, the building was converted into a precinct at the heart of the city. But when evil took residence, the station showed one last terrifying exhibition: corpses crowding narrow corridors, blood smeared on shattered windows, and festering flesh dripping down the stairs.",
+   "source": "dbd.tricky.lol"
+  },
+  "eng_street_01": {
+   "id": "eng_street_01",
+   "name": "Badham Preschool I",
+   "alias": null,
+   "realm": "Springwood",
+   "killers": [
+    "Nightmare"
+   ],
+   "dlc": "Sandman",
+   "chapter": "A Nightmare on Elm Street™ Chapter",
+   "image": "/island/apps/dbd/./sprites/IconMap_Eng_Elmstreet.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Eng_Elmstreet.png",
+   "imageFile": "IconMap_Eng_Elmstreet.png",
+   "description": "This is not the Badham Preschool where children laughed and learned, made lifelong friendships and had their paintings hung on the walls. This is a dark echo created from the nightmares of those who suffered there. The walls creak under the burden of history. Events that should be long forgotten are recorded forever in the plaster and stone, pervading the building with misery. Only one part of the building is accurately reflected in this darkness. The squalid room where Freddy Krueger lived and worked. The hidden basement area where he committed the heinous acts that appalled a town and condemned him to death. This is a place of the subconscious, of the nightmare brought into hideous reality.",
+   "source": "dbd.tricky.lol"
+  },
+  "eng_street_02": {
+   "id": "eng_street_02",
+   "name": "Badham Preschool II",
+   "alias": null,
+   "realm": "Springwood",
+   "killers": [
+    "Nightmare"
+   ],
+   "dlc": "Sandman",
+   "chapter": "A Nightmare on Elm Street™ Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "This is not the Badham Preschool where children laughed and learned, made lifelong friendships and had their paintings hung on the walls. This is a dark echo created from the nightmares of those who suffered there. The walls creak under the burden of history. Events that should be long forgotten are recorded forever in the plaster and stone, pervading the building with misery. Only one part of the building is accurately reflected in this darkness. The squalid room where Freddy Krueger lived and worked. The hidden basement area where he committed the heinous acts that appalled a town and condemned him to death. This is a place of the subconscious, of the nightmare brought into hideous reality.",
+   "source": "dbd.tricky.lol"
+  },
+  "eng_street_03": {
+   "id": "eng_street_03",
+   "name": "Badham Preschool III",
+   "alias": null,
+   "realm": "Springwood",
+   "killers": [
+    "Nightmare"
+   ],
+   "dlc": "Sandman",
+   "chapter": "A Nightmare on Elm Street™ Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "This is not the Badham Preschool where children laughed and learned, made lifelong friendships and had their paintings hung on the walls. This is a dark echo created from the nightmares of those who suffered there. The walls creak under the burden of history. Events that should be long forgotten are recorded forever in the plaster and stone, pervading the building with misery. Only one part of the building is accurately reflected in this darkness. The squalid room where Freddy Krueger lived and worked. The hidden basement area where he committed the heinous acts that appalled a town and condemned him to death. This is a place of the subconscious, of the nightmare brought into hideous reality.",
+   "source": "dbd.tricky.lol"
+  },
+  "eng_street_04": {
+   "id": "eng_street_04",
+   "name": "Badham Preschool IV",
+   "alias": null,
+   "realm": "Springwood",
+   "killers": [
+    "Nightmare"
+   ],
+   "dlc": "Sandman",
+   "chapter": "A Nightmare on Elm Street™ Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "This is not the Badham Preschool where children laughed and learned, made lifelong friendships and had their paintings hung on the walls. This is a dark echo created from the nightmares of those who suffered there. The walls creak under the burden of history. Events that should be long forgotten are recorded forever in the plaster and stone, pervading the building with misery. Only one part of the building is accurately reflected in this darkness. The squalid room where Freddy Krueger lived and worked. The hidden basement area where he committed the heinous acts that appalled a town and condemned him to death. This is a place of the subconscious, of the nightmare brought into hideous reality.",
+   "source": "dbd.tricky.lol"
+  },
+  "eng_street_05": {
+   "id": "eng_street_05",
+   "name": "Badham Preschool V",
+   "alias": null,
+   "realm": "Springwood",
+   "killers": [
+    "Nightmare"
+   ],
+   "dlc": "Sandman",
+   "chapter": "A Nightmare on Elm Street™ Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "This is not the Badham Preschool where children laughed and learned, made lifelong friendships and had their paintings hung on the walls. This is a dark echo created from the nightmares of those who suffered there. The walls creak under the burden of history. Events that should be long forgotten are recorded forever in the plaster and stone, pervading the building with misery. Only one part of the building is accurately reflected in this darkness. The squalid room where Freddy Krueger lived and worked. The hidden basement area where he committed the heinous acts that appalled a town and condemned him to death. This is a place of the subconscious, of the nightmare brought into hideous reality.",
+   "source": "dbd.tricky.lol"
+  },
+  "Fin_Hideout": {
+   "id": "Fin_Hideout",
+   "name": "The Game",
+   "alias": "game",
+   "realm": "Gideon Meat Plant",
+   "killers": [
+    "Pig"
+   ],
+   "dlc": "Finland",
+   "chapter": "The Saw® Chapter",
+   "image": "/island/apps/dbd/./sprites/IconMap_Fin_TheGame.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Fin_TheGame.png",
+   "imageFile": "IconMap_Fin_TheGame.png",
+   "description": "This industrial warehouse is the product of a fevered mind, desperately trying to complete their life’s work, their legacy, before their inevitable end. A place of both, creation and destruction, from which devices of death and rebirth were produced. The smell of fear, blood and death has soaked into the brick walls. The sickly glow of fluorescent lighting bathes the room where Jigsaw has planned out his final trial.<br><br>The game begins.",
+   "source": "dbd.tricky.lol"
+  },
+  "Frm_Barn": {
+   "id": "Frm_Barn",
+   "name": "Fractured Cowshed",
+   "alias": null,
+   "realm": "Coldwind Farm",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": "/island/apps/dbd/./sprites/IconMap_Frm_Barn.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Frm_Barn.png",
+   "imageFile": "IconMap_Frm_Barn.png",
+   "description": "The old run-down cowshed was one of the first barns the Thompsons built on Coldwind Farm. It was originally intended to house sick animals at a safe distance from the rest of the livestock, but no animal who entered it ever survived. An investigation revealed the building was infested with toxic mold. The Thompsons figured it must be a construction fault or something to do with the dampness of the wood. A new barn was built, and the old cowshed was left to rot in the shadows.",
+   "source": "dbd.tricky.lol"
+  },
+  "Frm_CornField": {
+   "id": "Frm_CornField",
+   "name": "Rotten Fields",
+   "alias": null,
+   "realm": "Coldwind Farm",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": "/island/apps/dbd/./sprites/IconMap_Frm_Cornfield.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Frm_Cornfield.png",
+   "imageFile": "IconMap_Frm_Cornfield.png",
+   "description": "Even before the fall of Coldwind Farm, the cornfields were surrounded by tales of ominous myths. Everything from mutilated animals to red corn stalks. Now it’s abandoned, but still, someone seems to care for the corn in some way as the stalks still stand tall.",
+   "source": "dbd.tricky.lol"
+  },
+  "Frm_Farmhouse": {
+   "id": "Frm_Farmhouse",
+   "name": "The Thompson House",
+   "alias": null,
+   "realm": "Coldwind Farm",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": "/island/apps/dbd/./sprites/IconMap_Frm_Farmhouse.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Frm_Farmhouse.png",
+   "imageFile": "IconMap_Frm_Farmhouse.png",
+   "description": "The centerpiece of Coldwind Farm, the farmhouse stood proudly over the fields of golden corn for decades. After the horrific events of 1972, the building fell into disrepair and eventual ruin. The farmhouse is now nothing more than a forgotten, former home where holidays were once celebrated.",
+   "source": "dbd.tricky.lol"
+  },
+  "Frm_Silo": {
+   "id": "Frm_Silo",
+   "name": "Torment Creek",
+   "alias": null,
+   "realm": "Coldwind Farm",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": "/island/apps/dbd/./sprites/IconMap_Frm_Silo.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Frm_Silo.png",
+   "imageFile": "IconMap_Frm_Silo.png",
+   "description": "The Silo is one of the oldest remaining buildings that made up Coldwind Farm. The great storm of 2003 brought the ancient structure crashing down. It was weeks later that searchers discovered twelve bodies were buried in the ruins. Their crushed corpses were buried deep in the slurry that oozed out from the base and made identification almost impossible.",
+   "source": "dbd.tricky.lol"
+  },
+  "Frm_Slaughterhouse": {
+   "id": "Frm_Slaughterhouse",
+   "name": "Rancid Abattoir",
+   "alias": null,
+   "realm": "Coldwind Farm",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": "/island/apps/dbd/./sprites/IconMap_Frm_Slaughterhouse.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Frm_Slaughterhouse.png",
+   "imageFile": "IconMap_Frm_Slaughterhouse.png",
+   "description": "Once part of the farm, the slaughterhouse was still in operation for many years after the breakup of the farmland. Rotting stench and stained floors provide proof of all the deaths that have taken place here… animal or otherwise.",
+   "source": "dbd.tricky.lol"
+  },
+  "Glo_Level_01": {
+   "id": "Glo_Level_01",
+   "name": "Ormond Lake Mine",
+   "alias": null,
+   "realm": "Ormond",
+   "killers": [
+    "K38"
+   ],
+   "dlc": "Gelato",
+   "chapter": "Doomed Course Chapter",
+   "image": "/island/apps/dbd/./sprites/IconMap_Glo_Level01.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Glo_Level01.png",
+   "imageFile": "IconMap_Glo_Level01.png",
+   "description": "Tucked among the majestic slopes near Ormond there lies a deep scar running through the rock and roots. The promise of its vast natural resources drew unscrupulous surveyors to its ice-capped peaks. Upon discovering rich coal deposits, they set up shop, but a series of unexplainable mishaps forced them to close the mine before it was exhausted.<br><br>They abandoned the complex and left the nearby town to pick up the pieces. After laying silent for decades, rumors swirl that someone else has taken residence among the rusting machines... a group whose motivations are far darker, and far more mysterious.<br><br>At night, an uneasy silence falls over the complex, punctuated only by the groaning of decaying machines.",
+   "source": "dbd.tricky.lol"
+  },
+  "hos_treatment": {
+   "id": "hos_treatment",
+   "name": "Treatment Theater",
+   "alias": "treatmenttheatre",
+   "realm": "Léry's Memorial Institute",
+   "killers": [
+    "Killer07"
+   ],
+   "dlc": "sparkofMadness",
+   "chapter": "Spark of Madness Chapter",
+   "image": "/island/apps/dbd/./sprites/IconMap_Hos_Treatment.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Hos_Treatment.png",
+   "imageFile": "IconMap_Hos_Treatment.png",
+   "description": "A mansion from the late 1800's - donated and transformed into a medical facility and later into a CIA black site specializing in cutting-edge interrogation techniques. The institute closing is shrouded in controversy and mystery. At the heart of the facility, the Doctor’s tools have been arranged in a twisted ritual circle, ready for research, as he refines his methods on an endless stream of terrified patients.",
+   "source": "dbd.tricky.lol"
+  },
+  "Hti_Manor": {
+   "id": "Hti_Manor",
+   "name": "Family Residence",
+   "alias": "familyresidence",
+   "realm": "Yamaoka Estate",
+   "killers": [],
+   "dlc": "haiti",
+   "chapter": "haiti",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "While the Yamaoka estate displayed a glorious past, but the family residence was falling apart. The house needed numerous renovations to remain habitable.<br><br>The last generation of the Yamaoka family were facing troubled times. Their finances were dire and the situation worsened when the daughter started university, just a few months before the mother became ill. Shouldering both university fees and hospital bills, the father worked past exhaustion.<br><br>To keep a roof over their heads, he profaned their legacy. The walls of their ancestral home were sealed with moldy materials for a cheap fix.<br><br>As the house was stripped of its integrity, an old anger was awakened.",
+   "source": "dbd.tricky.lol"
+  },
+  "Hti_Manor02": {
+   "id": "Hti_Manor02",
+   "name": "Family Residence",
+   "alias": null,
+   "realm": "Yamaoka Estate",
+   "killers": [],
+   "dlc": "haiti",
+   "chapter": "haiti",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "While the Yamaoka estate displayed a glorious past, but the family residence was falling apart. The house needed numerous renovations to remain habitable.<br><br>The last generation of the Yamaoka family were facing troubled times. Their finances were dire and the situation worsened when the daughter started university, just a few months before the mother became ill. Shouldering both university fees and hospital bills, the father worked past exhaustion.<br><br>To keep a roof over their heads, he profaned their legacy. The walls of their ancestral home were sealed with moldy materials for a cheap fix.<br><br>As the house was stripped of its integrity, an old anger was awakened.",
+   "source": "dbd.tricky.lol"
+  },
+  "Hti_Shrine": {
+   "id": "Hti_Shrine",
+   "name": "Sanctum of Wrath ",
+   "alias": "sanctumofwrath",
+   "realm": "Yamaoka Estate",
+   "killers": [],
+   "dlc": "sweden",
+   "chapter": "sweden",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "Once opulent and well-tended by priests, the shrine was abandoned for reasons unknown. Season after season, the harsh and unforgiving weather corroded its grandeur. Paths that welcomed weary travelers, were now thick with vegetation growing damp and unrestrained. The sculptures were a haven for moss and lichen, concealing a scratched and brittle stone.<br><br>Kazan shuddered with rage as he stepped into the area. Unable to restrain himself, he unleashed his might on a statue atop the shrine, clubbing its arms and head to pieces. Even after he left, a rot seemed to pervade the air. The chimes of bells played softly on the wind, as everything around them crumbled. Torn from Kazan's memories, the shrine now stood on the estate of his childhood home—a trick by The Entity that infuriated him even more.",
+   "source": "dbd.tricky.lol"
+  },
+  "Hti_Shrine02": {
+   "id": "Hti_Shrine02",
+   "name": "Sanctum of Wrath ",
+   "alias": null,
+   "realm": "Yamaoka Estate",
+   "killers": [],
+   "dlc": "sweden",
+   "chapter": "sweden",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "Once opulent and well-tended by priests, the shrine was abandoned for reasons unknown. Season after season, the harsh and unforgiving weather corroded its grandeur. Paths that welcomed weary travelers, were now thick with vegetation growing damp and unrestrained. The sculptures were a haven for moss and lichen, concealing a scratched and brittle stone.<br><br>Kazan shuddered with rage as he stepped into the area. Unable to restrain himself, he unleashed his might on a statue atop the shrine, clubbing its arms and head to pieces. Even after he left, a rot seemed to pervade the air. The chimes of bells played softly on the wind, as everything around them crumbled. Torn from Kazan's memories, the shrine now stood on the estate of his childhood home—a trick by The Entity that infuriated him even more.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ind_CoalTower": {
+   "id": "Ind_CoalTower",
+   "name": "Coal Tower",
+   "alias": null,
+   "realm": "The MacMillan Estate",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "Once used for storing the coal that fueled the Foundry, it now lies abandoned. The roof is split wide open, suggesting some titanic explosion, but the angles don’t seem to make sense. So to fathom its destiny is not done easily - even if one would want to.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ind_CoalTower02": {
+   "id": "Ind_CoalTower02",
+   "name": "Coal Tower",
+   "alias": null,
+   "realm": "The MacMillan Estate",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "Once used for storing the coal that fueled the Foundry, it now lies abandoned. The roof is split wide open, suggesting some titanic explosion, but the angles don’t seem to make sense. So to fathom its destiny is not done easily - even if one would want to.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ind_Forest": {
+   "id": "Ind_Forest",
+   "name": "Shelter Woods",
+   "alias": "shelterwoods",
+   "realm": "The MacMillan Estate",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "A makeshift command center was erected here, its rigid walls and sharp angles standing in stark contrast to the twisted wood and soil. For those who chance upon this crude structure, the realization that this complex belongs to an apex hunter—a hunter whose prey is human—usually comes too late.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ind_Forest02": {
+   "id": "Ind_Forest02",
+   "name": "Shelter Woods",
+   "alias": null,
+   "realm": "The MacMillan Estate",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "A makeshift command center was erected here, its rigid walls and sharp angles standing in stark contrast to the twisted wood and soil. For those who chance upon this crude structure, the realization that this complex belongs to an apex hunter—a hunter whose prey is human—usually comes too late.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ind_Foundry": {
+   "id": "Ind_Foundry",
+   "name": "Ironworks of Misery",
+   "alias": null,
+   "realm": "The MacMillan Estate",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "The beating heart of the Mine, the Foundry was where the iron ore was directly smelted into vast ingots. The huge vats still bear evidence of the bodies that were incinerated within them - preserved in the metal residue.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ind_Foundry02": {
+   "id": "Ind_Foundry02",
+   "name": "Ironworks of Misery",
+   "alias": null,
+   "realm": "The MacMillan Estate",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "The beating heart of the Mine, the Foundry was where the iron ore was directly smelted into vast ingots. The huge vats still bear evidence of the bodies that were incinerated within them - preserved in the metal residue.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ind_Mine": {
+   "id": "Ind_Mine",
+   "name": "Suffocation Pit",
+   "alias": null,
+   "realm": "The MacMillan Estate",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "You can still see the tiny entrance that miners used to haul the ore to the surface. Now it is nothing more than a pile of rubble. No one bothered to clear it as they feared whatever might be found inside. Instead it fell into oblivion.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ind_Mine02": {
+   "id": "Ind_Mine02",
+   "name": "Suffocation Pit",
+   "alias": null,
+   "realm": "The MacMillan Estate",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "You can still see the tiny entrance that miners used to haul the ore to the surface. Now it is nothing more than a pile of rubble. No one bothered to clear it as they feared whatever might be found inside. Instead it fell into oblivion.",
+   "source": "dbd.tricky.lol"
+  },
+  "ind_storehouse": {
+   "id": "ind_storehouse",
+   "name": "Groaning Storehouse",
+   "alias": null,
+   "realm": "The MacMillan Estate",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "On the eastern edge of the estate, near the woods, lie the remains of the MacMillan warehouse. Dwarfing the surrounding buildings, the massive storehouse can often be heard creaking and groaning as if it were crying out with the anguish of the incinerated laborers.",
+   "source": "dbd.tricky.lol"
+  },
+  "ind_storehouse02": {
+   "id": "ind_storehouse02",
+   "name": "Groaning Storehouse",
+   "alias": null,
+   "realm": "The MacMillan Estate",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "On the eastern edge of the estate, near the woods, lie the remains of the MacMillan warehouse. Dwarfing the surrounding buildings, the massive storehouse can often be heard creaking and groaning as if it were crying out with the anguish of the incinerated laborers.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ion_Level_01": {
+   "id": "Ion_Level_01",
+   "name": "Eyrie of Crows",
+   "alias": "eyrieofcrows",
+   "realm": "Forsaken Boneyard",
+   "killers": [
+    "K26"
+   ],
+   "dlc": "Ion",
+   "chapter": "Portrait of a Murder Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "In the dust-choked expanse of the Chilean desert lies a graveyard abandoned by the living, battered by the passage of time. Only through violence was it once more given prominence, hosting the gruesome murder of the artist Carmina Mora and her friends.<br><br>Within The Entity's realm, the humble lot has been twisted into a grand celebration of the bloody events that took place. A towering crypt offers a roost for the crows to observe the trial, beady eyes gazing with fascination, never forgetting the day they fed greedily on the flesh of screaming men and women.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ion_Shack": {
+   "id": "Ion_Shack",
+   "name": "Dead Sands",
+   "alias": null,
+   "realm": "Forsaken Boneyard",
+   "killers": [
+    "K26"
+   ],
+   "dlc": "Ion",
+   "chapter": "Portrait of a Murder Chapter",
+   "image": "/island/apps/dbd/./sprites/IconMap_Ice_Level01.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Ice_Level01.png",
+   "imageFile": "IconMap_Ice_Level01.png",
+   "description": "Taken on the verge of death, Carmina Mora will never escape the desert where her friends were murdered.<br><br>The Entity’s Realm is an ever-changing mockery of those who dwell within it, and the land where she lost her hands and tongue exists in flux. The cursed crows will find no sanctuary here, and even the simplest source of refuge may hold dangers of its own. Only the stone sentinels looming overhead remain, gazing down beneath their shrouds, bound to witness the endless cycle of bloodshed.",
+   "source": "dbd.tricky.lol"
+  },
+  "Jnk_Garage": {
+   "id": "Jnk_Garage",
+   "name": "Wretched Shop",
+   "alias": null,
+   "realm": "Autohaven Wreckers",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": "/island/apps/dbd/./sprites/IconMap_Jnk_Garage.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Jnk_Garage.png",
+   "imageFile": "IconMap_Jnk_Garage.png",
+   "description": "This old garage was once not just a place of death and execution. Automobiles were actually repaired here amongst oil mixed with blood. But as investigators found out about the atrocities that took place, it became forgotten.",
+   "source": "dbd.tricky.lol"
+  },
+  "jnk_gasstation": {
+   "id": "jnk_gasstation",
+   "name": "Gas Heaven",
+   "alias": null,
+   "realm": "Autohaven Wreckers",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": "/island/apps/dbd/./sprites/IconMap_Jnk_GasStation.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Jnk_GasStation.png",
+   "imageFile": "IconMap_Jnk_GasStation.png",
+   "description": "For decades, Azarov’s Gas Heaven offered the last chance for travellers to rest and fuel up before the long, hard haul through the backcountry. Wiser travellers learned to decline that offer. The phones never worked and people had a peculiar habit of going missing. When the highway came through, bypassing Gas Heaven entirely, business dried up and the gas station was abandoned. No one quite knows how many bodies are stashed out there, or what else is hidden in the ruins of the old rest stop.",
+   "source": "dbd.tricky.lol"
+  },
+  "Jnk_Lodge": {
+   "id": "Jnk_Lodge",
+   "name": "Blood Lodge",
+   "alias": null,
+   "realm": "Autohaven Wreckers",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": "/island/apps/dbd/./sprites/IconMap_Jnk_Lodge.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Jnk_Lodge.png",
+   "imageFile": "IconMap_Jnk_Lodge.png",
+   "description": "A run-down log cabin at the edge of the scrap yard and the home of its owner. Weird carvings and etchings in the wall perhaps say more about the owner’s state of mind and allude to his disappearance. Reports suggested that prisoners were held in its dark basement before they were taken to the crusher.",
+   "source": "dbd.tricky.lol"
+  },
+  "Jnk_Office": {
+   "id": "Jnk_Office",
+   "name": "Azarov’s Resting Place",
+   "alias": null,
+   "realm": "Autohaven Wreckers",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": "/island/apps/dbd/./sprites/IconMap_Jnk_Office.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Jnk_Office.png",
+   "imageFile": "IconMap_Jnk_Office.png",
+   "description": "The Office is where money changed owners and hands were shook. The heavy duty safe in the floor might have been a dead giveaway to the shady business that took place. Wads of cash were hidden all over the place. Stating that money wasn’t an issue, maybe people got executed for enjoyment, rather than wealth.",
+   "source": "dbd.tricky.lol"
+  },
+  "Jnk_Scrapyard": {
+   "id": "Jnk_Scrapyard",
+   "name": "Wreckers' Yard",
+   "alias": null,
+   "realm": "Autohaven Wreckers",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": "/island/apps/dbd/./sprites/IconMap_Jnk_Scrapyard.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Jnk_Scrapyard.png",
+   "imageFile": "IconMap_Jnk_Scrapyard.png",
+   "description": "The Junkyard is packed with sharp objects. Walking around the area, aware of the bloodbath that took place here, changes the landscape. Blood-covered metal and bits of flesh abound. One does not willingly walk amongst all this evidence of death.",
+   "source": "dbd.tricky.lol"
+  },
+  "Kny_Cottage": {
+   "id": "Kny_Cottage",
+   "name": "Mount Ormond Resort",
+   "alias": "mountormondresort",
+   "realm": "Ormond",
+   "killers": [
+    "Plague"
+   ],
+   "dlc": "Mali",
+   "chapter": "Demise of the Faithful Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "Ormond was once a small, remote ski town with idyllic slopes, but its resort turned obsolete when a deluxe ski village was built on Mount Richards less than two hours away. Mount Richards offered fresh slopes with luxurious stores and hotels, which crushed Mount Ormond’s isolated, decrepit facilities.<br><br>The fate of the mountain worsened when a mining project took interest in the coal present at its summit. The mountaintop was lined by explosives to extract coal seams from under it. The project caused a public outrage and was stopped midway.<br><br>Mount Ormond is now a soulful, deforested graveyard where gangs and teenagers go looking for trouble. Some people say that the mountain hides a darkness, a bottomless hole from where no one can return.",
+   "source": "dbd.tricky.lol"
+  },
+  "Kny_Cottage02": {
+   "id": "Kny_Cottage02",
+   "name": "Mount Ormond Resort",
+   "alias": null,
+   "realm": "Ormond",
+   "killers": [
+    "Plague"
+   ],
+   "dlc": "Mali",
+   "chapter": "Demise of the Faithful Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "Ormond was once a small, remote ski town with idyllic slopes, but its resort turned obsolete when a deluxe ski village was built on Mount Richards less than two hours away. Mount Richards offered fresh slopes with luxurious stores and hotels, which crushed Mount Ormond’s isolated, decrepit facilities.<br><br>The fate of the mountain worsened when a mining project took interest in the coal present at its summit. The mountaintop was lined by explosives to extract coal seams from under it. The project caused a public outrage and was stopped midway.<br><br>Mount Ormond is now a soulful, deforested graveyard where gangs and teenagers go looking for trouble. Some people say that the mountain hides a darkness, a bottomless hole from where no one can return.",
+   "source": "dbd.tricky.lol"
+  },
+  "Kny_Cottage03": {
+   "id": "Kny_Cottage03",
+   "name": "Mount Ormond Resort",
+   "alias": null,
+   "realm": "Ormond",
+   "killers": [
+    "Plague"
+   ],
+   "dlc": "Mali",
+   "chapter": "Demise of the Faithful Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "Ormond was once a small, remote ski town with idyllic slopes, but its resort turned obsolete when a deluxe ski village was built on Mount Richards less than two hours away. Mount Richards offered fresh slopes with luxurious stores and hotels, which crushed Mount Ormond’s isolated, decrepit facilities.<br><br>The fate of the mountain worsened when a mining project took interest in the coal present at its summit. The mountaintop was lined by explosives to extract coal seams from under it. The project caused a public outrage and was stopped midway.<br><br>Mount Ormond is now a soulful, deforested graveyard where gangs and teenagers go looking for trouble. Some people say that the mountain hides a darkness, a bottomless hole from where no one can return.",
+   "source": "dbd.tricky.lol"
+  },
+  "Mtr_Level": {
+   "id": "Mtr_Level",
+   "name": "Garden of Joy",
+   "alias": "gardenofjoy",
+   "realm": "Withered Isle",
+   "killers": [
+    "K28"
+   ],
+   "dlc": "Meteor",
+   "chapter": "Roots of Dread Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "On a privately-owned island in the Atlantic, the Garden was home to a bustling commune of optimists set on building a better world. Funded by a band of anonymous philanthropists and managed by a charismatic leader, they attempted to rid themselves of dark emotions, for fear of summoning the ancient god of shadows.<br><br>Dark thoughts corrupted this idyllic community. A mansion sits twisted by darkness and further perverted by the Entity’s influence, contorting and reconfiguring itself in maddening, serpentine formations. At once familiar and foreign, to look upon it is to know fear.",
+   "source": "dbd.tricky.lol"
+  },
+  "Mtr_Level_1": {
+   "id": "Mtr_Level_1",
+   "name": "Garden of Joy",
+   "alias": null,
+   "realm": "Withered Isle",
+   "killers": [
+    "K28"
+   ],
+   "dlc": "Meteor",
+   "chapter": "Roots of Dread Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "On a privately-owned island in the Atlantic, the Garden was home to a bustling commune of optimists set on building a better world. Funded by a band of anonymous philanthropists and managed by a charismatic leader, they attempted to rid themselves of dark emotions, for fear of summoning the ancient god of shadows.<br><br>Dark thoughts corrupted this idyllic community. A mansion sits twisted by darkness and further perverted by the Entity’s influence, contorting and reconfiguring itself in maddening, serpentine formations. At once familiar and foreign, to look upon it is to know fear.",
+   "source": "dbd.tricky.lol"
+  },
+  "Qat_Lab": {
+   "id": "Qat_Lab",
+   "name": "The Underground Complex",
+   "alias": null,
+   "realm": "Hawkins National Laboratory",
+   "killers": [
+    "Demogorgon"
+   ],
+   "dlc": "Qatar",
+   "chapter": "Stranger Things Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "Located below the Hawkins National Laboratory, this underground complex released dozens of interdimensional creatures in November 1984, before the rift was sealed.<br><br>The site kept some vestiges of its past as the mental health institute, including a moldy isolation tank used by patients suffering from acute anxiety that was later modernized for mind control experimentation on promising test subjects.<br><br>Now the walls of the abandoned facility are sprayed with bullets and blood, evidence of a battle against interdimensional creatures.",
+   "source": "dbd.tricky.lol"
+  },
+  "Qtm_Level_01": {
+   "id": "Qtm_Level_01",
+   "name": "The Shattered Square",
+   "alias": "shatteredsquare",
+   "realm": "The Decimated Borgo",
+   "killers": [
+    "K30"
+   ],
+   "dlc": "Quantum",
+   "chapter": "Forged in Fog Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "Daro, a village that once bustled with life and industry, suddenly razed to the ground. The gorgeous, cobbled roads of this medieval Italian settlement ran red with the blood of her citizens, all due to the “righteousness” of the Guardia Compagnia.<br><br>The Entity’s Realm has preserved and distorted this ancient village, its rubble forever smoldering. A large gathering hall stands in its center, still upright despite its scars. Several shacks litter the landscape in varying degrees of disrepair. The pain suffered here still emanates from the crackles of its embers.",
+   "source": "dbd.tricky.lol"
+  },
+  "Qtm_Level_02": {
+   "id": "Qtm_Level_02",
+   "name": "Forgotten Ruins",
+   "alias": "forgottenruins",
+   "realm": "The Decimated Borgo",
+   "killers": [
+    "K36"
+   ],
+   "dlc": "Churros",
+   "chapter": "Dungeons & Dragons Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "Pulled from the memories of alchemists, warriors, storytellers, and criminals, the Forgotten Ruins is an amalgamation of hidden knowledge and dark secrets.<br><br>How many have wandered this dead terrain, unaware of what lurked beneath their feet? And how many more ventured down to the bottom of that decaying staircase, only to succumb to what awaited them",
+   "source": "dbd.tricky.lol"
+  },
+  "Qui_Level_01": {
+   "id": "Qui_Level_01",
+   "name": "Trickster's Delusion",
+   "alias": null,
+   "realm": "Sleepless District",
+   "killers": [],
+   "dlc": "Quiche",
+   "chapter": "All-Kill: Comeback Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "Hak Ji-woon had spent years refining his sound, his image, his style. In one fell swoop, all of it was taken from him and put on a virtual idol.<br><br>He walked the neon neighborhood in a rage. Even the signs seemed to predict the end of his career. Violent imaginings flooded his mind. If only he could kill everyone in and around that club, consequences be damned. But no. Vengeance would be reserved for those who brought MiNA to life.",
+   "source": "dbd.tricky.lol"
+  },
+  "sub_street": {
+   "id": "sub_street",
+   "name": "Lampkin Lane",
+   "alias": "lampkinlane",
+   "realm": "Haddonfield",
+   "killers": [
+    "Shape"
+   ],
+   "dlc": "halloween",
+   "chapter": "Halloween® Chapter",
+   "image": "/island/apps/dbd/./sprites/IconMap_Sub_Street.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Sub_Street.png",
+   "imageFile": "IconMap_Sub_Street.png",
+   "description": "A simple street with houses that witnessed the horrors that took place. A jungle gym where children once learned to climb. Sidewalks where fathers taught their daughters to ride a bike. All gone. Instead it sits in the palm of The Entity, forever held in darkness.",
+   "source": "dbd.tricky.lol"
+  },
+  "Swp_GrimPantry": {
+   "id": "Swp_GrimPantry",
+   "name": "Grim Pantry",
+   "alias": null,
+   "realm": "Backwater Swamp",
+   "killers": [
+    "Witch"
+   ],
+   "dlc": "fleshAndMud",
+   "chapter": "Of Flesh and Mud Chapter",
+   "image": "/island/apps/dbd/./sprites/IconMap_Swp_GrimPantry.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Swp_GrimPantry.png",
+   "imageFile": "IconMap_Swp_GrimPantry.png",
+   "description": "One shack stood apart from the rest of the village. Once the water was drained and the area beneath the base was revealed, the true horror of the swamp's cage was discovered. It was here that the prisoners, if that's what we should call them, were brought. Held in the water, their bodies bloating horrendously, they were plucked, one by one for the family's needs. The stilts that kept the building upright acted as the only bars that awful jail needed.",
+   "source": "dbd.tricky.lol"
+  },
+  "Swp_PaleRose": {
+   "id": "Swp_PaleRose",
+   "name": "The Pale Rose",
+   "alias": "palerose",
+   "realm": "Backwater Swamp",
+   "killers": [
+    "Witch"
+   ],
+   "dlc": "fleshAndMud",
+   "chapter": "Of Flesh and Mud Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "The Pale Rose, an ancient paddle steamer in the middle of the swamp, is held captive by the stagnant mud. It has been here long before the residents began their hunt, a barely visible silhouette from the nearby village. There are signs of inhabitation, particularly in the upper states room where strange, ritualistic markings in dried blood and dirt cover the floor. From the scale of the bloodletting, something horrid has taken place here.",
+   "source": "dbd.tricky.lol"
+  },
+  "Uba_Level_01": {
+   "id": "Uba_Level_01",
+   "name": "Toba Landing",
+   "alias": null,
+   "realm": "Dvarka Deepwood",
+   "killers": [
+    "K30"
+   ],
+   "dlc": "Quantum",
+   "chapter": "Forged in Fog Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "After years hurtling through the inky blackness of deep space, a solitary colony ship descended to the surface of Dvarka. Selected for its breathable air, its valuable minerals, and its beautiful lakes and forests, Dvarka looked to be the perfect planet for a new start for humanity. But exploration of the surface revealed a dark secret: an advanced civilization, completely wiped out by some unknown event.<br><br>The ship lies surrounded by strange rock formations on the alien soil of Dvarka, the light of its sun choked out by giant, twisting trees. And in the darkness, a new threat emerges: an Earth invention, twisted by alien technology, unflagging in its mission to end human life on Dvarka and beyond.",
+   "source": "dbd.tricky.lol"
+  },
+  "Ukr_Saloon": {
+   "id": "Ukr_Saloon",
+   "name": "Dead Dawg Saloon",
+   "alias": "deaddawgsaloon",
+   "realm": "Grave of Glenvale",
+   "killers": [
+    "Gunslinger"
+   ],
+   "dlc": "Ukraine",
+   "chapter": "Chains of Hate Chapter",
+   "image": "/island/apps/dbd/./sprites/IconMap_Ukr_Saloon.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Ukr_Saloon.png",
+   "imageFile": "IconMap_Ukr_Saloon.png",
+   "description": "An early settlement on the unforgiving frontier, the outpost of Glenvale was snuffed out in a ruthless, bloody gang war. Responding to the abduction of five brothers-in-arms, the Hellshire Gang stormed in with six-shooters and dynamite. What began as a standoff with the Mason Kelly Gang quickly broke down into a chaotic war zone. Guns fired indiscriminately in a desperate bid for self-preservation, cutting through gang members and civilians alike.<br><br>When the dust settled, the dead outnumbered the living. The hostages were discovered to have been long killed, their bodies disemboweled, guts strewn across town. In a silent rage, the few surviving Hellshire members rounded up their injured enemies and finished them in the same gruesome manner. By nightfall, only the crows remained, feasting gluttonously upon their victory.",
+   "source": "dbd.tricky.lol"
+  },
+  "Wal_Level_01": {
+   "id": "Wal_Level_01",
+   "name": "Midwich Elementary School",
+   "alias": "midwichelementaryschool",
+   "realm": "Silent Hill",
+   "killers": [],
+   "dlc": null,
+   "chapter": null,
+   "image": "/island/apps/dbd/./sprites/IconMap_Wal_Level01.png",
+   "imageRemote": "https://deadbydaylight.wiki.gg/images/IconMap_Wal_Level01.png",
+   "imageFile": "IconMap_Wal_Level01.png",
+   "description": "To students who were bullied by their teachers and classmates, attending Midwich Elementary School was comparable to torture. As the Order’s grip on the town’s supernatural energies tightened, a transformation occurred. The childhood trauma that took place in the building manifested itself into a twisted, nightmarish design.<br><br>Though desks and textbooks remain, they’re eerily contrasted with stained walls, rusted chains, and hanging cadavers. Any notion that this could have been a place of innocence and learning has long since faded.",
+   "source": "dbd.tricky.lol"
+  },
+  "Wrm_Level_01": {
+   "id": "Wrm_Level_01",
+   "name": "Nostromo Wreckage",
+   "alias": "messhall",
+   "realm": "Dvarka Deepwood",
+   "killers": [
+    "K33"
+   ],
+   "dlc": "Wormhole",
+   "chapter": "Alien Chapter",
+   "image": null,
+   "imageRemote": null,
+   "imageFile": null,
+   "description": "A brutal, industrial interstellar cargo ship, where human life takes a back seat to cruel efficiency. Death lurks around every corner of its labyrinthine decks. From the well of Ripley’s memories a grim and hopeless realm manifests into a terrifying nightmare.",
+   "source": "dbd.tricky.lol"
+  }
+ }
+}

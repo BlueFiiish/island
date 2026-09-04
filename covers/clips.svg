@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <!-- Shell-authored poster for the /clips route: no official box art exists
+       for our own clips lane, so this fills the same 2:3 frame as the game
+       covers. Cyan = the route accent (#00e5ff). -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#04141b"/>
+      <stop offset="0.55" stop-color="#062633"/>
+      <stop offset="1" stop-color="#04101a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#00e5ff" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#00e5ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10222c"/>
+      <stop offset="1" stop-color="#0a1820"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="900" fill="url(#bg)"/>
+  <rect width="600" height="900" fill="url(#glow)"/>
+
+  <!-- film-strip perforations down both edges -->
+  <g fill="#00e5ff" opacity="0.28">
+    <g id="perfs">
+      <rect x="28" y="40" width="26" height="40" rx="6"/>
+      <rect x="28" y="120" width="26" height="40" rx="6"/>
+      <rect x="28" y="200" width="26" height="40" rx="6"/>
+      <rect x="28" y="280" width="26" height="40" rx="6"/>
+      <rect x="28" y="360" width="26" height="40" rx="6"/>
+      <rect x="28" y="440" width="26" height="40" rx="6"/>
+      <rect x="28" y="520" width="26" height="40" rx="6"/>
+      <rect x="28" y="600" width="26" height="40" rx="6"/>
+      <rect x="28" y="680" width="26" height="40" rx="6"/>
+      <rect x="28" y="760" width="26" height="40" rx="6"/>
+      <rect x="28" y="840" width="26" height="40" rx="6"/>
+    </g>
+    <use href="#perfs" x="518"/>
+  </g>
+
+  <!-- clapperboard -->
+  <g transform="translate(300 400)">
+    <!-- top slate, hinged open -->
+    <g transform="rotate(-14) translate(-150 -128)">
+      <rect x="0" y="0" width="300" height="58" rx="10" fill="url(#board)" stroke="#00e5ff" stroke-opacity="0.55" stroke-width="3"/>
+      <g fill="#00e5ff" opacity="0.75">
+        <path d="M28 6 L70 6 L48 52 L6 52 Z"/>
+        <path d="M112 6 L154 6 L132 52 L90 52 Z"/>
+        <path d="M196 6 L238 6 L216 52 L174 52 Z"/>
+        <path d="M280 6 L300 6 L300 30 L262 52 L258 52 Z"/>
+      </g>
+    </g>
+    <!-- body -->
+    <rect x="-150" y="-52" width="300" height="220" rx="14" fill="url(#board)" stroke="#00e5ff" stroke-opacity="0.55" stroke-width="3"/>
+    <!-- play glyph -->
+    <circle cx="0" cy="58" r="62" fill="none" stroke="#00e5ff" stroke-width="5" opacity="0.9"/>
+    <path d="M-18 26 L34 58 L-18 90 Z" fill="#00e5ff"/>
+  </g>
+
+  <!-- caption -->
+  <g text-anchor="middle" font-family="Segoe UI, Roboto, system-ui, sans-serif">
+    <text x="300" y="672" font-size="30" letter-spacing="14" fill="#8fdfeb" opacity="0.9">BLUEFIIISH</text>
+    <text x="300" y="716" font-size="19" letter-spacing="5" fill="#5d8f9c">SEND IT &#183; CUT IT &#183; SHIP IT</text>
+  </g>
+</svg>

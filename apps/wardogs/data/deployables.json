@@ -1,0 +1,99 @@
+[
+ {
+  "id": "forward-operating-base-fob",
+  "name": "Forward Operating Base (FOB)",
+  "category": "Logistics",
+  "sourceSection": "forward-operating-base",
+  "slotType": "Quick Slot",
+  "weightKg": 6.5,
+  "price": 2500,
+  "summary": "Logistics - slot Quick Slot, weight 6.5 kg, $2,500.",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "The quick-slot item that puts a Forward Operating Base on the ground where you are standing.",
+   "whyItMatters": "It is how a team stops running back and forth across the map. Once it is down it is shared - everyone on your side draws from it, and everyone loses it together.",
+   "whenToUseIt": "Place it once your side has ground worth holding and somewhere sheltered to hold it from. Dropping one in the open early mostly donates supplies to whoever finds it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-forward-operating-base-fob.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image",
+  "priceDisputedBySource": true,
+  "priceNote": "The source prices this two ways and disagrees with itself: its table says $2,500, its own text one screen above calls it free and says the only real cost is the quick slot. The table figure is the one shown here because it is the more specific claim, but treat the price as unsettled until Early Access."
+ },
+ {
+  "id": "build-supplies",
+  "name": "Build Supplies",
+  "category": "Forward Operating Base (FOB)",
+  "sourceSection": "forward-operating-base",
+  "startingAmount": 1250,
+  "capacity": 20000,
+  "purchasePrice": 10,
+  "summary": "Forward Operating Base (FOB).",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "The stockpile an FOB spends every time somebody raises a wall or a structure inside its radius. It is the only one of the four that starts you with a real cushion, 1,250 against 100 for the rest, and it tops out at 20,000.",
+   "whyItMatters": "Construction spends this and nothing else, so it decides whether your base gets finished. At $10 a unit from the terminal it is also the cheapest useful thing you can buy for a team that is trying to hold ground.",
+   "whenToUseIt": "Top it up before a push rather than during one. If the squad means to fortify, the money does more here than on a second gun you are going to lose anyway."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-build-supplies.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "fuel-supplies",
+  "name": "Fuel Supplies",
+  "category": "Forward Operating Base (FOB)",
+  "sourceSection": "forward-operating-base",
+  "startingAmount": 100,
+  "capacity": 20000,
+  "purchasePrice": 10,
+  "summary": "Forward Operating Base (FOB).",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "The stockpile the Refuel Station pulls from when it fills a vehicle. It starts at 100, holds up to 20,000, and you add to it at the terminal for $10 a unit.",
+   "whyItMatters": "A vehicle with an empty tank is scenery, and this is the only way to put fuel back into one out in the field. Heavy armour drinks several times what a light truck does, so a base that services tanks empties this fast.",
+   "whenToUseIt": "Stock it if your team runs vehicles at all, and stock it heavily if anybody has the big armour. If nobody is driving, the money belongs somewhere else."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-fuel-supplies.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ammo-supplies",
+  "name": "Ammo Supplies",
+  "category": "Forward Operating Base (FOB)",
+  "sourceSection": "forward-operating-base",
+  "startingAmount": 100,
+  "capacity": 20000,
+  "purchasePrice": 10,
+  "summary": "Forward Operating Base (FOB).",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "The FOB's shared ammunition stock. Like the other three it begins at 100, ceilings at 20,000, and costs $10 a unit to add to.",
+   "whyItMatters": "It is the difference between a forward base you can fight out of and one you keep having to leave. Rearming at your own structure saves the walk back to HQ, which on a map this size is most of a life.",
+   "whenToUseIt": "Fill it once the FOB is somewhere you actually intend to defend. There is little point stocking a base you put down for a single push."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-ammo-supplies.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mechanical-supplies",
+  "name": "Mechanical Supplies",
+  "category": "Forward Operating Base (FOB)",
+  "sourceSection": "forward-operating-base",
+  "startingAmount": 100,
+  "capacity": 20000,
+  "purchasePrice": 10,
+  "summary": "Forward Operating Base (FOB).",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "The stock the Repair Station works from. Same shape as the others - 100 to begin with, a 20,000 ceiling, $10 a unit - but it feeds repairs rather than construction.",
+   "whyItMatters": "It is a separate pool from the hand tools an individual carries, so a team can put damaged vehicles right at the base without anybody giving up their specialization slot to a repair tool.",
+   "whenToUseIt": "Keep some in reserve wherever your vehicles come back to. It costs nothing to leave stocked, and a tank you can patch instead of replace is the cheapest tank you will ever own."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-mechanical-supplies.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

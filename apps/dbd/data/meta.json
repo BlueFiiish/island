@@ -1,0 +1,186 @@
+{
+ "pulledAt": "2026-08-31T17:49:17.688Z",
+ "generator": "projects/dead-by-daylight/app/tools/build_data.mjs",
+ "gameVersion": null,
+ "counts": {
+  "characters": 98,
+  "killers": 44,
+  "survivors": 54,
+  "perks": 321,
+  "perksGeneral": 27,
+  "perksOwned": 294,
+  "powers": 44,
+  "addons": 943,
+  "items": 53,
+  "offerings": 125,
+  "statuses": 31,
+  "maps": 59,
+  "realms": 21,
+  "sprites": 1609,
+  "spriteBytes": 19032365
+ },
+ "floors": {
+  "killers": 38,
+  "survivors": 49,
+  "perks": 240,
+  "addons": 800,
+  "items": 40,
+  "offerings": 80,
+  "statuses": 25
+ },
+ "expected": {
+  "killers": 44,
+  "survivors": 54,
+  "perks": 321
+ },
+ "sources": {
+  "characters": "dbd.tricky.lol/api/characters",
+  "perks": "dbd.tricky.lol/api/perks",
+  "addons": "dbd.tricky.lol/api/addons",
+  "items": "dbd.tricky.lol/api/items",
+  "powers": "dbd.tricky.lol/api/items (type=power)",
+  "offerings": "dbd.tricky.lol/api/offerings",
+  "maps": "dbd.tricky.lol/api/maps",
+  "chapters": "dbd.tricky.lol/api/dlc",
+  "shrine": "dbd.tricky.lol/api/shrine",
+  "statuses": "deadbydaylight.wiki.gg - Status HUD article (action=parse)",
+  "sprites": "deadbydaylight.wiki.gg - action=query&prop=imageinfo"
+ },
+ "sourcesRejected": {
+  "github.com/Techial/DBD-Database": "NOT a JSON dump - the repository contains only Node.js scraper source (db/, jobs/, routes/). No data files to fetch.",
+  "deadbydaylight.wiki.gg Cargo": "No usable Cargo tables. Special:CargoTables lists only the internal _pageData, so the cargoquery path used on terraria.wiki.gg does not exist here.",
+  "dbd.tricky.lol/api/apidocs": "Cloudflare-challenged (403). Only /api/<endpoint> is reachable; the endpoint list was mapped by probing."
+ },
+ "licence": {
+  "deadbydaylight.wiki.gg": "Text content CC BY-NC-SA 3.0. Status-effect names and descriptions are derived from the Dead by Daylight Wiki (wiki.gg).",
+  "dbd.tricky.lol": "Community-run API over game data. Used with attribution; no licence is asserted over the underlying game strings.",
+  "images": "Game icons and portraits are (c) Behaviour Interactive Inc. Mirrored locally for offline use under the same community-wiki convention as the other routes in this app. Non-commercial, unofficial fan project."
+ },
+ "attribution": [
+  "Data: dbd.tricky.lol (community API)",
+  "Status effects and all icons: Dead by Daylight Wiki (deadbydaylight.wiki.gg), CC BY-NC-SA 3.0",
+  "Dead by Daylight is a trademark of Behaviour Interactive Inc. This is an unofficial fan project."
+ ],
+ "wikiGenerator": "MediaWiki 1.43.6",
+ "droppedEmpty": [
+  "Item_Camper_K32Emp",
+  "Item_Camper_OnryoTape"
+ ],
+ "handAuthored": [
+  "builds-meta.json",
+  "counters-meta.json"
+ ],
+ "droppedCutContent": [
+  "Addon_GasBomb_19a",
+  "Addon_GasBomb_20a",
+  "Addon_GasBomb_20b",
+  "Swp_Mound"
+ ],
+ "overrides": {
+  "applied": 2,
+  "perks": [
+   "RememberMe",
+   "S37P02"
+  ],
+  "missedNeedles": [],
+  "confirmedByWiki": 2,
+  "wikiConfirmedFlat": 203,
+  "unconfirmedFrozenTunables": 21,
+  "handAuthored": 0
+ },
+ "rarityScheme": {
+  "values": [
+   "common",
+   "uncommon",
+   "rare",
+   "veryrare",
+   "iridescent",
+   "event",
+   "none"
+  ],
+  "note": "rarity is normalised; rarityRaw keeps the source token. The source ships \"visceral\", which the game displays as Iridescent.",
+  "unknownTokensSeen": []
+ },
+ "artUnresolved": {
+  "count": 57,
+  "byFamily": {
+   "IconPowers": 3,
+   "IconAddon": 17,
+   "IconItems": 1,
+   "IconFavors": 1,
+   "IconMap": 35
+  },
+  "names": [
+   "Adi Valente #1",
+   "Anti-Exhaustion Syringe",
+   "Antidote",
+   "Arcane Dowsing Rod",
+   "Badham Preschool II",
+   "Badham Preschool III",
+   "Badham Preschool IV",
+   "Badham Preschool V",
+   "Blonde Hair",
+   "Coal Tower",
+   "Coal Tower",
+   "Eyrie of Crows",
+   "Family Residence",
+   "Family Residence",
+   "Fazbear's Fright",
+   "Foreign Plant Fibers",
+   "Forgotten Ruins",
+   "Garden of Joy",
+   "Garden of Joy",
+   "Greenville Square",
+   "Grisly Chain",
+   "Groaning Storehouse",
+   "Groaning Storehouse",
+   "Hematite Seal",
+   "Honey Locust Thorns",
+   "Ironworks of Misery",
+   "Ironworks of Misery",
+   "Jewelry",
+   "Jewelry Box",
+   "Jump Rope",
+   "Jump Rope",
+   "Moldy Electrode",
+   "Molted Skin",
+   "Mother's Dwelling",
+   "Mount Ormond Resort",
+   "Mount Ormond Resort",
+   "Mount Ormond Resort",
+   "NE-α Parasite",
+   "Nostromo Wreckage",
+   "Raccoon City Police Station East Wing",
+   "Raccoon City Police Station West Wing",
+   "Redhead's Pinky Finger",
+   "Rites of Judgment",
+   "Rusted Chain",
+   "Sanctum of Wrath ",
+   "Sanctum of Wrath ",
+   "Scent of Blood",
+   "Shelter Woods",
+   "Shelter Woods",
+   "Suffocation Pit",
+   "Suffocation Pit",
+   "Sulfuric Acid Vial",
+   "The Pale Rose",
+   "The Shattered Square",
+   "The Underground Complex",
+   "Toba Landing",
+   "Trickster's Delusion"
+  ]
+ },
+ "shrineCors": {
+  "browserFetchable": false,
+  "verdict": "CORS BLOCKED - no Access-Control-Allow-Origin header. A browser on https://bluefiiish.github.io CANNOT fetch this endpoint directly; a live shrine widget needs a proxy or a scheduled re-pull of data/shrine-static.json.",
+  "probedAt": "2026-08-31T17:47:55Z"
+ },
+ "notes": [
+  "gameVersion is null on purpose: no source exposes the live game build number.",
+  "items[].charges is populated only where the item description states a charge count; otherwise null.",
+  "maps[].killers is derived from the shared chapter key, so base-game and survivor-only chapters yield an empty array.",
+  "Killer movementSpeed / terrorRadius are BASE values in m/s and metres (Unreal cm / 100). The Shape has no base terror radius (it is a function of Evil Within tier) and is emitted as null rather than a made-up number.",
+  "statuses.json holds two families, tagged by `system`: 22 true status effects and 9 proficiency indicators, which share one icon set on the wiki.",
+  "Add-on icons are tier 2: they are downloaded only if the sprite budget has room, otherwise iconRemote carries them."
+ ]
+}

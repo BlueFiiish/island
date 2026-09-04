@@ -1,0 +1,226 @@
+/* DBD Companion — charcoal / fog-gray / blood-red PWA theme, mobile-first.
+ *
+ * MOUNT SAFETY (see projects/fiiiish-app/NEW-GAME-TEMPLATE.md section 2 —
+ * this app will later be extracted into the island shell as a route mount):
+ *   - No :root/html/body viewport rule below is load-bearing for layout. The
+ *     shell's scoper deletes height/min-height/max-height/overflow/position/
+ *     inset/top/left/right/bottom from any :root/html/body selector it finds,
+ *     so #app's own padding (not body height) reserves tab-bar clearance.
+ *   - body declares BOTH `color` and `font-family` explicitly (not a `font:`
+ *     shorthand) so the scope gate sees real typography landing on the bare
+ *     mount.
+ *   - Nothing below puts transform/filter/backdrop-filter/contain/
+ *     will-change/perspective on html/body — #topbar (a descendant, not the
+ *     mount) is where backdrop-filter lives.
+ */
+:root{
+  --bg:#0b0b0e; --bg2:#121216; --panel:#18181e; --panel2:#1f1f27;
+  --line:#28282f; --line2:#38383f;
+  --ink:#eceef0; --dim:#a8a8b3; --faint:#6f6f7a;
+  --accent:#a3212a; --accent-soft:#2a0f12; --accent-glow:rgba(163,33,42,.35);
+  --accent2:#c9954a; --gold:#e0a458; --red:#c8404b; --green:#5bb96b;
+  --shadow:0 8px 30px rgba(0,0,0,.5);
+  --tab-h:60px; --top-h:52px;
+  --safe-b:env(safe-area-inset-bottom,0px);
+
+  /* rarity tiers */
+  --rar-common:#8a7360; --rar-uncommon:#c8b23c; --rar-rare:#4fae5a;
+  --rar-veryrare:#a35ce0; --rar-ultrarare:#e05ca3; --rar-event:#e08a3f;
+  --rar-visceral:#8b1e2f; --rar-none:#3a3a42;
+
+  /* D5 desktop polish: #app / #siteFoot / #tabbar all share ONE column width
+     so the fixed tab bar stops reading as visually detached from the content
+     on wide viewports (was: content capped ~735px, tab bar spanned 100%). */
+  --content-w:1080px;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:
+    radial-gradient(1000px 560px at 85% -8%, #24121a 0%, transparent 60%),
+    radial-gradient(900px 620px at -10% 108%, #16161d 0%, transparent 55%),
+    var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,system-ui,sans-serif;
+  font-size:15px;
+  line-height:1.45;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block}
+button{font-family:inherit;color:inherit;cursor:pointer;background:none;border:0}
+b{color:#fff}
+a.link{color:var(--accent2)}
+
+/* ---- top bar ---- */
+#topbar{
+  position:sticky;top:0;z-index:40;height:var(--top-h);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 12px;background:rgba(11,11,14,.88);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:8px;font-size:16px;letter-spacing:.2px}
+.brand b{color:var(--accent)}
+.brand-logo{width:26px;height:26px}
+.top-right{display:flex;align-items:center;gap:8px}
+.share-btn{background:var(--panel);border:1px solid var(--line2);border-radius:9px;padding:6px 9px;font-size:14px}
+.patch-pill{font-size:11px;color:var(--accent2);border:1px solid var(--line2);border-radius:999px;padding:4px 9px;background:var(--panel);white-space:nowrap}
+.patch-pill .synced{display:block;color:var(--faint);font-size:9.5px;margin-top:1px}
+
+/* ---- layout ---- */
+#app{max-width:var(--content-w);margin:0 auto;padding:12px 12px calc(var(--tab-h) + var(--safe-b) + 20px)}
+.view{animation:fade .18s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+h2.vh{font-size:18px;margin:4px 2px 8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+h2.vh .count{font-size:12px;font-weight:400}
+.muted{color:var(--dim)}
+.faint{color:var(--faint)}
+.center{text-align:center}
+.chip-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+
+/* ---- search ---- */
+.search-wrap{position:relative;margin:2px 0 8px}
+.search{
+  width:100%;padding:13px 40px 13px 40px;border-radius:13px;
+  background:var(--panel);border:1px solid var(--line2);color:var(--ink);font-size:16px;
+}
+.search:focus{outline:none;border-color:var(--accent)}
+.search-ic{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--faint)}
+.search-clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:0;color:var(--faint);font-size:18px;padding:6px}
+
+/* ---- generic chips / cards ---- */
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:12px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;padding:3px 8px;border-radius:999px;border:1px solid var(--line2);background:var(--panel2);color:var(--dim)}
+.tbtn{background:var(--panel);border:1px solid var(--line2);border-radius:9px;padding:7px 11px;font-size:12.5px;color:var(--dim)}
+.tbtn.on{color:var(--ink);border-color:var(--accent);background:var(--accent-soft)}
+.tbtn.sm{padding:5px 9px;font-size:11.5px}
+.link-btn{color:var(--accent2);text-decoration:underline;font-size:inherit;padding:0}
+
+/* ---- wiki browser ---- */
+.wiki-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.wiki-chips.sub{margin-top:-2px}
+.wiki-subrow{margin-bottom:8px}
+/* Taste #3: at a 390px phone the 6 section pills (Perks/Add-ons/Items/
+   Offerings/Statuses/Maps) wrapped to two rows before any content showed.
+   The PRIMARY section row (not .sub - role/kind/status sub-filters stay a
+   normal wrapping row, they're short) scrolls horizontally on one line
+   instead - light touch, no other layout change. */
+.wiki-chips:not(.sub){
+  flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+  scrollbar-width:none;padding-bottom:2px;margin-left:-2px;padding-left:2px;
+}
+.wiki-chips:not(.sub)::-webkit-scrollbar{display:none}
+.wiki-chips:not(.sub) .tbtn{flex:none;white-space:nowrap}
+.wiki-select{width:100%;padding:9px 10px;border-radius:10px;background:var(--panel);border:1px solid var(--line2);color:var(--ink);font-size:13px}
+.wiki-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.wiki-card{
+  display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;
+  background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 8px;
+}
+.wiki-card:active{background:var(--panel2)}
+.wc-name{font-size:12.5px;color:var(--ink);line-height:1.25}
+.wc-sub{font-size:10.5px;color:var(--faint)}
+.wiki-card.rar-common .wc-name{color:var(--rar-common)}
+.wiki-card.rar-uncommon .wc-name{color:var(--rar-uncommon)}
+.wiki-card.rar-rare .wc-name{color:var(--rar-rare)}
+.wiki-card.rar-veryrare .wc-name{color:var(--rar-veryrare)}
+.wiki-card.rar-ultrarare .wc-name{color:var(--rar-ultrarare)}
+.wiki-card.rar-event .wc-name{color:var(--rar-event)}
+.wiki-card.rar-visceral .wc-name{color:var(--rar-visceral)}
+
+/* ---- icons (diamond frame in the game's own style) ---- */
+.dbd-ic-wrap{display:inline-flex;align-items:center;justify-content:center;flex:none}
+.dbd-ic-inner{display:flex;align-items:center;justify-content:center;width:100%;height:100%}
+.dbd-ic{image-rendering:auto;object-fit:contain;width:78%;height:78%}
+.dbd-ic-wrap.ic32{width:32px;height:32px}
+.dbd-ic-wrap.ic48{width:48px;height:48px}
+.dbd-ic-wrap.ic72{width:72px;height:72px}
+.dbd-ic-wrap.miss .dbd-ic{opacity:.55}
+
+/* Rotated-square "diamond" frame with a rarity gradient border, matching the
+   in-game perk/add-on tile look. The .dbd-ic-inner counter-rotates so the art
+   itself stays upright. */
+.dbd-ic-wrap.diamond{
+  transform:rotate(45deg);border-radius:7px;
+  background:linear-gradient(135deg, var(--rar-none), var(--panel2));
+  border:1px solid var(--line2);
+}
+.dbd-ic-wrap.diamond .dbd-ic-inner{transform:rotate(-45deg)}
+.dbd-ic-wrap.diamond.rar-common{background:linear-gradient(135deg, var(--rar-common), var(--panel2));border-color:var(--rar-common)}
+.dbd-ic-wrap.diamond.rar-uncommon{background:linear-gradient(135deg, var(--rar-uncommon), var(--panel2));border-color:var(--rar-uncommon)}
+.dbd-ic-wrap.diamond.rar-rare{background:linear-gradient(135deg, var(--rar-rare), var(--panel2));border-color:var(--rar-rare)}
+.dbd-ic-wrap.diamond.rar-veryrare{background:linear-gradient(135deg, var(--rar-veryrare), var(--panel2));border-color:var(--rar-veryrare)}
+.dbd-ic-wrap.diamond.rar-ultrarare{background:linear-gradient(135deg, var(--rar-ultrarare), var(--panel2));border-color:var(--rar-ultrarare)}
+.dbd-ic-wrap.diamond.rar-event{background:linear-gradient(135deg, var(--rar-event), var(--panel2));border-color:var(--rar-event)}
+.dbd-ic-wrap.diamond.rar-visceral{background:linear-gradient(135deg, var(--rar-visceral), var(--panel2));border-color:var(--rar-visceral)}
+
+/* ---- sheets ---- */
+/* dvh with a vh fallback line first (iOS resolves vh against the wrong box
+   for a fixed-position sheet); overscroll-behavior:contain so a flick that
+   reaches the end of the sheet cannot hand the scroll to the page behind it. */
+.sheet{position:fixed;inset:0;z-index:60}
+.sheet[hidden]{display:none}
+.sheet-backdrop{position:absolute;inset:0;background:rgba(4,3,5,.74);touch-action:none}
+.sheet-body{
+  position:absolute;left:0;right:0;bottom:0;
+  max-height:88vh;max-height:88dvh;
+  overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+  transform:translateZ(0);
+  background:var(--bg2);border-top:1px solid var(--line2);border-radius:18px 18px 0 0;
+  padding:14px 14px calc(20px + var(--safe-b));
+  box-shadow:0 -10px 40px rgba(0,0,0,.55);
+  animation:slideup .22s cubic-bezier(.2,.8,.2,1);
+}
+@keyframes slideup{from{transform:translateY(24px);opacity:.4}to{transform:translateY(0);opacity:1}}
+/* M5: sheet-chrome is a permanent header row - back crumb (or an empty
+   spacer) on the left, the X close button always on the right. */
+.sheet-chrome{display:flex;align-items:center;justify-content:space-between;padding-bottom:8px}
+.sheet-back{color:var(--accent2);font-size:12.5px;padding:4px 4px 4px 0}
+.sheet-x{color:var(--faint);font-size:24px;line-height:1;padding:2px 6px;border-radius:8px}
+.sheet-x:active{background:var(--panel)}
+.sheet-head{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.sheet-head .dbd-ic-wrap{margin:14px}
+.sh-ti{min-width:0}
+.sh-ti h3{margin:0 0 3px;font-size:18px;line-height:1.2}
+.sh-sub{font-size:12.5px;color:var(--dim)}
+.sh-sub.faint{color:var(--faint);font-size:11.5px}
+.sec-h{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--faint);margin:14px 0 6px}
+.sheet-desc{font-size:13.5px;line-height:1.55;color:#e6e5ea}
+.sheet-desc ul{margin:6px 0;padding-left:20px}
+.sheet-desc li{margin:2px 0}
+.tier-tabs{display:flex;gap:6px;margin:2px 0 10px}
+.tier-tab{background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:5px 12px;font-size:12px;color:var(--dim)}
+.tier-tab.on{color:#fff;border-color:var(--accent);background:var(--accent-soft)}
+
+/* ---- empty / hint ---- */
+.hint{color:var(--dim);text-align:center;padding:26px 16px}
+.hint .big{font-size:44px;margin-bottom:8px}
+/* L2: tappable role-filter-clear hint inside an empty-state hint block. */
+.role-clear-btn{margin-top:12px;color:var(--accent2);border-color:var(--accent2)}
+
+/* ---- tab bar ---- */
+/* Fixed + left:0;right:0 spans the full viewport by default; capping
+   max-width and centering with margin:auto keeps it aligned under the same
+   --content-w column as #app/#siteFoot on wide (desktop) viewports instead
+   of visually detaching from the content underneath it. */
+#tabbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;height:calc(var(--tab-h) + var(--safe-b));
+  max-width:var(--content-w);margin:0 auto;
+  display:flex;background:rgba(11,11,14,.94);backdrop-filter:blur(10px);
+  border-top:1px solid var(--line);padding-bottom:var(--safe-b);
+}
+#tabbar .tab{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+  color:var(--faint);font-size:10.5px;padding:6px 2px;
+}
+#tabbar .tab .ic{font-size:19px;line-height:1}
+#tabbar .tab.on{color:var(--accent2)}
+#tabbar .tab.on .ic{color:var(--accent)}
+
+/* ---- footer ---- */
+#siteFoot{max-width:var(--content-w);margin:0 auto;padding:0 16px calc(var(--tab-h) + var(--safe-b) + 30px)}
+#footNote{font-size:10.5px;color:var(--faint);line-height:1.5}
+
+@media (min-width:700px){
+  .wiki-grid{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+}

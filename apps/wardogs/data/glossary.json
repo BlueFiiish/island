@@ -1,0 +1,674 @@
+[
+ {
+  "id": "ads",
+  "term": "ADS",
+  "category": "Combat",
+  "beginner": {
+   "whatItIs": "Short for aiming down sights: bringing the weapon up to your eye and looking through the sight instead of firing from the hip.",
+   "whyItMatters": "Every optic in the game is listed with what it does to the speed of that movement, from a minor improvement to a moderate penalty, so the sight you bolt on changes how fast you can answer someone who saw you first.",
+   "whenToUseIt": "Read that line before you buy a sight. A magnified optic that slows your aim down is a bad trade for a weapon you expect to use inside a building."
+  },
+  "seeAlso": [
+   "Kobra Reflex"
+  ],
+  "summary": "Short for aiming down sights: bringing the weapon up to your eye and looking through the sight instead of firing from the hip."
+ },
+ {
+  "id": "apc",
+  "term": "APC",
+  "category": "Match",
+  "beginner": {
+   "whatItIs": "An armored carrier that doubles as a second place to respawn, on top of your HQ.",
+   "whyItMatters": "It is the only forward respawn in the game, and it is conditional twice over: your side has to reach 20 team points to unlock it, and it only works while the vehicle itself is sitting inside the Control Zone.",
+   "whenToUseIt": "Check for it once your side is scoring. Until then the walk from HQ is the only way back. The source has not published its stats yet, so it has no page here."
+  },
+  "seeAlso": [
+   "Respawning And HQ"
+  ],
+  "summary": "An armored carrier that doubles as a second place to respawn, on top of your HQ."
+ },
+ {
+  "id": "armor-tier",
+  "term": "Armor Tier",
+  "category": "Combat",
+  "beginner": {
+   "whatItIs": "A number from 1 to 4 describing how well protected a player is. A tier is a matched pair - a helmet and a body armor of the same level - not one slot.",
+   "whyItMatters": "It is one half of the only sum that decides how much damage a hit does. The other half is the ammo type. The weapon that fired the shot does not enter into it.",
+   "whenToUseIt": "Guess the other side's tier before you pick ammo. Guessing high and being wrong costs you money; guessing low and being wrong costs you the fight."
+  },
+  "seeAlso": [
+   "Armor And Damage Reduction"
+  ],
+  "summary": "A number from 1 to 4 describing how well protected a player is. A tier is a matched pair - a helmet and a body armor of the same level - not one slot."
+ },
+ {
+  "id": "bleedout",
+  "term": "Bleedout",
+  "category": "Combat",
+  "beginner": {
+   "whatItIs": "The timer that runs while you are down but not yet dead. When it ends, or when you choose to give up, you go back to HQ.",
+   "whyItMatters": "It is the whole window in which a teammate can save your kit. Giving up early throws that window away, and everything you were carrying with it.",
+   "whenToUseIt": "Wait it out whenever anyone friendly is close enough to reach you. The source describes it as long but does not publish the number of seconds."
+  },
+  "seeAlso": [
+   "Medical And Revives"
+  ],
+  "summary": "The timer that runs while you are down but not yet dead. When it ends, or when you choose to give up, you go back to HQ."
+ },
+ {
+  "id": "build-radius",
+  "term": "Build Radius",
+  "category": "Team",
+  "beginner": {
+   "whatItIs": "The circle around a placed Forward Operating Base inside which your team is allowed to build anything at all. It is drawn on the minimap once the base is down.",
+   "whyItMatters": "It means the position of one dropped item decides where the whole team can and cannot fortify for the rest of the match.",
+   "whenToUseIt": "Think about it before the base goes down, not after. Ground you cannot build on is ground you can only stand on."
+  },
+  "seeAlso": [
+   "Building System"
+  ],
+  "summary": "The circle around a placed Forward Operating Base inside which your team is allowed to build anything at all. It is drawn on the minimap once the base is down."
+ },
+ {
+  "id": "caliber",
+  "term": "Caliber",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "The size of round a weapon is built around, written like 5.56x45mm or .308 Win.",
+   "whyItMatters": "It is the thread that ties a weapon to everything else you buy for it: which ammo you load, which upgrade of that ammo you have unlocked, and which magazines will physically fit.",
+   "whenToUseIt": "Check it before you buy a second weapon. Two guns sharing a caliber share your ammo unlocks, which is money you do not have to spend twice."
+  },
+  "seeAlso": [
+   "How Ammo Works"
+  ],
+  "summary": "The size of round a weapon is built around, written like 5.56x45mm or .308 Win."
+ },
+ {
+  "id": "cycle",
+  "term": "Cycle",
+  "category": "Match",
+  "beginner": {
+   "whatItIs": "The heartbeat of a match. Roughly every ten to fifteen seconds the game looks at who is standing in the Control Zone, hands one point to whichever side has the most people there, and pays that side cash.",
+   "whyItMatters": "It is why presence beats aggression here. A player standing still inside the circle earns points and money; a player winning a gunfight two hundred metres outside it earns neither.",
+   "whenToUseIt": "Count in cycles when you are deciding whether a detour is worth it. Every one you spend outside the circle is a point your side did not bank."
+  },
+  "seeAlso": [
+   "Control Zone"
+  ],
+  "summary": "The heartbeat of a match. Roughly every ten to fifteen seconds the game looks at who is standing in the Control Zone, hands one point to whichever side has the most people there, and pays that side cash."
+ },
+ {
+  "id": "damage-reduction",
+  "term": "Damage Reduction",
+  "category": "Combat",
+  "beginner": {
+   "whatItIs": "The word the gear pages use for how much punishment a helmet or a body armor takes off a hit. It is graded Low, Medium, High and Very High rather than given as a number.",
+   "whyItMatters": "Only helmets and armor carry it. Vests and backpacks have none at all, which surprises most new players, because a vest looks like protection and is not.",
+   "whenToUseIt": "Read the grade next to the weight. Each step up the ladder costs disproportionately more kilograms than the last one did."
+  },
+  "seeAlso": [
+   "How Gear Protects You"
+  ],
+  "summary": "The word the gear pages use for how much punishment a helmet or a body armor takes off a hit. It is graded Low, Medium, High and Very High rather than given as a number."
+ },
+ {
+  "id": "deployable",
+  "term": "Deployable",
+  "category": "Team",
+  "beginner": {
+   "whatItIs": "An item you put on the ground and leave there, rather than carry and use. The Forward Operating Base and its supply stockpiles are the ones in this game.",
+   "whyItMatters": "Once it is down it belongs to everyone on your side. That is what separates a deployable from a grenade: you are spending your slot on something the team uses, not something you use.",
+   "whenToUseIt": "Carry one when you are the person willing to spend a slot on the team rather than on yourself."
+  },
+  "seeAlso": [
+   "Forward Operating Bases"
+  ],
+  "summary": "An item you put on the ground and leave there, rather than carry and use. The Forward Operating Base and its supply stockpiles are the ones in this game."
+ },
+ {
+  "id": "downed",
+  "term": "Downed",
+  "category": "Combat",
+  "beginner": {
+   "whatItIs": "The state between being hit hard enough to stop fighting and actually dying. You are on the floor, you cannot shoot, and your bleedout timer is running.",
+   "whyItMatters": "Downed is not dead. A downed player who gets picked back up keeps everything they were carrying, so a fight is not over the moment someone drops.",
+   "whenToUseIt": "Treat a downed enemy as unfinished business and a downed teammate as the most valuable thing on the field for the next few seconds."
+  },
+  "seeAlso": [
+   "Medical And Revives"
+  ],
+  "summary": "The state between being hit hard enough to stop fighting and actually dying. You are on the floor, you cannot shoot, and your bleedout timer is running."
+ },
+ {
+  "id": "equip-price",
+  "term": "Equip Price",
+  "category": "Money",
+  "beginner": {
+   "whatItIs": "What an item costs to put in your loadout for one match. You pay it again the next time you want the same thing.",
+   "whyItMatters": "This is the number that actually drains your bank, because you pay it over and over. It is the reason a free weapon stays useful long after you can afford better ones.",
+   "whenToUseIt": "Compare it against what you expect to earn in a match. Kit you cannot replace twice is kit you cannot afford to lose once."
+  },
+  "seeAlso": [
+   "Money"
+  ],
+  "summary": "What an item costs to put in your loadout for one match. You pay it again the next time you want the same thing."
+ },
+ {
+  "id": "equipment-weight-class",
+  "term": "Equipment Weight Class",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "A banding the game reads off the total weight of everything you are carrying. Every item lists its weight in kilograms and they add up into it.",
+   "whyItMatters": "It is the hidden cost of good gear. The heaviest armor and the heaviest medical bag both buy you real capability and both push you up this scale.",
+   "whenToUseIt": "Add the kilograms up before you deploy in something heavy. The source confirms one item lowers your class - the Adrenaline Pen - but has not published where the bands actually sit."
+  },
+  "seeAlso": [
+   "Adrenaline Pen"
+  ],
+  "summary": "A banding the game reads off the total weight of everything you are carrying. Every item lists its weight in kilograms and they add up into it."
+ },
+ {
+  "id": "faction",
+  "term": "Faction",
+  "category": "Match",
+  "beginner": {
+   "whatItIs": "One of the three sides in a match. A full match is about a hundred players split roughly thirty-three each between Lonestar, Valkyra and Manticore.",
+   "whyItMatters": "Three sides instead of two changes the arithmetic of every fight. You can lose a firefight and still gain ground, because the side you were losing to is now short of people somewhere else.",
+   "whenToUseIt": "Remember it when the circle looks quiet. There is always a third group who also wants it."
+  },
+  "seeAlso": [
+   "Control Zone"
+  ],
+  "summary": "One of the three sides in a match. A full match is about a hundred players split roughly thirty-three each between Lonestar, Valkyra and Manticore."
+ },
+ {
+  "id": "fire-mode",
+  "term": "Fire Mode",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "How a weapon behaves when you hold the trigger. The roster uses six labels: semi auto, burst fire, full auto, double action, break-action and bolt-action.",
+   "whyItMatters": "It is the fastest read on what a gun is for. Bolt-action means one shot then a delay you cannot shorten; full auto means the opposite problem, which is running dry.",
+   "whenToUseIt": "Check it on any weapon you have not fired before, especially a marksman rifle - several of them are semi auto and several are not."
+  },
+  "seeAlso": [
+   "Bushmaster M17s"
+  ],
+  "summary": "How a weapon behaves when you hold the trigger. The roster uses six labels: semi auto, burst fire, full auto, double action, break-action and bolt-action."
+ },
+ {
+  "id": "fob",
+  "term": "FOB",
+  "category": "Team",
+  "beginner": {
+   "whatItIs": "Short for Forward Operating Base - a structure a player deploys that holds shared stockpiles of build, fuel, ammunition and mechanical supplies.",
+   "whyItMatters": "It belongs to the whole team, not to you. Everyone draws from it and everyone loses it together, which makes where it goes a team decision even though one person places it.",
+   "whenToUseIt": "Use one to stop your side walking back across the map. It never gives you a respawn, so do not treat it as a spawn point."
+  },
+  "seeAlso": [
+   "Forward Operating Base (FOB)"
+  ],
+  "summary": "Short for Forward Operating Base - a structure a player deploys that holds shared stockpiles of build, fuel, ammunition and mechanical supplies."
+ },
+ {
+  "id": "foregrip",
+  "term": "Foregrip",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "A handle that fits under the front of a weapon and changes how it handles. The source names five of them and publishes no weight for any.",
+   "whyItMatters": "The source publishes no per-match price for a single foregrip, and only two of the five carry a one-time unlock at all - 1,100 dollars on the CQR Tactical Front Rail Grip and 12,500 on the Mini Angled Foregrip - so what a foregrip costs you is mostly unpublished.",
+   "whenToUseIt": "Fit one once you have settled on a weapon you keep buying back, rather than on the gun you are about to replace."
+  },
+  "seeAlso": [
+   "RK6 Tactical Foregrip"
+  ],
+  "summary": "A handle that fits under the front of a weapon and changes how it handles. The source names five of them and publishes no weight for any."
+ },
+ {
+  "id": "grid-slots",
+  "term": "Grid Slots",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "How backpack space is measured. A pack is described as a grid, and the number of squares in it is the number of slots you get - a three by two pack is six.",
+   "whyItMatters": "Slots are what you carry spare ammo, medical items and anything you pick up in. Running out of them is what sends you back to HQ early.",
+   "whenToUseIt": "Compare packs on this number first. The three largest all stop at twenty-four, so above that point you are paying for something other than space."
+  },
+  "seeAlso": [
+   "How Gear Protects You"
+  ],
+  "summary": "How backpack space is measured. A pack is described as a grid, and the number of squares in it is the number of slots you get - a three by two pack is six."
+ },
+ {
+  "id": "hammer",
+  "term": "Hammer",
+  "category": "Team",
+  "beginner": {
+   "whatItIs": "The build tool, in three sizes. It is what you hit a structure with to raise it and to upgrade it.",
+   "whyItMatters": "Size is a gate, not a speed difference. The heavy structures - the sturdiest walls, anti-air emplacements, mortars - can only be built with the largest one, no matter how much supply the base is sitting on.",
+   "whenToUseIt": "Bring the large one if you intend to be the person who fortifies. Bringing a small one to that job wastes the whole trip."
+  },
+  "seeAlso": [
+   "Building System"
+  ],
+  "summary": "The build tool, in three sizes. It is what you hit a structure with to raise it and to upgrade it."
+ },
+ {
+  "id": "hot-zone",
+  "term": "Hot Zone",
+  "category": "Match",
+  "beginner": {
+   "whatItIs": "A smaller circle inside the fight where each player standing in it is counted twice toward the score.",
+   "whyItMatters": "It is how a side that is outnumbered can still out-score one that is not, so it concentrates the heaviest fighting into a small piece of ground.",
+   "whenToUseIt": "Push into it when your side is losing the count and you have people with you. Alone it is mostly a way to donate a kill."
+  },
+  "seeAlso": [
+   "Drills"
+  ],
+  "summary": "A smaller circle inside the fight where each player standing in it is counted twice toward the score."
+ },
+ {
+  "id": "hq",
+  "term": "HQ",
+  "category": "Match",
+  "beginner": {
+   "whatItIs": "Your faction's home base. It is where you come back when you die and where every vendor stands.",
+   "whyItMatters": "Everything you buy, you buy here, which means every death costs you the walk back as well as the kit. It is the reason a base placed forward is worth so much.",
+   "whenToUseIt": "Plan around the distance. Deciding to give up and return is sometimes right, but it is always a decision, not a formality."
+  },
+  "seeAlso": [
+   "Respawning And HQ"
+  ],
+  "summary": "Your faction's home base. It is where you come back when you die and where every vendor stands."
+ },
+ {
+  "id": "kit",
+  "term": "Kit",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "Everything you are carrying when you deploy - weapon, armor, pack, ammunition, consumables.",
+   "whyItMatters": "You bought all of it, and dying is how you lose it. That is what makes this a game about what you can afford to risk rather than what you own.",
+   "whenToUseIt": "Decide what your kit is worth before you take a fight you do not have to take."
+  },
+  "seeAlso": [
+   "Death Penalties"
+  ],
+  "summary": "Everything you are carrying when you deploy - weapon, armor, pack, ammunition, consumables."
+ },
+ {
+  "id": "loadout",
+  "term": "Loadout",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "The specific set of things you have equipped for one deployment: which weapon, which helmet and armor, which vest and pack, and what is in your quick slots.",
+   "whyItMatters": "It is where all the game's separate systems finally meet - weight, money, level gates and slots all resolve into one list of things you are actually carrying.",
+   "whenToUseIt": "Build it around what you plan to do in the next twenty minutes, not around the best of everything you own."
+  },
+  "seeAlso": [
+   "How Gear Protects You"
+  ],
+  "summary": "The specific set of things you have equipped for one deployment: which weapon, which helmet and armor, which vest and pack, and what is in your quick slots."
+ },
+ {
+  "id": "magazine",
+  "term": "Magazine",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "The container the rounds sit in. Most of the attachments in this game are magazines - well over half of them.",
+   "whyItMatters": "A magazine is bought for one named weapon, not for a caliber, so it does not carry across when you change guns. The bigger ones also carry a level gate and a cash cost of their own.",
+   "whenToUseIt": "Buy one only for a weapon you have decided to keep. It is the attachment most often wasted on a gun someone was still trying out."
+  },
+  "seeAlso": [
+   "STANAG 60 RND Magazine"
+  ],
+  "summary": "The container the rounds sit in. Most of the attachments in this game are magazines - well over half of them."
+ },
+ {
+  "id": "muzzle-device",
+  "term": "Muzzle Device",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "Anything that fits on the end of the barrel. There are three in the game, and all three are brakes.",
+   "whyItMatters": "It is the smallest attachment category by a wide margin, so there is very little to decide here compared with optics or magazines.",
+   "whenToUseIt": "Leave it until last. Nothing in this category is a gate on anything else you want to do."
+  },
+  "seeAlso": [
+   "Tread Brake"
+  ],
+  "summary": "Anything that fits on the end of the barrel. There are three in the game, and all three are brakes."
+ },
+ {
+  "id": "optic",
+  "term": "Optic",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "The sight you mount on top of a weapon. Sixteen of them exist, each listed with a magnification, a zeroing range and what it does to your aim-down-sights speed.",
+   "whyItMatters": "It is the attachment that changes how a weapon feels more than any other, and the one most likely to make a good gun worse if you pick the wrong one.",
+   "whenToUseIt": "Match it to the ground you fight on rather than to the weapon. Open farmland and a factory interior want opposite answers from the same rifle."
+  },
+  "seeAlso": [
+   "Holographic Sight"
+  ],
+  "summary": "The sight you mount on top of a weapon. Sixteen of them exist, each listed with a magnification, a zeroing range and what it does to your aim-down-sights speed."
+ },
+ {
+  "id": "prism-scope",
+  "term": "Prism Scope",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "A magnified sight with its aiming mark etched into the glass. The ones here run from about one and a half times up to four times magnification.",
+   "whyItMatters": "It is the middle of the sight range - more reach than a red dot, far less commitment than a sniper scope - and it is where most of this game's optics actually sit.",
+   "whenToUseIt": "Reach for one when your fights are happening across a field rather than across a room, but you still expect to be rushed."
+  },
+  "seeAlso": [
+   "Tricon 1.5x Compact Prism Scope"
+  ],
+  "summary": "A magnified sight with its aiming mark etched into the glass. The ones here run from about one and a half times up to four times magnification."
+ },
+ {
+  "id": "progression-reset",
+  "term": "Progression Reset",
+  "category": "Progression",
+  "beginner": {
+   "whatItIs": "A scheduled wipe tied to the game's major update cycles. When one closes, your WARDOG Level drops to zero and your bank balance goes with it.",
+   "whyItMatters": "It means the things you unlock are rented, not owned, and it is announced ahead of time rather than sprung on you. Whatever cash you have not spent when it lands is converted into a separate cosmetic currency instead of vanishing.",
+   "whenToUseIt": "Spend down toward the announced date. Hoarding costs you nothing and gains you nothing, so there is no reason not to be carrying the kit you wanted."
+  },
+  "seeAlso": [
+   "Gold Bars"
+  ],
+  "summary": "A scheduled wipe tied to the game's major update cycles. When one closes, your WARDOG Level drops to zero and your bank balance goes with it."
+ },
+ {
+  "id": "proximity-chat",
+  "term": "Proximity Chat",
+  "category": "Team",
+  "beginner": {
+   "whatItIs": "Voice that carries by distance rather than by team. It runs alongside the squad channel rather than replacing it.",
+   "whyItMatters": "It is the one channel that is not filtered by who you are playing with, which makes it the channel to be careful on.",
+   "whenToUseIt": "Use it to talk to friendly players who are not in your squad. The source names the feature but does not spell out how far it reaches or exactly who can hear you."
+  },
+  "seeAlso": [
+   "Squads"
+  ],
+  "summary": "Voice that carries by distance rather than by team. It runs alongside the squad channel rather than replacing it."
+ },
+ {
+  "id": "quick-slot",
+  "term": "Quick Slot",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "The small inventory slots you can reach mid-fight without opening your bag - grenades, bandages, revive tools.",
+   "whyItMatters": "Anything not in one is effectively not with you when it matters, and your tac vest is what decides how many you get.",
+   "whenToUseIt": "Decide what goes in them before you deploy, not when someone is bleeding out."
+  },
+  "seeAlso": [
+   "How Gear Protects You"
+  ],
+  "summary": "The small inventory slots you can reach mid-fight without opening your bag - grenades, bandages, revive tools."
+ },
+ {
+  "id": "reflex-sight",
+  "term": "Reflex Sight",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "A sight that projects a glowing dot onto a piece of glass, with little or no magnification. Red dots and holographic sights belong to this family.",
+   "whyItMatters": "It is the family that generally helps rather than hurts how fast you can get on target, which is why it suits close ground.",
+   "whenToUseIt": "Put one on anything you expect to fire inside a building, and on any weapon you are still learning."
+  },
+  "seeAlso": [
+   "Compact T-2 Red Dot"
+  ],
+  "summary": "A sight that projects a glowing dot onto a piece of glass, with little or no magnification. Red dots and holographic sights belong to this family."
+ },
+ {
+  "id": "reticle",
+  "term": "Reticle",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "The mark you see inside a sight and place on the target - a dot, a chevron, a cross, a ring.",
+   "whyItMatters": "Several optics here are named after theirs, and one of them offers four to choose between, so the word turns up in the shop before anyone explains it.",
+   "whenToUseIt": "It is a preference, not a stat. Pick whichever you can find quickly against a dark treeline."
+  },
+  "seeAlso": [
+   "Four Reticle Reflex"
+  ],
+  "summary": "The mark you see inside a sight and place on the target - a dot, a chevron, a cross, a ring."
+ },
+ {
+  "id": "revive",
+  "term": "Revive",
+  "category": "Team",
+  "beginner": {
+   "whatItIs": "Picking a downed teammate back up before their bleedout timer runs out, using a resuscitator or a defibrillator.",
+   "whyItMatters": "It saves a player's whole kit and keeps a body in the circle, which is worth more than the kill that put them down. The game pays for it in both experience and cash.",
+   "whenToUseIt": "Every class spawns with one free revive tool per life, so you can always do this. Do it after the shooting stops, not during it."
+  },
+  "seeAlso": [
+   "Medical And Revives"
+  ],
+  "summary": "Picking a downed teammate back up before their bleedout timer runs out, using a resuscitator or a defibrillator."
+ },
+ {
+  "id": "scoring-faction",
+  "term": "Scoring Faction",
+  "category": "Match",
+  "beginner": {
+   "whatItIs": "The label for whichever of the three sides is winning the head count in the Control Zone when a cycle ticks. Being ahead on bodies is the whole test, and it wins that tick's point and that tick's cash.",
+   "whyItMatters": "Only one side scores per cycle and it is decided by a head count, so the game rewards being present in numbers over being individually good.",
+   "whenToUseIt": "Ask which side is scoring rather than which side is winning fights. First to a hundred points ends the match."
+  },
+  "seeAlso": [
+   "Winning A Match"
+  ],
+  "summary": "The label for whichever of the three sides is winning the head count in the Control Zone when a cycle ticks. Being ahead on bodies is the whole test, and it wins that tick's point and that tick's cash."
+ },
+ {
+  "id": "sling-slot",
+  "term": "Sling Slot",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "A slot on a backpack that carries an extra weapon rather than extra cargo.",
+   "whyItMatters": "It is what separates the largest packs from each other, because they all cap at the same amount of ordinary storage. Paying more buys guns you can carry, not room.",
+   "whenToUseIt": "Care about it only if you actually want a second or third weapon on you. If you do not, the cheaper pack of the same size is the same pack."
+  },
+  "seeAlso": [
+   "How Gear Protects You"
+  ],
+  "summary": "A slot on a backpack that carries an extra weapon rather than extra cargo."
+ },
+ {
+  "id": "specialization",
+  "term": "Specialization",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "The loadout slot that holds class-locked kit: a rocket launcher, a build hammer, a spotting optic, a repair tool, the defibrillator, or one of the three shared equipment items. Nothing you would call an ordinary gun or an ordinary piece of armour goes in it.",
+   "whyItMatters": "Each of these items is tied to a class and built for exactly one job, so what you put here is effectively you telling the team what you intend to do this match.",
+   "whenToUseIt": "Fill it deliberately. An anti-vehicle launcher in a match with no vehicles is several kilograms of nothing."
+  },
+  "seeAlso": [
+   "Specializations"
+  ],
+  "summary": "The loadout slot that holds class-locked kit: a rocket launcher, a build hammer, a spotting optic, a repair tool, the defibrillator, or one of the three shared equipment items. Nothing you would call an ordinary gun or an ordinary piece of armour goes in it."
+ },
+ {
+  "id": "spot-assist",
+  "term": "Spot Assist",
+  "category": "Team",
+  "beginner": {
+   "whatItIs": "The credit you get when a teammate kills something you had marked for them.",
+   "whyItMatters": "It pays you for a fight you never entered, which is the safest income in the game and the only thing that feeds the Recon track.",
+   "whenToUseIt": "Mark everything you see, especially when you are outgunned. The source has not confirmed how much it pays yet."
+  },
+  "seeAlso": [
+   "Recon"
+  ],
+  "summary": "The credit you get when a teammate kills something you had marked for them."
+ },
+ {
+  "id": "squad-radio",
+  "term": "Squad Radio",
+  "category": "Team",
+  "beginner": {
+   "whatItIs": "The voice channel your squad shares, no matter how far apart you are on the map.",
+   "whyItMatters": "Squads have no size cap here, so this can be the channel a very large group coordinates on - which is how one side ends up in the circle in numbers and another does not.",
+   "whenToUseIt": "Get on it before the match rather than during it. Calling a rotation is worth more than calling a kill."
+  },
+  "seeAlso": [
+   "Squads"
+  ],
+  "summary": "The voice channel your squad shares, no matter how far apart you are on the map."
+ },
+ {
+  "id": "supply-crate",
+  "term": "Supply Crate",
+  "category": "Team",
+  "beginner": {
+   "whatItIs": "A container of supplies delivered into the field, either bought and hauled out or dropped from a helicopter. The larger air-dropped version is called a pallet.",
+   "whyItMatters": "It is how a team fights without walking home, and dropping one into the contested circle is the single highest-paying action the source has confirmed for any class.",
+   "whenToUseIt": "Ask for one when your side is holding ground and running low, rather than waiting until people start leaving to resupply."
+  },
+  "seeAlso": [
+   "Pilot"
+  ],
+  "summary": "A container of supplies delivered into the field, either bought and hauled out or dropped from a helicopter. The larger air-dropped version is called a pallet."
+ },
+ {
+  "id": "supply-stockpile",
+  "term": "Supply Stockpile",
+  "category": "Team",
+  "beginner": {
+   "whatItIs": "The four separate pools a Forward Operating Base holds - build, fuel, ammunition and mechanical - each with its own ceiling of twenty thousand.",
+   "whyItMatters": "They are what everything at the base actually spends. Walls come out of the build pool, refuelling comes out of the fuel pool, and an empty pool stops that job dead however much of the others you have.",
+   "whenToUseIt": "Top up the one you are about to need. Buying units into a stockpile is cheap, and it is the fix for a base that looks stocked and is not."
+  },
+  "seeAlso": [
+   "Forward Operating Bases"
+  ],
+  "summary": "The four separate pools a Forward Operating Base holds - build, fuel, ammunition and mechanical - each with its own ceiling of twenty thousand."
+ },
+ {
+  "id": "tac-vest",
+  "term": "Tac Vest",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "The chest rig that sits under your armor. It comes in three sizes and it stops no bullets at all.",
+   "whyItMatters": "It is the most misread piece of gear in the game. What it buys is quick slots plus faster reloads and weapon swaps - handling, not survival.",
+   "whenToUseIt": "Upgrade it when you keep running out of quick slots, not when you keep dying."
+  },
+  "seeAlso": [
+   "How Gear Protects You"
+  ],
+  "summary": "The chest rig that sits under your armor. It comes in three sizes and it stops no bullets at all."
+ },
+ {
+  "id": "tactical-sprint",
+  "term": "Tactical Sprint",
+  "category": "Combat",
+  "beginner": {
+   "whatItIs": "The faster run you can break into for short stretches, above your ordinary sprint.",
+   "whyItMatters": "It is normally something you spend and have to get back, which is what makes an item that removes the limit worth carrying at all.",
+   "whenToUseIt": "Spend it crossing open ground you have already decided to cross. The Adrenaline Pen is sold on giving it to you without the limit, and heals nothing."
+  },
+  "seeAlso": [
+   "Adrenaline Pen"
+  ],
+  "summary": "The faster run you can break into for short stretches, above your ordinary sprint."
+ },
+ {
+  "id": "team-kill",
+  "term": "Team Kill",
+  "category": "Money",
+  "beginner": {
+   "whatItIs": "Killing someone on your own faction. Assisting in one counts too.",
+   "whyItMatters": "The game takes money off you for it, and the source ranks it as the worst of all the penalties - above wrecking friendly structures or supplies.",
+   "whenToUseIt": "Identify before you fire, especially near your own base where friendly players are thickest. The exact amount it costs has not been confirmed."
+  },
+  "seeAlso": [
+   "Death Penalties"
+  ],
+  "summary": "Killing someone on your own faction. Assisting in one counts too."
+ },
+ {
+  "id": "unlock-price",
+  "term": "Unlock Price",
+  "category": "Money",
+  "beginner": {
+   "whatItIs": "A one-off cash payment that makes an item available to you for good. It is separate from, and on top of, the price you pay to equip that item each match.",
+   "whyItMatters": "Reaching the required level does not hand you anything - it only lets you pay. Two gates, one made of levels and one of money, stand in front of most of the good gear.",
+   "whenToUseIt": "Budget for both numbers before you commit. An item you unlocked but cannot afford to equip is money you have parked, not spent."
+  },
+  "seeAlso": [
+   "WARDOG Level And Unlocks"
+  ],
+  "summary": "A one-off cash payment that makes an item available to you for good. It is separate from, and on top of, the price you pay to equip that item each match."
+ },
+ {
+  "id": "vendor",
+  "term": "Vendor",
+  "category": "Money",
+  "beginner": {
+   "whatItIs": "The shops at your HQ. There are separate ones for weapons and for vehicles, and between them they are where every price listed in this wiki gets paid.",
+   "whyItMatters": "Buying is a place, not a menu you can open anywhere, so restocking always means being at HQ and not in the fight.",
+   "whenToUseIt": "Kit yourself fully before you leave. A second trip back costs more time than the thing you forgot is worth."
+  },
+  "seeAlso": [
+   "Respawning And HQ"
+  ],
+  "summary": "The shops at your HQ. There are separate ones for weapons and for vehicles, and between them they are where every price listed in this wiki gets paid."
+ },
+ {
+  "id": "wardog-level",
+  "term": "WARDOG Level",
+  "category": "Progression",
+  "beginner": {
+   "whatItIs": "Your overall account level, added up from the six separate class tracks rather than earned on its own.",
+   "whyItMatters": "Most gear has two gates on it - a price and a level - and the level one cannot be bought past, so this is the clock money does not move.",
+   "whenToUseIt": "Read it when something you want is greyed out. If the block is a level rather than a price, the answer is a different class track, not more cash."
+  },
+  "seeAlso": [
+   "Class XP"
+  ],
+  "summary": "Your overall account level, added up from the six separate class tracks rather than earned on its own."
+ },
+ {
+  "id": "weapon-group",
+  "term": "Weapon Group",
+  "category": "Loadout",
+  "beginner": {
+   "whatItIs": "The line on an attachment telling you what it fits. Usually it names one weapon, sometimes a pair that share parts, and for sights it names a size band instead.",
+   "whyItMatters": "It is the fastest way to find out whether something in the shop is any use to you, and the fastest way to avoid buying a magazine for a gun you do not own.",
+   "whenToUseIt": "Read it first, before the price. Everything else about an attachment is irrelevant if it does not fit."
+  },
+  "seeAlso": [
+   "GGX 33 RND Magazine"
+  ],
+  "summary": "The line on an attachment telling you what it fits. Usually it names one weapon, sometimes a pair that share parts, and for sights it names a size band instead."
+ },
+ {
+  "id": "xp",
+  "term": "XP",
+  "category": "Progression",
+  "beginner": {
+   "whatItIs": "Experience. Actions in a match pay it into one of six class tracks - the one that matches what you were doing when you earned it.",
+   "whyItMatters": "There is no single experience bar. Shooting people raises one track and only one, so a player who only shoots is levelling a sixth of the game.",
+   "whenToUseIt": "Point it deliberately. If you want something gated behind driving, the way there is to drive, not to play more."
+  },
+  "seeAlso": [
+   "Class XP"
+  ],
+  "summary": "Experience. Actions in a match pay it into one of six class tracks - the one that matches what you were doing when you earned it."
+ },
+ {
+  "id": "zeroing",
+  "term": "Zeroing",
+  "category": "Combat",
+  "beginner": {
+   "whatItIs": "The distance a sight is set up to hit at. Some optics here are fixed at one range and others give you a band, such as one hundred to four hundred metres.",
+   "whyItMatters": "A shot lands where the sight is set for, not where the mark is drawn, so a sight zeroed for the wrong distance misses low or high at exactly the range you needed it.",
+   "whenToUseIt": "Check it against the ground you are heading to. A fixed sight is one less thing to get wrong and one less thing you can correct."
+  },
+  "seeAlso": [
+   "Spectr 4x"
+  ],
+  "summary": "The distance a sight is set up to hit at. Some optics here are fixed at one range and others give you a band, such as one hundred to four hundred metres."
+ }
+]

@@ -1,0 +1,13 @@
+Elden Ring cover art (600x900 portrait, 2:3)
+
+Source: official Steam store library capsule image (2x/retina), Elden Ring
+(Steam app id 1245620), Bandai Namco / FromSoftware.
+URL: https://cdn.akamai.steamstatic.com/steam/apps/1245620/library_600x900_2x.jpg
+Fetched: 2026-09-01
+Native resolution: 600x900 (no upscale needed - saved at native size).
+Encoded: WEBP quality=88, method=6, 98230 bytes (under the 120 KB budget).
+
+Same non-commercial fair-use posture as the route's icons/sprites: this is
+official Bandai Namco / FromSoftware promotional key art, used for a personal,
+non-commercial fan project. Not affiliated with Bandai Namco or FromSoftware.
+Takedown requests honoured.

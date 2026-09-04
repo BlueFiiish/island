@@ -1,0 +1,345 @@
+/* Path of Exile 2 Companion - phone-first PWA, no build step
+ *
+ * PORT NOTES (read before editing - these are gates, not style opinions):
+ *  - The fiiiish-app scoper collapses :root / html / body onto the mount node
+ *    and DELETES height / min-height / max-height / overflow / position /
+ *    inset / top / left / right / bottom from them. Nothing below relies on a
+ *    viewport declaration surviving.
+ *  - body declares BOTH `color` and `font-family` explicitly (never a `font:`
+ *    shorthand) so the scope gate sees them land on the bare mount.
+ *  - No transform / filter / backdrop-filter / contain / will-change /
+ *    perspective on any selector that collapses onto the mount, or every
+ *    position:fixed child (tab bar, sheet, save pill) becomes a containing
+ *    block child and breaks.
+ *  - Sheets are measured in dvh with a vh fallback LINE BEFORE IT, use
+ *    overscroll-behavior:contain, and pad with env(safe-area-inset-bottom).
+ *
+ * ROUTE IDENTITY - ONE palette, four files, enforced by a gate.
+ * The palette is NOT this lane's pick. The registry lane staged it first, in
+ * src/styles/themes.css html[data-route='poe2'], sampled from the official
+ * Steam library capsule it had already fetched to public/covers/poe2.webp:
+ * near-black warm ground with a desaturated oxblood red, deliberately darker
+ * and less saturated than dbd's alarm red (#a3212a) so the two blood-coloured
+ * routes do not read as one product, and a sickly corruption green as the
+ * secondary (PoE's own second signature colour - chaos orbs, Vaal corruption)
+ * chosen because gold is already dbd's, clips', hq's and home/smite's.
+ *
+ * This file briefly shipped a second, amethyst palette of its own. That is
+ * exactly the WARDOGS drift assert-theme-parity.mjs was built for, and it is
+ * resolved the same way: the lane holding the drawn 600x900 poster wins.
+ *
+ *   --accent #8a1f22   --accent-hi #b93f3c   --accent-2 #7c8f5e   --bg #0c0908
+ *
+ * These must equal, byte for byte:
+ *   fiiiish-app/app/src/registry.mjs        poe2.accent        (= --accent)
+ *   fiiiish-app/app/src/styles/themes.css   html[data-route='poe2']
+ *   fiiiish-app/app/src/pages/poe2.astro    themeColor         (= --bg)
+ * scripts/assert-theme-parity.mjs is the gate that proves it on every build
+ * (it reads --accent out of the FIRST :root block in this file). It reads
+ * APPS + NESTED_ROUTES only, so while poe2 sits in SOON_ROUTES nothing
+ * enforces the pairing - keep it true by hand until the port lands.
+ */
+:root{
+  --bg:#0c0908; --bg2:#14100e; --panel:#191412; --panel2:#221b18;
+  --line:#2c2320; --line2:#3d312c;
+  --ink:#ece4e0; --dim:#ab9d97; --faint:#7d706b;
+  --accent:#8a1f22; --accent-hi:#b93f3c; --accent-dim:rgba(138,31,34,.16); --accent-line:rgba(138,31,34,.36);
+  --accent-soft:#1e1211; --accent-glow:rgba(138,31,34,.3);
+  --accent-2:#7c8f5e; --accent-2-dim:rgba(124,143,94,.14); --accent-2-line:rgba(124,143,94,.4);
+  --red:#ff6a6a;
+  --shadow:0 8px 30px rgba(0,0,0,.55);
+  --tab-h:60px; --top-h:52px;
+  --safe-b:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:
+    radial-gradient(1100px 560px at 82% -12%, #241211 0%, transparent 60%),
+    radial-gradient(900px 620px at -12% 108%, #181310 0%, transparent 55%),
+    var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,system-ui,sans-serif;
+  font-size:15px;
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block}
+button{font-family:inherit;color:inherit;cursor:pointer}
+a{color:var(--accent-hi)}
+b{color:#fff}
+
+/* ---- top bar (stripped by the shell) ---- */
+#topbar{
+  position:sticky;top:0;z-index:40;height:var(--top-h);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 12px;background:rgba(12,9,8,.94);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:8px;font-size:15px;letter-spacing:.3px;min-width:0}
+.brand span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand b{color:var(--accent)}
+.brand-logo{width:26px;height:26px;flex:none}
+.top-right{display:flex;align-items:center;gap:8px;flex:none}
+.patch-pill{font-size:11px;color:var(--accent-hi);border:1px solid var(--accent-line);border-radius:999px;padding:4px 9px;background:var(--accent-soft);white-space:nowrap}
+
+/* ---- Early Access banner (survives the shell stripping #topbar) ---- */
+.stagebar{max-width:760px;margin:10px auto 0;padding:0 12px}
+.stagebar .pb{
+  display:flex;gap:9px;align-items:flex-start;
+  border:1px solid var(--accent-line);background:var(--accent-soft);border-radius:12px;
+  padding:9px 11px;font-size:12.5px;line-height:1.45;color:#f0cfc9;
+}
+.stagebar .pb .pbi{color:var(--accent);flex:none}
+
+/* ---- layout ---- */
+#app{max-width:760px;margin:0 auto;padding:12px 12px calc(var(--tab-h) + var(--safe-b) + 24px)}
+.view{animation:fade .18s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+h2.vh{font-size:18px;margin:6px 2px 10px;display:flex;align-items:center;gap:8px}
+h3.sh{font-size:12px;text-transform:uppercase;letter-spacing:.7px;color:var(--faint);margin:18px 2px 8px;font-weight:600}
+.lead{font-size:12.5px;color:var(--dim);margin:-4px 2px 12px;line-height:1.5}
+.muted{color:var(--dim)}
+.faint{color:var(--faint)}
+.small{font-size:12.5px}
+.mt8{margin-top:8px}
+.mb10{margin-bottom:10px}
+
+/* ---- search (present on EVERY tab) ---- */
+.search-wrap{position:relative;margin:2px 0 12px}
+.search{
+  width:100%;padding:13px 40px 13px 38px;border-radius:13px;
+  background:var(--panel);border:1px solid var(--line2);color:var(--ink);font-size:16px;
+}
+.search:focus{outline:none;border-color:var(--accent)}
+.search-ic{position:absolute;left:13px;top:14px;color:var(--faint);font-size:14px}
+.search-clear{position:absolute;right:6px;top:8px;background:none;border:0;color:var(--faint);font-size:18px;padding:6px 9px}
+.suggest{position:absolute;z-index:30;left:0;right:0;top:calc(100% + 6px);background:var(--panel2);border:1px solid var(--line2);border-radius:12px;box-shadow:var(--shadow);overflow:hidden;max-height:58vh;max-height:58dvh;overflow-y:auto;overscroll-behavior:contain}
+.sug-row{display:flex;align-items:center;gap:10px;padding:9px 11px;border-bottom:1px solid var(--line);width:100%;background:none;border-left:0;border-right:0;border-top:0;text-align:left}
+.sug-row:last-child{border-bottom:0}
+.sug-row:active{background:var(--panel)}
+.sug-row .nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px}
+.sug-row .tg{font-size:10px;color:var(--faint);flex:none}
+.sug-empty{padding:12px;color:var(--dim);font-size:13px}
+
+/* ---- icons ---- */
+.spr{object-fit:contain;flex:none;background:transparent}
+.spr.s28{width:28px;height:28px}
+.spr.s44{width:44px;height:44px}
+.spr.s64{width:64px;height:64px}
+.spr.s88{width:88px;height:88px}
+.spr-wrap{display:inline-flex;align-items:center;justify-content:center;background:rgba(0,0,0,.3);border:1px solid var(--line);border-radius:10px;padding:3px;flex:none;position:relative}
+.spr-wrap.miss::after{content:"?";position:absolute;color:var(--faint);font-weight:700}
+.spr-wrap.ph{border-style:dashed;border-color:var(--line2)}
+
+/* ---- cards / chips ---- */
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:12px}
+.card.tight{padding:10px}
+.card h4{margin:0 0 6px;font-size:15px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;padding:3px 8px;border-radius:999px;border:1px solid var(--line2);background:var(--panel2);color:var(--dim);white-space:nowrap}
+.chip.lvl{color:var(--accent-hi);border-color:var(--accent-line);background:var(--accent-soft)}
+.chip.tier{color:#a7bb84;border-color:var(--accent-2-line);background:var(--accent-2-dim)}
+.chip.warn{color:#ffb0aa;border-color:var(--accent-2-line);background:var(--accent-2-dim)}
+.chip.str{color:#e8836a;border-color:#5d3226;background:#2b1a13}
+.chip.dex{color:#8ce6a8;border-color:#25603a;background:#11291c}
+.chip.int{color:#93bcf2;border-color:#2b4674;background:#121d2f}
+.row{display:flex;align-items:center;gap:10px}
+.row.top{align-items:flex-start}
+.wrap{flex-wrap:wrap}
+.g6{gap:6px}.g8{gap:8px}
+.spacer{flex:1}
+
+/* ---- filter chip rows ---- */
+.chiprow{display:flex;gap:7px;overflow-x:auto;padding:2px 0 10px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.chiprow::-webkit-scrollbar{display:none}
+.fbtn{flex:none;background:var(--panel);border:1px solid var(--line2);border-radius:999px;padding:7px 12px;font-size:12.5px;color:var(--dim);white-space:nowrap}
+.fbtn.on{background:var(--accent);border-color:var(--accent);color:#0c0908;font-weight:600}
+
+/* ---- entity grid ---- */
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:560px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.gcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px;display:flex;flex-direction:column;gap:6px;text-align:left;width:100%}
+.gcard:active{background:var(--panel2)}
+.gcard .gi{display:flex;align-items:center;justify-content:center;height:78px;background:rgba(0,0,0,.24);border-radius:10px;border:1px solid var(--line)}
+.gcard .gn{display:block;font-size:13.5px;line-height:1.25;font-weight:600}
+.gcard .gm{display:block;font-size:11px;color:var(--faint)}
+.gcard .gc{display:flex;gap:5px;flex-wrap:wrap}
+
+/* ---- entity rows ---- */
+.rowcard{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:9px 10px;margin-bottom:8px;width:100%;text-align:left}
+.rowcard:active{background:var(--panel2)}
+.rowcard .rn{display:block;font-size:14px;font-weight:600;line-height:1.25}
+.rowcard .rm{font-size:11.5px;color:var(--faint);margin-top:2px;display:-webkit-box;display:box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;max-height:2.8em}
+.rowcard .rb{min-width:0;flex:1}
+.rowcard .rc{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex:none}
+
+/* ---- beginner sections (the product bar) ---- */
+.beg{margin:14px 0 4px}
+.beg .bh{font-size:11px;text-transform:uppercase;letter-spacing:.7px;color:var(--accent);font-weight:700;margin:0 0 4px}
+.beg .bp{margin:0 0 12px;font-size:14px;line-height:1.55;color:var(--ink)}
+.beg .bp:last-child{margin-bottom:0}
+.beg-missing{border:1px dashed var(--line2);border-radius:11px;padding:10px 11px;color:var(--dim);font-size:12.5px;line-height:1.5;background:rgba(0,0,0,.18)}
+
+/* ---- stat table ---- */
+.stats{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:6px}
+.st{display:flex;justify-content:space-between;gap:12px;padding:8px 11px;border-bottom:1px solid var(--line);font-size:13px}
+.st:last-child{border-bottom:0}
+.st .k{color:var(--dim);flex:none}
+.st .v{text-align:right;min-width:0;overflow-wrap:anywhere}
+.st:nth-child(odd){background:rgba(0,0,0,.16)}
+
+/* ---- modifier lists (unique items, gems, boss skills) ---- */
+.mods{list-style:none;margin:6px 0 0;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.mods li{padding:7px 11px;font-size:13px;line-height:1.45;border-bottom:1px solid var(--line);color:var(--accent-hi);overflow-wrap:anywhere}
+.mods li:last-child{border-bottom:0}
+.mods li:nth-child(odd){background:rgba(0,0,0,.16)}
+.mods.plain li{color:var(--ink)}
+
+/* ---- attribute bars (classes) ---- */
+.attrs{display:flex;gap:8px;margin-top:8px}
+.attr{flex:1;background:var(--panel2);border:1px solid var(--line);border-radius:11px;padding:8px 9px;text-align:center}
+.attr .an{display:block;font-size:10px;letter-spacing:.6px;text-transform:uppercase;color:var(--faint)}
+.attr .av{display:block;font-size:19px;font-weight:700;margin-top:2px}
+.attr.pri{border-color:var(--accent-line);background:var(--accent-soft)}
+.attr.pri .av{color:var(--accent-hi)}
+
+/* ---- link chips ---- */
+.linkrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.lchip{font-size:11.5px;padding:5px 9px;border-radius:999px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--accent-hi)}
+.lchip:active{background:var(--accent-dim)}
+
+/* ---- step list (Start) ---- */
+.steps{counter-reset:step;padding:0;margin:0;list-style:none}
+.steps li{counter-increment:step;position:relative;padding:0 0 0 34px;margin-bottom:12px}
+.steps li::before{
+  content:counter(step);position:absolute;left:0;top:0;
+  width:24px;height:24px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+  background:var(--accent-soft);border:1px solid var(--accent-line);color:var(--accent-hi);
+  font-size:12px;font-weight:700;
+}
+.steps .sl{display:block;background:none;border:0;padding:0;text-align:left;color:inherit;font-size:14px;font-weight:600;margin-bottom:2px}
+.steps .sd{font-size:13px;color:var(--dim);line-height:1.5}
+.steps .sd .more{background:none;border:0;padding:0;font:inherit;color:var(--accent-hi)}
+
+/* ---- freshness / attribution blocks ---- */
+.fresh{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px;color:var(--dim)}
+.fresh b{color:var(--ink);font-weight:600}
+.srcbox{font-size:12.5px;line-height:1.55;color:var(--dim)}
+.srcbox a{overflow-wrap:anywhere}
+
+/* ---- builds tab shell ---- */
+.ruling{border-left:3px solid var(--accent);padding:8px 0 8px 11px;font-size:13px;color:var(--dim);line-height:1.5;margin:4px 0 12px}
+.mount-slot{border:1px dashed var(--line2);border-radius:13px;padding:16px 13px;text-align:center;color:var(--dim);font-size:13px;line-height:1.55;background:rgba(0,0,0,.16)}
+.lvlctl{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lvlctl input{width:90px;padding:9px 10px;border-radius:10px;background:var(--panel2);border:1px solid var(--line2);color:var(--ink);font-size:16px}
+.lvlctl input:focus{outline:none;border-color:var(--accent)}
+.tbtn{background:var(--panel2);border:1px solid var(--line2);border-radius:10px;padding:8px 12px;font-size:12.5px;color:var(--dim)}
+.tbtn.on{background:var(--accent);border-color:var(--accent);color:#0c0908;font-weight:600}
+.tbtn.danger{color:var(--red);border-color:#5c2a2a}
+.profsel{padding:9px 10px;border-radius:10px;background:var(--panel2);border:1px solid var(--line2);color:var(--ink);font-size:14px;max-width:100%}
+.morebtn{width:100%;background:var(--panel2);border:1px solid var(--line2);border-radius:12px;padding:11px;font-size:13px;color:var(--dim);margin-top:2px}
+
+/* ---- save-state pill ---- */
+.save-pill{
+  position:fixed;left:50%;margin-left:-70px;width:140px;text-align:center;
+  bottom:calc(var(--tab-h) + var(--safe-b) + 12px);z-index:55;
+  background:var(--panel2);border:1px solid var(--line2);border-radius:999px;
+  padding:6px 10px;font-size:11.5px;color:var(--dim);box-shadow:var(--shadow);
+}
+.save-pill[hidden]{display:none}
+.save-pill.ok{color:var(--accent-hi);border-color:var(--accent-line)}
+.save-pill.bad{color:var(--red);border-color:#5c2a2a}
+
+/* ---- footer (stripped by the shell; standalone it must clear the tab bar) ---- */
+#siteFoot{max-width:760px;margin:0 auto;padding:14px 12px calc(var(--tab-h) + var(--safe-b) + 20px);
+  color:var(--faint);font-size:11.5px;line-height:1.5;border-top:1px solid var(--line)}
+#siteFoot p{margin:0}
+
+/* ---- tab bar ---- */
+#tabbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;height:calc(var(--tab-h) + var(--safe-b));
+  padding-bottom:var(--safe-b);
+  display:flex;background:rgba(16,12,11,.97);border-top:1px solid var(--line2);
+}
+.tab{flex:1;background:none;border:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--faint);font-size:10.5px}
+.tab .ic{font-size:19px;line-height:1}
+.tab.on{color:var(--accent)}
+
+/* ---- bottom sheet ----
+   1. dvh, with the vh line FIRST as the fallback: iOS resolves vh against the
+      largest viewport, so a vh-only sheet sits partly off-screen with the URL
+      bar shown.
+   2. overscroll-behavior:contain stops the scroll chaining into the page behind.
+   3. the page behind is scroll-locked in JS while the sheet is open.
+   The sheet is position:fixed, so NOTHING above may put a transform / filter /
+   contain / will-change on a selector that collapses onto the mount. */
+.sheet{position:fixed;inset:0;z-index:60}
+.sheet[hidden]{display:none}
+.sheet-backdrop{position:absolute;inset:0;background:rgba(4,2,2,.78);touch-action:none}
+.sheet-body{
+  position:absolute;left:0;right:0;bottom:0;
+  max-height:88vh;
+  max-height:88dvh;
+  overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+  background:var(--bg2);border-top:1px solid var(--line2);border-radius:18px 18px 0 0;
+  padding:14px 14px calc(22px + var(--safe-b));
+  box-shadow:0 -10px 40px rgba(0,0,0,.6);
+  animation:slideup .22s cubic-bezier(.2,.8,.2,1);
+  margin:0 auto;max-width:760px;
+}
+@keyframes slideup{from{opacity:.4}to{opacity:1}}
+.sheet-grab{width:38px;height:4px;border-radius:2px;background:var(--line2);margin:0 auto 12px}
+.sheet h3{margin:0 0 2px;font-size:19px;line-height:1.2}
+.sheet .ssub{font-size:12px;color:var(--faint);margin-bottom:10px}
+.sheet .sec-h{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--faint);margin:16px 0 7px;font-weight:600}
+.sheet-hero{display:flex;gap:12px;align-items:flex-start;margin-bottom:6px}
+.sheet-close{float:right;background:var(--panel2);border:1px solid var(--line2);border-radius:9px;color:var(--dim);font-size:14px;padding:5px 10px;margin-left:8px}
+.ph-note{font-size:11.5px;color:var(--dim);border:1px dashed var(--line2);border-radius:9px;padding:7px 9px;margin-top:8px;line-height:1.45}
+.actrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+
+/* ---- ascendancy cards (nested inside a class sheet) ---- */
+.asc{display:flex;gap:10px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:9px 10px;margin-bottom:8px}
+.asc .an{font-size:14px;font-weight:600;display:block}
+.asc .af{font-size:12px;color:var(--faint);font-style:italic;line-height:1.45;margin-top:3px;display:block}
+.asc .ab{min-width:0;flex:1}
+
+/* ---- loading / error ---- */
+.boot{padding:40px 12px;text-align:center;color:var(--dim);font-size:14px}
+.boot.err{color:#ffb2b2}
+
+/* ---- Builds tab (js/builds.js, tool depth L1) ----
+   Every selector is bld- prefixed so this block can never collide with the
+   shared shell chrome, and it reuses .chip / .card / .beg / .tbtn rather than
+   restating them - one visual language across all five tabs. No transform,
+   filter or backdrop-filter anywhere here: the scoper collapses :root onto the
+   mount node and any of those would make every position:fixed child of the app
+   (tab bar, sheet, save pill) a containing-block child instead. */
+.bld-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.bld-card.ready{border-color:var(--accent-2-line)}
+.bld-head{display:flex;align-items:flex-start;gap:10px;width:100%;text-align:left;background:none;border:0;padding:11px 11px 9px}
+.bld-head:active{background:var(--panel2)}
+.bld-hb{min-width:0;flex:1}
+.bld-hn{display:block;font-size:15px;font-weight:600;line-height:1.25}
+.bld-hs{display:block;font-size:12px;color:var(--faint);line-height:1.45;margin-top:3px}
+.bld-hc{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.bld-caret{flex:none;color:var(--faint);font-size:10px;padding-top:4px}
+.bld-chip{display:inline-flex;align-items:center;font-size:11px;padding:3px 8px;border-radius:999px;border:1px solid var(--line2);background:var(--panel2);color:var(--dim);white-space:nowrap}
+.bld-chip.ok{color:#bcd39a;border-color:var(--accent-2-line);background:var(--accent-2-dim)}
+.bld-chip.warn{color:var(--accent-hi);border-color:var(--accent-line);background:var(--accent-soft)}
+.bld-chip.bad{color:var(--red);border-color:#5c2a2a;background:#1f1211}
+.bld-chip.faintchip{color:var(--faint)}
+.bld-status{font-size:12.5px;line-height:1.5;color:var(--dim);padding:0 11px 11px}
+.bld-card .beg{padding:0 11px;margin:2px 0 6px}
+.bld-gate{font-size:12px;line-height:1.5;color:var(--dim);border-left:3px solid var(--accent-2);margin:0 11px 10px;padding:5px 0 5px 10px}
+.bld-picks{padding:0 11px 4px}
+.bld-pick{display:flex;align-items:flex-start;gap:9px;border-top:1px solid var(--line);padding:10px 0}
+.bld-pick.have{background:rgba(124,143,94,.06)}
+.bld-pick.missing{color:var(--dim)}
+.bld-po{flex:none;background:none;border:0;padding:0}
+.bld-pb{min-width:0;flex:1}
+.bld-pr{display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--faint);font-weight:600}
+.bld-pn{display:block;background:none;border:0;padding:2px 0 0;font-size:14px;font-weight:600;text-align:left;line-height:1.25}
+.bld-pc{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
+.bld-pw{display:block;font-size:12.5px;line-height:1.5;color:var(--dim);margin-top:6px}
+.bld-have{flex:none;align-self:center;background:var(--panel2);border:1px solid var(--line2);border-radius:999px;padding:6px 11px;font-size:11.5px;color:var(--faint);white-space:nowrap}
+.bld-have.on{background:var(--accent-2-dim);border-color:var(--accent-2-line);color:#bcd39a;font-weight:600}

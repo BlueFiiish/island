@@ -1,0 +1,210 @@
+[
+ {
+  "id": "assault",
+  "name": "Assault",
+  "category": "XP Class",
+  "sourceSection": "the-six-classes",
+  "focus": "Fighting",
+  "unlocks": [
+   {
+    "id": "galil",
+    "name": "GALIL",
+    "level": 10,
+    "resolved": true
+   },
+   {
+    "id": "m4",
+    "name": "M4",
+    "level": 20,
+    "resolved": true
+   },
+   {
+    "id": "fal",
+    "name": "FAL",
+    "level": 35,
+    "resolved": true
+   }
+  ],
+  "summary": "XP Class - Fighting.",
+  "sourceUrl": "https://wardogshandbook.com/Classes#the-six-classes",
+  "beginner": {
+   "whatItIs": "The progress track that fills when you kill people with infantry weapons. There is no class to select - shooting someone is what feeds it.",
+   "whyItMatters": "It pays the most per action of any track, and it is the only one where the thing that earns it also loses you your kit when it goes wrong.",
+   "whenToUseIt": "Lean on it when you can afford to die. If you cannot, one of the tracks that pays for helping is a cheaper route to the same overall level."
+  },
+  "icon": "/island/apps/wardogs/./sprites/classes-assault.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "medic",
+  "name": "Medic",
+  "category": "XP Class",
+  "sourceSection": "the-six-classes",
+  "headlineXp": 80,
+  "headlineXpAction": "heal",
+  "unlocks": [
+   {
+    "id": "mp5",
+    "name": "MP5",
+    "level": 15,
+    "resolved": true
+   },
+   {
+    "id": "super-45",
+    "name": "Super-45",
+    "level": 35,
+    "resolved": true
+   }
+  ],
+  "summary": "XP Class - headline XP 80.",
+  "sourceUrl": "https://wardogshandbook.com/Classes#the-six-classes",
+  "beginner": {
+   "whatItIs": "The progress track that fills when you heal and revive teammates.",
+   "whyItMatters": "A basic heal only needs someone injured, not someone down, which makes it the most repeatable source of progress in the game and one you can earn without entering a gunfight.",
+   "whenToUseIt": "Level it when you are new and broke. It earns while your kit stays on your back, which is the opposite of how the combat track works."
+  },
+  "icon": "/island/apps/wardogs/./sprites/classes-medic.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "support",
+  "name": "Support",
+  "category": "XP Class",
+  "sourceSection": "the-six-classes",
+  "focus": "Building & supply",
+  "unlocks": [
+   {
+    "id": "m500",
+    "name": "M500",
+    "level": 10,
+    "resolved": true
+   },
+   {
+    "id": "m249-saw",
+    "name": "M249 SAW",
+    "level": 15,
+    "resolved": true
+   },
+   {
+    "id": "pkm",
+    "name": "PKM",
+    "level": 30,
+    "resolved": true
+   }
+  ],
+  "summary": "XP Class - Building & supply.",
+  "sourceUrl": "https://wardogshandbook.com/Classes#the-six-classes",
+  "beginner": {
+   "whatItIs": "The progress track fed by building, hauling supplies and repairing. Every hammer swing on a structure, every supply crate you buy for the team and every vehicle you patch up feeds this one.",
+   "whyItMatters": "Building pays you three separate times rather than once at the end: a trickle per hammer hit, a bump at each marked point, and a lump when the structure finishes. Buying a supply crate or resupplying a teammate pays a flat amount each time. None of it needs you to win a gunfight.",
+   "whenToUseIt": "Level it when you want unlocks without risking your kit, and when you want the belt-fed guns: the M500 opens at 10, the M249 SAW at 15 and the PKM at 30, and no other track will give you them."
+  },
+  "icon": "/island/apps/wardogs/./sprites/classes-support.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "recon",
+  "name": "Recon",
+  "category": "XP Class",
+  "sourceSection": "the-six-classes",
+  "headlineXpConfirmed": false,
+  "focus": "Spotting for the team",
+  "unlocks": [
+   {
+    "id": "sv98",
+    "name": "SV98",
+    "level": 19,
+    "resolved": true
+   },
+   {
+    "id": "mk22",
+    "name": "MK22",
+    "level": 25,
+    "resolved": true
+   },
+   {
+    "id": "bmr-308",
+    "name": "BMR-308",
+    "level": 30,
+    "resolved": true
+   },
+   {
+    "id": "amr-50",
+    "name": "AMR 50",
+    "level": 35,
+    "resolved": true
+   }
+  ],
+  "summary": "XP Class - Spotting for the team.",
+  "sourceUrl": "https://wardogshandbook.com/Classes#the-six-classes",
+  "beginner": {
+   "whatItIs": "The progress track fed by marking enemies for other people. You get the credit when a teammate kills something you pointed out, which the game calls a Spot Assist.",
+   "whyItMatters": "It is the one track that pays you for a fight you did not take, and it is also the one nobody has measured. The source has not confirmed what a spot is worth in XP or cash, so this is the single class you cannot rank against the other five.",
+   "whenToUseIt": "Run it when you are already sitting somewhere with a view and a squad out in front of you. It gates the long guns - the SV98 at 19, the MK22 at 25, the BMR-308 at 30 and the AMR 50 at 35 - so feed it if you want a rifle that reaches."
+  },
+  "icon": "/island/apps/wardogs/./sprites/classes-recon.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "driver",
+  "name": "Driver",
+  "category": "XP Class",
+  "sourceSection": "the-six-classes",
+  "headlineXp": 50,
+  "headlineXpAction": "delivery",
+  "unlocks": [
+   {
+    "id": "ural",
+    "name": "Ural",
+    "level": 4,
+    "resolved": true
+   },
+   {
+    "id": "l2a6",
+    "name": "L2A6",
+    "level": 35,
+    "resolved": true
+   }
+  ],
+  "summary": "XP Class - headline XP 50.",
+  "sourceUrl": "https://wardogshandbook.com/Classes#the-six-classes",
+  "beginner": {
+   "whatItIs": "The progress track for ground vehicles. Ferrying teammates toward the fighting feeds it, and so does anything you kill while you are still sitting in the vehicle.",
+   "whyItMatters": "Dropping a teammate at the contested area pays once on arrival and again if they are still alive a few seconds later, so one trip can pay you twice. Kills made from inside a ground vehicle are credited here rather than to your fighting track, which is why the tank is the quickest way up this one.",
+   "whenToUseIt": "Take it when the team needs bodies moved and you would rather drive than walk. The truck opens at level 4, so it is cheap to start; the tank sits at 35 and is a long way off."
+  },
+  "icon": "/island/apps/wardogs/./sprites/classes-driver.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pilot",
+  "name": "Pilot",
+  "category": "XP Class",
+  "sourceSection": "the-six-classes",
+  "headlineXp": 750,
+  "headlineXpAction": "pallet",
+  "unlocks": [
+   {
+    "id": "uh-1y",
+    "name": "UH-1Y",
+    "level": 10,
+    "resolved": true
+   }
+  ],
+  "summary": "XP Class - headline XP 750.",
+  "sourceUrl": "https://wardogshandbook.com/Classes#the-six-classes",
+  "beginner": {
+   "whatItIs": "The progress track for helicopters. Flying supplies into the contested area is what feeds it.",
+   "whyItMatters": "Setting one supply pallet down in the zone is worth more XP than any other single confirmed action in the game - roughly nine times what patching up a teammate pays. A smaller crate pays less but still well, and carrying people pays what driving them does.",
+   "whenToUseIt": "Fly it when you want the fastest climb available to somebody who is not shooting anyone, and you can live with a slow start: the first helicopter does not open until level 10."
+  },
+  "icon": "/island/apps/wardogs/./sprites/classes-pilot.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

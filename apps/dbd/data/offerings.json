@@ -1,0 +1,2362 @@
+{
+ "Anniversary2019Offering": {
+  "id": "Anniversary2019Offering",
+  "name": "Gruesome Gateau",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_gruesomeGateau.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_gruesomeGateau.png",
+  "iconFile": "IconFavors_gruesomeGateau.png",
+  "effect": "A terrific stomach-churning cake to mark our three years together. Grants <b>103%</b> bonus Bloodpoints in all categories for all players this trial.",
+  "source": "dbd.tricky.lol"
+ },
+ "Anniversary2020Offering": {
+  "id": "Anniversary2020Offering",
+  "name": "Ghastly Gateau",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ghastlyGateau.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ghastlyGateau.png",
+  "iconFile": "IconFavors_ghastlyGateau.png",
+  "effect": "A spectacularly grim cake to mark our four years together. 1% tastier than a Gruesome Gateau. Grants <b>104%</b> bonus Bloodpoints in all categories for all players this trial.",
+  "source": "dbd.tricky.lol"
+ },
+ "Anniversary2021Offering": {
+  "id": "Anniversary2021Offering",
+  "name": "Sacrificial Cake",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_sacrificialCake.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_sacrificialCake.png",
+  "iconFile": "IconFavors_sacrificialCake.png",
+  "effect": "A revolting cake that marks our five years together. The slightest taste fills you with an incomprehensible energy, reaching out to something beyond. Grants <b>105%</b> bonus Bloodpoints in all categories for all players this trial.",
+  "source": "dbd.tricky.lol"
+ },
+ "Anniversary2022Offering": {
+  "id": "Anniversary2022Offering",
+  "name": "Frightful Flan",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_frightfulFlan.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_frightfulFlan.png",
+  "iconFile": "IconFavors_frightfulFlan.png",
+  "effect": "It may be a masquerade ball, but there is no masking the foul odor of this quivering yellow mass.<br><br>Consuming it, however, fills you with vigor.<br><br>Grants <b>106%</b> bonus Bloodpoints in all categories for all players this trial.",
+  "source": "dbd.tricky.lol"
+ },
+ "Anniversary2023Offering": {
+  "id": "Anniversary2023Offering",
+  "name": "TERRORMISU",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_terrormisu.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_terrormisu.png",
+  "iconFile": "IconFavors_terrormisu.png",
+  "effect": "A celebratory dessert to be eaten during the masquerade. Each layer is more horrifying than the last.<br><br>Grants <b>107%</b> bonus Bloodpoints in all categories for all players this trial.Reveals the aura of an Invitation within <b>32 meter(s).</b>",
+  "source": "dbd.tricky.lol"
+ },
+ "Anniversary2024Offering": {
+  "id": "Anniversary2024Offering",
+  "name": "SCREECH COBBLER",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack",
+   "anniversaryincreasepillarauradistance"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_screechCobbler.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_screechCobbler.png",
+  "iconFile": "IconFavors_screechCobbler.png",
+  "effect": "If you listen really closely, you can almost hear it screaming for more ice cream.<br><br>Grants <b>108%</b> bonus Bloodpoints in all categories for all players this trial.Reveals the aura of Invitation within <b>16 meters.</b>Create <b>1</b> more chest.",
+  "source": "dbd.tricky.lol"
+ },
+ "Anniversary2025Offering": {
+  "id": "Anniversary2025Offering",
+  "name": "Coconut Scream Pie",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconsFavors_9thAnniversary.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconsFavors_9thAnniversary.png",
+  "iconFile": "IconsFavors_9thAnniversary.png",
+  "effect": "A metallic taste overpowers the coconut.Grants <b>109%</b> bonus Bloodpoints in all categories for all players this trial.Reveals the aura of Invitation Pillars within <b>16 meters.</b>",
+  "source": "dbd.tricky.lol"
+ },
+ "Anniversary2026Offering": {
+  "id": "Anniversary2026Offering",
+  "name": "Toothy Torte",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconsFavors_10thAnniversary.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconsFavors_10thAnniversary.png",
+  "iconFile": "IconsFavors_10thAnniversary.png",
+  "effect": "Puts the icing in sacrificing.Grants <b>110%</b> bonus Bloodpoints in all categories for all players this trial.Reveals the aura of Tables within <b>16 meters.</b>Survivors start the Trial with a Morsel in hand, and Killers start with maximum Poison charges.",
+  "source": "dbd.tricky.lol"
+ },
+ "AnnotatedBlueprint": {
+  "id": "AnnotatedBlueprint",
+  "name": "Annotated Blueprint",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "proceduralgeneration",
+  "tags": [
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_annotatedBlueprint.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_annotatedBlueprint.png",
+  "iconFile": "IconFavors_annotatedBlueprint.png",
+  "effect": "<b>Tremendously</b> increases the chance of spawning the Hatch in the Killer Shack, if the map has a Killer Shack.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "ArdentRavenWreath": {
+  "id": "ArdentRavenWreath",
+  "name": "Ardent Raven Wreath",
+  "role": "killer",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ardentRavenWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ardentRavenWreath.png",
+  "iconFile": "IconFavors_ardentRavenWreath.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Deviousness category.",
+  "source": "dbd.tricky.lol"
+ },
+ "ArdentShrikeWreath": {
+  "id": "ArdentShrikeWreath",
+  "name": "Ardent Shrike Wreath",
+  "role": "killer",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ardentShrikeWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ardentShrikeWreath.png",
+  "iconFile": "IconFavors_ardentShrikeWreath.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Sacrifice category.",
+  "source": "dbd.tricky.lol"
+ },
+ "ArdentSpottedowlWreath": {
+  "id": "ArdentSpottedowlWreath",
+  "name": "Ardent Spotted Owl Wreath",
+  "role": "killer",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ardentSpottedOwlWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ardentSpottedOwlWreath.png",
+  "iconFile": "IconFavors_ardentSpottedOwlWreath.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Hunting category.",
+  "source": "dbd.tricky.lol"
+ },
+ "ArdentTanagerWreath": {
+  "id": "ArdentTanagerWreath",
+  "name": "Ardent Tanager Wreath",
+  "role": "killer",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ardentTanagerWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ardentTanagerWreath.png",
+  "iconFile": "IconFavors_ardentTanagerWreath.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Brutality category.",
+  "source": "dbd.tricky.lol"
+ },
+ "AzarovKey": {
+  "id": "AzarovKey",
+  "name": "Azarov's Key",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_azarovsKey.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_azarovsKey.png",
+  "iconFile": "IconFavors_azarovsKey.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to the Autohaven Wreckers when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "BlackSaltStatuette": {
+  "id": "BlackSaltStatuette",
+  "name": "Black Salt Statuette",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "luck",
+  "tags": [
+   "stack",
+   "white"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_blackSaltStatuette.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_blackSaltStatuette.png",
+  "iconFile": "IconFavors_blackSaltStatuette.png",
+  "effect": "Unlocks the ability to attempt to unhook yourself for all Survivors.<br><br>Increases all Survivors' luck by <b>2%</b>.",
+  "source": "dbd.tricky.lol"
+ },
+ "BlackSplinter": {
+  "id": "BlackSplinter",
+  "name": "Black Splinter",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killer",
+  "tags": [
+   "notavailableinpartymode",
+   "black",
+   "mystery",
+   "not_available_for_shape"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_blackSplinter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_blackSplinter.png",
+  "iconFile": "IconFavors_blackSplinter.png",
+  "effect": "Allows you to take on the role of <b>The Shape</b> for the next trial. <i>Your current perks and add-ons will not be used.</i><br><br>Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "BlackWard": {
+  "id": "BlackWard",
+  "name": "Black Ward",
+  "role": "killer",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "protection",
+  "tags": [
+   "personal",
+   "black",
+   "ward",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_blackWard.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_blackWard.png",
+  "iconFile": "IconFavors_blackWard.png",
+  "effect": "Burning this offering grants you protection against the loss of your add-ons at the end of the trial.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "BloodiedBlueprint": {
+  "id": "BloodiedBlueprint",
+  "name": "Bloodied Blueprint",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "proceduralgeneration",
+  "tags": [
+   "personal",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_bloodiedBlueprint.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_bloodiedBlueprint.png",
+  "iconFile": "IconFavors_bloodiedBlueprint.png",
+  "effect": "Reveals the aura of the basement hooks to you for <b>20 seconds</b> at the start of the trial. <b>Tremendously</b> increases the chance of spawning the basement in the Killer Shack, if the map has a Killer Shack.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "BloodyPartyStreamers": {
+  "id": "BloodyPartyStreamers",
+  "name": "Bloody Party Streamers",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_bloodyPartyStreamers.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_bloodyPartyStreamers.png",
+  "iconFile": "IconFavors_bloodyPartyStreamers.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in all categories for all players this trial.",
+  "source": "dbd.tricky.lol"
+ },
+ "BogLaurelSachet": {
+  "id": "BogLaurelSachet",
+  "name": "Bog Laurel Sachet",
+  "role": "survivor",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_bogLaurelSachet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_bogLaurelSachet.png",
+  "iconFile": "IconFavors_bogLaurelSachet.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Objective category.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "BoneSplinter": {
+  "id": "BoneSplinter",
+  "name": "Bone Splinter",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killer",
+  "tags": [
+   "notavailableinpartymode",
+   "black",
+   "mystery",
+   "not_available_for_cannibal"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_boneSplinter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_boneSplinter.png",
+  "iconFile": "IconFavors_boneSplinter.png",
+  "effect": "Allows you to take on the role of <b>The Cannibal</b> for the next trial. <i>Your current perks and add-ons will not be used.</i><br><br>Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "BoundEnvelope": {
+  "id": "BoundEnvelope",
+  "name": "Bound Envelope",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_boundEnvelope.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_boundEnvelope.png",
+  "iconFile": "IconFavors_boundEnvelope.png",
+  "effect": "Grants <b>25%</b> bonus Bloodpoints in <b>all</b> categories to all Survivors.",
+  "source": "dbd.tricky.lol"
+ },
+ "CattleTag28": {
+  "id": "CattleTag28",
+  "name": "Cattle Tag-28",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_cattleTag28.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_cattleTag28.png",
+  "iconFile": "IconFavors_cattleTag28.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to Coldwind Farm when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "ChalkPouch": {
+  "id": "ChalkPouch",
+  "name": "Chalk Pouch",
+  "role": "survivor",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "luck",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_chalkPouch.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_chalkPouch.png",
+  "iconFile": "IconFavors_chalkPouch.png",
+  "effect": "Unlocks the ability to attempt to unhook yourself.<br><br>Increases your luck by <b>1%</b>.<br><br>Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "CharredWeddingPhotograph": {
+  "id": "CharredWeddingPhotograph",
+  "name": "Charred Wedding Photograph",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_charredWeddingPhotograph.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_charredWeddingPhotograph.png",
+  "iconFile": "IconFavors_charredWeddingPhotograph.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Crotus Prenn Asylum when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "ChildrensBook": {
+  "id": "ChildrensBook",
+  "name": "Children's Book",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_childrensBook.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_childrensBook.png",
+  "iconFile": "IconFavors_childrensBook.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to Red Forest when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "ClearReagent": {
+  "id": "ClearReagent",
+  "name": "Clear Reagent",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "atmosphere",
+  "tags": [
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_clearReagent.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_clearReagent.png",
+  "iconFile": "IconFavors_clearReagent.png",
+  "effect": "<b>Slightly lessens</b> the Dark Mist.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "ColdwindCattleTag81": {
+  "id": "ColdwindCattleTag81",
+  "name": "Coldwind Cattle Tag-81",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_cattleTag81.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_cattleTag81.png",
+  "iconFile": "IconFavors_cattleTag81.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to Coldwind Farm when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "CreamChalkPouch": {
+  "id": "CreamChalkPouch",
+  "name": "Cream Chalk Pouch",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "luck",
+  "tags": [
+   "stack",
+   "white",
+   "personal",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_creamChalkPouch.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_creamChalkPouch.png",
+  "iconFile": "IconFavors_creamChalkPouch.png",
+  "effect": "Unlocks the ability to attempt to unhook yourself.<br><br>Increases your luck by <b>2%</b>.<br><br>Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "CrescentMoonBouquet": {
+  "id": "CrescentMoonBouquet",
+  "name": "Crescent Moon Bouquet",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "lighting",
+  "tags": [],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_crescentMoonBouquet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_crescentMoonBouquet.png",
+  "iconFile": "IconFavors_crescentMoonBouquet.png",
+  "effect": "Calls upon The Entity for a <b>dimmed moonlight</b>.",
+  "source": "dbd.tricky.lol"
+ },
+ "CrispleafAmaranthSachet": {
+  "id": "CrispleafAmaranthSachet",
+  "name": "Crispleaf Amaranth Sachet",
+  "role": "survivor",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_crispleafAmaranthSachet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_crispleafAmaranthSachet.png",
+  "iconFile": "IconFavors_crispleafAmaranthSachet.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Survival category.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "CutCoin": {
+  "id": "CutCoin",
+  "name": "Cut Coin",
+  "role": "killer",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "chest",
+  "tags": [
+   "black",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_cutCoin.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_cutCoin.png",
+  "iconFile": "IconFavors_cutCoin.png",
+  "effect": "Calls on The Entity to prevent the appearance of <b>2</b> chests.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "CypressMementoMori": {
+  "id": "CypressMementoMori",
+  "name": "Cypress Memento Mori",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "killing",
+  "tags": [
+   "black",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_cypressMementoMori.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_cypressMementoMori.png",
+  "iconFile": "IconFavors_cypressMementoMori.png",
+  "effect": "Grants <b>10 000 post-trial bloodpoints</b> upon performing any Mori on the last Survivor.<br><br>Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "DecrepitClapboard": {
+  "id": "DecrepitClapboard",
+  "name": "Decrepit Clapboard",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_decrepitClapboard.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_decrepitClapboard.png",
+  "iconFile": "IconFavors_decrepitClapboard.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to Haddonfield when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "DevoutRavenWreath": {
+  "id": "DevoutRavenWreath",
+  "name": "Devout Raven Wreath",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_devoutRavenWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_devoutRavenWreath.png",
+  "iconFile": "IconFavors_devoutRavenWreath.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Deviousness category.",
+  "source": "dbd.tricky.lol"
+ },
+ "DevoutShrikeWreath": {
+  "id": "DevoutShrikeWreath",
+  "name": "Devout Shrike Wreath",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_devoutShrikeWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_devoutShrikeWreath.png",
+  "iconFile": "IconFavors_devoutShrikeWreath.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Sacrifice category.",
+  "source": "dbd.tricky.lol"
+ },
+ "DevoutSpottedowlWreath": {
+  "id": "DevoutSpottedowlWreath",
+  "name": "Devout Spotted Owl Wreath",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_devoutSpottedOwlWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_devoutSpottedOwlWreath.png",
+  "iconFile": "IconFavors_devoutSpottedOwlWreath.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Hunting category.",
+  "source": "dbd.tricky.lol"
+ },
+ "DevoutTanagerWreath": {
+  "id": "DevoutTanagerWreath",
+  "name": "Devout Tanager Wreath",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_devoutTanagerWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_devoutTanagerWreath.png",
+  "iconFile": "IconFavors_devoutTanagerWreath.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Brutality category.",
+  "source": "dbd.tricky.lol"
+ },
+ "EbonyMementoMori": {
+  "id": "EbonyMementoMori",
+  "name": "Ebony Memento Mori",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killing",
+  "tags": [
+   "black",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ebonyMementoMori.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ebonyMementoMori.png",
+  "iconFile": "IconFavors_ebonyMementoMori.png",
+  "effect": "Grants the ability to <b>kill all Survivors</b> who have reached the <b>second Hook State</b> by your hand during the next trial.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "EclipseThemeOffering": {
+  "id": "EclipseThemeOffering",
+  "name": "RPD Badge",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_rpdBadge.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_rpdBadge.png",
+  "iconFile": "IconFavors_rpdBadge.png",
+  "effect": "<b>Tremendously increases</b> the chance of being sent to Raccoon City police station when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "EmergencyCertificate": {
+  "id": "EmergencyCertificate",
+  "name": "Emergency Certificate",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_emergencyCertificate.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_emergencyCertificate.png",
+  "iconFile": "IconFavors_emergencyCertificate.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to Léry's Memorial Institute when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "EscapeCake": {
+  "id": "EscapeCake",
+  "name": "Escape! Cake",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "white",
+   "stack",
+   "personal",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_escapeCake.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_escapeCake.png",
+  "iconFile": "IconFavors_escapeCake.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in all categories.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "FaintReagent": {
+  "id": "FaintReagent",
+  "name": "Faint Reagent",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "atmosphere",
+  "tags": [
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_faintReagent.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_faintReagent.png",
+  "iconFile": "IconFavors_faintReagent.png",
+  "effect": "<b>Slightly thickens</b> the Dark Mist.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "FragrantBogLaurel": {
+  "id": "FragrantBogLaurel",
+  "name": "Fragrant Bog Laurel",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fragrantBogLaurel.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fragrantBogLaurel.png",
+  "iconFile": "IconFavors_fragrantBogLaurel.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Objective category.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "FragrantCrispleafAmaranth": {
+  "id": "FragrantCrispleafAmaranth",
+  "name": "Fragrant Crispleaf Amaranth",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fragrantCrispleafAmaranth.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fragrantCrispleafAmaranth.png",
+  "iconFile": "IconFavors_fragrantCrispleafAmaranth.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Survival category.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "FragrantPrimroseBlossom": {
+  "id": "FragrantPrimroseBlossom",
+  "name": "Fragrant Primrose Blossom",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fragrantPrimroseBlossom.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fragrantPrimroseBlossom.png",
+  "iconFile": "IconFavors_fragrantPrimroseBlossom.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Altruism category.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "FragrantSweetWilliam": {
+  "id": "FragrantSweetWilliam",
+  "name": "Fragrant Sweet William",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fragrantSweetWilliam.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fragrantSweetWilliam.png",
+  "iconFile": "IconFavors_fragrantSweetWilliam.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Boldness category.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "FreshBogLaurel": {
+  "id": "FreshBogLaurel",
+  "name": "Fresh Bog Laurel",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_freshBogLaurel.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_freshBogLaurel.png",
+  "iconFile": "IconFavors_freshBogLaurel.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Objective category.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "FreshCrispleafAmaranth": {
+  "id": "FreshCrispleafAmaranth",
+  "name": "Fresh Crispleaf Amaranth",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_freshCrispleafAmaranth.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_freshCrispleafAmaranth.png",
+  "iconFile": "IconFavors_freshCrispleafAmaranth.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Survival category.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "FreshPrimroseBlossom": {
+  "id": "FreshPrimroseBlossom",
+  "name": "Fresh Primrose Blossom",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_freshPrimroseBlossom.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_freshPrimroseBlossom.png",
+  "iconFile": "IconFavors_freshPrimroseBlossom.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Altruism category.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "FreshSweetWilliam": {
+  "id": "FreshSweetWilliam",
+  "name": "Fresh Sweet William",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_freshSweetWilliam.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_freshSweetWilliam.png",
+  "iconFile": "IconFavors_freshSweetWilliam.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Boldness category.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "FullMoonBouquet": {
+  "id": "FullMoonBouquet",
+  "name": "Full Moon Bouquet",
+  "role": null,
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "lighting",
+  "tags": [],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fullMoonBouquet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fullMoonBouquet.png",
+  "iconFile": "IconFavors_fullMoonBouquet.png",
+  "effect": "Calls upon The Entity for the <b>brightest moonlight</b>.",
+  "source": "dbd.tricky.lol"
+ },
+ "FumingCordage": {
+  "id": "FumingCordage",
+  "name": "Fuming Cordage",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fumingCordage.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fumingCordage.png",
+  "iconFile": "IconFavors_fumingCordage.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to Backwater Swamp when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "FumingWelcomeSign": {
+  "id": "FumingWelcomeSign",
+  "name": "Fuming Welcome Sign",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fumingWelcomeSign.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fumingWelcomeSign.png",
+  "iconFile": "IconFavors_fumingWelcomeSign.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to Backwater Swamp when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "GlassSplinter": {
+  "id": "GlassSplinter",
+  "name": "Glass Splinter",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killer",
+  "tags": [
+   "notavailableinpartymode",
+   "black",
+   "mystery",
+   "not_available_for_pig"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_glassSplinter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_glassSplinter.png",
+  "iconFile": "IconFavors_glassSplinter.png",
+  "effect": "Allows you to take on the role of <b>The Pig</b> for the next trial. <i>Your current perks and add-ons will not be used.</i><br><br>Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "GranmasCookbook": {
+  "id": "GranmasCookbook",
+  "name": "Grandma's Cookbook",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_granmasCookbook.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_granmasCookbook.png",
+  "iconFile": "IconFavors_granmasCookbook.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Backwater Swamp when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "Halloween2021Offering": {
+  "id": "Halloween2021Offering",
+  "name": "Cursed Seed",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode",
+   "personal"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_cursedSeed.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_cursedSeed.png",
+  "iconFile": "IconFavors_cursedSeed.png",
+  "effect": "Calls upon The Entity to generate <b>1 tangled hook</b> and <b>1 tangled generator</b>.As a Killer, hook a Survivor on a <b>tangled hook</b> for the first time to earn bonus Bloodpoints.As a Survivor, find and repair a <b>tangled generator</b> to earn bonus Bloodpoints.Using this offering increases the amount of Bloodpoints earned for these interactions.NOTE: During the event, 1 default tangled hook and 1 default tangled generator will spawn on the map.Stacks.<i>Only playable during The Midnight Grove event.</i>",
+  "source": "dbd.tricky.lol"
+ },
+ "Halloween2022Offering": {
+  "id": "Halloween2022Offering",
+  "name": "Arcane Dowsing Rod",
+  "role": null,
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack"
+  ],
+  "retired": false,
+  "icon": null,
+  "iconRemote": null,
+  "iconFile": null,
+  "effect": "Taps into the latent energy of The Entity's realm to find even more concentrated pockets of power.Personal.Provides a +<b>100%</b> Bloodpoints bonus to all Haunted By Daylight score events.<i>Only usable when playing <b>Event: Haunted by Daylight</b>.</i>",
+  "source": "dbd.tricky.lol"
+ },
+ "HalloweenOffering": {
+  "id": "HalloweenOffering",
+  "name": "Pustula Petals",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode",
+   "personal"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_pustulaPetals.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_pustulaPetals.png",
+  "iconFile": "IconFavors_pustulaPetals.png",
+  "effect": "Calls upon The Entity to generate <b>1 Blighted Hook</b> and <b>1 Blighted Generator</b>.As a Killer, hook a Survivor on a <b>Blighted Hook</b> for the first time to earn bonus Bloodpoints.As a Survivor, find and repair a <b>Blighted Generator</b> to earn bonus Bloodpoints.Using this offering increases the amount of Bloodpoints earned for these interactions.NOTE: During the event, 1 default Blighted Hook and 1 default Blighted Generator will spawn in the map.Stacks.<i>Only playable during the Midnight Grove Event.</i>",
+  "source": "dbd.tricky.lol"
+ },
+ "HarvestFestivalLeaflet": {
+  "id": "HarvestFestivalLeaflet",
+  "name": "Harvest Festival Leaflet",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_harvestFestivalLeaflet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_harvestFestivalLeaflet.png",
+  "iconFile": "IconFavors_harvestFestivalLeaflet.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to Haddonfield when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "HazyReagent": {
+  "id": "HazyReagent",
+  "name": "Hazy Reagent",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "atmosphere",
+  "tags": [
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_hazyReagent.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_hazyReagent.png",
+  "iconFile": "IconFavors_hazyReagent.png",
+  "effect": "<b>Moderately thickens</b> the Dark Mist.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "HeartLocket": {
+  "id": "HeartLocket",
+  "name": "Heart Locket",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_heartLocket.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_heartLocket.png",
+  "iconFile": "IconFavors_heartLocket.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Coldwind Farm when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "HollowShell": {
+  "id": "HollowShell",
+  "name": "Hollow Shell",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_hollowShell.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_hollowShell.png",
+  "iconFile": "IconFavors_hollowShell.png",
+  "effect": "Grants <b>25%</b> bonus Bloodpoints in all categories.",
+  "source": "dbd.tricky.lol"
+ },
+ "IonThemeOffering": {
+  "id": "IonThemeOffering",
+  "name": "Crow's Eye",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_crowsEye.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_crowsEye.png",
+  "iconFile": "IconFavors_crowsEye.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Forsaken Boneyard when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "IvoryChalkPouch": {
+  "id": "IvoryChalkPouch",
+  "name": "Ivory Chalk Pouch",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "luck",
+  "tags": [
+   "stack",
+   "white",
+   "personal",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ivoryChalkPouch.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ivoryChalkPouch.png",
+  "iconFile": "IconFavors_ivoryChalkPouch.png",
+  "effect": "Unlocks the ability to attempt to unhook yourself.<br><br>Increases your luck by <b>3%</b>.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "IvoryMementoMori": {
+  "id": "IvoryMementoMori",
+  "name": "Ivory Memento Mori",
+  "role": "killer",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "killing",
+  "tags": [
+   "black",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ivoryMementoMori.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ivoryMementoMori.png",
+  "iconFile": "IconFavors_ivoryMementoMori.png",
+  "effect": "Grants the ability to <b>kill one Survivor</b> who has reached the <b>second Hook State</b> by your hand during the next trial.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "JapaneseCountrySide": {
+  "id": "JapaneseCountrySide",
+  "name": "Yamaoka Family Crest",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_yamaokaFamilyCrest.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_yamaokaFamilyCrest.png",
+  "iconFile": "IconFavors_yamaokaFamilyCrest.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Yamaoka Estate when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "Jigsawpiece": {
+  "id": "Jigsawpiece",
+  "name": "Jigsaw Piece",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_jigsawPiece.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_jigsawPiece.png",
+  "iconFile": "IconFavors_jigsawPiece.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Gideon Meat Plant when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "KenyaThemeOffering": {
+  "id": "KenyaThemeOffering",
+  "name": "Damaged Photo",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_damagedPhoto.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_damagedPhoto.png",
+  "iconFile": "IconFavors_damagedPhoto.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Ormond when burnt.Secret.Does not stack.<br><br><b>Aug. 28th, ‘96</b>",
+  "source": "dbd.tricky.lol"
+ },
+ "LunacyTicket": {
+  "id": "LunacyTicket",
+  "name": "Lunacy Ticket",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_lunacyTicket.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_lunacyTicket.png",
+  "iconFile": "IconFavors_lunacyTicket.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to Crotus Prenn Asylum when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "MacmillanLedgerPage": {
+  "id": "MacmillanLedgerPage",
+  "name": "MacMillan Ledger Page",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_macMillanLedgerPage.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_macMillanLedgerPage.png",
+  "iconFile": "IconFavors_macMillanLedgerPage.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to the MacMillan Estate when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "MacMillanPhalanxBone": {
+  "id": "MacMillanPhalanxBone",
+  "name": "MacMillan's Phalanx Bone",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_macMillansPhalanxBone.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_macMillansPhalanxBone.png",
+  "iconFile": "IconFavors_macMillansPhalanxBone.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to the MacMillan Estate when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "MeteorThemeOffering": {
+  "id": "MeteorThemeOffering",
+  "name": "Ichorous Loam",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ichorousLoam.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ichorousLoam.png",
+  "iconFile": "IconFavors_ichorousLoam.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Withered Isle when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "MoldyOak": {
+  "id": "MoldyOak",
+  "name": "Moldy Oak",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "hook",
+  "tags": [
+   "black",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_moldyOak.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_moldyOak.png",
+  "iconFile": "IconFavors_moldyOak.png",
+  "effect": "Calls upon The Entity to <b>Slightly decrease</b> the <b>distance</b> between sacrificial hooks appearing in the world.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "MuddySplinter": {
+  "id": "MuddySplinter",
+  "name": "Muddy Splinter",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killer",
+  "tags": [
+   "notavailableinpartymode",
+   "black",
+   "mystery",
+   "not_available_for_witch"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_muddySplinter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_muddySplinter.png",
+  "iconFile": "IconFavors_muddySplinter.png",
+  "effect": "Allows you to take on the role of <b>The Hag</b> for the next trial. <i>Your current perks and add-ons will not be used.</i><br><br>Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "MurkyReagent": {
+  "id": "MurkyReagent",
+  "name": "Murky Reagent",
+  "role": null,
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "atmosphere",
+  "tags": [
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_murkyReagent.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_murkyReagent.png",
+  "iconFile": "IconFavors_murkyReagent.png",
+  "effect": "<b>Greatly thickens</b> the Dark Mist.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "NewMoonBouquet": {
+  "id": "NewMoonBouquet",
+  "name": "New Moon Bouquet",
+  "role": null,
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "lighting",
+  "tags": [],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_newMoonBouquet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_newMoonBouquet.png",
+  "iconFile": "IconFavors_newMoonBouquet.png",
+  "effect": "Calls upon The Entity for the <b>darkest moonlight</b>.",
+  "source": "dbd.tricky.lol"
+ },
+ "PaintedRiverRock": {
+  "id": "PaintedRiverRock",
+  "name": "Painted River Rock",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_paintedRiverRock.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_paintedRiverRock.png",
+  "iconFile": "IconFavors_paintedRiverRock.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to Red Forest when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "PElliotLunacyTicket": {
+  "id": "PElliotLunacyTicket",
+  "name": "P.Elliott Lunacy Ticket",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_pElliottLunacyTicket.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_pElliottLunacyTicket.png",
+  "iconFile": "IconFavors_pElliottLunacyTicket.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to Crotus Prenn Asylum when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "PetrifiedOak": {
+  "id": "PetrifiedOak",
+  "name": "Petrified Oak",
+  "role": "survivor",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "hook",
+  "tags": [
+   "white",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_petrifiedOak.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_petrifiedOak.png",
+  "iconFile": "IconFavors_petrifiedOak.png",
+  "effect": "Calms The Entity and <b>Slightly increases</b> the <b>distance</b> between sacrificial hooks appearing in the world.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "PrimroseBlossomSachet": {
+  "id": "PrimroseBlossomSachet",
+  "name": "Primrose Blossom Sachet",
+  "role": "survivor",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_primroseBlossomSachet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_primroseBlossomSachet.png",
+  "iconFile": "IconFavors_primroseBlossomSachet.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Altruism category.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "PsychiatricAssessmentReport": {
+  "id": "PsychiatricAssessmentReport",
+  "name": "Psychiatric Assessment Report",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_psychiatricAssessmentReport.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_psychiatricAssessmentReport.png",
+  "iconFile": "IconFavors_psychiatricAssessmentReport.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to Léry's Memorial Institute when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "PutridOak": {
+  "id": "PutridOak",
+  "name": "Putrid Oak",
+  "role": "killer",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "hook",
+  "tags": [
+   "black",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_putridOak.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_putridOak.png",
+  "iconFile": "IconFavors_putridOak.png",
+  "effect": "Calls upon The Entity to <b>Considerably decrease</b> the <b>distance</b> between sacrificial hooks appearing in the world.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "QatarThemeOffering": {
+  "id": "QatarThemeOffering",
+  "name": "Hawkins National Laboratory I.D.",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_hawkinsNationalLaboratoryID.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_hawkinsNationalLaboratoryID.png",
+  "iconFile": "IconFavors_hawkinsNationalLaboratoryID.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Hawkins National Laboratory when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "QuantumThemeOffering": {
+  "id": "QuantumThemeOffering",
+  "name": "Beef Tallow Mixture",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_beefTallowMixture.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_beefTallowMixture.png",
+  "iconFile": "IconFavors_beefTallowMixture.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to The Decimated Borgo when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "QuarterMoonBouquet": {
+  "id": "QuarterMoonBouquet",
+  "name": "Quarter Moon Bouquet",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "lighting",
+  "tags": [],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_quarterMoonBouquet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_quarterMoonBouquet.png",
+  "iconFile": "IconFavors_quarterMoonBouquet.png",
+  "effect": "Calls upon The Entity for a <b>brighter moonlight</b>.",
+  "source": "dbd.tricky.lol"
+ },
+ "QuicheThemeOffering": {
+  "id": "QuicheThemeOffering",
+  "name": "VIP Wristband",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconsFavors_vipWristband.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconsFavors_vipWristband.png",
+  "iconFile": "IconsFavors_vipWristband.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Trickster's Delusion when burned.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "RavenWreath": {
+  "id": "RavenWreath",
+  "name": "Raven Wreath",
+  "role": "killer",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ravenWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ravenWreath.png",
+  "iconFile": "IconFavors_ravenWreath.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Deviousness category.",
+  "source": "dbd.tricky.lol"
+ },
+ "RedMoney": {
+  "id": "RedMoney",
+  "name": "Red Envelope",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode",
+   "personal"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_redEnvelope.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_redEnvelope.png",
+  "iconFile": "IconFavors_redEnvelope.png",
+  "effect": "A gesture of generosity to bring good fortune to the unfortunate. Calls upon The Entity to generate <b>1 Red Envelope</b> in the trial.<br><br>The aura of your own envelope is revealed to you at the start of the trial.Interacting with your own Red Envelope reveals its aura to all other players in the trial until claimed.Opening another player's Red Envelope awards you with <b>Bloodpoints of a random amount.</b>When another player opens your envelope during the trial, you are awarded Bloodpoints and a cosmetic from the <b>Moonlight Burrow</b> collection.Increased Bloodpoints awarded from Lunar New Year Generators and Hooks.",
+  "source": "dbd.tricky.lol"
+ },
+ "RottenOak": {
+  "id": "RottenOak",
+  "name": "Rotten Oak",
+  "role": "killer",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "hook",
+  "tags": [
+   "black",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_rottenOak.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_rottenOak.png",
+  "iconFile": "IconFavors_rottenOak.png",
+  "effect": "Calls upon The Entity to <b>Moderately decrease</b> the <b>distance</b> between sacrificial hooks appearing in the world.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "SacrificalWard": {
+  "id": "SacrificalWard",
+  "name": "Sacrificial Ward",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "proceduralgeneration",
+  "tags": [
+   "stack",
+   "theme"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_sacrificialWard.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_sacrificialWard.png",
+  "iconFile": "IconFavors_sacrificialWard.png",
+  "effect": "Calls upon The Entity to reject all offerings that alter the chance of being sent to a specific realm.<br><br>This can only be canceled if four identical realm offerings are played.",
+  "source": "dbd.tricky.lol"
+ },
+ "SaltPouch": {
+  "id": "SaltPouch",
+  "name": "Salt Pouch",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "luck",
+  "tags": [
+   "stack",
+   "white"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_saltPouch.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_saltPouch.png",
+  "iconFile": "IconFavors_saltPouch.png",
+  "effect": "Unlocks the ability to attempt to unhook yourself for all Survivors.<br><br>Increases all Survivors' luck by <b>1%</b>.",
+  "source": "dbd.tricky.lol"
+ },
+ "ScratchedCoin": {
+  "id": "ScratchedCoin",
+  "name": "Scratched Coin",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "chest",
+  "tags": [
+   "black",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_scratchedCoin.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_scratchedCoin.png",
+  "iconFile": "IconFavors_scratchedCoin.png",
+  "effect": "Calls on The Entity to prevent the appearance of <b>1</b> chest.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "SealedEnvelope": {
+  "id": "SealedEnvelope",
+  "name": "Sealed Envelope",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "white",
+   "notavailableinpartymode",
+   "personal"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_sealedEnvelope.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_sealedEnvelope.png",
+  "iconFile": "IconFavors_sealedEnvelope.png",
+  "effect": "Grants <b>25%</b> bonus Bloodpoints in all categories.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "ShatteredGlasses": {
+  "id": "ShatteredGlasses",
+  "name": "Shattered Glasses",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shatteredGlasses.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shatteredGlasses.png",
+  "iconFile": "IconFavors_shatteredGlasses.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Léry's Memorial Institute when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "ShinyCoin": {
+  "id": "ShinyCoin",
+  "name": "Shiny Coin",
+  "role": "survivor",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "chest",
+  "tags": [
+   "white",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shinyCoin.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shinyCoin.png",
+  "iconFile": "IconFavors_shinyCoin.png",
+  "effect": "Calls on The Entity to create <b>2</b> more chests.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "ShockSplinter": {
+  "id": "ShockSplinter",
+  "name": "Shock Splinter",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killer",
+  "tags": [
+   "notavailableinpartymode",
+   "black",
+   "mystery",
+   "not_available_for_killer07"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shockSplinter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shockSplinter.png",
+  "iconFile": "IconFavors_shockSplinter.png",
+  "effect": "Allows you to take on the role of The Doctor for the next trial. <i>Your current perks and add-ons will not be used.</i><br><br>Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "ShreddedPlate": {
+  "id": "ShreddedPlate",
+  "name": "Shredded Plate",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shreddedPlate.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shreddedPlate.png",
+  "iconFile": "IconFavors_shreddedPlate.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to the Autohaven Wreckers when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "ShrikeWreath": {
+  "id": "ShrikeWreath",
+  "name": "Shrike Wreath",
+  "role": "killer",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shrikeWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shrikeWreath.png",
+  "iconFile": "IconFavors_shrikeWreath.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Sacrifice category.",
+  "source": "dbd.tricky.lol"
+ },
+ "ShroudofBinding": {
+  "id": "ShroudofBinding",
+  "name": "Shroud of Separation",
+  "role": "survivor",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "position",
+  "tags": [
+   "white",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shroudOfSeparation.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shroudOfSeparation.png",
+  "iconFile": "IconFavors_shroudOfSeparation.png",
+  "effect": "All Survivors start the trial separated.<br><br>Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "ShroudofSeparation": {
+  "id": "ShroudofSeparation",
+  "name": "Shroud of Vanishing",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "proceduralgeneration",
+  "tags": [
+   "stack",
+   "black",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconsFavors_shroudOfVanishing.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconsFavors_shroudOfVanishing.png",
+  "iconFile": "IconsFavors_shroudOfVanishing.png",
+  "effect": "Calls on The Entity to nullify any offerings that would change the Survivors' starting locations.<br><br>Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "ShroudofUnion": {
+  "id": "ShroudofUnion",
+  "name": "Shroud of Union",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "position",
+  "tags": [
+   "white",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shroudOfUnion.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shroudOfUnion.png",
+  "iconFile": "IconFavors_shroudOfUnion.png",
+  "effect": "You start the trial with someone else.<br><br>Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "SignedLedgerPage": {
+  "id": "SignedLedgerPage",
+  "name": "Signed Ledger Page",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_signedLedgerPage.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_signedLedgerPage.png",
+  "iconFile": "IconFavors_signedLedgerPage.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to the MacMillan Estate when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "SmokingSplinter": {
+  "id": "SmokingSplinter",
+  "name": "Smoking Splinter",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killer",
+  "tags": [
+   "notavailableinpartymode",
+   "black",
+   "mystery",
+   "not_available_for_nightmare"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_smokingSplinter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_smokingSplinter.png",
+  "iconFile": "IconFavors_smokingSplinter.png",
+  "effect": "Allows you to take on the role of <b>The Nightmare</b> for the next trial. <i>Your current perks and add-ons will not be used.</i><br><br>Secret.<br>",
+  "source": "dbd.tricky.lol"
+ },
+ "SpottedOwlWreath": {
+  "id": "SpottedOwlWreath",
+  "name": "Spotted Owl Wreath",
+  "role": "killer",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_spottedOwlWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_spottedOwlWreath.png",
+  "iconFile": "IconFavors_spottedOwlWreath.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Hunting category.",
+  "source": "dbd.tricky.lol"
+ },
+ "Spring2024Offering": {
+  "id": "Spring2024Offering",
+  "name": "Bloodshot Eye",
+  "role": null,
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "personal",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_bloodshotEye.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_bloodshotEye.png",
+  "iconFile": "IconFavors_bloodshotEye.png",
+  "effect": "An eye filled with, and capable of finding, strange blood.<br><br>Personal.Provides a +<b>100%</b> Bloodpoints bonus to all Blood Moon score events.<i>Only usable when playing <b>Event: Blood Moon</b>.</i>",
+  "source": "dbd.tricky.lol"
+ },
+ "StrodeRealtyKey": {
+  "id": "StrodeRealtyKey",
+  "name": "Strode Realty Key",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_strodeRealtyKey.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_strodeRealtyKey.png",
+  "iconFile": "IconFavors_strodeRealtyKey.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Haddonfield when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "SummerOffering": {
+  "id": "SummerOffering",
+  "name": "BBQ Invitation",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_bbqInvitation.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_bbqInvitation.png",
+  "iconFile": "IconFavors_bbqInvitation.png",
+  "effect": "Has the distinct aroma of burning flesh.<br><br>Grants a <b>100% Bloodpoints bonus</b> to Summer hooks and finished Summer generator repairs.",
+  "source": "dbd.tricky.lol"
+ },
+ "SurvivorPudding": {
+  "id": "SurvivorPudding",
+  "name": "Survivor Pudding",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "black",
+   "stack",
+   "personal",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_survivorPudding.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_survivorPudding.png",
+  "iconFile": "IconFavors_survivorPudding.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in all categories.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "SweetWilliamSachet": {
+  "id": "SweetWilliamSachet",
+  "name": "Sweet William Sachet",
+  "role": "survivor",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_sweetWilliamSachet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_sweetWilliamSachet.png",
+  "iconFile": "IconFavors_sweetWilliamSachet.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Boldness category.<br><br>Personal.",
+  "source": "dbd.tricky.lol"
+ },
+ "TanagerWreath": {
+  "id": "TanagerWreath",
+  "name": "Tanager Wreath",
+  "role": "killer",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_tanagerWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_tanagerWreath.png",
+  "iconFile": "IconFavors_tanagerWreath.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Brutality category.",
+  "source": "dbd.tricky.lol"
+ },
+ "TarnishedCoin": {
+  "id": "TarnishedCoin",
+  "name": "Tarnished Coin",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "chest",
+  "tags": [
+   "white",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_tarnishedCoin.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_tarnishedCoin.png",
+  "iconFile": "IconFavors_tarnishedCoin.png",
+  "effect": "Calls on The Entity to create <b>1</b> more chest.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "TheLastMask": {
+  "id": "TheLastMask",
+  "name": "The Last Mask",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_theLastMask.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_theLastMask.png",
+  "iconFile": "IconFavors_theLastMask.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Red Forest when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "ThePiedPiper": {
+  "id": "ThePiedPiper",
+  "name": "The Pied Piper",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_thePiedPiper.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_thePiedPiper.png",
+  "iconFile": "IconFavors_thePiedPiper.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Springwood when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "TornBlueprint": {
+  "id": "TornBlueprint",
+  "name": "Torn Blueprint",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "proceduralgeneration",
+  "tags": [
+   "personal",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_tornBlueprint.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_tornBlueprint.png",
+  "iconFile": "IconFavors_tornBlueprint.png",
+  "effect": "Reveals the aura of the basement hooks to you for <b>20 seconds</b> at the start of the trial. <b>Tremendously</b> increases the chance of spawning the basement in the main building, if the map has a main building.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "UkraineThemeOffering": {
+  "id": "UkraineThemeOffering",
+  "name": "Shattered Bottle",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shatteredBottle.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shatteredBottle.png",
+  "iconFile": "IconFavors_shatteredBottle.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Grave of Glenvale when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "UmbraThemeOffering": {
+  "id": "UmbraThemeOffering",
+  "name": "Alien Flora",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_alienFlora.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_alienFlora.png",
+  "iconFile": "IconFavors_alienFlora.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to <b>Toba Landing</b> when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "VigosBlueprint": {
+  "id": "VigosBlueprint",
+  "name": "Vigo’s Blueprint",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "proceduralgeneration",
+  "tags": [
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_vigosBlueprint.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_vigosBlueprint.png",
+  "iconFile": "IconFavors_vigosBlueprint.png",
+  "effect": "<b>Tremendously</b> increases the chance of spawning the Hatch in the main building, if the map has a main building.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "VigosJarOfSaltyLips": {
+  "id": "VigosJarOfSaltyLips",
+  "name": "Vigo's Jar of Salty Lips",
+  "role": "survivor",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "luck",
+  "tags": [
+   "stack",
+   "white"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_vigosJarOfSaltyLips.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_vigosJarOfSaltyLips.png",
+  "iconFile": "IconFavors_vigosJarOfSaltyLips.png",
+  "effect": "Unlocks the ability to attempt to unhook yourself for all Survivors.<br><br>Increases all Survivors' luck by <b>3%</b>.",
+  "source": "dbd.tricky.lol"
+ },
+ "VigosShroud": {
+  "id": "VigosShroud",
+  "name": "Vigo's Shroud",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "position",
+  "tags": [
+   "personal",
+   "mystery",
+   "white"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_vigosShroud.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_vigosShroud.png",
+  "iconFile": "IconFavors_vigosShroud.png",
+  "effect": "You start the trial as far as possible from the Killer.<br><br>Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "VirginiaPlate": {
+  "id": "VirginiaPlate",
+  "name": "Virginia Plate",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_virginiaPlate.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_virginiaPlate.png",
+  "iconFile": "IconFavors_virginiaPlate.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to the Autohaven Wreckers when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol"
+ },
+ "WalesThemeOffering": {
+  "id": "WalesThemeOffering",
+  "name": "Mary’s Letter",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_marysLetter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_marysLetter.png",
+  "iconFile": "IconFavors_marysLetter.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Midwich Elementary School when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ },
+ "WhiteWard": {
+  "id": "WhiteWard",
+  "name": "White Ward",
+  "role": "survivor",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "protection",
+  "tags": [
+   "personal",
+   "white",
+   "ward",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_whiteWard.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_whiteWard.png",
+  "iconFile": "IconFavors_whiteWard.png",
+  "effect": "Burning this offering grants you protection against the loss of your item and add-ons.Secret.",
+  "source": "dbd.tricky.lol"
+ },
+ "Winter2024Offering": {
+  "id": "Winter2024Offering",
+  "name": "MISTLE TOES",
+  "role": null,
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "personal",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconsFavors_Winter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconsFavors_Winter.png",
+  "iconFile": "IconsFavors_Winter.png",
+  "effect": "If you see these things hanging over you, the last thing you'll want is a kiss.Personal.Start the trial carrying <b>12 Snowskulls</b>.Decreases number of Snowskulls required to charge an Icy Snowskull by <b>1</b>.Provides a +<b>100%</b> Bloodpoints bonus to all Bone Chill score events.Create <b>1</b> more chest.<i>Only usable when playing <b>Event: Bone Chill</b>.</i>",
+  "source": "dbd.tricky.lol"
+ },
+ "WormholeThemeOffering": {
+  "id": "WormholeThemeOffering",
+  "name": "Airlock Doors",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_airlockDoors.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_airlockDoors.png",
+  "iconFile": "IconFavors_airlockDoors.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to <b>Nostromo Wreckage</b> when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol"
+ }
+}

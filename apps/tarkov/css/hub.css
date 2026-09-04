@@ -1,0 +1,1055 @@
+/* Pilot Hub styles. SELF-CONTAINED on purpose: style.css belongs to the
+   overlay, where every rule is written for a transparent, click-through window
+   sitting on top of a game. This is an opaque desktop window and shares nothing
+   with it but the COLOUR palette below. (Not to be confused with the Ctrl+K
+   command palette further down - same word, different thing.) */
+
+/* ISLAND MOUNT: scoped to #hub-root (was :root) so these names cannot override
+   the shell's own --bg / --text / --accent tokens on the rest of the page. */
+#hub-root {
+  --bg: #0d0f12;
+  --bg-panel: #14171c;
+  --bg-raised: #1b1f26;
+  --line: #262b33;
+  --text: #d8dde5;
+  --text-dim: #8b94a2;
+  --accent: #4db2ff;
+  --accent-soft: rgba(77, 178, 255, 0.14);
+  --good: #7fe0c3;
+  --bad: #ff8a8a;
+  --warn: #ffd84d;
+
+  /* Mil-sim readout (Tarkov identity). Gunmetal panels with a faint olive
+     top-bevel, a coyote label accent that actually reads, a tabular mono for
+     every number, and a desaturated blood-red for banned/blocked chips. */
+  --gunmetal: #2c3539;
+  --gunmetal-hi: #333d42;
+  --olive: #767a45;
+  --olive-bevel: rgba(150, 156, 90, 0.28);
+  --label: #c9b98a;            /* brighter than the old barely-visible accent */
+  --banned: #8a2e2e;
+  --mono: "IBM Plex Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  /* Angular mil-sim display face for HEADERS + uppercase LABELS only (self-hosted
+     Rajdhani, declared in public/fonts/fonts.css). Squarish-technical, reads like
+     Tarkov's real UI. Numbers stay on --mono; body stays on the sans below. */
+  --display: "Rajdhani", "Oswald", "Segoe UI", system-ui, sans-serif;
+}
+
+/* Rajdhani on the hub's section headers, panel titles, nav + the uppercase
+   coyote labels. Rajdhani runs narrow, so nudge tracking/weight up a touch so
+   uppercase labels keep their spacing. Body text + every number are untouched. */
+#hub-root h2,
+#hub-root h3,
+#hub-root .brand,
+#hub-root .nav-item,
+#hub-root .stub h2,
+#hub-root .detail-headtext h2,
+#hub-root .kit-label,
+#hub-root .trader-name,
+#hub-root .map-name,
+#hub-root .detail-section h3,
+#hub-root .offer-group-head,
+#hub-root .kit-row-label,
+#hub-root .kit-slot,
+#hub-root .barter-head,
+#hub-root .ll-table th,
+#hub-root .palette-open-label {
+  font-family: var(--display);
+}
+/* Uppercase labels: Rajdhani's narrow forms want a hair more weight + tracking
+   than the sans they replace so small caps stay legible at 200px. */
+#hub-root .detail-section h3,
+#hub-root .offer-group-head,
+#hub-root .kit-row-label,
+#hub-root .kit-slot,
+#hub-root .ll-table th,
+#hub-root .brand {
+  font-weight: 600;
+  letter-spacing: 0.09em;
+}
+
+/* Tabular mono on every NUMBER + short-name readout - prices, durability,
+   stats, per-slot value, loyalty tables - so columns of figures line up like a
+   trader screen instead of drifting in a proportional sans. */
+#hub-root .item-flea, #hub-root .item-sell, #hub-root .item-money,
+#hub-root .item-short, #hub-root .detail-short, #hub-root .detail-facts,
+#hub-root .stat-table td, #hub-root .trade-table td, #hub-root .ll-table td,
+#hub-root .kit-total, #hub-root .kit-cost, #hub-root .kit-cap, #hub-root .kit-config,
+#hub-root .kit-score, #hub-root .kit-cap, #hub-root .quest-lvl, #hub-root .mini-count,
+#hub-root .trader-count, #hub-root .map-facts, #hub-root .barter-head {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Coyote label accent on the uppercase section/field labels - the old
+   --text-dim on them was barely there. */
+#hub-root .detail-section h3,
+#hub-root .offer-group-head,
+#hub-root .kit-row-label,
+#hub-root .kit-slot,
+#hub-root .ll-table th {
+  color: var(--label);
+}
+
+/* ISLAND MOUNT: every global selector below was scoped under #hub-root so the
+   hub's palette and form resets cannot bleed into the shell chrome. The old
+   `html, body { overflow:hidden; height:100% }` rule is gone entirely - the
+   shell owns the document scroll; #hub-root sizes itself in tarkov-island.css. */
+#hub-root * { box-sizing: border-box; }
+
+#hub-root {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 13px;
+}
+
+#hub-root .hidden { display: none !important; }
+#hub-root .muted { color: var(--text-dim); }
+
+#hub-root button {
+  font: inherit;
+  color: var(--text);
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+#hub-root button:hover:not(:disabled) { border-color: var(--accent); }
+#hub-root button:disabled { opacity: 0.5; cursor: default; }
+
+#hub-root input, #hub-root select {
+  font: inherit;
+  color: var(--text);
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 5px 8px;
+}
+#hub-root input:focus, #hub-root select:focus { outline: none; border-color: var(--accent); }
+
+/* ---- shell ---- */
+#hub {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 30px;
+  display: flex;
+}
+
+#hub-nav {
+  width: 168px;
+  flex: 0 0 168px;
+  background: var(--gunmetal);
+  border-right: 1px solid var(--line);
+  box-shadow: inset 0 1px 0 var(--olive-bevel);
+  display: flex;
+  flex-direction: column;
+  padding: 14px 0;
+}
+
+.brand {
+  padding: 0 16px 16px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.brand span { color: var(--accent); }
+
+.nav-item {
+  display: block;
+  padding: 9px 16px;
+  color: #b3bcc7;                 /* AA on the gunmetal rail */
+  text-decoration: none;
+  border-left: 2px solid transparent;
+}
+.nav-item:hover { color: var(--text); background: var(--bg-raised); }
+.nav-item.active {
+  color: var(--text);
+  border-left-color: var(--accent);
+  background: var(--accent-soft);
+}
+.nav-soon {
+  float: right;
+  font-size: 10px;
+  color: var(--text-dim);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 0 4px;
+}
+
+#hub-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.stub { padding: 40px; color: var(--text-dim); }
+.stub h2 { margin: 0 0 8px; color: var(--text); font-size: 18px; }
+
+/* ---- footer ---- */
+#hub-footer {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px;
+  background: var(--gunmetal);
+  border-top: 1px solid var(--olive);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+#hub-footer button { padding: 2px 10px; font-size: 12px; }
+.sync-state.busy { color: var(--warn); }
+.sync-state.bad { color: var(--bad); }
+#sync-age { margin-right: auto; }
+
+/* The auto-update line. Quiet by default and only ever loud once there is
+   something the user can actually act on - a permanently-highlighted "update"
+   row would train people to ignore the footer. Disabled (Tarkov is running)
+   keeps the text but drops the affordance entirely. */
+.update-line {
+  border: 1px solid transparent;
+  background: none;
+  color: var(--text-dim);
+  max-width: 320px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.update-line.ready {
+  color: var(--warn);
+  border-color: var(--line);
+  cursor: pointer;
+}
+.update-line:disabled { cursor: default; opacity: 0.8; }
+
+/* the one-line dismissable notice, sat between the age and the Sync button */
+.hub-notice {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--warn);
+  min-width: 0;
+}
+#hub-notice-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#hub-notice-dismiss {
+  padding: 0 6px;
+  line-height: 18px;
+  color: var(--text-dim);
+}
+
+/* ---- Ctrl+K command palette ---- */
+/* The nav rail's affordance for it. Styled as a row rather than as a button so
+   it reads as part of the rail, with the shortcut spelled out - a palette
+   nobody knows the key for is a palette nobody opens. */
+.palette-open {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: calc(100% - 24px);
+  margin: 0 12px 10px;
+  padding: 5px 8px;
+  font-size: 12px;
+  color: var(--text-dim);
+  text-align: left;
+}
+.palette-open:hover { color: var(--text); }
+.palette-open-key {
+  flex: 0 0 auto;
+  font-size: 10px;
+  color: var(--text-dim);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 0 4px;
+}
+
+/* z-index 40: over every view, UNDER the boot screen (50) - there is nothing
+   to search until the database has loaded. */
+.palette {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 7, 10, 0.62);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10vh;
+  z-index: 40;
+}
+.palette-card {
+  width: min(640px, calc(100% - 48px));
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px;
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
+}
+.palette-input { width: 100%; font-size: 15px; padding: 8px 10px; }
+.palette-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+.palette-results { flex: 1 1 auto; overflow-y: auto; min-height: 0; }
+.palette-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 0;
+}
+.palette-row.on { background: var(--accent-soft); }
+.palette-type {
+  flex: 0 0 58px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-dim);
+}
+.palette-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.palette-sub {
+  flex: 0 0 auto;
+  font-size: 11px;
+  color: var(--text-dim);
+  max-width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.palette-hint { font-size: 11px; color: var(--text-dim); }
+
+/* ---- first-run screen ---- */
+.boot {
+  position: absolute;
+  inset: 0;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+.boot-card { text-align: center; max-width: 460px; padding: 24px; }
+.boot-title {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.boot-progress {
+  margin: 10px 0 16px;
+  color: var(--text-dim);
+  font-size: 12px;
+  word-break: break-word;
+}
+
+/* ---- items view ---- */
+.items-wrap { display: flex; width: 100%; min-width: 0; }
+
+.items-left {
+  width: 460px;
+  flex: 0 0 460px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--line);
+  min-height: 0;
+}
+
+.items-controls {
+  padding: 10px;
+  background: var(--gunmetal);
+  border-bottom: 1px solid var(--line);
+  box-shadow: inset 0 1px 0 var(--olive-bevel);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.items-search { width: 100%; }
+.items-selects { display: flex; gap: 8px; }
+.items-cat { flex: 1 1 auto; min-width: 0; }
+.items-sort { flex: 0 0 150px; }
+
+.items-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-height: 62px;
+  overflow-y: auto;
+}
+.chip {
+  padding: 2px 8px;
+  font-size: 11px;
+  border-radius: 10px;
+  color: var(--text-dim);
+}
+.chip.on {
+  color: var(--text);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+.items-count { font-size: 11px; color: var(--text-dim); }
+
+/* Manual quest done-marking. Only ever rendered by a host that can WRITE quest
+   state (hub.js exposes ctx.setQuestStatus only then), which the desktop app
+   deliberately is not - it reads the game's own log - so these rules match
+   nothing in the Electron build. */
+.quest-mark-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+.quest-mark { cursor: pointer; }
+
+.items-scroller { flex: 1 1 auto; overflow-y: auto; min-height: 0; }
+.items-inner { display: block; }
+
+.item-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  border-bottom: 1px solid rgba(38, 43, 51, 0.6);
+  cursor: pointer;
+  overflow: hidden;
+}
+.item-row:hover { background: var(--bg-raised); }
+.item-row.selected { background: var(--accent-soft); }
+
+/* Inventory-grid cell: each icon sits in a bordered square with hard 2px
+   corners and a faint inner shadow, echoing Tarkov's stash grid. */
+.item-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  flex: 0 0 34px;
+  padding: 2px;
+  background: var(--gunmetal);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.55);
+}
+.item-names { flex: 1 1 auto; min-width: 0; }
+.item-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.item-short { font-size: 11px; color: var(--text-dim); }
+.item-money { text-align: right; flex: 0 0 auto; }
+.item-flea { color: var(--good); }
+/* Flea-banned: a desaturated blood-red mil-stencil chip, not muted italics. */
+.item-flea.banned {
+  color: #e39d9d;
+  background: rgba(138, 46, 46, 0.2);
+  border: 1px solid var(--banned);
+  border-radius: 2px;
+  padding: 0 5px;
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  font-family: var(--mono);
+}
+.item-sell { font-size: 11px; color: var(--text-dim); }
+
+/* ---- detail pane ---- */
+.items-right {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-y: auto;
+  padding: 16px 20px 32px;
+}
+.detail-empty { color: var(--text-dim); padding: 40px 0; text-align: center; }
+
+.detail-head { display: flex; gap: 16px; align-items: flex-start; }
+.detail-img {
+  width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+  background: var(--gunmetal);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.5);
+  flex: 0 0 auto;
+}
+.detail-headtext { min-width: 0; }
+.detail-headtext h2 { margin: 0 0 2px; font-size: 19px; }
+.detail-short { color: var(--text-dim); margin-bottom: 8px; }
+.detail-facts { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; color: var(--text-dim); }
+.wiki-btn { margin-top: 10px; }
+.detail-desc {
+  color: var(--text-dim);
+  line-height: 1.5;
+  white-space: pre-wrap;
+  margin: 14px 0 0;
+}
+
+.detail-section { margin-top: 20px; }
+.detail-section h3 {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 4px;
+}
+
+.stat-table, .trade-table { border-collapse: collapse; width: 100%; max-width: 620px; }
+.stat-table th {
+  text-align: left;
+  font-weight: 400;
+  color: var(--text-dim);
+  padding: 3px 12px 3px 0;
+  width: 190px;
+  vertical-align: top;
+}
+.stat-table td, .trade-table td { padding: 3px 12px 3px 0; vertical-align: top; }
+.trade-table td:nth-child(2) { color: var(--good); }
+
+.barter-line { margin-bottom: 10px; }
+.barter-head { font-size: 12px; color: var(--text-dim); margin-bottom: 4px; }
+.barter-reqs, .barter-uses { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.mini-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 7px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg-panel);
+  cursor: pointer;
+  font-size: 12px;
+  max-width: 260px;
+}
+.mini-item:hover { border-color: var(--accent); }
+.mini-icon {
+  width: 22px; height: 22px; object-fit: contain; flex: 0 0 22px;
+  background: var(--gunmetal);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.55);
+}
+.mini-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mini-count { color: var(--accent); flex: 0 0 auto; }
+
+/* ---- shared two-pane layout (quests / traders / maps) ----
+   The items view predates this and keeps its own classes; everything since is
+   built on one split so the three views cannot drift apart visually. */
+.split-wrap { display: flex; width: 100%; min-width: 0; }
+.split-left {
+  width: 460px;
+  flex: 0 0 460px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--line);
+  min-height: 0;
+  overflow-y: auto;
+}
+.split-right {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-y: auto;
+  padding: 16px 20px 32px;
+}
+.traders-wrap .split-left, .maps-wrap .split-left { width: 400px; flex-basis: 400px; }
+
+/* ---- badges + marks ---- */
+.badge {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 1px 5px;
+  border: 1px solid var(--line);
+  color: var(--text-dim);
+  flex: 0 0 auto;
+}
+.badge-done { color: var(--text-dim); border-color: var(--line); }
+.badge-active { color: var(--warn); border-color: var(--warn); }
+.badge-available { color: var(--good); border-color: var(--good); }
+.badge-locked { color: var(--bad); border-color: rgba(255, 138, 138, 0.4); }
+/* failed-and-not-restartable: gone for this wipe. Deliberately a MUTED red -
+   'locked' is bright because it is a thing you can still work toward, and this
+   one is not, so it must not compete with it for attention. */
+.badge-failed {
+  color: #a35b5b;
+  border-color: rgba(163, 91, 91, 0.45);
+  background: rgba(163, 91, 91, 0.08);
+}
+
+.mark {
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 0 4px;
+  border: 1px solid var(--line);
+  color: var(--text-dim);
+}
+.mark-kappa { color: var(--accent); border-color: rgba(77, 178, 255, 0.5); }
+.mark-lk { color: var(--warn); border-color: rgba(255, 216, 77, 0.4); }
+
+.tag {
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 0 5px;
+  border: 1px solid var(--line);
+  color: var(--text-dim);
+}
+
+/* ---- quests ---- */
+.quest-head {
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.quest-summary { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; }
+.sum-done { color: var(--text-dim); }
+.sum-active { color: var(--warn); }
+.sum-available { color: var(--good); }
+.sum-locked { color: var(--bad); }
+.sum-failed { color: #a35b5b; }
+.quest-kappa { font-size: 12px; color: var(--accent); }
+.level-box { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+.level-input { width: 64px; padding: 2px 6px; }
+.faction-box { margin-left: 4px; }
+.faction-select { padding: 2px 6px; font-size: 12px; }
+.lock-toggle { display: flex; align-items: center; gap: 6px; font-size: 12px; margin: 4px 0 8px; }
+.lock-toggle label { cursor: pointer; }
+.note-done { color: var(--good); opacity: 0.75; }
+
+.quest-list { flex: 1 1 auto; }
+.trader-group { border-bottom: 1px solid var(--line); }
+.trader-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-radius: 0;
+  background: var(--gunmetal);
+  box-shadow: inset 0 1px 0 var(--olive-bevel);
+  padding: 6px 10px;
+}
+.trader-portrait { width: 26px; height: 26px; object-fit: cover; border-radius: 3px; flex: 0 0 26px; }
+.trader-portrait.big { width: 54px; height: 54px; flex: 0 0 54px; }
+.trader-name { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.trader-count { font-size: 11px; color: var(--text-dim); }
+.trader-caret { color: var(--text-dim); width: 12px; text-align: center; }
+
+.quest-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 10px 4px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(38, 43, 51, 0.5);
+}
+.quest-row:hover { background: var(--bg-raised); }
+.quest-row.selected { background: var(--accent-soft); }
+.quest-name { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.quest-marks { display: flex; gap: 3px; flex: 0 0 auto; }
+.quest-lvl { font-size: 11px; color: var(--text-dim); flex: 0 0 34px; text-align: right; }
+
+.quest-detail-head { align-items: flex-start; }
+.detail-portrait {
+  width: 96px; height: 96px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  flex: 0 0 auto;
+}
+.detail-badges { display: flex; gap: 6px; margin: 4px 0 8px; }
+
+.objective { margin-bottom: 10px; }
+.objective-text { line-height: 1.4; }
+.objective-tags { display: flex; flex-wrap: wrap; gap: 4px; margin: 3px 0; }
+
+.link-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.task-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  padding: 2px 8px;
+  max-width: 320px;
+  text-align: left;
+}
+.unlock-line { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+
+/* ---- traders ---- */
+.trader-cards { display: flex; flex-direction: column; }
+.trader-card {
+  display: flex;
+  gap: 10px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+}
+.trader-card:hover { background: var(--bg-raised); }
+.trader-card.selected { background: var(--accent-soft); }
+.trader-card-body { min-width: 0; flex: 1 1 auto; }
+.trader-card-body .trader-name { font-weight: 600; }
+.ll-pick { display: flex; align-items: center; gap: 6px; margin-top: 4px; }
+.ll-pick select { padding: 1px 4px; }
+
+.trade-table th {
+  text-align: left;
+  font-weight: 400;
+  color: var(--text-dim);
+  padding: 3px 12px 3px 0;
+}
+.ll-table { border-collapse: collapse; max-width: 620px; width: 100%; margin-bottom: 8px; }
+.ll-table th {
+  text-align: left;
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  padding: 3px 14px 3px 0;
+}
+.ll-table td { padding: 3px 14px 3px 0; }
+.ll-table tr.here td { color: var(--accent); }
+.suggest-verdict { margin-top: 6px; line-height: 1.5; }
+
+.offer-group { margin-bottom: 14px; }
+.offer-group-head {
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+}
+.offer-name-cell { display: flex; align-items: center; gap: 6px; }
+.offer-name { cursor: pointer; }
+.offer-name:hover { color: var(--accent); text-decoration: underline; }
+
+/* ---- maps ---- */
+.map-cards { display: flex; flex-direction: column; }
+.map-card {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+}
+.map-card:hover { background: var(--bg-raised); }
+.map-card.selected { background: var(--accent-soft); }
+.map-name { font-weight: 600; }
+.map-facts { display: flex; flex-wrap: wrap; gap: 10px; font-size: 11px; color: var(--text-dim); }
+
+.boss-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.boss-card { width: 92px; text-align: center; }
+.boss-portrait {
+  width: 92px; height: 92px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid var(--line);
+  background: var(--bg-panel);
+}
+.boss-name { font-size: 12px; margin-top: 3px; }
+
+.extract-list { display: flex; flex-direction: column; }
+.extract { display: flex; align-items: center; gap: 7px; padding: 2px 0; }
+.extract-name { color: var(--text); }
+
+.svg-holder {
+  margin-top: 6px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg-panel);
+  padding: 8px;
+  overflow: auto;
+  max-height: 60vh;
+}
+.basemap-svg { width: 100%; height: auto; display: block; }
+
+/* ---- kit optimizer ----
+   One column of controls over three cards. The cards are the point, so the
+   controls stay one line per decision and never grow past the top of the pane. */
+.kit-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+}
+.kit-controls {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--gunmetal);
+  box-shadow: inset 0 1px 0 var(--olive-bevel);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+.kit-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.kit-row-label {
+  flex: 0 0 96px;
+  color: var(--text-dim);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.kit-budget { width: 120px; }
+.kit-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.kit-chip { border: 1px solid var(--line); background: var(--bg-raised); }
+.kit-slider { width: 200px; padding: 0; }
+.kit-mob-out { min-width: 160px; }
+.kit-check { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+.kit-check input { width: auto; }
+.kit-profile { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; }
+.kit-lls { display: flex; gap: 4px; flex-wrap: wrap; }
+.kit-ll { white-space: nowrap; }
+.kit-ll-unset { color: var(--warn); border-color: var(--warn); }
+.kit-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--accent);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.kit-generate { padding: 6px 18px; }
+
+.kit-results { flex: 1 1 auto; overflow: auto; padding: 14px; min-height: 0; }
+.kit-warn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  border: 1px solid var(--warn);
+  border-radius: 4px;
+  color: var(--warn);
+  font-size: 12px;
+}
+.kit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  align-items: start;
+}
+.kit-card {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--gunmetal);
+  box-shadow: inset 0 1px 0 var(--olive-bevel);
+  padding: 12px;
+  min-width: 0;
+}
+.kit-card.over { border-color: var(--bad); }
+.kit-card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.kit-label { font-size: 15px; font-weight: 600; }
+.kit-cap { font-size: 11px; white-space: nowrap; }
+.kit-total-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.kit-total { font-size: 20px; color: var(--good); }
+.kit-total.bad { color: var(--bad); }
+.kit-config { font-size: 11px; text-align: right; }
+.kit-bar {
+  height: 5px;
+  border-radius: 3px;
+  background: var(--bg-raised);
+  overflow: hidden;
+  margin: 8px 0 3px;
+}
+.kit-bar-fill { height: 100%; background: var(--accent); }
+.kit-score { font-size: 11px; margin-bottom: 8px; }
+
+.kit-line { border-top: 1px solid var(--line); padding: 7px 0; min-width: 0; }
+.kit-line-top { display: flex; align-items: flex-start; gap: 8px; min-width: 0; }
+.kit-line-mid { flex: 1 1 auto; min-width: 0; }
+.kit-slot { font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; }
+/* The names are long and the cards are narrow, so a name wraps rather than
+   pushing the price out of the card. */
+.kit-line-mid .offer-name { display: block; word-break: break-word; }
+.kit-line-right { flex: 0 0 auto; text-align: right; display: flex; flex-direction: column; gap: 3px; align-items: flex-end; }
+.kit-cost { white-space: nowrap; color: var(--text); }
+.kit-facts { font-size: 11px; margin: 2px 0 0 30px; }
+.kit-extra {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 3px 0 0 30px;
+  font-size: 11px;
+  min-width: 0;
+}
+.mini-icon.tiny { width: 16px; height: 16px; flex: 0 0 16px; }
+.kit-extra-name { cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.kit-extra-name:hover { color: var(--accent); }
+.kit-extra-cost { flex: 0 0 auto; margin-left: auto; white-space: nowrap; }
+.kit-why { font-size: 11px; margin: 3px 0 0 30px; line-height: 1.4; }
+.kit-notes { margin-top: 10px; border-top: 1px solid var(--line); padding-top: 8px; }
+.kit-note { font-size: 11px; color: var(--warn); margin-bottom: 3px; line-height: 1.4; }
+
+.src-trader { border-color: var(--accent); color: var(--accent); }
+.src-flea { border-color: var(--good); color: var(--good); }
+.src-barter { border-color: var(--warn); color: var(--warn); }
+.src-none { border-color: var(--bad); color: var(--bad); }
+.detail-empty.bad { color: var(--bad); }
+
+/* Narrow windows (the 900px minimum) cannot afford a 460px list AND a usable
+   detail pane side by side, so the list gives way first. */
+@media (max-width: 1100px) {
+  .items-left { width: 360px; flex-basis: 360px; }
+  .split-left { width: 340px; flex-basis: 340px; }
+  .traders-wrap .split-left, .maps-wrap .split-left { width: 300px; flex-basis: 300px; }
+  .detail-img { width: 140px; max-height: 140px; }
+  /* three cards under 1100px are ~330px wide and the names stop fitting */
+  .kit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .kit-row-label { flex-basis: 80px; }
+}
+
+/* ==========================================================================
+   MOBILE (<=720px): the desktop app becomes a phone app.
+   - the left sidebar rail collapses to a BOTTOM TAB BAR (Items/Quests/Traders/
+     Maps/Kit) with a search icon; the "Ctrl K" hint is gone (no Ctrl on a
+     phone) but the palette is still one tap away via the magnifier.
+   - the two-pane views (items/quests/traders/maps) become a single full-width
+     column: the list fills the screen, and tapping a row slides the detail in
+     as a full-pane overlay with a Back button. No internal horizontal scroll.
+   The master-detail overlay is driven by a `.mobile-detail` class that hub.js
+   toggles on #hub-main - no view logic changes.
+   ========================================================================== */
+@media (max-width: 720px) {
+  /* ---- shell -> column: main on top, tab bar on the bottom ---- */
+  #hub { flex-direction: column; }
+  #hub-main { order: 1; flex: 1 1 auto; min-height: 0; }
+
+  #hub-nav {
+    order: 2;
+    width: auto;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
+    border-right: 0;
+    border-top: 1px solid var(--olive);
+    box-shadow: inset 0 1px 0 var(--olive-bevel);
+  }
+  .brand { display: none; }
+
+  /* the search affordance becomes a compact square magnifier at the left */
+  .palette-open {
+    width: 48px;
+    flex: 0 0 48px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    border-right: 1px solid var(--line);
+  }
+  .palette-open-label { display: none; }
+  .palette-open-key { display: none; }   /* no Ctrl key on a phone */
+  .palette-open::before {
+    content: "\1F50D";                    /* magnifier */
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  /* the five routes become equal-width tabs */
+  #hub-nav-items { display: flex; flex: 1 1 auto; min-width: 0; }
+  .nav-item {
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+    padding: 9px 2px 8px;
+    font-size: 11px;
+    letter-spacing: 0.3px;
+    border-left: 0;
+    border-top: 2px solid transparent;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .nav-item.active {
+    border-left-color: transparent;
+    border-top-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--text);
+  }
+
+  /* ---- two-pane views -> single full-width column ---- */
+  .items-wrap, .split-wrap { position: relative; }
+  .items-left,
+  .split-left,
+  .traders-wrap .split-left,
+  .maps-wrap .split-left {
+    width: 100%;
+    flex: 1 1 auto;
+    flex-basis: auto;
+    border-right: 0;
+  }
+
+  /* detail is a full-pane overlay, hidden until a row is tapped */
+  .items-right, .split-right {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background: var(--bg);
+    display: none;
+    z-index: 5;
+    padding: 14px 16px 28px;
+  }
+  #hub-main.mobile-detail .items-right,
+  #hub-main.mobile-detail .split-right {
+    display: block;
+    overflow-y: auto;
+  }
+  /* while the detail is up, the list underneath does not need to paint/scroll */
+  #hub-main.mobile-detail .items-left,
+  #hub-main.mobile-detail .split-left { visibility: hidden; }
+
+  /* detail head stacks so the 200px art never forces sideways scroll */
+  .detail-head { flex-direction: column; }
+  .detail-img { width: 100%; max-width: 220px; max-height: 220px; }
+  .stat-table, .trade-table, .ll-table { max-width: 100%; }
+  .stat-table th { width: auto; }
+
+  /* kit is already a single column; just let its cards stack full-width */
+  .kit-grid { grid-template-columns: minmax(0, 1fr); }
+
+  /* chips already wrap; give the scroll region a touch more room on a phone */
+  .items-chips { max-height: 96px; }
+}
+
+/* ---- Back button: only on mobile, only while a detail overlay is up ---- */
+.hub-back {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  z-index: 6;
+  display: none;
+  font-size: 12px;
+  padding: 5px 12px;
+  background: var(--gunmetal);
+  border: 1px solid var(--olive);
+  box-shadow: inset 0 1px 0 var(--olive-bevel);
+}
+@media (max-width: 720px) {
+  #hub-main.mobile-detail ~ .hub-back { display: block; }
+}
+@media (min-width: 721px) {
+  .hub-back { display: none !important; }
+}

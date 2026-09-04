@@ -1,0 +1,364 @@
+/*
+ * tarkov-island.css - the shell re-seat for the Pilot Hub.
+ *
+ * hub.css is the desktop window's own stylesheet: it assumed the hub owned the
+ * whole viewport (html,body height:100%; #hub position:absolute inset 0). Under
+ * the Fiiiish Island shell the hub is one route below a sticky top bar and rail,
+ * so it can only have the REMAINING height. #hub-root becomes the positioning
+ * context that #hub / #hub-footer / .palette / .boot (all position:absolute in
+ * hub.css) resolve against, and it is sized to exactly what is left after the
+ * shell chrome + the import toolbar - so the page itself never scrolls and the
+ * sticky chrome never scrolls away.
+ *
+ * --fi-topbar-h (56px) and --fi-rail-h (44px) are the shell tokens.
+ *
+ * SIZING (P6 rewrite): rather than a brittle `100dvh - chrome - toolbar` calc
+ * that assumed a FIXED 44px toolbar, the whole Tarkov viewport is laid out as a
+ * flex column and the hub simply takes `flex:1` of whatever is left. So when the
+ * import toolbar WRAPS to two rows on a narrow phone (390px), the hub shrinks by
+ * exactly that much - no magic number to keep in sync, and the page itself never
+ * scrolls. Scoped to the tarkov route only (html[data-route="tarkov"]) so the
+ * shell's other pages are untouched.
+ */
+
+:root {
+  --tk-toolbar-h: 44px;
+}
+
+/* The whole Tarkov route is a flex column: top bar (+ rail >=720px) + import
+   toolbar + hub, in flow, filling exactly one viewport. The hub takes the rest,
+   however tall the toolbar wraps. Scripts + the absolute skip link are out of
+   flow, so only the four visible bands are flex items. */
+html[data-route="tarkov"] body.fi-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  overflow: hidden; /* the hub owns its own scroll; the page never scrolls */
+}
+
+/* The hub's positioning context + size: whatever height is left after chrome +
+   toolbar. min-height:0 lets a flex child actually shrink below its content. */
+#hub-root {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+/* ==========================================================================
+   BRUSHED-METAL + CANVAS-GRAIN GROUND (Tarkov depth, Round 2).
+   A low-contrast diagonal gunmetal gradient plus a tiny inline-SVG feTurbulence
+   grain (~5% white speckle over a near-black ground = ~3% effective contrast).
+   It rides on #hub-root's BACKGROUND (a background-image layer, NOT a CSS
+   `filter`): a `filter:` on #hub-root would spawn a containing block and every
+   position:absolute child in hub.css (#hub, #hub-footer, .palette, .boot) would
+   snap to the wrong box. Background-image creates no containing block, so the
+   fixed-layout contract in the header of this file is preserved.
+   This rule follows hub.css, so its `background: var(--bg)` shorthand is
+   overridden here with equal (#id) specificity. Panels paint opaque on top; the
+   texture reads through #hub-main, the footer strip and every gutter. */
+#hub-root {
+  background-color: #0d0f12;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='tkgrain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23tkgrain)' opacity='0.05'/%3E%3C/svg%3E"),
+    linear-gradient(135deg, #14181f 0%, #0f1218 44%, #0b0d10 100%);
+  background-size: 140px 140px, 100% 100%;
+  background-repeat: repeat, no-repeat;
+  background-position: 0 0, 0 0;
+}
+
+/* #hub-main is transparent in hub.css, so the ground shows through the content
+   gutters. Give it a faint diagonal brushed sheen of its own so the metal reads
+   even where list/detail panels do not fully cover it - still <6% contrast. */
+#hub-root #hub-main {
+  background-image: linear-gradient(115deg, rgba(255, 255, 255, 0.014), transparent 38%);
+}
+
+/* Progress import toolbar - a slim strip above the hub. WRAPS instead of
+   scrolling sideways, so on a 390px phone the "Guess my trader levels" button
+   and the Pilot download CTA fold onto a second row and stay reachable. Its
+   extra height is absorbed by #hub-root via the flex column above. */
+.tk-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  min-height: var(--tk-toolbar-h);
+  padding: 6px 14px;
+  background: #14171c;
+  border-bottom: 1px solid #262b33;
+  color: #8b94a2;
+  font: 500 12px/1.2 "Segoe UI", system-ui, sans-serif;
+}
+.tk-toolbar__label { color: #d8dde5; font-weight: 600; }
+.tk-toolbar label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.tk-toolbar input[type="file"] {
+  font: inherit;
+  color: #8b94a2;
+  max-width: 210px;
+}
+.tk-toolbar button {
+  font: inherit;
+  color: #d8dde5;
+  background: #1b1f26;
+  border: 1px solid #262b33;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.tk-toolbar button:hover { border-color: #4db2ff; }
+.tk-status { color: #7fe0c3; }
+.tk-status.bad { color: #ff8a8a; }
+.tk-download {
+  margin-left: auto;
+  color: #c8b88a;
+  text-decoration: none;
+  border: 1px solid rgba(200, 184, 138, 0.42);
+  border-radius: 4px;
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+.tk-download:hover { border-color: #c8b88a; color: #e6dcc0; }
+
+/* On a narrow phone the toolbar wraps, so pushing the download all the way right
+   with margin-left:auto would strand it alone on its own row. Drop the auto push
+   below 560px and let it flow right after the other controls. */
+@media (max-width: 559px) {
+  .tk-download { margin-left: 0; }
+}
+
+/* ==========================================================================
+   "Track my progress" - the single warm CTA. It folds the four connect actions
+   (TarkovTracker / Pilot import / guess traders / desktop download) behind one
+   expander so the toolbar reads as an invitation, not a wall of cold buttons.
+   The body floats over the hub (like the connect panel) so opening it never
+   reflows the strip. On a phone it drops to a full-width sheet.
+   ========================================================================== */
+.tk-track { position: relative; }
+.tk-track__summary {
+  list-style: none;
+  cursor: pointer;
+  color: #cfeeff;
+  background: #16202a;
+  border: 1px solid #1f5c78;
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-weight: 600;
+  user-select: none;
+  white-space: nowrap;
+}
+.tk-track__summary::-webkit-details-marker { display: none; }
+.tk-track__summary::before { content: "\1F4CD  "; }   /* round pin: "track" */
+.tk-track[open] .tk-track__summary { border-color: #4db2ff; background: #16465e; }
+
+.tk-track__body {
+  position: absolute;
+  z-index: 45;
+  top: calc(100% + 6px);
+  left: 0;
+  width: min(460px, 94vw);
+  background: #12161b;
+  border: 1px solid #2b323c;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+  padding: 12px 14px;
+  color: #b7c0cc;
+  font-size: 12px;
+  line-height: 1.45;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.tk-track__lead { margin: 0; color: #8b94a2; }
+
+/* The Fiiish Pilot LIVE link. A sibling of the TarkovTracker <details>, not a
+   panel of its own: it is one button and one status line, so folding it away
+   would hide the whole feature behind two clicks. */
+.tk-pilot {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 10px;
+  border: 1px solid #24303d;
+  border-radius: 8px;
+  background: #101823;
+}
+.tk-pilot__lead { margin: 0; color: #8b94a2; line-height: 1.45; }
+.tk-pilot__row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+/* inside the sheet the download is just another stacked option, not a
+   right-pinned strip item */
+.tk-track__body .tk-download { margin-left: 0; }
+
+/* Phone: full-width sheet pinned under the toolbar, like the connect panel. */
+@media (max-width: 559px) {
+  .tk-track { position: static; }
+  .tk-track__body {
+    position: fixed;
+    left: 8px;
+    right: 8px;
+    width: auto;
+    top: auto;
+    max-height: 74vh;
+    overflow-y: auto;
+  }
+}
+
+/* ==========================================================================
+   Connect-my-progress panel. On-theme with the hub's dark toolbar; the
+   <details> panels keep the token/paste UI folded until wanted so the strip
+   stays slim. Everything wraps for a 390px phone.
+   ========================================================================== */
+
+/* Connected / last-sync readout */
+.tk-conn-state {
+  color: #8b94a2;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.tk-conn-state.on { color: #7fe0c3; }
+
+/* Shared button skin, matching .tk-toolbar button */
+.tk-btn {
+  font: inherit;
+  color: #d8dde5;
+  background: #1b1f26;
+  border: 1px solid #262b33;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.tk-btn:hover { border-color: #4db2ff; }
+.tk-btn--primary {
+  background: #133a4d;
+  border-color: #1f5c78;
+  color: #cfeeff;
+}
+.tk-btn--primary:hover { border-color: #4db2ff; background: #16465e; }
+.tk-btn--ghost { background: transparent; color: #8b94a2; }
+
+/* The TarkovTracker <details> panel */
+.tk-connect { position: relative; }
+.tk-connect__summary {
+  list-style: none;
+  cursor: pointer;
+  color: #cfeeff;
+  background: #16202a;
+  border: 1px solid #1f5c78;
+  border-radius: 4px;
+  padding: 4px 10px;
+  user-select: none;
+  white-space: nowrap;
+}
+.tk-connect__summary::-webkit-details-marker { display: none; }
+.tk-connect__summary::before { content: "\1F517  "; }
+.tk-connect[open] .tk-connect__summary { border-color: #4db2ff; }
+
+/* The panel body floats over the hub so opening it never reflows the toolbar.
+   On a phone it drops to a full-width sheet under the strip. */
+.tk-connect__body {
+  position: absolute;
+  z-index: 40;
+  top: calc(100% + 6px);
+  left: 0;
+  width: min(440px, 92vw);
+  background: #12161b;
+  border: 1px solid #2b323c;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+  padding: 12px 14px;
+  color: #b7c0cc;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.tk-connect__lead { margin: 0 0 10px; }
+.tk-connect__lead a { color: #4db2ff; }
+.tk-connect__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.tk-connect__field {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1 1 180px;
+  color: #8b94a2;
+}
+.tk-connect__field input {
+  font: inherit;
+  color: #e6ebf1;
+  background: #0d1116;
+  border: 1px solid #2b323c;
+  border-radius: 4px;
+  padding: 5px 8px;
+}
+.tk-connect__field input:focus { outline: none; border-color: #4db2ff; }
+
+.tk-connect__paste { margin-top: 6px; }
+.tk-connect__paste > summary {
+  cursor: pointer;
+  color: #8b94a2;
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+.tk-connect__hint { margin: 0 0 6px; color: #7a828f; }
+.tk-connect__hint code {
+  background: #0d1116;
+  border: 1px solid #2b323c;
+  border-radius: 3px;
+  padding: 0 4px;
+  color: #cfd6df;
+  font-size: 11px;
+  word-break: break-all;
+}
+.tk-connect__paste textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font: 11px/1.4 ui-monospace, "Cascadia Code", Consolas, monospace;
+  color: #e6ebf1;
+  background: #0d1116;
+  border: 1px solid #2b323c;
+  border-radius: 4px;
+  padding: 6px 8px;
+  resize: vertical;
+  margin-bottom: 6px;
+}
+.tk-connect__status { margin: 8px 0 0; }
+.tk-connect__status.bad { color: #ff8a8a; }
+
+.tk-connect__file {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+.tk-connect__file input[type="file"] {
+  font: inherit;
+  color: #8b94a2;
+  max-width: 180px;
+}
+
+/* Phone: the floating panel becomes a full-width sheet pinned under the strip. */
+@media (max-width: 559px) {
+  .tk-connect { position: static; }
+  .tk-connect__body {
+    position: fixed;
+    left: 8px;
+    right: 8px;
+    width: auto;
+    top: auto;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+}

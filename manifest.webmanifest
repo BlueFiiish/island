@@ -1,0 +1,87 @@
+{
+  "id": "/island/",
+  "name": "Fiiiish Island",
+  "short_name": "Island",
+  "description": "Item databases, calculators, wikis and progress trackers for the games BlueFiiish and friends play. No account, works offline.",
+  "scope": "/island/",
+  "start_url": "/island/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0a0a0c",
+  "theme_color": "#0a0a0c",
+  "icons": [
+    {
+      "src": "/island/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/island/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/island/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/island/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/island/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/island/icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Rust",
+      "short_name": "Rust",
+      "url": "/island/rust/"
+    },
+    {
+      "name": "Terraria",
+      "short_name": "Terraria",
+      "url": "/island/terraria/"
+    },
+    {
+      "name": "Isaac",
+      "short_name": "Isaac",
+      "url": "/island/isaac/"
+    },
+    {
+      "name": "DBD Companion",
+      "short_name": "DBD Companion",
+      "url": "/island/dbd/"
+    },
+    {
+      "name": "WARDOGS",
+      "short_name": "WARDOGS",
+      "url": "/island/wardogs/"
+    },
+    {
+      "name": "Path of Exile 2",
+      "short_name": "Path of Exile 2",
+      "url": "/island/poe2/"
+    },
+    {
+      "name": "Elden Ring",
+      "short_name": "Elden Ring",
+      "url": "/island/elden/"
+    }
+  ]
+}

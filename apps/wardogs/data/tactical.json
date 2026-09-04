@@ -1,0 +1,90 @@
+[
+ {
+  "id": "m18-smoke-grenade-white",
+  "name": "M18 Smoke Grenade: White",
+  "category": "Grenades",
+  "sourceSection": "grenades",
+  "slotType": "Quick Slot",
+  "weightKg": 0.54,
+  "price": 100,
+  "unlockPrice": 7500,
+  "summary": "Grenade - slot Quick Slot, weight 0.54 kg, $100.",
+  "sourceUrl": "https://wardogshandbook.com/Tactical#grenades",
+  "beginner": {
+   "whatItIs": "A 0.54 kg thrown grenade that lays down a cloud of white smoke. It does no damage - it hides things.",
+   "whyItMatters": "It is the only item in this group that helps you move rather than helps you kill, and moving across open ground is most of what a match is. Each one is $100 once you have paid the $7,500 unlock.",
+   "whenToUseIt": "Throw it before you cross something you cannot cross safely, or between yourself and whoever is shooting at you. The colour in the name hints that others may follow, but only white has been confirmed."
+  },
+  "icon": "/island/apps/wardogs/./sprites/tactical-m18-smoke-grenade-white.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "c4-charge",
+  "name": "C4 Charge",
+  "category": "Explosives",
+  "sourceSection": "explosives",
+  "price": 250,
+  "summary": "Explosive - $250.",
+  "sourceUrl": "https://wardogshandbook.com/Tactical#explosives",
+  "beginner": {
+   "whatItIs": "An explosive you place on something and set off later with a separate detonator you have to be carrying.",
+   "whyItMatters": "It is the cheapest way to destroy something without being next to it when it happens, but it only works as a pair - the charge alone does nothing.",
+   "whenToUseIt": "Place it where you expect the other side to come through, then be somewhere else. Do not buy it unless you are also carrying the detonator."
+  },
+  "icon": "/island/apps/wardogs/./sprites/tactical-c4-charge.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "improvised-explosive-device",
+  "name": "Improvised Explosive Device",
+  "category": "Explosives",
+  "sourceSection": "explosives",
+  "price": 300,
+  "summary": "Explosive - $300.",
+  "sourceUrl": "https://wardogshandbook.com/Tactical#explosives",
+  "beginner": {
+   "whatItIs": "A $300 placed explosive. How it is set off has never been published.",
+   "whyItMatters": "The price sits just above C4, which hints that it is meant as a step up in some way, but nothing about its trigger, its blast or its weight is confirmed. Buying one is buying an unknown.",
+   "whenToUseIt": "Wait for Early Access. There is no sensible way to place a device when nobody has written down what makes it go off."
+  },
+  "icon": "/island/apps/wardogs/./sprites/tactical-improvised-explosive-device.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "at-mine",
+  "name": "AT Mine",
+  "category": "Explosives",
+  "sourceSection": "explosives",
+  "price": 650,
+  "summary": "Explosive - $650.",
+  "sourceUrl": "https://wardogshandbook.com/Tactical#explosives",
+  "beginner": {
+   "whatItIs": "A $650 placed explosive built for vehicles. It is expected to go off when one drives over it, though even that is not stated outright.",
+   "whyItMatters": "Vehicles use roads and bridges because everything else is slow, which makes them predictable, and $650 buys something that punishes that. It costs a fraction of an anti-tank launcher - the RPG-7 is $2,000 and the MAAWS $2,600.",
+   "whenToUseIt": "Put it on the route into the contested area rather than inside it. A mine only earns its money where a driver has no interesting choice about where to go."
+  },
+  "icon": "/island/apps/wardogs/./sprites/tactical-at-mine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "claymore",
+  "name": "Claymore",
+  "category": "Explosives",
+  "sourceSection": "explosives",
+  "price": 900,
+  "summary": "Explosive - $900.",
+  "sourceUrl": "https://wardogshandbook.com/Tactical#explosives",
+  "beginner": {
+   "whatItIs": "A $900 placed explosive, the dearest in the group, understood to fire in one direction and at people rather than at vehicles.",
+   "whyItMatters": "A directional charge is a way of guarding a doorway or a stairwell while you are looking somewhere else. Its blast shape and its trigger are both unconfirmed, so treat the behaviour as expected rather than known.",
+   "whenToUseIt": "Put it behind you when you are holding a position with one obvious way in. It is poor value out in the open where nobody has to walk past it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/tactical-claymore.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

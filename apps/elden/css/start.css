@@ -1,0 +1,467 @@
+/* start.css - the Start tab.
+ *
+ * OWNED BY: P3 L5 (shell + Start + Wiki). Depends on the tokens and primitives
+ * in style.css; adds nothing global.
+ *
+ * The signature moment of the app lives here: the grace hero. A Site of Grace
+ * in game is a small gold flame that sweeps light across the ground, and the
+ * hero reproduces that as one slow diagonal sweep over a radial glow. It is the
+ * only looping animation in the app, it is disabled under
+ * prefers-reduced-motion (style.css kills every animation there), and nothing
+ * in it is load-bearing: with motion off the hero is still a lit gold panel.
+ *
+ * ASCII only. No url() to any file.
+ */
+
+/* ==========================================================================
+ * HERO
+ * ========================================================================== */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  text-align: center;
+  padding: 46px 20px 34px;
+  margin: 6px 0 16px;
+  border: 1px solid var(--accent-line);
+  border-radius: 16px;
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(214, 168, 76, 0.16), rgba(214, 168, 76, 0) 62%),
+    linear-gradient(to bottom, #16120c, #0b0a08);
+  box-shadow: inset 0 1px 0 rgba(255, 232, 186, 0.08), var(--shadow);
+}
+
+/* The sweep. A wide, very soft gold band travelling across the panel at an
+   angle, clipped by the hero's own overflow. */
+.hero-sweep {
+  position: absolute;
+  inset: -40% -60%;
+  z-index: -1;
+  background: linear-gradient(
+    104deg,
+    rgba(214, 168, 76, 0) 34%,
+    rgba(241, 213, 138, 0.16) 47%,
+    rgba(255, 240, 205, 0.26) 50%,
+    rgba(241, 213, 138, 0.16) 53%,
+    rgba(214, 168, 76, 0) 66%
+  );
+  transform: translateX(-38%);
+  animation: ergrace 7.5s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes ergrace {
+  0% {
+    transform: translateX(-42%);
+    opacity: 0;
+  }
+  18% {
+    opacity: 1;
+  }
+  62% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(42%);
+    opacity: 0;
+  }
+}
+
+.hero-grace {
+  display: block;
+  font-size: 34px;
+  line-height: 1;
+  color: var(--accent-hi);
+  margin: 0 auto 14px;
+  text-shadow: 0 0 30px rgba(214, 168, 76, 0.85), 0 0 70px rgba(214, 168, 76, 0.35);
+}
+
+.hero-title {
+  font-family: var(--font-d);
+  font-size: 33px;
+  font-weight: 600;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 12px;
+  text-shadow: 0 0 34px rgba(214, 168, 76, 0.3);
+}
+.hero-sub {
+  margin: 0 auto 20px;
+  max-width: 38ch;
+  color: var(--dim);
+  font-size: 17.5px;
+  line-height: 1.48;
+  font-style: italic;
+}
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.hero-cta .btn {
+  flex: 1 1 auto;
+  min-width: 44%;
+  max-width: 260px;
+}
+.hero-stamp {
+  margin: 18px 0 0;
+  color: var(--faint);
+  font-family: var(--font-d);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+body[data-mode="sote"] .hero {
+  border-color: var(--accent-2-line);
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(214, 168, 76, 0.15), rgba(214, 168, 76, 0) 60%),
+    radial-gradient(90% 70% at 84% 106%, rgba(194, 84, 44, 0.2), rgba(194, 84, 44, 0) 62%),
+    linear-gradient(to bottom, #17110c, #0b0908);
+}
+
+@media (min-width: 620px) {
+  .hero {
+    padding: 60px 28px 42px;
+  }
+  .hero-title {
+    font-size: 42px;
+  }
+}
+
+/* ==========================================================================
+ * YOUR FIRST TEN MINUTES
+ * ========================================================================== */
+
+.steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 13px 2px;
+  border-bottom: 1px solid var(--line);
+}
+.step:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.step-n {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-line);
+  background: var(--accent-dim);
+  color: var(--accent-hi);
+  font-family: var(--font-d);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+.step-b {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.step-t {
+  font-family: var(--font-d);
+  font-size: 14.5px;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.step-x {
+  color: var(--dim);
+  font-size: 16.5px;
+  line-height: 1.45;
+}
+.steplink {
+  align-self: flex-start;
+  margin-top: 4px;
+  background: none;
+  border: 0;
+  padding: 2px 0;
+  color: var(--accent);
+  font-family: var(--font-d);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--accent-line);
+}
+.steplink:hover {
+  color: var(--accent-hi);
+}
+
+/* ==========================================================================
+ * PICK A CLASS
+ * ========================================================================== */
+
+.cpicks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 9px;
+}
+@media (min-width: 560px) {
+  .cpicks {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.cpick {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  text-align: left;
+  padding: 13px;
+  border-radius: 12px;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-lift);
+}
+.cpick:hover {
+  border-color: var(--hair);
+  background: var(--panel3);
+}
+.cpick-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+.cpick-n {
+  font-family: var(--font-d);
+  font-size: 15px;
+  letter-spacing: 0.07em;
+  color: var(--accent-hi);
+}
+.cpick-l {
+  flex: 0 0 auto;
+  color: var(--faint);
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+}
+.cpick-why {
+  color: var(--dim);
+  font-size: 16px;
+  line-height: 1.42;
+}
+.cpick-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+.cs {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 3px 8px;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid var(--line);
+  color: var(--faint);
+  font-size: 11.5px;
+  letter-spacing: 0.03em;
+}
+.cs b {
+  font-size: 14px;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+ * GLOSSARY
+ * ========================================================================== */
+
+.gloss {
+  margin: 12px 0 0;
+}
+.gl-row {
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+}
+.gl-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.gl-t {
+  font-family: var(--font-d);
+  font-size: 13.5px;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin: 0 0 4px;
+}
+.gl-d {
+  margin: 0;
+  color: var(--ink);
+  font-size: 16.5px;
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+ * THE EXPANSION SWITCH
+ * ========================================================================== */
+
+.dlc-panel {
+  border-color: var(--accent-2-line);
+}
+.dlc-panel .ph {
+  color: var(--accent-2);
+}
+.dlc-panel::before {
+  background: linear-gradient(to right, transparent, var(--accent-2-line), transparent);
+}
+.bigtog {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px;
+  border-radius: 12px;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+.bigtog:hover {
+  border-color: var(--accent-2-line);
+}
+.bigtog-b {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.bigtog-t {
+  font-family: var(--font-d);
+  font-size: 13.5px;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+.bigtog-s {
+  color: var(--dim);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+ * HOW CURRENT THIS IS
+ * ========================================================================== */
+
+.counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+.cnt {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 4px 9px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.24);
+  border: 1px solid var(--line);
+  color: var(--faint);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+.cnt b {
+  font-size: 14.5px;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.gaps {
+  margin-top: 14px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 10px 13px;
+  background: rgba(0, 0, 0, 0.18);
+}
+.gaps > summary {
+  cursor: pointer;
+  color: var(--dim);
+  font-family: var(--font-d);
+  font-size: 11px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  list-style: none;
+}
+.gaps > summary::-webkit-details-marker {
+  display: none;
+}
+.gaps > summary::before {
+  content: "+ ";
+  color: var(--accent);
+}
+.gaps[open] > summary::before {
+  content: "- ";
+}
+.gaps[open] > summary {
+  color: var(--accent);
+  margin-bottom: 9px;
+}
+.gaps ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--dim);
+  font-size: 15px;
+  line-height: 1.45;
+}
+.gaps li {
+  margin-bottom: 6px;
+}
+
+/* ==========================================================================
+ * ATTRIBUTION
+ * ========================================================================== */
+
+.attrib .srclist {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+}
+.attrib .srclist li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+.attrib .srclist li:last-child {
+  border-bottom: 0;
+}
+.srcname {
+  font-family: var(--font-d);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  color: var(--ink);
+}
+.srclic {
+  color: var(--accent);
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+}
+.srcuse {
+  color: var(--faint);
+  font-size: 14.5px;
+  line-height: 1.4;
+}
+.attrib-p {
+  margin: 0;
+  color: var(--faint);
+  font-size: 14px;
+  line-height: 1.5;
+}

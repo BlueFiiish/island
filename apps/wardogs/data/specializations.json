@@ -1,0 +1,327 @@
+[
+ {
+  "id": "rpg-7",
+  "name": "RPG-7",
+  "category": "Launchers",
+  "sourceSection": "launchers",
+  "weightKg": 6.3,
+  "price": 2000,
+  "payload": "93mm Self-Propelled Rocket",
+  "launchTube": "Reusable",
+  "summary": "Launcher - payload 93mm Self-Propelled Rocket, weight 6.3 kg, $2,000.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#launchers",
+  "beginner": {
+   "whatItIs": "A reusable rocket launcher that fires an unguided self-propelled rocket. It is heavy and it takes your specialization slot.",
+   "whyItMatters": "Without something in this family, an armoured vehicle is a problem you have no answer to at all - you can only leave. Carrying it turns a vehicle from a wall into a target.",
+   "whenToUseIt": "Take it when the other side is fielding vehicles and you are the one who will be waiting for them. It is dead weight in a match where you never see armour."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-rpg-7.webp"
+ },
+ {
+  "id": "9k333-verba",
+  "name": "9K333 Verba",
+  "category": "Launchers",
+  "sourceSection": "launchers",
+  "weightKg": 17.25,
+  "price": 800,
+  "wardogLevel": "Support Lvl 16",
+  "payload": "72mm Anti-Air Missile",
+  "launchTube": "Single-Use",
+  "special": "Requires Lock On",
+  "summary": "Launcher - payload 72mm Anti-Air Missile, weight 17.25 kg, $800.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#launchers",
+  "beginner": {
+   "whatItIs": "A single-use anti-air launcher firing a 72mm missile, and it will not shoot until it has a lock. It weighs 17.25 kg.",
+   "whyItMatters": "At 17.25 kg it is heavier than any weapon in the game and second only to top-tier body armour, and it is spent the instant you fire. In exchange it is one of very few answers a soldier on foot has to a helicopter.",
+   "whenToUseIt": "Bring it when the other side is flying and not before. Against anything on the ground it is dead load, and it opens at Support level 16 for $800."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-9k333-verba.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "maaws",
+  "name": "MAAWS",
+  "category": "Launchers",
+  "sourceSection": "launchers",
+  "weightKg": 7,
+  "price": 2600,
+  "wardogLevel": "Support Lvl 20",
+  "payload": "84mm Anti-Tank Shell",
+  "launchTube": "Reusable",
+  "summary": "Launcher - payload 84mm Anti-Tank Shell, weight 7 kg, $2,600.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#launchers",
+  "beginner": {
+   "whatItIs": "A reusable anti-tank launcher firing an 84mm shell, at 7 kg and $2,600.",
+   "whyItMatters": "Reusable is the word that matters. Unlike the anti-air tube you do not throw it away after one shot, so a single purchase can answer several vehicles across one match.",
+   "whenToUseIt": "Carry it when the enemy is fielding armour and you expect more than one piece of it. It opens at Support level 20."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-maaws.webp"
+ },
+ {
+  "id": "mgl-40",
+  "name": "MGL-40",
+  "category": "Launchers",
+  "sourceSection": "launchers",
+  "weightKg": 5.3,
+  "price": 6000,
+  "wardogLevel": "Support Lvl 35",
+  "payload": "40mm Grenade Shells",
+  "launchTube": "6-Shot",
+  "summary": "Launcher - payload 40mm Grenade Shells, weight 5.3 kg, $6,000.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#launchers",
+  "beginner": {
+   "whatItIs": "A six-shot 40mm grenade launcher, the priciest in the group at $6,000, opening at Support level 35.",
+   "whyItMatters": "Six shells before a reload make it the only launcher here that can keep firing, and grenades work on people and positions rather than only on vehicles - which is unusual for this group.",
+   "whenToUseIt": "Bring it against infantry holding a building or a trench line. Against a tank the dedicated anti-tank tube is both cheaper and better."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-mgl-40.webp"
+ },
+ {
+  "id": "small-hammer",
+  "name": "Small Hammer",
+  "category": "Hammers",
+  "sourceSection": "hammers",
+  "summary": "Hammer.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#hammers",
+  "beginner": {
+   "whatItIs": "The smallest build tool, and one of two already sitting inside an FOB the moment you place it. No weight, price or unlock has been published for it.",
+   "whyItMatters": "It costs you nothing and asks nothing, so it is what most people build with by default. What it will not do is raise the strongest walls or the heavy emplacements - those need the large hammer and nothing else.",
+   "whenToUseIt": "Use it for the ordinary walls that make up most of a base. Reach for a bigger tool only when this one refuses to put something up."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-small-hammer.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "medium-hammer",
+  "name": "Medium Hammer",
+  "category": "Hammers",
+  "sourceSection": "hammers",
+  "summary": "Hammer.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#hammers",
+  "beginner": {
+   "whatItIs": "The middle build tool, also supplied inside every FOB from the moment it goes down. As with the small one, no weight or price has been published.",
+   "whyItMatters": "It is free and it is already there, which makes the real question not whether to use it but whether your team owns a large hammer at all - because the best structures will not go up without one.",
+   "whenToUseIt": "Treat it as your default builder. It is what you will have in hand for very nearly every wall you ever raise."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-medium-hammer.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "large-hammer",
+  "name": "Large Hammer",
+  "category": "Hammers",
+  "sourceSection": "hammers",
+  "weightKg": 3.18,
+  "price": 1600,
+  "unlockPrice": 25000,
+  "summary": "Hammer - weight 3.18 kg, $1,600.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#hammers",
+  "beginner": {
+   "whatItIs": "The heavy build tool: 3.18 kg, $1,600 to buy and $25,000 to unlock. It is the only one that raises the strongest wall tiers, the anti-air emplacements and the mortars, and the only one that puts up a Refuel or Repair Station.",
+   "whyItMatters": "Everything a base does beyond stopping bullets is gated behind this single item. A team with a fully stocked FOB and no large hammer cannot service one vehicle.",
+   "whenToUseIt": "One person in the squad should own it, and it should be whoever plays the base. A second copy is money that would do more as supplies."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-large-hammer.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "remote-detonator",
+  "name": "Remote Detonator",
+  "category": "Equipment",
+  "sourceSection": "equipment",
+  "weightKg": 0.02,
+  "price": 550,
+  "unlockPrice": 15000,
+  "summary": "Equipment - weight 0.02 kg, $550.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#equipment",
+  "beginner": {
+   "whatItIs": "A 0.02 kg trigger that sets off a C4 charge you have already placed, from somewhere safer than arm's length.",
+   "whyItMatters": "On its own it is useless - it fires a charge, it does not carry one - so it is really the second half of a two-item purchase. It also asks $15,000 to unlock on top of the $550 to buy.",
+   "whenToUseIt": "Only if you are actually running C4. Placing a charge and then having no way to set it off is the mistake this item exists to prevent."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-remote-detonator.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "fuel-can",
+  "name": "Fuel Can",
+  "category": "Equipment",
+  "sourceSection": "equipment",
+  "price": 150,
+  "summary": "Equipment - $150.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#equipment",
+  "beginner": {
+   "whatItIs": "A $150 equipment item for putting fuel into a vehicle by hand. It is nothing to do with the stockpile an FOB holds.",
+   "whyItMatters": "It is the cheap, portable answer to a vehicle running dry somewhere your base cannot reach. No weight has been published for it.",
+   "whenToUseIt": "Carry one if you drive a long way from your own lines. Near a stocked FOB the station does the job for you and the slot does more elsewhere."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-fuel-can.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "halligan-bar",
+  "name": "Halligan Bar",
+  "category": "Equipment",
+  "sourceSection": "equipment",
+  "price": 1100,
+  "summary": "Equipment - $1,100.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#equipment",
+  "beginner": {
+   "whatItIs": "An $1,100 tool that forces ordinary doors open.",
+   "whyItMatters": "It turns a locked building from an obstacle into a route. Nothing else you can put in this slot changes where you are allowed to go.",
+   "whenToUseIt": "Bring it when the fighting is happening indoors and you expect to be the one attacking. Out in the open it does nothing at all."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-halligan-bar.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "monocular",
+  "name": "Monocular",
+  "category": "Recon",
+  "sourceSection": "recon",
+  "weightKg": 1,
+  "price": 150,
+  "unlockPrice": 7500,
+  "summary": "Recon - weight 1 kg, $150.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#recon",
+  "beginner": {
+   "whatItIs": "A 1 kg spotting optic with medium adjustable magnification that marks enemy infantry and vehicles for your team.",
+   "whyItMatters": "Marking something earns you credit when a teammate kills it, so this is how you get paid without taking the fight yourself. Owning a sniper rifle is not a requirement for using one.",
+   "whenToUseIt": "Take it when you are watching an area rather than pushing into it. It costs $150 to buy on top of a one-time $7,500 unlock, so it is a considered purchase - the $75 Binoculars are the cheaper way to find out whether spotting suits you."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-monocular.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "range-finder",
+  "name": "Range Finder",
+  "category": "Recon",
+  "sourceSection": "recon",
+  "weightKg": 0.23,
+  "price": 400,
+  "unlockPrice": 15000,
+  "summary": "Recon - weight 0.23 kg, $400.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#recon",
+  "beginner": {
+   "whatItIs": "A lighter spotting optic at 0.23 kg, with stronger magnification than the monocular plus a readout of how far away whatever you are looking at is.",
+   "whyItMatters": "The distance readout is the part that changes how you shoot: it turns guessing your holdover into reading it off the device. It marks targets for the team exactly as the monocular does.",
+   "whenToUseIt": "Pick it over the monocular once you can carry the $15,000 unlock and you are shooting at range. Below that the cheaper optic marks just as well."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-range-finder.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "binoculars",
+  "name": "Binoculars",
+  "category": "Recon",
+  "sourceSection": "recon",
+  "price": 75,
+  "summary": "Recon - $75.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#recon",
+  "beginner": {
+   "whatItIs": "A $75 spotting optic, the cheapest of the four. It has been confirmed to exist and nothing about how it performs has been published.",
+   "whyItMatters": "The price alone makes it the obvious first spotting tool to try. Whether marking with it earns the same credit the monocular does is unverified.",
+   "whenToUseIt": "Buy one to find out whether spotting suits you before spending real money on glass. Do not build a plan around it until Early Access fills in the gaps."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-binoculars.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "infrared-range-finder",
+  "name": "Infrared Range Finder",
+  "category": "Recon",
+  "sourceSection": "recon",
+  "price": 1200,
+  "summary": "Recon - $1,200.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#recon",
+  "beginner": {
+   "whatItIs": "A $1,200 spotting optic that is very likely a thermal version of the range finder, though the source stops short of saying so.",
+   "whyItMatters": "If it does see heat, it is the only thing on the list that would find somebody who is properly hidden. That is a large if, and this carries the highest price in the group.",
+   "whenToUseIt": "Hold off. Every reason to buy it rests on a guess about what it does, and a guess is a poor thing to spend the group's top price on."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-infrared-range-finder.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "wrenches",
+  "name": "Wrenches",
+  "category": "Repair Tools",
+  "sourceSection": "repair-tools",
+  "price": 150,
+  "summary": "Repair Tool - $150.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#repair-tools",
+  "beginner": {
+   "whatItIs": "The basic hand repair tool for vehicles, $150, and already sitting in the inventory of every FOB you place.",
+   "whyItMatters": "It is the only way to fix a vehicle away from a base, and repairing feeds the same progress track that building does. Because a fresh FOB arrives with a set, most teams never buy any.",
+   "whenToUseIt": "Take the pair out of your FOB rather than paying for your own. Buy them only if you expect to be repairing a long way from any base you hold."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-wrenches.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "light-drill",
+  "name": "Light Drill",
+  "category": "Repair Tools",
+  "sourceSection": "repair-tools",
+  "weightKg": 1.5,
+  "price": 600,
+  "unlockPrice": 10000,
+  "summary": "Repair Tool - weight 1.5 kg, $600.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#repair-tools",
+  "beginner": {
+   "whatItIs": "A 1.5 kg powered repair tool that fixes vehicles faster than hand tools do. It runs on batteries and costs $600 plus a $10,000 unlock.",
+   "whyItMatters": "Speed is the whole product. Repairing in the open is when you are most exposed, so cutting the time down is worth more than it sounds - but it needs a battery in your kit as well, which the free tool does not.",
+   "whenToUseIt": "Take it once you are the person keeping the team's vehicles alive. For the occasional repair the free tool costs nothing and needs nothing."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-light-drill.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "battery",
+  "name": "Battery",
+  "category": "Batteries",
+  "sourceSection": "batteries",
+  "price": 150,
+  "summary": "Battery - $150.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#batteries",
+  "beginner": {
+   "whatItIs": "A $150 consumable that powers the light drill and the defibrillator.",
+   "whyItMatters": "Both of those are dead weight without one, so this is the cheap purchase people forget and then discover halfway through a match.",
+   "whenToUseIt": "Buy one every time you buy either of the tools it feeds. There is no reason to be carrying it otherwise."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-battery.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "high-capacity-battery",
+  "name": "High Capacity Battery",
+  "category": "Batteries",
+  "sourceSection": "batteries",
+  "price": 300,
+  "wardogLevel": 46,
+  "summary": "Battery - $300.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#batteries",
+  "beginner": {
+   "whatItIs": "The larger power cell at $300, and it does not become available until WARDOG Level 46.",
+   "whyItMatters": "It feeds the same two tools the standard cell does for twice the money. How much longer it lasts has never been stated, so whether it is good value is not yet an answerable question.",
+   "whenToUseIt": "Only once you are deep enough into a life that swapping cells is what keeps interrupting you. Below level 46 the choice is not yours to make anyway."
+  },
+  "icon": "/island/apps/wardogs/./sprites/specializations-high-capacity-battery.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

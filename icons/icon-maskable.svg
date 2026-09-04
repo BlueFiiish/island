@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Fiiiish Island">
+  <rect width="512" height="512" fill="#0a0a0c"/>
+  <g transform="translate(256 256) scale(0.62) translate(-256 -256)">
+    <path d="M112 256c48-72 128-112 200-112 48 0 88 16 120 48-16 32-16 96 0 128-32 32-72 48-120 48-72 0-152-40-200-112z" fill="#c9a227"/>
+    <circle cx="344" cy="224" r="21" fill="#0a0a0c"/>
+    <path d="M112 256c-32-32-56-48-72-48 8 32 8 64 0 96 16 0 40-16 72-48z" fill="#46e0ff"/>
+  </g>
+</svg>

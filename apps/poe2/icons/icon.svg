@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Path of Exile 2 Companion">
+  <rect width="64" height="64" rx="14" fill="#0c0908"/>
+  <path d="M32 7 L48 16 V32 C48 44 41 52 32 57 C23 52 16 44 16 32 V16 Z" fill="none" stroke="#8a1f22" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M32 19 L39 26 L32 45 L25 26 Z" fill="none" stroke="#b93f3c" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M25 26 L39 26" stroke="#7c8f5e" stroke-width="2.6" stroke-linecap="round"/>
+</svg>

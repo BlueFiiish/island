@@ -1,0 +1,474 @@
+[
+ {
+  "id": "winning-a-match",
+  "name": "Winning A Match",
+  "category": "Mechanic",
+  "sourceSection": "winning",
+  "sourcePage": "GameModes",
+  "related": [
+   "game-modes"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "game-modes",
+  "summary": "Mechanic - relates to game-modes.",
+  "sourceUrl": "https://wardogshandbook.com/GameModes#winning",
+  "beginner": {
+   "whatItIs": "The scoring rule. One large circle called the Control Zone sits somewhere on the map, about 2 km across, and it moves rather than staying in one place. Every 10 to 15 seconds the game counts heads inside it, and whichever faction has the most people in there takes a point. 100 points ends the match.",
+   "whyItMatters": "Kills do not win on their own. A faction can lose most of the gunfights and still take the match if it keeps more bodies standing in the circle, so the number worth watching is the point total, not your kill count.",
+   "whenToUseIt": "Read it every time you respawn and have to choose where to go. If your side is behind on points, the answer is almost always the circle, even when a better fight is somewhere else."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-winning-a-match.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "hot-zone",
+  "name": "Hot Zone",
+  "category": "Mechanic",
+  "sourceSection": "hot-zone",
+  "sourcePage": "GameModes",
+  "related": [
+   "game-modes"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "game-modes",
+  "summary": "Mechanic - relates to game-modes.",
+  "sourceUrl": "https://wardogshandbook.com/GameModes#hot-zone",
+  "beginner": {
+   "whatItIs": "A second, smaller circle that drifts around inside the fight. Anyone standing in it is counted as two players when the game works out who is holding the zone.",
+   "whyItMatters": "It lets a smaller force out-score a bigger one, and it pays double what the main zone does. Both of those pull the heaviest fighting on the map onto one small patch of ground.",
+   "whenToUseIt": "Push into it when your side is losing the head count and you have people with you, or when you badly need cash. Walking in on your own mostly hands the other faction a kill."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-hot-zone.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "respawning-and-hq",
+  "name": "Respawning And HQ",
+  "category": "Mechanic",
+  "sourceSection": "hq-respawn",
+  "sourcePage": "GameModes",
+  "related": [
+   "game-modes"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "game-modes",
+  "summary": "Mechanic - relates to game-modes.",
+  "sourceUrl": "https://wardogshandbook.com/GameModes#hq-respawn",
+  "beginner": {
+   "whatItIs": "What happens after you go down. You bleed out on a long timer that a teammate can interrupt by picking you up. Give up, or let it run out, and you wake up at your faction's HQ.",
+   "whyItMatters": "HQ is where the vendors are, so every price you see on a weapon, vehicle or piece of armour is paid there. It is also a long way from wherever you died, which is what makes dying costly in time as well as money.",
+   "whenToUseIt": "Ride the bleedout timer whenever a teammate can reach you. Take the trip back when nobody is coming or when you wanted to rebuy anyway. Once your side has 20 points you can drop straight onto the APC instead, but only while it is sitting inside the Control Zone - and never onto an FOB, which has no spawn on it at all."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-respawning-and-hq.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "squads",
+  "name": "Squads",
+  "category": "Mechanic",
+  "sourceSection": "squads",
+  "sourcePage": "GameModes",
+  "related": [
+   "classes"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "classes",
+  "summary": "Mechanic - relates to classes.",
+  "sourceUrl": "https://wardogshandbook.com/GameModes#squads",
+  "beginner": {
+   "whatItIs": "The grouping system. You can form a squad with other players and there is no cap on how many join it.",
+   "whyItMatters": "A squad gets its own radio channel on top of the proximity voice everyone already has, so your group can talk across the map instead of only to whoever is standing next to them.",
+   "whenToUseIt": "Form one before you deploy rather than halfway through. On a map this size the difference between a squad and a handful of strangers is whether anyone knows where the next push is going."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-squads.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "wardog-level-and-unlocks",
+  "name": "WARDOG Level And Unlocks",
+  "category": "Mechanic",
+  "sourceSection": "unlocks",
+  "sourcePage": "Progression",
+  "related": [
+   "weapons",
+   "gear",
+   "vehicles"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "weapons, gear, vehicles",
+  "summary": "Mechanic - relates to weapons, gear, vehicles.",
+  "sourceUrl": "https://wardogshandbook.com/Progression#unlocks",
+  "beginner": {
+   "whatItIs": "The account-wide level that decides what the vendors will even offer you. Reaching a level makes an item purchasable; it does not hand it over.",
+   "whyItMatters": "Almost everything worth having sits behind two gates at once - a level, and a one-time cash unlock that is separate from the price you pay to take it into a match. Money cannot buy past the level half, so a full wallet is not a full locker.",
+   "whenToUseIt": "Check it whenever something is greyed out. If a level is the blocker, the fix is playing the class that feeds it; if a price is the blocker, the fix is holding the zone longer. The published ladder runs to level 150 and stops there."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-wardog-level-and-unlocks.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "class-xp",
+  "name": "Class XP",
+  "category": "Mechanic",
+  "sourceSection": "how-it-works",
+  "sourcePage": "Progression",
+  "related": [
+   "classes"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "classes",
+  "summary": "Mechanic - relates to classes.",
+  "sourceUrl": "https://wardogshandbook.com/Progression#how-it-works",
+  "beginner": {
+   "whatItIs": "Six separate progress tracks, one each for Assault, Medic, Support, Recon, Driver and Pilot, every one of them fed by the kind of thing you actually do in a match. Added together they make your WARDOG Level.",
+   "whyItMatters": "There is no single grind. Driving a truck around does nothing for your Medic track, so what you unlock next is shaped by how you play rather than only by how long you play.",
+   "whenToUseIt": "Choose the track deliberately when you are chasing one specific unlock. Also plan around the wipe: every major update cycle closes by resetting your level and your bank to zero. The date is published in advance, and any cash you are still sitting on turns into Gold Bars."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-class-xp.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "money",
+  "name": "Money",
+  "category": "Mechanic",
+  "sourceSection": "starting-cash",
+  "sourcePage": "Money",
+  "related": [
+   "weapons",
+   "vehicles",
+   "gear"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "weapons, vehicles, gear",
+  "summary": "Mechanic - relates to weapons, vehicles, gear.",
+  "sourceUrl": "https://wardogshandbook.com/Money#starting-cash",
+  "beginner": {
+   "whatItIs": "The cash you buy everything with. A fresh account opens with $10,000, and after that you earn it by occupying the zone and by doing your class's job, and lose it to purchases and to penalties.",
+   "whyItMatters": "It is the real difficulty setting. What you can afford to lose decides what you dare carry, and taking out something you cannot replace is how new players end up with nothing left to deploy in.",
+   "whenToUseIt": "Check it before every buy rather than after. The question is never what is best, it is what you could lose twice and still be in the match."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-money.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "zone-occupation-pay",
+  "name": "Zone Occupation Pay",
+  "category": "Mechanic",
+  "sourceSection": "zone-occupation",
+  "sourcePage": "Money",
+  "related": [
+   "classes"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "classes",
+  "summary": "Mechanic - relates to classes.",
+  "sourceUrl": "https://wardogshandbook.com/Money#zone-occupation",
+  "beginner": {
+   "whatItIs": "The wage for standing on the objective. Each scoring cycle - roughly 10 to 15 seconds - the main zone pays $160 and the smaller Hot Zone pays $320.",
+   "whyItMatters": "This is the steady income everything else sits on top of. It also means the game pays you for doing the thing that wins the match, so playing the objective and getting rich are the same activity.",
+   "whenToUseIt": "Treat it as your default state. If you are not fighting, reviving someone or building something, standing outside the circle is costing you money."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-zone-occupation-pay.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "death-penalties",
+  "name": "Death Penalties",
+  "category": "Mechanic",
+  "sourceSection": "penalties",
+  "sourcePage": "Money",
+  "related": [
+   "gear",
+   "weapons"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "gear, weapons",
+  "summary": "Mechanic - relates to gear, weapons.",
+  "sourceUrl": "https://wardogshandbook.com/Money#penalties",
+  "beginner": {
+   "whatItIs": "Cash taken off you for hurting your own side - team kills, team-kill assists, and destroying or damaging friendly structures and supply pallets.",
+   "whyItMatters": "Each one mirrors something that normally pays you, so a careless grenade does not merely fail to earn, it bills you. Team kills are treated as far worse than anything else on the list.",
+   "whenToUseIt": "Think before firing into a crowded doorway or blowing up a wall you did not put there. The amounts have not been published, so read the ranking - team kill worst, a chipped friendly wall least - as an order of severity rather than a price list."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-death-penalties.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "gold-bars",
+  "name": "Gold Bars",
+  "category": "Mechanic",
+  "sourceSection": "gold-bars",
+  "sourcePage": "Money",
+  "related": [],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": null,
+  "summary": "Mechanic.",
+  "sourceUrl": "https://wardogshandbook.com/Money#gold-bars",
+  "beginner": {
+   "whatItIs": "A second currency, kept entirely apart from cash, that only buys cosmetics.",
+   "whyItMatters": "It is where leftover money goes. When progression resets, cash you did not spend converts into Gold Bars instead of vanishing - so hoarding is not punished, but it is not rewarded either, because bars cannot buy a weapon, a vest or a vehicle unlock.",
+   "whenToUseIt": "Spend your cash on what you actually want before a reset lands. There is no reason to sit on a balance hoping it turns into something useful; it turns into cosmetics and nothing else."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-gold-bars.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "black-market",
+  "name": "Black Market",
+  "category": "Mechanic",
+  "sourceSection": "what-it-adds",
+  "sourcePage": "BlackMarket",
+  "related": [
+   "weapons",
+   "gear"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "weapons, gear",
+  "summary": "Mechanic - relates to weapons, gear.",
+  "sourceUrl": "https://wardogshandbook.com/BlackMarket#what-it-adds",
+  "beginner": {
+   "whatItIs": "A between-matches layer that has been announced but is not in the game yet. The developers have said it is being built during early access and that the groundwork is already in place.",
+   "whyItMatters": "Worth knowing about mainly so you are not confused when a guide mentions it. Everything described so far is about turning match earnings into an advantage later - paying a dealer to smuggle gear to you overnight, wagering on yourself to hit a challenge, funding a side business, buying a manufacturer so your preferred kit gets cheaper, or selling high-level items to other players mid-match at a markup you set.",
+   "whenToUseIt": "Not yet. When it does land it is described as completely optional, and anything you obtain through it goes into your Vault rather than straight into your hands. Ordinary play never depends on it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-black-market.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "the-vault",
+  "name": "The Vault",
+  "category": "Mechanic",
+  "sourceSection": "how-it-works",
+  "sourcePage": "Vault",
+  "related": [
+   "gear"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "gear",
+  "summary": "Mechanic - relates to gear.",
+  "sourceUrl": "https://wardogshandbook.com/Vault#how-it-works",
+  "beginner": {
+   "whatItIs": "Personal storage for anything you obtain through the Black Market. Items land in there instead of going straight into a loadout.",
+   "whyItMatters": "Vault contents can be pulled back out for free in later matches, which makes it the one place where money spent once keeps paying. The size limit can be raised permanently, and that is presented as a long-term goal rather than a shop item.",
+   "whenToUseIt": "Nothing to do with it yet - it arrives alongside the Black Market, which is not live. Read both as a signal of where the game is heading rather than as something to plan around."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-the-vault.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "drills",
+  "name": "Drills",
+  "category": "Mechanic",
+  "sourceSection": "how-it-works",
+  "sourcePage": "Drills",
+  "related": [
+   "maps"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "maps",
+  "summary": "Mechanic - relates to maps.",
+  "sourceUrl": "https://wardogshandbook.com/Drills#how-it-works",
+  "beginner": {
+   "whatItIs": "Numbered towers standing out on the map, each with a terminal tucked into the top of it. Taking a terminal uncovers one digit of a code.",
+   "whyItMatters": "Gather enough digits to complete the code and you can drag the Hot Zone over to that tower for a while. That is rare in this game - a way to move the fight rather than react to wherever it already is.",
+   "whenToUseIt": "Send someone when the zone is a long walk off and the trip would otherwise be dead time. Drills carry a start-of-match cooldown, so a tower is not capturable the instant a round begins, and the source publishes none of the timings: how many digits a code needs, how long the move holds and how long the cooldown runs are all still unknown."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-drills.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "forward-operating-bases",
+  "name": "Forward Operating Bases",
+  "category": "Mechanic",
+  "sourceSection": "forward-operating-base",
+  "sourcePage": "Deployables",
+  "related": [
+   "deployables"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "deployables",
+  "summary": "Mechanic - relates to deployables.",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "A deployable base that takes a quick slot, weighs 6.5 kg and costs $2,500. Put it down and it draws a build radius on the minimap, opens a shared stockpile, and makes vehicle servicing possible.",
+   "whyItMatters": "It is the only thing that keeps a push supplied without walking back to HQ. The stockpile belongs to the whole team - four supply types, each holding up to 20,000 - and the refuel and repair stations built at it are the only way to patch up a vehicle in the field.",
+   "whenToUseIt": "Drop one once your side holds ground worth supplying and has cover to hold it from. Do not build a respawn plan around it: unlike HQ or the APC, nobody comes back to life on an FOB."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-forward-operating-bases.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "building-system",
+  "name": "Building System",
+  "category": "Mechanic",
+  "sourceSection": "building-system",
+  "sourcePage": "Deployables",
+  "related": [
+   "deployables",
+   "specializations"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "deployables, specializations",
+  "summary": "Mechanic - relates to deployables, specializations.",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#building-system",
+  "beginner": {
+   "whatItIs": "Putting walls and structures up inside an FOB's build radius. Pieces snap to one another, and the materials come out of that FOB's build supplies.",
+   "whyItMatters": "It is the difference between holding a position and merely standing in it. Which hammer you carry decides what you can put up, though - anti-air emplacements, mortars and the toughest wall tiers all need the Large Hammer, and no amount of stockpiled supply substitutes for it.",
+   "whenToUseIt": "Build once the FOB is placed and the ground is contested. Make sure somebody in the group is carrying the Large Hammer first, or you will only ever get the flimsy tier up."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-building-system.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "armor-and-damage-reduction",
+  "name": "Armor And Damage Reduction",
+  "category": "Mechanic",
+  "sourceSection": "armor-reduction",
+  "sourcePage": "DamageCalculator",
+  "related": [
+   "gear",
+   "ammo",
+   "ammo-types"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "gear, ammo, ammo-types",
+  "reliability": "unverified-community-tested",
+  "reliabilityNote": "The source page these figures come from is labelled by the source itself as unverified, player-collected test data rather than confirmed or official numbers. Treat them as a starting point and expect them to move at Early Access.",
+  "summary": "Mechanic - relates to gear, ammo, ammo-types.",
+  "sourceUrl": "https://wardogshandbook.com/DamageCalculator#armor-reduction",
+  "beginner": {
+   "whatItIs": "The rule that decides how much of a bullet actually lands. Damage against an armoured target is the unarmoured figure multiplied by a percentage, and that percentage is set by two things only: your ammunition type and the tier of armour it hits. The weapon does not change it.",
+   "whyItMatters": "The spread is enormous. Flesh rounds land about 16 percent of their damage against tier 1 armour and well under 1 percent against tier 4, while piercing rounds only slide from about 85 percent down to 68 percent across the same range. Armour also does not cover everything: forearms, hands, feet and legs take full damage at every tier, and even tier 4 leaves them open.",
+   "whenToUseIt": "Choose ammunition for who you expect to meet, not for the biggest number on the box. Against unarmoured players flesh rounds are brutal; against anyone in real gear they are close to useless, and piercing is the only round that keeps working as tiers climb."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-armor-and-damage-reduction.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "how-ammo-works",
+  "name": "How Ammo Works",
+  "category": "Mechanic",
+  "sourceSection": "how-ammo-works",
+  "sourcePage": "Ammo",
+  "related": [
+   "ammo",
+   "ammo-types"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "ammo, ammo-types",
+  "summary": "Mechanic - relates to ammo, ammo-types.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#how-ammo-works",
+  "beginner": {
+   "whatItIs": "Every calibre carries the same three options, shown in-game as Standard, Flesh and Piercing. Standard is free and there from the start; the other two have to be unlocked.",
+   "whyItMatters": "The unlocks are spread so far apart that for most of your playtime it is not really a three-way choice. Flesh unlocks land between roughly level 6 and level 95 and each costs a flat $5,000; piercing starts at level 63 and runs to 140, with prices not yet published.",
+   "whenToUseIt": "Leave Standard loaded as the default - it is the compromise that works on most targets. Switch to Flesh when you expect unarmoured players or intend to shoot limbs. 12 gauge is the exception to all of this: it has a fourth option, a rifled slug, and none of its unlock details are confirmed."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-how-ammo-works.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "how-vehicles-work",
+  "name": "How Vehicles Work",
+  "category": "Mechanic",
+  "sourceSection": "how-vehicles-work",
+  "sourcePage": "Vehicles",
+  "related": [
+   "vehicles"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "vehicles",
+  "summary": "Mechanic - relates to vehicles.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#how-vehicles-work",
+  "beginner": {
+   "whatItIs": "Three different gates decide whether you can buy a vehicle. Ground transport is locked behind your Driver level, combat vehicles behind your overall WARDOG level, and aircraft behind nothing but a price.",
+   "whyItMatters": "None of it is free, and the cash gates get steep - the heaviest ground vehicles run into the hundreds of thousands, while even a cheap helicopter is a few thousand. Riding in someone else's, on the other hand, costs nothing.",
+   "whenToUseIt": "When you only need to be somewhere else, climb into a teammate's helicopter or hitch a lift. Spend your own money on a ground vehicle when you want what comes with it - armour, a weapon mount, the ability to haul supplies - because as pure transport it is the expensive answer."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-how-vehicles-work.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "how-gear-protects-you",
+  "name": "How Gear Protects You",
+  "category": "Mechanic",
+  "sourceSection": "how-protection-works",
+  "sourcePage": "Gear",
+  "related": [
+   "gear"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "gear",
+  "summary": "Mechanic - relates to gear.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#how-protection-works",
+  "beginner": {
+   "whatItIs": "Four gear slots doing three different jobs. Helmets and body armour are the only ones that reduce damage; vests buy quick slots and faster reloads and weapon swaps; backpacks buy carrying space.",
+   "whyItMatters": "The armour ladder is gated on your overall level rather than your class, and every rung is paid for in kilograms. The first step is cheap: 3 kg to 4.5 kg. The last two are not: 4.5 kg to 18 kg. Wear the top helmet with the top body armour and that is 22.5 kg on you with your hands still empty.",
+   "whenToUseIt": "Stop at the second armour tier unless your job keeps you standing in one place. Buy a vest for the quick slots rather than for safety, because it stops nothing, and pick a backpack for its sling slots - the three biggest all carry the same amount."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-how-gear-protects-you.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "medical-and-revives",
+  "name": "Medical And Revives",
+  "category": "Mechanic",
+  "sourceSection": "how-medical-works",
+  "sourcePage": "Medical",
+  "related": [
+   "medical"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "medical",
+  "summary": "Mechanic - relates to medical.",
+  "sourceUrl": "https://wardogshandbook.com/Medical#how-medical-works",
+  "beginner": {
+   "whatItIs": "The healing and reviving kit, split across three jobs: putting health back on, picking teammates up, and the Adrenaline Pen, which does neither and instead buys endless tactical sprint and a lighter weight class.",
+   "whyItMatters": "Working out which of the three you are short of matters more than carrying the priciest item. A bandage tops you up a little while the first aid kit and the medical bag take you back to full; getting someone up needs a resuscitator or a defibrillator, and the medical bag speeds revives without being one itself.",
+   "whenToUseIt": "Every life starts with one free Field Resuscitator, so pairing it with a bandage covers the basics cheaply. Buy the defibrillator only if you are genuinely playing medic, since it needs Medic level 11 and a $50,000 unlock on top. Watch the weight as well - the medical bag is much heavier than anything else in the category."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-medical-and-revives.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "specializations",
+  "name": "Specializations",
+  "category": "Mechanic",
+  "sourceSection": "what-are-specializations",
+  "sourcePage": "Specializations",
+  "related": [
+   "specializations"
+  ],
+  "dataCompleteness": "prose-owed",
+  "relatedLabel": "specializations",
+  "summary": "Mechanic - relates to specializations.",
+  "sourceUrl": "https://wardogshandbook.com/Specializations#what-are-specializations",
+  "beginner": {
+   "whatItIs": "Six small families of class-locked kit: launchers, hammers, the shared equipment items, spotting optics, repair tools and the defibrillator. None of them are general-purpose. Each one exists to do a single narrow job, and only the class it belongs to can carry it.",
+   "whyItMatters": "This is where the team-support tools live. Support carries the anti-vehicle and anti-air launchers, the hammers that build and upgrade an FOB, and the wrenches and light drill that repair vehicles; Recon carries the optics that mark targets; Medic gets the defibrillator, which revives faster than the free resuscitator everyone already starts with.",
+   "whenToUseIt": "Pick one to fill a hole in the squad, not because it looks powerful. A launcher fires one fixed payload with no attachments and no ammunition choice, so it is dead weight when nothing is driving at you - but nothing else your side carries will open an armoured vehicle."
+  },
+  "icon": "/island/apps/wardogs/./sprites/mechanics-specializations.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]
