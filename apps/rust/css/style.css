@@ -1,0 +1,524 @@
+/* Self-hosted display face. Same family name the island shell loads at
+   /island/fonts/, so on /island this resolves to the shell copy and standalone
+   it resolves to this local copy. Condensed stencil = Rust "stamped metal" look. */
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/big-shoulders-display-600.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Big Shoulders Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/big-shoulders-display-700.woff2') format('woff2');
+}
+
+:root {
+  --bg: #12100e;
+  --bg2: #1a1815;
+  --bg3: #22201c;
+  --card: #1e1b17;
+  --line: #33302a;
+  --line2: #3f3a32;
+  --txt: #ece7df;
+  --txt2: #b3aa9c;
+  --txt3: #928a7b;   /* nudged lighter so micro-labels (table headers, credits) clear AA 4.5 */
+  --rust: #ce422b;
+  --rust2: #e6572f;
+  --amber: #d9861f;
+  --green: #6ab04c;
+  --red: #d64545;
+  --blue: #4a90c2;
+  --hazard: #f2b705;
+  --radius: 5px;          /* flattened: cards read as metal plates, not soft web cards */
+  --tabh: 62px;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  /* stamped-stencil display stack with a solid condensed fallback chain */
+  --display: 'Big Shoulders Display', 'Oswald', 'Roboto Condensed', 'Arial Narrow', 'Segoe UI', system-ui, sans-serif;
+  /* worn-metal plate: 1px inset top highlight + bottom shadow bevel + drop */
+  --bevel: inset 0 1px 0 rgba(255,255,255,.055), inset 0 -1px 0 rgba(0,0,0,.45), 0 1px 2px rgba(0,0,0,.5);
+  /* brushed-plate vertical gradient for cards */
+  --plate: linear-gradient(180deg, #23201b 0%, #1b1814 100%);
+  /* 45deg caution-tape gradient - DANGER/LOCKED semantics ONLY, never decoration */
+  --tape: repeating-linear-gradient(45deg, var(--hazard) 0 8px, #14110c 8px 16px);
+  /* monospace stack for schematic/tier labels (tech-tree blueprint) */
+  --mono: ui-monospace, 'SFMono-Regular', 'Roboto Mono', Menlo, Consolas, monospace;
+  /* blueprint schematic cyan - CONTAINED to the tech-tree pane only */
+  --schematic: #6fb7d8;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+[hidden] { display: none !important; }
+html, body { height: 100%; }
+body {
+  background-color: var(--bg);
+  /* corrugated-metal siding: fine ~2deg light/dark banding + one low-opacity rust
+     blotch. Pure CSS, ~0kB. Bands stay <=6% contrast so AA holds on body text. */
+  background-image:
+    radial-gradient(135% 95% at 78% -8%, rgba(206,66,43,.10), rgba(206,66,43,0) 55%),
+    repeating-linear-gradient(92deg,
+      rgba(255,255,255,.016) 0 1px,
+      rgba(0,0,0,0) 1px 2px,
+      rgba(0,0,0,.05) 2px 3px);
+  color: var(--txt);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+  overflow-x: hidden;
+}
+b { color: #fff; font-weight: 700; }
+a { color: var(--amber); text-decoration: none; }
+
+/* ---- stamped-stencil display type (headers, view titles, tab/chip labels,
+   item + target names, section headers, key stat labels). Body/description
+   text stays in the readable system sans. ---- */
+.brand, .view-title, .detail-head h2, .panel h3, .rt-head .nm, .icard .nm,
+.fav-card span, .chip, .tab, .badge, .patch-pill, .share-btn, .seg button,
+.tt-mode, .wb-tag, .scan-pc, .fav-label, .craft-raw-label, .rt-add,
+.pool-clear, .plan-clear, table.t th, .wiki-article h2, .wiki-article h3,
+.wiki-folder h3, .wiki-row .wr-f, .tt-legend, .wiki-back, .dl, .rt-m {
+  font-family: var(--display);
+}
+/* headers get the full uppercase stamp */
+.brand, .view-title, .detail-head h2, .panel h3, .rt-head .nm, .icard .nm,
+.chip, .tab, .seg button, .tt-mode, .wiki-article h2, .wiki-article h3,
+.wiki-folder h3 {
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 700;
+}
+/* smaller labels: lighter display weight so they read as stencil, not shouting */
+.chip, .tab, .seg button, .tt-mode, .badge, .patch-pill, .rt-m, .wr-f,
+table.t th, .fav-label, .craft-raw-label { font-weight: 600; }
+.brand { font-size: 18px; letter-spacing: .6px; }
+.tab { letter-spacing: .3px; font-size: 11px; }
+.icard .nm { letter-spacing: .3px; font-size: 12.5px; }
+.rt-m { text-transform: none; letter-spacing: .2px; }
+
+/* ---- top bar ---- */
+#topbar {
+  position: sticky; top: 0; z-index: 30;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 14px; padding-top: calc(10px + env(safe-area-inset-top, 0px));
+  background: linear-gradient(180deg, #17140f 0%, rgba(18,16,14,.96) 100%);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(8px);
+}
+.brand { display: flex; align-items: center; gap: 9px; font-size: 17px; letter-spacing: .3px; }
+.brand b { color: var(--rust2); }
+.brand-logo { width: 26px; height: 26px; }
+.patch-pill {
+  font-size: 11px; font-weight: 600; color: var(--amber);
+  background: rgba(217,134,31,.12); border: 1px solid rgba(217,134,31,.35);
+  padding: 4px 9px; border-radius: 999px; white-space: nowrap;
+}
+.top-right { display: flex; align-items: center; gap: 8px; }
+.share-btn { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 700; color: #fff; background: var(--rust); border: 1px solid var(--rust2); border-radius: 999px; padding: 5px 11px; cursor: pointer; white-space: nowrap; }
+.share-btn:active { background: var(--rust2); }
+.share-btn span { font-size: 12px; }
+
+/* ---- share sheet ---- */
+.share-sheet { text-align: center; padding-top: 4px; }
+.share-sheet h2 { font-size: 20px; margin-bottom: 8px; }
+.share-sheet > p { color: var(--txt2); font-size: 14px; margin-bottom: 16px; }
+.share-qr { width: 210px; height: 210px; background: #fff; border-radius: 14px; padding: 10px; margin: 0 auto 14px; display: block; }
+.share-url { font-family: ui-monospace, monospace; font-size: 14px; color: var(--amber); background: var(--bg3); border: 1px solid var(--line2); border-radius: 10px; padding: 11px; margin-bottom: 12px; word-break: break-all; }
+.share-sheet .btn { margin-bottom: 8px; }
+.share-sheet .btn.copied { background: var(--green); }
+.install-steps { text-align: left; background: var(--bg3); border: 1px solid var(--line); border-radius: 12px; padding: 14px; margin-top: 16px; }
+.install-steps h3 { font-size: 14px; margin-bottom: 8px; }
+.install-steps p { font-size: 13px; color: var(--txt2); margin: 6px 0; }
+
+/* ---- layout ---- */
+#app { padding: 14px 14px calc(var(--tabh) + var(--safe-b) + 20px); max-width: 900px; margin: 0 auto; }
+.view-title { font-size: 20px; font-weight: 700; margin: 4px 0 2px; }
+.view-sub { color: var(--txt2); font-size: 13px; margin-bottom: 14px; }
+
+/* ---- search ---- */
+.searchwrap { position: sticky; top: calc(52px + env(safe-area-inset-top,0px)); z-index: 20; padding: 8px 0 10px; background: var(--bg); }
+.search {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--bg3); border: 1px solid var(--line2); border-radius: 12px;
+  padding: 11px 13px;
+}
+.search input { flex: 1; background: none; border: none; color: var(--txt); font-size: 16px; outline: none; }
+.search input::placeholder { color: var(--txt3); }
+.search .clr { color: var(--txt3); font-size: 18px; padding: 0 4px; cursor: pointer; }
+
+/* ---- chips ---- */
+.chips { display: flex; gap: 7px; overflow-x: auto; padding: 2px 0 4px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip {
+  flex: 0 0 auto; font-size: 12.5px; font-weight: 600; color: var(--txt2);
+  background: var(--bg2); border: 1px solid var(--line); border-radius: 999px;
+  padding: 7px 13px; cursor: pointer; white-space: nowrap; transition: .12s;
+}
+.chip.on { background: var(--rust); border-color: var(--rust2); color: #fff; }
+
+.count { color: var(--txt3); font-size: 12.5px; margin: 6px 2px 10px; }
+
+/* ---- favorites ---- */
+.fav-strip:empty { display: none; }
+.fav-label { font-size: 11.5px; font-weight: 700; color: var(--amber); margin: 10px 2px 6px; text-transform: uppercase; letter-spacing: .4px; }
+.fav-row { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
+.fav-row::-webkit-scrollbar { display: none; }
+.fav-card { flex: 0 0 auto; width: 74px; background: var(--card); border: 1px solid var(--line2); border-radius: 11px; padding: 8px 5px; display: flex; flex-direction: column; align-items: center; gap: 4px; cursor: pointer; }
+.fav-card:active { transform: scale(.95); border-color: var(--amber); }
+.fav-card img { width: 40px; height: 40px; object-fit: contain; }
+.fav-card span { font-size: 10px; line-height: 1.2; color: var(--txt2); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.pin-btn { flex: 0 0 auto; align-self: flex-start; font-size: 22px; line-height: 1; color: var(--txt3); background: none; border: none; cursor: pointer; padding: 2px 4px; }
+.pin-btn.on { color: var(--amber); }
+
+/* ---- item grid ---- */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 10px; }
+.icard {
+  background-color: var(--card); background-image: var(--plate); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--bevel);
+  padding: 10px 8px 11px; text-align: center; cursor: pointer; transition: .12s;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.icard:active { transform: scale(.96); border-color: var(--rust); }
+.icard img { width: 56px; height: 56px; object-fit: contain; image-rendering: auto; }
+.icard .nm { font-size: 12px; line-height: 1.25; color: var(--txt); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.icard .cat { font-size: 10px; color: var(--txt3); }
+
+.empty { text-align: center; color: var(--txt3); padding: 50px 20px; }
+
+/* ---- detail sheet ----
+   MOBILE SCROLL CONTRACT (2026-08-30) - see the same block in the Calamity app.
+   dvh (not vh) so iOS does not size the sheet against the large viewport and
+   push both its edges into Safari's own gesture zones; overscroll-behavior so a
+   flick that hits the end of the sheet does not chain into the page behind;
+   no backdrop-filter under a scrolling overlay (iOS stale-paint trigger: the
+   scroll indicator moves while the pixels never repaint); touch-action:none on
+   the scrim so the page cannot be dragged through it. openSheet() locks the
+   page itself. */
+.sheet { position: fixed; inset: 0; z-index: 100; display: flex; align-items: flex-end; justify-content: center; }
+.sheet[hidden] { display: none; }
+.sheet-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.72); touch-action: none; animation: fade .18s; }
+.sheet-body {
+  position: relative; width: 100%; max-width: 560px; max-height: 88vh; max-height: 88dvh;
+  overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+  transform: translateZ(0);
+  background: var(--bg2); border: 1px solid var(--line2); border-bottom: none;
+  border-radius: 20px 20px 0 0; padding: 8px 18px calc(26px + var(--safe-b));
+  animation: slideup .22s cubic-bezier(.2,.8,.2,1);
+}
+@keyframes slideup { from { transform: translateY(100%); } }
+@keyframes fade { from { opacity: 0; } }
+.grabber { width: 40px; height: 4px; background: var(--line2); border-radius: 4px; margin: 6px auto 14px; }
+.detail-head { display: flex; gap: 14px; align-items: center; margin-bottom: 14px; }
+.detail-head img { width: 76px; height: 76px; object-fit: contain; background: var(--bg3); border-radius: 12px; padding: 6px; border: 1px solid var(--line); }
+.detail-head h2 { font-size: 20px; line-height: 1.2; }
+.detail-desc { color: var(--txt); font-size: 15px; margin: 4px 0 16px; }
+.kv { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.kv .tag { font-size: 12px; background: var(--bg3); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; color: var(--txt2); }
+.kv .tag b { color: var(--txt); }
+.copybtn { cursor: pointer; }
+.copybtn.copied { border-color: var(--green); color: var(--green); }
+.panel.craft { margin-top: 14px; }
+.panel.craft h3 { justify-content: flex-start; }
+.wb-tag { font-size: 11px; font-weight: 600; color: var(--amber); background: rgba(217,134,31,.12); border: 1px solid rgba(217,134,31,.3); border-radius: 6px; padding: 2px 8px; margin-left: auto; }
+.ci-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.ci { display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px; background: var(--bg3); border: 1px solid var(--line); border-radius: 8px; padding: 5px 9px 5px 5px; color: var(--txt2); }
+.ci[data-slug] { cursor: pointer; }
+.ci[data-slug]:active { border-color: var(--amber); }
+.ci img { width: 22px; height: 22px; object-fit: contain; }
+.ci b { color: var(--txt); }
+.craft-raw-label { font-size: 11.5px; color: var(--txt3); text-transform: uppercase; letter-spacing: .4px; margin: 12px 0 7px; }
+.detail-links { display: flex; flex-direction: column; gap: 8px; }
+.dl {
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--bg3); border: 1px solid var(--line); border-radius: 10px;
+  padding: 12px 14px; color: var(--txt); font-size: 14px; font-weight: 600;
+}
+.dl .arw { color: var(--txt3); }
+
+/* ---- generic panels / tables ---- */
+.panel { position: relative; background-color: var(--card); background-image: var(--plate); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--bevel); padding: 14px 15px; margin-bottom: 12px; }
+
+/* crate-corner brackets: metal L-marks top-left + bottom-right on the larger
+   plates (a recurring Rust motif). Metal colored - NOT hazard yellow. */
+.panel::before, .panel::after, .rt-card::before, .rt-card::after {
+  content: ""; position: absolute; width: 9px; height: 9px; pointer-events: none;
+  border: 0 solid #605844; opacity: .85;
+}
+.panel::before, .rt-card::before { top: 4px; left: 4px; border-top-width: 2px; border-left-width: 2px; }
+.panel::after, .rt-card::after { bottom: 4px; right: 4px; border-bottom-width: 2px; border-right-width: 2px; }
+.panel h3 { font-size: 15px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.panel p { color: var(--txt2); font-size: 13.5px; margin-bottom: 8px; }
+.panel p:last-child { margin-bottom: 0; }
+.note { position: relative; overflow: hidden; background: rgba(217,134,31,.08); border: 1px solid rgba(217,134,31,.3); border-radius: 5px; padding: 11px 13px 11px 20px; font-size: 13px; color: var(--txt); margin-bottom: 12px; }
+.note b { color: var(--amber); }
+/* caution-tape left edge on warning callouts (danger semantics) */
+.note::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 7px; background: var(--tape); }
+
+table.t { width: 100%; border-collapse: collapse; font-size: 13px; }
+table.t th, table.t td { text-align: left; padding: 8px 8px; border-bottom: 1px solid var(--line); }
+table.t th { color: var(--txt3); font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: .4px; }
+table.t td { color: var(--txt); }
+table.t tr:last-child td { border-bottom: none; }
+.scrollx { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -3px; }
+
+/* ---- raid cards ---- */
+.rt-card { position: relative; background-color: var(--card); background-image: var(--plate); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--bevel); padding: 13px 14px; margin-bottom: 10px; }
+.rt-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 9px; }
+.rt-head .nm { font-size: 15px; font-weight: 700; }
+.rt-head .hp { font-size: 12px; color: var(--txt3); }
+.rt-methods { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 8px; }
+.rt-m { position: relative; overflow: hidden; font-size: 12.5px; background: var(--bg3); border: 1px solid var(--line); border-radius: 5px; padding: 6px 9px 7px; color: var(--txt2); }
+.rt-m b { color: var(--txt); }
+/* raid-cost = attack cost = danger: thin caution-tape underline on every boom chip */
+.rt-m::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--tape); opacity: .9; }
+.rt-m.best { background: rgba(206,66,43,.16); border-color: var(--rust); color: #fff; }
+.rt-m.best b { color: var(--rust2); }
+.rt-m .s { color: var(--txt3); font-size: 11px; }
+.rt-note { font-size: 12.5px; color: var(--txt2); }
+.rt-right { display: flex; align-items: center; gap: 8px; }
+.rt-add { font-size: 11px; font-weight: 700; color: var(--amber); background: rgba(217,134,31,.12); border: 1px solid rgba(217,134,31,.4); border-radius: 7px; padding: 4px 8px; cursor: pointer; white-space: nowrap; }
+.rt-add:active { background: var(--rust); color: #fff; }
+
+/* ---- raid planner ---- */
+.plan-empty { background: var(--bg2); border: 1px dashed var(--line2); border-radius: var(--radius); padding: 14px; font-size: 13px; color: var(--txt2); text-align: center; margin-bottom: 12px; }
+.panel.plan { border-color: rgba(217,134,31,.4); }
+.plan-clear { float: right; font-size: 11px; font-weight: 600; color: var(--txt3); background: var(--bg3); border: 1px solid var(--line); border-radius: 6px; padding: 3px 9px; cursor: pointer; }
+.plan-row { display: flex; align-items: center; gap: 8px; padding: 9px 0; border-bottom: 1px solid var(--line); }
+.plan-row .pn { flex: 1; font-size: 13.5px; font-weight: 600; }
+.plan-row .pq { display: flex; align-items: center; gap: 8px; }
+.plan-row .pq button { width: 26px; height: 26px; border-radius: 7px; border: 1px solid var(--line2); background: var(--bg3); color: var(--txt); font-size: 16px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.plan-row .pq b { min-width: 18px; text-align: center; }
+.plan-row .ps { text-align: right; font-size: 13px; font-weight: 700; min-width: 90px; }
+.plan-tot { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin-top: 12px; align-items: center; }
+.plan-tot .ptl { color: var(--txt2); font-size: 12.5px; }
+.plan-tot .ptr { text-align: right; font-weight: 700; font-size: 13.5px; }
+.plan-tot .ptr .rt-m { display: inline-block; margin: 2px 0 2px 4px; }
+
+.badge { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 6px; text-transform: uppercase; letter-spacing: .3px; }
+
+/* ---- genetics helper ---- */
+.gene-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 12px 0; }
+.gene-cell input {
+  width: 100%; text-align: center; text-transform: uppercase; letter-spacing: 3px; font-weight: 700;
+  background: var(--bg3); border: 1px solid var(--line2); border-radius: 8px; color: var(--txt);
+  padding: 10px 4px; font-size: 15px; outline: none; font-family: ui-monospace, monospace;
+}
+.gene-cell input:focus { border-color: var(--amber); }
+.gene-cell.center input { border-color: var(--rust); }
+.gene-legend { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 4px; }
+.gpill { font-size: 11.5px; padding: 4px 8px; border-radius: 6px; font-weight: 700; }
+.g-good { background: rgba(106,176,76,.16); color: var(--green); border: 1px solid rgba(106,176,76,.4); }
+.g-bad { background: rgba(214,69,69,.16); color: var(--red); border: 1px solid rgba(214,69,69,.4); }
+/* ---- genetics scanner ---- */
+.scan-panel { border-color: rgba(106,176,76,.35); }
+.scan-pc { font-size: 10px; font-weight: 700; color: var(--green); background: rgba(106,176,76,.14); border: 1px solid rgba(106,176,76,.4); border-radius: 999px; padding: 2px 8px; margin-left: auto; text-transform: uppercase; letter-spacing: .3px; }
+.scan-controls { display: flex; gap: 8px; margin: 10px 0; }
+.scan-controls .btn { flex: 1; }
+.scan-status { font-size: 13px; color: var(--txt2); min-height: 18px; margin-bottom: 8px; }
+#scanVid { width: 100%; max-height: 120px; object-fit: contain; border-radius: 8px; margin-bottom: 8px; opacity: .5; background: #000; }
+.pool-head { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--txt2); margin: 6px 0 8px; }
+.pool-clear { margin-left: auto; font-size: 11px; color: var(--txt3); background: var(--bg3); border: 1px solid var(--line); border-radius: 6px; padding: 3px 9px; cursor: pointer; }
+.pool-chips { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 12px; }
+.pool-chip { display: inline-flex; align-items: center; gap: 1px; background: var(--bg3); border: 1px solid var(--line2); border-radius: 8px; padding: 4px 4px 4px 8px; font-family: ui-monospace, monospace; font-weight: 700; font-size: 13px; }
+.pool-chip i { font-style: normal; }
+.pool-chip .gg { color: var(--green); }
+.pool-chip .gb { color: var(--red); }
+.pool-chip.q5 { border-color: rgba(106,176,76,.5); } .pool-chip.q6 { border-color: var(--green); box-shadow: 0 0 6px rgba(106,176,76,.4); }
+.pool-chip button { background: none; border: none; color: var(--txt3); font-size: 15px; cursor: pointer; padding: 0 2px 0 4px; }
+.gtxt { color: var(--green); font-weight: 800; } .btxt { color: var(--red); font-weight: 800; }
+.result-genes { display: flex; gap: 6px; justify-content: center; margin: 10px 0; }
+.gslot { width: 40px; height: 46px; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 800; border-radius: 8px; font-family: ui-monospace, monospace; }
+.gslot.win { background: rgba(106,176,76,.2); color: var(--green); border: 1px solid var(--green); }
+.gslot.lose { background: rgba(214,69,69,.18); color: var(--red); border: 1px solid var(--red); }
+.gslot.tie { background: var(--bg3); color: var(--txt2); border: 1px solid var(--line2); }
+.btn { display: block; width: 100%; background: var(--rust); color: #fff; border: none; border-radius: 10px; padding: 13px; font-size: 15px; font-weight: 700; cursor: pointer; }
+.btn:active { background: var(--rust2); }
+.btn.ghost { background: var(--bg3); border: 1px solid var(--line2); color: var(--txt); }
+
+.seg { display: flex; background: var(--bg3); border: 1px solid var(--line2); border-radius: 10px; padding: 3px; margin-bottom: 12px; }
+.seg button { flex: 1; border: none; background: none; color: var(--txt2); font-size: 13px; font-weight: 600; padding: 9px; border-radius: 7px; cursor: pointer; }
+.seg button.on { background: var(--rust); color: #fff; }
+
+/* ---- tech tree = BLUEPRINT SCHEMATIC (Rust signature moment) ----
+   Real in-game workbench graph restyled as an engineering drawing: graph-paper
+   ground, thin cyan schematic wiring that lights orange as it is researched,
+   crisp lit-orange researched nodes, dashed dim blueprint outlines when locked.
+   Cyan is CONTAINED to this pane only (allowed .fi-app divergence). */
+.tt-bar { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+.tt-stat { font-family: var(--mono); font-size: 11.5px; color: var(--txt2); }
+.tt-stat .scrap { color: var(--amber); }
+.tt-modes { display: flex; gap: 6px; }
+.tt-mode { font-size: 12px; font-weight: 600; color: var(--txt2); background: var(--bg3); border: 1px solid var(--line2); border-radius: 8px; padding: 6px 11px; cursor: pointer; }
+.tt-mode.on { background: var(--rust); border-color: var(--rust2); color: #fff; }
+.tt-mode.reset { color: var(--txt3); }
+/* workbench selector = monospace blueprint tabs */
+#wbSeg button { font-family: var(--mono); text-transform: uppercase; letter-spacing: .6px; font-size: 11.5px; }
+
+/* blueprint title-block strip above the canvas (like a real drawing's title box) */
+.tt-frame { margin-bottom: 0; }
+.tt-titleblock {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  font-family: var(--mono); font-size: 11px; letter-spacing: .5px; text-transform: uppercase;
+  background: #0e161a; border: 1px solid rgba(111,183,216,.28); border-bottom: none;
+  border-radius: var(--radius) var(--radius) 0 0; padding: 8px 12px;
+}
+.tt-titleblock .tt-tb-name { color: #b6dff2; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tt-titleblock .tt-tb-meta { color: #6fa8c4; flex: 0 0 auto; }
+
+.tt-stage { position: relative; }
+.tt-canvas-wrap {
+  position: relative; overflow: auto; -webkit-overflow-scrolling: touch;
+  height: 60vh; min-height: 380px;
+  border: 1px solid rgba(111,183,216,.28); border-radius: 0 0 var(--radius) var(--radius);
+  background-color: #0e161a;
+  /* dark blueprint ground + soft top glow + inner vignette */
+  background-image: radial-gradient(130% 90% at 50% 0%, rgba(111,183,216,.06), rgba(0,0,0,0) 60%);
+  box-shadow: inset 0 0 34px rgba(0,0,0,.55);
+  touch-action: pan-x pan-y;
+}
+/* sizer = the actual scrollable extent (logical W/H * zoom); the canvas inside it
+   stays at its logical W/H and is visually scaled via transform, so nodes/edges
+   never need to be re-laid-out on zoom - only these two elements' box sizes change. */
+.tt-sizer { position: relative; }
+.tt-canvas {
+  position: absolute; left: 0; top: 0; transform-origin: 0 0;
+  background-image:
+    linear-gradient(rgba(111,183,216,.13) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(111,183,216,.13) 1px, transparent 1px),
+    linear-gradient(rgba(111,183,216,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(111,183,216,.05) 1px, transparent 1px);
+  background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
+}
+
+/* ---- zoom controls (overlaid corner of the canvas viewport, thumb-sized) ---- */
+.tt-controls {
+  position: absolute; top: 8px; right: 8px; z-index: 10;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.tt-ctrl {
+  width: 40px; height: 40px; border-radius: 8px; cursor: pointer;
+  background: rgba(14,22,26,.88); border: 1px solid rgba(111,183,216,.45); color: #b6dff2;
+  font-family: var(--mono); font-size: 17px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,.4);
+}
+.tt-ctrl:active { background: rgba(111,183,216,.28); }
+#ttZoomReset { font-size: 11px; }
+#ttFull { font-size: 18px; }
+#ttFull.on { background: var(--rust); border-color: var(--rust2); color: #fff; }
+.tt-zoom-lbl {
+  font-family: var(--mono); font-size: 10px; color: var(--txt3);
+  background: rgba(14,22,26,.88); border: 1px solid rgba(111,183,216,.3); border-radius: 6px;
+  padding: 2px 5px; min-width: 40px; text-align: center;
+}
+
+/* ---- fullscreen tree view (CSS-class toggle - iOS Safari has no element Fullscreen API) ---- */
+.tt-frame.tt-fullscreen {
+  position: fixed; inset: 0; z-index: 90; /* above #topbar (30) / #tabbar (40), below .sheet (100) */
+  background: var(--bg);
+  display: flex; flex-direction: column;
+  height: 100dvh;
+  padding: env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);
+}
+.tt-frame.tt-fullscreen .tt-titleblock { flex: 0 0 auto; border-radius: 0; }
+.tt-frame.tt-fullscreen .tt-stage { flex: 1 1 auto; min-height: 0; }
+.tt-frame.tt-fullscreen .tt-canvas-wrap { height: 100%; border-radius: 0; border-left: none; border-right: none; border-bottom: none; }
+body.tt-fs-lock { overflow: hidden; }
+.tt-edges { position: absolute; left: 0; top: 0; pointer-events: none; z-index: 1; }
+/* unbuilt wiring = thin dashed cyan schematic line; researched path = lit orange, solid */
+.tt-edge { stroke: rgba(111,183,216,.32); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.tt-edge.on { stroke: var(--rust2); stroke-width: 2.5; stroke-dasharray: none; }
+.tt-node {
+  position: absolute; z-index: 2; padding: 3px; border-radius: 8px; cursor: pointer;
+  background: rgba(18,26,30,.9); border: 1.5px solid rgba(111,183,216,.5);
+  display: flex; align-items: center; justify-content: center;
+  transition: transform .1s, border-color .1s, box-shadow .1s; overflow: visible;
+}
+.tt-node img { width: 100%; height: 100%; object-fit: contain; }
+.tt-node .tt-cost {
+  position: absolute; bottom: -7px; right: -6px; font-family: var(--mono); font-size: 9.5px; font-weight: 700; line-height: 1;
+  background: #10181c; color: var(--txt2); border: 1px solid rgba(111,183,216,.4); border-radius: 6px; padding: 2px 4px;
+}
+/* AVAILABLE = crisp blueprint outline, cyan, ready to draw in */
+.tt-node.avail { border-color: rgba(111,183,216,.75); box-shadow: 0 0 0 1px rgba(111,183,216,.14); }
+.tt-node.avail .tt-cost { color: var(--amber); border-color: rgba(217,134,31,.55); }
+/* LOCKED = dashed, dim blueprint ghost (needs a prereq) */
+.tt-node.locked { opacity: .42; border-style: dashed; border-color: rgba(111,183,216,.35); background: rgba(14,20,24,.7); filter: grayscale(.5); }
+/* locked node = blocked by a prereq: small caution-tape corner marker (kept from R1) */
+.tt-node.locked::before {
+  content: ""; position: absolute; top: -4px; left: -4px; width: 12px; height: 12px;
+  background: var(--tape); border: 1px solid #14110c; border-radius: 3px;
+  z-index: 3; pointer-events: none;
+}
+/* RESEARCHED = solid, lit orange-on-dark, crisp */
+.tt-node.done {
+  opacity: 1; filter: none; border: 2px solid var(--rust2);
+  background: linear-gradient(180deg, #3a2318 0%, #241611 100%);
+  box-shadow: 0 0 13px rgba(230,87,47,.55), inset 0 0 6px rgba(230,87,47,.22);
+}
+.tt-node.done .tt-cost { background: var(--rust); color: #fff; border-color: var(--rust2); }
+.tt-node.done::after { content: "\2713"; position: absolute; top: -6px; left: -6px; width: 15px; height: 15px; font-size: 10px; font-weight: 800; color: #fff; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.tt-node:active { transform: scale(.9); }
+.tt-node.hit { border-color: var(--amber); box-shadow: 0 0 0 2px var(--amber), 0 0 12px rgba(217,134,31,.7); z-index: 3; }
+.tt-node.dim { opacity: .22; }
+.tt-legend { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin: 12px 0 4px; font-size: 12px; color: var(--txt2); }
+.tt-legend .dot { display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 4px; vertical-align: -1px; border: 1.5px solid; }
+.tt-legend .dot.done { background: #241611; border-color: var(--rust2); }
+.tt-legend .dot.avail { background: rgba(18,26,30,.9); border-color: rgba(111,183,216,.75); }
+.tt-legend .dot.locked { background: rgba(14,20,24,.7); border-color: rgba(111,183,216,.35); border-style: dashed; opacity: .6; }
+
+/* ---- wiki ---- */
+.wiki-count { font-size: 12px; font-weight: 600; color: var(--txt3); margin-left: 6px; }
+.wiki-folder { margin-bottom: 18px; }
+.wiki-folder h3 { font-size: 14px; margin: 0 2px 8px; display: flex; align-items: center; gap: 7px; }
+.wiki-folder h3 span { font-size: 11px; color: var(--txt3); background: var(--bg3); border-radius: 999px; padding: 2px 8px; margin-left: auto; }
+.wiki-list { display: flex; flex-direction: column; gap: 6px; }
+.wiki-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 13px; color: var(--txt); font-size: 14px; font-weight: 500; cursor: pointer; }
+.wiki-row:active { border-color: var(--rust); }
+.wiki-row .wr-f { font-size: 10px; color: var(--txt3); text-transform: uppercase; letter-spacing: .3px; flex: 0 0 auto; }
+.wiki-back { background: var(--bg3); border: 1px solid var(--line2); color: var(--txt); border-radius: 9px; padding: 8px 14px; font-size: 13px; font-weight: 600; cursor: pointer; margin-bottom: 14px; }
+.wiki-back:active { border-color: var(--rust); }
+.wiki-article { font-size: 15px; line-height: 1.6; color: var(--txt); }
+.wiki-article h2 { font-size: 22px; margin: 4px 0 12px; }
+.wiki-article h3 { font-size: 17px; margin: 22px 0 8px; color: #fff; }
+.wiki-article h4 { font-size: 15px; margin: 18px 0 6px; color: var(--amber); }
+.wiki-article p { margin: 10px 0; color: var(--txt); }
+.wiki-article ul, .wiki-article ol { margin: 10px 0 10px 22px; }
+.wiki-article li { margin: 5px 0; }
+.wiki-article code { background: var(--bg3); border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px; font-size: 13px; font-family: ui-monospace, monospace; color: var(--amber); }
+.wiki-article hr { border: none; border-top: 1px solid var(--line); margin: 18px 0; }
+.wiki-article table.t { margin: 12px 0; }
+.wiki-article blockquote { border-left: 3px solid var(--amber); background: rgba(217,134,31,.07); border-radius: 0 8px 8px 0; padding: 8px 14px; margin: 12px 0; }
+.wiki-article blockquote p { margin: 4px 0; font-size: 14px; color: var(--txt2); }
+.wiki-article .callout-title { font-weight: 700; color: var(--amber); margin-bottom: 4px; }
+.wiki-article a { color: var(--amber); }
+.wiki-article a.wl { color: var(--blue); border-bottom: 1px dotted var(--blue); cursor: pointer; }
+
+.loading { text-align: center; color: var(--txt3); padding: 60px 20px; }
+.spinner { width: 30px; height: 30px; border: 3px solid var(--line); border-top-color: var(--rust); border-radius: 50%; margin: 0 auto 14px; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---- tab bar ---- */
+#tabbar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 40;
+  display: flex; height: calc(var(--tabh) + var(--safe-b)); padding-bottom: var(--safe-b);
+  background: linear-gradient(0deg, #17140f, #1a1712);
+  border-top: 1px solid var(--line);
+}
+.tab {
+  flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+  background: none; border: none; color: var(--txt3); font-size: 10.5px; font-weight: 600; cursor: pointer;
+}
+.tab .ic { font-size: 20px; line-height: 1; filter: grayscale(1) opacity(.7); }
+.tab.on { color: var(--rust2); }
+.tab.on .ic { filter: none; }
+
+.credit { text-align: center; color: var(--txt3); font-size: 11px; margin-top: 20px; line-height: 1.6; }
+.credit a { color: var(--txt3); text-decoration: underline; }
+
+@media (min-width: 620px) {
+  .grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
+  .sheet-body { border-radius: 20px; margin-bottom: 40px; }
+  .sheet { align-items: center; }
+}

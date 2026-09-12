@@ -1,0 +1,4222 @@
+{
+ "1": {
+  "char_slug": "magdalene",
+  "name": "Magdalene",
+  "cond": "Have 7 or more Red Heart Containers at one time"
+ },
+ "2": {
+  "char_slug": "cain",
+  "name": "Cain",
+  "cond": "Hold 55 Coins at one time"
+ },
+ "3": {
+  "char_slug": "judas",
+  "name": "Judas",
+  "cond": "Defeat Satan"
+ },
+ "4": {
+  "name": "The Womb",
+  "cond": "Defeat Mom"
+ },
+ "5": {
+  "name": "The Harbingers",
+  "cond": "Defeat Mom"
+ },
+ "6": {
+  "name": "A Cube of Meat",
+  "cond": "Defeat Mom"
+ },
+ "7": {
+  "name": "The Book of Revelations",
+  "cond": "Defeat a Harbinger"
+ },
+ "8": {
+  "name": "A Noose",
+  "cond": "Defeat Mom's Heart 3 times"
+ },
+ "9": {
+  "item_slug": "the-nail",
+  "proves_mark": {
+   "char_slug": "azazel",
+   "mark_key": "boss-rush"
+  },
+  "name": "The Nail",
+  "cond": "Complete the Boss Rush as Azazel"
+ },
+ "10": {
+  "item_slug": "a-quarter",
+  "name": "A Quarter",
+  "cond": "Defeat Mom's Heart 8 times"
+ },
+ "11": {
+  "name": "A Fetus in a Jar",
+  "cond": "Defeat Mom's Heart 9 times"
+ },
+ "12": {
+  "name": "A Small Rock",
+  "cond": "Destroy 100 Tinted Rocks"
+ },
+ "13": {
+  "item_slug": "monstros-tooth",
+  "name": "Monstro's Tooth",
+  "cond": "Beat Chapter 1"
+ },
+ "14": {
+  "name": "Lil' Chubby",
+  "cond": "Beat Chapter 2"
+ },
+ "15": {
+  "item_slug": "lokis-horns",
+  "name": "Loki's Horns",
+  "cond": "Defeat Lokii"
+ },
+ "16": {
+  "name": "Something From The Future",
+  "cond": "Beat Basement 40 times"
+ },
+ "17": {
+  "name": "Something Cute",
+  "cond": "Beat Chapter 2 30 times"
+ },
+ "18": {
+  "name": "Something Sticky",
+  "cond": "Beat Chapter 3 20 times"
+ },
+ "19": {
+  "name": "A Bandage",
+  "cond": "Make a Super Bandage Girl by picking up 4 copies of Ball of Bandages in one run; see Unlocking Super Meat Boy &amp; Super Bandage Girl"
+ },
+ "20": {
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "isaac"
+  },
+  "name": "A Cross",
+  "cond": "Defeat Isaac as Magdalene"
+ },
+ "21": {
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "isaac"
+  },
+  "name": "A Bag of Pennies",
+  "cond": "Defeat Isaac as Cain"
+ },
+ "22": {
+  "item_slug": "the-book-of-sin",
+  "name": "The Book of Sin",
+  "cond": "Defeat all 7 Deadly Sins"
+ },
+ "23": {
+  "item_slug": "little-gish",
+  "name": "Little Gish",
+  "cond": "Defeat Gish"
+ },
+ "24": {
+  "item_slug": "little-steven",
+  "name": "Little Steven",
+  "cond": "Defeat Steven"
+ },
+ "25": {
+  "item_slug": "little-c-h-a-d",
+  "name": "Little C.H.A.D.",
+  "cond": "Defeat C.H.A.D."
+ },
+ "26": {
+  "name": "A Gamekid",
+  "cond": "Visit 10 Arcades"
+ },
+ "27": {
+  "name": "A Halo",
+  "cond": "Defeat Mom, Mom's Heart, or It Lives! using The Bible"
+ },
+ "28": {
+  "item_slug": "mr-mega",
+  "name": "Mr. Mega",
+  "cond": "Destroy 10 Tinted Rocks"
+ },
+ "29": {
+  "item_slug": "the-d6",
+  "name": "The D6",
+  "cond": "Defeat Isaac as ???"
+ },
+ "30": {
+  "name": "The Scissors",
+  "cond": "Die 100 times"
+ },
+ "31": {
+  "item_slug": "the-parasite",
+  "name": "The Parasite",
+  "cond": "Pick up any 2 of the following items in a single run: Bob's Rotten Head, Dead Cat, Cricket's Head, and Tammy's Head (any 2 items that have the \"dead\" item tag)"
+ },
+ "32": {
+  "char_slug": "blue-baby",
+  "name": "???",
+  "cond": "Defeat Mom's Heart 10 times"
+ },
+ "33": {
+  "name": "Everything Is Terrible!!!",
+  "cond": "Defeat Mom's Heart 5 times"
+ },
+ "34": {
+  "name": "It Lives!",
+  "cond": "Defeat Mom's Heart 11 times"
+ },
+ "35": {
+  "name": "Mom's Contact",
+  "cond": "Obtain three Yes Mother? items in one run"
+ },
+ "36": {
+  "item_slug": "the-necronomicon",
+  "name": "The Necronomicon",
+  "cond": "Use XIII - Death 4 times"
+ },
+ "37": {
+  "name": "Basement Boy",
+  "cond": "Beat Chapter 1 without taking damage"
+ },
+ "38": {
+  "name": "Spelunker Boy",
+  "cond": "Beat Chapter 2 without taking damage"
+ },
+ "39": {
+  "name": "Dark Boy",
+  "cond": "Beat Chapter 3 without taking damage"
+ },
+ "40": {
+  "name": "Mama's Boy",
+  "cond": "Beat Chapter 4 without taking damage"
+ },
+ "41": {
+  "name": "Golden God!",
+  "cond": "Defeat ??? and The Lamb"
+ },
+ "42": {
+  "char_slug": "eve",
+  "name": "Eve",
+  "cond": "Don't pick up any Hearts for 2 floors in a row"
+ },
+ "43": {
+  "item_slug": "moms-knife",
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "satan"
+  },
+  "name": "Mom's Knife",
+  "cond": "Defeat Satan as Isaac"
+ },
+ "44": {
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "satan"
+  },
+  "name": "The Razor",
+  "cond": "Defeat Satan as Eve"
+ },
+ "45": {
+  "item_slug": "guardian-angel",
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "satan"
+  },
+  "name": "Guardian Angel",
+  "cond": "Defeat Satan as Magdalene"
+ },
+ "46": {
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "satan"
+  },
+  "name": "A Bag of Bombs",
+  "cond": "Defeat Satan as Cain"
+ },
+ "47": {
+  "item_slug": "demon-baby",
+  "proves_mark": {
+   "char_slug": "azazel",
+   "mark_key": "lamb"
+  },
+  "name": "Demon Baby",
+  "cond": "Defeat The Lamb as Azazel"
+ },
+ "48": {
+  "item_slug": "forget-me-now",
+  "name": "Forget Me Now",
+  "cond": "Defeat Satan as ???"
+ },
+ "49": {
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "blue-baby"
+  },
+  "name": "The D20",
+  "cond": "Defeat ??? as Isaac"
+ },
+ "50": {
+  "item_slug": "celtic-cross",
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "blue-baby"
+  },
+  "name": "Celtic Cross",
+  "cond": "Defeat ??? as Magdalene"
+ },
+ "51": {
+  "item_slug": "abel",
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "lamb"
+  },
+  "name": "Abel",
+  "cond": "Defeat The Lamb as Cain"
+ },
+ "52": {
+  "item_slug": "curved-horn",
+  "proves_mark": {
+   "char_slug": "judas",
+   "mark_key": "lamb"
+  },
+  "name": "Curved Horn",
+  "cond": "Defeat The Lamb as Judas"
+ },
+ "53": {
+  "item_slug": "sacrificial-dagger",
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "blue-baby"
+  },
+  "name": "Sacrificial Dagger",
+  "cond": "Defeat ??? as Eve"
+ },
+ "54": {
+  "item_slug": "bloody-lust",
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "isaac"
+  },
+  "name": "Bloody Lust",
+  "cond": "Defeat Isaac as Samson"
+ },
+ "55": {
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "blue-baby"
+  },
+  "name": "Blood Penny",
+  "cond": "Defeat ??? as Samson"
+ },
+ "56": {
+  "item_slug": "blood-rights",
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "satan"
+  },
+  "name": "Blood Rights",
+  "cond": "Defeat Satan as Samson"
+ },
+ "57": {
+  "item_slug": "the-polaroid",
+  "name": "The Polaroid",
+  "cond": "Defeat Isaac 5 times"
+ },
+ "58": {
+  "item_slug": "dads-key",
+  "name": "Dad's Key",
+  "cond": "Pick up both Key Pieces from the Angels in one run"
+ },
+ "59": {
+  "name": "Blue Candle",
+  "cond": "Donate 900 coins to the Donation Machine"
+ },
+ "60": {
+  "item_slug": "burnt-penny",
+  "name": "Burnt Penny",
+  "cond": "Complete Beans! (challenge #13)"
+ },
+ "61": {
+  "item_slug": "lucky-toe",
+  "name": "Lucky Toe",
+  "cond": "Blow up 20 Shopkeepers"
+ },
+ "62": {
+  "item_slug": "epic-fetus",
+  "name": "Epic Fetus",
+  "cond": "Complete The Family Man (challenge #19)"
+ },
+ "63": {
+  "item_slug": "smb-super-fan",
+  "name": "SMB Super Fan",
+  "cond": "Complete It's in the Cards (challenge #14)"
+ },
+ "64": {
+  "name": "Counterfeit Coin",
+  "cond": "Play either Shell Game or Hell Game 100 times"
+ },
+ "65": {
+  "item_slug": "guppys-hairball",
+  "name": "Guppy's Hairball",
+  "cond": "Become Guppy"
+ },
+ "66": {
+  "name": "A Forgotten Horseman",
+  "cond": "Take 10 Angel Room items"
+ },
+ "67": {
+  "char_slug": "samson",
+  "name": "Samson",
+  "cond": "Complete 2 floors in a row without taking damage"
+ },
+ "68": {
+  "name": "Something Icky",
+  "cond": "Defeat Isaac 10 times"
+ },
+ "69": {
+  "name": "Platinum God!",
+  "cond": "Collect all non-DLC items in the game, and unlock all of the secrets and endings (minus The Lost and his 6 unlockable items)"
+ },
+ "70": {
+  "item_slug": "isaacs-head",
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "boss-rush"
+  },
+  "name": "Isaac's Head",
+  "cond": "Complete the Boss Rush as Isaac"
+ },
+ "71": {
+  "item_slug": "maggys-faith",
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "lamb"
+  },
+  "name": "Maggy's Faith",
+  "cond": "Defeat The Lamb as Magdalene"
+ },
+ "72": {
+  "item_slug": "judas-tongue",
+  "proves_mark": {
+   "char_slug": "judas",
+   "mark_key": "satan"
+  },
+  "name": "Judas' Tongue",
+  "cond": "Defeat Satan as Judas"
+ },
+ "73": {
+  "item_slug": "s-soul",
+  "name": "???'s Soul",
+  "cond": "Defeat The Lamb as ???"
+ },
+ "74": {
+  "item_slug": "samsons-lock",
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "lamb"
+  },
+  "name": "Samson's Lock",
+  "cond": "Defeat The Lamb as Samson"
+ },
+ "75": {
+  "item_slug": "cains-eye",
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "blue-baby"
+  },
+  "name": "Cain's Eye",
+  "cond": "Defeat ??? as Cain"
+ },
+ "76": {
+  "item_slug": "eves-bird-foot",
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "isaac"
+  },
+  "name": "Eve's Bird Foot",
+  "cond": "Defeat Isaac as Eve"
+ },
+ "77": {
+  "item_slug": "the-left-hand",
+  "name": "The Left Hand",
+  "cond": "Defeat Ultra Pride as any character, or ??? as Judas"
+ },
+ "78": {
+  "item_slug": "the-negative",
+  "name": "The Negative",
+  "cond": "Defeat Satan 5 times"
+ },
+ "79": {
+  "char_slug": "azazel",
+  "name": "Azazel",
+  "cond": "Make 3 Deals with the Devil in one run"
+ },
+ "80": {
+  "char_slug": "lazarus",
+  "name": "Lazarus",
+  "cond": "Have 4 or more Soul Hearts at one time"
+ },
+ "81": {
+  "char_slug": "eden",
+  "name": "Eden",
+  "cond": "Complete Chapter 4"
+ },
+ "82": {
+  "char_slug": "the-lost",
+  "name": "The Lost",
+  "cond": "It's complicated Die in a Sacrifice Room while holding Missing Poster"
+ },
+ "83": {
+  "name": "Dead Boy",
+  "cond": "Complete Chapter 6 without taking damage"
+ },
+ "84": {
+  "name": "The Real Platinum God",
+  "cond": "Collect every non-DLC item, and unlock every secret and ending."
+ },
+ "85": {
+  "item_slug": "lucky-rock",
+  "name": "Lucky Rock",
+  "cond": "Destroy 100 rocks"
+ },
+ "86": {
+  "name": "The Cellar",
+  "cond": "Beat all Basement bosses ( except Baby Plum) (not restricted to beating bosses in The Basement)"
+ },
+ "87": {
+  "name": "The Catacombs",
+  "cond": "Beat all Caves bosses ( except Bumbino) (not restricted to beating bosses in The Caves)"
+ },
+ "88": {
+  "name": "The Necropolis",
+  "cond": "Beat all Depths bosses ( except Reap Creep) (not restricted to beating bosses in The Depths)"
+ },
+ "89": {
+  "name": "Rune of Hagalaz",
+  "cond": "Complete Pitch Black (challenge #1)"
+ },
+ "90": {
+  "name": "Rune of Jera",
+  "cond": "Complete High Brow (challenge #2)"
+ },
+ "91": {
+  "name": "Rune of Ehwaz",
+  "cond": "Complete Head Trauma (challenge #3)"
+ },
+ "92": {
+  "name": "Rune of Dagaz",
+  "cond": "Complete Darkness Falls (challenge #4)"
+ },
+ "93": {
+  "name": "Rune of Ansuz",
+  "cond": "Complete The Tank (challenge #5)"
+ },
+ "94": {
+  "name": "Rune of Perthro",
+  "cond": "Complete Solar System (challenge #6)"
+ },
+ "95": {
+  "name": "Rune of Berkano",
+  "cond": "Complete Purist (challenge #20)"
+ },
+ "96": {
+  "name": "Rune of Algiz",
+  "cond": "Complete Cat Got Your Tongue (challenge #8)"
+ },
+ "97": {
+  "item_slug": "chaos-card",
+  "name": "Chaos Card",
+  "cond": "Complete Demo Man (challenge #9)"
+ },
+ "98": {
+  "item_slug": "credit-card",
+  "name": "Credit Card",
+  "cond": "Complete Cursed! (challenge #10)"
+ },
+ "99": {
+  "item_slug": "rules-card",
+  "name": "Rules Card",
+  "cond": "Complete Glass Cannon (challenge #11)"
+ },
+ "100": {
+  "name": "Card Against Humanity",
+  "cond": "Complete When Life Gives You Lemons (challenge #12)"
+ },
+ "101": {
+  "item_slug": "swallowed-penny",
+  "name": "Swallowed Penny",
+  "cond": "Complete Slow Roll (challenge #15)"
+ },
+ "102": {
+  "item_slug": "robo-baby-2-0",
+  "name": "Robo-Baby 2.0",
+  "cond": "Complete Computer Savvy (challenge #16)"
+ },
+ "103": {
+  "item_slug": "deaths-touch",
+  "name": "Death's Touch",
+  "cond": "Complete Waka Waka (challenge #17)"
+ },
+ "104": {
+  "name": "Technology .5",
+  "cond": "Complete The Host (challenge #18)"
+ },
+ "105": {
+  "item_slug": "missing-no",
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "boss-rush"
+  },
+  "name": "Missing No.",
+  "cond": "Complete the Boss Rush as Lazarus"
+ },
+ "106": {
+  "item_slug": "isaacs-tears",
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "isaac"
+  },
+  "name": "Isaac's Tears",
+  "cond": "Defeat Isaac as Isaac"
+ },
+ "107": {
+  "item_slug": "guillotine",
+  "proves_mark": {
+   "char_slug": "judas",
+   "mark_key": "isaac"
+  },
+  "name": "Guillotine",
+  "cond": "Defeat Isaac as Judas"
+ },
+ "108": {
+  "item_slug": "judas-shadow",
+  "proves_mark": {
+   "char_slug": "judas",
+   "mark_key": "boss-rush"
+  },
+  "name": "Judas' Shadow",
+  "cond": "Complete the Boss Rush as Judas"
+ },
+ "109": {
+  "item_slug": "maggys-bow",
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "boss-rush"
+  },
+  "name": "Maggy's Bow",
+  "cond": "Complete the Boss Rush as Magdalene"
+ },
+ "110": {
+  "item_slug": "cains-other-eye",
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "boss-rush"
+  },
+  "name": "Cain's Other Eye",
+  "cond": "Complete the Boss Rush as Cain"
+ },
+ "111": {
+  "item_slug": "black-lipstick",
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "lamb"
+  },
+  "name": "Black Lipstick",
+  "cond": "Defeat The Lamb as Eve"
+ },
+ "112": {
+  "item_slug": "eves-mascara",
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "boss-rush"
+  },
+  "name": "Eve's Mascara",
+  "cond": "Complete the Boss Rush as Eve"
+ },
+ "113": {
+  "item_slug": "fate",
+  "name": "Fate",
+  "cond": "Defeat ??? as ???"
+ },
+ "114": {
+  "item_slug": "s-only-friend",
+  "name": "???'s Only Friend",
+  "cond": "Complete the Boss Rush as ???"
+ },
+ "115": {
+  "item_slug": "samsons-chains",
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "boss-rush"
+  },
+  "name": "Samson's Chains",
+  "cond": "Complete the Boss Rush as Samson"
+ },
+ "116": {
+  "item_slug": "lazarus-rags",
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "isaac"
+  },
+  "name": "Lazarus' Rags",
+  "cond": "Defeat Isaac as Lazarus"
+ },
+ "117": {
+  "item_slug": "broken-ankh",
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "satan"
+  },
+  "name": "Broken Ankh",
+  "cond": "Defeat Satan as Lazarus"
+ },
+ "118": {
+  "item_slug": "store-credit",
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "blue-baby"
+  },
+  "name": "Store Credit",
+  "cond": "Defeat ??? as Lazarus"
+ },
+ "119": {
+  "item_slug": "pandoras-box",
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "lamb"
+  },
+  "name": "Pandora's Box",
+  "cond": "Defeat The Lamb as Lazarus"
+ },
+ "120": {
+  "item_slug": "suicide-king",
+  "name": "Suicide King",
+  "cond": "Complete Suicide King (challenge #7)"
+ },
+ "121": {
+  "item_slug": "blank-card",
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "isaac"
+  },
+  "name": "Blank Card",
+  "cond": "Defeat Isaac as Eden"
+ },
+ "122": {
+  "item_slug": "book-of-secrets",
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "satan"
+  },
+  "name": "Book of Secrets",
+  "cond": "Defeat Satan as Eden"
+ },
+ "123": {
+  "item_slug": "mysterious-paper",
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "blue-baby"
+  },
+  "name": "Mysterious Paper",
+  "cond": "Beat ??? as Eden"
+ },
+ "124": {
+  "item_slug": "mystery-sack",
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "lamb"
+  },
+  "name": "Mystery Sack",
+  "cond": "Defeat The Lamb as Eden"
+ },
+ "125": {
+  "item_slug": "undefined",
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "boss-rush"
+  },
+  "name": "Undefined",
+  "cond": "Complete the Boss Rush as Eden"
+ },
+ "126": {
+  "item_slug": "satanic-bible",
+  "proves_mark": {
+   "char_slug": "azazel",
+   "mark_key": "isaac"
+  },
+  "name": "Satanic Bible",
+  "cond": "Defeat Isaac as Azazel"
+ },
+ "127": {
+  "item_slug": "daemons-tail",
+  "proves_mark": {
+   "char_slug": "azazel",
+   "mark_key": "satan"
+  },
+  "name": "Daemon's Tail",
+  "cond": "Defeat Satan as Azazel"
+ },
+ "128": {
+  "item_slug": "abaddon",
+  "proves_mark": {
+   "char_slug": "azazel",
+   "mark_key": "blue-baby"
+  },
+  "name": "Abaddon",
+  "cond": "Defeat ??? as Azazel"
+ },
+ "129": {
+  "item_slug": "isaacs-heart",
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "isaac"
+  },
+  "name": "Isaac's Heart",
+  "cond": "Defeat Isaac as The Lost"
+ },
+ "130": {
+  "item_slug": "the-mind",
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "satan"
+  },
+  "name": "The Mind",
+  "cond": "Defeat Satan as The Lost"
+ },
+ "131": {
+  "item_slug": "the-body",
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "blue-baby"
+  },
+  "name": "The Body",
+  "cond": "Defeat ??? as The Lost"
+ },
+ "132": {
+  "item_slug": "the-soul",
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "lamb"
+  },
+  "name": "The Soul",
+  "cond": "Defeat The Lamb as The Lost"
+ },
+ "133": {
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "boss-rush"
+  },
+  "name": "The D100",
+  "cond": "Complete the Boss Rush as The Lost"
+ },
+ "134": {
+  "item_slug": "blue-map",
+  "name": "Blue Map",
+  "cond": "Donate 10 Coins to the Donation Machine"
+ },
+ "135": {
+  "item_slug": "theres-options",
+  "name": "There's Options",
+  "cond": "Donate 50 Coins to the Donation Machine"
+ },
+ "136": {
+  "item_slug": "black-candle",
+  "name": "Black Candle",
+  "cond": "Donate 150 Coins to the Donation Machine"
+ },
+ "137": {
+  "item_slug": "red-candle",
+  "name": "Red Candle",
+  "cond": "Donate 400 Coins to the Donation Machine"
+ },
+ "138": {
+  "item_slug": "stop-watch",
+  "name": "Stop Watch",
+  "cond": "Donate 999 Coins to the Donation Machine"
+ },
+ "139": {
+  "item_slug": "wire-coat-hanger",
+  "name": "Wire Coat Hanger",
+  "cond": "Defeat Mom's Heart 4 times"
+ },
+ "140": {
+  "item_slug": "ipecac",
+  "name": "Ipecac",
+  "cond": "Defeat Mom's Heart 6 times"
+ },
+ "141": {
+  "item_slug": "experimental-treatment",
+  "name": "Experimental Treatment",
+  "cond": "Defeat Mom's Heart 7 times"
+ },
+ "142": {
+  "name": "Krampus",
+  "cond": "Take 20 items from Devil Rooms"
+ },
+ "143": {
+  "item_slug": "head-of-krampus",
+  "name": "Head of Krampus",
+  "cond": "Defeat Krampus"
+ },
+ "144": {
+  "name": "Super Meat Boy",
+  "cond": "Make a Super Meat Boy by picking up 4 copies of Cube of Meat in one run; see Unlocking Super Meat Boy &amp; Super Bandage Girl"
+ },
+ "145": {
+  "item_slug": "butter-bean",
+  "name": "Butter Bean",
+  "cond": "Destroy 100 Poops"
+ },
+ "146": {
+  "item_slug": "little-baggy",
+  "name": "Little Baggy",
+  "cond": "Pick up any 2 of the following items in a single run: Roid Rage, The Virus, Growth Hormones, Experimental Treatment, and Speed Ball (any 2 items that have the \"syringe\" item tag)"
+ },
+ "147": {
+  "item_slug": "blood-bag",
+  "name": "Blood Bag",
+  "cond": "Use the Blood Donation Machine 30 times"
+ },
+ "148": {
+  "name": "The D4",
+  "cond": "Blow up 30 Slot Machine"
+ },
+ "149": {
+  "item_slug": "missing-poster",
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "lamb"
+  },
+  "name": "Missing Poster",
+  "cond": "Defeat The Lamb as Isaac"
+ },
+ "150": {
+  "item_slug": "rubber-cement",
+  "name": "Rubber Cement",
+  "cond": "Defeat Mom's Heart 2 times"
+ },
+ "151": {
+  "name": "Store Upgrade lv.1",
+  "cond": "Donate 20 Coins to the Donation Machine"
+ },
+ "152": {
+  "name": "Store Upgrade lv.2",
+  "cond": "Donate 100 Coins to the Donation Machine"
+ },
+ "153": {
+  "name": "Store Upgrade lv.3",
+  "cond": "Donate 200 Coins to the Donation Machine"
+ },
+ "154": {
+  "name": "Store Upgrade lv.4",
+  "cond": "Donate 600 Coins to the Donation Machine"
+ },
+ "155": {
+  "name": "Angels",
+  "cond": "Complete Chapter 6"
+ },
+ "156": {
+  "item_slug": "godhead",
+  "name": "Godhead",
+  "cond": "Earn all 12 Completion Marks on Hard mode as The Lost"
+ },
+ "157": {
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "heart"
+  },
+  "name": "Darkness Falls",
+  "cond": "Defeat Mom's Heart 11 times Defeat Satan and ??? as Eve"
+ },
+ "158": {
+  "name": "The Tank",
+  "cond": "Have 7 or more Red Heart Containers at one time"
+ },
+ "159": {
+  "name": "Solar System",
+  "cond": "Defeat Mom's Heart 3 times"
+ },
+ "160": {
+  "item_slug": "suicide-king",
+  "name": "Suicide King",
+  "cond": "Defeat Mom's Heart 11 times"
+ },
+ "161": {
+  "name": "Cat Got Your Tongue",
+  "cond": "Become Guppy"
+ },
+ "162": {
+  "name": "Demo Man",
+  "cond": "Defeat Mom's Heart 9 times"
+ },
+ "163": {
+  "name": "Cursed!",
+  "cond": "Have 7 or more Red Heart Containers at one time"
+ },
+ "164": {
+  "item_slug": "glass-cannon",
+  "name": "Glass Cannon",
+  "cond": "Beat The Family Man (challenge #19) and defeat Lokii"
+ },
+ "165": {
+  "name": "The Family Man",
+  "cond": "Pick up both Key Pieces from the Angels in one run"
+ },
+ "166": {
+  "name": "Purist",
+  "cond": "Defeat Mom"
+ },
+ "167": {
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "heart"
+  },
+  "name": "Lost Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as Isaac"
+ },
+ "168": {
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "heart"
+  },
+  "name": "Cute Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as Magdalene"
+ },
+ "169": {
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "heart"
+  },
+  "name": "Crow Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as Eve"
+ },
+ "170": {
+  "proves_mark": {
+   "char_slug": "judas",
+   "mark_key": "heart"
+  },
+  "name": "Shadow Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as Judas"
+ },
+ "171": {
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "heart"
+  },
+  "name": "Glass Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as Cain"
+ },
+ "172": {
+  "name": "Wrapped Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as Azazel Defeat Mom's Heart on Hard mode as Lazarus"
+ },
+ "173": {
+  "name": "Begotten Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as Lazarus Defeat Mom's Heart on Hard mode as Azazel"
+ },
+ "174": {
+  "name": "Dead Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as ???"
+ },
+ "175": {
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "heart"
+  },
+  "name": "-0- Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as The Lost"
+ },
+ "176": {
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "heart"
+  },
+  "name": "Glitch Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as Eden"
+ },
+ "177": {
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "heart"
+  },
+  "name": "Fighting Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as Samson"
+ },
+ "178": {
+  "name": "Lord of the Flies",
+  "cond": "Become Beelzebub"
+ },
+ "179": {
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "hush"
+  },
+  "name": "Fart Baby",
+  "cond": "Defeat Hush as Isaac"
+ },
+ "180": {
+  "item_slug": "purity",
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "hush"
+  },
+  "name": "Purity",
+  "cond": "Defeat Hush as Magdalene"
+ },
+ "181": {
+  "item_slug": "d12",
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "hush"
+  },
+  "name": "D12",
+  "cond": "Defeat Hush as Cain"
+ },
+ "182": {
+  "item_slug": "betrayal",
+  "proves_mark": {
+   "char_slug": "judas",
+   "mark_key": "hush"
+  },
+  "name": "Betrayal",
+  "cond": "Defeat Hush as Judas"
+ },
+ "183": {
+  "item_slug": "fates-reward",
+  "name": "Fate's Reward",
+  "cond": "Defeat Hush as ???"
+ },
+ "184": {
+  "item_slug": "athame",
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "hush"
+  },
+  "name": "Athame",
+  "cond": "Defeat Hush as Eve"
+ },
+ "185": {
+  "item_slug": "blind-rage",
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "hush"
+  },
+  "name": "Blind Rage",
+  "cond": "Defeat Hush as Samson"
+ },
+ "186": {
+  "item_slug": "maw-of-the-void",
+  "proves_mark": {
+   "char_slug": "azazel",
+   "mark_key": "hush"
+  },
+  "name": "Maw of the Void",
+  "cond": "Defeat Hush as Azazel"
+ },
+ "187": {
+  "item_slug": "empty-vessel",
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "hush"
+  },
+  "name": "Empty Vessel",
+  "cond": "Defeat Hush as Lazarus"
+ },
+ "188": {
+  "item_slug": "edens-blessing",
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "hush"
+  },
+  "name": "Eden's Blessing",
+  "cond": "Defeat Hush as Eden"
+ },
+ "189": {
+  "item_slug": "sworn-protector",
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "hush"
+  },
+  "name": "Sworn Protector",
+  "cond": "Defeat Hush as The Lost"
+ },
+ "190": {
+  "item_slug": "incubus",
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "hush"
+  },
+  "name": "Incubus",
+  "cond": "Defeat Hush as Lilith"
+ },
+ "191": {
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "hush"
+  },
+  "name": "Keeper now holds... A Penny!",
+  "cond": "Defeat Hush as Keeper"
+ },
+ "192": {
+  "item_slug": "lil-chest",
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Lil' Chest",
+  "cond": "Defeat Ultra Greed as Isaac"
+ },
+ "193": {
+  "item_slug": "censer",
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Censer",
+  "cond": "Defeat Ultra Greed as Magdalene"
+ },
+ "194": {
+  "item_slug": "evil-eye",
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Evil Eye",
+  "cond": "Defeat Ultra Greed as Cain"
+ },
+ "195": {
+  "item_slug": "my-shadow",
+  "proves_mark": {
+   "char_slug": "judas",
+   "mark_key": "ultra-greed"
+  },
+  "name": "My Shadow",
+  "cond": "Defeat Ultra Greed as Judas"
+ },
+ "196": {
+  "item_slug": "cracked-dice",
+  "name": "Cracked Dice",
+  "cond": "Defeat Ultra Greed as ???"
+ },
+ "197": {
+  "item_slug": "black-feather",
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Black Feather",
+  "cond": "Defeat Ultra Greed as Eve"
+ },
+ "198": {
+  "item_slug": "lusty-blood",
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Lusty Blood",
+  "cond": "Defeat Ultra Greed as Samson"
+ },
+ "199": {
+  "char_slug": "lilith",
+  "proves_mark": {
+   "char_slug": "azazel",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Lilith",
+  "cond": "Defeat Ultra Greed as Azazel"
+ },
+ "200": {
+  "item_slug": "key-bum",
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Key Bum",
+  "cond": "Defeat Ultra Greed as Lazarus"
+ },
+ "201": {
+  "item_slug": "gb-bug",
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "ultra-greed"
+  },
+  "name": "GB Bug",
+  "cond": "Defeat Ultra Greed as Eden"
+ },
+ "202": {
+  "item_slug": "zodiac",
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Zodiac",
+  "cond": "Defeat Ultra Greed as The Lost"
+ },
+ "203": {
+  "item_slug": "box-of-friends",
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Box of Friends",
+  "cond": "Defeat Ultra Greed as Lilith"
+ },
+ "204": {
+  "item_slug": "rib-of-greed",
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Rib of Greed",
+  "cond": "Defeat Ultra Greed as Keeper"
+ },
+ "205": {
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "mega-satan"
+  },
+  "name": "Cry Baby",
+  "cond": "Defeat Mega Satan as Isaac"
+ },
+ "206": {
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "mega-satan"
+  },
+  "name": "Red Baby",
+  "cond": "Defeat Mega Satan as Magdalene"
+ },
+ "207": {
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "mega-satan"
+  },
+  "name": "Green Baby",
+  "cond": "Defeat Mega Satan as Cain"
+ },
+ "208": {
+  "proves_mark": {
+   "char_slug": "judas",
+   "mark_key": "mega-satan"
+  },
+  "name": "Brown Baby",
+  "cond": "Defeat Mega Satan as Judas"
+ },
+ "209": {
+  "char_slug": "blue-baby",
+  "name": "Blue Baby",
+  "cond": "Defeat Mega Satan as ???"
+ },
+ "210": {
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "mega-satan"
+  },
+  "name": "Lil' Baby",
+  "cond": "Defeat Mega Satan as Eve"
+ },
+ "211": {
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "mega-satan"
+  },
+  "name": "Rage Baby",
+  "cond": "Defeat Mega Satan as Samson"
+ },
+ "212": {
+  "proves_mark": {
+   "char_slug": "azazel",
+   "mark_key": "mega-satan"
+  },
+  "name": "Black Baby",
+  "cond": "Defeat Mega Satan as Azazel"
+ },
+ "213": {
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "mega-satan"
+  },
+  "name": "Long Baby",
+  "cond": "Defeat Mega Satan as Lazarus"
+ },
+ "214": {
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "mega-satan"
+  },
+  "name": "Yellow Baby",
+  "cond": "Defeat Mega Satan as Eden"
+ },
+ "215": {
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "mega-satan"
+  },
+  "name": "White Baby",
+  "cond": "Defeat Mega Satan as The Lost"
+ },
+ "216": {
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "mega-satan"
+  },
+  "name": "Big Baby",
+  "cond": "Defeat Mega Satan as Lilith"
+ },
+ "217": {
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "mega-satan"
+  },
+  "name": "Noose Baby",
+  "cond": "Defeat Mega Satan as Keeper"
+ },
+ "218": {
+  "item_slug": "rune-bag",
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "isaac"
+  },
+  "name": "Rune Bag",
+  "cond": "Defeat Isaac as Lilith"
+ },
+ "219": {
+  "item_slug": "cambion-conception",
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "blue-baby"
+  },
+  "name": "Cambion Conception",
+  "cond": "Defeat ??? as Lilith"
+ },
+ "220": {
+  "item_slug": "serpents-kiss",
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "satan"
+  },
+  "name": "Serpent's Kiss",
+  "cond": "Defeat Satan as Lilith"
+ },
+ "221": {
+  "item_slug": "succubus",
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "lamb"
+  },
+  "name": "Succubus",
+  "cond": "Defeat The Lamb as Lilith"
+ },
+ "222": {
+  "item_slug": "immaculate-conception",
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "boss-rush"
+  },
+  "name": "Immaculate Conception",
+  "cond": "Complete the Boss Rush as Lilith"
+ },
+ "223": {
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "heart"
+  },
+  "name": "Goat Head Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as Lilith"
+ },
+ "224": {
+  "name": "Gold Heart",
+  "cond": "Complete XXXXXXXXL (challenge #21)"
+ },
+ "225": {
+  "item_slug": "get-out-of-jail-free-card",
+  "name": "Get out of Jail Free Card",
+  "cond": "Complete SPEED! (challenge #22)"
+ },
+ "226": {
+  "name": "Gold Bomb",
+  "cond": "Complete Blue Bomber (challenge #23)"
+ },
+ "227": {
+  "name": "2 new pills",
+  "cond": "Complete PAY TO PLAY (challenge #24)"
+ },
+ "228": {
+  "name": "2 new pills",
+  "cond": "Complete Have a Heart (challenge #25)"
+ },
+ "229": {
+  "item_slug": "poker-chip",
+  "name": "Poker Chip",
+  "cond": "Complete I RULE! (challenge #26)"
+ },
+ "230": {
+  "item_slug": "stud-finder",
+  "name": "Stud Finder",
+  "cond": "Complete BRAINS! (challenge #27)"
+ },
+ "231": {
+  "item_slug": "d8",
+  "name": "D8",
+  "cond": "Complete PRIDE DAY! (challenge #28)"
+ },
+ "232": {
+  "item_slug": "kidney-stone",
+  "name": "Kidney Stone",
+  "cond": "Complete The Guardian (challenge #30) Complete Onan's Streak (challenge #29)"
+ },
+ "233": {
+  "item_slug": "blank-rune",
+  "name": "Blank Rune",
+  "cond": "Complete Onan's Streak (challenge #29) Complete The Guardian (challenge #30)"
+ },
+ "234": {
+  "name": "Blue Womb",
+  "cond": "Defeat Mom's Heart 10 times"
+ },
+ "235": {
+  "name": "1001%",
+  "cond": "Unlock all secrets and endings, and collect every item in the game"
+ },
+ "236": {
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "isaac"
+  },
+  "name": "Keeper holds Wooden Nickel",
+  "cond": "Defeat Isaac as Keeper"
+ },
+ "237": {
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "satan"
+  },
+  "name": "Keeper holds Store Key",
+  "cond": "Defeat Satan as Keeper"
+ },
+ "238": {
+  "item_slug": "deep-pockets",
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "blue-baby"
+  },
+  "name": "Deep Pockets",
+  "cond": "Defeat ??? as Keeper"
+ },
+ "239": {
+  "item_slug": "karma",
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "lamb"
+  },
+  "name": "Karma",
+  "cond": "Defeat The Lamb as Keeper"
+ },
+ "240": {
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "boss-rush"
+  },
+  "name": "Sticky Nickels",
+  "cond": "Complete the Boss Rush as Keeper"
+ },
+ "241": {
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "heart"
+  },
+  "name": "Super Greed Baby",
+  "cond": "Defeat Mom's Heart on Hard mode as Keeper"
+ },
+ "242": {
+  "name": "Lucky Pennies",
+  "cond": "Donate 1 Coin to the Greed Donation Machine"
+ },
+ "243": {
+  "name": "Special Hanging Shopkeepers",
+  "cond": "Donate 10 Coins to the Greed Donation Machine"
+ },
+ "244": {
+  "item_slug": "wooden-nickel",
+  "name": "Wooden Nickel",
+  "cond": "Donate 30 Coins to the Greed Donation Machine"
+ },
+ "245": {
+  "name": "Cain holds Paperclip",
+  "cond": "Donate 68 Coins to the Greed Donation Machine"
+ },
+ "246": {
+  "name": "Everything is Terrible 2!!!",
+  "cond": "Donate 111 Coins to the Greed Donation Machine"
+ },
+ "247": {
+  "name": "Special Shopkeepers",
+  "cond": "Donate 234 Coins to the Greed Donation Machine"
+ },
+ "248": {
+  "name": "Eve now holds Razor Blade",
+  "cond": "Donate 439 Coins to the Greed Donation Machine"
+ },
+ "249": {
+  "item_slug": "store-key",
+  "name": "Store Key",
+  "cond": "Donate 666 Coins to the Greed Donation Machine"
+ },
+ "250": {
+  "name": "Lost holds Holy Mantle",
+  "cond": "Donate 879 Coins to the Greed Donation Machine"
+ },
+ "251": {
+  "char_slug": "keeper",
+  "name": "Keeper",
+  "cond": "Donate 1000 Coins to the Greed Donation Machine"
+ },
+ "252": {
+  "name": "Hive Baby",
+  "cond": "Earn all Hard mode Completion Marks as ???"
+ },
+ "253": {
+  "name": "Buddy Baby",
+  "cond": "Earn all Hard mode Completion Marks as Isaac"
+ },
+ "254": {
+  "name": "Colorful Baby",
+  "cond": "Earn all Hard mode Completion Marks as Magdalene"
+ },
+ "255": {
+  "name": "Whore Baby",
+  "cond": "Earn all Hard mode Completion Marks as Eve"
+ },
+ "256": {
+  "name": "Cracked Baby",
+  "cond": "Earn all Hard mode Completion Marks as Eden"
+ },
+ "257": {
+  "name": "Dripping Baby",
+  "cond": "Earn all Hard mode Completion Marks as Lazarus"
+ },
+ "258": {
+  "name": "Blinding Baby",
+  "cond": "Use Blank Card while holding XIX - The Sun"
+ },
+ "259": {
+  "name": "Sucky Baby",
+  "cond": "Earn all Hard mode Completion Marks as Azazel"
+ },
+ "260": {
+  "name": "Dark Baby",
+  "cond": "Earn all Hard mode Completion Marks as Lilith"
+ },
+ "261": {
+  "name": "Picky Baby",
+  "cond": "Earn all Hard mode Completion Marks as Cain"
+ },
+ "262": {
+  "name": "Revenge Baby",
+  "cond": "Earn all Hard mode Completion Marks as Samson"
+ },
+ "263": {
+  "name": "Belial Baby",
+  "cond": "Earn all Hard mode Completion Marks as Judas"
+ },
+ "264": {
+  "name": "Sale Baby",
+  "cond": "Earn all Hard mode Completion Marks as Keeper"
+ },
+ "265": {
+  "name": "XXXXXXXXL",
+  "cond": "Defeat Mom"
+ },
+ "266": {
+  "name": "SPEED!",
+  "cond": "Defeat Mom"
+ },
+ "267": {
+  "name": "Blue Bomber",
+  "cond": "Destroy 10 Tinted Rocks and defeat Mom's Heart 11 times"
+ },
+ "268": {
+  "item_slug": "pay-to-play",
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "isaac"
+  },
+  "name": "PAY TO PLAY",
+  "cond": "Defeat Isaac as Cain"
+ },
+ "269": {
+  "name": "Have a Heart",
+  "cond": "Defeat Mom"
+ },
+ "270": {
+  "name": "I RULE!",
+  "cond": "Defeat ??? or The Lamb, and defeat Satan as Isaac Defeat Mega Satan"
+ },
+ "271": {
+  "name": "BRAINS!",
+  "cond": "Defeat Isaac 5 times"
+ },
+ "272": {
+  "name": "PRIDE DAY!",
+  "cond": "Defeat Mom"
+ },
+ "273": {
+  "name": "Onan's Streak",
+  "cond": "Defeat Mom"
+ },
+ "274": {
+  "name": "The Guardian",
+  "cond": "Defeat Mom"
+ },
+ "275": {
+  "name": "Generosity",
+  "cond": "Donate 999 Coins to the Greed Donation Machine"
+ },
+ "276": {
+  "name": "Mega",
+  "cond": "Defeat Mega Satan as every character ( except Tainted characters)"
+ },
+ "277": {
+  "name": "Backasswards",
+  "cond": "Defeat ??? or The Lamb Defeat Mega Satan"
+ },
+ "278": {
+  "name": "Aprils fool",
+  "cond": "Defeat Mom"
+ },
+ "279": {
+  "name": "Pokey Mans",
+  "cond": "Defeat Mom's Heart 11 times"
+ },
+ "280": {
+  "name": "Ultra Hard",
+  "cond": "Defeat ??? or The Lamb. Possession of The Polaroid / The Negative is required, barring getting to Dark Room through a Sacrifice Room. Defeat Mega Satan"
+ },
+ "281": {
+  "name": "PONG",
+  "cond": "Defeat Isaac 5 times"
+ },
+ "282": {
+  "item_slug": "d-infinity",
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "delirium"
+  },
+  "name": "D Infinity",
+  "cond": "Defeat Delirium as Isaac"
+ },
+ "283": {
+  "item_slug": "eucharist",
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "delirium"
+  },
+  "name": "Eucharist",
+  "cond": "Defeat Delirium as Magdalene"
+ },
+ "284": {
+  "item_slug": "silver-dollar",
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "delirium"
+  },
+  "name": "Silver Dollar",
+  "cond": "Defeat Delirium as Cain"
+ },
+ "285": {
+  "item_slug": "shade",
+  "proves_mark": {
+   "char_slug": "judas",
+   "mark_key": "delirium"
+  },
+  "name": "Shade",
+  "cond": "Defeat Delirium as Judas"
+ },
+ "286": {
+  "item_slug": "king-baby",
+  "name": "King Baby",
+  "cond": "Defeat Delirium as ???"
+ },
+ "287": {
+  "item_slug": "bloody-crown",
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "delirium"
+  },
+  "name": "Bloody Crown",
+  "cond": "Defeat Delirium as Samson"
+ },
+ "288": {
+  "item_slug": "dull-razor",
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "delirium"
+  },
+  "name": "Dull Razor",
+  "cond": "Defeat Delirium as Eve"
+ },
+ "289": {
+  "item_slug": "edens-soul",
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "delirium"
+  },
+  "name": "Eden's Soul",
+  "cond": "Defeat Delirium as Eden"
+ },
+ "290": {
+  "item_slug": "dark-princes-crown",
+  "proves_mark": {
+   "char_slug": "azazel",
+   "mark_key": "delirium"
+  },
+  "name": "Dark Prince's Crown",
+  "cond": "Defeat Delirium as Azazel"
+ },
+ "291": {
+  "item_slug": "compound-fracture",
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "delirium"
+  },
+  "name": "Compound Fracture",
+  "cond": "Defeat Delirium as Lazarus"
+ },
+ "292": {
+  "item_slug": "euthanasia",
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "delirium"
+  },
+  "name": "Euthanasia",
+  "cond": "Defeat Delirium as Lilith"
+ },
+ "293": {
+  "item_slug": "holy-card",
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "delirium"
+  },
+  "name": "Holy Card",
+  "cond": "Defeat Delirium as The Lost"
+ },
+ "294": {
+  "item_slug": "crooked-penny",
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "delirium"
+  },
+  "name": "Crooked Penny",
+  "cond": "Defeat Delirium as Keeper"
+ },
+ "295": {
+  "item_slug": "void",
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "delirium"
+  },
+  "name": "Void",
+  "cond": "Defeat Delirium as Apollyon"
+ },
+ "296": {
+  "item_slug": "d1",
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "D1",
+  "cond": "Defeat Ultra Greedier as Isaac"
+ },
+ "297": {
+  "item_slug": "glyph-of-balance",
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Glyph of Balance",
+  "cond": "Defeat Ultra Greedier as Magdalene"
+ },
+ "298": {
+  "item_slug": "sack-of-sacks",
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Sack of Sacks",
+  "cond": "Defeat Ultra Greedier as Cain"
+ },
+ "299": {
+  "item_slug": "eye-of-belial",
+  "proves_mark": {
+   "char_slug": "judas",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Eye of Belial",
+  "cond": "Defeat Ultra Greedier as Judas"
+ },
+ "300": {
+  "item_slug": "meconium",
+  "name": "Meconium",
+  "cond": "Defeat Ultra Greedier as ???"
+ },
+ "301": {
+  "item_slug": "stem-cell",
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Stem Cell",
+  "cond": "Defeat Ultra Greedier as Samson"
+ },
+ "302": {
+  "item_slug": "crow-heart",
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Crow Heart",
+  "cond": "Defeat Ultra Greedier as Eve"
+ },
+ "303": {
+  "item_slug": "metronome",
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Metronome",
+  "cond": "Defeat Ultra Greedier as Eden"
+ },
+ "304": {
+  "item_slug": "bat-wing",
+  "proves_mark": {
+   "char_slug": "azazel",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Bat Wing",
+  "cond": "Defeat Ultra Greedier as Azazel"
+ },
+ "305": {
+  "item_slug": "plan-c",
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Plan C",
+  "cond": "Defeat Ultra Greedier as Lazarus"
+ },
+ "306": {
+  "item_slug": "duality",
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Duality",
+  "cond": "Defeat Ultra Greedier as Lilith"
+ },
+ "307": {
+  "item_slug": "dads-lost-coin",
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Dad's Lost Coin",
+  "cond": "Defeat Ultra Greedier as The Lost"
+ },
+ "308": {
+  "item_slug": "eye-of-greed",
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Eye of Greed",
+  "cond": "Defeat Ultra Greedier as Keeper"
+ },
+ "309": {
+  "item_slug": "black-rune",
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Black Rune",
+  "cond": "Defeat Ultra Greedier as Apollyon"
+ },
+ "310": {
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "isaac"
+  },
+  "name": "Locust of Wrath",
+  "cond": "Defeat Isaac as Apollyon"
+ },
+ "311": {
+  "item_slug": "locust-of-pestilence",
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "satan"
+  },
+  "name": "Locust of Pestilence",
+  "cond": "Defeat Satan as Apollyon"
+ },
+ "312": {
+  "item_slug": "locust-of-famine",
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "blue-baby"
+  },
+  "name": "Locust of Famine",
+  "cond": "Defeat ??? as Apollyon"
+ },
+ "313": {
+  "item_slug": "locust-of-death",
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "lamb"
+  },
+  "name": "Locust of Death",
+  "cond": "Defeat The Lamb as Apollyon"
+ },
+ "314": {
+  "item_slug": "locust-of-conquest",
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "boss-rush"
+  },
+  "name": "Locust of Conquest",
+  "cond": "Complete the Boss Rush as Apollyon"
+ },
+ "315": {
+  "item_slug": "hushy",
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "hush"
+  },
+  "name": "Hushy",
+  "cond": "Defeat Hush as Apollyon"
+ },
+ "316": {
+  "item_slug": "brown-nugget",
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Brown Nugget",
+  "cond": "Defeat Ultra Greed as Apollyon"
+ },
+ "317": {
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "mega-satan"
+  },
+  "name": "Mort Baby",
+  "cond": "Defeat Mega Satan as Apollyon"
+ },
+ "318": {
+  "item_slug": "smelter",
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "heart"
+  },
+  "name": "Smelter",
+  "cond": "Defeat Mom's Heart or It Lives! on Hard mode as Apollyon"
+ },
+ "319": {
+  "name": "Apollyon Baby",
+  "cond": "Earn all Hard mode Completion Marks as Apollyon"
+ },
+ "320": {
+  "name": "New Area",
+  "cond": "Defeat Hush"
+ },
+ "321": {
+  "name": "Once More with Feeling!",
+  "cond": "Complete a Victory Lap, defeating The Lamb"
+ },
+ "322": {
+  "name": "Hat trick!",
+  "cond": "Get a 3-win streak"
+ },
+ "323": {
+  "name": "5 Nights at Mom's",
+  "cond": "Get a 5-win streak ( 3-win streak), using a different character each time"
+ },
+ "324": {
+  "name": "Sin collector",
+  "cond": "Collect every entry in the Bestiary (bugged v190 - Mobs that don't exist in the bestiary are being counted. This allows Sin Collector to be unlocked without a complete bestiary)"
+ },
+ "325": {
+  "name": "Dedication",
+  "cond": "Participate in 31 Daily Challenges (they don't have to be consecutive; it will still count if Isaac dies in the first room)"
+ },
+ "326": {
+  "name": "ZIP!",
+  "cond": "Defeat The Lamb in under 20 minutes"
+ },
+ "327": {
+  "name": "It's the Key",
+  "cond": "Defeat The Lamb without taking Hearts, Coins, or Bombs through the entire run"
+ },
+ "328": {
+  "name": "Mr. Resetter!",
+  "cond": "Reset 7 times in a row"
+ },
+ "329": {
+  "name": "Living on the edge",
+  "cond": "Complete a Chapter (floors I and II) after Basement, start-to-finish, with only half a Heart total (can use The Lost)"
+ },
+ "330": {
+  "name": "U Broke It!",
+  "cond": "Obtain 50 items in a run (duplicate passive items/familiars count towards the total, e.g., multiple Breakfast)"
+ },
+ "331": {
+  "name": "Laz Bleeds More!",
+  "cond": "Complete Backasswards (challenge #31)"
+ },
+ "332": {
+  "name": "Maggy Now Holds a Pill!",
+  "cond": "Complete Aprils Fool (challenge #32)"
+ },
+ "333": {
+  "name": "Charged Key",
+  "cond": "Complete Pokey Mans (challenge #33)"
+ },
+ "334": {
+  "name": "Samson Feels Healthy!",
+  "cond": "Complete Ultra Hard (challenge #34)"
+ },
+ "335": {
+  "item_slug": "greeds-gullet",
+  "name": "Greed's Gullet",
+  "cond": "Complete Pong (challenge #35)"
+ },
+ "336": {
+  "name": "The Marathon",
+  "cond": "Get a 5-win streak in the Daily Challenges ( Isaac must have a score above 0 on the score screen)"
+ },
+ "337": {
+  "name": "RERUN",
+  "cond": "Complete 3 Victory Laps and start a 4th"
+ },
+ "338": {
+  "item_slug": "delirious",
+  "name": "Delirious",
+  "cond": "Defeat Delirium"
+ },
+ "339": {
+  "name": "1000000%",
+  "cond": "Collect every item in the game, unlock all secrets and endings, and complete the Bestiary"
+ },
+ "340": {
+  "char_slug": "apollyon",
+  "name": "Apollyon",
+  "cond": "Defeat Mega Satan"
+ },
+ "341": {
+  "name": "Greedier!",
+  "cond": "Donate 500 Coins to the Greed Donation Machine"
+ },
+ "342": {
+  "name": "Burning Basement",
+  "cond": "Defeat Mom's Heart 11 times"
+ },
+ "343": {
+  "name": "Flooded Caves",
+  "cond": "Defeat It Lives! 16 times"
+ },
+ "344": {
+  "name": "Dank Depths",
+  "cond": "Defeat It Lives! 21 times"
+ },
+ "345": {
+  "name": "Scarred Womb",
+  "cond": "Defeat It Lives! 30 times"
+ },
+ "346": {
+  "name": "Something wicked this way comes!",
+  "cond": "Defeat ??? as 3 different Characters"
+ },
+ "347": {
+  "name": "Something wicked this way comes+!",
+  "cond": "Defeat ??? as 6 different Characters"
+ },
+ "348": {
+  "name": "The gate is open!",
+  "cond": "Defeat The Lamb"
+ },
+ "349": {
+  "item_slug": "black-hole",
+  "name": "Black Hole",
+  "cond": "Defeat 20 Portals"
+ },
+ "350": {
+  "item_slug": "mystery-gift",
+  "name": "Mystery Gift",
+  "cond": "Destroy 500 rocks"
+ },
+ "351": {
+  "item_slug": "sprinkler",
+  "name": "Sprinkler",
+  "cond": "Beat Chapter 1 without taking damage"
+ },
+ "352": {
+  "item_slug": "angry-fly",
+  "name": "Angry Fly",
+  "cond": "Become Beelzebub"
+ },
+ "353": {
+  "item_slug": "bozo",
+  "name": "Bozo",
+  "cond": "Destroy 5 rainbow poops"
+ },
+ "354": {
+  "item_slug": "broken-modem",
+  "name": "Broken Modem",
+  "cond": "Complete 7 Daily Challenges (by touching the trophy at the end)"
+ },
+ "355": {
+  "item_slug": "buddy-in-a-box",
+  "name": "Buddy in a Box",
+  "cond": "Pick up 5 familiars in a single run"
+ },
+ "356": {
+  "item_slug": "fast-bombs",
+  "name": "Fast Bombs",
+  "cond": "Defeat Little Horn 20 times"
+ },
+ "357": {
+  "item_slug": "lil-delirium",
+  "name": "Lil Delirium",
+  "cond": "Defeat Delirium for the 1st time"
+ },
+ "358": {
+  "item_slug": "hairpin",
+  "name": "Hairpin",
+  "cond": "Recharge using Lil' Batteries 20 times"
+ },
+ "359": {
+  "item_slug": "wooden-cross",
+  "name": "Wooden Cross",
+  "cond": "Sleep in a bed"
+ },
+ "360": {
+  "item_slug": "butter",
+  "name": "Butter!",
+  "cond": "Complete 2 Victory Laps and start a 3rd"
+ },
+ "361": {
+  "item_slug": "huge-growth",
+  "name": "Huge Growth",
+  "cond": "Increase in size 5 times in a single run via Magic Mushroom, \"One Makes you Larger\" pills, XI - Strength, etc."
+ },
+ "362": {
+  "item_slug": "ancient-recall",
+  "name": "Ancient Recall",
+  "cond": "Use Cards and Runes 20 times"
+ },
+ "363": {
+  "item_slug": "era-walk",
+  "name": "Era Walk",
+  "cond": "Have both the Broken Watch and the Stop Watch unlocked"
+ },
+ "364": {
+  "item_slug": "coupon",
+  "name": "Coupon",
+  "cond": "Purchase anything from Shops, Devil Rooms, and/or Black Markets 50 times"
+ },
+ "365": {
+  "item_slug": "telekinesis",
+  "name": "Telekinesis",
+  "cond": "Beat Chapter 2 without taking damage"
+ },
+ "366": {
+  "item_slug": "moving-box",
+  "name": "Moving Box",
+  "cond": "Use Pandora's Box in Dark Room"
+ },
+ "367": {
+  "item_slug": "jumper-cables",
+  "name": "Jumper Cables",
+  "cond": "Pick up any 2 of the following items/trinkets in a single run: 9 Volt, The Battery, Car Battery, AAA Battery, and Watch Battery (any 2 items that have the \"battery\" item tag)"
+ },
+ "368": {
+  "item_slug": "leprosy",
+  "name": "Leprosy",
+  "cond": "Beat Chapter 3 without taking damage"
+ },
+ "369": {
+  "item_slug": "technology-zero",
+  "name": "Technology Zero",
+  "cond": "Pick up any 2 technology items in a single run (any 2 items that have the \"tech\" item tag)"
+ },
+ "370": {
+  "item_slug": "filigree-feather",
+  "name": "Filigree Feather",
+  "cond": "Acquire both Key Piece 1 and Key Piece 2"
+ },
+ "371": {
+  "item_slug": "mr-me",
+  "name": "Mr. ME!",
+  "cond": "Open 20 Locked Chests"
+ },
+ "372": {
+  "item_slug": "7-seals",
+  "name": "7 Seals",
+  "cond": "Defeat all 5 Harbingers"
+ },
+ "373": {
+  "item_slug": "angelic-prism",
+  "name": "Angelic Prism",
+  "cond": "Defeat an Angel 10 times"
+ },
+ "374": {
+  "item_slug": "pop",
+  "name": "Pop!",
+  "cond": "Beat Chapter 4 without taking damage"
+ },
+ "375": {
+  "item_slug": "door-stop",
+  "name": "Door Stop",
+  "cond": "Blow up doors and Secret Room walls 50 times"
+ },
+ "376": {
+  "item_slug": "deaths-list",
+  "name": "Death's List",
+  "cond": "Take 25 Deals with the Devil"
+ },
+ "377": {
+  "item_slug": "haemolacria",
+  "name": "Haemolacria",
+  "cond": "Acquire Blood Clot 10 times"
+ },
+ "378": {
+  "item_slug": "lachryphagy",
+  "name": "Lachryphagy",
+  "cond": "Collect 10 \"Tears Up\" items or pills in one run"
+ },
+ "379": {
+  "item_slug": "schoolbag",
+  "name": "Schoolbag",
+  "cond": "Enter every Shop from Chapter 1 through Chapter 3 in one run"
+ },
+ "380": {
+  "item_slug": "trisagion",
+  "name": "Trisagion",
+  "cond": "Take 25 Angel Rooms items"
+ },
+ "381": {
+  "item_slug": "extension-cord",
+  "name": "Extension Cord",
+  "cond": "Have The Battery, 9 Volt, and Car Battery in Isaac's collection"
+ },
+ "382": {
+  "item_slug": "flat-stone",
+  "name": "Flat Stone",
+  "cond": "Acquire Rubber Cement 5 times"
+ },
+ "383": {
+  "item_slug": "sacrificial-altar",
+  "name": "Sacrificial Altar",
+  "cond": "Take 50 Deals with the Devil"
+ },
+ "384": {
+  "item_slug": "lil-spewer",
+  "name": "Lil Spewer",
+  "cond": "Have Isaac die to his own explosion from Ipecac, Bob's Rotten Head, or a Horf! pill"
+ },
+ "385": {
+  "item_slug": "blanket",
+  "name": "Blanket",
+  "cond": "Sleep in 10 beds"
+ },
+ "386": {
+  "item_slug": "marbles",
+  "name": "Marbles",
+  "cond": "Use 5 Gulp! pills in one run ( Placebo uses count)"
+ },
+ "387": {
+  "item_slug": "mystery-egg",
+  "name": "Mystery Egg",
+  "cond": "Spawn three charmed enemies in the same room"
+ },
+ "388": {
+  "item_slug": "rotten-penny",
+  "name": "Rotten Penny",
+  "cond": "Have 20 Blue Flies at the same time"
+ },
+ "389": {
+  "item_slug": "baby-bender",
+  "name": "Baby-Bender",
+  "cond": "Use I - The Magician or Telepathy for Dummies while already having homing tears"
+ },
+ "390": {
+  "char_slug": "the-forgotten",
+  "name": "The Forgotten",
+  "cond": "It's complicated"
+ },
+ "391": {
+  "name": "Bone Heart",
+  "cond": "It's complicated"
+ },
+ "392": {
+  "item_slug": "marrow",
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "heart"
+  },
+  "name": "Marrow",
+  "cond": "Defeat Mom's Heart or It Lives! on Hard mode as The Forgotten"
+ },
+ "393": {
+  "item_slug": "slipped-rib",
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "isaac"
+  },
+  "name": "Slipped Rib",
+  "cond": "Defeat Isaac as The Forgotten"
+ },
+ "394": {
+  "item_slug": "pointy-rib",
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "satan"
+  },
+  "name": "Pointy Rib",
+  "cond": "Defeat Satan as The Forgotten"
+ },
+ "395": {
+  "item_slug": "jaw-bone",
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "blue-baby"
+  },
+  "name": "Jaw Bone",
+  "cond": "Defeat ??? as The Forgotten"
+ },
+ "396": {
+  "item_slug": "brittle-bones",
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "lamb"
+  },
+  "name": "Brittle Bones",
+  "cond": "Defeat The Lamb as The Forgotten"
+ },
+ "397": {
+  "item_slug": "divorce-papers",
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "boss-rush"
+  },
+  "name": "Divorce Papers",
+  "cond": "Complete the Boss Rush as The Forgotten"
+ },
+ "398": {
+  "item_slug": "hallowed-ground",
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "hush"
+  },
+  "name": "Hallowed Ground",
+  "cond": "Defeat Hush as The Forgotten"
+ },
+ "399": {
+  "item_slug": "finger-bone",
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Finger Bone",
+  "cond": "Defeat Ultra Greed as The Forgotten"
+ },
+ "400": {
+  "item_slug": "dads-ring",
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Dad's Ring",
+  "cond": "Defeat Ultra Greedier as The Forgotten"
+ },
+ "401": {
+  "item_slug": "book-of-the-dead",
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "delirium"
+  },
+  "name": "Book of the Dead",
+  "cond": "Defeat Delirium as The Forgotten"
+ },
+ "402": {
+  "name": "Bone Baby",
+  "cond": "Earn all Hard mode Completion Marks as The Forgotten"
+ },
+ "403": {
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "mega-satan"
+  },
+  "name": "Bound Baby",
+  "cond": "Defeat Mega Satan as The Forgotten"
+ },
+ "404": {
+  "char_slug": "bethany",
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "heart"
+  },
+  "name": "Bethany",
+  "cond": "Defeat Mom's Heart/It Lives! on hard mode as Lazarus, without dying at all"
+ },
+ "405": {
+  "char_slug": "jacob-and-esau",
+  "name": "Jacob and Esau",
+  "cond": "Defeat Mother"
+ },
+ "406": {
+  "name": "The Planetarium",
+  "cond": "Collect any 3 items with the \"stars\" item tag in a single run"
+ },
+ "407": {
+  "name": "A Secret Exit",
+  "cond": "Defeat Hush 3 times"
+ },
+ "408": {
+  "item_slug": "forgotten-lullaby",
+  "name": "Forgotten Lullaby",
+  "cond": "Blow up The Siren's skull after defeating her"
+ },
+ "409": {
+  "item_slug": "fruity-plum",
+  "name": "Fruity Plum",
+  "cond": "Defeat Baby Plum 10 times"
+ },
+ "410": {
+  "item_slug": "plum-flute",
+  "name": "Plum Flute",
+  "cond": "Allow Baby Plum to escape instead of defeating her"
+ },
+ "411": {
+  "name": "Rotten Heart",
+  "cond": "Enter Corpse for the first time"
+ },
+ "412": {
+  "name": "Dross",
+  "cond": "Defeat all bosses in Downpour"
+ },
+ "413": {
+  "name": "Ashpit",
+  "cond": "Defeat all bosses in Mines"
+ },
+ "414": {
+  "name": "Gehenna",
+  "cond": "Defeat all bosses in Mausoleum"
+ },
+ "415": {
+  "item_slug": "red-key",
+  "name": "Red Key",
+  "cond": "Open Mom's Chest in Home"
+ },
+ "416": {
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "heart"
+  },
+  "name": "Wisp Baby",
+  "cond": "Defeat Mom's Heart or It Lives! on Hard mode as Bethany"
+ },
+ "417": {
+  "item_slug": "book-of-virtues",
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "isaac"
+  },
+  "name": "Book of Virtues",
+  "cond": "Defeat Isaac as Bethany"
+ },
+ "418": {
+  "item_slug": "urn-of-souls",
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "satan"
+  },
+  "name": "Urn of Souls",
+  "cond": "Defeat Satan as Bethany"
+ },
+ "419": {
+  "item_slug": "blessed-penny",
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "blue-baby"
+  },
+  "name": "Blessed Penny",
+  "cond": "Defeat ??? as Bethany"
+ },
+ "420": {
+  "item_slug": "alabaster-box",
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "lamb"
+  },
+  "name": "Alabaster Box",
+  "cond": "Defeat The Lamb as Bethany"
+ },
+ "421": {
+  "item_slug": "beths-faith",
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "boss-rush"
+  },
+  "name": "Beth's Faith",
+  "cond": "Complete the Boss Rush as Bethany"
+ },
+ "422": {
+  "item_slug": "soul-locket",
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Soul Locket",
+  "cond": "Defeat Ultra Greed as Bethany"
+ },
+ "423": {
+  "item_slug": "divine-intervention",
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "hush"
+  },
+  "name": "Divine Intervention",
+  "cond": "Defeat Hush as Bethany"
+ },
+ "424": {
+  "item_slug": "vade-retro",
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Vade Retro",
+  "cond": "Defeat Ultra Greedier as Bethany"
+ },
+ "425": {
+  "item_slug": "star-of-bethlehem",
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "delirium"
+  },
+  "name": "Star of Bethlehem",
+  "cond": "Defeat Delirium as Bethany"
+ },
+ "426": {
+  "name": "Hope Baby",
+  "cond": "Earn all Hard mode Completion Marks as Bethany"
+ },
+ "427": {
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "mega-satan"
+  },
+  "name": "Glowing Baby",
+  "cond": "Defeat Mega Satan as Bethany"
+ },
+ "428": {
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "heart"
+  },
+  "name": "Double Baby",
+  "cond": "Defeat Mom's Heart or It Lives! on Hard mode as Jacob and Esau"
+ },
+ "429": {
+  "item_slug": "the-stairway",
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "isaac"
+  },
+  "name": "The Stairway",
+  "cond": "Defeat Isaac as Jacob and Esau"
+ },
+ "430": {
+  "item_slug": "red-stew",
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "satan"
+  },
+  "name": "Red Stew",
+  "cond": "Defeat Satan as Jacob and Esau"
+ },
+ "431": {
+  "item_slug": "birthright",
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "blue-baby"
+  },
+  "name": "Birthright",
+  "cond": "Defeat ??? as Jacob and Esau"
+ },
+ "432": {
+  "item_slug": "damocles",
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "lamb"
+  },
+  "name": "Damocles",
+  "cond": "Defeat The Lamb as Jacob and Esau"
+ },
+ "433": {
+  "item_slug": "rock-bottom",
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "boss-rush"
+  },
+  "name": "Rock Bottom",
+  "cond": "Complete Boss Rush as Jacob and Esau"
+ },
+ "434": {
+  "item_slug": "inner-child",
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "ultra-greed"
+  },
+  "name": "Inner Child",
+  "cond": "Defeat Ultra Greed as Jacob and Esau"
+ },
+ "435": {
+  "item_slug": "vanishing-twin",
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "hush"
+  },
+  "name": "Vanishing Twin",
+  "cond": "Defeat Hush as Jacob and Esau"
+ },
+ "436": {
+  "item_slug": "genesis",
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Genesis",
+  "cond": "Defeat Ultra Greedier as Jacob and Esau"
+ },
+ "437": {
+  "item_slug": "suplex",
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "delirium"
+  },
+  "name": "Suplex!",
+  "cond": "Defeat Delirium as Jacob and Esau"
+ },
+ "438": {
+  "name": "Solomon's Baby",
+  "cond": "Earn all Hard mode Completion Marks as Jacob and Esau"
+ },
+ "439": {
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "mega-satan"
+  },
+  "name": "Illusion Baby",
+  "cond": "Defeat Mega Satan as Jacob and Esau"
+ },
+ "440": {
+  "item_slug": "meat-cleaver",
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "mother"
+  },
+  "name": "Meat Cleaver",
+  "cond": "Defeat Mother as Isaac"
+ },
+ "441": {
+  "item_slug": "options",
+  "proves_mark": {
+   "char_slug": "isaac",
+   "mark_key": "beast"
+  },
+  "name": "Options?",
+  "cond": "Defeat The Beast as Isaac"
+ },
+ "442": {
+  "item_slug": "yuck-heart",
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "mother"
+  },
+  "name": "Yuck Heart",
+  "cond": "Defeat Mother as Magdalene"
+ },
+ "443": {
+  "item_slug": "candy-heart",
+  "proves_mark": {
+   "char_slug": "magdalene",
+   "mark_key": "beast"
+  },
+  "name": "Candy Heart",
+  "cond": "Defeat The Beast as Magdalene"
+ },
+ "444": {
+  "item_slug": "guppys-eye",
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "mother"
+  },
+  "name": "Guppy's Eye",
+  "cond": "Defeat Mother as Cain"
+ },
+ "445": {
+  "item_slug": "a-pound-of-flesh",
+  "proves_mark": {
+   "char_slug": "cain",
+   "mark_key": "beast"
+  },
+  "name": "A Pound of Flesh",
+  "cond": "Defeat The Beast as Cain"
+ },
+ "446": {
+  "item_slug": "akeldama",
+  "proves_mark": {
+   "char_slug": "judas",
+   "mark_key": "mother"
+  },
+  "name": "Akeldama",
+  "cond": "Defeat Mother as Judas"
+ },
+ "447": {
+  "item_slug": "redemption",
+  "proves_mark": {
+   "char_slug": "judas",
+   "mark_key": "beast"
+  },
+  "name": "Redemption",
+  "cond": "Defeat The Beast as Judas"
+ },
+ "448": {
+  "item_slug": "eternal-d6",
+  "name": "Eternal D6",
+  "cond": "Defeat Mother as ???"
+ },
+ "449": {
+  "item_slug": "montezumas-revenge",
+  "name": "Montezuma's Revenge",
+  "cond": "Defeat The Beast as ???"
+ },
+ "450": {
+  "item_slug": "bird-cage",
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "mother"
+  },
+  "name": "Bird Cage",
+  "cond": "Defeat Mother as Eve"
+ },
+ "451": {
+  "item_slug": "cracked-orb",
+  "proves_mark": {
+   "char_slug": "eve",
+   "mark_key": "beast"
+  },
+  "name": "Cracked Orb",
+  "cond": "Defeat The Beast as Eve"
+ },
+ "452": {
+  "item_slug": "bloody-gust",
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "mother"
+  },
+  "name": "Bloody Gust",
+  "cond": "Defeat Mother as Samson"
+ },
+ "453": {
+  "item_slug": "empty-heart",
+  "proves_mark": {
+   "char_slug": "samson",
+   "mark_key": "beast"
+  },
+  "name": "Empty Heart",
+  "cond": "Defeat The Beast as Samson"
+ },
+ "454": {
+  "item_slug": "devils-crown",
+  "proves_mark": {
+   "char_slug": "azazel",
+   "mark_key": "mother"
+  },
+  "name": "Devil's Crown",
+  "cond": "Defeat Mother as Azazel"
+ },
+ "455": {
+  "item_slug": "lil-abaddon",
+  "proves_mark": {
+   "char_slug": "azazel",
+   "mark_key": "beast"
+  },
+  "name": "Lil Abaddon",
+  "cond": "Defeat The Beast as Azazel"
+ },
+ "456": {
+  "item_slug": "tinytoma",
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "mother"
+  },
+  "name": "Tinytoma",
+  "cond": "Defeat Mother as Lazarus"
+ },
+ "457": {
+  "item_slug": "astral-projection",
+  "proves_mark": {
+   "char_slug": "lazarus",
+   "mark_key": "beast"
+  },
+  "name": "Astral Projection",
+  "cond": "Defeat The Beast as Lazarus"
+ },
+ "458": {
+  "item_slug": "m",
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "mother"
+  },
+  "name": "'M",
+  "cond": "Defeat Mother as Eden"
+ },
+ "459": {
+  "item_slug": "everything-jar",
+  "proves_mark": {
+   "char_slug": "eden",
+   "mark_key": "beast"
+  },
+  "name": "Everything Jar",
+  "cond": "Defeat The Beast as Eden"
+ },
+ "460": {
+  "item_slug": "lost-soul",
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "mother"
+  },
+  "name": "Lost Soul",
+  "cond": "Defeat Mother as The Lost"
+ },
+ "461": {
+  "item_slug": "hungry-soul",
+  "proves_mark": {
+   "char_slug": "the-lost",
+   "mark_key": "beast"
+  },
+  "name": "Hungry Soul",
+  "cond": "Defeat The Beast as The Lost"
+ },
+ "462": {
+  "item_slug": "blood-puppy",
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "mother"
+  },
+  "name": "Blood Puppy",
+  "cond": "Defeat Mother as Lilith"
+ },
+ "463": {
+  "item_slug": "c-section",
+  "proves_mark": {
+   "char_slug": "lilith",
+   "mark_key": "beast"
+  },
+  "name": "C Section",
+  "cond": "Defeat The Beast as Lilith"
+ },
+ "464": {
+  "item_slug": "keepers-sack",
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "mother"
+  },
+  "name": "Keeper's Sack",
+  "cond": "Defeat Mother as Keeper"
+ },
+ "465": {
+  "item_slug": "keepers-box",
+  "proves_mark": {
+   "char_slug": "keeper",
+   "mark_key": "beast"
+  },
+  "name": "Keeper's Box",
+  "cond": "Defeat The Beast as Keeper"
+ },
+ "466": {
+  "item_slug": "lil-portal",
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "mother"
+  },
+  "name": "Lil Portal",
+  "cond": "Defeat Mother as Apollyon"
+ },
+ "467": {
+  "item_slug": "worm-friend",
+  "proves_mark": {
+   "char_slug": "apollyon",
+   "mark_key": "beast"
+  },
+  "name": "Worm Friend",
+  "cond": "Defeat The Beast as Apollyon"
+ },
+ "468": {
+  "item_slug": "bone-spurs",
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "mother"
+  },
+  "name": "Bone Spurs",
+  "cond": "Defeat Mother as The Forgotten"
+ },
+ "469": {
+  "item_slug": "spirit-shackles",
+  "proves_mark": {
+   "char_slug": "the-forgotten",
+   "mark_key": "beast"
+  },
+  "name": "Spirit Shackles",
+  "cond": "Defeat The Beast as The Forgotten"
+ },
+ "470": {
+  "item_slug": "revelation",
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "mother"
+  },
+  "name": "Revelation",
+  "cond": "Defeat Mother as Bethany"
+ },
+ "471": {
+  "item_slug": "jar-of-wisps",
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "beast"
+  },
+  "name": "Jar of Wisps",
+  "cond": "Defeat The Beast as Bethany"
+ },
+ "472": {
+  "item_slug": "magic-skin",
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "mother"
+  },
+  "name": "Magic Skin",
+  "cond": "Defeat Mother as Jacob and Esau"
+ },
+ "473": {
+  "item_slug": "friend-finder",
+  "proves_mark": {
+   "char_slug": "jacob-and-esau",
+   "mark_key": "beast"
+  },
+  "name": "Friend Finder",
+  "cond": "Defeat The Beast as Jacob and Esau"
+ },
+ "474": {
+  "name": "The Broken",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Isaac"
+ },
+ "475": {
+  "name": "The Dauntless",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Magdalene"
+ },
+ "476": {
+  "name": "The Hoarder",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Cain"
+ },
+ "477": {
+  "name": "The Deceiver",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Judas"
+ },
+ "478": {
+  "name": "The Soiled",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as ???"
+ },
+ "479": {
+  "name": "The Curdled",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Eve"
+ },
+ "480": {
+  "name": "The Savage",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Samson"
+ },
+ "481": {
+  "name": "The Benighted",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Azazel"
+ },
+ "482": {
+  "name": "The Enigma",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Lazarus"
+ },
+ "483": {
+  "name": "The Capricious",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Eden"
+ },
+ "484": {
+  "name": "The Baleful",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as The Lost"
+ },
+ "485": {
+  "name": "The Harlot",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Lilith"
+ },
+ "486": {
+  "name": "The Miser",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Keeper"
+ },
+ "487": {
+  "name": "The Empty",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Apollyon"
+ },
+ "488": {
+  "name": "The Fettered",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as The Forgotten"
+ },
+ "489": {
+  "name": "The Zealot",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Bethany"
+ },
+ "490": {
+  "name": "The Deserter",
+  "cond": "Use Red Key (etc.) to open the hidden closet in Home as Jacob and Esau"
+ },
+ "491": {
+  "item_slug": "glitched-crown",
+  "proves_mark": {
+   "char_slug": "tainted-isaac",
+   "mark_key": "beast"
+  },
+  "name": "Glitched Crown",
+  "cond": "Defeat The Beast as Tainted Isaac"
+ },
+ "492": {
+  "item_slug": "belly-jelly",
+  "proves_mark": {
+   "char_slug": "tainted-magdalene",
+   "mark_key": "beast"
+  },
+  "name": "Belly Jelly",
+  "cond": "Defeat The Beast as Tainted Magdalene"
+ },
+ "493": {
+  "item_slug": "blue-key",
+  "proves_mark": {
+   "char_slug": "tainted-cain",
+   "mark_key": "beast"
+  },
+  "name": "Blue Key",
+  "cond": "Defeat The Beast as Tainted Cain"
+ },
+ "494": {
+  "item_slug": "sanguine-bond",
+  "proves_mark": {
+   "char_slug": "tainted-judas",
+   "mark_key": "beast"
+  },
+  "name": "Sanguine Bond",
+  "cond": "Defeat The Beast as Tainted Judas"
+ },
+ "495": {
+  "item_slug": "the-swarm",
+  "name": "The Swarm",
+  "cond": "Defeat The Beast as Tainted&#160;???"
+ },
+ "496": {
+  "item_slug": "heartbreak",
+  "proves_mark": {
+   "char_slug": "tainted-eve",
+   "mark_key": "beast"
+  },
+  "name": "Heartbreak",
+  "cond": "Defeat The Beast as Tainted Eve"
+ },
+ "497": {
+  "item_slug": "larynx",
+  "proves_mark": {
+   "char_slug": "tainted-samson",
+   "mark_key": "beast"
+  },
+  "name": "Larynx",
+  "cond": "Defeat The Beast as Tainted Samson"
+ },
+ "498": {
+  "item_slug": "azazels-rage",
+  "proves_mark": {
+   "char_slug": "tainted-azazel",
+   "mark_key": "beast"
+  },
+  "name": "Azazel's Rage",
+  "cond": "Defeat The Beast as Tainted Azazel"
+ },
+ "499": {
+  "item_slug": "salvation",
+  "proves_mark": {
+   "char_slug": "tainted-lazarus",
+   "mark_key": "beast"
+  },
+  "name": "Salvation",
+  "cond": "Defeat The Beast as Tainted Lazarus"
+ },
+ "500": {
+  "item_slug": "tmtrainer",
+  "proves_mark": {
+   "char_slug": "tainted-eden",
+   "mark_key": "beast"
+  },
+  "name": "TMTRAINER",
+  "cond": "Defeat The Beast as Tainted Eden"
+ },
+ "501": {
+  "item_slug": "sacred-orb",
+  "proves_mark": {
+   "char_slug": "tainted-lost",
+   "mark_key": "beast"
+  },
+  "name": "Sacred Orb",
+  "cond": "Defeat The Beast as Tainted Lost"
+ },
+ "502": {
+  "item_slug": "twisted-pair",
+  "proves_mark": {
+   "char_slug": "tainted-lilith",
+   "mark_key": "beast"
+  },
+  "name": "Twisted Pair",
+  "cond": "Defeat The Beast as Tainted Lilith"
+ },
+ "503": {
+  "item_slug": "strawman",
+  "proves_mark": {
+   "char_slug": "tainted-keeper",
+   "mark_key": "beast"
+  },
+  "name": "Strawman",
+  "cond": "Defeat The Beast as Tainted Keeper"
+ },
+ "504": {
+  "item_slug": "echo-chamber",
+  "proves_mark": {
+   "char_slug": "tainted-apollyon",
+   "mark_key": "beast"
+  },
+  "name": "Echo Chamber",
+  "cond": "Defeat The Beast as Tainted Apollyon"
+ },
+ "505": {
+  "item_slug": "isaacs-tomb",
+  "proves_mark": {
+   "char_slug": "tainted-forgotten",
+   "mark_key": "beast"
+  },
+  "name": "Isaac's Tomb",
+  "cond": "Defeat The Beast as Tainted Forgotten"
+ },
+ "506": {
+  "item_slug": "vengeful-spirit",
+  "proves_mark": {
+   "char_slug": "tainted-bethany",
+   "mark_key": "beast"
+  },
+  "name": "Vengeful Spirit",
+  "cond": "Defeat The Beast as Tainted Bethany"
+ },
+ "507": {
+  "item_slug": "esau-jr",
+  "proves_mark": {
+   "char_slug": "tainted-jacob",
+   "mark_key": "beast"
+  },
+  "name": "Esau Jr.",
+  "cond": "Defeat The Beast as Tainted Jacob"
+ },
+ "508": {
+  "name": "Bloody Mary",
+  "cond": "Unlock Bethany, Blood Bag, and It Lives!"
+ },
+ "509": {
+  "proves_mark": {
+   "char_slug": "bethany",
+   "mark_key": "satan"
+  },
+  "name": "Baptism by Fire",
+  "cond": "Defeat Satan as Bethany, defeat Mom's Heart 11 times, and unlock Maggy's Faith"
+ },
+ "510": {
+  "name": "Isaac's Awakening",
+  "cond": "Defeat Mother"
+ },
+ "511": {
+  "name": "Seeing Double",
+  "cond": "Defeat Mother"
+ },
+ "512": {
+  "name": "Pica Run",
+  "cond": "Defeat Mom's Heart 11 times and unlock Marbles"
+ },
+ "513": {
+  "name": "Hot Potato",
+  "cond": "Unlock Tainted Forgotten"
+ },
+ "514": {
+  "name": "Cantripped!",
+  "cond": "Unlock Tainted Cain"
+ },
+ "515": {
+  "name": "Red Redemption",
+  "cond": "Unlock Tainted Jacob"
+ },
+ "516": {
+  "name": "DELETE THIS",
+  "cond": "Unlock Tainted Eden"
+ },
+ "517": {
+  "item_slug": "dirty-mind",
+  "name": "Dirty Mind",
+  "cond": "Complete Scat Man (challenge #36)"
+ },
+ "518": {
+  "item_slug": "sigil-of-baphomet",
+  "name": "Sigil of Baphomet",
+  "cond": "Complete Bloody Mary (challenge #37)"
+ },
+ "519": {
+  "item_slug": "purgatory",
+  "name": "Purgatory",
+  "cond": "Complete Baptism by Fire (challenge #38)"
+ },
+ "520": {
+  "item_slug": "spirit-sword",
+  "name": "Spirit Sword",
+  "cond": "Complete Isaac's Awakening (challenge #39)"
+ },
+ "521": {
+  "item_slug": "broken-glasses",
+  "name": "Broken Glasses",
+  "cond": "Complete Seeing Double (challenge #40)"
+ },
+ "522": {
+  "item_slug": "ice-cube",
+  "name": "Ice Cube",
+  "cond": "Complete Pica Run (challenge #41)"
+ },
+ "523": {
+  "item_slug": "charged-penny",
+  "name": "Charged Penny",
+  "cond": "Donate to Battery Bums until they pay out with an item 5 times"
+ },
+ "524": {
+  "proves_mark": {
+   "char_slug": "tainted-lost",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "The Fool",
+  "cond": "Defeat Ultra Greedier as Tainted Lost"
+ },
+ "525": {
+  "proves_mark": {
+   "char_slug": "tainted-judas",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "The Magician",
+  "cond": "Defeat Ultra Greedier as Tainted Judas"
+ },
+ "526": {
+  "proves_mark": {
+   "char_slug": "tainted-lilith",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "The High Priestess",
+  "cond": "Defeat Ultra Greedier as Tainted Lilith"
+ },
+ "527": {
+  "proves_mark": {
+   "char_slug": "tainted-eve",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "The Empress",
+  "cond": "Defeat Ultra Greedier as Tainted Eve"
+ },
+ "528": {
+  "name": "The Emperor",
+  "cond": "Defeat Ultra Greedier as Tainted&#160;???"
+ },
+ "529": {
+  "proves_mark": {
+   "char_slug": "tainted-bethany",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "The Hierophant",
+  "cond": "Defeat Ultra Greedier as Tainted Bethany"
+ },
+ "530": {
+  "proves_mark": {
+   "char_slug": "tainted-magdalene",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "The Lovers",
+  "cond": "Defeat Ultra Greedier as Tainted Magdalene"
+ },
+ "531": {
+  "name": "The Chariot",
+  "cond": "Complete Hot Potato (challenge #42)"
+ },
+ "532": {
+  "name": "Justice",
+  "cond": "Complete Cantripped (challenge #43)"
+ },
+ "533": {
+  "name": "The Hermit",
+  "cond": "Complete Red Redemption (challenge #44)"
+ },
+ "534": {
+  "proves_mark": {
+   "char_slug": "tainted-cain",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Wheel of Fortune",
+  "cond": "Defeat Ultra Greedier as Tainted Cain"
+ },
+ "535": {
+  "proves_mark": {
+   "char_slug": "tainted-samson",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Strength",
+  "cond": "Defeat Ultra Greedier as Tainted Samson"
+ },
+ "536": {
+  "proves_mark": {
+   "char_slug": "tainted-keeper",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "The Hanged Man",
+  "cond": "Defeat Ultra Greedier as Tainted Keeper"
+ },
+ "537": {
+  "proves_mark": {
+   "char_slug": "tainted-forgotten",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Death",
+  "cond": "Defeat Ultra Greedier as Tainted Forgotten"
+ },
+ "538": {
+  "name": "Temperance",
+  "cond": "Complete DELETE THIS (challenge #45)"
+ },
+ "539": {
+  "proves_mark": {
+   "char_slug": "tainted-azazel",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "The Devil",
+  "cond": "Defeat Ultra Greedier as Tainted Azazel"
+ },
+ "540": {
+  "proves_mark": {
+   "char_slug": "tainted-apollyon",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "The Tower",
+  "cond": "Defeat Ultra Greedier as Tainted Apollyon"
+ },
+ "541": {
+  "proves_mark": {
+   "char_slug": "tainted-isaac",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "The Stars",
+  "cond": "Defeat Ultra Greedier as Tainted Isaac"
+ },
+ "542": {
+  "proves_mark": {
+   "char_slug": "tainted-jacob",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "The Sun and the Moon",
+  "cond": "Defeat Ultra Greedier as Tainted Jacob"
+ },
+ "543": {
+  "proves_mark": {
+   "char_slug": "tainted-lazarus",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "Judgement",
+  "cond": "Defeat Ultra Greedier as Tainted Lazarus"
+ },
+ "544": {
+  "proves_mark": {
+   "char_slug": "tainted-eden",
+   "mark_key": "ultra-greedier"
+  },
+  "name": "The World",
+  "cond": "Defeat Ultra Greedier as Tainted Eden"
+ },
+ "545": {
+  "item_slug": "old-capacitor",
+  "name": "Old Capacitor",
+  "cond": "Kill 10 Battery Bums"
+ },
+ "546": {
+  "item_slug": "brimstone-bombs",
+  "name": "Brimstone Bombs",
+  "cond": "After breaking Hornfel's minecart, kill him before he can escape"
+ },
+ "547": {
+  "item_slug": "mega-mush",
+  "name": "Mega Mush",
+  "cond": "Earn all Hard mode Completion Marks for all non-Tainted characters"
+ },
+ "548": {
+  "item_slug": "moms-lock",
+  "proves_mark": {
+   "char_slug": "tainted-isaac",
+   "mark_key": "blue-baby"
+  },
+  "name": "Mom's Lock",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Isaac"
+ },
+ "549": {
+  "item_slug": "dice-bag",
+  "proves_mark": {
+   "char_slug": "tainted-isaac",
+   "mark_key": "mother"
+  },
+  "name": "Dice Bag",
+  "cond": "Defeat Mother as Tainted Isaac"
+ },
+ "550": {
+  "item_slug": "holy-crown",
+  "proves_mark": {
+   "char_slug": "tainted-magdalene",
+   "mark_key": "blue-baby"
+  },
+  "name": "Holy Crown",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Magdalene"
+ },
+ "551": {
+  "item_slug": "mothers-kiss",
+  "proves_mark": {
+   "char_slug": "tainted-magdalene",
+   "mark_key": "mother"
+  },
+  "name": "Mother's Kiss",
+  "cond": "Defeat Mother as Tainted Magdalene"
+ },
+ "552": {
+  "item_slug": "gilded-key",
+  "proves_mark": {
+   "char_slug": "tainted-cain",
+   "mark_key": "blue-baby"
+  },
+  "name": "Gilded Key",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Cain"
+ },
+ "553": {
+  "item_slug": "lucky-sack",
+  "proves_mark": {
+   "char_slug": "tainted-cain",
+   "mark_key": "mother"
+  },
+  "name": "Lucky Sack",
+  "cond": "Defeat Mother as Tainted Cain"
+ },
+ "554": {
+  "item_slug": "your-soul",
+  "proves_mark": {
+   "char_slug": "tainted-judas",
+   "mark_key": "blue-baby"
+  },
+  "name": "Your Soul",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Judas"
+ },
+ "555": {
+  "item_slug": "number-magnet",
+  "proves_mark": {
+   "char_slug": "tainted-judas",
+   "mark_key": "mother"
+  },
+  "name": "Number Magnet",
+  "cond": "Defeat Mother as Tainted Judas"
+ },
+ "556": {
+  "item_slug": "dingle-berry",
+  "name": "Dingle Berry",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted&#160;???"
+ },
+ "557": {
+  "item_slug": "ring-cap",
+  "name": "Ring Cap",
+  "cond": "Defeat Mother as Tainted&#160;???"
+ },
+ "558": {
+  "item_slug": "strange-key",
+  "proves_mark": {
+   "char_slug": "tainted-eve",
+   "mark_key": "blue-baby"
+  },
+  "name": "Strange Key",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Eve"
+ },
+ "559": {
+  "item_slug": "lil-clot",
+  "proves_mark": {
+   "char_slug": "tainted-eve",
+   "mark_key": "mother"
+  },
+  "name": "Lil Clot",
+  "cond": "Defeat Mother as Tainted Eve"
+ },
+ "560": {
+  "item_slug": "temporary-tattoo",
+  "proves_mark": {
+   "char_slug": "tainted-samson",
+   "mark_key": "blue-baby"
+  },
+  "name": "Temporary Tattoo",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Samson"
+ },
+ "561": {
+  "item_slug": "swallowed-m80",
+  "proves_mark": {
+   "char_slug": "tainted-samson",
+   "mark_key": "mother"
+  },
+  "name": "Swallowed M80",
+  "cond": "Defeat Mother as Tainted Samson"
+ },
+ "562": {
+  "item_slug": "wicked-crown",
+  "proves_mark": {
+   "char_slug": "tainted-azazel",
+   "mark_key": "blue-baby"
+  },
+  "name": "Wicked Crown",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Azazel"
+ },
+ "563": {
+  "item_slug": "azazels-stump",
+  "proves_mark": {
+   "char_slug": "tainted-azazel",
+   "mark_key": "mother"
+  },
+  "name": "Azazel's Stump",
+  "cond": "Defeat Mother as Tainted Azazel"
+ },
+ "564": {
+  "item_slug": "torn-pocket",
+  "proves_mark": {
+   "char_slug": "tainted-lazarus",
+   "mark_key": "blue-baby"
+  },
+  "name": "Torn Pocket",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Lazarus"
+ },
+ "565": {
+  "item_slug": "torn-card",
+  "proves_mark": {
+   "char_slug": "tainted-lazarus",
+   "mark_key": "mother"
+  },
+  "name": "Torn Card",
+  "cond": "Defeat Mother as Tainted Lazarus"
+ },
+ "566": {
+  "item_slug": "nuh-uh",
+  "proves_mark": {
+   "char_slug": "tainted-eden",
+   "mark_key": "blue-baby"
+  },
+  "name": "Nuh Uh!",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Eden"
+ },
+ "567": {
+  "item_slug": "modeling-clay",
+  "proves_mark": {
+   "char_slug": "tainted-eden",
+   "mark_key": "mother"
+  },
+  "name": "Modeling Clay",
+  "cond": "Defeat Mother as Tainted Eden"
+ },
+ "568": {
+  "item_slug": "kids-drawing",
+  "proves_mark": {
+   "char_slug": "tainted-lost",
+   "mark_key": "blue-baby"
+  },
+  "name": "Kid's Drawing",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Lost"
+ },
+ "569": {
+  "item_slug": "crystal-key",
+  "proves_mark": {
+   "char_slug": "tainted-lost",
+   "mark_key": "mother"
+  },
+  "name": "Crystal Key",
+  "cond": "Defeat Mother as Tainted Lost"
+ },
+ "570": {
+  "item_slug": "the-twins",
+  "proves_mark": {
+   "char_slug": "tainted-lilith",
+   "mark_key": "blue-baby"
+  },
+  "name": "The Twins",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Lilith"
+ },
+ "571": {
+  "item_slug": "adoption-papers",
+  "proves_mark": {
+   "char_slug": "tainted-lilith",
+   "mark_key": "mother"
+  },
+  "name": "Adoption Papers",
+  "cond": "Defeat Mother as Tainted Lilith"
+ },
+ "572": {
+  "item_slug": "keepers-bargain",
+  "proves_mark": {
+   "char_slug": "tainted-keeper",
+   "mark_key": "blue-baby"
+  },
+  "name": "Keeper's Bargain",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Keeper"
+ },
+ "573": {
+  "item_slug": "cursed-penny",
+  "proves_mark": {
+   "char_slug": "tainted-keeper",
+   "mark_key": "mother"
+  },
+  "name": "Cursed Penny",
+  "cond": "Defeat Mother as Tainted Keeper"
+ },
+ "574": {
+  "item_slug": "cricket-leg",
+  "proves_mark": {
+   "char_slug": "tainted-apollyon",
+   "mark_key": "blue-baby"
+  },
+  "name": "Cricket Leg",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Apollyon"
+ },
+ "575": {
+  "item_slug": "apollyons-best-friend",
+  "proves_mark": {
+   "char_slug": "tainted-apollyon",
+   "mark_key": "mother"
+  },
+  "name": "Apollyon's Best Friend",
+  "cond": "Defeat Mother as Tainted Apollyon"
+ },
+ "576": {
+  "item_slug": "polished-bone",
+  "proves_mark": {
+   "char_slug": "tainted-forgotten",
+   "mark_key": "blue-baby"
+  },
+  "name": "Polished Bone",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Forgotten"
+ },
+ "577": {
+  "item_slug": "hollow-heart",
+  "proves_mark": {
+   "char_slug": "tainted-forgotten",
+   "mark_key": "mother"
+  },
+  "name": "Hollow Heart",
+  "cond": "Defeat Mother as Tainted Forgotten"
+ },
+ "578": {
+  "item_slug": "expansion-pack",
+  "proves_mark": {
+   "char_slug": "tainted-bethany",
+   "mark_key": "blue-baby"
+  },
+  "name": "Expansion Pack",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Bethany"
+ },
+ "579": {
+  "item_slug": "beths-essence",
+  "proves_mark": {
+   "char_slug": "tainted-bethany",
+   "mark_key": "mother"
+  },
+  "name": "Beth's Essence",
+  "cond": "Defeat Mother as Tainted Bethany"
+ },
+ "580": {
+  "item_slug": "rc-remote",
+  "proves_mark": {
+   "char_slug": "tainted-jacob",
+   "mark_key": "blue-baby"
+  },
+  "name": "RC Remote",
+  "cond": "Defeat Isaac, ???, Satan, and The Lamb as Tainted Jacob"
+ },
+ "581": {
+  "item_slug": "found-soul",
+  "proves_mark": {
+   "char_slug": "tainted-jacob",
+   "mark_key": "mother"
+  },
+  "name": "Found Soul",
+  "cond": "Defeat Mother as Tainted Jacob"
+ },
+ "582": {
+  "item_slug": "member-card",
+  "name": "Member Card",
+  "cond": "Spend 40+ coins in a single Shop"
+ },
+ "583": {
+  "item_slug": "golden-razor",
+  "name": "Golden Razor",
+  "cond": "In a single run, obtain 99 Coins, then spend all of them."
+ },
+ "584": {
+  "item_slug": "spindown-dice",
+  "proves_mark": {
+   "char_slug": "tainted-isaac",
+   "mark_key": "delirium"
+  },
+  "name": "Spindown Dice",
+  "cond": "Defeat Delirium as Tainted Isaac"
+ },
+ "585": {
+  "item_slug": "hypercoagulation",
+  "proves_mark": {
+   "char_slug": "tainted-magdalene",
+   "mark_key": "delirium"
+  },
+  "name": "Hypercoagulation",
+  "cond": "Defeat Delirium as Tainted Magdalene"
+ },
+ "586": {
+  "item_slug": "bag-of-crafting",
+  "proves_mark": {
+   "char_slug": "tainted-cain",
+   "mark_key": "delirium"
+  },
+  "name": "Bag of Crafting",
+  "cond": "Defeat Delirium as Tainted Cain"
+ },
+ "587": {
+  "item_slug": "dark-arts",
+  "proves_mark": {
+   "char_slug": "tainted-judas",
+   "mark_key": "delirium"
+  },
+  "name": "Dark Arts",
+  "cond": "Defeat Delirium as Tainted Judas"
+ },
+ "588": {
+  "item_slug": "ibs",
+  "name": "IBS",
+  "cond": "Defeat Delirium as Tainted&#160;???"
+ },
+ "589": {
+  "item_slug": "sumptorium",
+  "proves_mark": {
+   "char_slug": "tainted-eve",
+   "mark_key": "delirium"
+  },
+  "name": "Sumptorium",
+  "cond": "Defeat Delirium as Tainted Eve"
+ },
+ "590": {
+  "item_slug": "berserk",
+  "proves_mark": {
+   "char_slug": "tainted-samson",
+   "mark_key": "delirium"
+  },
+  "name": "Berserk!",
+  "cond": "Defeat Delirium as Tainted Samson"
+ },
+ "591": {
+  "item_slug": "hemoptysis",
+  "proves_mark": {
+   "char_slug": "tainted-azazel",
+   "mark_key": "delirium"
+  },
+  "name": "Hemoptysis",
+  "cond": "Defeat Delirium as Tainted Azazel"
+ },
+ "592": {
+  "item_slug": "flip",
+  "proves_mark": {
+   "char_slug": "tainted-lazarus",
+   "mark_key": "delirium"
+  },
+  "name": "Flip",
+  "cond": "Defeat Delirium as Tainted Lazarus"
+ },
+ "593": {
+  "proves_mark": {
+   "char_slug": "tainted-eden",
+   "mark_key": "delirium"
+  },
+  "name": "Corrupted Data",
+  "cond": "Defeat Delirium as Tainted Eden"
+ },
+ "594": {
+  "item_slug": "ghost-bombs",
+  "proves_mark": {
+   "char_slug": "tainted-lost",
+   "mark_key": "delirium"
+  },
+  "name": "Ghost Bombs",
+  "cond": "Defeat Delirium as Tainted Lost"
+ },
+ "595": {
+  "item_slug": "gello",
+  "proves_mark": {
+   "char_slug": "tainted-lilith",
+   "mark_key": "delirium"
+  },
+  "name": "Gello",
+  "cond": "Defeat Delirium as Tainted Lilith"
+ },
+ "596": {
+  "item_slug": "keepers-kin",
+  "proves_mark": {
+   "char_slug": "tainted-keeper",
+   "mark_key": "delirium"
+  },
+  "name": "Keeper's Kin",
+  "cond": "Defeat Delirium as Tainted Keeper"
+ },
+ "597": {
+  "item_slug": "abyss",
+  "proves_mark": {
+   "char_slug": "tainted-apollyon",
+   "mark_key": "delirium"
+  },
+  "name": "Abyss",
+  "cond": "Defeat Delirium as Tainted Apollyon"
+ },
+ "598": {
+  "item_slug": "decap-attack",
+  "proves_mark": {
+   "char_slug": "tainted-forgotten",
+   "mark_key": "delirium"
+  },
+  "name": "Decap Attack",
+  "cond": "Defeat Delirium as Tainted Forgotten"
+ },
+ "599": {
+  "item_slug": "lemegeton",
+  "proves_mark": {
+   "char_slug": "tainted-bethany",
+   "mark_key": "delirium"
+  },
+  "name": "Lemegeton",
+  "cond": "Defeat Delirium as Tainted Bethany"
+ },
+ "600": {
+  "item_slug": "anima-sola",
+  "proves_mark": {
+   "char_slug": "tainted-jacob",
+   "mark_key": "delirium"
+  },
+  "name": "Anima Sola",
+  "cond": "Defeat Delirium as Tainted Jacob"
+ },
+ "601": {
+  "proves_mark": {
+   "char_slug": "tainted-isaac",
+   "mark_key": "mega-satan"
+  },
+  "name": "Mega Chest",
+  "cond": "Defeat Mega Satan as Tainted Isaac"
+ },
+ "602": {
+  "item_slug": "queen-of-hearts",
+  "proves_mark": {
+   "char_slug": "tainted-magdalene",
+   "mark_key": "mega-satan"
+  },
+  "name": "Queen of Hearts",
+  "cond": "Defeat Mega Satan as Tainted Magdalene"
+ },
+ "603": {
+  "proves_mark": {
+   "char_slug": "tainted-cain",
+   "mark_key": "mega-satan"
+  },
+  "name": "Gold Pill",
+  "cond": "Defeat Mega Satan as Tainted Cain"
+ },
+ "604": {
+  "proves_mark": {
+   "char_slug": "tainted-judas",
+   "mark_key": "mega-satan"
+  },
+  "name": "Black Sack",
+  "cond": "Defeat Mega Satan as Tainted Judas"
+ },
+ "605": {
+  "name": "Charming Poop",
+  "cond": "Defeat Mega Satan as Tainted&#160;???"
+ },
+ "606": {
+  "proves_mark": {
+   "char_slug": "tainted-eve",
+   "mark_key": "mega-satan"
+  },
+  "name": "Horse Pill",
+  "cond": "Defeat Mega Satan as Tainted Eve"
+ },
+ "607": {
+  "proves_mark": {
+   "char_slug": "tainted-samson",
+   "mark_key": "mega-satan"
+  },
+  "name": "Crane Game",
+  "cond": "Defeat Mega Satan as Tainted Samson"
+ },
+ "608": {
+  "proves_mark": {
+   "char_slug": "tainted-azazel",
+   "mark_key": "mega-satan"
+  },
+  "name": "Hell Game",
+  "cond": "Defeat Mega Satan as Tainted Azazel"
+ },
+ "609": {
+  "proves_mark": {
+   "char_slug": "tainted-lazarus",
+   "mark_key": "mega-satan"
+  },
+  "name": "Wooden Chest",
+  "cond": "Defeat Mega Satan as Tainted Lazarus"
+ },
+ "610": {
+  "item_slug": "wild-card",
+  "proves_mark": {
+   "char_slug": "tainted-eden",
+   "mark_key": "mega-satan"
+  },
+  "name": "Wild Card",
+  "cond": "Defeat Mega Satan as Tainted Eden"
+ },
+ "611": {
+  "proves_mark": {
+   "char_slug": "tainted-lost",
+   "mark_key": "mega-satan"
+  },
+  "name": "Haunted Chest",
+  "cond": "Defeat Mega Satan as Tainted Lost"
+ },
+ "612": {
+  "proves_mark": {
+   "char_slug": "tainted-lilith",
+   "mark_key": "mega-satan"
+  },
+  "name": "Fool's Gold",
+  "cond": "Defeat Mega Satan as Tainted Lilith"
+ },
+ "613": {
+  "proves_mark": {
+   "char_slug": "tainted-keeper",
+   "mark_key": "mega-satan"
+  },
+  "name": "Golden Penny",
+  "cond": "Defeat Mega Satan as Tainted Keeper"
+ },
+ "614": {
+  "proves_mark": {
+   "char_slug": "tainted-apollyon",
+   "mark_key": "mega-satan"
+  },
+  "name": "Rotten Beggar",
+  "cond": "Defeat Mega Satan as Tainted Apollyon"
+ },
+ "615": {
+  "proves_mark": {
+   "char_slug": "tainted-forgotten",
+   "mark_key": "mega-satan"
+  },
+  "name": "Golden Battery",
+  "cond": "Defeat Mega Satan as Tainted Forgotten"
+ },
+ "616": {
+  "proves_mark": {
+   "char_slug": "tainted-bethany",
+   "mark_key": "mega-satan"
+  },
+  "name": "Confessional",
+  "cond": "Defeat Mega Satan as Tainted Bethany"
+ },
+ "617": {
+  "proves_mark": {
+   "char_slug": "tainted-jacob",
+   "mark_key": "mega-satan"
+  },
+  "name": "Golden Trinket",
+  "cond": "Defeat Mega Satan as Tainted Jacob"
+ },
+ "618": {
+  "item_slug": "soul-of-isaac",
+  "proves_mark": {
+   "char_slug": "tainted-isaac",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Isaac",
+  "cond": "Defeat Hush and Boss Rush as Tainted Isaac"
+ },
+ "619": {
+  "item_slug": "soul-of-magdalene",
+  "proves_mark": {
+   "char_slug": "tainted-magdalene",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Magdalene",
+  "cond": "Defeat Hush and Boss Rush as Tainted Magdalene"
+ },
+ "620": {
+  "item_slug": "soul-of-cain",
+  "proves_mark": {
+   "char_slug": "tainted-cain",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Cain",
+  "cond": "Defeat Hush and Boss Rush as Tainted Cain"
+ },
+ "621": {
+  "item_slug": "soul-of-judas",
+  "proves_mark": {
+   "char_slug": "tainted-judas",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Judas",
+  "cond": "Defeat Hush and Boss Rush as Tainted Judas"
+ },
+ "622": {
+  "name": "Soul of&#160;???",
+  "cond": "Defeat Hush and Boss Rush as Tainted&#160;???"
+ },
+ "623": {
+  "item_slug": "soul-of-eve",
+  "proves_mark": {
+   "char_slug": "tainted-eve",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Eve",
+  "cond": "Defeat Hush and Boss Rush as Tainted Eve"
+ },
+ "624": {
+  "item_slug": "soul-of-samson",
+  "proves_mark": {
+   "char_slug": "tainted-samson",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Samson",
+  "cond": "Defeat Hush and Boss Rush as Tainted Samson"
+ },
+ "625": {
+  "item_slug": "soul-of-azazel",
+  "proves_mark": {
+   "char_slug": "tainted-azazel",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Azazel",
+  "cond": "Defeat Hush and Boss Rush as Tainted Azazel"
+ },
+ "626": {
+  "item_slug": "soul-of-lazarus",
+  "proves_mark": {
+   "char_slug": "tainted-lazarus",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Lazarus",
+  "cond": "Defeat Hush and Boss Rush as Tainted Lazarus"
+ },
+ "627": {
+  "item_slug": "soul-of-eden",
+  "proves_mark": {
+   "char_slug": "tainted-eden",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Eden",
+  "cond": "Defeat Hush and Boss Rush as Tainted Eden"
+ },
+ "628": {
+  "item_slug": "soul-of-the-lost",
+  "proves_mark": {
+   "char_slug": "tainted-lost",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of the Lost",
+  "cond": "Defeat Hush and Boss Rush as Tainted Lost"
+ },
+ "629": {
+  "item_slug": "soul-of-lilith",
+  "proves_mark": {
+   "char_slug": "tainted-lilith",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Lilith",
+  "cond": "Defeat Hush and Boss Rush as Tainted Lilith"
+ },
+ "630": {
+  "item_slug": "soul-of-the-keeper",
+  "proves_mark": {
+   "char_slug": "tainted-keeper",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of the Keeper",
+  "cond": "Defeat Hush and Boss Rush as Tainted Keeper"
+ },
+ "631": {
+  "item_slug": "soul-of-apollyon",
+  "proves_mark": {
+   "char_slug": "tainted-apollyon",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Apollyon",
+  "cond": "Defeat Hush and Boss Rush as Tainted Apollyon"
+ },
+ "632": {
+  "item_slug": "soul-of-the-forgotten",
+  "proves_mark": {
+   "char_slug": "tainted-forgotten",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of the Forgotten",
+  "cond": "Defeat Hush and Boss Rush as Tainted Forgotten"
+ },
+ "633": {
+  "item_slug": "soul-of-bethany",
+  "proves_mark": {
+   "char_slug": "tainted-bethany",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Bethany",
+  "cond": "Defeat Hush and Boss Rush as Tainted Bethany"
+ },
+ "634": {
+  "item_slug": "soul-of-jacob-and-esau",
+  "proves_mark": {
+   "char_slug": "tainted-jacob",
+   "mark_key": "boss-rush"
+  },
+  "name": "Soul of Jacob and Esau",
+  "cond": "Defeat Hush and Boss Rush as Tainted Jacob"
+ },
+ "635": {
+  "name": "A Strange Door",
+  "cond": "Defeat Mother"
+ },
+ "636": {
+  "item_slug": "death-certificate",
+  "name": "Death Certificate",
+  "cond": "Earn all Hard mode Completion Marks for all characters, including tainted ones"
+ },
+ "637": {
+  "name": "Dead God",
+  "cond": "Unlock all the other achievements and collect every item in the game"
+ }
+}

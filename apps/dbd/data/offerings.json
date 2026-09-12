@@ -1,0 +1,2987 @@
+{
+ "Anniversary2019Offering": {
+  "id": "Anniversary2019Offering",
+  "name": "Gruesome Gateau",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_gruesomeGateau.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_gruesomeGateau.png",
+  "iconFile": "IconFavors_gruesomeGateau.png",
+  "effect": "A terrific stomach-churning cake to mark our three years together. Grants <b>103%</b> bonus Bloodpoints in all categories for all players this trial.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A common points offering that boosts Bloodpoint earnings in every category. It applies to every participant at the table for the duration of one trial.",
+   "whyItMatters": "Burning it lifts Bloodpoint income for both sides in a single run. This makes it a straightforward farming tool rather than a build-planning choice.",
+   "whenToUseIt": "Bring it whenever the goal is to fill up Bloodpoint slots quickly. The bonus covers all categories and applies to everyone in the match, so no specific role or perk target is needed."
+  }
+ },
+ "Anniversary2020Offering": {
+  "id": "Anniversary2020Offering",
+  "name": "Ghastly Gateau",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ghastlyGateau.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ghastlyGateau.png",
+  "iconFile": "IconFavors_ghastlyGateau.png",
+  "effect": "A spectacularly grim cake to mark our four years together. 1% tastier than a Gruesome Gateau. Grants <b>104%</b> bonus Bloodpoints in all categories for all players this trial.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Grants a slightly larger Bloodpoint bonus across all categories for the whole group. It is a common points offering in the same family as the other anniversary cakes.",
+   "whyItMatters": "The bonus is broad and applies to both survivors and killers equally. A group farming together gets a flat boost without needing to plan around a specific role.",
+   "whenToUseIt": "Equip it during a Bloodpoint-grinding run when no other points offering is in the inventory. The margin over the older anniversary cakes is small, so the real value is in having something ready to burn."
+  }
+ },
+ "Anniversary2021Offering": {
+  "id": "Anniversary2021Offering",
+  "name": "Sacrificial Cake",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_sacrificialCake.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_sacrificialCake.png",
+  "iconFile": "IconFavors_sacrificialCake.png",
+  "effect": "A revolting cake that marks our five years together. The slightest taste fills you with an incomprehensible energy, reaching out to something beyond. Grants <b>105%</b> bonus Bloodpoints in all categories for all players this trial.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Lifts Bloodpoint earnings in every category for both sides. It is a common points offering that lasts for the full trial.",
+   "whyItMatters": "The bonus covers all categories and both roles, so it works for any farming goal. A survivor targeting a specific perk or a killer saving for add-ons both see the same flat lift.",
+   "whenToUseIt": "Burn it on a casual or group farming run where the priority is stacking points across all categories. It does not favor one role or target a specific category, which makes it a safe default."
+  }
+ },
+ "Anniversary2022Offering": {
+  "id": "Anniversary2022Offering",
+  "name": "Frightful Flan",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_frightfulFlan.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_frightfulFlan.png",
+  "iconFile": "IconFavors_frightfulFlan.png",
+  "effect": "It may be a masquerade ball, but there is no masking the foul odor of this quivering yellow mass.<br><br>Consuming it, however, fills you with vigor.<br><br>Grants <b>106%</b> bonus Bloodpoints in all categories for all players this trial.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A common offering available to every role that boosts Bloodpoint earnings across every category for the full trial. Burning it at the start of a match raises how much everyone gains from any source of points.",
+   "whyItMatters": "The effect is flat and does not favor either side. A survivor or a killer gets the same boost, so no particular build or role is needed to benefit from it.",
+   "whenToUseIt": "Choose it when a group is farming together and wants a flat bonus that does not favor one role. It pairs well with any loadout since it does not interact with specific perks."
+  }
+ },
+ "Anniversary2023Offering": {
+  "id": "Anniversary2023Offering",
+  "name": "TERRORMISU",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_terrormisu.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_terrormisu.png",
+  "iconFile": "IconFavors_terrormisu.png",
+  "effect": "A celebratory dessert to be eaten during the masquerade. Each layer is more horrifying than the last.<br><br>Grants <b>107%</b> bonus Bloodpoints in all categories for all players this trial.Reveals the aura of an Invitation within <b>32 meter(s).</b>",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Boosts Bloodpoint income in all categories for every player. It also reveals the aura of an Invitation during the trial.",
+   "whyItMatters": "The Invitation aura reveal lets a survivor locate the target more easily and cut down the search time. Combined with the point bonus, one trial serves two purposes at once.",
+   "whenToUseIt": "Bring it when the goal is to farm Bloodpoints while also working toward an Invitation. The aura reveal and the point bonus come from a single burn, so no second offering is needed."
+  }
+ },
+ "Anniversary2024Offering": {
+  "id": "Anniversary2024Offering",
+  "name": "SCREECH COBBLER",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack",
+   "anniversaryincreasepillarauradistance"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_screechCobbler.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_screechCobbler.png",
+  "iconFile": "IconFavors_screechCobbler.png",
+  "effect": "If you listen really closely, you can almost hear it screaming for more ice cream.<br><br>Grants <b>108%</b> bonus Bloodpoints in all categories for all players this trial.Reveals the aura of Invitation within <b>16 meters.</b>Create <b>1</b> more chest.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A common offering that lifts Bloodpoint gains for all roles and every category during the trial. It additionally reveals the aura of the Invitation and adds an extra chest to the map.",
+   "whyItMatters": "The extra chest opens one more chance to earn an add-on or Bloodpoints during the match. The Invitation aura reveal makes the hunt easier at the same time, so the trial covers more ground.",
+   "whenToUseIt": "Burn it during a farming run where the group wants more chest openings and is also tracking down an Invitation. The bundled effects make it an efficient pick for a multi-goal run."
+  }
+ },
+ "Anniversary2025Offering": {
+  "id": "Anniversary2025Offering",
+  "name": "Coconut Scream Pie",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconsFavors_9thAnniversary.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconsFavors_9thAnniversary.png",
+  "iconFile": "IconsFavors_9thAnniversary.png",
+  "effect": "A metallic taste overpowers the coconut.Grants <b>109%</b> bonus Bloodpoints in all categories for all players this trial.Reveals the aura of Invitation Pillars within <b>16 meters.</b>",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Adds a Bloodpoint bonus in all categories for every player in the trial. It also reveals the aura of Invitation Pillars.",
+   "whyItMatters": "The Invitation Pillars aura reveal helps a survivor find the target without guessing where to look. The point bonus keeps the trial productive for farming at the same time.",
+   "whenToUseIt": "Bring it when hunting an Invitation and the group wants to stack Bloodpoints simultaneously. Both effects come from the same burn, so it covers two goals in one trial."
+  }
+ },
+ "Anniversary2026Offering": {
+  "id": "Anniversary2026Offering",
+  "name": "Toothy Torte",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconsFavors_10thAnniversary.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconsFavors_10thAnniversary.png",
+  "iconFile": "IconsFavors_10thAnniversary.png",
+  "effect": "Puts the icing in sacrificing.Grants <b>110%</b> bonus Bloodpoints in all categories for all players this trial.Reveals the aura of Tables within <b>16 meters.</b>Survivors start the Trial with a Morsel in hand, and Killers start with maximum Poison charges.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Lifts Bloodpoint earnings for the whole group in all categories. It reveals the aura of Tables, hands survivors a Morsel at the start, and gives killers maximum Poison charges.",
+   "whyItMatters": "The starting Morsel and Poison charges shift the early-game options for both sides. The Table aura reveal and point bonus keep the trial productive for farming while the starting resources change how each side opens.",
+   "whenToUseIt": "Equip it in a run where both sides want extra starting resources and the group is also tracking down Tables. It bundles several effects into one burn, so it suits a trial with multiple goals."
+  }
+ },
+ "AnnotatedBlueprint": {
+  "id": "AnnotatedBlueprint",
+  "name": "Annotated Blueprint",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "proceduralgeneration",
+  "tags": [
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_annotatedBlueprint.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_annotatedBlueprint.png",
+  "iconFile": "IconFavors_annotatedBlueprint.png",
+  "effect": "<b>Tremendously</b> increases the chance of spawning the Hatch in the Killer Shack, if the map has a Killer Shack.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Greatly increases the chance of the Hatch spawning inside the Killer Shack. It is a common procedural-generation offering that only works on maps that have a Killer Shack.",
+   "whyItMatters": "Finding the Hatch quickly saves a survivor time that would otherwise be spent searching the whole map. This matters most in a run where the goal is to complete objectives fast.",
+   "whenToUseIt": "Burn it when a survivor wants a faster route to the Hatch and the map in question has a Killer Shack. The effect is inactive on maps without one, so checking the map layout first is worth it."
+  }
+ },
+ "ArdentRavenWreath": {
+  "id": "ArdentRavenWreath",
+  "name": "Ardent Raven Wreath",
+  "role": "killer",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ardentRavenWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ardentRavenWreath.png",
+  "iconFile": "IconFavors_ardentRavenWreath.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Deviousness category.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Killer-side Bloodpoint farming tool that doubles Deviousness category gains while leaving every other category untouched. Burn it at the start of a trial when the goal is purely to push Deviousness points faster.",
+   "whyItMatters": "A killer focused on Deviousness perks earns them at a noticeably faster rate while this is active. The targeted bonus works best in a dedicated farming run rather than a mixed one.",
+   "whenToUseIt": "Burn it during a run where the goal is to stock up on Deviousness points. The bonus applies only to that single category, so it will not help with anything else."
+  }
+ },
+ "ArdentShrikeWreath": {
+  "id": "ArdentShrikeWreath",
+  "name": "Ardent Shrike Wreath",
+  "role": "killer",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ardentShrikeWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ardentShrikeWreath.png",
+  "iconFile": "IconFavors_ardentShrikeWreath.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Sacrifice category.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Rare wreath locked to the killer role that boosts Sacrifice category earnings without affecting any other points pool. Bring it into a trial focused on accumulating Sacrifice progress.",
+   "whyItMatters": "A killer building toward Sacrifice perks gets a faster rate of return from each trial. The targeted bonus makes it a focused farming tool rather than a general-purpose one.",
+   "whenToUseIt": "Bring it when the priority is filling up the Sacrifice point pool. No other category receives any bonus, so the run should be dedicated to that goal."
+  }
+ },
+ "ArdentSpottedowlWreath": {
+  "id": "ArdentSpottedowlWreath",
+  "name": "Ardent Spotted Owl Wreath",
+  "role": "killer",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ardentSpottedOwlWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ardentSpottedOwlWreath.png",
+  "iconFile": "IconFavors_ardentSpottedOwlWreath.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Hunting category.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Hunting-focused Bloodpoint boost that only a killer can burn, leaving all other categories at their normal rate. It fits a session dedicated to accumulating Hunting progress.",
+   "whyItMatters": "A killer saving up for Hunting perks earns them at a faster clip while it is in effect. The targeted nature of the bonus means a dedicated run gets the full value out of it.",
+   "whenToUseIt": "Burn it on a run dedicated to farming Hunting points. The bonus is locked to that one category, so a mixed run would waste the effect."
+  }
+ },
+ "ArdentTanagerWreath": {
+  "id": "ArdentTanagerWreath",
+  "name": "Ardent Tanager Wreath",
+  "role": "killer",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ardentTanagerWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ardentTanagerWreath.png",
+  "iconFile": "IconFavors_ardentTanagerWreath.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Brutality category.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Burnable by the killer only, a rare wreath that amplifies Bloodpoint gains within the Brutality category and no other. It targets a single category for focused farming.",
+   "whyItMatters": "A killer grinding for Brutality perks gets a meaningful speed-up from each trial while it is active. The bonus is narrow, so a run focused on that category gets the most out of it.",
+   "whenToUseIt": "Equip it when the specific goal is to accumulate Brutality points. A mixed run would not get full value since the bonus targets one category only."
+  }
+ },
+ "AzarovKey": {
+  "id": "AzarovKey",
+  "name": "Azarov's Key",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_azarovsKey.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_azarovsKey.png",
+  "iconFile": "IconFavors_azarovsKey.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to the Autohaven Wreckers when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "World-category offering that sharply raises the odds of the trial landing on Autohaven Wreckers. It does not stack, so burning another copy changes nothing.",
+   "whyItMatters": "Steering the match toward one specific map is useful for practicing that layout or farming a target that lives there. The effect is strong enough that a single burn reliably shifts the outcome.",
+   "whenToUseIt": "Burn it when the goal is to end up on the Autohaven Wreckers specifically. Holding a second copy does not add extra effect, so one is all that is needed."
+  }
+ },
+ "BlackSaltStatuette": {
+  "id": "BlackSaltStatuette",
+  "name": "Black Salt Statuette",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "luck",
+  "tags": [
+   "stack",
+   "white"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_blackSaltStatuette.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_blackSaltStatuette.png",
+  "iconFile": "IconFavors_blackSaltStatuette.png",
+  "effect": "Unlocks the ability to attempt to unhook yourself for all Survivors.<br><br>Increases all Survivors' luck by <b>2%</b>.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Unlocks the ability for all survivors to attempt unhooking themselves. It also nudges the luck of every survivor upward during the trial.",
+   "whyItMatters": "The self-unhook chance gives a hooked survivor a real escape route that would not otherwise exist. The luck bump on top improves odds on other random outcomes in the same trial.",
+   "whenToUseIt": "Bring it when a group wants to give every survivor a fighting chance after being hooked. The effect applies to the whole survivor side, so it works best in a coordinated run."
+  }
+ },
+ "BlackSplinter": {
+  "id": "BlackSplinter",
+  "name": "Black Splinter",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killer",
+  "tags": [
+   "notavailableinpartymode",
+   "black",
+   "mystery",
+   "not_available_for_shape"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_blackSplinter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_blackSplinter.png",
+  "iconFile": "IconFavors_blackSplinter.png",
+  "effect": "Allows you to take on the role of <b>The Shape</b> for the next trial. <i>Your current perks and add-ons will not be used.</i><br><br>Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Lets the burner play as The Shape in the next trial. Current perks and add-ons are set aside and not carried over.",
+   "whyItMatters": "It provides access to a killer that may not be in the account roster. Trying out The Shape without owning the character is a handy use for it.",
+   "whenToUseIt": "Burn it in a casual run where the goal is to experience The Shape and the specific perk loadout does not matter. The usual perks and add-ons are not available during that trial."
+  }
+ },
+ "BlackWard": {
+  "id": "BlackWard",
+  "name": "Black Ward",
+  "role": "killer",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "protection",
+  "tags": [
+   "personal",
+   "black",
+   "ward",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_blackWard.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_blackWard.png",
+  "iconFile": "IconFavors_blackWard.png",
+  "effect": "Burning this offering grants you protection against the loss of your add-ons at the end of the trial.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Shields the burner from losing any add-ons at the end of the trial. It is a very rare killer protection offering.",
+   "whyItMatters": "The risk of losing add-ons is a real downside of farming as a killer. This removes that downside for a single run, making it safe to bring expensive add-ons into the match.",
+   "whenToUseIt": "Burn it before a trial where the killer is running add-ons that would be painful to lose. The protection lasts for that one match only, so timing it right matters."
+  }
+ },
+ "BloodiedBlueprint": {
+  "id": "BloodiedBlueprint",
+  "name": "Bloodied Blueprint",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "proceduralgeneration",
+  "tags": [
+   "personal",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_bloodiedBlueprint.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_bloodiedBlueprint.png",
+  "iconFile": "IconFavors_bloodiedBlueprint.png",
+  "effect": "Reveals the aura of the basement hooks to you for <b>20 seconds</b> at the start of the trial. <b>Tremendously</b> increases the chance of spawning the basement in the Killer Shack, if the map has a Killer Shack.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Reveals the basement hook locations briefly at the start of the trial. It also greatly increases the chance of the basement spawning in the Killer Shack on maps that have one.",
+   "whyItMatters": "Knowing where the basement hooks are from the opening moment saves a killer valuable search time. A basement in the Killer Shack clusters the hooks near the most concentrated survivor interaction point on the map.",
+   "whenToUseIt": "Bring it to a map that features a Killer Shack when locating the basement hooks early is the priority. On layouts without a shack the spawn bonus does nothing, so confirm the map first before spending it."
+  }
+ },
+ "BloodyPartyStreamers": {
+  "id": "BloodyPartyStreamers",
+  "name": "Bloody Party Streamers",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_bloodyPartyStreamers.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_bloodyPartyStreamers.png",
+  "iconFile": "IconFavors_bloodyPartyStreamers.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in all categories for all players this trial.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Bloodpoint multiplier for every category and every role in the trial. It suits group farming sessions where the goal is to maximize total points without caring about any single category.",
+   "whyItMatters": "The bonus is broad and role-neutral, so both survivors and killers benefit equally. It works as a general farming aid without requiring any specific build or perk target.",
+   "whenToUseIt": "Burn it when the goal is stacking Bloodpoints broadly rather than chasing one specific category. It fits a relaxed session or a group session where no single perk is the target."
+  }
+ },
+ "BogLaurelSachet": {
+  "id": "BogLaurelSachet",
+  "name": "Bog Laurel Sachet",
+  "role": "survivor",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_bogLaurelSachet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_bogLaurelSachet.png",
+  "iconFile": "IconFavors_bogLaurelSachet.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Objective category.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Common survivor offering that grants a moderate Bloodpoint bonus in the Objective category. The bonus is personal and applies only to the burner.",
+   "whyItMatters": "A survivor grinding Objective perks gets a faster rate of return while it is active. The personal nature means it does not help anyone else at the table.",
+   "whenToUseIt": "Burn it when a survivor wants to speed up Objective point earnings and is comfortable with the bonus applying only to their own account. It is a focused tool for a single-category farming run."
+  }
+ },
+ "BoneSplinter": {
+  "id": "BoneSplinter",
+  "name": "Bone Splinter",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killer",
+  "tags": [
+   "notavailableinpartymode",
+   "black",
+   "mystery",
+   "not_available_for_cannibal"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_boneSplinter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_boneSplinter.png",
+  "iconFile": "IconFavors_boneSplinter.png",
+  "effect": "Allows you to take on the role of <b>The Cannibal</b> for the next trial. <i>Your current perks and add-ons will not be used.</i><br><br>Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Killer-side offering that swaps the chosen killer for The Cannibal in the next trial. It discards the equipped perks and add-ons while the swap lasts.",
+   "whyItMatters": "It is a pure role-testing tool rather than a farming aid, since it lets someone try a killer they have not unlocked without committing to a build. It reads as a discovery tool more than a build-planning one.",
+   "whenToUseIt": "Burn it when hunting a fresh killer to learn, since the effect lasts exactly a single trial and then the normal roster returns. It is a discovery tool, not a grinding one."
+  }
+ },
+ "BoundEnvelope": {
+  "id": "BoundEnvelope",
+  "name": "Bound Envelope",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_boundEnvelope.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_boundEnvelope.png",
+  "iconFile": "IconFavors_boundEnvelope.png",
+  "effect": "Grants <b>25%</b> bonus Bloodpoints in <b>all</b> categories to all Survivors.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Survivor-side offering that grants a bloodpoint bonus across every earning category. The boost applies to everyone in the trial, not just the one who burns it.",
+   "whyItMatters": "Because the boost applies to the whole group, it is a clean farming tool for coordinated sessions where everyone wants points faster. It reads as a build-planning aid only in the sense of deciding which side to farm on.",
+   "whenToUseIt": "Bring it whenever a group is focused on earning bloodpoints rather than winning, since the shared bonus helps everyone at once. It is wasted in a casual win-or-lose trial where nobody cares about the bank."
+  }
+ },
+ "CattleTag28": {
+  "id": "CattleTag28",
+  "name": "Cattle Tag-28",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_cattleTag28.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_cattleTag28.png",
+  "iconFile": "IconFavors_cattleTag28.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to Coldwind Farm when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "World offering that nudges the matchmaker toward Coldwind Farm. The effect stacks, so extra copies deepen the pull.",
+   "whyItMatters": "It is a mild map-farming tool that reads as a build-planning aid for anyone grinding that map. The shift is subtle, so many copies are needed before the change is felt.",
+   "whenToUseIt": "Burn it when a specific trial on Coldwind Farm is wanted, and stack more if the shift feels too weak. It suits slow, repeated map hunting rather than a single important match."
+  }
+ },
+ "ChalkPouch": {
+  "id": "ChalkPouch",
+  "name": "Chalk Pouch",
+  "role": "survivor",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "luck",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_chalkPouch.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_chalkPouch.png",
+  "iconFile": "IconFavors_chalkPouch.png",
+  "effect": "Unlocks the ability to attempt to unhook yourself.<br><br>Increases your luck by <b>1%</b>.<br><br>Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Luck offering that unlocks the chance to attempt unhooking a survivor. It also adds a small amount of luck to the one who burns it.",
+   "whyItMatters": "It opens up a rescue option that would otherwise be unavailable, and the luck bump makes rare drops marginally more likely. It is a build-planning tool for anyone who wants that self-rescue route open.",
+   "whenToUseIt": "Bring it when the ability to break a survivor's own way free from a hook is valued, or when chasing lucky drops. It suits a survivor who wants that extra escape route."
+  }
+ },
+ "CharredWeddingPhotograph": {
+  "id": "CharredWeddingPhotograph",
+  "name": "Charred Wedding Photograph",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_charredWeddingPhotograph.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_charredWeddingPhotograph.png",
+  "iconFile": "IconFavors_charredWeddingPhotograph.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Crotus Prenn Asylum when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Rare world offering that strongly pushes the trial toward Crotus Prenn Asylum. It does not stack, so a single copy already carries the full effect.",
+   "whyItMatters": "It is a heavy map-targeting tool that reliably lands that particular asylum map. Because it does not stack, a single copy already does the job.",
+   "whenToUseIt": "Burn it when that asylum is the goal for the session. No need to hoard extras, since copies add nothing."
+  }
+ },
+ "ChildrensBook": {
+  "id": "ChildrensBook",
+  "name": "Children's Book",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_childrensBook.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_childrensBook.png",
+  "iconFile": "IconFavors_childrensBook.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to Red Forest when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Uncommon world offering that noticeably raises the odds of a Red Forest trial. The effect stacks across copies.",
+   "whyItMatters": "It is a reliable map-farming aid for anyone grinding that forest map. Stacking more copies only pushes the odds further in the same direction.",
+   "whenToUseIt": "Bring it when Red Forest is the target map for the session, and layer a few copies if the result feels inconsistent. It suits patient map hunting rather than a decisive match."
+  }
+ },
+ "ClearReagent": {
+  "id": "ClearReagent",
+  "name": "Clear Reagent",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "atmosphere",
+  "tags": [
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_clearReagent.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_clearReagent.png",
+  "iconFile": "IconFavors_clearReagent.png",
+  "effect": "<b>Slightly lessens</b> the Dark Mist.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Atmosphere offering that thins the Dark Mist. It makes the environment a little easier to see through without changing any numbers.",
+   "whyItMatters": "It is a comfort tool rather than a power source, since it only changes how the map feels. Some people burn it to reduce visual clutter during a session.",
+   "whenToUseIt": "Burn it when the mist feels oppressive or when visibility matters to how a session plays. It has no bearing on points or drops, so use it for comfort, not for farming."
+  }
+ },
+ "ColdwindCattleTag81": {
+  "id": "ColdwindCattleTag81",
+  "name": "Coldwind Cattle Tag-81",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_cattleTag81.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_cattleTag81.png",
+  "iconFile": "IconFavors_cattleTag81.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to Coldwind Farm when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Coldwind-specific world offering that strongly pushes trials toward that farm. The effect stacks across copies.",
+   "whyItMatters": "It is a dependable map-farming tool for Coldwind Farm, stronger than the milder cattle tag offering. Stacking more copies only deepens the pull.",
+   "whenToUseIt": "Bring it when Coldwind Farm is the map to grind and a strong push is wanted. Layer a few if the matchmaker still drifts elsewhere."
+  }
+ },
+ "CreamChalkPouch": {
+  "id": "CreamChalkPouch",
+  "name": "Cream Chalk Pouch",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "luck",
+  "tags": [
+   "stack",
+   "white",
+   "personal",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_creamChalkPouch.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_creamChalkPouch.png",
+  "iconFile": "IconFavors_creamChalkPouch.png",
+  "effect": "Unlocks the ability to attempt to unhook yourself.<br><br>Increases your luck by <b>2%</b>.<br><br>Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Survivor-side offering that unlocks the self-unhook attempt. It adds a larger luck bonus than the plain chalk pouch.",
+   "whyItMatters": "It pairs the same rescue unlock with a stronger luck boost, making it a slightly better build-planning tool. The extra luck makes rare outcomes a touch more likely.",
+   "whenToUseIt": "Burn it when the self-unhook route is wanted alongside a meaningful luck bump. Choose it over the common chalk pouch whenever the stronger luck bonus is the goal."
+  }
+ },
+ "CrescentMoonBouquet": {
+  "id": "CrescentMoonBouquet",
+  "name": "Crescent Moon Bouquet",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "lighting",
+  "tags": [],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_crescentMoonBouquet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_crescentMoonBouquet.png",
+  "iconFile": "IconFavors_crescentMoonBouquet.png",
+  "effect": "Calls upon The Entity for a <b>dimmed moonlight</b>.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Lighting offering that calls on The Entity to dim the moonlight. It shifts the look of the night without touching points or drops.",
+   "whyItMatters": "It is a cosmetic and atmosphere tool that changes how a trial feels to see. It has no effect on points, drops, or skill.",
+   "whenToUseIt": "Burn it purely for the mood, when a session is about feel rather than farming. It fits any trial where the visuals matter more than the outcome."
+  }
+ },
+ "CrispleafAmaranthSachet": {
+  "id": "CrispleafAmaranthSachet",
+  "name": "Crispleaf Amaranth Sachet",
+  "role": "survivor",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_crispleafAmaranthSachet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_crispleafAmaranthSachet.png",
+  "iconFile": "IconFavors_crispleafAmaranthSachet.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Survival category.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Personal survivor offering that boosts bloodpoints earned in the Survival category. It affects only the one who burns it, not the rest of the group.",
+   "whyItMatters": "It is a personal farming tool focused on survival-related earnings. Because it is personal, it does not help teammates the way a group bonus would.",
+   "whenToUseIt": "Bring it when a solo bloodpoint push is the goal and survival play is the focus. It suits a survivor grinding their own bank rather than a coordinated group session."
+  }
+ },
+ "CutCoin": {
+  "id": "CutCoin",
+  "name": "Cut Coin",
+  "role": "killer",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "chest",
+  "tags": [
+   "black",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_cutCoin.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_cutCoin.png",
+  "iconFile": "IconFavors_cutCoin.png",
+  "effect": "Calls on The Entity to prevent the appearance of <b>2</b> chests.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Chest-related killer offering that removes some of the chests that would normally appear on the map. It works by calling on The Entity to make them vanish before the trial starts.",
+   "whyItMatters": "It is a map-shaping tool that strips a source of survivor items from the trial. It reads as a control or challenge tool rather than a farming aid.",
+   "whenToUseIt": "Burn it when a tighter, item-poor trial is wanted or when testing how the killer plays without that resource pool. It is a deliberate constraint, not a buff."
+  }
+ },
+ "CypressMementoMori": {
+  "id": "CypressMementoMori",
+  "name": "Cypress Memento Mori",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "killing",
+  "tags": [
+   "black",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_cypressMementoMori.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_cypressMementoMori.png",
+  "iconFile": "IconFavors_cypressMementoMori.png",
+  "effect": "Grants <b>10 000 post-trial bloodpoints</b> upon performing any Mori on the last Survivor.<br><br>Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Killing-category killer offering that pays out a large lump of post-trial bloodpoints. The payout only triggers when the final survivor ends with a Mori finisher.",
+   "whyItMatters": "It is a farming tool that rewards closing out a trial with a specific killer move. The payout is big, so it reads as a build-planning aid for a completionist finish.",
+   "whenToUseIt": "Burn it when finishing a trial with a Mori on the last survivor is realistic. It is wasted if the plan is not to close out with that move, so align the build and the ending."
+  }
+ },
+ "DecrepitClapboard": {
+  "id": "DecrepitClapboard",
+  "name": "Decrepit Clapboard",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_decrepitClapboard.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_decrepitClapboard.png",
+  "iconFile": "IconFavors_decrepitClapboard.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to Haddonfield when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "An uncommon world offering that leans the trial heavily toward the Haddonfield map. Multiple copies burnt together compound the pull further.",
+   "whyItMatters": "It is a dependable map-farming aid for that map. Stacking copies only pushes the matchmaker further toward the same destination.",
+   "whenToUseIt": "Bring it when Haddonfield is the map to grind and a stronger pull is wanted. Layer a few if the result still drifts."
+  }
+ },
+ "DevoutRavenWreath": {
+  "id": "DevoutRavenWreath",
+  "name": "Devout Raven Wreath",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_devoutRavenWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_devoutRavenWreath.png",
+  "iconFile": "IconFavors_devoutRavenWreath.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Deviousness category.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Points offering that boosts bloodpoints earned in the Deviousness category. It only pays out on a killer who generates deviousness points.",
+   "whyItMatters": "The bonus multiplies killer bloodpoints earned through the Deviousness category, so it pays off when a build deliberately funnels play toward deviousness. Treat it as a sharpening tool for a deviousness-focused grind rather than a general earnings boost.",
+   "whenToUseIt": "Burn it when a deviousness-focused killer build is the goal. It suits a session where that category is the main source of the bank."
+  }
+ },
+ "DevoutShrikeWreath": {
+  "id": "DevoutShrikeWreath",
+  "name": "Devout Shrike Wreath",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_devoutShrikeWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_devoutShrikeWreath.png",
+  "iconFile": "IconFavors_devoutShrikeWreath.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Sacrifice category.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A killer offering that inflates the bloodpoint payout from the Sacrifice category. The extra earnings only materialize when a killer actually generates sacrifice points during a trial.",
+   "whyItMatters": "Burn it on a killer whose kit or playstyle produces a steady stream of sacrifice points, since the multiplier sits idle otherwise. It sharpens a targeted sacrifice-grind session rather than padding broad earnings.",
+   "whenToUseIt": "Bring it when a sacrifice-focused build is the goal and that category drives the bank. It is wasted on a killer who never earns sacrifice points."
+  }
+ },
+ "DevoutSpottedowlWreath": {
+  "id": "DevoutSpottedowlWreath",
+  "name": "Devout Spotted Owl Wreath",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_devoutSpottedOwlWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_devoutSpottedOwlWreath.png",
+  "iconFile": "IconFavors_devoutSpottedOwlWreath.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Hunting category.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Hunting-focused killer offering that boosts bloodpoints earned in the Hunting category. It pairs with a killer who earns hunting points across the trial.",
+   "whyItMatters": "The multiplier lands on the Hunting category specifically, so a killer who racks up hunting points through chases and pressure will see the biggest swing. Use it to accelerate a hunting-focused earnings run rather than spreading it across unrelated categories.",
+   "whenToUseIt": "Burn it when a hunting-focused build is the goal. Choose it whenever that category is the main driver of the intended bank."
+  }
+ },
+ "DevoutTanagerWreath": {
+  "id": "DevoutTanagerWreath",
+  "name": "Devout Tanager Wreath",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_devoutTanagerWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_devoutTanagerWreath.png",
+  "iconFile": "IconFavors_devoutTanagerWreath.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Brutality category.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A killer offering tied to the Brutality category that multiplies the bloodpoints a killer earns from brutal kills. It pays nothing unless a build actually produces brutality points.",
+   "whyItMatters": "The multiplier sits on the Brutality category, so a killer who closes survivors with violent finishes sees the sharpest gain. Lean on it when a brutality-grinding session is the goal and the build already produces those points.",
+   "whenToUseIt": "Burn it on a trial where the killer build already funnels kills into the Brutality category, so the multiplier has something to amplify. Skip it on sessions aimed at other point sources where the bonus would sit wasted."
+  }
+ },
+ "EbonyMementoMori": {
+  "id": "EbonyMementoMori",
+  "name": "Ebony Memento Mori",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killing",
+  "tags": [
+   "black",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ebonyMementoMori.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ebonyMementoMori.png",
+  "iconFile": "IconFavors_ebonyMementoMori.png",
+  "effect": "Grants the ability to <b>kill all Survivors</b> who have reached the <b>second Hook State</b> by your hand during the next trial.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Iridescent secret killer offering that lets the killer finish any survivor who has reached the second hook state by hand. The effect lasts only for the next trial.",
+   "whyItMatters": "It gives a killer the option to end a hooked survivor by hand once they have reached that advanced hook state, instead of relying on a third hook. Planning around it means recognizing that state and choosing to finish there rather than hooking again.",
+   "whenToUseIt": "Burn it when the goal is to finish a trial with the killer's own hands on hooked survivors. It is a commitment to a hands-finish playstyle, so only bring it when that ending is the plan."
+  }
+ },
+ "EclipseThemeOffering": {
+  "id": "EclipseThemeOffering",
+  "name": "RPD Badge",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_rpdBadge.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_rpdBadge.png",
+  "iconFile": "IconFavors_rpdBadge.png",
+  "effect": "<b>Tremendously increases</b> the chance of being sent to Raccoon City police station when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A secret rare world offering that heavily favors the Raccoon City police station map on the board. Because it does not stack, burning one copy delivers the entire pull with no additional copies needed.",
+   "whyItMatters": "It is a heavy map-targeting tool for that particular police station map. A single copy already does the work, so hoarding extras is pointless.",
+   "whenToUseIt": "Burn it when that police station is the goal for the session. A single copy is enough, since extras add nothing."
+  }
+ },
+ "EmergencyCertificate": {
+  "id": "EmergencyCertificate",
+  "name": "Emergency Certificate",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_emergencyCertificate.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_emergencyCertificate.png",
+  "iconFile": "IconFavors_emergencyCertificate.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to Léry's Memorial Institute when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A world offering that steers trial destinations toward Lery's Memorial Institute when burnt. Each stacked copy deepens the pull, so multiple copies in a row keep sending trials to that map.",
+   "whyItMatters": "It is a build-planning tool for anyone drilling a single map, since every extra copy tightens the destination lock. A farming session on a different map wastes the effect entirely.",
+   "whenToUseIt": "Burn it in a solo practice block when Lery's Memorial Institute is the map to study, and keep stacking copies while the pull still feels weak. It suits any session where variety is not the goal."
+  }
+ },
+ "EscapeCake": {
+  "id": "EscapeCake",
+  "name": "Escape! Cake",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "white",
+   "stack",
+   "personal",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_escapeCake.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_escapeCake.png",
+  "iconFile": "IconFavors_escapeCake.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in all categories.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Survivor-only offering that doubles Bloodpoint earnings across every category for the one who burns it. The bonus is personal, so only the burning survivor sees the gain.",
+   "whyItMatters": "Each point earned in the trial arrives with the full bonus applied, so pools refill much faster than usual. It reads as a pure farming tool rather than a build-planning one.",
+   "whenToUseIt": "Use it in any session where the goal is raw point accumulation rather than map practice. Save it for a trial on a character being actively leveled so the multiplier hits a pool that needs filling."
+  }
+ },
+ "FaintReagent": {
+  "id": "FaintReagent",
+  "name": "Faint Reagent",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "atmosphere",
+  "tags": [
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_faintReagent.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_faintReagent.png",
+  "iconFile": "IconFavors_faintReagent.png",
+  "effect": "<b>Slightly thickens</b> the Dark Mist.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A world offering that thickens the Dark Mist across the full trial, dimming sight lines for both sides. Once burnt, neither survivors nor the killer sees as far.",
+   "whyItMatters": "The whole trial tilts toward stealth, giving survivors friendlier hiding spots while killers hunt with reduced clarity. It rewards positioning and map memory over raw reaction speed.",
+   "whenToUseIt": "Use it in a session where a survivor wants a stealth-heavy trial on an open map, or when the killer side wants to rehearse tracking through poor visibility. It also fits a solo block where testing how visibility shapes chase decisions is the goal."
+  }
+ },
+ "FragrantBogLaurel": {
+  "id": "FragrantBogLaurel",
+  "name": "Fragrant Bog Laurel",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fragrantBogLaurel.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fragrantBogLaurel.png",
+  "iconFile": "IconFavors_fragrantBogLaurel.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Objective category.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A survivor offering that grants a full Objective Bloodpoint bonus for the whole trial. Generator and objective work earns double points for the duration.",
+   "whyItMatters": "A generator-focused build fills noticeably faster within a single trial because the bonus targets that specific perk family. The personal multiplier means the whole Objective pool benefits from the burn.",
+   "whenToUseIt": "Bring it when the point goal is a generator-heavy survivor, since the bonus hits only the Objective pool. Pair it with a trial where generator work will dominate the output."
+  }
+ },
+ "FragrantCrispleafAmaranth": {
+  "id": "FragrantCrispleafAmaranth",
+  "name": "Fragrant Crispleaf Amaranth",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fragrantCrispleafAmaranth.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fragrantCrispleafAmaranth.png",
+  "iconFile": "IconFavors_fragrantCrispleafAmaranth.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Survival category.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Doubles Survival Bloodpoints for the burning survivor, covering all chase and escape perks in that pool. The bonus is personal and applies for the full trial.",
+   "whyItMatters": "A survivor leveling a run-heavy build collects points at double rate because evasion and escape perks draw from this pool. It serves as a focused farming tool for one category.",
+   "whenToUseIt": "Use it in a trial centered on a survivor with a perk set full of running, vaulting, or unhooking perks. Let the bonus ride through the full session so every qualifying action banks extra points."
+  }
+ },
+ "FragrantPrimroseBlossom": {
+  "id": "FragrantPrimroseBlossom",
+  "name": "Fragrant Primrose Blossom",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fragrantPrimroseBlossom.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fragrantPrimroseBlossom.png",
+  "iconFile": "IconFavors_fragrantPrimroseBlossom.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Altruism category.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Survivor-only Bloodpoint multiplier for the Altruism pool, so whoever burns it draws doubled points from every helper action taken during the trial. The gain stays personal and covers the full duration once lit.",
+   "whyItMatters": "A survivor who levels healing or unhooking abilities benefits directly because support-style perks draw from this pool. It reads as a farming tool for a helper build rather than a planning one.",
+   "whenToUseIt": "Use it in group sessions where the point goal is a helper build, since altruism actions happen often enough to make the multiplier worthwhile. In a solo trial the qualifying actions are fewer, so the payoff is smaller."
+  }
+ },
+ "FragrantSweetWilliam": {
+  "id": "FragrantSweetWilliam",
+  "name": "Fragrant Sweet William",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fragrantSweetWilliam.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fragrantSweetWilliam.png",
+  "iconFile": "IconFavors_fragrantSweetWilliam.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in the Boldness category.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Survivor-side points offering that boosts every Boldness Bloodpoint action taken by the burning survivor, from taunts to totem purges. The gain is personal and carries across the entire trial once lit.",
+   "whyItMatters": "Any build that depends on risky, bold perks accelerates because every qualifying action pays extra while the trial lasts. Only the survivor who burns it collects the bonus, so plan the session around that.",
+   "whenToUseIt": "Use it when the trial is aimed at leveling a bold survivor, and make sure totems will actually be purged so the extra points land. Pair it with a match where taunting or totem work is already part of the plan."
+  }
+ },
+ "FreshBogLaurel": {
+  "id": "FreshBogLaurel",
+  "name": "Fresh Bog Laurel",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_freshBogLaurel.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_freshBogLaurel.png",
+  "iconFile": "IconFavors_freshBogLaurel.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Objective category.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Adds a partial Objective Bloodpoint bonus at uncommon rarity, covering the same pool as the fragrant version. The personal bonus is lighter but still meaningful.",
+   "whyItMatters": "Generator-focused leveling still moves faster with it, just not as aggressively as the full-value bloom. That makes it a practical choice for longer farming streaks where spending a rare offering feels wasteful.",
+   "whenToUseIt": "Use it when Objective points are the goal but the rare offering feels too expensive to burn. The uncommon version covers the same category, so the point target still advances, just more slowly."
+  }
+ },
+ "FreshCrispleafAmaranth": {
+  "id": "FreshCrispleafAmaranth",
+  "name": "Fresh Crispleaf Amaranth",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_freshCrispleafAmaranth.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_freshCrispleafAmaranth.png",
+  "iconFile": "IconFavors_freshCrispleafAmaranth.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Survival category.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Grants a partial Survival Bloodpoint bonus to the burning survivor at uncommon rarity. Evasion and escape perks benefit from the multiplier without the full-value cost.",
+   "whyItMatters": "An escape-heavy build keeps progressing at a decent pace without spending a rare offering. The partial bonus suits steady point collection over a long grind.",
+   "whenToUseIt": "Use it for Survival-category grinding on a survivor, and move to the fragrant version only if you need the faster pace. It also fits a casual session where the goal is simply to keep the pool moving."
+  }
+ },
+ "FreshPrimroseBlossom": {
+  "id": "FreshPrimroseBlossom",
+  "name": "Fresh Primrose Blossom",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_freshPrimroseBlossom.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_freshPrimroseBlossom.png",
+  "iconFile": "IconFavors_freshPrimroseBlossom.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Altruism category.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Partial Altruism boost for the survivor who burns it, so helper actions like unhooking and healing still earn extra points at a reduced rate compared to the rare alternative. It suits an altruism-focused point run without spending a rare slot.",
+   "whyItMatters": "Support perks still level meaningfully with it, making it the economical pick when a full bonus is unnecessary. It suits a survivor who wants steady Altruism progress without the heavier investment.",
+   "whenToUseIt": "Use it in group sessions where unhooking and healing happen in high volume, so the partial multiplier still adds up across the trial. A solo session produces fewer qualifying actions, so the payoff is smaller."
+  }
+ },
+ "FreshSweetWilliam": {
+  "id": "FreshSweetWilliam",
+  "name": "Fresh Sweet William",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_freshSweetWilliam.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_freshSweetWilliam.png",
+  "iconFile": "IconFavors_freshSweetWilliam.png",
+  "effect": "Grants <b>75%</b> bonus Bloodpoints in the Boldness category.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Boosts Boldness Bloodpoints partially at uncommon rarity, hitting the same risky-action pool as the rarer bloom. The lighter multiplier still keeps a bold build progressing.",
+   "whyItMatters": "The partial bonus hits the same category at a lower cost, so a bold build keeps moving forward. It suits a trial where totem purging or taunting is the main point source but the budget is tight.",
+   "whenToUseIt": "Use it when totem purging or taunting drives most of the point output in a trial and the budget is tight. Skip the full bonus version if the cost feels too high for the expected output."
+  }
+ },
+ "FullMoonBouquet": {
+  "id": "FullMoonBouquet",
+  "name": "Full Moon Bouquet",
+  "role": null,
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "lighting",
+  "tags": [],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fullMoonBouquet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fullMoonBouquet.png",
+  "iconFile": "IconFavors_fullMoonBouquet.png",
+  "effect": "Calls upon The Entity for the <b>brightest moonlight</b>.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Map-wide lighting shift that calls on The Entity to bathe the trial in the brightest moonlight the game offers. Corners, dark tiles, and hiding spots all become visible, which changes how both sides navigate the board.",
+   "whyItMatters": "Trading darkness for clarity, it lets both sides see much more of what is out there. The trial shifts toward chase skill and map knowledge rather than relying on hidden corners.",
+   "whenToUseIt": "Use it when the trial should come down to raw chase skill and map knowledge instead of relying on darkness. It is also a clear way to walk a newcomer through how the map reads under full light."
+  }
+ },
+ "FumingCordage": {
+  "id": "FumingCordage",
+  "name": "Fuming Cordage",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fumingCordage.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fumingCordage.png",
+  "iconFile": "IconFavors_fumingCordage.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to Backwater Swamp when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "World offering with a gentle tilt toward Backwater Swamp for the next match. Burning several copies together strengthens the pull, making repeated trials land on that map more reliably.",
+   "whyItMatters": "A survivor or killer drilling Backwater Swamp can stack several to keep landing that map without wasting rare stock. It reads as a cheap farming tool rather than a build-planning pick.",
+   "whenToUseIt": "Layer several during a farming session aimed at Backwater Swamp, and keep adding copies while the map keeps slipping away. Skip it when a different destination is the goal."
+  }
+ },
+ "FumingWelcomeSign": {
+  "id": "FumingWelcomeSign",
+  "name": "Fuming Welcome Sign",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_fumingWelcomeSign.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_fumingWelcomeSign.png",
+  "iconFile": "IconFavors_fumingWelcomeSign.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to Backwater Swamp when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Considerable pull toward Backwater Swamp that outperforms the common cordage option, so fewer copies are needed to land the map consistently. It stacks with other Backwater Swamp offerings when multiple are burned at once.",
+   "whyItMatters": "One burn carries real weight, which stretches a learning grind further than stacking many common copies. It suits a trial where Backwater Swamp must appear rather than a casual session.",
+   "whenToUseIt": "Reserve it for a recorded run or a group session that needs Backwater Swamp on the board. It is the right pick when the map is a hard requirement for the trial at hand."
+  }
+ },
+ "GlassSplinter": {
+  "id": "GlassSplinter",
+  "name": "Glass Splinter",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killer",
+  "tags": [
+   "notavailableinpartymode",
+   "black",
+   "mystery",
+   "not_available_for_pig"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_glassSplinter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_glassSplinter.png",
+  "iconFile": "IconFavors_glassSplinter.png",
+  "effect": "Allows you to take on the role of <b>The Pig</b> for the next trial. <i>Your current perks and add-ons will not be used.</i><br><br>Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Iridescent killer-side secret that swaps the burning killer's slot for The Pig in the very next trial. Equipped perks and add-ons stay parked and do not carry over, so the next run begins fresh.",
+   "whyItMatters": "It hands a killer a full trial as The Pig without spending Bloodpoints on the character, but the carried build stays off. A killer can test the matchup once before deciding whether to invest in the entity.",
+   "whenToUseIt": "Burn it to try The Pig before committing points to the character, or to see one specific matchup in a single trial. It comes from a secret-grade pool, so copies are hard to come by."
+  }
+ },
+ "GranmasCookbook": {
+  "id": "GranmasCookbook",
+  "name": "Grandma's Cookbook",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_granmasCookbook.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_granmasCookbook.png",
+  "iconFile": "IconFavors_granmasCookbook.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Backwater Swamp when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Rare secret world offering that exerts a tremendous pull toward Backwater Swamp for the next trial. Unlike the stacking cordage and sign options, burning more copies does not amplify the effect.",
+   "whyItMatters": "One burn delivers a very strong guarantee of the destination, making it a planning pick for a single set trial. It is not a farming tool, since layering copies adds nothing.",
+   "whenToUseIt": "Hold it for a session where Backwater Swamp is a must, like a stream or a focused practice block. Remember that burning more copies changes nothing, so one is all it needs."
+  }
+ },
+ "Halloween2021Offering": {
+  "id": "Halloween2021Offering",
+  "name": "Cursed Seed",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode",
+   "personal"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_cursedSeed.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_cursedSeed.png",
+  "iconFile": "IconFavors_cursedSeed.png",
+  "effect": "Calls upon The Entity to generate <b>1 tangled hook</b> and <b>1 tangled generator</b>.As a Killer, hook a Survivor on a <b>tangled hook</b> for the first time to earn bonus Bloodpoints.As a Survivor, find and repair a <b>tangled generator</b> to earn bonus Bloodpoints.Using this offering increases the amount of Bloodpoints earned for these interactions.NOTE: During the event, 1 default tangled hook and 1 default tangled generator will spawn on the map.Stacks.<i>Only playable during The Midnight Grove event.</i>",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Event-only points offering that summons a tangled hook and a tangled generator into the trial, each rewarding bonus Bloodpoints when first interacted with. Stacking copies increases the pool, and it is playable exclusively during The Midnight Grove event.",
+   "whyItMatters": "The added hook and generator give both sides extra Bloodpoints from actions they already do. A killer earns the bonus on a hook, and a survivor picks up the same reward on a repair.",
+   "whenToUseIt": "Spend it during the Midnight Grove event to stretch a Bloodpoint farming session, and retire it once that window closes. It is no longer obtainable outside the limited event."
+  }
+ },
+ "Halloween2022Offering": {
+  "id": "Halloween2022Offering",
+  "name": "Arcane Dowsing Rod",
+  "role": null,
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "stack"
+  ],
+  "retired": false,
+  "icon": null,
+  "iconRemote": null,
+  "iconFile": null,
+  "effect": "Taps into the latent energy of The Entity's realm to find even more concentrated pockets of power.Personal.Provides a +<b>100%</b> Bloodpoints bonus to all Haunted By Daylight score events.<i>Only usable when playing <b>Event: Haunted by Daylight</b>.</i>",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Score-event points boost that doubles Bloodpoint gains from every Haunted By Daylight score objective for the burning survivor. It has no effect outside that specific event and does not function in standard trials.",
+   "whyItMatters": "A score run inside Haunted By Daylight pays out far more with the bonus active than without it. The very rare rarity means each burn should go toward a planned scoring push.",
+   "whenToUseIt": "Use it during a Haunted By Daylight score push, since it does nothing in any other mode. Its very rare rarity makes a wasted burn costly."
+  }
+ },
+ "HalloweenOffering": {
+  "id": "HalloweenOffering",
+  "name": "Pustula Petals",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode",
+   "personal"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_pustulaPetals.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_pustulaPetals.png",
+  "iconFile": "IconFavors_pustulaPetals.png",
+  "effect": "Calls upon The Entity to generate <b>1 Blighted Hook</b> and <b>1 Blighted Generator</b>.As a Killer, hook a Survivor on a <b>Blighted Hook</b> for the first time to earn bonus Bloodpoints.As a Survivor, find and repair a <b>Blighted Generator</b> to earn bonus Bloodpoints.Using this offering increases the amount of Bloodpoints earned for these interactions.NOTE: During the event, 1 default Blighted Hook and 1 default Blighted Generator will spawn in the map.Stacks.<i>Only playable during the Midnight Grove Event.</i>",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Blighted-hook and Blighted Generator summoning offering that pays bonus Bloodpoints the first time each is interacted with, whether by a killer hooking or a survivor repairing. More copies burned together increase the reward, and it is locked to the Midnight Grove Event.",
+   "whyItMatters": "Each extra Blighted object on the map adds another Bloodpoint source for both sides to hit. A killer takes the reward on a hook, and a survivor collects the same bonus on a repair.",
+   "whenToUseIt": "Use it as a Bloodpoint accelerator while the Midnight Grove event is live, and set it aside the moment that window shuts since normal play cannot use it. It is the right pick for a focused farming session inside the event."
+  }
+ },
+ "HarvestFestivalLeaflet": {
+  "id": "HarvestFestivalLeaflet",
+  "name": "Harvest Festival Leaflet",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_harvestFestivalLeaflet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_harvestFestivalLeaflet.png",
+  "iconFile": "IconFavors_harvestFestivalLeaflet.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to Haddonfield when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Haddonfield weighting offering that nudges the next trial toward that map with a mild but reliable pull. Burning additional copies strengthens the tilt, which helps when chasing Haddonfield across repeated runs.",
+   "whyItMatters": "It works as a light practice aid, slipping a few extra Haddonfield trials into a farming session without heavy offering spend. A survivor or killer sharpening on that map can afford to burn several cheaply.",
+   "whenToUseIt": "Add several during a grind aimed at Haddonfield, and expect the nudge to stay mild. Skip it entirely when a different map is the goal."
+  }
+ },
+ "HazyReagent": {
+  "id": "HazyReagent",
+  "name": "Hazy Reagent",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "atmosphere",
+  "tags": [
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_hazyReagent.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_hazyReagent.png",
+  "iconFile": "IconFavors_hazyReagent.png",
+  "effect": "<b>Moderately thickens</b> the Dark Mist.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Atmosphere offering that moderately thickens the Dark Mist across a trial. It has no role restriction, so either side can burn it.",
+   "whyItMatters": "A thicker fog shortens how far anyone can see, so a killer loses track of a survivor more easily and a survivor loses sight of a killer too. Whoever reads sound and movement best gains the edge.",
+   "whenToUseIt": "Burn it in a trial where hiding a risky plan matters, like a survivor breaking a long chase. A killer can light it just as easily to punish a team that relies on sight."
+  }
+ },
+ "HeartLocket": {
+  "id": "HeartLocket",
+  "name": "Heart Locket",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_heartLocket.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_heartLocket.png",
+  "iconFile": "IconFavors_heartLocket.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Coldwind Farm when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A realm-targeting offering that pushes trials toward Coldwind Farm, and duplicates do not stack. It is built for focused map practice rather than a general reward boost.",
+   "whyItMatters": "Because it steers nearly every trial to one map, it reads as a build-planning tool for anyone chasing a Coldwind Farm exclusive drop. Repeated use funnels the grind toward that single realm.",
+   "whenToUseIt": "Bring it when a Coldwind Farm specific goal is the point, such as learning the layout or farming a realm reward. Expect the same map trial after trial while it is equipped."
+  }
+ },
+ "HollowShell": {
+  "id": "HollowShell",
+  "name": "Hollow Shell",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_hollowShell.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_hollowShell.png",
+  "iconFile": "IconFavors_hollowShell.png",
+  "effect": "Grants <b>25%</b> bonus Bloodpoints in all categories.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Killer-only points offering that grants a bonus share of Bloodpoints across every reward category. It applies to whatever the trial produces, not one specific source.",
+   "whyItMatters": "Since it reads as a pure farming tool, every Bloodpoint earned in a trial comes in at a higher rate. Long farming sessions pay off noticeably faster with it lit.",
+   "whenToUseIt": "Light it whenever the goal is stacking Bloodpoints, especially with a group hunting a specific reward. It suits a focused grind where the team already knows what to farm for."
+  }
+ },
+ "IonThemeOffering": {
+  "id": "IonThemeOffering",
+  "name": "Crow's Eye",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_crowsEye.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_crowsEye.png",
+  "iconFile": "IconFavors_crowsEye.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Forsaken Boneyard when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Rare world offering aimed at Forsaken Boneyard, with no stacking from duplicates. It exists to funnel trials to that single realm.",
+   "whyItMatters": "It is a map-targeting tool, so repeated use pushes practice or a realm-specific reward toward Forsaken Boneyard. The whole session stays pointed at that one realm.",
+   "whenToUseIt": "Use it when Forsaken Boneyard is the destination, like farming a realm drop or learning that map's loops. Pair it with other offerings that suit a controlled grind."
+  }
+ },
+ "IvoryChalkPouch": {
+  "id": "IvoryChalkPouch",
+  "name": "Ivory Chalk Pouch",
+  "role": "survivor",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "luck",
+  "tags": [
+   "stack",
+   "white",
+   "personal",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ivoryChalkPouch.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ivoryChalkPouch.png",
+  "iconFile": "IconFavors_ivoryChalkPouch.png",
+  "effect": "Unlocks the ability to attempt to unhook yourself.<br><br>Increases your luck by <b>3%</b>.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Survivor-only luck offering that unlocks the ability to attempt freeing a self-hooked survivor. It also adds a small boost to luck rolls.",
+   "whyItMatters": "Self-unhooking is a real safety valve, since a survivor caught on a hook can now roll for a rescue instead of waiting on a teammate. The luck bump helps those rolls land more often.",
+   "whenToUseIt": "Burn it if a teammate often gets hooked alone or the group lacks a reliable rescuer. The extra roll and luck make a solo rescue more likely to succeed."
+  }
+ },
+ "IvoryMementoMori": {
+  "id": "IvoryMementoMori",
+  "name": "Ivory Memento Mori",
+  "role": "killer",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "killing",
+  "tags": [
+   "black",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ivoryMementoMori.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ivoryMementoMori.png",
+  "iconFile": "IconFavors_ivoryMementoMori.png",
+  "effect": "Grants the ability to <b>kill one Survivor</b> who has reached the <b>second Hook State</b> by your hand during the next trial.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A killer-only offering that lets the killer finish a survivor who reaches the second hook state during the next trial. The effect lasts only that single trial.",
+   "whyItMatters": "It guarantees at least one clean elimination, which reads as a tool for a killer who wants reliable kills rather than a full scoreboard. A single assured kill can swing a close trial.",
+   "whenToUseIt": "Light it on a trial where securing one guaranteed kill matters most, such as a low-time situation. It also fits a chase build that struggles to convert hook-ups into kills."
+  }
+ },
+ "JapaneseCountrySide": {
+  "id": "JapaneseCountrySide",
+  "name": "Yamaoka Family Crest",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_yamaokaFamilyCrest.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_yamaokaFamilyCrest.png",
+  "iconFile": "IconFavors_yamaokaFamilyCrest.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Yamaoka Estate when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "It pulls trials strongly toward Yamaoka Estate, and duplicates do not stack. Focused practice on that map is what it is built for.",
+   "whyItMatters": "It is a map-targeting tool for anyone farming a Yamaoka Estate reward or drilling that realm's chase layouts. Repeated use keeps the grind pointed at one place.",
+   "whenToUseIt": "Bring it when Yamaoka Estate is the goal, such as hunting a specific realm drop. It also suits practicing the map's long sight lines before a group hunt."
+  }
+ },
+ "Jigsawpiece": {
+  "id": "Jigsawpiece",
+  "name": "Jigsaw Piece",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_jigsawPiece.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_jigsawPiece.png",
+  "iconFile": "IconFavors_jigsawPiece.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Gideon Meat Plant when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "It pushes trials toward Gideon Meat Plant, and extras do not stack. A focused map target is the whole purpose of it.",
+   "whyItMatters": "It is a focused map-targeting tool, funneling repeated trials to that realm for practice or a realm-tied reward. A group can share the same destination throughout the session.",
+   "whenToUseIt": "Use it when Gideon Meat Plant is the target, like learning that map's tight rooms. It also fits chasing a drop that only appears there."
+  }
+ },
+ "KenyaThemeOffering": {
+  "id": "KenyaThemeOffering",
+  "name": "Damaged Photo",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_damagedPhoto.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_damagedPhoto.png",
+  "iconFile": "IconFavors_damagedPhoto.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Ormond when burnt.Secret.Does not stack.<br><br><b>Aug. 28th, ‘96</b>",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "It steers trials toward Ormond, and duplicates do not stack. The date stamp in its flavor is just lore; the effect is a pure map pull.",
+   "whyItMatters": "It funnels trials to one realm, making it a map-targeting tool for Ormond practice or a realm-specific reward. Repeated use keeps the grind pointed at that single location.",
+   "whenToUseIt": "Light it when Ormond is the destination, such as farming a map drop. It also suits learning the layout before a group hunt."
+  }
+ },
+ "LunacyTicket": {
+  "id": "LunacyTicket",
+  "name": "Lunacy Ticket",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_lunacyTicket.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_lunacyTicket.png",
+  "iconFile": "IconFavors_lunacyTicket.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to Crotus Prenn Asylum when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Common ticket that nudges trials toward Crotus Prenn Asylum, and it stacks with duplicates. It is a lighter map pull than the stronger tickets.",
+   "whyItMatters": "Because it stacks, multiple copies push the odds harder toward that realm at a lower cost. That makes it a flexible map-targeting tool for an affordable realm grind.",
+   "whenToUseIt": "Burn several if Crotus Prenn is the aim, such as practicing the asylum or hunting a realm reward. The stacking compounds the effect the more copies are lit."
+  }
+ },
+ "MacmillanLedgerPage": {
+  "id": "MacmillanLedgerPage",
+  "name": "MacMillan Ledger Page",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_macMillanLedgerPage.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_macMillanLedgerPage.png",
+  "iconFile": "IconFavors_macMillanLedgerPage.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to the MacMillan Estate when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A budget ticket that mildly favors the MacMillan Estate and stacks with extras. It is a lighter pull than the bone but can be layered up.",
+   "whyItMatters": "Burning several copies together strengthens the pull toward the MacMillan Estate, so a handful of them works as a budget way to bias trials. It reads as a farming tool for a cheap, repeatable grind rather than a single decisive play.",
+   "whenToUseIt": "Burn a few when the MacMillan Estate is the destination, such as a low-cost realm grind. Let the stacking compound the effect across the session."
+  }
+ },
+ "MacMillanPhalanxBone": {
+  "id": "MacMillanPhalanxBone",
+  "name": "MacMillan's Phalanx Bone",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_macMillansPhalanxBone.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_macMillansPhalanxBone.png",
+  "iconFile": "IconFavors_macMillansPhalanxBone.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to the MacMillan Estate when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "The MacMillan Estate is its favored destination, and it does not stack. Focused practice on that realm is what it is meant for.",
+   "whyItMatters": "Because it does not stack, a single copy carries a heavy pull toward the MacMillan Estate, so burning one fully commits the trial to that realm. It suits anyone grinding MacMillan practice or rewards who wants the whole run pointed in one direction.",
+   "whenToUseIt": "Bring it when the MacMillan Estate is the goal, such as learning the map or farming a realm drop. It suits a session where that one location is the whole point."
+  }
+ },
+ "MeteorThemeOffering": {
+  "id": "MeteorThemeOffering",
+  "name": "Ichorous Loam",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ichorousLoam.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ichorousLoam.png",
+  "iconFile": "IconFavors_ichorousLoam.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Withered Isle when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Withered Isle is where it pulls hardest, and it does not stack. A whole session aimed at that map is what it is made for.",
+   "whyItMatters": "It is a map-targeting tool for Withered Isle practice or a realm reward. It keeps the session aimed at a single location.",
+   "whenToUseIt": "Use it when Withered Isle is the target, like farming a realm drop. It also fits drilling the map's wide open chase space."
+  }
+ },
+ "MoldyOak": {
+  "id": "MoldyOak",
+  "name": "Moldy Oak",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "hook",
+  "tags": [
+   "black",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_moldyOak.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_moldyOak.png",
+  "iconFile": "IconFavors_moldyOak.png",
+  "effect": "Calls upon The Entity to <b>Slightly decrease</b> the <b>distance</b> between sacrificial hooks appearing in the world.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Hook offering for a killer that slightly pulls the sacrificial hooks closer together. It reshapes the map's safety points for one trial.",
+   "whyItMatters": "Closer hooks change the shape of a chase, since a survivor running for safety finds a hook nearer than expected. A killer can exploit that to keep pressure on a fleeing team.",
+   "whenToUseIt": "Light it when a killer wants tighter hook placement to support a chase build. It especially fits a team that loops wide to avoid hooks."
+  }
+ },
+ "MuddySplinter": {
+  "id": "MuddySplinter",
+  "name": "Muddy Splinter",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killer",
+  "tags": [
+   "notavailableinpartymode",
+   "black",
+   "mystery",
+   "not_available_for_witch"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_muddySplinter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_muddySplinter.png",
+  "iconFile": "IconFavors_muddySplinter.png",
+  "effect": "Allows you to take on the role of <b>The Hag</b> for the next trial. <i>Your current perks and add-ons will not be used.</i><br><br>Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Iridescent killer offering that swaps the killer's role to The Hag for the next trial. The current perks and add-ons are set aside while it is active.",
+   "whyItMatters": "It is a role-play tool, letting the killer experience a different set of tools and chase style without owning the full unlock path. One trial is enough to feel how her traps and coven work.",
+   "whenToUseIt": "Burn it if the goal is to learn The Hag or try her mechanics in a single trial. Expect the loaded perks to be unused for that match."
+  }
+ },
+ "MurkyReagent": {
+  "id": "MurkyReagent",
+  "name": "Murky Reagent",
+  "role": null,
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "atmosphere",
+  "tags": [
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_murkyReagent.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_murkyReagent.png",
+  "iconFile": "IconFavors_murkyReagent.png",
+  "effect": "<b>Greatly thickens</b> the Dark Mist.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Fog offering that greatly thickens the Dark Mist, stronger than the moderate version. Either side can burn it since it carries no role lock.",
+   "whyItMatters": "A much thicker fog hides movement from both sides, making a chase feel near-blind. Whoever reads sound and rhythm best gains the edge.",
+   "whenToUseIt": "Light it when the point is a dense-fog trial, such as practicing auditory play. It also suits testing how a chase feels with limited sight."
+  }
+ },
+ "NewMoonBouquet": {
+  "id": "NewMoonBouquet",
+  "name": "New Moon Bouquet",
+  "role": null,
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "lighting",
+  "tags": [],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_newMoonBouquet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_newMoonBouquet.png",
+  "iconFile": "IconFavors_newMoonBouquet.png",
+  "effect": "Calls upon The Entity for the <b>darkest moonlight</b>.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Lighting offering that calls upon The Entity for the darkest moonlight in a trial. It is a mood and difficulty tool rather than a reward boost.",
+   "whyItMatters": "Darker moonlight shrinks visibility for both sides, making every chase harder to read. A team that tracks by sound gains the most from that darkness.",
+   "whenToUseIt": "Burn it when the aim is atmosphere and difficulty, like a spooky session. It also fits a practice run that tests sound-based tracking."
+  }
+ },
+ "PaintedRiverRock": {
+  "id": "PaintedRiverRock",
+  "name": "Painted River Rock",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_paintedRiverRock.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_paintedRiverRock.png",
+  "iconFile": "IconFavors_paintedRiverRock.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to Red Forest when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Painted River Rock tilts the starting map roll toward Red Forest with each copy burned, so a few stacked in the offering box makes the drift noticeably stronger. Any role in the trial can burn it, making it a shared realm-influence tool rather than a side-specific one.",
+   "whyItMatters": "Because it stacks, multiple copies build a stronger pull toward that realm cheaply. A cheap layered pull is easier to afford than a single strong offering.",
+   "whenToUseIt": "Burn a few when Red Forest is the goal, such as a low-cost realm grind. It also fits learning the map before a group hunt."
+  }
+ },
+ "PElliotLunacyTicket": {
+  "id": "PElliotLunacyTicket",
+  "name": "P.Elliott Lunacy Ticket",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_pElliottLunacyTicket.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_pElliottLunacyTicket.png",
+  "iconFile": "IconFavors_pElliottLunacyTicket.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to Crotus Prenn Asylum when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Crotus Prenn Asylum pull that sharply tilts a trial's map toward the asylum when burnt. Any role can burn it, and extra copies compound the bias so the asylum shows up reliably. Bring it when grinding Asylum-exclusive offerings or drilling specific asylum routes.",
+   "whyItMatters": "Since it stacks and pulls harder than a basic ticket, it is a flexible map-targeting tool for Crotus Prenn practice or rewards. Every trial in the session lands on the same map.",
+   "whenToUseIt": "Bring several when Crotus Prenn is the destination, such as a realm reward hunt. It also suits drilling that map's layouts before a group session."
+  }
+ },
+ "PetrifiedOak": {
+  "id": "PetrifiedOak",
+  "name": "Petrified Oak",
+  "role": "survivor",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "hook",
+  "tags": [
+   "white",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_petrifiedOak.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_petrifiedOak.png",
+  "iconFile": "IconFavors_petrifiedOak.png",
+  "effect": "Calms The Entity and <b>Slightly increases</b> the <b>distance</b> between sacrificial hooks appearing in the world.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Survivor-only hook offering that slightly pushes the sacrificial hooks farther apart. It gives a team more breathing room between hooks.",
+   "whyItMatters": "Farther-apart hooks make wide chases and long escapes a bit safer for a fleeing survivor. It suits a team that leans on long loops to shake a killer.",
+   "whenToUseIt": "Light it when the goal is a safer chase for the team, such as practicing long loops. It also fits testing a survivor's escape options in a controlled trial."
+  }
+ },
+ "PrimroseBlossomSachet": {
+  "id": "PrimroseBlossomSachet",
+  "name": "Primrose Blossom Sachet",
+  "role": "survivor",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_primroseBlossomSachet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_primroseBlossomSachet.png",
+  "iconFile": "IconFavors_primroseBlossomSachet.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Altruism category.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Survivor offering that boosts Altruism Bloodpoint earnings for the duration of the trial. It is a personal effect, so the uplift stays with the survivor who burns it and does not spread to the rest of the group.",
+   "whyItMatters": "Extra Altruism points accelerate a survivor who earns them through healing and rescue actions. It reads as a farming tool rather than a build-planning one, since it never touches chase mechanics.",
+   "whenToUseIt": "Equip it when a survivor session is all about grinding Altruism rewards. Keep burning it session after session, since it is common rarity and easy to replace."
+  }
+ },
+ "PsychiatricAssessmentReport": {
+  "id": "PsychiatricAssessmentReport",
+  "name": "Psychiatric Assessment Report",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_psychiatricAssessmentReport.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_psychiatricAssessmentReport.png",
+  "iconFile": "IconFavors_psychiatricAssessmentReport.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to Léry's Memorial Institute when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Realm-shifting offering that raises the odds of a trial landing on Lery's Memorial Institute. The effect stacks, so burning several copies in one trial pushes the pull further in the same direction.",
+   "whyItMatters": "A tilted map roll suits anyone hunting a perk or add-on that only appears on that realm. It is a build-planning tool for a focused farming run rather than a casual pick.",
+   "whenToUseIt": "Use it when Lery's Memorial Institute is the target realm for the day and extra pull is needed. Multiple copies stack together, so burn a few in the same slot to strengthen the effect before the trial begins."
+  }
+ },
+ "PutridOak": {
+  "id": "PutridOak",
+  "name": "Putrid Oak",
+  "role": "killer",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "hook",
+  "tags": [
+   "black",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_putridOak.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_putridOak.png",
+  "iconFile": "IconFavors_putridOak.png",
+  "effect": "Calls upon The Entity to <b>Considerably decrease</b> the <b>distance</b> between sacrificial hooks appearing in the world.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Killer offering that nudges The Entity to place sacrificial hooks closer together across the map. It is a secret effect, so the change will not be announced to survivors.",
+   "whyItMatters": "Tighter hook spacing gives a killer more options when carrying a survivor, making it harder to reach an escape because the next hook is far away. It is a build-planning tool for chase-heavy killers who value control.",
+   "whenToUseIt": "Burn it before a trial where hook control is the goal. It fits a session focused on mastering hook-to-hook transitions rather than a casual match."
+  }
+ },
+ "QatarThemeOffering": {
+  "id": "QatarThemeOffering",
+  "name": "Hawkins National Laboratory I.D.",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_hawkinsNationalLaboratoryID.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_hawkinsNationalLaboratoryID.png",
+  "iconFile": "IconFavors_hawkinsNationalLaboratoryID.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Hawkins National Laboratory when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A map-focused offering that strongly favors placement on Hawkins National Laboratory. The effect does not stack, so the first copy carries the full pull.",
+   "whyItMatters": "A single burn can pull a trial toward Hawkins National Laboratory, which suits anyone farming a perk or add-on locked to that map. Because the effect does not stack, one copy carries the full pull and nothing more.",
+   "whenToUseIt": "Equip it when Hawkins National Laboratory is the target realm for the session. One copy applies the full effect, so the remaining slots can go to other needs."
+  }
+ },
+ "QuantumThemeOffering": {
+  "id": "QuantumThemeOffering",
+  "name": "Beef Tallow Mixture",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_beefTallowMixture.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_beefTallowMixture.png",
+  "iconFile": "IconFavors_beefTallowMixture.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to The Decimated Borgo when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "It is a realm-locking offering that steers a trial toward The Decimated Borgo. The pull comes from a single copy, so extras in the same run do nothing.",
+   "whyItMatters": "It is a direct route to that map, which suits anyone farming a reward that only drops there. It reads as a build-planning tool aimed at one specific realm.",
+   "whenToUseIt": "Burn it when The Decimated Borgo is the realm the session is chasing. Save the other offering slots for points or luck boosts, since one copy is enough."
+  }
+ },
+ "QuarterMoonBouquet": {
+  "id": "QuarterMoonBouquet",
+  "name": "Quarter Moon Bouquet",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "lighting",
+  "tags": [],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_quarterMoonBouquet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_quarterMoonBouquet.png",
+  "iconFile": "IconFavors_quarterMoonBouquet.png",
+  "effect": "Calls upon The Entity for a <b>brighter moonlight</b>.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Lighting offering that calls on The Entity to raise the brightness of the moon in the trial. It changes the look of the world rather than the mechanics underneath it.",
+   "whyItMatters": "A brighter moon makes every corner of the map easier to read, which helps a survivor spot dangers and also makes a killer easier to see. It is a cosmetic change with no mechanical edge attached.",
+   "whenToUseIt": "Burn it on a night when visibility is the goal, such as practicing map awareness or simply enjoying the look. It does not favor any role or map, so it fits casual sessions as well as farming ones."
+  }
+ },
+ "QuicheThemeOffering": {
+  "id": "QuicheThemeOffering",
+  "name": "VIP Wristband",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconsFavors_vipWristband.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconsFavors_vipWristband.png",
+  "iconFile": "IconsFavors_vipWristband.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Trickster's Delusion when burned.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A realm-targeting offering that drags a trial toward Trickster's Delusion. One copy applies the full pull, so additional copies in the same trial have no effect.",
+   "whyItMatters": "Burning it dramatically tilts the trial toward Trickster's Delusion, so any perk or add-on you are farming that lives on that map becomes far easier to chase. Since the effect does not stack, carrying an extra copy adds nothing. It reads as a build-planning tool rather than a direct Bloodpoint source.",
+   "whenToUseIt": "Bring it when Trickster's Delusion is the map the session needs. Since the pull is fixed by a single copy, the rest of the slots can go toward other goals."
+  }
+ },
+ "RavenWreath": {
+  "id": "RavenWreath",
+  "name": "Raven Wreath",
+  "role": "killer",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_ravenWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_ravenWreath.png",
+  "iconFile": "IconFavors_ravenWreath.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Deviousness category.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Broad killer offering that boosts Deviousness Bloodpoint earnings for the trial. It is a personal farming effect with no influence on chase behavior.",
+   "whyItMatters": "Extra Deviousness points reward a killer who earns them through kills and hook actions, speeding progress toward rarer rewards. It is a farming tool, not a build-planning one.",
+   "whenToUseIt": "Equip it when a killer session is all about grinding Deviousness points. It is common rarity, so it is cheap to burn repeatedly across a long session."
+  }
+ },
+ "RedMoney": {
+  "id": "RedMoney",
+  "name": "Red Envelope",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode",
+   "personal"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_redEnvelope.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_redEnvelope.png",
+  "iconFile": "IconFavors_redEnvelope.png",
+  "effect": "A gesture of generosity to bring good fortune to the unfortunate. Calls upon The Entity to generate <b>1 Red Envelope</b> in the trial.<br><br>The aura of your own envelope is revealed to you at the start of the trial.Interacting with your own Red Envelope reveals its aura to all other players in the trial until claimed.Opening another player's Red Envelope awards you with <b>Bloodpoints of a random amount.</b>When another player opens your envelope during the trial, you are awarded Bloodpoints and a cosmetic from the <b>Moonlight Burrow</b> collection.Increased Bloodpoints awarded from Lunar New Year Generators and Hooks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Social offering that places a Red Envelope in the trial and reveals its aura to the burner at the start. Interacting with one's own envelope reveals its location to everyone else until it is claimed.",
+   "whyItMatters": "Opening another player's envelope pays out Bloodpoints, and having one's own opened pays back Bloodpoints plus a cosmetic surprise. It reads as a group-farming tool, since its value grows when several players share a trial.",
+   "whenToUseIt": "Burn it when playing with a group that agrees to open each other's envelopes. Solo sessions get less from it, because the payoff depends on other players finding and claiming the envelope."
+  }
+ },
+ "RottenOak": {
+  "id": "RottenOak",
+  "name": "Rotten Oak",
+  "role": "killer",
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "hook",
+  "tags": [
+   "black",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_rottenOak.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_rottenOak.png",
+  "iconFile": "IconFavors_rottenOak.png",
+  "effect": "Calls upon The Entity to <b>Moderately decrease</b> the <b>distance</b> between sacrificial hooks appearing in the world.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Killer offering that nudges The Entity to ease the spacing between sacrificial hooks. It is a secret effect and a lighter form of hook spacing control.",
+   "whyItMatters": "Moderately tighter hook spacing eases a killer's decision about where to carry a hooked survivor, giving noticeably more control over the chase. It works as a build-planning tool for a killer who wants a real edge in hook placement without spending on a stronger version of the effect.",
+   "whenToUseIt": "Burn it on casual killer sessions where hook placement comfort is the goal. The effect is a moderate nudge, so it suits lighter plays where full control is not required."
+  }
+ },
+ "SacrificalWard": {
+  "id": "SacrificalWard",
+  "name": "Sacrificial Ward",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "proceduralgeneration",
+  "tags": [
+   "stack",
+   "theme"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_sacrificialWard.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_sacrificialWard.png",
+  "iconFile": "IconFavors_sacrificialWard.png",
+  "effect": "Calls upon The Entity to reject all offerings that alter the chance of being sent to a specific realm.<br><br>This can only be canceled if four identical realm offerings are played.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Realm-locking offering that blocks any realm-shifting offerings from working in the trial. It can be overridden if enough identical realm offerings are burned together.",
+   "whyItMatters": "Burning it flattens the map odds, which can stop a friend from quietly steering the trial to a favorite realm. It is a control tool for group sessions where a fair roll matters.",
+   "whenToUseIt": "Bring it when a group wants a fair roll or when a realm is being farmed by too many at once. Watch for the override condition, since a coordinated stack of identical realm offerings can cancel it."
+  }
+ },
+ "SaltPouch": {
+  "id": "SaltPouch",
+  "name": "Salt Pouch",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "luck",
+  "tags": [
+   "stack",
+   "white"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_saltPouch.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_saltPouch.png",
+  "iconFile": "IconFavors_saltPouch.png",
+  "effect": "Unlocks the ability to attempt to unhook yourself for all Survivors.<br><br>Increases all Survivors' luck by <b>1%</b>.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Survivor offering that unlocks the ability for all Survivors to attempt unhooking themselves. It also adds a small luck bump to every survivor in the trial.",
+   "whyItMatters": "That unhook option can turn a hooked survivor's worst moment into a possible escape. It benefits the whole survivor side, not just the one who burns it.",
+   "whenToUseIt": "Equip it when a group wants more escape chances from hooks during a session. It is a shared effect, so one copy serves everyone on the survivor side."
+  }
+ },
+ "ScratchedCoin": {
+  "id": "ScratchedCoin",
+  "name": "Scratched Coin",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "chest",
+  "tags": [
+   "black",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_scratchedCoin.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_scratchedCoin.png",
+  "iconFile": "IconFavors_scratchedCoin.png",
+  "effect": "Calls on The Entity to prevent the appearance of <b>1</b> chest.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Killer offering that removes one chest from the trial's world. It is a secret effect with a small but real impact on survivor income.",
+   "whyItMatters": "Fewer chests means survivors earn less through chest openings, which favors a killer who wants the session to lean on chase rewards. It is a light pressure tool rather than a build change.",
+   "whenToUseIt": "Burn it when a killer wants to thin out survivor income in a trial. The cut is small, so it suits casual matches more than a serious farming session."
+  }
+ },
+ "SealedEnvelope": {
+  "id": "SealedEnvelope",
+  "name": "Sealed Envelope",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "stack",
+   "white",
+   "notavailableinpartymode",
+   "personal"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_sealedEnvelope.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_sealedEnvelope.png",
+  "iconFile": "IconFavors_sealedEnvelope.png",
+  "effect": "Grants <b>25%</b> bonus Bloodpoints in all categories.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Every-category survivor offering that lifts Bloodpoint earnings across the board for the trial. It is a personal effect that stays with the burner.",
+   "whyItMatters": "A broad uplift speeds up any survivor's progress, no matter which actions earn the points. It is a general farming tool that fits almost any session goal.",
+   "whenToUseIt": "Burn it when a survivor wants steady Bloodpoint growth without committing to one category. It is personal, so each survivor who wants the boost needs their own copy."
+  }
+ },
+ "ShatteredGlasses": {
+  "id": "ShatteredGlasses",
+  "name": "Shattered Glasses",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shatteredGlasses.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shatteredGlasses.png",
+  "iconFile": "IconFavors_shatteredGlasses.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Léry's Memorial Institute when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Realm-shifting offering that strongly favors placement on Lery's Memorial Institute. It is a single-shot effect, so extra copies add nothing.",
+   "whyItMatters": "The strong pull toward Lery's Memorial Institute suits a dedicated farming run on that specific map. Because one copy delivers the full effect, the other offering slots stay open for points or luck.",
+   "whenToUseIt": "Burn it when the goal is to reach Lery's Memorial Institute and the pull needs to be as strong as possible. One copy does the full work, leaving the remaining slots free for other effects."
+  }
+ },
+ "ShinyCoin": {
+  "id": "ShinyCoin",
+  "name": "Shiny Coin",
+  "role": "survivor",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "chest",
+  "tags": [
+   "white",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shinyCoin.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shinyCoin.png",
+  "iconFile": "IconFavors_shinyCoin.png",
+  "effect": "Calls on The Entity to create <b>2</b> more chests.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A survivor offering that calls on The Entity to spawn extra chests across the trial map. The secret effect targets loot volume rather than any chase or realm outcome.",
+   "whyItMatters": "More chests means more income for a survivor grinding through a session, which accelerates Bloodpoint and cosmetic progress. It is a pure farming tool with no effect on chase mechanics.",
+   "whenToUseIt": "Burn it when a survivor wants to maximize chest income in a trial. It is very rare, so save it for sessions where the extra loot is worth the scarce offering."
+  }
+ },
+ "ShockSplinter": {
+  "id": "ShockSplinter",
+  "name": "Shock Splinter",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killer",
+  "tags": [
+   "notavailableinpartymode",
+   "black",
+   "mystery",
+   "not_available_for_killer07"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shockSplinter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shockSplinter.png",
+  "iconFile": "IconFavors_shockSplinter.png",
+  "effect": "Allows you to take on the role of The Doctor for the next trial. <i>Your current perks and add-ons will not be used.</i><br><br>Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Role-swap offering that turns the next trial into The Doctor for the burner. The current perks and add-ons are not used while it is active.",
+   "whyItMatters": "It is a way to try The Doctor's kit without committing to the character on the roster. The trade-off is real, since the burner's existing perks and add-ons sit unused for that trial.",
+   "whenToUseIt": "Burn it to preview The Doctor before committing to the character in a roster slot. It lasts a single trial, so treat it as a taste rather than a permanent change."
+  }
+ },
+ "ShreddedPlate": {
+  "id": "ShreddedPlate",
+  "name": "Shredded Plate",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shreddedPlate.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shreddedPlate.png",
+  "iconFile": "IconFavors_shreddedPlate.png",
+  "effect": "<b>Slightly increases</b> the chances of being sent to the Autohaven Wreckers when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Realm-shifting offering that lightly favors placement on the Autohaven Wreckers. The effect stacks, so burning several copies together strengthens the pull.",
+   "whyItMatters": "A mild tilt toward the Autohaven Wreckers realm nudges random sessions in the desired direction without locking the trial completely. Its common rarity means copies pile up easily, making it a low-cost way to bias map placement over many trials.",
+   "whenToUseIt": "Bring it when the Autohaven Wreckers is the realm being farmed and the session can spare several offering slots. Stacking a few copies gives a better chance than burning just one."
+  }
+ },
+ "ShrikeWreath": {
+  "id": "ShrikeWreath",
+  "name": "Shrike Wreath",
+  "role": "killer",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shrikeWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shrikeWreath.png",
+  "iconFile": "IconFavors_shrikeWreath.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Sacrifice category.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Killer-only offering that amplifies Sacrifice Bloodpoint gains throughout the trial. It belongs to the points category, so it feeds directly into Bloodpoint farming rather than chase or map control.",
+   "whyItMatters": "A killer who hooks and hooks survivors earns more from each grim action, accelerating overall progress in that category. It fits a dedicated farming session where Sacrifice points are the goal.",
+   "whenToUseIt": "Burn it at the start of any session where a killer is focused on accumulating Sacrifice Bloodpoints. The common rarity means copies are easy to find, so there is little cost to using one."
+  }
+ },
+ "ShroudofBinding": {
+  "id": "ShroudofBinding",
+  "name": "Shroud of Separation",
+  "role": "survivor",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "position",
+  "tags": [
+   "white",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shroudOfSeparation.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shroudOfSeparation.png",
+  "iconFile": "IconFavors_shroudOfSeparation.png",
+  "effect": "All Survivors start the trial separated.<br><br>Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Position offering that scatters every Survivor across the map at the start of the trial. It is a secret effect that reshapes the opening minutes.",
+   "whyItMatters": "Separation changes the opening, since survivors no longer group up early and must spend time reaching each other. It is a build-planning tool for groups that want a more spread-out start.",
+   "whenToUseIt": "Use it when a group wants to rehearse how the team reacts to a fully scattered opening. Its very rare status means copies are hard to find, so spend one on a session where the unusual start is the focus."
+  }
+ },
+ "ShroudofSeparation": {
+  "id": "ShroudofSeparation",
+  "name": "Shroud of Vanishing",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "proceduralgeneration",
+  "tags": [
+   "stack",
+   "black",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconsFavors_shroudOfVanishing.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconsFavors_shroudOfVanishing.png",
+  "iconFile": "IconsFavors_shroudOfVanishing.png",
+  "effect": "Calls on The Entity to nullify any offerings that would change the Survivors' starting locations.<br><br>Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Nullifies any other offerings that would alter survivor starting locations, and it can only be burned by a killer. The effect is secret and uncommon, with no Bloodpoint or luck component.",
+   "whyItMatters": "It keeps spawn positions on their normal random distribution, which is useful for a group that coordinated its strategy around standard spawn spots. It reads as a planning tool rather than a farming tool, since it cancels effects instead of granting a bonus.",
+   "whenToUseIt": "Burn it when a teammate accidentally stacked offerings that would scatter spawns and the group plan depends on predictable starting positions. It is especially relevant in coordinated group play rather than solo grinding."
+  }
+ },
+ "ShroudofUnion": {
+  "id": "ShroudofUnion",
+  "name": "Shroud of Union",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "position",
+  "tags": [
+   "white",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shroudOfUnion.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shroudOfUnion.png",
+  "iconFile": "IconFavors_shroudOfUnion.png",
+  "effect": "You start the trial with someone else.<br><br>Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Places the burner in the same starting area as another survivor at the start of a trial. The effect is secret and uncommon, and it only works for a survivor.",
+   "whyItMatters": "It pairs a survivor with a teammate from the very first moment, which helps a duo coordinate an early generator or a rescue plan without losing time searching for each other. It is a build-planning tool for group play rather than a farming option.",
+   "whenToUseIt": "Bring it when the group wants two survivors to start together for an efficient early push on a far generator or a hook defense. It is less useful in solo play since the pairing target is still random."
+  }
+ },
+ "SignedLedgerPage": {
+  "id": "SignedLedgerPage",
+  "name": "Signed Ledger Page",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_signedLedgerPage.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_signedLedgerPage.png",
+  "iconFile": "IconFavors_signedLedgerPage.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to the MacMillan Estate when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "It biases the map roll toward MacMillan Estate when burnt. The effect is uncommon and stacks, so multiple copies amplify the bias further.",
+   "whyItMatters": "It is a map-hunting tool for anyone who wants to farm Bloodpoints or practice a specific build on MacMillan Estate. Because it stacks, burning several copies at once makes the result much more reliable than a single copy.",
+   "whenToUseIt": "Bring it when the session targets MacMillan Estate repeatedly, whether for a mastery grind or a map achievement. Because the bias stacks with each additional copy, burning a few together sharpens the odds of landing there."
+  }
+ },
+ "SmokingSplinter": {
+  "id": "SmokingSplinter",
+  "name": "Smoking Splinter",
+  "role": "killer",
+  "rarity": "iridescent",
+  "rarityRaw": "visceral",
+  "category": "killer",
+  "tags": [
+   "notavailableinpartymode",
+   "black",
+   "mystery",
+   "not_available_for_nightmare"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_smokingSplinter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_smokingSplinter.png",
+  "iconFile": "IconFavors_smokingSplinter.png",
+  "effect": "Allows you to take on the role of <b>The Nightmare</b> for the next trial. <i>Your current perks and add-ons will not be used.</i><br><br>Secret.<br>",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Swaps the burner into The Nightmare for the next trial, discarding current perks and add-ons in the process. The effect is secret, iridescent, and limited to one trial.",
+   "whyItMatters": "It gives a killer a short sampling of The Nightmare's playstyle without committing to that character's loadout for an extended period. The perk and add-on loss makes it a try-before-you-buy tool rather than a farming or build-planning option.",
+   "whenToUseIt": "Burn it when curiosity about The Nightmare's powers is high and a full commitment to the character feels premature. Expect to lose the current perk setup for that one trial, so plan around that cost."
+  }
+ },
+ "SpottedOwlWreath": {
+  "id": "SpottedOwlWreath",
+  "name": "Spotted Owl Wreath",
+  "role": "killer",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_spottedOwlWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_spottedOwlWreath.png",
+  "iconFile": "IconFavors_spottedOwlWreath.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Hunting category.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Killers burn it to boost Hunting Bloodpoints for the next trial. The bonus stays modest and applies only to that single category.",
+   "whyItMatters": "It is a straightforward farming tool for a killer chasing up Bloodpoints through chases and hooks without affecting any other category. The bonus is small enough that it fits casual grinding rather than a high-stakes farming run.",
+   "whenToUseIt": "Burn it on a casual killer session where the goal is simply to rack up Hunting Bloodpoints. It is especially handy on a map the killer already knows well, since the focus stays on chases rather than learning new terrain."
+  }
+ },
+ "Spring2024Offering": {
+  "id": "Spring2024Offering",
+  "name": "Bloodshot Eye",
+  "role": null,
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "personal",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_bloodshotEye.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_bloodshotEye.png",
+  "iconFile": "IconFavors_bloodshotEye.png",
+  "effect": "An eye filled with, and capable of finding, strange blood.<br><br>Personal.Provides a +<b>100%</b> Bloodpoints bonus to all Blood Moon score events.<i>Only usable when playing <b>Event: Blood Moon</b>.</i>",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A very rare personal effect tied to the Blood Moon event that doubles Bloodpoints from score events. It is only usable while playing Event: Blood Moon and has no effect outside that mode.",
+   "whyItMatters": "It turns a Blood Moon event into a high-yield farming window for whoever burns it, since the bonus applies across all score events rather than a single category. It reads as a farming tool tied to a specific event mode rather than a general build-planning choice.",
+   "whenToUseIt": "Burn it only while playing Event: Blood Moon, since it has no effect outside that mode. It is the right pick for a focused farming session where score-event actions are the main goal."
+  }
+ },
+ "StrodeRealtyKey": {
+  "id": "StrodeRealtyKey",
+  "name": "Strode Realty Key",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_strodeRealtyKey.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_strodeRealtyKey.png",
+  "iconFile": "IconFavors_strodeRealtyKey.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Haddonfield when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "It biases the map roll toward Haddonfield when burnt. The effect is rare and secret, and it does not stack with itself.",
+   "whyItMatters": "A killer or survivor can use it to bias map selection toward Haddonfield, which is handy for practicing that layout or farming a character's mastery on it. Since it does not stack, one copy is the ceiling for this particular boost.",
+   "whenToUseIt": "Bring it for a session focused on Haddonfield, whether that means drilling a survivor's generator loops or learning a killer's power spots on that map. A single copy is the most that can be applied at once."
+  }
+ },
+ "SummerOffering": {
+  "id": "SummerOffering",
+  "name": "BBQ Invitation",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_bbqInvitation.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_bbqInvitation.png",
+  "iconFile": "IconFavors_bbqInvitation.png",
+  "effect": "Has the distinct aroma of burning flesh.<br><br>Grants a <b>100% Bloodpoints bonus</b> to Summer hooks and finished Summer generator repairs.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "An offering that grants a full bonus to Summer hook placements and completed Summer generator repairs. The bonus is limited to those two seasonal actions.",
+   "whyItMatters": "It is a farming tool aimed at a seasonal event, doubling the Bloodpoints from two specific actions during the Summer event window. It does not affect any other category, so it is useful only while the Summer event content is active.",
+   "whenToUseIt": "Burn it during a Summer event session where the plan is to place Summer hooks or finish Summer generators for extra Bloodpoints. Outside the event window it has no special effect, so saving it for the right season makes sense."
+  }
+ },
+ "SurvivorPudding": {
+  "id": "SurvivorPudding",
+  "name": "Survivor Pudding",
+  "role": "killer",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "points",
+  "tags": [
+   "black",
+   "stack",
+   "personal",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_survivorPudding.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_survivorPudding.png",
+  "iconFile": "IconFavors_survivorPudding.png",
+  "effect": "Grants <b>100%</b> bonus Bloodpoints in all categories.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "The bonus covers every Bloodpoints category for a killer who burns it. The effect is uncommon, personal, and applies to all tracked actions at once.",
+   "whyItMatters": "It is a broad farming tool for a killer who wants to accelerate Bloodpoint gains from every action at once. The all-category coverage makes it useful for any farming session, not just a single focus.",
+   "whenToUseIt": "Burn it on a killer farming night when the goal is to maximize total Bloodpoints regardless of which actions are landing. A killer with a single category focus might prefer a more targeted offering, but for a mixed session this is the simple pick."
+  }
+ },
+ "SweetWilliamSachet": {
+  "id": "SweetWilliamSachet",
+  "name": "Sweet William Sachet",
+  "role": "survivor",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "personal",
+   "white",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_sweetWilliamSachet.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_sweetWilliamSachet.png",
+  "iconFile": "IconFavors_sweetWilliamSachet.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Boldness category.<br><br>Personal.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A personal bonus for a survivor that boosts Boldness Bloodpoints for the next trial. The effect is common and applies only to that single category.",
+   "whyItMatters": "A survivor burning it gains a personal boost to Boldness Bloodpoints earned from rescues and generator work. It reads as a casual-session farming pick rather than a dedicated grind tool, since the uplift is modest in scope.",
+   "whenToUseIt": "Burn it on a survivor session focused on rescues and generator work, where Boldness actions naturally happen several times per trial. It is a simple pick-and-burn option for light grinding between more structured farming sessions."
+  }
+ },
+ "TanagerWreath": {
+  "id": "TanagerWreath",
+  "name": "Tanager Wreath",
+  "role": "killer",
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "points",
+  "tags": [
+   "stack",
+   "black",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_tanagerWreath.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_tanagerWreath.png",
+  "iconFile": "IconFavors_tanagerWreath.png",
+  "effect": "Grants <b>50%</b> bonus Bloodpoints in the Brutality category.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Killer-only common points offering that amplifies the Brutality Bloodpoint pool earned during a trial. Burning it produces no luck, map, or realm change; it simply inflates that single category.",
+   "whyItMatters": "It is a farming tool for a killer chasing Bloodpoints from downs and hook placements. The bonus is small enough that it suits a casual session where those actions happen naturally during normal play.",
+   "whenToUseIt": "Burn it on a killer session where the playstyle naturally produces a lot of downs and hooks. It is a simple way to add extra Bloodpoints to an otherwise normal trial without changing the build."
+  }
+ },
+ "TarnishedCoin": {
+  "id": "TarnishedCoin",
+  "name": "Tarnished Coin",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "chest",
+  "tags": [
+   "white",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_tarnishedCoin.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_tarnishedCoin.png",
+  "iconFile": "IconFavors_tarnishedCoin.png",
+  "effect": "Calls on The Entity to create <b>1</b> more chest.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "An uncommon secret chest offering that calls on The Entity to spawn an extra chest somewhere in the trial when a survivor burns it. Beyond that added chest there is no Bloodpoint gain and no luck shift.",
+   "whyItMatters": "It gives the survivor team one additional source of loot, which can be the difference between finding a needed add-on or leaving a trial empty-handed. It is a farming tool for add-on hunting rather than a build-planning choice.",
+   "whenToUseIt": "Equip it when the group is chasing a specific add-on and wants a higher chance of finding it inside a chest. In a pure Bloodpoint grind the extra chest adds little value, so save the slot for loot-focused sessions."
+  }
+ },
+ "TheLastMask": {
+  "id": "TheLastMask",
+  "name": "The Last Mask",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_theLastMask.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_theLastMask.png",
+  "iconFile": "IconFavors_theLastMask.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Red Forest when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Secret world offering of rare rarity that pushes the map roll strongly toward Red Forest. One burn already delivers the full bias and extra copies add nothing further.",
+   "whyItMatters": "The goal is to land on Red Forest repeatedly, and the fog-shrouded layout rewards someone who wants to drill its specific loops and corners. Since it does not stack, a single copy is the ceiling for this map bias.",
+   "whenToUseIt": "Use it when the target map is Red Forest, such as when learning its fog zones or grinding a character's mastery there. A single copy is sufficient; burning more at the same time adds nothing."
+  }
+ },
+ "ThePiedPiper": {
+  "id": "ThePiedPiper",
+  "name": "The Pied Piper",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_thePiedPiper.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_thePiedPiper.png",
+  "iconFile": "IconFavors_thePiedPiper.png",
+  "effect": "<b>Tremendously increases</b> the chances of being sent to Springwood when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Rare secret world offering that tilts the map roll decisively toward Springwood. The effect applies once per trial and cannot be reinforced by burning additional copies.",
+   "whyItMatters": "It pushes map selection toward Springwood, which is useful for drilling that loop-heavy terrain or completing map-specific goals. One copy is the limit for this map bias, since it does not stack.",
+   "whenToUseIt": "Equip it on a session dedicated to Springwood, whether the aim is practicing its open chases or clearing a map achievement. One copy delivers the full bias, so additional copies waste the slot."
+  }
+ },
+ "TornBlueprint": {
+  "id": "TornBlueprint",
+  "name": "Torn Blueprint",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "proceduralgeneration",
+  "tags": [
+   "personal",
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_tornBlueprint.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_tornBlueprint.png",
+  "iconFile": "IconFavors_tornBlueprint.png",
+  "effect": "Reveals the aura of the basement hooks to you for <b>20 seconds</b> at the start of the trial. <b>Tremendously</b> increases the chance of spawning the basement in the main building, if the map has a main building.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Reveals the aura of basement hooks at the start of a trial and biases the basement spawn toward the main building. The effect is common and secret, and the spawn bias only applies on maps with a main building.",
+   "whyItMatters": "It is a build-planning tool for a group that wants a reliable basement hook location early in the trial, since the aura reveal shortens the search. The spawn bias also makes the basement more likely to appear in a predictable spot, which helps a coordinated rescue or loot plan.",
+   "whenToUseIt": "Burn it when the group relies on the basement hook sitting in a predictable spot for an early rescue or a killer's hook plan. On maps lacking a main building the spawn bias falls away, leaving just the brief aura reveal as the remaining benefit."
+  }
+ },
+ "UkraineThemeOffering": {
+  "id": "UkraineThemeOffering",
+  "name": "Shattered Bottle",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_shatteredBottle.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_shatteredBottle.png",
+  "iconFile": "IconFavors_shatteredBottle.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Grave of Glenvale when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "World offering of rare rarity that pulls the map roll hard toward Grave of Glenvale. A single copy carries the maximum pull and stacking does not strengthen it.",
+   "whyItMatters": "The map bias makes it straightforward to learn Grave of Glenvale's open loops or farm a character mastery there. Because extra copies add nothing, a single burn already delivers the maximum pull.",
+   "whenToUseIt": "Use it when the target map is Grave of Glenvale, such as when learning its open terrain or grinding a character's mastery on that map. A single copy is enough; extra copies at the same time add nothing."
+  }
+ },
+ "UmbraThemeOffering": {
+  "id": "UmbraThemeOffering",
+  "name": "Alien Flora",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_alienFlora.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_alienFlora.png",
+  "iconFile": "IconFavors_alienFlora.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to <b>Toba Landing</b> when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Alien Flora is a rare secret world offering that steers the map roll strongly toward Toba Landing. The bias is single-use in strength and does not compound with more copies.",
+   "whyItMatters": "It pushes the map roll toward Toba Landing, which rewards someone who wants to practice its wet, fog-heavy layout. A single copy is the limit, since the effect does not stack.",
+   "whenToUseIt": "Equip it when the session is a Toba Landing run, whether the goal is practicing its fog-shrouded chases or finishing a map achievement. The bias caps at one copy, so spending extras on the same trial gains nothing."
+  }
+ },
+ "VigosBlueprint": {
+  "id": "VigosBlueprint",
+  "name": "Vigo’s Blueprint",
+  "role": null,
+  "rarity": "common",
+  "rarityRaw": "common",
+  "category": "proceduralgeneration",
+  "tags": [
+   "stack",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_vigosBlueprint.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_vigosBlueprint.png",
+  "iconFile": "IconFavors_vigosBlueprint.png",
+  "effect": "<b>Tremendously</b> increases the chance of spawning the Hatch in the main building, if the map has a main building.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Common secret procedural-generation offering that favors the Hatch spawning inside the main building on maps where one exists. It alters placement only, with no Bloodpoint or luck component attached.",
+   "whyItMatters": "A main-building Hatch gives a group a fixed spot to plan rescues and defend around, far easier to manage than one scattered across open terrain. The offering is a spawn-placement tool with no Bloodpoint or luck side effect.",
+   "whenToUseIt": "Equip it when the group strategy centers on a main-building Hatch, for instance an early rescue plan or a killer's hook rotation. Maps without a main building nullify the bias entirely, so the pick depends on which map drops."
+  }
+ },
+ "VigosJarOfSaltyLips": {
+  "id": "VigosJarOfSaltyLips",
+  "name": "Vigo's Jar of Salty Lips",
+  "role": "survivor",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "luck",
+  "tags": [
+   "stack",
+   "white"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_vigosJarOfSaltyLips.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_vigosJarOfSaltyLips.png",
+  "iconFile": "IconFavors_vigosJarOfSaltyLips.png",
+  "effect": "Unlocks the ability to attempt to unhook yourself for all Survivors.<br><br>Increases all Survivors' luck by <b>3%</b>.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Burning it lets every Survivor in the trial attempt unhooking themselves through a shared, very rare effect. It also grants every Survivor in the trial a small boost to luck.",
+   "whyItMatters": "Unlocking the self-unhook attempt gives every survivor a fresh escape route from the hook, while the luck bump nudges chest rolls slightly in their favor. It suits a team that values rescue flexibility and marginally better loot odds.",
+   "whenToUseIt": "Burn it when the group wants every survivor to have a second chance on a hook instead of waiting for a teammate to arrive. The luck boost is a welcome side effect for any session where chest hunting is part of the plan."
+  }
+ },
+ "VigosShroud": {
+  "id": "VigosShroud",
+  "name": "Vigo's Shroud",
+  "role": "survivor",
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "position",
+  "tags": [
+   "personal",
+   "mystery",
+   "white"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_vigosShroud.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_vigosShroud.png",
+  "iconFile": "IconFavors_vigosShroud.png",
+  "effect": "You start the trial as far as possible from the Killer.<br><br>Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Uncommon secret position offering for the survivor side that places the burner at maximum distance from the killer at trial start. No other stat, luck, or realm effect is attached.",
+   "whyItMatters": "It buys a survivor maximum starting distance from the killer, which is valuable for a slow survivor or a killer with strong early-game pressure. It is a build-planning tool for positioning rather than a farming option.",
+   "whenToUseIt": "Burn it when the killer picked is a strong early chaser and the survivor wants the widest possible escape window before the first chase. It is less useful against a killer with weak chase pressure, since the extra distance rarely matters."
+  }
+ },
+ "VirginiaPlate": {
+  "id": "VirginiaPlate",
+  "name": "Virginia Plate",
+  "role": null,
+  "rarity": "uncommon",
+  "rarityRaw": "uncommon",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "notavailableinpartymode"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_virginiaPlate.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_virginiaPlate.png",
+  "iconFile": "IconFavors_virginiaPlate.png",
+  "effect": "<b>Considerably increases</b> the chances of being sent to the Autohaven Wreckers when burnt.<br><br>Stacks.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A world offering that pulls the starting map toward Autohaven Wreckers. Burning several at once deepens that pull, making the destination even more likely.",
+   "whyItMatters": "Any side can burn it, and it turns the random map roll into a repeatable trip to one map. That consistency saves time when the goal is grinding bloodpoints or chests on Autohaven Wreckers rather than playing a varied rotation.",
+   "whenToUseIt": "Bring it when the plan is to farm Autohaven Wreckers specifically, such as chasing a map-specific cosmetic or stacking bloodpoint income on that layout. It fits a focused session of back-to-back trials on one map better than a casual mixed rotation."
+  }
+ },
+ "WalesThemeOffering": {
+  "id": "WalesThemeOffering",
+  "name": "Mary’s Letter",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_marysLetter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_marysLetter.png",
+  "iconFile": "IconFavors_marysLetter.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to Midwich Elementary School when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Mary's Letter is a rare world offering that strongly biases the starting map toward Midwich Elementary School. The effect does not stack, so one burn is all it takes.",
+   "whyItMatters": "The effect is secret, so the other side never sees the bias. A single burn is enough to make Midwich Elementary School far more likely to appear, which suits runs aimed at that map's specific rewards or a focused practice session.",
+   "whenToUseIt": "Burn it before a trial when Midwich Elementary School is the target, such as hunting a map-exclusive item or working through that layout's chase patterns. It is a straightforward pick for a map-farming session rather than a tactical one."
+  }
+ },
+ "WhiteWard": {
+  "id": "WhiteWard",
+  "name": "White Ward",
+  "role": "survivor",
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "protection",
+  "tags": [
+   "personal",
+   "white",
+   "ward",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_whiteWard.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_whiteWard.png",
+  "iconFile": "IconFavors_whiteWard.png",
+  "effect": "Burning this offering grants you protection against the loss of your item and add-ons.Secret.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "White Ward is a very rare survivor-side offering, marked secret so the killer cannot see its effect. It shields the survivor's item and add-ons from being lost during a trial.",
+   "whyItMatters": "It reads as an insurance tool for a survivor who is deep into an item progression or carrying a rare add-on. Burning it keeps those possessions safe through a trial where a loss would otherwise set progress back.",
+   "whenToUseIt": "Equip it in a trial where a survivor is relying on a high-value item and cannot afford to drop it. It earns its keep most in a match with a killer who punishes downed survivors hard enough to force item loss."
+  }
+ },
+ "Winter2024Offering": {
+  "id": "Winter2024Offering",
+  "name": "MISTLE TOES",
+  "role": null,
+  "rarity": "veryrare",
+  "rarityRaw": "veryrare",
+  "category": "points",
+  "tags": [
+   "notavailableinpartymode",
+   "personal",
+   "stack"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconsFavors_Winter.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconsFavors_Winter.png",
+  "iconFile": "IconsFavors_Winter.png",
+  "effect": "If you see these things hanging over you, the last thing you'll want is a kiss.Personal.Start the trial carrying <b>12 Snowskulls</b>.Decreases number of Snowskulls required to charge an Icy Snowskull by <b>1</b>.Provides a +<b>100%</b> Bloodpoints bonus to all Bone Chill score events.Create <b>1</b> more chest.<i>Only usable when playing <b>Event: Bone Chill</b>.</i>",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "A seasonal points offering, locked to the Bone Chill event and personal to the survivor who burns it, that seeds the trial with a stack of Snowskulls and adds an extra chest. It also trims the Snowskull cost for charging an Icy Snowskull and boosts Bloodpoint payouts on the event's score objectives.",
+   "whyItMatters": "Every effect here points the same direction, which is turning a Bone Chill trial into a denser Bloodpoint run with more chests to crack open. It is a farming tool by design, not a tactical or build-shaping pick.",
+   "whenToUseIt": "Burn it only inside a Bone Chill event when the goal is maximizing Bloodpoint income. It is unusable outside that event, and its rewards are tuned to that specific seasonal layout."
+  }
+ },
+ "WormholeThemeOffering": {
+  "id": "WormholeThemeOffering",
+  "name": "Airlock Doors",
+  "role": null,
+  "rarity": "rare",
+  "rarityRaw": "rare",
+  "category": "world",
+  "tags": [
+   "stack",
+   "theme",
+   "mystery"
+  ],
+  "retired": false,
+  "icon": "/island/apps/dbd/./sprites/IconFavors_airlockDoors.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconFavors_airlockDoors.png",
+  "iconFile": "IconFavors_airlockDoors.png",
+  "effect": "<b>Tremendously increases</b> the chance to be sent to <b>Nostromo Wreckage</b> when burnt.Secret.Does not stack.",
+  "source": "dbd.tricky.lol",
+  "beginner": {
+   "whatItIs": "Airlock Doors is a rare world offering that heavily biases the starting map toward Nostromo Wreckage. It does not stack, so a single burn is the full effect.",
+   "whyItMatters": "The effect is secret, so the opposing side never sees which map is being targeted. One burn alone pushes the starting location firmly toward Nostromo Wreckage.",
+   "whenToUseIt": "Bring it to a trial when Nostromo Wreckage is the destination, whether the aim is a map-specific cosmetic or practice on that layout's tight corridors. It suits a comfort session on a familiar map as well as a targeted loot run."
+  }
+ }
+}

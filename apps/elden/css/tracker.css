@@ -1,0 +1,944 @@
+/* tracker.css - the Tracker tab (lane P3 L8).
+ *
+ * The look is the in-game menu: a near-black ground, panels a shade lighter,
+ * one-pixel gold hairlines instead of borders that shout, gold serif headings,
+ * italic serif for the soft lines. Nothing glows except the thing you just
+ * touched. A checklist is a screen you stare at for a long time, so the
+ * restraint is the point - the ticked rows recede and the unticked ones stay
+ * legible.
+ *
+ * SCOPE. Everything is either under .er-tracker (the pane) or carries the
+ * .ert- prefix (the bits that render inside the SHARED bottom sheet, which
+ * this lane does not own and must not restyle). No selector here touches
+ * :root, html, body, #topbar, #siteFoot, .sheet or any other lane's class.
+ *
+ * TOKENS. Read from the shell's palette with a literal fallback, the same way
+ * css/map.css does, so this file renders correctly on its own while
+ * css/style.css is still being written by the shell lane.
+ *
+ * Fence (island RULES R7): js/tracker.js, js/saveparse.js,
+ * js/saveparse.worker.js, css/tracker.css, tools/test-saveparse.mjs.
+ */
+
+.er-tracker {
+  --ert-gold: var(--accent, #d6a84c);
+  --ert-gold-hi: var(--accent-hi, #f1d58a);
+  --ert-line: var(--accent-line, rgba(214, 168, 76, 0.34));
+  --ert-dim: var(--accent-dim, rgba(214, 168, 76, 0.16));
+  --ert-ember: var(--accent-2, #c2542c);
+  --ert-ember-line: var(--accent-2-line, rgba(194, 84, 44, 0.34));
+  --ert-ink: var(--ink, #efe6d2);
+  --ert-muted: var(--dim, #9e937c);
+  --ert-panel: var(--panel, #14110d);
+  --ert-ground: var(--bg, #0a0907);
+  --ert-tab-h: var(--tab-h, 60px);
+  --ert-display: var(--font-display, "Cinzel", Georgia, "Times New Roman", serif);
+  --ert-body: var(--font-body, "Cormorant Garamond", Georgia, "Times New Roman", serif);
+  color: var(--ert-ink);
+  font-family: var(--ert-body);
+  display: block;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 14px calc(var(--ert-tab-h) + env(safe-area-inset-bottom, 0px) + 20px);
+}
+
+/* The .ert- pieces that render inside the shared sheet need the same palette,
+   and cannot inherit it from .er-tracker because the sheet is elsewhere in the
+   document. Declared on the sheet-side blocks only. */
+.ert-import,
+.ert-locklist,
+.ert-proflist,
+.ert-profacts,
+.ert-fine,
+.ert-where {
+  --ert-gold: var(--accent, #d6a84c);
+  --ert-gold-hi: var(--accent-hi, #f1d58a);
+  --ert-line: var(--accent-line, rgba(214, 168, 76, 0.34));
+  --ert-dim: var(--accent-dim, rgba(214, 168, 76, 0.16));
+  --ert-ink: var(--ink, #efe6d2);
+  --ert-muted: var(--dim, #9e937c);
+  --ert-panel: var(--panel, #14110d);
+  --ert-body: var(--font-body, "Cormorant Garamond", Georgia, "Times New Roman", serif);
+  --ert-display: var(--font-display, "Cinzel", Georgia, "Times New Roman", serif);
+}
+
+/* ==========================================================================
+ * Header: who you are, how far along, and the two buttons that matter
+ * ========================================================================== */
+
+/* The tab head is deliberately small. A tracker is a working screen: the
+   first row you can tick should be near the top of the phone, not below a
+   masthead. Title, one line of orientation, then the panel. */
+.er-tracker .tabhead {
+  padding: 14px 2px 10px;
+}
+.er-tracker .tabtitle {
+  font-family: var(--ert-display);
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  color: var(--ert-gold-hi);
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+.er-tracker .tabsub {
+  margin: 0;
+  color: var(--ert-muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+  max-width: 46ch;
+}
+
+/* One panel holds who you are, how far along, and the two controls - three
+   stacked bordered boxes cost about 60px of a 390px-wide phone in borders and
+   padding alone. */
+.ert-panel {
+  border: 1px solid var(--ert-line);
+  border-radius: 3px;
+  background:
+    radial-gradient(140% 150% at 50% -40%, var(--ert-dim), transparent 62%),
+    var(--ert-panel);
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.ert-profbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-bottom: 1px solid rgba(214, 168, 76, 0.16);
+}
+
+.ert-prof {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 0;
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.ert-prof:hover .ert-prof-n {
+  color: #fff0cf;
+}
+.ert-prof-ic {
+  color: var(--ert-gold);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.ert-prof-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.ert-prof-n {
+  font-family: var(--ert-display);
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  color: var(--ert-gold-hi);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ert-prof-s {
+  font-size: 0.86rem;
+  color: var(--ert-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ert-prof-go {
+  color: var(--ert-muted);
+}
+
+.ert-savepill {
+  flex: 0 0 auto;
+  font-family: var(--ert-body);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+  padding: 4px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--ert-line);
+  color: var(--ert-muted);
+  background: var(--ert-panel);
+}
+.ert-savepill.saved {
+  color: var(--ert-gold-hi);
+  border-color: var(--ert-gold);
+}
+.ert-savepill.failed {
+  color: #ffb4a0;
+  border-color: var(--ert-ember-line);
+}
+
+/* --- the overall bar ------------------------------------------------------ */
+
+.ert-overall {
+  padding: 11px 12px 12px;
+}
+.ert-overall-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+.ert-overall-k {
+  font-family: var(--ert-display);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+  color: var(--ert-muted);
+}
+.ert-overall-v {
+  font-family: var(--ert-display);
+  font-size: 1.35rem;
+  color: var(--ert-gold-hi);
+  line-height: 1;
+}
+/* The journey counter rides alongside the headline number rather than in the
+   button row: on a 390px phone a stepper plus a full-width button do not fit
+   on one line, and the "+" was being clipped by the panel. */
+.ert-overall-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 10px;
+  margin-top: 8px;
+}
+.ert-overall-sub {
+  font-size: 0.88rem;
+  color: var(--ert-muted);
+}
+
+.ert-bar {
+  display: block;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.45);
+}
+.ert-bar-fill {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--ert-gold), var(--ert-gold-hi));
+  box-shadow: 0 0 8px var(--ert-dim);
+  transition: width 0.25s ease;
+}
+.ert-bar.mini {
+  width: 46px;
+  height: 4px;
+  flex: 0 0 auto;
+}
+
+/* --- import + journey ----------------------------------------------------- */
+
+.ert-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px 12px;
+}
+.ert-ngwrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 0 0 auto;
+}
+.er-tracker .btn,
+.ert-profacts .btn,
+.ert-filerow .btn,
+.ert-slot-acts .btn {
+  font-family: var(--ert-display);
+  font-size: 0.86rem;
+  letter-spacing: 0.06em;
+  padding: 9px 14px;
+  border-radius: 3px;
+  border: 1px solid var(--ert-line);
+  background: var(--ert-panel);
+  color: var(--ert-ink);
+  cursor: pointer;
+}
+.er-tracker .btn:hover,
+.ert-profacts .btn:hover,
+.ert-filerow .btn:hover,
+.ert-slot-acts .btn:hover {
+  border-color: var(--ert-gold);
+  color: var(--ert-gold-hi);
+  box-shadow: 0 0 10px var(--ert-dim);
+}
+.er-tracker .btn.primary,
+.ert-filerow .btn.primary,
+.ert-slot-acts .btn.primary {
+  border-color: var(--ert-gold);
+  color: #1b1509;
+  background: linear-gradient(180deg, var(--ert-gold-hi), var(--ert-gold));
+  font-weight: 600;
+}
+.ert-profacts .btn.danger:hover {
+  border-color: var(--ert-ember);
+  color: #ffb4a0;
+  box-shadow: 0 0 10px rgba(194, 84, 44, 0.2);
+}
+.ert-import-btn {
+  flex: 1 1 auto;
+  white-space: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 0.04em;
+}
+.ert-ng {
+  flex: 0 0 auto;
+  min-width: 30px;
+  padding-left: 7px;
+  padding-right: 7px;
+  text-align: center;
+}
+.ert-ngv {
+  flex: 0 0 auto;
+  font-family: var(--ert-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--ert-gold-hi);
+  min-width: 54px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+ * Segment strip
+ * ========================================================================== */
+
+.ert-segs {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+.ert-segs::-webkit-scrollbar {
+  display: none;
+}
+.ert-seg {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px;
+  border: 1px solid var(--ert-line);
+  border-radius: 999px;
+  background: var(--ert-panel);
+  color: var(--ert-muted);
+  font-family: var(--ert-display);
+  font-size: 0.84rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.ert-seg:hover {
+  color: var(--ert-ink);
+  border-color: var(--ert-gold);
+}
+.ert-seg.on {
+  color: #1b1509;
+  border-color: var(--ert-gold-hi);
+  background: linear-gradient(180deg, var(--ert-gold-hi), var(--ert-gold));
+  box-shadow: 0 0 12px var(--ert-dim);
+}
+.ert-seg-n {
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
+
+/* ==========================================================================
+ * Controls
+ * ========================================================================== */
+
+.ert-blurb {
+  margin: 0 0 9px;
+  color: var(--ert-muted);
+  font-style: italic;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  border-left: 1px solid var(--ert-line);
+  padding-left: 9px;
+}
+.ert-controlrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.ert-filter {
+  flex: 1 1 180px;
+  min-width: 0;
+  padding: 9px 12px;
+  border-radius: 3px;
+  border: 1px solid var(--ert-line);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--ert-ink);
+  font-family: var(--ert-body);
+  font-size: 1rem;
+}
+.ert-filter::placeholder {
+  color: var(--ert-muted);
+  opacity: 0.8;
+}
+.ert-filter:focus {
+  outline: none;
+  border-color: var(--ert-gold);
+  box-shadow: 0 0 10px var(--ert-dim);
+}
+.ert-chips {
+  display: flex;
+  gap: 6px;
+  flex: 0 0 auto;
+}
+.ert-chip {
+  padding: 7px 11px;
+  border: 1px solid var(--ert-line);
+  border-radius: 999px;
+  background: var(--ert-panel);
+  color: var(--ert-muted);
+  font-family: var(--ert-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+.ert-chip:hover {
+  color: var(--ert-ink);
+  border-color: var(--ert-gold);
+}
+.ert-chip.on {
+  color: var(--ert-gold-hi);
+  border-color: var(--ert-gold);
+  background: var(--ert-dim);
+}
+.ert-chip.wide {
+  flex: 0 0 auto;
+}
+
+/* ==========================================================================
+ * Sections and rows
+ * ========================================================================== */
+
+.ert-sec {
+  border: 1px solid var(--ert-line);
+  border-radius: 3px;
+  background: var(--ert-panel);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.ert-sec.complete {
+  border-color: rgba(214, 168, 76, 0.18);
+}
+.ert-sec.complete .ert-sectitle {
+  color: var(--ert-muted);
+}
+
+.ert-sechead {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 13px;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.ert-sechead:hover {
+  background: rgba(214, 168, 76, 0.05);
+}
+.ert-caret {
+  flex: 0 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 5px solid var(--ert-gold);
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  transition: transform 0.16s ease;
+}
+.ert-sec.open .ert-caret {
+  transform: rotate(90deg);
+}
+.ert-secheads {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.ert-sectitle {
+  font-family: var(--ert-display);
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  color: var(--ert-gold-hi);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ert-secsub {
+  font-size: 0.85rem;
+  color: var(--ert-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ert-secnum {
+  flex: 0 0 auto;
+  font-family: var(--ert-display);
+  font-size: 0.88rem;
+  color: var(--ert-ink);
+  font-variant-numeric: tabular-nums;
+}
+.ert-secslash {
+  color: var(--ert-muted);
+  margin: 0 1px;
+}
+
+.ert-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 4px;
+  border-top: 1px solid rgba(214, 168, 76, 0.14);
+}
+.ert-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 13px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.035);
+}
+.ert-row:last-child {
+  border-bottom: 0;
+}
+.ert-row.done .ert-name {
+  color: var(--ert-muted);
+  text-decoration: line-through;
+  text-decoration-color: var(--ert-line);
+}
+
+/* The tick is a small gilded frame that fills with an engraved check. It has
+   to be at least 28px on a phone to be tappable at speed - a checklist is
+   used with a thumb, standing up, half-watching the game. */
+.ert-tick {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+  border: 1px solid var(--ert-line);
+  background: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+}
+.ert-tick:hover {
+  border-color: var(--ert-gold);
+  box-shadow: 0 0 8px var(--ert-dim);
+}
+.ert-tick::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 4px;
+  width: 6px;
+  height: 12px;
+  border: solid transparent;
+  border-width: 0 2px 2px 0;
+  transform: rotate(42deg);
+  transition: border-color 0.12s ease;
+}
+.ert-tick[aria-checked="true"] {
+  border-color: var(--ert-gold);
+  background: linear-gradient(180deg, rgba(241, 213, 138, 0.22), rgba(214, 168, 76, 0.1));
+}
+.ert-tick[aria-checked="true"]::after {
+  border-color: var(--ert-gold-hi);
+}
+
+.ert-stepn {
+  flex: 0 0 auto;
+  font-family: var(--ert-display);
+  font-size: 0.78rem;
+  color: var(--ert-muted);
+  min-width: 16px;
+  text-align: right;
+}
+.ert-rowbody {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+}
+.ert-name {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-family: var(--ert-body);
+  font-size: 1.02rem;
+  line-height: 1.35;
+  color: var(--ert-ink);
+  text-align: left;
+  cursor: pointer;
+}
+.ert-name:hover {
+  color: var(--ert-gold-hi);
+}
+.ert-name.plain {
+  cursor: default;
+}
+.ert-badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.ert-badge {
+  font-family: var(--ert-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--ert-muted);
+  border: 1px solid rgba(214, 168, 76, 0.22);
+  border-radius: 999px;
+  padding: 1px 7px;
+  white-space: nowrap;
+}
+.ert-pin {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background: none;
+  color: var(--ert-muted);
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+.ert-pin:hover {
+  color: var(--ert-gold-hi);
+  border-color: var(--ert-line);
+}
+
+.er-tracker .empty-panel {
+  border: 1px solid var(--ert-line);
+  border-radius: 3px;
+  background: var(--ert-panel);
+  padding: 18px 16px;
+  color: var(--ert-muted);
+  font-style: italic;
+}
+
+/* ==========================================================================
+ * Sheet content: the missables alarm
+ * ========================================================================== */
+
+.ert-locklist {
+  list-style: none;
+  margin: 12px 0;
+  padding: 0;
+}
+.ert-lockrow {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 11px 13px;
+  margin-bottom: 8px;
+  border: 1px solid var(--ert-ember-line, rgba(194, 84, 44, 0.34));
+  border-left-width: 3px;
+  border-radius: 3px;
+  background: rgba(194, 84, 44, 0.07);
+}
+.ert-lockq {
+  font-family: var(--ert-display);
+  font-size: 0.98rem;
+  letter-spacing: 0.03em;
+  color: #f0b79c;
+}
+.ert-lockstep {
+  font-size: 0.98rem;
+  color: var(--ert-ink);
+  line-height: 1.4;
+}
+.ert-locknote {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--ert-muted);
+}
+
+.ert-fine {
+  font-size: 0.88rem;
+  color: var(--ert-muted);
+  font-style: italic;
+  line-height: 1.5;
+  margin: 10px 0 0;
+}
+.ert-fine.warn {
+  color: #e8a98c;
+  font-style: normal;
+}
+
+/* ==========================================================================
+ * Sheet content: profiles
+ * ========================================================================== */
+
+.ert-proflist {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 12px 0;
+}
+.ert-profrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--ert-line);
+  border-radius: 3px;
+  background: var(--ert-panel);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.ert-profrow.on {
+  border-color: var(--ert-gold);
+  background: var(--ert-dim);
+}
+.ert-profrow-n {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: var(--ert-display);
+  letter-spacing: 0.03em;
+  color: var(--ert-gold-hi);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ert-profrow-s {
+  flex: 0 0 auto;
+  font-size: 0.85rem;
+  color: var(--ert-muted);
+}
+.ert-profrow-on {
+  flex: 0 0 auto;
+  color: var(--ert-gold-hi);
+}
+.ert-profacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ==========================================================================
+ * Sheet content: the save import
+ * ========================================================================== */
+
+.ert-where {
+  margin: 14px 0 4px;
+  padding: 12px 14px;
+  border: 1px solid var(--ert-line);
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.28);
+}
+.ert-where-h {
+  font-family: var(--ert-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--ert-gold);
+  margin: 12px 0 4px;
+}
+.ert-where-h:first-child {
+  margin-top: 0;
+}
+.ert-where-p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--ert-ink);
+}
+.ert-where code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  color: var(--ert-gold-hi);
+  background: rgba(214, 168, 76, 0.1);
+  border: 1px solid rgba(214, 168, 76, 0.2);
+  border-radius: 2px;
+  padding: 0 4px;
+  word-break: break-all;
+}
+
+.ert-filerow {
+  margin-top: 16px;
+}
+/* The real input is kept in the layout (not display:none) so a file chooser
+   can still be driven programmatically and assistive tech can still reach it;
+   the label is what people see. */
+.ert-fileinput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+.ert-filebtn {
+  display: inline-block;
+}
+.ert-fileinput:focus-visible + .ert-filebtn,
+.ert-filebtn:focus-visible {
+  outline: 2px solid var(--ert-gold-hi);
+  outline-offset: 2px;
+}
+
+.ert-prog {
+  margin: 18px 0;
+}
+.ert-prog-track {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  overflow: hidden;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.ert-prog-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--ert-gold), var(--ert-gold-hi));
+  box-shadow: 0 0 10px var(--ert-dim);
+  transition: width 0.18s linear;
+}
+.ert-prog-note {
+  margin: 9px 0 0;
+  font-family: var(--ert-display);
+  font-size: 0.86rem;
+  letter-spacing: 0.05em;
+  color: var(--ert-gold-hi);
+}
+
+.ert-err {
+  margin: 14px 0;
+  padding: 12px 14px;
+  border: 1px solid var(--ert-ember-line, rgba(194, 84, 44, 0.34));
+  border-left-width: 3px;
+  border-radius: 3px;
+  background: rgba(194, 84, 44, 0.08);
+}
+.ert-err-h {
+  margin: 0;
+  font-family: var(--ert-display);
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: #f0b79c;
+  line-height: 1.4;
+}
+
+.ert-slots {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 14px 0;
+}
+.ert-slot {
+  padding: 12px 13px;
+  border: 1px solid var(--ert-line);
+  border-radius: 3px;
+  background: var(--ert-panel);
+}
+.ert-slot.bad {
+  opacity: 0.7;
+  border-color: var(--ert-ember-line, rgba(194, 84, 44, 0.34));
+}
+.ert-slot-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ert-slot-n {
+  font-family: var(--ert-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  color: var(--ert-gold-hi);
+}
+.ert-slot-lv {
+  font-family: var(--ert-display);
+  font-size: 0.84rem;
+  color: var(--ert-muted);
+}
+.ert-slotstats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin: 8px 0 6px;
+}
+.ert-slotstat {
+  font-size: 0.8rem;
+  color: var(--ert-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.ert-slotstat b {
+  color: var(--ert-ink);
+  font-weight: 600;
+  margin-right: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.ert-slot-sub {
+  font-size: 0.92rem;
+  color: var(--ert-muted);
+  line-height: 1.45;
+}
+.ert-slot-acts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 11px;
+}
+
+/* ==========================================================================
+ * Motion, focus, and the wide screen
+ * ========================================================================== */
+
+.er-tracker :focus-visible,
+.ert-import :focus-visible,
+.ert-proflist :focus-visible {
+  outline: 2px solid var(--ert-gold-hi);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ert-bar-fill,
+  .ert-prog-fill,
+  .ert-caret,
+  .ert-tick::after {
+    transition: none;
+  }
+}
+
+@media (min-width: 620px) {
+  .er-tracker .tabtitle {
+    font-size: 1.9rem;
+  }
+  .ert-row {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

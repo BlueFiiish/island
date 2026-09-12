@@ -1,0 +1,243 @@
+{
+  "generatedBy": "tools/build_tiles.mjs (P1 L2 map lane)",
+  "generatedAt": "2026-09-02T00:26:36.550Z",
+  "tileSize": 256,
+  "quality": 80,
+  "budget": {
+    "maxTiles": 1500,
+    "maxBytes": 20971520,
+    "tileMB": 20
+  },
+  "totals": {
+    "tiles": 983,
+    "bytes": 10435228,
+    "worlds": 3
+  },
+  "scheme": "At zoom z the world is rendered with its long side at 256*2^z px and cut into 256 px tiles from the top-left; fully transparent tiles are omitted. Pin coordinates are in the full-image pixel space given by width/height, y-down. Leaflet CRS.Simple units = pixels * unitsPerPixel.",
+  "attribution": "Map imagery is FromSoftware's, sliced from the MIT-licensed CreateDDy/EldenRing_MapInteractive release under the same non-commercial fair-use posture as the item icons. Not affiliated; takedown requests honoured.",
+  "fingerprint": {
+    "maxZoom": 4,
+    "tile": 256,
+    "tileMB": 20,
+    "sources": [
+      {
+        "world": "lands",
+        "sha256": "3af139f7f1772ba01934fb90657546a6146cc1b244e5ec92b1557d550d20513b",
+        "width": 4864,
+        "height": 4608
+      },
+      {
+        "world": "underground",
+        "sha256": "449655af20584eb48b0f7e4fc41f9d7dfda0f96e412f94be91a5e08f97da378d",
+        "width": 4694,
+        "height": 4559
+      },
+      {
+        "world": "shadow",
+        "sha256": "f7b651f4912d9865c4640d0e116842f5a4f16d580857e7164c3ac9bda7359b09",
+        "width": 4879,
+        "height": 5940
+      }
+    ]
+  },
+  "worlds": [
+    {
+      "id": "lands",
+      "name": "The Lands Between",
+      "order": 0,
+      "width": 9728,
+      "height": 9216,
+      "minZoom": 0,
+      "maxZoom": 4,
+      "tileSize": 256,
+      "tileBase": "/island/apps/elden/map/lands/",
+      "unitsPerPixel": 0.02631578947368421,
+      "tiles": 341,
+      "blankTiles": 0,
+      "bytes": 5486776,
+      "grid": [
+        {
+          "z": 0,
+          "w": 256,
+          "h": 243,
+          "nx": 1,
+          "ny": 1,
+          "tiles": 1
+        },
+        {
+          "z": 1,
+          "w": 512,
+          "h": 485,
+          "nx": 2,
+          "ny": 2,
+          "tiles": 4
+        },
+        {
+          "z": 2,
+          "w": 1024,
+          "h": 970,
+          "nx": 4,
+          "ny": 4,
+          "tiles": 16
+        },
+        {
+          "z": 3,
+          "w": 2048,
+          "h": 1940,
+          "nx": 8,
+          "ny": 8,
+          "tiles": 64
+        },
+        {
+          "z": 4,
+          "w": 4096,
+          "h": 3880,
+          "nx": 16,
+          "ny": 16,
+          "tiles": 256
+        }
+      ],
+      "source": {
+        "entry": "EldenRingMap.V1.2/maps/map_surface_preview.jpg",
+        "variant": "preview",
+        "format": "jpeg",
+        "width": 4864,
+        "height": 4608,
+        "sha256": "3af139f7f1772ba01934fb90657546a6146cc1b244e5ec92b1557d550d20513b",
+        "upscaled": false
+      }
+    },
+    {
+      "id": "underground",
+      "name": "The Underground",
+      "order": 1,
+      "width": 9389,
+      "height": 9119,
+      "minZoom": 0,
+      "maxZoom": 4,
+      "tileSize": 256,
+      "tileBase": "/island/apps/elden/map/underground/",
+      "unitsPerPixel": 0.02726594951539035,
+      "tiles": 341,
+      "blankTiles": 0,
+      "bytes": 623476,
+      "grid": [
+        {
+          "z": 0,
+          "w": 256,
+          "h": 249,
+          "nx": 1,
+          "ny": 1,
+          "tiles": 1
+        },
+        {
+          "z": 1,
+          "w": 512,
+          "h": 497,
+          "nx": 2,
+          "ny": 2,
+          "tiles": 4
+        },
+        {
+          "z": 2,
+          "w": 1024,
+          "h": 995,
+          "nx": 4,
+          "ny": 4,
+          "tiles": 16
+        },
+        {
+          "z": 3,
+          "w": 2048,
+          "h": 1989,
+          "nx": 8,
+          "ny": 8,
+          "tiles": 64
+        },
+        {
+          "z": 4,
+          "w": 4096,
+          "h": 3978,
+          "nx": 16,
+          "ny": 16,
+          "tiles": 256
+        }
+      ],
+      "source": {
+        "entry": "EldenRingMap.V1.2/maps/map_underground_preview.jpg",
+        "variant": "preview",
+        "format": "jpeg",
+        "width": 4694,
+        "height": 4559,
+        "sha256": "449655af20584eb48b0f7e4fc41f9d7dfda0f96e412f94be91a5e08f97da378d",
+        "upscaled": false
+      }
+    },
+    {
+      "id": "shadow",
+      "name": "Land of Shadow",
+      "order": 2,
+      "width": 4879,
+      "height": 5940,
+      "minZoom": 0,
+      "maxZoom": 4,
+      "tileSize": 256,
+      "tileBase": "/island/apps/elden/map/shadow/",
+      "unitsPerPixel": 0.0430976430976431,
+      "tiles": 301,
+      "blankTiles": 0,
+      "bytes": 4324976,
+      "grid": [
+        {
+          "z": 0,
+          "w": 210,
+          "h": 256,
+          "nx": 1,
+          "ny": 1,
+          "tiles": 1
+        },
+        {
+          "z": 1,
+          "w": 421,
+          "h": 512,
+          "nx": 2,
+          "ny": 2,
+          "tiles": 4
+        },
+        {
+          "z": 2,
+          "w": 841,
+          "h": 1024,
+          "nx": 4,
+          "ny": 4,
+          "tiles": 16
+        },
+        {
+          "z": 3,
+          "w": 1682,
+          "h": 2048,
+          "nx": 7,
+          "ny": 8,
+          "tiles": 56
+        },
+        {
+          "z": 4,
+          "w": 3364,
+          "h": 4096,
+          "nx": 14,
+          "ny": 16,
+          "tiles": 224
+        }
+      ],
+      "source": {
+        "entry": "EldenRingMap.V1.2/maps/map_dlc.jpg",
+        "variant": "full",
+        "format": "png",
+        "width": 4879,
+        "height": 5940,
+        "sha256": "f7b651f4912d9865c4640d0e116842f5a4f16d580857e7164c3ac9bda7359b09",
+        "upscaled": false
+      }
+    }
+  ]
+}

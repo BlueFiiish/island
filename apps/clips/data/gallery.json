@@ -1,0 +1,73 @@
+{
+ "generated_at": 1787961600,
+ "count": 5,
+ "sample": true,
+ "_note": "SAMPLE DATA - hand-written placeholder so the Gallery tab renders before app/export_gallery.py runs on the pipeline PC. Replace by pointing `export_gallery.py --out` at public/apps/clips/data (via clips-mount/data). Schema matches export_gallery.py's PUBLIC_FIELDS exactly. Friendly placeholders only - no probe/markup strings; the client renders every field with textContent, never innerHTML.",
+ "clips": [
+  {
+   "id": 1,
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@bluefiiish",
+   "title": "raid night pays off",
+   "caption": "the one where the C4 actually landed",
+   "posted_at": 1787875200,
+   "sender": "Danny",
+   "game": "rust",
+   "game_name": "Rust",
+   "duration_s": 47,
+   "thumb": ""
+  },
+  {
+   "id": 2,
+   "platform": "tiktok",
+   "url": "https://www.tiktok.com/@bluefiiish",
+   "title": "clutch 1v3 on Reserve",
+   "caption": "extract camping is a lifestyle",
+   "posted_at": 1787788800,
+   "sender": "Whitey",
+   "game": "tarkov",
+   "game_name": "Escape from Tarkov",
+   "duration_s": 33,
+   "thumb": ""
+  },
+  {
+   "id": 3,
+   "platform": "instagram",
+   "url": "https://www.instagram.com/blue_fiiish.ttv",
+   "title": "Infernum boss goes down",
+   "caption": "no-hit on the second phase",
+   "posted_at": 1787529600,
+   "sender": "Maddie",
+   "game": "calamity",
+   "game_name": "Terraria Calamity",
+   "duration_s": 55,
+   "thumb": ""
+  },
+  {
+   "id": 4,
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@bluefiiish",
+   "title": "wipe day chaos",
+   "caption": "",
+   "posted_at": 1787443200,
+   "sender": "Kase",
+   "game": "rust",
+   "game_name": "Rust",
+   "duration_s": 41,
+   "thumb": ""
+  },
+  {
+   "id": 5,
+   "platform": "youtube",
+   "url": "https://www.youtube.com/@bluefiiish",
+   "title": "pentakill from behind",
+   "caption": "backdoor into the Titan",
+   "posted_at": 1787270400,
+   "sender": "Reese",
+   "game": "smite",
+   "game_name": "SMITE 2",
+   "duration_s": 22,
+   "thumb": ""
+  }
+ ]
+}

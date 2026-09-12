@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img"
+ aria-label="ACT 4 boss, no portrait on the source wiki">
+<rect width="96" height="96" rx="14" fill="hsl(289 32% 16%)"/>
+<rect x="3" y="3" width="90" height="90" rx="12" fill="none" stroke="hsl(289 55% 42%)" stroke-width="2"/>
+<path d="M48 20 L68 32 L68 56 Q68 72 48 80 Q28 72 28 56 L28 32 Z" fill="none" stroke="hsl(289 60% 55%)" stroke-width="3" stroke-linejoin="round"/>
+<text x="48" y="54" text-anchor="middle" font-family="system-ui,Segoe UI,Arial,sans-serif"
+ font-size="19" font-weight="700" fill="hsl(289 70% 72%)">ACT 4</text>
+</svg>

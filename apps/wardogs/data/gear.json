@@ -1,0 +1,391 @@
+[
+ {
+  "id": "level-1-helmet",
+  "name": "Level 1 Helmet",
+  "category": "Helmets",
+  "sourceSection": "helmets",
+  "weightKg": 1,
+  "damageReduction": "Low",
+  "protects": "Head",
+  "wardogLevel": 3,
+  "summary": "Helmet - damage reduction Low, protects Head, weight 1 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#helmets",
+  "beginner": {
+   "whatItIs": "The entry rung of the four-step head protection ladder. It weighs one kilogram, covers your head only, and applies the smallest of the four damage cuts.",
+   "whyItMatters": "It opens at WARDOG level 3 and asks for no cash at all, which makes it the first real survivability you can put on without touching your bank. Nothing you wear is cheaper to replace than something that was free.",
+   "whenToUseIt": "Put it on the moment you reach level 3 and leave it on until you have the money to lose a paid helmet without it hurting."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-level-1-helmet.webp"
+ },
+ {
+  "id": "level-2-helmet",
+  "name": "Level 2 Helmet",
+  "category": "Helmets",
+  "sourceSection": "helmets",
+  "weightKg": 1.6,
+  "damageReduction": "Medium",
+  "protects": "Head",
+  "wardogLevel": 30,
+  "unlockPrice": 37500,
+  "summary": "Helmet - damage reduction Medium, protects Head, weight 1.6 kg, unlock $37,500.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#helmets",
+  "beginner": {
+   "whatItIs": "The second head tier. At 1.6 kilograms it still only shields your head, but it moves the damage cut up one step from the starter helmet.",
+   "whyItMatters": "It is the first head protection you have to buy, and the unlock is a serious bill for a mid-game account. You are paying real money for one step of protection and 0.6 kilograms of extra load.",
+   "whenToUseIt": "Unlock it once your income per match comfortably covers replacing your whole kit, not on the session you first scrape the money together."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-level-2-helmet.webp"
+ },
+ {
+  "id": "level-3-helmet",
+  "name": "Level 3 Helmet",
+  "category": "Helmets",
+  "sourceSection": "helmets",
+  "weightKg": 3,
+  "damageReduction": "High",
+  "protects": "Head and Neck",
+  "wardogLevel": 60,
+  "summary": "Helmet - damage reduction High, protects Head and Neck, weight 3 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#helmets",
+  "beginner": {
+   "whatItIs": "The third head tier, and the first one that reaches past your skull to cover your neck as well. It weighs three kilograms.",
+   "whyItMatters": "Widening what is covered matters more than the tier number alone. A shot that lands outside your coverage does its full damage no matter how good your gear is, so the neck going from bare to protected closes a real hole.",
+   "whenToUseIt": "Take it when you have hit level 60 and you are playing positions where you get shot at from the front while holding ground."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-level-3-helmet.webp"
+ },
+ {
+  "id": "level-4-helmet",
+  "name": "Level 4 Helmet",
+  "category": "Helmets",
+  "sourceSection": "helmets",
+  "weightKg": 4.5,
+  "damageReduction": "Very High",
+  "protects": "Head and Neck",
+  "wardogLevel": 100,
+  "summary": "Helmet - damage reduction Very High, protects Head and Neck, weight 4.5 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#helmets",
+  "beginner": {
+   "whatItIs": "The top head tier. It covers head and neck, applies the biggest damage cut of the four, and weighs 4.5 kilograms.",
+   "whyItMatters": "The protection it adds over the third tier is one step, but it costs you another 1.5 kilograms. Paired with the top armour plate it puts 22.5 kilograms on your body before you have picked up a single weapon.",
+   "whenToUseIt": "Reserve it for slow, dug-in play at level 100 where you expect to be shot at repeatedly and you are not relying on moving quickly."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-level-4-helmet.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "level-1-armor",
+  "name": "Level 1 Armor",
+  "category": "Armor",
+  "sourceSection": "armor",
+  "weightKg": 3,
+  "damageReduction": "Low",
+  "protects": "Upper and Lower Torso",
+  "wardogLevel": 3,
+  "summary": "Armor - damage reduction Low, protects Upper and Lower Torso, weight 3 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#armor",
+  "beginner": {
+   "whatItIs": "The lightest body armour tier. It covers your upper and lower torso and cuts incoming damage by the smallest amount of the four tiers.",
+   "whyItMatters": "Armour is a bet you place before the fight and lose when you die, because you buy the plate again next life. The free tier is the bet you can afford to lose over and over while you are still learning where the fighting happens.",
+   "whenToUseIt": "Wear it whenever you expect to die a lot on purpose, which includes almost every match while you are chasing early levels."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-level-1-armor.png"
+ },
+ {
+  "id": "level-2-armor",
+  "name": "Level 2 Armor",
+  "category": "Armor",
+  "sourceSection": "armor",
+  "weightKg": 4.5,
+  "damageReduction": "Medium",
+  "protects": "Upper and Lower Torso",
+  "wardogLevel": 30,
+  "unlockPrice": 50000,
+  "summary": "Armor - damage reduction Medium, protects Upper and Lower Torso, weight 4.5 kg, unlock $50,000.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#armor",
+  "beginner": {
+   "whatItIs": "The second body tier. It covers the same upper and lower torso as the starter plate, applies one more step of damage reduction, and weighs 4.5 kilograms.",
+   "whyItMatters": "It is the best trade on the whole ladder. You add a full tier of protection for only 1.5 kilograms more than the free plate, where every step above this one costs several times that.",
+   "whenToUseIt": "Make this your standing choice once you can absorb the unlock, and stop here for good if you value moving quickly over soaking hits."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-level-2-armor.png"
+ },
+ {
+  "id": "level-3-armor",
+  "name": "Level 3 Armor",
+  "category": "Armor",
+  "sourceSection": "armor",
+  "weightKg": 10.5,
+  "damageReduction": "High",
+  "protects": "Upper and Lower Torso",
+  "wardogLevel": 60,
+  "unlockPrice": 100000,
+  "summary": "Armor - damage reduction High, protects Upper and Lower Torso, weight 10.5 kg, unlock $100,000.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#armor",
+  "beginner": {
+   "whatItIs": "The third body tier. It still covers only the upper and lower torso, but it applies a high damage cut and weighs 10.5 kilograms.",
+   "whyItMatters": "At $100,000 it is the priciest unlock in the whole gear list, double the next one up, and it takes you from 4.5 kg to 10.5 kg while covering exactly the same body parts as the tier below. You pay twice over: once at the vendor, and again in how fast you move.",
+   "whenToUseIt": "Leave it alone until dying in it stops hurting your bank. If re-buying the plate would set your next few matches back, the second tier protects you for half the money and less than half the load."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-level-3-armor.png"
+ },
+ {
+  "id": "level-4-armor",
+  "name": "Level 4 Armor",
+  "category": "Armor",
+  "sourceSection": "armor",
+  "weightKg": 18,
+  "damageReduction": "Very High",
+  "protects": "Upper and Lower Torso, Upper Arms and Pelvis",
+  "wardogLevel": 100,
+  "summary": "Armor - damage reduction Very High, protects Upper and Lower Torso, Upper Arms and Pelvis, weight 18 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#armor",
+  "beginner": {
+   "whatItIs": "The heaviest item in the game at 18 kilograms, and the only plate that protects your upper arms and pelvis on top of your torso.",
+   "whyItMatters": "Extra coverage is the real prize here. Limbs and pelvis take full damage at every lower tier, so this is the one plate that closes those gaps rather than just shrinking the number on a hit you were already absorbing.",
+   "whenToUseIt": "Wear it at level 100 for static defensive work, and take something lighter any time your job involves crossing open ground on foot."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-level-4-armor.png"
+ },
+ {
+  "id": "small-tac-vest",
+  "name": "Small Tac Vest",
+  "category": "Vests",
+  "sourceSection": "vests",
+  "weightKg": 0.82,
+  "quickslots": "5 and 6",
+  "reloadSpeed": "Minor Increase",
+  "equipHolsterSpeed": "Minor Increase",
+  "summary": "Vest - quickslots 5 and 6, weight 0.82 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#vests",
+  "beginner": {
+   "whatItIs": "The lightest of the three vests at 0.82 kilograms. It opens quick slots five and six and gives a small boost to how fast you reload and swap weapons.",
+   "whyItMatters": "No vest stops a single bullet and no vest adds storage. What a vest buys is speed of hand and somewhere to keep things you need in a hurry, and this one asks for no level and no unlock to do it.",
+   "whenToUseIt": "Start here on day one, and stay here whenever every gram is going into armour or ammunition instead."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-small-tac-vest.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "medium-tac-vest",
+  "name": "Medium Tac Vest",
+  "category": "Vests",
+  "sourceSection": "vests",
+  "weightKg": 1.65,
+  "quickslots": "5 to 8",
+  "reloadSpeed": "Moderate Increase",
+  "equipHolsterSpeed": "Moderate Increase",
+  "wardogLevel": 14,
+  "unlockPrice": 10000,
+  "summary": "Vest - quickslots 5 to 8, weight 1.65 kg, unlock $10,000.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#vests",
+  "beginner": {
+   "whatItIs": "The middle vest. It weighs 1.65 kilograms, opens quick slots five through eight, and gives a moderate lift to reload and weapon-swap speed.",
+   "whyItMatters": "Four usable quick slots instead of two is the difference between carrying one grenade and carrying a real utility spread. Handling speed compounds quietly across every reload you make in a match.",
+   "whenToUseIt": "Pick it up at level 14 as your first handling upgrade, well before you spend anything on the top armour tiers."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-medium-tac-vest.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "large-tac-vest",
+  "name": "Large Tac Vest",
+  "category": "Vests",
+  "sourceSection": "vests",
+  "weightKg": 3.6,
+  "quickslots": "All",
+  "reloadSpeed": "Strong Increase",
+  "equipHolsterSpeed": "Strong Increase",
+  "wardogLevel": 50,
+  "unlockPrice": 25000,
+  "summary": "Vest - quickslots All, weight 3.6 kg, unlock $25,000.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#vests",
+  "beginner": {
+   "whatItIs": "The heaviest vest at 3.6 kilograms. It opens every quick slot and gives the strongest reload and holster speed bonus of the three.",
+   "whyItMatters": "It is the only way to carry a full set of utility at once, and it makes swapping between two weapons noticeably faster. It also costs more than three kilograms you could have spent on protection.",
+   "whenToUseIt": "Wear it when your role depends on having the right tool ready instantly, and skip it when you are already close to your load limit."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-large-tac-vest.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pouch",
+  "name": "Pouch",
+  "category": "Backpacks",
+  "sourceSection": "backpacks",
+  "weightKg": 0.3,
+  "price": 0,
+  "grid": "3x2",
+  "slots": 6,
+  "slingSlots": 0,
+  "summary": "Backpack - slots 6, grid 3x2, weight 0.3 kg, $0.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#backpacks",
+  "beginner": {
+   "whatItIs": "The free starting pack. It gives a three-by-two grid, which is six slots of space, and weighs almost nothing at 0.3 kilograms.",
+   "whyItMatters": "Slots are where your ammunition, medical supplies and utility live during a match. Six is thin, but it is enough to run a full basic kit, and it costs nothing to replace after a bad life.",
+   "whenToUseIt": "Run it while you are still building a cash buffer, and any time you would rather put your money into the gun than into the bag."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-pouch.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "scout-backpack",
+  "name": "Scout Backpack",
+  "category": "Backpacks",
+  "sourceSection": "backpacks",
+  "weightKg": 2,
+  "price": 350,
+  "grid": "4x2",
+  "slots": 8,
+  "slingSlots": 0,
+  "summary": "Backpack - slots 8, grid 4x2, weight 2 kg, $350.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#backpacks",
+  "beginner": {
+   "whatItIs": "An eight-slot pack on a four-by-two grid. It weighs two kilograms and sells for a low flat price with no level requirement.",
+   "whyItMatters": "The next pack up beats it on every stat that matters and weighs less than half as much, so this one has a very short useful life. Its only real advantage is that nothing gates it.",
+   "whenToUseIt": "Only between the start and WARDOG level 12, and only if the free pouch is genuinely cramping you before then."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-scout-backpack.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "field-backpack",
+  "name": "Field Backpack",
+  "category": "Backpacks",
+  "sourceSection": "backpacks",
+  "weightKg": 0.88,
+  "price": 650,
+  "wardogLevel": 12,
+  "grid": "6x2",
+  "slots": 12,
+  "slingSlots": 0,
+  "summary": "Backpack - slots 12, grid 6x2, weight 0.88 kg, $650.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#backpacks",
+  "beginner": {
+   "whatItIs": "A twelve-slot pack on a six-by-two grid, weighing 0.88 kilograms with no separate unlock price beyond its level gate.",
+   "whyItMatters": "It doubles the free pouch for a small purchase price and adds under a kilogram, which makes it the first pack upgrade that clearly pays for itself.",
+   "whenToUseIt": "Buy it the match you reach level 12 and use it as your default until you are ready for the level 20 unlock."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-field-backpack.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "operator-backpack",
+  "name": "Operator Backpack",
+  "category": "Backpacks",
+  "sourceSection": "backpacks",
+  "weightKg": 0.8,
+  "price": 800,
+  "wardogLevel": 20,
+  "unlockPrice": 25000,
+  "grid": "5x3",
+  "slots": 15,
+  "slingSlots": 0,
+  "summary": "Backpack - slots 15, grid 5x3, weight 0.8 kg, $800.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#backpacks",
+  "beginner": {
+   "whatItIs": "A fifteen-slot pack on a five-by-three grid that weighs only 0.8 kilograms, less than any pack except the free pouch.",
+   "whyItMatters": "It carries the most space per kilogram of anything on the gear page. Every gram you save on the bag is a gram you can spend on the plate that actually stops bullets.",
+   "whenToUseIt": "Make it your long-term default once you have paid the level 20 unlock, especially on any build that is already heavy up top."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-operator-backpack.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "assault-backpack",
+  "name": "Assault Backpack",
+  "category": "Backpacks",
+  "sourceSection": "backpacks",
+  "weightKg": 1.3,
+  "price": 1200,
+  "wardogLevel": 32,
+  "unlockPrice": 50000,
+  "grid": "5x5",
+  "slots": 21,
+  "slingSlots": 0,
+  "summary": "Backpack - slots 21, grid 5x5, weight 1.3 kg, $1,200.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#backpacks",
+  "beginner": {
+   "whatItIs": "A twenty-one slot pack on a five-by-five grid, weighing 1.3 kilograms behind a level gate and a large one-time unlock.",
+   "whyItMatters": "It is a big step in raw capacity, but you pay for it twice, once to unlock and again every match you buy it. Compared with the lighter pack below it you are trading half a kilogram for six more slots.",
+   "whenToUseIt": "Take it when your role means carrying a deep utility or building load rather than just ammunition and medical supplies."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-assault-backpack.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ruck-backpack",
+  "name": "Ruck Backpack",
+  "category": "Backpacks",
+  "sourceSection": "backpacks",
+  "weightKg": 1.5,
+  "price": 2400,
+  "wardogLevel": 56,
+  "grid": "6x4",
+  "slots": 24,
+  "slingSlots": 0,
+  "summary": "Backpack - slots 24, grid 6x4, weight 1.5 kg, $2,400.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#backpacks",
+  "beginner": {
+   "whatItIs": "A twenty-four slot pack on a six-by-four grid at 1.5 kilograms. Twenty-four is the highest slot count in the game.",
+   "whyItMatters": "This is where storage stops improving. The two packs above it hold exactly the same twenty-four slots at exactly the same weight, so once you own this you are done buying space.",
+   "whenToUseIt": "Buy it at level 56 if you want maximum carry and have no interest in slinging extra weapons."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-ruck-backpack.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "gunner-backpack-plus-sling",
+  "name": "Gunner Backpack + Sling",
+  "category": "Backpacks",
+  "sourceSection": "backpacks",
+  "weightKg": 1.5,
+  "price": 3500,
+  "wardogLevel": 73,
+  "grid": "6x4",
+  "slots": 24,
+  "slingSlots": 1,
+  "summary": "Backpack - slots 24, grid 6x4, weight 1.5 kg, $3,500.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#backpacks",
+  "beginner": {
+   "whatItIs": "The same twenty-four slots and 1.5 kilograms as the pack below it, with one sling slot added for carrying an extra weapon.",
+   "whyItMatters": "You are not buying space here, you are buying a third gun on your back. That is only worth the extra purchase price if you actually intend to switch platforms mid-fight rather than resupply at HQ.",
+   "whenToUseIt": "Pick it up at level 73 when you regularly want a rifle and a launcher or sniper available in the same life."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-gunner-backpack-plus-sling.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "arsenal-backpack-plus-2-slings",
+  "name": "Arsenal Backpack + 2 Slings",
+  "category": "Backpacks",
+  "sourceSection": "backpacks",
+  "weightKg": 1.5,
+  "price": 5000,
+  "wardogLevel": 150,
+  "grid": "6x4",
+  "slots": 24,
+  "slingSlots": 2,
+  "summary": "Backpack - slots 24, grid 6x4, weight 1.5 kg, $5,000.",
+  "sourceUrl": "https://wardogshandbook.com/Gear#backpacks",
+  "beginner": {
+   "whatItIs": "The top pack. Twenty-four slots at 1.5 kilograms with two sling slots, sitting behind the highest level requirement of any item on the gear page.",
+   "whyItMatters": "It is a long-term goal rather than a purchase decision, since the level gate is far beyond where the rest of your kit unlocks. What it gives is the freedom to carry a specialist weapon without giving up your main one.",
+   "whenToUseIt": "Treat it as something to work toward, and only equip it in matches where the second sling has a specific job you have planned for."
+  },
+  "icon": "/island/apps/wardogs/./sprites/gear-arsenal-backpack-plus-2-slings.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

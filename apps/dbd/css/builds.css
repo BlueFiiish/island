@@ -1,0 +1,602 @@
+/* builds.css - the Builds tab (generator, roulette, share codes).
+ *
+ * FILE FENCE: this file + js/builds.js + data/builds-meta.json.
+ *
+ * TEMPLATE CONTRACT (NEW-GAME-TEMPLATE section 2):
+ *   - No :root / html / body rule anywhere. Every root here is .bld-root or
+ *     .bld-sheet, both of which also carry .dbdl-scope, so loadout.css's
+ *     --lo-* tokens resolve inside them (in the view AND in a sheet body the
+ *     shell renders outside our subtree).
+ *   - Shell tokens are read as var(--x, fallback) so the file is also correct
+ *     standalone.
+ *   - Nothing here touches the app mount, and no transform / filter /
+ *     backdrop-filter / contain / will-change lands on anything that contains
+ *     a position:fixed descendant.
+ *   - No backdrop-filter and no remote asset of any kind.
+ *
+ * REUSE, AND WHAT THAT ACTUALLY REQUIRES. The four-perk result row uses
+ * loadout.css's diamond row - .dbdl-slots / .dbdl-slot / .dbdl-dia /
+ * .dbdl-hit / .dbdl-slot-name. Only the two things loadout has no concept of
+ * are added here: the LOCKED treatment (.bld-locked, .bld-lock) and the
+ * owned-tier pip (.bld-tier).
+ *
+ * CORRECTION (2026-08-31, browser-verified). An earlier version of this file
+ * claimed the row was reused "verbatim" while js/builds.js emitted a bare
+ * <img class="dbdl-slotimg">. That was false twice over: loadout.js had moved
+ * its artwork onto DBD.icon's .dbd-ic-wrap.dbdl-ic-slot box, and .dbdl-slotimg
+ * no longer existed in loadout.css at all. Nothing sized the image, so its
+ * intrinsic 128px width pushed the 4-up grid to 542px and the whole PAGE
+ * scrolled horizontally at 390px with the 4th diamond off-screen.
+ *
+ * The row is now genuinely reused: builds.js routes every icon through
+ * DBD.icon with the same 'dbdl-ic-slot' wrap class loadout.js passes. The
+ * "sizing floor" block at the end of this file is the second half of the fix -
+ * a deliberately LOW-specificity cap so that if loadout.css renames or drops
+ * that rule again, the icon is still bounded by its cell instead of taking the
+ * page with it. Sizing MUST NOT depend on a class another lane owns alone.
+ */
+
+/* ------------------------------------------------------------------ root */
+
+.bld-root {
+  display: block;
+  position: relative;
+  color: var(--lo-ink, var(--ink, #e9e3d8));
+}
+
+/* The fog layer is loadout.css's; it needs a positioned ancestor, which is
+   .bld-root above. */
+
+.bld-note {
+  position: relative;
+  z-index: 1;
+  margin: 8px 2px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--lo-dim, var(--dim, #9a9188));
+}
+
+.bld-note b { color: var(--lo-ink, var(--ink, #e9e3d8)); }
+
+.bld-err {
+  position: relative;
+  z-index: 1;
+  margin: 8px 0 4px;
+  padding: 8px 10px;
+  border: 1px solid rgba(200, 64, 75, .4);
+  border-radius: 9px;
+  background: rgba(120, 26, 20, .18);
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #f0d8d4;
+}
+
+/* --------------------------------------------------------------- setup row */
+
+.bld-setup {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 10px;
+  margin: 0 0 14px;
+}
+
+.bld-field { display: block; }
+
+.bld-label {
+  display: block;
+  margin: 0 0 5px;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--lo-dim, var(--dim, #9a9188));
+}
+
+.bld-label b {
+  color: var(--lo-amber, var(--accent2, #c9954a));
+  letter-spacing: .04em;
+}
+
+.bld-select,
+.bld-input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--lo-line, var(--line, #2a262b));
+  border-radius: 10px;
+  background: linear-gradient(180deg, #17141a, var(--lo-panel-2, #100e12));
+  color: var(--lo-ink, var(--ink, #e9e3d8));
+  font: inherit;
+  font-size: 15px;
+}
+
+.bld-select { padding-right: 30px; }
+
+.bld-select:focus,
+.bld-input:focus {
+  outline: none;
+  border-color: rgba(246, 195, 122, .5);
+}
+
+.bld-opts {
+  display: grid;
+  gap: 10px;
+}
+
+.bld-toggle {
+  -webkit-appearance: none;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--lo-line, var(--line, #2a262b));
+  border-radius: 10px;
+  background: linear-gradient(180deg, #17141a, var(--lo-panel-2, #100e12));
+  color: var(--lo-dim, var(--dim, #9a9188));
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.bld-toggle.is-on {
+  color: #fff3ea;
+  border-color: rgba(246, 195, 122, .42);
+  box-shadow: var(--lo-bevel, none);
+}
+
+.bld-tick {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--lo-line, var(--line, #2a262b));
+  border-radius: 6px;
+  background: rgba(0, 0, 0, .4);
+  font-size: 12px;
+  line-height: 1;
+}
+
+.bld-toggle.is-on .bld-tick {
+  color: #14100c;
+  border-color: transparent;
+  background: linear-gradient(150deg, var(--lo-amber, #f6c37a), var(--lo-amber-mid, #c8762c));
+}
+
+/* range: a 44px-tall touch lane with a thin visible track inside it */
+.bld-range {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 34px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.bld-range::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--lo-amber-deep, #57250b), var(--lo-amber, #f6c37a));
+}
+
+.bld-range::-moz-range-track {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--lo-amber-deep, #57250b), var(--lo-amber, #f6c37a));
+}
+
+.bld-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  margin-top: -9px;
+  border: 1px solid rgba(0, 0, 0, .6);
+  border-radius: 50%;
+  background: linear-gradient(160deg, #f3e6d6, #b9a892);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .6);
+}
+
+.bld-range::-moz-range-thumb {
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgba(0, 0, 0, .6);
+  border-radius: 50%;
+  background: linear-gradient(160deg, #f3e6d6, #b9a892);
+}
+
+.bld-range:focus-visible {
+  outline: 2px solid var(--lo-amber, #f6c37a);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+.bld-ends {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -2px;
+}
+
+.bld-ends i {
+  font-style: normal;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--lo-dim, var(--dim, #9a9188));
+}
+
+/* -------------------------------------------------------- archetype cards */
+
+.bld-archs {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+
+@media (min-width: 560px) {
+  .bld-archs { grid-template-columns: 1fr 1fr; }
+  .bld-setup { grid-template-columns: 1fr 1fr; align-items: end; }
+}
+
+.bld-arch {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 11px 13px;
+  border: 1px solid var(--lo-line, var(--line, #2a262b));
+  border-radius: 12px;
+  background: linear-gradient(180deg, #151218, var(--lo-panel-2, #100e12));
+  box-shadow: var(--lo-bevel, none);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.bld-arch.is-on {
+  border-color: rgba(246, 195, 122, .45);
+  background:
+    linear-gradient(180deg, rgba(196, 54, 42, .22), rgba(120, 26, 20, .14)),
+    linear-gradient(180deg, #1b171b, #141116);
+}
+
+.bld-arch-n {
+  display: block;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--lo-ink, var(--ink, #e9e3d8));
+}
+
+.bld-arch.is-on .bld-arch-n { color: var(--lo-amber, #f6c37a); }
+
+.bld-arch-b {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--lo-dim, var(--dim, #9a9188));
+}
+
+/* ------------------------------------------------------------- roulette */
+
+.bld-roul {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 18px;
+}
+
+/* .dbdl-mini comes from loadout.css; only the tap-target floor is added. */
+.bld-roul .dbdl-mini,
+.bld-result .dbdl-mini,
+.bld-best .dbdl-mini,
+.bld-coderow .dbdl-mini { min-height: 38px; }
+
+/* --------------------------------------------------------------- result */
+
+.bld-result,
+.bld-empty { position: relative; z-index: 1; }
+
+.bld-result .dbdl-slots { margin-top: 4px; }
+
+/* LOCKED perk: dimmed art, a lock badge, and the ring loses its glow so it
+   reads as unavailable rather than merely dark. */
+.bld-slot-pad { position: relative; }
+
+.dbdl-slot.bld-locked .dbdl-slotimg { opacity: .34; }
+
+.dbdl-slot.bld-locked .dbdl-dia::before {
+  background: linear-gradient(150deg, #5b5560, #2c2830 60%, #17141a);
+  box-shadow: var(--lo-drop, 0 6px 18px rgba(0, 0, 0, .55));
+}
+
+.dbdl-slot.bld-locked .dbdl-slot-name { color: var(--lo-dim, var(--dim, #9a9188)); }
+
+.bld-lock {
+  position: absolute;
+  z-index: 3;
+  right: -1px;
+  top: -1px;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--lo-line, var(--line, #2a262b));
+  border-radius: 50%;
+  background: #16131a;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.bld-tier {
+  position: absolute;
+  z-index: 3;
+  left: -1px;
+  top: -1px;
+  min-width: 19px;
+  padding: 2px 4px;
+  border: 1px solid rgba(246, 195, 122, .35);
+  border-radius: 999px;
+  background: #16131a;
+  color: var(--lo-amber, #f6c37a);
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* ------------------------------------------------------------ why lines */
+
+.bld-whys {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.bld-why {
+  padding: 8px 10px;
+  border: 1px solid var(--lo-line, var(--line, #2a262b));
+  border-left-width: 3px;
+  border-left-color: var(--lo-amber-mid, #c8762c);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, .28);
+}
+
+.bld-why.is-locked { border-left-color: #5b5560; }
+
+.bld-why b {
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  color: var(--lo-ink, var(--ink, #e9e3d8));
+}
+
+.bld-why span {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--lo-dim, var(--dim, #9a9188));
+}
+
+.bld-why em {
+  display: block;
+  margin-top: 4px;
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: var(--lo-amber, #f6c37a);
+}
+
+/* -------------------------------------------------------------- actions */
+
+.bld-actions {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+}
+
+.bld-primary {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  min-height: 46px;
+  padding: 12px 14px;
+  border: 1px solid rgba(224, 84, 66, .45);
+  border-radius: 11px;
+  background:
+    linear-gradient(180deg, rgba(196, 54, 42, .5), rgba(120, 26, 20, .4)),
+    linear-gradient(180deg, #1b171b, #141116);
+  box-shadow: var(--lo-bevel, none);
+  color: #fff3ea;
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.bld-primary:active { color: #fff; }
+
+/* ------------------------------------------------- unrestricted comparison */
+
+.bld-best { margin-top: 14px; }
+
+.bld-best-body {
+  margin-top: 10px;
+  padding: 10px 10px 12px;
+  border: 1px dashed var(--lo-line, var(--line, #2a262b));
+  border-radius: 11px;
+  background: rgba(0, 0, 0, .22);
+}
+
+/* ----------------------------------------------------------- share codes */
+
+.bld-share { margin-top: 14px; }
+
+.bld-coderow {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.bld-code {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid var(--lo-line, var(--line, #2a262b));
+  border-radius: 9px;
+  background: rgba(0, 0, 0, .4);
+  color: var(--lo-amber, #f6c37a);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 11.5px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  -webkit-user-select: all;
+  user-select: all;
+}
+
+.bld-coderow .bld-input { flex: 1 1 auto; min-width: 0; }
+
+/* ------------------------------------------------------------ perk sheet */
+
+.bld-sheet { display: block; }
+
+.bld-sheet-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bld-sheet-ic {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  width: 62px;
+  height: 62px;
+}
+
+/* The sheet icon is DBD.icon markup too, so it is sized by its WRAP class -
+   never by a rule on a bare <img>, which is what caused the 390px overflow. */
+.dbd-ic-wrap.bld-ic-sheet {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.dbd-ic-wrap.bld-ic-sheet .dbd-ic { width: 86%; height: 86%; }
+
+.bld-sheet-head h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  color: var(--lo-ink, var(--ink, #e9e3d8));
+}
+
+.bld-sheet-sub {
+  margin: 3px 0 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--lo-dim, var(--dim, #9a9188));
+}
+
+.bld-sheet-desc {
+  margin-top: 12px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #e6e5ea;
+}
+
+.bld-sheet-desc ul { margin: 6px 0; padding-left: 20px; }
+.bld-sheet-desc li { margin: 2px 0; }
+.bld-sheet-desc b { color: #fff; }
+
+/* ---------------------------------------------------------- sizing floor */
+
+/* The second half of the 390px-overflow fix (see the file header). These rules
+   exist ONLY to guarantee an icon can never be wider than the cell that holds
+   it, so a rename in a file this lane does not own can never again put a
+   horizontal scrollbar on the whole page.
+ *
+ * SPECIFICITY IS LOAD-BEARING HERE, so read before editing:
+ *   - .bld-root .dbdl-slot .dbd-ic-wrap  = (0,3,0), beats loadout.css's
+ *     .dbd-ic-wrap.dbdl-ic-slot = (0,2,0). It sets the SAME width/height
+ *     loadout does, so it is a no-op while that rule exists and a rescue
+ *     when it does not.
+ *   - .bld-root .dbd-ic  = (0,2,0), LOSES to loadout.css's
+ *     .dbd-ic-wrap.dbdl-ic-slot .dbd-ic = (0,3,0). That is deliberate: the
+ *     88% art sizing stays loadout's call, and this only caps the runaway
+ *     case. Never raise this selector's specificity - it would start
+ *     overriding the row's real proportions.
+ * Neither rule may be given a width/height that fights the owning file. */
+
+.bld-root .dbdl-slot .dbd-ic-wrap,
+.bld-sheet .bld-sheet-ic .dbd-ic-wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.bld-root .dbd-ic,
+.bld-sheet .dbd-ic {
+  max-width: 100%;
+  height: auto;
+}
+
+/* minmax(0,1fr) so a long slot name cannot widen a column past its share.
+   Proven insufficient ON ITS OWN - the image cap above is the real fix - but
+   it closes the other half of the same failure. */
+.bld-root .dbdl-slots {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 352px;
+}
+
+.bld-root .dbdl-slot-name { overflow-wrap: anywhere; }
+
+/* --------------------------------------------------------- focus + motion */
+
+.bld-arch:focus-visible,
+.bld-toggle:focus-visible,
+.bld-primary:focus-visible,
+.bld-select:focus-visible,
+.bld-input:focus-visible {
+  outline: 2px solid var(--lo-amber, #f6c37a);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bld-arch, .bld-toggle, .bld-primary { transition: none; }
+}

@@ -1,0 +1,1291 @@
+[
+ {
+  "id": "ak74-75-rnd-drum-magazine",
+  "name": "AK74 75 RND Drum Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "rounds": 75,
+  "weightKg": 2.08,
+  "caliber": "5.45x39mm",
+  "weapons": [
+   "AK74"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AK74",
+  "summary": "Magazine - caliber 5.45x39mm, fits AK74, rounds 75.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A 75-round drum for the AK74 and the heaviest magazine on record here at 2.08 kg.",
+   "whyItMatters": "It holds more than triple a normal rifle load, so a fight can run long without you ever going empty, but that is two kilos of weight you carry for the whole match and the source lists no price for it.",
+   "whenToUseIt": "Take it when your job is to sit on a doorway or cover a drill and keep firing. Leave it off any loadout built around moving light."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-ak74-75-rnd-drum-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amp-9-15-rnd-magazine",
+  "name": "AMP-9 15 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 30,
+  "rounds": 15,
+  "caliber": "9x19mm",
+  "weapons": [
+   "AMP-9"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AMP-9",
+  "summary": "Magazine - caliber 9x19mm, fits AMP-9, rounds 15, $30.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The smallest AMP-9 magazine, fifteen rounds of 9mm for thirty dollars.",
+   "whyItMatters": "It is the cheapest way to get the gun firing at all, which is what you want on a spawn where the money is going into armour instead.",
+   "whenToUseIt": "Buy it when the AMP-9 is a backup you hope never to fire, and trade up the moment you can spare a hundred dollars."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amp-9-15-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amp-9-30-rnd-magazine",
+  "name": "AMP-9 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 100,
+  "rounds": 30,
+  "caliber": "9x19mm",
+  "weapons": [
+   "AMP-9"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AMP-9",
+  "summary": "Magazine - caliber 9x19mm, fits AMP-9, rounds 30, $100.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The middle AMP-9 magazine at thirty rounds of 9mm for a hundred dollars.",
+   "whyItMatters": "Thirty rounds is enough to finish a two-man fight without reloading, and it costs a fifth of what a decent optic does.",
+   "whenToUseIt": "Make this the default AMP-9 magazine once you are earning steadily. Drop to the fifteen only when you are genuinely broke."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amp-9-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amp-9-50-rnd-magazine",
+  "name": "AMP-9 50 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 180,
+  "rounds": 50,
+  "caliber": "9x19mm",
+  "weapons": [
+   "AMP-9"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AMP-9",
+  "summary": "Magazine - caliber 9x19mm, fits AMP-9, rounds 50, $180.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The largest confirmed AMP-9 magazine, fifty rounds of 9mm at a hundred and eighty dollars.",
+   "whyItMatters": "It roughly triples the fifteen-round load for six times the price, which is worth it only if you are actually emptying magazines rather than dying with one.",
+   "whenToUseIt": "Buy it when you are holding an objective and getting rushed by more than one person at a time."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amp-9-50-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amp-9-20-rnd-magazine",
+  "name": "AMP-9 20 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 70,
+  "rounds": 20,
+  "tags": [
+   "Caliber not confirmed"
+  ],
+  "weapons": [
+   "AMP-9"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AMP-9",
+  "summary": "Magazine - fits AMP-9, rounds 20, $70.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A twenty-round AMP-9 magazine at seventy dollars whose calibre the source could not confirm.",
+   "whyItMatters": "It sits awkwardly between the fifteen and the thirty: five more rounds than the cheap one for more than double the money, and the missing calibre line means nobody has confirmed it feeds the same ammunition as its siblings.",
+   "whenToUseIt": "Skip it unless the shop is out of the thirty. It is the one AMP-9 magazine that has to prove itself once Early Access lands."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amp-9-20-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amr-50-10-rnd-magazine",
+  "name": "AMR 50 10 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 30,
+  "rounds": 10,
+  "caliber": ".50 Cal",
+  "weapons": [
+   "AMR 50"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AMR 50",
+  "summary": "Magazine - caliber .50 Cal, fits AMR 50, rounds 10, $30.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A ten-round magazine of .50 calibre for the AMR 50, and at thirty dollars one of the cheapest items on the page.",
+   "whyItMatters": "Ten rounds is a lot for a rifle this size, and the price means feeding an anti-material rifle is never the expensive part of the loadout.",
+   "whenToUseIt": "Buy it any time you take the AMR 50 out. There is no alternative confirmed for the gun, so this is simply what it costs to run it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amr-50-10-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "deagle-7-rnd-magazine",
+  "name": "Deagle 7 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 50,
+  "rounds": 7,
+  "wardogLevel": 90,
+  "caliber": ".50AE",
+  "weapons": [
+   "Deagle"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Deagle",
+  "summary": "Magazine - caliber .50AE, fits Deagle, rounds 7, $50.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A seven-round .50AE magazine for the Deagle, held behind WARDOG Level 90.",
+   "whyItMatters": "Fifty dollars for the magazine is nothing; the ninety levels in front of it are the real price, and that is the honest reason most players never see this item.",
+   "whenToUseIt": "This is a late-account purchase. Until you are near the top of the level track, plan your pistol slot around something you can actually buy."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-deagle-7-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "fal-and-bmr-308-20-rnd-magazine",
+  "name": "FAL & BMR-308 20 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 150,
+  "rounds": 20,
+  "caliber": ".308 Win",
+  "weapons": [
+   "FAL",
+   "BMR-308"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "FAL & BMR-308",
+  "summary": "Magazine - caliber .308 Win, fits FAL & BMR-308, rounds 20, $150.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A twenty-round .308 magazine that the source confirms on both the FAL and the BMR-308.",
+   "whyItMatters": "One magazine covering two rifles means the hundred and fifty dollars keeps working when you switch guns, instead of being stranded on a weapon you stopped taking.",
+   "whenToUseIt": "Buy it early if either rifle is in your rotation. It is the cheaper of the two confirmed options for that pair."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-fal-and-bmr-308-20-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "fal-30-rnd-magazine",
+  "name": "FAL 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 250,
+  "rounds": 30,
+  "tags": [
+   "Caliber not confirmed"
+  ],
+  "weapons": [
+   "FAL"
+  ],
+  "weaponsSource": "the item name",
+  "weaponGroup": "FAL & BMR-308",
+  "summary": "Magazine - fits FAL & BMR-308, rounds 30, $250.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirty-round magazine grouped with the FAL and BMR-308 at two hundred and fifty dollars, with no confirmed calibre line.",
+   "whyItMatters": "Ten extra rounds cost a hundred dollars more than the twenty, so it only pays for itself if you routinely reload mid-fight rather than between them.",
+   "whenToUseIt": "Take it on a loadout where you expect to hold ground with a hard-hitting rifle. On a hit-and-move plan the twenty is the better buy."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-fal-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "galil-35-rnd-magazine",
+  "name": "Galil 35 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 60,
+  "rounds": 35,
+  "caliber": "5.56x45mm",
+  "weapons": [
+   "GALIL"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Galil",
+  "summary": "Magazine - caliber 5.56x45mm, fits Galil, rounds 35, $60.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirty-five round 5.56 magazine for the GALIL at sixty dollars.",
+   "whyItMatters": "Five more rounds than a standard rifle load for a price you can pay on almost any spawn makes this the sensible baseline for the gun.",
+   "whenToUseIt": "Fit this by default whenever you take the GALIL, and only move up if your fights keep outlasting the magazine."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-galil-35-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "galil-50-rnd-magazine",
+  "name": "Galil 50 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 110,
+  "rounds": 50,
+  "caliber": "5.56x45mm",
+  "weapons": [
+   "GALIL"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Galil",
+  "summary": "Magazine - caliber 5.56x45mm, fits Galil, rounds 50, $110.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A fifty-round 5.56 magazine for the GALIL at a hundred and ten dollars.",
+   "whyItMatters": "It is fifteen more rounds for fifty more dollars, which is one of the better value steps on the whole magazine list.",
+   "whenToUseIt": "Move to it once you are winning fights and dying to the reload after them, particularly when you are the one pushing into a held building."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-galil-50-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ggx-33-rnd-magazine",
+  "name": "GGX 33 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 70,
+  "rounds": 33,
+  "wardogLevel": 23,
+  "unlockPrice": 10000,
+  "caliber": "9x19mm",
+  "weapons": [
+   "GGX 17",
+   "GGX 18"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "GGX 17 And GGX 18",
+  "summary": "Magazine - caliber 9x19mm, fits GGX 17 And GGX 18, rounds 33, $70.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirty-three round 9mm magazine shared by the GGX 17 and GGX 18, gated at WARDOG Level 23 with a ten thousand dollar unlock.",
+   "whyItMatters": "The seventy dollar shop price is trivial next to the ten thousand you pay once to open it, so treat this as a milestone purchase rather than a loadout decision.",
+   "whenToUseIt": "Unlock it when you have a comfortable bank and you like either GGX enough to keep taking it. Buying it to try the gun once is the wrong order."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-ggx-33-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ggx-50-rnd-drum-magazine",
+  "name": "GGX 50 RND Drum Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 110,
+  "rounds": 50,
+  "wardogLevel": 80,
+  "caliber": "9x19mm",
+  "weapons": [
+   "GGX 17",
+   "GGX 18"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "GGX 17 And GGX 18",
+  "summary": "Magazine - caliber 9x19mm, fits GGX 17 And GGX 18, rounds 50, $110.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A fifty-round drum for the GGX 17 and GGX 18, sitting behind WARDOG Level 80.",
+   "whyItMatters": "It is the largest pistol-calibre magazine confirmed for that pair, and the level gate puts it far past the point where you are still learning the gun.",
+   "whenToUseIt": "A late-account option for a player who has already decided the GGX is their sidearm. Everyone else should plan around the thirty-three."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-ggx-50-rnd-drum-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m1911-7-rnd-magazine",
+  "name": "M1911 7 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 20,
+  "rounds": 7,
+  "wardogLevel": 40,
+  "caliber": ".45 ACP",
+  "weapons": [
+   "M1911"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "M1911",
+  "summary": "Magazine - caliber .45 ACP, fits M1911, rounds 7, $20.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A seven-round .45 magazine for the M1911, twenty dollars, unlocked at WARDOG Level 40.",
+   "whyItMatters": "At twenty dollars it is one of the cheapest magazines on the page, but the level gate means the M1911 is not a starting-account pistol no matter how little the magazine costs.",
+   "whenToUseIt": "Once you have the level, this is the everyday load for the gun. Money is never the reason to leave it behind."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-m1911-7-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m1911-10-rnd-magazine",
+  "name": "M1911 10 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 35,
+  "rounds": 10,
+  "wardogLevel": 53,
+  "caliber": ".45 ACP",
+  "weapons": [
+   "M1911"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "M1911",
+  "summary": "Magazine - caliber .45 ACP, fits M1911, rounds 10, $35.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A ten-round .45 magazine for the M1911 at thirty-five dollars, unlocked at WARDOG Level 53.",
+   "whyItMatters": "Three more rounds for fifteen more dollars is close to free, so the only real cost is the thirteen extra levels over the seven-round version.",
+   "whenToUseIt": "Switch to it the moment you reach the level. There is no situation where the smaller magazine is the better choice once both are open."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-m1911-10-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m249-100-rnd-fabric-magazine",
+  "name": "M249 100 RND Fabric Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 200,
+  "rounds": 100,
+  "caliber": "5.56x45mm",
+  "weapons": [
+   "M249 SAW"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "M249",
+  "summary": "Magazine - caliber 5.56x45mm, fits M249, rounds 100, $200.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A hundred-round 5.56 pouch for the M249 SAW at two hundred dollars.",
+   "whyItMatters": "A hundred rounds is what makes a machine gun a machine gun: you can keep a lane shut for a long time without the reload that lets someone move.",
+   "whenToUseIt": "Buy it whenever you take the M249 out to hold ground. If you cannot afford it, take a rifle instead of an underfed machine gun."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-m249-100-rnd-fabric-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mk22-5-rnd-magazine",
+  "name": "MK22 5 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 30,
+  "rounds": 5,
+  "caliber": ".308 Win",
+  "weapons": [
+   "MK22"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "MK22",
+  "summary": "Magazine - caliber .308 Win, fits MK22, rounds 5, $30.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A five-round .308 magazine for the MK22 at thirty dollars.",
+   "whyItMatters": "Five rounds sounds thin until you remember what the gun is for: you are taking measured shots at distance, not spraying, and reloading between targets is normal.",
+   "whenToUseIt": "Take it any time the MK22 is your rifle. Position and patience matter far more here than magazine size."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mk22-5-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mosin-standard-mag",
+  "name": "Mosin Standard Mag",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "weapons": [
+   "Mosin Nagant"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Mosin",
+  "summary": "Magazine - fits Mosin.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The standard magazine for the Mosin Nagant, listed by name with no price, no round count and no calibre confirmed.",
+   "whyItMatters": "It appears in a table that states no compatibility line at all, so everything about it except the name is still unknown, and pretending otherwise would be guessing.",
+   "whenToUseIt": "Treat the Mosin as a rifle whose feeding options are undocumented for now, and re-check this entry after Early Access on 2026-09-10."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mosin-standard-mag.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mp43-internal-mag",
+  "name": "MP43 Internal Mag",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "weapons": [
+   "MP43"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "MP43",
+  "summary": "Magazine - fits MP43.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The MP43's built-in magazine, listed with no price, no round count and no confirmed calibre.",
+   "whyItMatters": "Being internal means it is part of the gun rather than something you shop for, so it is not really a purchase decision at all.",
+   "whenToUseIt": "Nothing to buy and nothing to choose. It is here so the MP43's feed is documented rather than missing."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mp43-internal-mag.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mp5-20-rnd-magazine",
+  "name": "MP5 20 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 70,
+  "rounds": 20,
+  "caliber": "9x19mm",
+  "weapons": [
+   "MP5"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "MP5",
+  "summary": "Magazine - caliber 9x19mm, fits MP5, rounds 20, $70.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A twenty-round 9mm magazine for the MP5 at seventy dollars.",
+   "whyItMatters": "It is the entry price for running the MP5 at all, and twenty rounds of a fast-firing gun goes quickly once a fight starts.",
+   "whenToUseIt": "Only when money is genuinely tight. On any normal spawn the thirty is worth the extra thirty dollars."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mp5-20-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mp5-30-rnd-magazine",
+  "name": "MP5 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 100,
+  "rounds": 30,
+  "caliber": "9x19mm",
+  "weapons": [
+   "MP5"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "MP5",
+  "summary": "Magazine - caliber 9x19mm, fits MP5, rounds 30, $100.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirty-round 9mm magazine for the MP5 at a hundred dollars.",
+   "whyItMatters": "This is the balanced option for the gun: enough rounds to finish a close-range fight, at a price that still leaves you money for armour.",
+   "whenToUseIt": "Make it your default MP5 magazine. Move off it only for a specific reason, in either direction."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mp5-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mp5-50-rnd-magazine",
+  "name": "MP5 50 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 230,
+  "rounds": 50,
+  "caliber": "9x19mm",
+  "weapons": [
+   "MP5"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "MP5",
+  "summary": "Magazine - caliber 9x19mm, fits MP5, rounds 50, $230.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A fifty-round 9mm magazine for the MP5 at two hundred and thirty dollars.",
+   "whyItMatters": "It more than doubles the twenty-round load, and on a gun that empties this fast the reload you skip is often the reason you survive the second attacker.",
+   "whenToUseIt": "Worth it when you are clearing buildings or defending a room. It is the most expensive 9mm magazine on the page, so buy it deliberately."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mp5-50-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pkm-100-rnd-box",
+  "name": "PKM 100 RND Box",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 100,
+  "rounds": 100,
+  "weapons": [
+   "PKM"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "PKM",
+  "summary": "Magazine - fits PKM, rounds 100, $100.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A hundred-round box for the PKM at a hundred dollars, with no confirmed calibre line in the source.",
+   "whyItMatters": "It is the cheapest hundred-round feed here by a wide margin, which makes sustained fire from the PKM unusually affordable.",
+   "whenToUseIt": "Buy it whenever the PKM is your gun. The unconfirmed calibre is a documentation gap, not a reason to run the weapon empty."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pkm-100-rnd-box.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pp-19-vityaz-10-rnd-magazine",
+  "name": "PP-19 Vityaz 10 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 25,
+  "rounds": 10,
+  "caliber": "9x19mm",
+  "weapons": [
+   "PP-19 Vityaz"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "PP-19",
+  "summary": "Magazine - caliber 9x19mm, fits PP-19, rounds 10, $25.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A ten-round 9mm magazine for the PP-19 Vityaz at twenty-five dollars.",
+   "whyItMatters": "Ten rounds in a submachine gun is very little; this is a price tag rather than a plan, and it exists for the spawn where you have almost nothing.",
+   "whenToUseIt": "A stopgap only. Replace it as soon as you have earned enough for the thirty or the fifty."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pp-19-vityaz-10-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pp-19-vityaz-30-rnd-magazine",
+  "name": "PP-19 Vityaz 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "rounds": 30,
+  "caliber": "9x19mm",
+  "weapons": [
+   "PP-19 Vityaz"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "PP-19",
+  "summary": "Magazine - caliber 9x19mm, fits PP-19, rounds 30.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirty-round 9mm magazine for the PP-19 Vityaz, listed with no confirmed price.",
+   "whyItMatters": "Thirty rounds is the sensible working load for the gun, and the missing price is a gap in the source rather than a sign the item is unavailable.",
+   "whenToUseIt": "Plan around this as the standard PP-19 magazine, and check the actual shop cost yourself in game until the source fills the number in."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pp-19-vityaz-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pp-19-vityaz-50-rnd-magazine",
+  "name": "PP-19 Vityaz 50 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 200,
+  "rounds": 50,
+  "caliber": "9x19mm",
+  "weapons": [
+   "PP-19 Vityaz"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "PP-19",
+  "summary": "Magazine - caliber 9x19mm, fits PP-19, rounds 50, $200.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A fifty-round 9mm magazine for the PP-19 Vityaz at two hundred dollars.",
+   "whyItMatters": "It is five times the capacity of the ten-round option for eight times the money, so it pays off only if you are consistently living long enough to use it.",
+   "whenToUseIt": "Take it into an objective fight where you expect several people, not onto a loadout you are still learning the gun on."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pp-19-vityaz-50-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "super-45-13-rnd-magazine",
+  "name": "Super-45 13 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 30,
+  "rounds": 13,
+  "caliber": ".45 ACP",
+  "weapons": [
+   "Super-45"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Super-45",
+  "summary": "Magazine - caliber .45 ACP, fits Super-45, rounds 13, $30.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirteen-round .45 magazine for the Super-45 at thirty dollars.",
+   "whyItMatters": "It is the cheap way into the gun, and thirteen heavy rounds is not nothing, but it will run dry in one committed exchange.",
+   "whenToUseIt": "Use it while you are testing the Super-45 or saving for something else, and move up once the gun has earned a permanent slot."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-super-45-13-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "super-45-30-rnd-magazine",
+  "name": "Super-45 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 80,
+  "rounds": 30,
+  "caliber": ".45 ACP",
+  "weapons": [
+   "Super-45"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Super-45",
+  "summary": "Magazine - caliber .45 ACP, fits Super-45, rounds 30, $80.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirty-round .45 magazine for the Super-45 at eighty dollars.",
+   "whyItMatters": "It more than doubles the small magazine for fifty extra dollars, which is the best value step in the Super-45 family.",
+   "whenToUseIt": "This is the everyday choice. Only go past it if you keep dying in the middle of a reload."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-super-45-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "super-45-40-rnd-drum-magazine",
+  "name": "Super-45 40 RND Drum Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 280,
+  "rounds": 40,
+  "caliber": ".45 ACP",
+  "weapons": [
+   "Super-45"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Super-45",
+  "summary": "Magazine - caliber .45 ACP, fits Super-45, rounds 40, $280.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A forty-round drum for the Super-45 at two hundred and eighty dollars, the most expensive magazine on the page.",
+   "whyItMatters": "Ten rounds over the thirty for two hundred extra dollars is a steep rate, and that money competes directly with armour and a sight.",
+   "whenToUseIt": "Only on a rich loadout where you are holding a room and the reload is genuinely what has been killing you."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-super-45-40-rnd-drum-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "sv98-10-rnd-magazine",
+  "name": "SV98 10 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 40,
+  "rounds": 10,
+  "weapons": [
+   "SV98"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "SV98",
+  "summary": "Magazine - fits SV98, rounds 10, $40.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A ten-round magazine for the SV98 at forty dollars, from a table that states no calibre.",
+   "whyItMatters": "Ten rounds is generous for a bolt-action rifle, and forty dollars means ammunition capacity is never what limits your sniping.",
+   "whenToUseIt": "Buy it whenever you take the SV98. Where you set up matters far more than how many rounds you are holding."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-sv98-10-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "svd-5-rnd-magazine",
+  "name": "SVD 5 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 20,
+  "rounds": 5,
+  "caliber": "7.62x54mmR",
+  "weapons": [
+   "SVD"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "SVD",
+  "summary": "Magazine - caliber 7.62x54mmR, fits SVD, rounds 5, $20.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A five-round 7.62x54mmR magazine for the SVD at twenty dollars.",
+   "whyItMatters": "It is the cheapest way to put the SVD in the field, but five rounds means one missed pair of shots and you are reloading in the open.",
+   "whenToUseIt": "Fine on a broke spawn or a patient position. Otherwise the ten-round version is only twenty dollars more."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-svd-5-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "svd-10-rnd-magazine",
+  "name": "SVD 10 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 40,
+  "rounds": 10,
+  "weapons": [
+   "SVD"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "SVD",
+  "summary": "Magazine - fits SVD, rounds 10, $40.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A ten-round SVD magazine at forty dollars, listed without a confirmed calibre.",
+   "whyItMatters": "Doubling the load for twenty dollars is close to free, and on a semi-automatic marksman rifle those extra rounds are the follow-up shots you actually take.",
+   "whenToUseIt": "Default to this over the five whenever you can spare the money, which is almost always."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-svd-10-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "stanag-20-rnd-magazine",
+  "name": "STANAG 20 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 10,
+  "rounds": 20,
+  "caliber": "5.56x45mm",
+  "weaponGroup": "Shared Across Weapons",
+  "weapons": [
+   "M4",
+   "T-21",
+   "A-91",
+   "KH-2002",
+   "M249 SAW",
+   "Bushmaster M17s"
+  ],
+  "weaponsSource": "a compatibility sentence on the source page",
+  "weaponsDisputedByWeaponCard": true,
+  "weaponsNote": "The source names all 6 of these rifles as sharing this magazine, but A-91, KH-2002, Bushmaster M17s carry \"Attachments - No\" on their own weapon card. Both readings are shown rather than one being picked silently; treat the overlap as unsettled until Early Access.",
+  "summary": "Magazine - caliber 5.56x45mm, fits Shared Across Weapons, rounds 20, $10.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A twenty-round 5.56 magazine for ten dollars that fits all six rifles sharing the STANAG well.",
+   "whyItMatters": "It is the cheapest thing on the whole attachments page and it works across six guns, so it is the one purchase that is never wasted.",
+   "whenToUseIt": "Take it when you want the rifle to handle as lightly as possible, or when you are rebuilding a loadout from nothing after a bad run."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-stanag-20-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "stanag-60-rnd-magazine",
+  "name": "STANAG 60 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 180,
+  "rounds": 60,
+  "caliber": "5.56x45mm",
+  "weaponGroup": "Shared Across Weapons",
+  "weapons": [
+   "M4",
+   "T-21",
+   "A-91",
+   "KH-2002",
+   "M249 SAW",
+   "Bushmaster M17s"
+  ],
+  "weaponsSource": "a compatibility sentence on the source page",
+  "weaponsDisputedByWeaponCard": true,
+  "weaponsNote": "The source names all 6 of these rifles as sharing this magazine, but A-91, KH-2002, Bushmaster M17s carry \"Attachments - No\" on their own weapon card. Both readings are shown rather than one being picked silently; treat the overlap as unsettled until Early Access.",
+  "summary": "Magazine - caliber 5.56x45mm, fits Shared Across Weapons, rounds 60, $180.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A 60-round magazine that fits the six rifles sharing the STANAG well rather than belonging to any one gun.",
+   "whyItMatters": "Buying it once covers every rifle in that family, so it keeps paying off across loadouts instead of being stranded when you switch weapon.",
+   "whenToUseIt": "Fit it when you expect to be the one holding ground and reloading under pressure. The smaller STANAG is the lighter, faster-handling option when you would rather move than sustain."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-stanag-60-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "vektor-frenix-x-micro-reflex-sight",
+  "name": "Vektor Frenix-X Micro Reflex Sight",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 820,
+  "zoom": "1.2x",
+  "zeroing": "Fixed",
+  "weightKg": 0.03,
+  "adsTrade": "Moderate speed improvement",
+  "weaponGroup": "Short Optics",
+  "summary": "Optic - fits Short Optics, zoom 1.2x, weight 0.03 kg, $820.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A tiny close-range sight, thirty grams and the lightest optic on record, at eight hundred and twenty dollars.",
+   "whyItMatters": "The source rates it as bringing the gun up to your eye noticeably faster than iron sights, and it adds almost no weight, so the only real cost is the money.",
+   "whenToUseIt": "Put it on a gun you fight up close with and want to keep as quick as possible. It is a premium price for a small edge, so buy it once you can afford it comfortably."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-vektor-frenix-x-micro-reflex-sight.png"
+ },
+ {
+  "id": "four-reticle-reflex",
+  "name": "Four Reticle Reflex",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 580,
+  "zoom": "1.2x",
+  "zeroing": "Fixed",
+  "weightKg": 0.12,
+  "adsTrade": "Moderate speed improvement",
+  "weaponGroup": "Short Optics",
+  "summary": "Optic - fits Short Optics, zoom 1.2x, weight 0.12 kg, $580.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A close-range sight at five hundred and eighty dollars that offers a choice of aiming marks rather than one fixed dot.",
+   "whyItMatters": "It is rated as a noticeable improvement in how fast you get on target compared with no optic, and being able to pick the mark that reads best against a background is a real comfort gain.",
+   "whenToUseIt": "A good middle buy for close-quarters loadouts, especially if a plain dot keeps getting lost against bright ground."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-four-reticle-reflex.png"
+ },
+ {
+  "id": "compact-t-2-red-dot",
+  "name": "Compact T-2 Red Dot",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 340,
+  "zoom": "1.2x",
+  "zeroing": "Fixed",
+  "weightKg": 0.13,
+  "wardogLevel": 4,
+  "unlockPrice": 5000,
+  "adsTrade": "Minor speed improvement",
+  "weaponGroup": "Short Optics",
+  "summary": "Optic - fits Short Optics, zoom 1.2x, weight 0.13 kg, $340.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A low-magnification red dot sight with a fixed zero and a small speed gain when you bring the weapon up.",
+   "whyItMatters": "It is the sight that costs you nothing to aim with. A magnified scope trades handling for reach, and inside a building that trade is the wrong way round.",
+   "whenToUseIt": "Put it on anything you expect to fight with at close range - the factory zone, a treeline, a vehicle you just bailed out of."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-compact-t-2-red-dot.png"
+ },
+ {
+  "id": "holographic-sight",
+  "name": "Holographic Sight",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "zoom": "1.2x",
+  "zeroing": "Fixed",
+  "weightKg": 0.25,
+  "adsTrade": "Minor speed improvement",
+  "weaponGroup": "Short Optics",
+  "summary": "Optic - fits Short Optics, zoom 1.2x, weight 0.25 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A close-range sight with a fixed aim point, listed with a weight of a quarter kilo and no confirmed price.",
+   "whyItMatters": "It gives a small speed gain over iron sights, so it is a straightforward upgrade whose only unknown is what the shop actually charges for it.",
+   "whenToUseIt": "Worth taking when you find it in the shop and the price is reasonable. Do not plan a budget around it until the cost is confirmed."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-holographic-sight.png"
+ },
+ {
+  "id": "kobra-reflex",
+  "name": "Kobra Reflex",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 520,
+  "zoom": "1.2x",
+  "zeroing": "Fixed",
+  "weightKg": 0.41,
+  "wardogLevel": 21,
+  "unlockPrice": 7500,
+  "adsTrade": "Moderate speed improvement",
+  "weaponGroup": "Short Optics",
+  "summary": "Optic - fits Short Optics, zoom 1.2x, weight 0.41 kg, $520.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A close-range sight at five hundred and twenty dollars, opened at WARDOG Level 21 for a seven and a half thousand dollar unlock.",
+   "whyItMatters": "It is rated as a solid gain in how quickly you get on target, but the one-off unlock costs more than fourteen of these sights, so it is an account investment rather than a loadout choice.",
+   "whenToUseIt": "Unlock it when you have money spare and you fight close often enough that the sight will be on most of your guns."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-kobra-reflex.png"
+ },
+ {
+  "id": "okp-7-reflex",
+  "name": "OKP 7 Reflex",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 840,
+  "zoom": "1.2x",
+  "zeroing": "Fixed",
+  "weightKg": 0.48,
+  "adsTrade": "Moderate speed improvement",
+  "weaponGroup": "Short Optics",
+  "summary": "Optic - fits Short Optics, zoom 1.2x, weight 0.48 kg, $840.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A close-range sight at eight hundred and forty dollars and just under half a kilo, the heaviest of the short-range options.",
+   "whyItMatters": "It is rated as a solid speed gain over iron sights, but it is both the most expensive short-range sight and the heaviest, so you are paying twice for the same benefit others give.",
+   "whenToUseIt": "Take it if you prefer how it reads. On value alone the cheaper close-range sights do the same job."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-okp-7-reflex.png"
+ },
+ {
+  "id": "tricon-1-5x-compact-prism-scope",
+  "name": "Tricon 1.5x Compact Prism Scope",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 650,
+  "zoom": "1.5x",
+  "zeroing": "100m-200m",
+  "weightKg": 0.2,
+  "adsTrade": "Minor speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 1.5x, weight 0.2 kg, $650.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 1.5x scope at six hundred and fifty dollars whose aim point you set for a hundred or two hundred metres.",
+   "whyItMatters": "It is the gentlest step into magnification: a small slowdown bringing the gun up, in exchange for actually being able to identify someone at range.",
+   "whenToUseIt": "A good first magnified sight if close-range sights leave you guessing at mid distance but a big scope feels sluggish."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-tricon-1-5x-compact-prism-scope.png"
+ },
+ {
+  "id": "cq-2x-prism-combat-scope",
+  "name": "CQ-2X Prism Combat Scope",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 640,
+  "zoom": "2x",
+  "zeroing": "100m-300m",
+  "weightKg": 0.31,
+  "adsTrade": "Minor speed improvement",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 2x, weight 0.31 kg, $640.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 2x scope at six hundred and forty dollars, adjustable from a hundred to three hundred metres.",
+   "whyItMatters": "It is the one magnified sight the source rates as making you faster rather than slower to aim, which normally only close-range sights do.",
+   "whenToUseIt": "The safest all-round pick when you do not know what range your next fight will be at. It gives up very little to gain reach."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-cq-2x-prism-combat-scope.png"
+ },
+ {
+  "id": "2-5x-combat-optic",
+  "name": "2.5x Combat Optic",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "zoom": "2.5x",
+  "zeroing": "100m-300m",
+  "weightKg": 0.4,
+  "wardogLevel": 26,
+  "unlockPrice": 10000,
+  "adsTrade": "Moderate speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 2.5x, weight 0.4 kg, unlock $10,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 2.5x sight adjustable from a hundred to three hundred metres, opened at WARDOG Level 26 for ten thousand dollars.",
+   "whyItMatters": "It costs a noticeable amount of aiming speed and a large one-off unlock, so it has to earn its place with fights you could not otherwise take.",
+   "whenToUseIt": "Unlock it when your deaths are coming from people you cannot see clearly, not from people who beat you indoors."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-2-5x-combat-optic.png"
+ },
+ {
+  "id": "spitfire-3x",
+  "name": "Spitfire 3x",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 790,
+  "zoom": "3x",
+  "zeroing": "100m-300m",
+  "weightKg": 0.26,
+  "adsTrade": "Moderate speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 3x, weight 0.26 kg, $790.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 3x scope at seven hundred and ninety dollars, adjustable from a hundred to three hundred metres and light for its magnification.",
+   "whyItMatters": "Three times magnification is real reach, and the noticeable cost to aiming speed is the price of it; the low weight softens the deal a little.",
+   "whenToUseIt": "Take it on open ground and long approaches. Swap it off before a loadout built for clearing rooms."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-spitfire-3x.png"
+ },
+ {
+  "id": "3x-tactical-prism-scope",
+  "name": "3x Tactical Prism Scope",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 740,
+  "zoom": "3x",
+  "zeroing": "100m-300m",
+  "weightKg": 0.43,
+  "wardogLevel": 31,
+  "unlockPrice": 15000,
+  "adsTrade": "Minor speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 3x, weight 0.43 kg, $740.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 3x scope at seven hundred and forty dollars, opened at WARDOG Level 31 for fifteen thousand dollars.",
+   "whyItMatters": "It is the cheaper 3x to buy and the gentler one on aiming speed, but the fifteen thousand dollar unlock is the largest on the optics list.",
+   "whenToUseIt": "Worth the unlock if 3x is a magnification you already know you like. Try the Spitfire first if you are not sure."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-3x-tactical-prism-scope.png"
+ },
+ {
+  "id": "4x-combat-prism-scope-with-reflex",
+  "name": "4X Combat Prism Scope With Reflex",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 880,
+  "zoom": "4x",
+  "zeroing": "100m-400m",
+  "weightKg": 0.42,
+  "adsTrade": "Moderate speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 4x, weight 0.42 kg, $880.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 4x scope at eight hundred and eighty dollars with a small secondary sight built in, adjustable out to four hundred metres.",
+   "whyItMatters": "The secondary sight is the point: it is the only listed optic that gives you a close-range option without giving up the magnified one.",
+   "whenToUseIt": "The best choice when a single loadout has to cover both an open approach and the building at the end of it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-4x-combat-prism-scope-with-reflex.png"
+ },
+ {
+  "id": "spectr-4x",
+  "name": "Spectr 4x",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "zoom": "4x",
+  "zeroing": "100m-400m",
+  "weightKg": 0.66,
+  "adsTrade": "Moderate speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 4x, weight 0.66 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 4x scope adjustable out to four hundred metres, the heaviest optic on the page at 0.66 kg, with no confirmed price.",
+   "whyItMatters": "It carries the most magnification available together with the most weight and a noticeable cost to aiming speed, which is a lot to give up for a single sight.",
+   "whenToUseIt": "For deliberate long-range work only, and check the shop price yourself until the source confirms one."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-spectr-4x.png"
+ },
+ {
+  "id": "cgm4-scope",
+  "name": "CGM4 Scope",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A sight confirmed as pairing with the AK74, GALIL and M4, listed with no magnification, no aim-point range and no price.",
+   "whyItMatters": "Everything that would let you compare it against another sight is missing, so any claim about how it performs would be invented rather than sourced.",
+   "whenToUseIt": "Nothing to decide yet. Judge it in game and re-check this entry after Early Access on 2026-09-10."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-cgm4-scope.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mmgl-sight",
+  "name": "MMGL Sight",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A sight confirmed on the AK74, GALIL and M4, with no magnification, aim-point range, weight or price recorded.",
+   "whyItMatters": "It sits in the same undocumented group as the CGM4 and PGO-7, which is a gap in the source rather than a statement that the sight is weak.",
+   "whenToUseIt": "Treat it as unknown for now. It is listed so the sight roster is complete rather than quietly short."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mmgl-sight.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pgo-7",
+  "name": "PGO-7",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 850,
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed, $850.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A sight priced at eight hundred and fifty dollars but with no magnification or aim-point range published.",
+   "whyItMatters": "At $850 it is one of the pricier sights the source lists, and it is the one where you know the cost without knowing what you get for it - even the $880 4X Combat Prism Scope With Reflex at least publishes its magnification.",
+   "whenToUseIt": "Do not buy it blind at that price. Look at it in game first, and re-check this entry after Early Access."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pgo-7.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "rk6-tactical-foregrip",
+  "name": "RK6 Tactical Foregrip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "wardogLevel": 15,
+  "summary": "Foregrip.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "A front grip opened at WARDOG Level 15 and the earliest of the five you can reach.",
+   "whyItMatters": "It is the first grip most accounts unlock, and the source publishes no numbers for what any grip actually does, so treat the level as the only confirmed fact about it.",
+   "whenToUseIt": "Fit it once it opens and judge the feel yourself. Do not pay for a later grip expecting a documented improvement, because none is published."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-rk6-tactical-foregrip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "45-degree-angled-foregrip",
+  "name": "45-Degree Angled Foregrip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "wardogLevel": 33,
+  "summary": "Foregrip.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "An angled front grip opened at WARDOG Level 33, with no confirmed shop or unlock price.",
+   "whyItMatters": "The source saw it already unlocked on an account it was reading, which tells you nothing about what it costs a new player, so plan for a price rather than assume it is free.",
+   "whenToUseIt": "Try it against the RK6 when you reach the level and keep whichever suits how you hold an angle."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-45-degree-angled-foregrip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mini-angled-foregrip",
+  "name": "Mini Angled Foregrip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "wardogLevel": 38,
+  "unlockPrice": 12500,
+  "summary": "Foregrip - unlock $12,500.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "An angled front grip opened at WARDOG Level 38 for a twelve and a half thousand dollar unlock.",
+   "whyItMatters": "It is the only grip with both a level gate and a confirmed unlock price, and that price competes with a good sight, which you can at least read the numbers on.",
+   "whenToUseIt": "Buy sights and magazines first. Come back to this once the rest of your loadout is settled and you want to fine-tune how the gun handles."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mini-angled-foregrip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "tdg-vertical-foregrip",
+  "name": "TDG Vertical Foregrip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "wardogLevel": 58,
+  "summary": "Foregrip.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "A vertical front grip opened at WARDOG Level 58, the highest gate of the five, with no confirmed cost.",
+   "whyItMatters": "The source could not read its price at all, so the fifty-eight levels are the only thing you can actually plan around.",
+   "whenToUseIt": "A late-account option. Until then, build your handling around the grips your level already allows."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-tdg-vertical-foregrip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "cqr-tactical-front-rail-grip",
+  "name": "CQR Tactical Front Rail Grip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "unlockPrice": 1100,
+  "summary": "Foregrip - unlock $1,100.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "A front rail grip that costs eleven hundred dollars flat, with no level requirement recorded.",
+   "whyItMatters": "It is the only grip you can get purely with money, which makes it the one a new account can reach without grinding levels first.",
+   "whenToUseIt": "The obvious first grip if you have eleven hundred dollars spare and have not yet reached Level 15."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-cqr-tactical-front-rail-grip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "tread-brake",
+  "name": "Tread Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 620,
+  "caliber": "5.56x45mm",
+  "summary": "Muzzle Device - caliber 5.56x45mm, $620.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A muzzle device costing six hundred and twenty dollars, listed for 5.56x45mm. Three rifles are so far verified to take it: the T-21, the GALIL and the M4.",
+   "whyItMatters": "The source says it changes recoil and how fast you aim, but publishes no amounts, so you are buying a named effect rather than a measured one.",
+   "whenToUseIt": "The cheapest way to try a muzzle device on a 5.56 rifle. Compare it against no attachment yourself before committing to the more expensive ones."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-tread-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "orpheus-max-brake",
+  "name": "Orpheus Max Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 1020,
+  "summary": "Muzzle Device - $1,020.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "The most expensive muzzle device at one thousand and twenty dollars, with no calibre line recorded.",
+   "whyItMatters": "It costs more than any sight on the page while publishing even less about what it does, which is a hard purchase to justify from the numbers alone.",
+   "whenToUseIt": "Leave it until you have tried the cheaper brakes and can feel a difference worth four hundred extra dollars."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-orpheus-max-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "cqb-74-brake",
+  "name": "CQB 74 Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 680,
+  "unlockPrice": 12500,
+  "summary": "Muzzle Device - $680.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A muzzle device at six hundred and eighty dollars with a twelve and a half thousand dollar unlock, and the only one whose effects the source states.",
+   "whyItMatters": "It is recorded as pulling the gun down less as you fire, drifting sideways a little less, tightening the spread slightly, and costing a small amount of aiming speed, which makes it the one muzzle device you can judge before buying.",
+   "whenToUseIt": "The pick when you are losing fights because the gun climbs off target during a burst. Skip it if your problem is being slow to aim in the first place."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-cqb-74-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

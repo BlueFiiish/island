@@ -1,0 +1,498 @@
+{
+ "Blessed": {
+  "id": "Blessed",
+  "name": "Blessed",
+  "kind": "buff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_blessed.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_blessed.png",
+  "iconFile": "IconStatusEffects_blessed.png",
+  "description": "The '''Blessed Status Effect is a buff applied exclusively to Survivors.\n• Survivors benefit from Blessed and whichever effect(s) it applies whenever they are inside the Area of Effect of an active Boon Totem (24 metres''') and does so for as long as they remain inside it.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Survivor-only buff tied to the Boon Totem system. A survivor gains its benefits for as long as they stay within the active totem's area of effect.",
+   "whyItMatters": "While inside the radius, the survivor stacks the totem's Boon on top of whatever other effects it carries, layering bonuses without pressing any button. Leaving the radius drops the buff immediately, so positioning near the totem matters more than any cooldown.",
+   "whenToUseIt": "It snaps on the instant a survivor steps inside the zone of a live Boon Totem and the moment they cross out of that area it disappears. Plan routes that loop back toward the totem ground so the buff does not drop during a long carry or a rescue."
+  }
+ },
+ "Blindness": {
+  "id": "Blindness",
+  "name": "Blindness",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/FulliconStatusEffects_blindness.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/FulliconStatusEffects_blindness.png",
+  "iconFile": "FulliconStatusEffects_blindness.png",
+  "description": "The '''Blindness Status Effect''' is a debuff that can be applied to both Survivors and the Killer.\n• Players suffering from Blindness are unable to read any Auras, including the default ones of their role and those from Perks.\n• Some essential Auras are exempt from that general rule, usually associated with Killer Power Objects.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Shared by both survivors and the killer, it blocks the ability to read any Auras, including default role Auras and those granted by Perks. Some essential Auras, usually tied to Killer Power Objects, remain visible despite it.",
+   "whyItMatters": "Without Auras, a survivor can no longer see nearby generators, other survivors, or danger indicators, while the killer loses whatever Aura-based awareness they had going in. Both sides are left relying on sound cues and memory of what they saw before it hit.",
+   "whenToUseIt": "It lands on a survivor or the killer when a specific effect applies it. It lifts once that source expires, so the situation to watch for is any totem or perk interaction that carries the debuff."
+  }
+ },
+ "Bloodlust": {
+  "id": "Bloodlust",
+  "name": "Bloodlust",
+  "kind": "buff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_bloodLust.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_bloodLust.png",
+  "iconFile": "IconStatusEffects_bloodLust.png",
+  "description": "The '''Bloodlust Status Effect' is a buff applied exclusively to the Killer.\n• Killers benefitting from Bloodlust increasingly gain more Movement speed in prolonged Chases''.\n• Bloodlust is a tiered Status Effect.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "A killer buff that builds tier by tier during a prolonged chase. The longer the chase lasts, the more movement speed the killer gains from it.",
+   "whyItMatters": "A survivor who stalls the chase briefly may still find the killer closing the gap with every passing second, since the speed bonus compounds the longer the pursuit drags on. Extended chases become a race against the killer's growing momentum rather than a static speed comparison.",
+   "whenToUseIt": "It applies to the killer whenever a source grants it and builds the longer the chase lasts. For a survivor, the situation to watch is a long unbroken pursuit where the killer keeps pulling ahead."
+  }
+ },
+ "Broken": {
+  "id": "Broken",
+  "name": "Broken",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_broken.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_broken.png",
+  "iconFile": "IconStatusEffects_broken.png",
+  "description": "The '''Broken Status Effect''' is a debuff applied exclusively to Survivors.\n• Survivors suffering from Broken are unable to be healed or heal themselves past the Injured State.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Blocks healing for a survivor who has it active. A Broken survivor cannot be healed by another survivor or heal themselves past the Injured State.",
+   "whyItMatters": "A healer standing in front of a Broken survivor wastes their entire healing action, because nothing they do will register progress past the Injured State. Teams that rely on a dedicated healer lose their core strategy whenever this is up on the injured survivor.",
+   "whenToUseIt": "It lands on a survivor from a specific effect and persists until that source ends. The moment to react is when a healer's progress bar simply will not move on an injured teammate."
+  }
+ },
+ "Cursed": {
+  "id": "Cursed",
+  "name": "Cursed",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_cursed.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_cursed.png",
+  "iconFile": "IconStatusEffects_cursed.png",
+  "description": "The '''Cursed Status Effect''' is a debuff applied exclusively to Survivors.\n• Survivors suffering from Cursed are currently affected by an active Hex Totem and its effects.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Marks a survivor as currently under the influence of an active Hex Totem and its associated effects. It is a survivor-only debuff.",
+   "whyItMatters": "The marker tells a survivor and their teammates that a Hex Totem is actively working against the team, so any unusual behavior or reduced effectiveness on an affected survivor has a totem behind it. It is the visual confirmation that the killer's totem play is still in force.",
+   "whenToUseIt": "It appears on a survivor when a Hex Totem is active and its effects are in force. It clears the moment the totem is broken, so the situation to watch is any survivor acting strangely after the killer has placed a totem."
+  }
+ },
+ "Deafened": {
+  "id": "Deafened",
+  "name": "Deafened",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/FulliconStatusEffects_hearing.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/FulliconStatusEffects_hearing.png",
+  "iconFile": "FulliconStatusEffects_hearing.png",
+  "description": "The '''Deafened Status Effect is a semi-used debuff that can be applied to both Survivors and the Killer.<br>While the Status Effect''' is not displayed on the HUD, its effects are used by several Unlockables.\n• Players suffering from Deafened have their audio muffled temporarily and hear a tinnitus-like whistling sound.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Muffles all audio for the affected player and replaces it with a tinnitus-like whistling. It is a semi-used debuff that can hit both survivors and the killer.",
+   "whyItMatters": "Losing audio cues strips a survivor of the killer's footstep sounds and other directional hints, turning a chase into a blind race. The killer faces the same problem in reverse, unable to use sound to track a survivor behind cover.",
+   "whenToUseIt": "It is applied by specific Unlockables and lasts only briefly. The moment to expect it is right after a particular interaction where the source debuff triggers."
+  }
+ },
+ "Deep_Wound": {
+  "id": "Deep_Wound",
+  "name": "Deep Wound",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_deepWound.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_deepWound.png",
+  "iconFile": "IconStatusEffects_deepWound.png",
+  "description": "The '''Deep Wound Status Effect' is a debuff applied exclusively to Survivors.\n• Survivors suffering from Deep Wound have a special health bar displayed on the HUD.\n• The health bar progressively drains whenever the Survivor is not running, or in the act of Mending themselves or being Mended'' by other Survivors.\n• Once the timer runs out, the Survivor is automatically put into the Dying State.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "A survivor debuff that overlays a special draining health bar on the HUD. The bar empties while the survivor stands still and also while they are in the middle of a heal, and once it hits zero the survivor drops into the Dying State.",
+   "whyItMatters": "A survivor with Deep Wound cannot safely stand still to heal, because every second of stillness feeds the drain, forcing them to keep moving even while injured. Teams that try to stop and mend a Deep Wound survivor risk losing them to the timer before the heal completes.",
+   "whenToUseIt": "It applies from a specific effect and the timer starts ticking the moment it lands. The situation to react to is seeing the special health bar appear on a survivor's HUD while they are already injured."
+  }
+ },
+ "Elusive": {
+  "id": "Elusive",
+  "name": "Elusive",
+  "kind": "buff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_wikiElusive.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_wikiElusive.png",
+  "iconFile": "IconStatusEffects_wikiElusive.png",
+  "description": "The '''Elusive Status Effect' is a buff applied exclusively to Survivors.\n• Survivors benefitting from Elusive are granted several Stealth mechanics:\n• Suppresses the creation of Scratch Marks.\n• Suppresses Grunts of Pain'' and the creation of Pools of Blood.\n• Blocks their Aura from being revealed to the Killer.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Stacks several stealth bonuses onto a survivor while active: it suppresses Scratch Marks, silences Grunts of Pain and Pools of Blood, and hides the survivor's Aura from the killer. It is a survivor-only buff.",
+   "whyItMatters": "A survivor with Elusive can walk right past the killer's awareness without leaving a trail, making them very hard to track once a chase breaks. The killer loses every audio and visual cue they would normally use to confirm a survivor's position.",
+   "whenToUseIt": "A source grants it and it holds until that source ends. The window to benefit from it is any stretch where a survivor must cross open ground or loop past the killer without being heard."
+  }
+ },
+ "Endurance": {
+  "id": "Endurance",
+  "name": "Endurance",
+  "kind": "buff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_enduranceSurvivor.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_enduranceSurvivor.png",
+  "iconFile": "IconStatusEffects_enduranceSurvivor.png",
+  "description": "The '''Endurance Status Effect' is a buff that can be applied to both Survivors and the Killer.\n• Survivors benefitting from Endurance can resist damage from the Killer.<br>If they are hit or otherwise damaged, their character model is briefly outlined in white, which is used to indicate the recent damage-protection through Endurance to the Killer.\n• Endurance is cancelled prematurely whenever the Survivor protected by it performs any Conspicuous Actions.\n• Endurance cannot protect a Survivor already suffering from the 'Deep Wound Status Effect''' from being downed.\n• Killers benefitting from Endurance can endure Stuns from Survivors, greatly reducing their duration.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Available to both survivors and the killer, it lets the affected side resist damage from the next hit. When a protected survivor is hit, their character model is briefly outlined in white to signal that Endurance absorbed the blow.",
+   "whyItMatters": "A blocked hit keeps a survivor in the Injured State instead of dropping them to Dying, which buys the seconds needed to reach a hook, a window, or a pallet. The killer sees the white outline when a hit is blocked, so a survivor who times Endurance well can survive a hit that would otherwise end the chase.",
+   "whenToUseIt": "It is cancelled the moment the protected survivor performs any Conspicuous Action. The safest window is the brief beat after a hit lands while the survivor is still, not the moment they start vaulting or mending."
+  }
+ },
+ "Exhausted": {
+  "id": "Exhausted",
+  "name": "Exhausted",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_exhausted.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_exhausted.png",
+  "iconFile": "IconStatusEffects_exhausted.png",
+  "description": "The '''Exhausted Status Effect is a debuff applied exclusively to Survivors.\n• Survivors suffering from Exhaustion are unable to use any of the numerous Exhaustion Perks, preventing them from chaining multiple such Perks in quick succession.\n• Exhausted slowly recovers over time whenever the Survivor is not running.\n• Exhausted recovers instantly''' after being unhooked.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Prevents a survivor from triggering additional Exhaustion Perks while it is active. It is a survivor-only debuff that recovers slowly whenever the survivor stops running and clears instantly after being unhooked.",
+   "whyItMatters": "A survivor who burns through one Exhaustion Perk and then hits Exhausted loses their chain of escape tools, leaving them vulnerable to the killer's next push. The slow recovery when standing still means a survivor cannot simply stop and wait it out during a chase.",
+   "whenToUseIt": "It triggers the moment a survivor activates an Exhaustion Perk and blocks every other Exhaustion Perk until it wears off on its own while standing still, or resets instantly the instant they are unhooked. Watch for the point in a chase where a survivor has just fired their escape and can no longer chain a second one."
+  }
+ },
+ "Exposed": {
+  "id": "Exposed",
+  "name": "Exposed",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_exposed.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_exposed.png",
+  "iconFile": "IconStatusEffects_exposed.png",
+  "description": "The '''Exposed Status Effect' is a debuff applied exclusively to Survivors:\n• Survivors suffering from Exposed will suffer double-damage when hit by a Basic Attack, which immediately puts them into the Dying State.\n• The Endurance Status Effect can shield a Survivor from double-damage, which would afflict them with the 'Deep Wound Status Effect' instead.\n• Survivors hear the sound cue found atop this table whenever they become Exposed by any means.\nIt should be noted that there is a popular misconception, especially amongst new Players, that due to the name \"exposed\"'', the Status Effect actually reveals their Aura to the Killer.<br>This is not and has never been the case, Exposed only ever applies double-damage.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Turns a Basic Attack hit into an instant Dying State for the affected survivor. It is a survivor-only debuff that the Endurance Status Effect can shield against, replacing the double damage with Deep Wound instead.",
+   "whyItMatters": "A single hit that would normally leave a survivor in the Injured State instead drops them straight to Dying, removing any chance to fight back or slip away. The sound cue that plays the moment Exposed lands tells the survivor their next hit is now a kill shot, which changes how they should play the next few seconds.",
+   "whenToUseIt": "A specific effect applies it to a survivor and it lifts when that effect ends. The moment to react is the sound cue the instant it lands, not the hit itself."
+  }
+ },
+ "Glyph": {
+  "id": "Glyph",
+  "name": "Glyph",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_glyph.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_glyph.png",
+  "iconFile": "IconStatusEffects_glyph.png",
+  "description": "The '''Glyph Status Effect''' is a debuff that is currently exclusive to the Killer.\n• It indicates to the Killer that they are currently suffering from a debuff that was applied after interacting with a Glyph.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Flags the killer as currently suffering from a debuff that originated from interacting with a Glyph. It is a killer-only debuff marker.",
+   "whyItMatters": "The marker tells the killer that a Glyph interaction is currently working against them, which helps them recognize why their stats or abilities feel off. For a survivor team, it confirms that a penalty from a Glyph is active and that the killer is carrying a handicap.",
+   "whenToUseIt": "It appears on the killer the moment they interact with a Glyph that carries a debuff. It stays until that debuff ends, so the situation to watch is the killer interacting with a totem or Glyph object on the map."
+  }
+ },
+ "Haemorrhage": {
+  "id": "Haemorrhage",
+  "name": "Haemorrhage",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_bleeding.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_bleeding.png",
+  "iconFile": "IconStatusEffects_bleeding.png",
+  "description": "The '''Haemorrhage Status Effect is a debuff applied exclusively to Survivors.\n• Survivors suffering from Haemorrhage produce more Pools of Blood, making them easier to track by the Killer.\n• Survivors suffering from Haemorrhage lose any partial Healing progress at a rate of -7 % per second''' if not healed up fully.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Makes a survivor produce more Pools of Blood while it is active, making them significantly easier to track. It is a survivor-only debuff.",
+   "whyItMatters": "A survivor with Haemorrhage leaves a wider trail of blood pools, giving the killer a clear path to follow even through areas where audio cues fall silent. Any partial healing progress also erodes over time unless the survivor is healed to full, which means stopping to heal becomes a risky trade-off.",
+   "whenToUseIt": "It lands from a specific source and persists while that source is active. The situation to watch is a survivor trailing an unusually dense line of Pools of Blood after a chase."
+  }
+ },
+ "Haste": {
+  "id": "Haste",
+  "name": "Haste",
+  "kind": "buff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_haste.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_haste.png",
+  "iconFile": "IconStatusEffects_haste.png",
+  "description": "The '''Haste Status Effect''' is a buff that can be applied to both Survivors and the Killer.\n• Players benefitting from Haste have their Movement speed increased.<br>The strength of the effect depends on the specific Unlockable that inflicts it.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Boosts movement speed for whichever side carries it, with the exact strength set by the Unlockable that applies it. It can affect both survivors and the killer.",
+   "whyItMatters": "A survivor with Haste covers more ground in the same time, which can mean reaching a window, a hook, or a generator vault before the killer's next grab lands. For the killer, it tightens the chase by closing the gap faster, so both sides feel the pressure of the speed difference.",
+   "whenToUseIt": "It is applied by a specific Unlockable and lasts for as long as that source is active. The situation to benefit from it is any open-ground run where the extra speed turns a close escape into a clean one."
+  }
+ },
+ "Hindered": {
+  "id": "Hindered",
+  "name": "Hindered",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_hindered.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_hindered.png",
+  "iconFile": "IconStatusEffects_hindered.png",
+  "description": "The '''Hindered Status Effect''' is a debuff that can be applied to both Survivors and the Killer.\n• Players suffering from Hindered have their Movement speed decreased.<br>The strength of the effect depends on the specific Unlockable that inflicts it.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "A debuff that slows the movement speed of whichever side it lands on, whether that is a survivor or the killer. The magnitude of the slow varies depending on which Unlockable inflicts it.",
+   "whyItMatters": "A survivor with Hindered struggles to keep pace with a killer during a chase, turning a normally tight escape into a losing race. For the killer, it makes it harder to close distance on a fleeing survivor, which can open up windows for a teammate to step in.",
+   "whenToUseIt": "A killer ability or a survivor perk can both deliver this, and the slow persists for as long as that source stays active. The moment to watch is the instant a chase is going smoothly and the pace suddenly drops because an overlapping effect has kicked in."
+  }
+ },
+ "Incapacitated": {
+  "id": "Incapacitated",
+  "name": "Incapacitated",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_incapacitated.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_incapacitated.png",
+  "iconFile": "IconStatusEffects_incapacitated.png",
+  "description": "The '''Incapacitated Status Effect''' is a debuff applied exclusively to Survivors.\n• Survivors suffering from Incapacitated are unable to interact with certain Props or other Survivors.<br>See Inhibited Actions for a full list.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Incapacitated is a debuff applied exclusively to Survivors. While active, it blocks interaction with certain Props and with other Survivors, covering every action listed on the Inhibited Actions list.",
+   "whyItMatters": "A survivor who is Incapacitated loses access to key interactions with Props and other Survivors, which can stall a team's progress at a critical moment. This makes the affected survivor a liability until the effect clears, even if they are otherwise healthy.",
+   "whenToUseIt": "A specific effect applies it and it holds until that effect ends. The moment to notice is a teammate suddenly frozen out of interactions with a hook, a prop, or another survivor."
+  }
+ },
+ "Madness": {
+  "id": "Madness",
+  "name": "Madness",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_madness.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_madness.png",
+  "iconFile": "IconStatusEffects_madness.png",
+  "description": "The '''Madness Status Effect is a debuff applied exclusively to Survivors and exclusive to Trials against The Doctor.\n• Survivors suffering from Madness suffer from various hallucinations and other debilitating impairments.\n• Madness is a tiered Status Effect.\nThe Madness Status Effect''', used exclusively by The Doctor, impairs the Survivor's sanity, increasingly affecting them with various Afflictions, depending on the Add-on(s) The Doctor is using.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Exclusive to Trials against The Doctor, it impairs a survivor's sanity through hallucinations and other debilitating effects. It is a tiered debuff that shifts based on which Add-ons The Doctor is using.",
+   "whyItMatters": "A survivor facing The Doctor can have their perception distorted, their actions impaired, and their decision-making clouded by hallucinations that change with each Add-on. This makes every chase against The Doctor feel different from a chase against any other killer, since the survivor's own screen is working against them.",
+   "whenToUseIt": "It is applied by The Doctor's Madness effect and builds in tiers as the trial progresses. The situation to expect it in is any Trial where The Doctor is the active killer and has begun inflicting Afflictions."
+  }
+ },
+ "Mangled": {
+  "id": "Mangled",
+  "name": "Mangled",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_mangled.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_mangled.png",
+  "iconFile": "IconStatusEffects_mangled.png",
+  "description": "The '''Mangled Status Effect is a debuff applied exclusively to Survivors.\n• Survivors suffering from Mangled take 25 % longer to be healed for 1 Health State'''.\n• This is achieved by reducing the Healing speed on that Survivor by -20 %.\n• Mangled only applies to healing from the Injured State back to full health.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "A survivor debuff in the status-effect system that reduces healing speed for the affected survivor. It applies only when recovering from the Injured state back to full health.",
+   "whyItMatters": "A teammate channeling healing on the affected survivor works at a noticeably reduced pace. The longer channel window gives the killer a wider opening to interrupt or punish.",
+   "whenToUseIt": "It attaches to a survivor after an in-trial effect that penalizes healing is triggered. The effect fades once its duration runs out, restoring normal healing speed."
+  }
+ },
+ "Oblivious": {
+  "id": "Oblivious",
+  "name": "Oblivious",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_oblivious.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_oblivious.png",
+  "iconFile": "IconStatusEffects_oblivious.png",
+  "description": "The '''Oblivious Status Effect''' is a debuff applied exclusively to Survivors.\n• Survivors suffering from Oblivious are unable to perceive the Killer's Terror Radius and also do not hear the Heartbeat warning of the Killer's proximity.\n• Survivors suffering from Oblivious in turn do not suffer from any effects that rely on Survivors being inside the Terror Radius to be applied.\n• During a Chase, Survivors are still able to hear the Chase Music.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "A survivor-exclusive debuff that silences the heartbeat warning and removes awareness of the killer's Terror Radius. While active, effects that depend on a survivor being inside the radius no longer apply to them, though chase music still plays during a chase.",
+   "whyItMatters": "Without either auditory or visual cue, a survivor has no early signal that a killer is near, making every dark corner a potential ambush. On the flip side, any effect that depends on a survivor being inside the Terror Radius is blocked while this persists.",
+   "whenToUseIt": "It applies to a survivor when a trial effect strips their awareness of the killer's position. The heartbeat and radius indicators return once the effect ends."
+  }
+ },
+ "Revealed": {
+  "id": "Revealed",
+  "name": "Revealed",
+  "kind": "debuff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_revealed.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_revealed.png",
+  "iconFile": "IconStatusEffects_revealed.png",
+  "description": "The '''Revealed Status Effect is a debuff that is applied exclusively to Survivors.\n• Survivors suffering from Revealed have their Aura revealed to both Killers in the 2v8 Game Mode, to which this Status Effect''' is exclusive.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Debuff in the status-effect system that makes a survivor's aura visible to all killers on the map. It appears only in the expanded mode that pits a large survivor group against the full killer roster.",
+   "whyItMatters": "Either killer in that mode can read the affected survivor's location on the map at all times. This strips away the stealth that normally lets survivors work unseen.",
+   "whenToUseIt": "It lands on a survivor when an effect in that expanded game mode removes their concealment. It lifts once the effect that caused it ends."
+  }
+ },
+ "Undetectable": {
+  "id": "Undetectable",
+  "name": "Undetectable",
+  "kind": "buff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_undetectable.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_undetectable.png",
+  "iconFile": "IconStatusEffects_undetectable.png",
+  "description": "The '''Undetectable Status Effect''' is a buff applied exclusively to the Killer.\n• Killers benefitting from Undetectable are granted several Stealth mechanics:\n• Suppresses the Terror Radius\n• Suppresses the Red Stain\n• Blocks their Aura from being revealed to Survivors\n• Suppresses the Stinger jump-scare SFX when starting to move from standing still<br>\n• Enables the smoky-screen visual effect, indicating stealth to the Killer",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Killer-exclusive buff in the status-effect system that bundles several stealth benefits together. While it is up, the Terror Radius and the Red Stain are suppressed, the aura stays hidden from survivors, the Stinger sound is muted when breaking a standstill, and a smoky overlay tells the killer they are cloaked.",
+   "whyItMatters": "A killer under this effect can approach survivors without any of the usual tells, making it far harder to detect movement or read position from sound and visual cues. A smoky-screen effect also appears on the killer's own view to confirm stealth is active.",
+   "whenToUseIt": "It activates on the killer when an in-trial effect grants the stealth state. It drops off once that effect ends, and all the usual detection signals return."
+  }
+ },
+ "Vision": {
+  "id": "Vision",
+  "name": "Vision",
+  "kind": "buff",
+  "system": "status-effect",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_vision.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_vision.png",
+  "iconFile": "IconStatusEffects_vision.png",
+  "description": "The '''Vision Status Effect''' is an unused buff that would have been applied to both Survivors and the Killer.\n• The effect would have boosted the radius of range-limited Aura-reading abilities, an effect that is identical to the effect of the Perk Open-Handed.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "An unused buff that was designed to boost the range of limited aura-reading abilities for both survivors and the killer. Its intended effect is identical to what the perk Open-Handed provides.",
+   "whyItMatters": "Its intended function of extending how far a survivor or killer can read auras was meant to mirror Open-Handed. It was never put to use in live trials, so it has no practical impact today.",
+   "whenToUseIt": "It can no longer be obtained because it was never implemented in the game. The perk Open-Handed fills the same role in current play."
+  }
+ },
+ "Chance": {
+  "id": "Chance",
+  "name": "Chance",
+  "kind": "both",
+  "system": "proficiency-indicator",
+  "icon": "/island/apps/dbd/./sprites/FulliconStatusEffects_chance.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/FulliconStatusEffects_chance.png",
+  "iconFile": "FulliconStatusEffects_chance.png",
+  "description": "The '''Chance Proficiency Indicator''' works alongside the Luck Mechanic and indicates whether the action a Survivor is currently performing has a higher or lower chance at succeeding.\n• Only applies to self-unhooking from a Hook.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Reads the Luck Mechanic and tells a survivor whether the action they are performing has a higher or lower chance of succeeding. It only appears during a self-unhook attempt from a Hook.",
+   "whyItMatters": "A survivor about to try an unhook can see at a glance whether the odds lean in their favor or against them, which turns a blind gamble into a calculated risk. That information is especially valuable when a teammate is already on the move to free them, since waiting might be the smarter call.",
+   "whenToUseIt": "It shows up the moment a survivor begins a self-unhook and disappears once the action resolves. The situation to read it in is the split-second decision of whether to attempt the unhook now or wait for a teammate to arrive."
+  }
+ },
+ "Efficiency": {
+  "id": "Efficiency",
+  "name": "Efficiency",
+  "kind": "both",
+  "system": "proficiency-indicator",
+  "icon": "/island/apps/dbd/./sprites/FulliconStatusEffects_efficiency.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/FulliconStatusEffects_efficiency.png",
+  "iconFile": "FulliconStatusEffects_efficiency.png",
+  "description": "The '''Efficiency Proficiency Indicator''' indicates whether an Item's current Depletion rate is reduced or increased.\n• This Proficiency Indicator was originally known as Expertise.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Tells a survivor whether the depletion rate of the Item they are carrying is currently faster or slower than its baseline. It was originally called Expertise before being renamed.",
+   "whyItMatters": "A survivor who knows their Item is depleting slowly can afford to use it more liberally during a chase, while a fast depletion rate means each use costs more of their limited supply. Reading the indicator before committing to an Item lets a survivor plan their survival around how much they actually have left.",
+   "whenToUseIt": "It appears whenever a survivor picks up or holds an Item whose depletion rate has been altered. The situation to check it in is right before using an Item in a tense moment rather than mid-action."
+  }
+ },
+ "Healing": {
+  "id": "Healing",
+  "name": "Healing",
+  "kind": "both",
+  "system": "proficiency-indicator",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_healing.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_healing.png",
+  "iconFile": "IconStatusEffects_healing.png",
+  "description": "The '''Healing Proficiency Indicator is an unused Proficiency Indicator''' that would have indicated whether a Survivor's Healing speed would be increased or reduced.\n• This functionality was usurped by the '''Progression Speed Proficiency Indicator'''.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "An unused proficiency indicator that was originally meant to show whether a survivor's healing speed is boosted or slowed. The Progression Speed Proficiency Indicator has since taken over that job, so the Healing indicator can no longer be encountered in a live trial.",
+   "whyItMatters": "Because it is retired, it has no practical effect on healing speed in the current version of the game. Knowing it exists is mostly useful for understanding how the proficiency indicator system has evolved over time.",
+   "whenToUseIt": "It does not appear in any current gameplay situation, so there is no in-trial moment to watch for it. Its only relevance is historical, as a former indicator whose role was absorbed by a newer system."
+  }
+ },
+ "Progression_Speed": {
+  "id": "Progression_Speed",
+  "name": "Progression Speed",
+  "kind": "both",
+  "system": "proficiency-indicator",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_progressionSpeed.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_progressionSpeed.png",
+  "iconFile": "IconStatusEffects_progressionSpeed.png",
+  "description": "The '''Progression speed Proficiency Indicator''' indicates whether the Progression speed of an Action being performed by the Player is increased or reduced.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "A proficiency indicator that flags whether the speed of an action being performed is currently boosted or reduced. It applies to any action the affected side is carrying out.",
+   "whyItMatters": "Glancing at it before committing to a generator interaction, a heal, or any timed activity tells the affected side whether the current moment favors speed or punishes it. Reading this early helps plan whether to push through or hold off.",
+   "whenToUseIt": "It appears the moment an active effect modifies action speed, making it visible right before or during the interaction. It vanishes once that modifier is removed."
+  }
+ },
+ "Repairing": {
+  "id": "Repairing",
+  "name": "Repairing",
+  "kind": "both",
+  "system": "proficiency-indicator",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_repairing.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_repairing.png",
+  "iconFile": "IconStatusEffects_repairing.png",
+  "description": "The '''Repairing Proficiency Indicator is an unused Proficiency Indicator''' that would have indicated whether a Survivor's Repair speed would be increased or reduced.\n• This functionality was usurped by the '''Progression Speed Proficiency Indicator'''.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "An unused proficiency indicator that was designed to show whether a survivor's repair speed is boosted or reduced. Its functionality was superseded by the Progression Speed indicator.",
+   "whyItMatters": "Its intended role of flagging faster or slower generator work has been folded into the Progression Speed indicator. As a result it no longer serves any purpose in active play.",
+   "whenToUseIt": "It does not appear in current trials because its function was taken over by the Progression Speed indicator. There is no situation in live play where a survivor would see it."
+  }
+ },
+ "Sabotaging": {
+  "id": "Sabotaging",
+  "name": "Sabotaging",
+  "kind": "both",
+  "system": "proficiency-indicator",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_sabotaging.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_sabotaging.png",
+  "iconFile": "IconStatusEffects_sabotaging.png",
+  "description": "The '''Sabotaging Proficiency Indicator is an unused Proficiency Indicator''' that would have indicated whether a Survivor's Sabotage speed would be increased or reduced.\n• This functionality was usurped by the '''Progression Speed Proficiency Indicator'''.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "An unused proficiency indicator meant to flag whether a survivor's sabotage speed is boosted or reduced. Its role was absorbed by the Progression Speed indicator.",
+   "whyItMatters": "It never appears in current matches, so it changes nothing for the survivor pressing the button. The faster-or-slower-sabotage reading it was built to show now comes from the Progression Speed Proficiency Indicator.",
+   "whenToUseIt": "It never appears in a live trial because the Progression Speed indicator now handles that role. No situation in current play calls for it."
+  }
+ },
+ "Skill_Check_Difficulty": {
+  "id": "Skill_Check_Difficulty",
+  "name": "Skill Check Difficulty",
+  "kind": "both",
+  "system": "proficiency-indicator",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_skillCheckDifficulty.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_skillCheckDifficulty.png",
+  "iconFile": "IconStatusEffects_skillCheckDifficulty.png",
+  "description": "The '''Skill Check Difficulty Proficiency Indicator' indicates whether the Success Zone of a triggered Skill Check'' is increased or reduced.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Skill Check Difficulty is a proficiency indicator rather than an effect in its own right. It shows up alongside a triggered Skill Check to say whether the Success Zone has grown or shrunk. Reading it tells a survivor how forgiving the next spin is going to be.",
+   "whyItMatters": "A wider success zone makes the marker easier to land, while a narrowed one turns the same interaction into a much tighter aim. Reading this before aiming changes how carefully a survivor tracks the target.",
+   "whenToUseIt": "It is visible at the moment a skill check pops up, giving a brief window to adjust aim. Whether the zone is generous or tight shapes how deliberately the marker should be placed."
+  }
+ },
+ "Skill_Check_Probability": {
+  "id": "Skill_Check_Probability",
+  "name": "Skill Check Probability",
+  "kind": "both",
+  "system": "proficiency-indicator",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_skillCheckProbability.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_skillCheckProbability.png",
+  "iconFile": "IconStatusEffects_skillCheckProbability.png",
+  "description": "The '''Skill Check Probability Proficiency Indicator' indicates the Odds of an interaction triggering a Skill Check'' are increased or reduced, with the latter being considered beneficial.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Indicator that flags whether an interaction is more or less likely to trigger a Skill Check. The reduced odds direction is the beneficial one, so a lowered probability reads as an advantage for the side affected.",
+   "whyItMatters": "Knowing before an interaction whether a skill check is likely to pop helps decide whether to commit or hold off. A clean interaction without a forced check is always the safer path.",
+   "whenToUseIt": "It is visible before the interaction begins, so a survivor can glance at it while holding the interact button. That glance decides whether to proceed or back off."
+  }
+ },
+ "Sleep_Penalty": {
+  "id": "Sleep_Penalty",
+  "name": "Sleep Penalty",
+  "kind": "debuff",
+  "system": "proficiency-indicator",
+  "icon": "/island/apps/dbd/./sprites/IconStatusEffects_sleepPenalty.png",
+  "iconRemote": "https://deadbydaylight.wiki.gg/images/IconStatusEffects_sleepPenalty.png",
+  "iconFile": "IconStatusEffects_sleepPenalty.png",
+  "description": "The '''Sleep Penalty Proficiency Indicator' only displays that the Wake Up'' action is slowed when trying to manually wake other Survivors in Trials against The Nightmare after they were woken up that way at least once before already.",
+  "source": "deadbydaylight.wiki.gg",
+  "beginner": {
+   "whatItIs": "Debuff indicator exclusive to Trials against The Nightmare, shown when the Wake Up action is slowed. The slowdown bites only when manually waking a survivor who was already woken that way earlier in the same trial.",
+   "whyItMatters": "A killer who has already woken a survivor once will find the next manual wake on that same survivor drags on. The extra time costs momentum while the survivor lies vulnerable on the ground.",
+   "whenToUseIt": "It becomes visible to the killer the moment the repeat-wake condition is met. It serves as a heads-up that the next wake action will be slower than a first-time wake."
+  }
+ }
+}

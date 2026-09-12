@@ -1,0 +1,72 @@
+[
+ {
+  "id": "fmj",
+  "name": "FMJ",
+  "category": "Ammo Types",
+  "sourceSection": "ammo-types",
+  "inGameName": "Standard",
+  "summary": "Ammo Type - shown in game as Standard.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#ammo-types",
+  "beginner": {
+   "whatItIs": "The default round every weapon starts with. The game calls it Standard in the buy menu.",
+   "whyItMatters": "It is the round you already own and never have to unlock, and it is the baseline the other two are measured against.",
+   "whenToUseIt": "Use it until you have a reason not to. Against an unarmoured target it is doing most of what the alternatives do, for none of the money."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-types-fmj.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "hp",
+  "name": "HP",
+  "category": "Ammo Types",
+  "sourceSection": "ammo-types",
+  "inGameName": "Flesh",
+  "summary": "Ammo Type - shown in game as Flesh.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#ammo-types",
+  "beginner": {
+   "whatItIs": "A round tuned for hitting people who are not wearing plates. The buy menu calls it Flesh.",
+   "whyItMatters": "It rewards you for winning the fight you were already winning, and punishes you for meeting someone in armour with it.",
+   "whenToUseIt": "Carry it when your fights are against lightly kitted players. Switch off it the moment the other side is running plates."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-types-hp.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ap",
+  "name": "AP",
+  "category": "Ammo Types",
+  "sourceSection": "ammo-types",
+  "inGameName": "Piercing",
+  "summary": "Ammo Type - shown in game as Piercing.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#ammo-types",
+  "beginner": {
+   "whatItIs": "The armour-piercing round, shown as Piercing in the buy menu, and the last of the three to become available - its gates run from level 63 to level 140. The source has not confirmed what it costs.",
+   "whyItMatters": "It is the only one of the three that still does its job through heavy armour, which is why the game puts it behind the highest level gate on almost every calibre.",
+   "whenToUseIt": "Load it when you expect armoured opposition and can afford to be wrong. Do not pay for it while your fights are against fresh spawns."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-types-ap.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "rifled-slug",
+  "name": "Rifled Slug",
+  "category": "Ammo Types",
+  "sourceSection": "ammo-types",
+  "exclusiveToCaliber": "12 Gauge",
+  "wardogLevel": 41,
+  "dataCompleteness": "partial",
+  "summary": "Ammo Type - only for 12 Gauge.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#ammo-types",
+  "beginner": {
+   "whatItIs": "A fourth ammunition type that only 12 Gauge gets. Where the other shotgun loads throw a spread of pellets, this one sends a single solid projectile down the barrel.",
+   "whyItMatters": "It changes what the gun is rather than how hard it hits. A shotgun firing one projectile stops losing its damage to spread at distance, so the same weapon stays useful past the doorway range it is normally stuck at - and no other calibre in the game has an option that does this.",
+   "whenToUseIt": "Once you reach WARDOG level 41, which is where it opens. Take it when you like your shotgun but keep dying to people standing thirty metres away; stay on the standard load while all your fights are indoors. The unlock price is not published yet, so budget for a surprise."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-types-rifled-slug.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

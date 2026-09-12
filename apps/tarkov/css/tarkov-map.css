@@ -1,0 +1,582 @@
+/* Interactive map view - the island's in-page replica of the Fiiish Pilot
+   overlay map (see js/hub-maps-interactive.js).
+
+   TWO HALVES, and the split matters:
+
+   1. CHROME (.imap-*) is new. The overlay's own panel chrome is written for a
+      transparent, click-through window floating over a running game; none of
+      that is right for a pane inside a web page, so the frame, the header, the
+      side panel and the popups are styled here in the HUB's palette (the
+      var(--...) tokens hub.css defines on #hub-root) instead.
+
+   2. THE MARKERS are ported LITERALLY from src/renderer/style.css in the pilot
+      repo - same class names, same colours, same sizes, same off-floor fade.
+      That is the whole point: the map is meant to read as the same map. If a
+      marker colour changes over there, change it here too.
+
+   Everything is scoped under #hub-root so it cannot reach the shell chrome. */
+
+/* The interactive view fills the maps pane; the two normal panes stay in the
+   DOM behind it, so closing it needs no rebuild. position:relative here is what
+   gives .imap-mount something to fill. */
+#hub-root .maps-wrap { position: relative; }
+
+#hub-root .imap-mount {
+  position: absolute;
+  inset: 0;
+  /* A stacking context of its own: leaflet's panes run to z-index 800 and must
+     never climb over the hub footer or the shell's top bar.
+     4, not 2: the dossier's sticky .mdx-head sits at z-index 3 in this same
+     context (hub-maps-dossier.css), and at 2 it painted its own header strip
+     over the top of the open interactive map. */
+  z-index: 4;
+  isolation: isolate;
+  background: var(--bg);
+}
+
+/* ...but 4 is only enough on DESKTOP. At <=720px hub.css turns the dossier
+   pane into a full-bleed overlay:
+     .items-right, .split-right { position: absolute; inset: 0; z-index: 5 }
+   and .imap-mount is that pane's SIBLING, so a z-index of 4 put the whole
+   interactive map underneath it - the map painted, but nothing of it was ever
+   visible or clickable, and .imap-back / .imap-companion could not be tapped.
+   6 clears the pane (5) while still sitting under .hub-back (also 6, but later
+   in the DOM, so it keeps winning) - the hub's own escape hatch stays on top. */
+@media (max-width: 720px) {
+  #hub-root .imap-mount { z-index: 6; }
+}
+
+#hub-root .imap-view {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  /* the two scale knobs the marker rules below read; set in JS */
+  --marker-scale: 1;
+  --label-scale: 1;
+}
+
+/* ---- header strip ---- */
+#hub-root .imap-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line);
+  background: var(--gunmetal);
+  box-shadow: inset 0 1px 0 var(--olive-bevel);
+}
+
+#hub-root .imap-back {
+  flex: none;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#hub-root .imap-back:hover { background: var(--accent-soft); border-color: var(--accent); color: #fff; }
+
+#hub-root .imap-title {
+  font-family: var(--display);
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+#hub-root .imap-floor {
+  flex: none;
+  background: var(--bg-raised);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 3px 6px;
+  font-size: 12px;
+}
+
+#hub-root .imap-status {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--text-dim);
+  text-align: right;
+}
+#hub-root .imap-status.bad { color: var(--bad); }
+#hub-root .imap-status.warn { color: var(--warn); }
+
+/* ---- body: map canvas + filter panel ---- */
+#hub-root .imap-body {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+#hub-root .imap-canvas {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  /* Tarkov's basemaps are drawn for a dark page; the void around the map edge
+     has to match or the SVG floats on a bright rectangle. */
+  background: #0a0c0f;
+}
+#hub-root .imap-canvas .leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #0a0c0f;
+  font-family: inherit;
+  outline: none;
+}
+
+#hub-root .imap-panel {
+  flex: 0 0 232px;
+  width: 232px;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 8px 12px 24px;
+  border-left: 1px solid var(--line);
+  background: var(--bg-panel);
+  color: var(--text);
+  font-size: 12px;
+}
+
+/* ---- filter panel internals (the overlay's own class names) ---- */
+#hub-root .imap-panel .fp-section { margin-bottom: 8px; }
+#hub-root .imap-panel .fp-head {
+  color: var(--label);
+  font-family: var(--display);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 8px 0 3px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+#hub-root .imap-panel .fp-only {
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 4px;
+  padding: 0 5px;
+  font-size: 9px;
+  line-height: 15px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#hub-root .imap-panel .fp-only:hover { background: var(--accent-soft); border-color: var(--accent); color: #fff; }
+#hub-root .imap-panel .fp-note { color: var(--warn); padding: 4px 0; line-height: 1.35; }
+#hub-root .imap-panel label { display: block; padding: 2px 0; cursor: pointer; }
+#hub-root .imap-panel input[type="checkbox"] { vertical-align: -2px; accent-color: var(--accent); }
+
+#hub-root .imap-panel .ap-row { display: flex; align-items: center; gap: 6px; margin: 3px 0; }
+#hub-root .imap-panel .ap-cap { color: var(--text-dim); font-size: 11px; min-width: 56px; }
+#hub-root .imap-panel .ap-btns { display: flex; flex: 1; gap: 3px; }
+#hub-root .imap-panel .ap-btns button {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 2px 0;
+  font-size: 11px;
+  cursor: pointer;
+}
+#hub-root .imap-panel .ap-btns button:hover { background: var(--accent-soft); }
+#hub-root .imap-panel .ap-btns button.on { background: var(--accent-soft); border-color: var(--accent); color: #fff; }
+
+#hub-root .imap-search {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 3px 0;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 4px 6px;
+  font-size: 12px;
+}
+#hub-root .imap-results button,
+#hub-root .imap-clear {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 2px 0;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  padding: 3px 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#hub-root .imap-results button:hover,
+#hub-root .imap-clear:hover { background: var(--accent-soft); }
+#hub-root .imap-current { color: var(--warn); margin: 4px 0; }
+
+/* ---- the affordance on the flat basemap in the detail pane ---- */
+#hub-root .imap-open-btn {
+  display: block;
+  margin: 6px 0 2px;
+  background: var(--accent-soft);
+  color: var(--text);
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-family: var(--display);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#hub-root .imap-open-btn:hover { background: var(--accent); color: #06111c; }
+#hub-root .svg-holder.imap-clickable { cursor: zoom-in; }
+#hub-root .svg-holder.imap-clickable:hover { border-color: var(--accent); }
+
+/* ==========================================================================
+   MARKERS - ported from the overlay's style.css. Same names, same colours.
+   ========================================================================== */
+
+/* Floor filtering FADES markers on another level instead of hiding them, so a
+   faded extract one floor up still tells you it is there. */
+#hub-root .lbl-marker.off-floor,
+#hub-root .dot-marker.off-floor { opacity: 0.25; }
+
+/* Dot markers (bosses, spawns, locks, containers, loot). Size comes from
+   leaflet's iconSize, computed in JS from --marker-scale - scaling these in CSS
+   would leave iconAnchor at the unscaled half-width and slide every dot off its
+   real position. */
+#hub-root .dot-marker > div {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid #000;
+  box-shadow: 0 0 3px #000;
+}
+#hub-root .boss-dot { background: #ff5a4e; }
+#hub-root .spawn-pmc { background: #4db2ff; }
+#hub-root .spawn-scav { background: #ffb84d; }
+#hub-root .lock-dot { background: #ffd84d; border-radius: 2px !important; }
+#hub-root .container-dot { background: #7fe0c3; }
+#hub-root .loot-dot { background: #ffe94d; }
+
+/* Landmark names (Dorms, Big Red, ...) */
+#hub-root .landmark {
+  color: rgba(233, 240, 250, 0.92);
+  font-size: calc(12px * var(--label-scale));
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 3px #000, 0 0 5px #000;
+  white-space: nowrap;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+#hub-root .hazard {
+  color: #ff8a7a;
+  font-size: calc(11px * var(--label-scale));
+  text-shadow: 0 1px 2px #000;
+  border: 1px solid rgba(255, 138, 122, 0.5);
+  background: rgba(30, 10, 10, 0.6);
+  padding: 1px 5px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+#hub-root .transit {
+  color: #8ad0ff;
+  font-size: calc(11px * var(--label-scale));
+  text-shadow: 0 1px 2px #000;
+  border: 1px solid rgba(138, 208, 255, 0.5);
+  background: rgba(10, 20, 30, 0.6);
+  padding: 1px 5px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+#hub-root .lbl-marker .ex {
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(28, 140, 74, 0.85);
+  color: #fff;
+  font-size: calc(10px * var(--label-scale));
+  white-space: nowrap;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+#hub-root .lbl-marker .ex.scav { background: rgba(150, 108, 24, 0.85); }
+#hub-root .lbl-marker .qm {
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(120, 70, 190, 0.85);
+  color: #fff;
+  font-size: calc(10px * var(--label-scale));
+  white-space: nowrap;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+#hub-root .lbl-marker .qm.mine { border-color: #b38bff; color: #e2d3ff; }
+
+/* ---- popups ----
+   The overlay retargets its nav HUD on a marker click; there is no player
+   position here, so a click says what the marker IS instead. */
+#hub-root .imap-canvas .leaflet-popup-content-wrapper {
+  background: var(--bg-raised);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.55);
+}
+#hub-root .imap-canvas .leaflet-popup-content { margin: 8px 12px; font-size: 12px; line-height: 1.4; }
+#hub-root .imap-canvas .leaflet-popup-tip { background: var(--bg-raised); border: 1px solid var(--line); }
+#hub-root .imap-pop-title { color: var(--text); font-weight: 600; }
+#hub-root .imap-pop-body { color: var(--text-dim); margin-top: 4px; max-width: 260px; }
+
+/* ---- leaflet's own controls, in the hub palette ---- */
+#hub-root .imap-canvas .leaflet-control-zoom a {
+  background: var(--bg-raised);
+  color: var(--text);
+  border-color: var(--line);
+}
+#hub-root .imap-canvas .leaflet-control-zoom a:hover { background: var(--accent-soft); color: #fff; }
+
+/* ---- phone ----
+   The side panel becomes a strip under the map: 232px of controls next to a
+   320px-wide map is not a map. */
+@media (max-width: 720px) {
+  #hub-root .imap-body { flex-direction: column; }
+  #hub-root .imap-canvas { flex: 1 1 60%; min-height: 240px; }
+  #hub-root .imap-panel {
+    flex: 0 0 auto;
+    width: auto;
+    max-height: 40%;
+    border-left: none;
+    border-top: 1px solid var(--line);
+  }
+  #hub-root .imap-title { font-size: 14px; }
+  #hub-root .imap-status { display: none; }
+}
+
+/* ==========================================================================
+   PILOT LIVE LINK - the chrome, the player marker and companion mode.
+   Every rule here is inert until hub-pilot-connect.js has actually connected;
+   nothing below changes the map as it renders today.
+   ========================================================================== */
+
+/* ---- the head chip ---- */
+#hub-root .imap-live {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+#hub-root .imap-live.hidden { display: none; }
+#hub-root .imap-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--text-dim);
+  box-shadow: 0 0 0 1px #000;
+}
+#hub-root .imap-live.live { color: #7fe0c3; border-color: rgba(127, 224, 195, 0.5); }
+#hub-root .imap-live.live .imap-live-dot { background: #7fe0c3; box-shadow: 0 0 6px #7fe0c3; }
+#hub-root .imap-live-resume {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 0 5px;
+  font-size: 9px;
+  line-height: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+#hub-root .imap-live-resume:hover { background: var(--accent-soft); border-color: var(--accent); color: #fff; }
+#hub-root .imap-live-resume.hidden { display: none; }
+
+/* ---- companion-mode button ---- */
+#hub-root .imap-companion {
+  flex: none;
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#hub-root .imap-companion:hover { background: var(--accent-soft); border-color: var(--accent); color: #fff; }
+#hub-root .imap-companion.on { background: var(--accent-soft); border-color: var(--accent); color: #fff; }
+
+/* ---- toast ----
+   Floats over the canvas rather than pushing it: a nav-target refusal must not
+   reflow the map you are about to click again. */
+#hub-root .imap-toast {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  z-index: 900;
+  max-width: min(520px, 80%);
+  padding: 7px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background: rgba(9, 18, 26, 0.95);
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+}
+#hub-root .imap-toast.bad { border-color: #ff8a8a; color: #ffd9d9; }
+#hub-root .imap-toast.hidden { display: none; }
+
+/* ---- "Navigate here" inside a popup ---- */
+#hub-root .imap-nav-btn {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  background: var(--accent-soft);
+  color: var(--text);
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#hub-root .imap-nav-btn:hover { background: var(--accent); color: #06111c; }
+
+/* ---- "Drop a ping here" / "Remove this ping" inside a popup ----
+   Same geometry as the nav button so a popup with both reads as one stack; the
+   ping colour rather than the accent, so the button matches the pin it makes. */
+#hub-root .imap-ping-btn,
+#hub-root .imap-ping-remove {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  background: rgba(255, 84, 112, 0.18);
+  color: var(--text);
+  border: 1px solid #ff5470;
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#hub-root .imap-ping-btn:hover,
+#hub-root .imap-ping-remove:hover { background: #ff5470; color: #1a0308; }
+
+#hub-root .imap-panel .pilot-line { color: var(--text-dim); }
+#hub-root .imap-panel .imap-clear[disabled] { opacity: 0.45; cursor: not-allowed; }
+#hub-root .imap-panel input[type="checkbox"][disabled] { opacity: 0.45; }
+
+/* ---- the player, ported literally from the overlay's style.css ----
+   Same triangle, same blue, same shadow; the rotation is set inline in JS
+   because it depends on the map's own coordinateRotation. */
+#hub-root .player-marker { pointer-events: none; }
+#hub-root .player-marker .dot {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4db2ff;
+  font-size: 20px;
+  line-height: 1;
+  text-shadow: 0 0 6px #000, 0 0 3px #000;
+}
+
+/* Where the overlay's nav arrow is currently pointed. */
+#hub-root .nav-marker { pointer-events: none; }
+#hub-root .nav-marker .pin {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid #ffb020;
+  background: rgba(255, 176, 32, 0.35);
+  box-shadow: 0 0 8px rgba(255, 176, 32, 0.8);
+}
+
+/* ---- pings, ported literally from the overlay's style.css ----
+   A teardrop pin whose POINT is the marked spot, with the ping's number in it.
+   Same shape, same pink, so a ping dropped in the browser and a ping dropped in
+   the overlay are visibly the same object - and nothing like the nav pin (a
+   hollow amber ring) or the quest/extract label chips.
+   The box is sized by leaflet from markerPx, so the pin fills 100% of it rather
+   than scaling itself: a CSS-only scale would leave iconAnchor at the old value
+   and point the tip off target. */
+#hub-root .ping-marker .pin {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 50% 50% 50% 0;
+  background: #ff5470;
+  transform: rotate(-45deg);
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hub-root .ping-marker .pin span {
+  transform: rotate(45deg);
+  color: #fff;
+  font-size: calc(11px * var(--marker-scale, 1));
+  font-weight: 700;
+  line-height: 1;
+}
+/* The label rides beside the pin, absolutely, so it can never move the tip. */
+#hub-root .ping-marker .ping-label {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-left: 4px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(255, 84, 112, 0.85);
+  color: #fff;
+  font-size: calc(10px * var(--label-scale, 1));
+  line-height: 1.35;
+  white-space: nowrap;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   COMPANION MODE - the map fills the screen for a second monitor.
+   A body class, so the shell chrome is hidden without unmounting anything:
+   pressing Esc puts every one of these elements straight back.
+   ========================================================================== */
+body.tk-companion { overflow: hidden; }
+body.tk-companion .fi-topbar,
+body.tk-companion .fi-rail,
+body.tk-companion .fi-skip,
+body.tk-companion .tk-toolbar,
+body.tk-companion #hub-nav,
+body.tk-companion #hub-footer,
+body.tk-companion #hub-back { display: none !important; }
+
+body.tk-companion #hub-root .imap-mount {
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+}
+body.tk-companion #hub-root .imap-mount.hidden { display: none; }
+/* A second monitor is wide: the panel earns a little more room, and the header
+   gets out of the way of the map. */
+body.tk-companion #hub-root .imap-panel { flex-basis: 264px; width: 264px; }
+body.tk-companion #hub-root .imap-head { padding: 6px 12px; }

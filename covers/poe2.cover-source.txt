@@ -1,0 +1,13 @@
+Path of Exile 2 cover art (600x900 portrait, 2:3)
+
+Source: official Steam store library capsule image (2x/retina), Path of Exile 2
+(Steam app id 2694490), Grinding Gear Games.
+URL: https://cdn.cloudflare.steamstatic.com/steam/apps/2694490/library_600x900_2x.jpg
+Fetched: 2026-09-03
+Native resolution as served: 600x900 (no upscale needed - saved at native size).
+Encoded: WEBP quality=88, method=6, 73990 bytes (under the ~120 KB budget other covers use).
+
+Same non-commercial fair-use posture as the route's icons/sprites: this is
+official Grinding Gear Games promotional key art, used for a personal,
+non-commercial fan project. Not affiliated with or endorsed by Grinding Gear
+Games. Takedown requests honoured.

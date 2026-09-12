@@ -1,0 +1,442 @@
+/* ==========================================================================
+   MAP DOSSIER - the Maps tab detail pane.
+   Loaded by BOTH hosts from one source: src/renderer/hub.html (the Electron
+   hub) and src/pages/tarkov.astro (the island mount, which copies this file to
+   public/apps/tarkov/css/). Keep the two copies identical.
+
+   Why it is its own file: hub.css is the shared hub sheet and the island mount
+   scopes every one of its selectors under #hub-root. Everything here is named
+   `mdx-` (map dossier) and only ever appears inside the maps detail pane, so it
+   needs no scoping to be safe in either host - and staying out of hub.css keeps
+   this redesign in one reviewable place.
+
+   PALETTE: the island mount defines the mil-sim tokens (--olive, --label,
+   --display, --mono) on #hub-root; the Electron hub's hub.css does not have
+   them. So every one is re-declared here on .mdx with the mount's own value as
+   the fallback: the mount inherits its tokens, the desktop hub gets the same
+   colours and falls back to Segoe UI where Rajdhani is not installed. Nothing
+   here invents a colour that is not already in the hub palette.
+
+   THE `:is(#hub-root, body)` PREFIX on every selector is not decoration - it is
+   what lets ONE file serve both hosts. The mount's hub.css writes rules like
+   `#hub-root button { font: inherit; border: 1px solid ... }`, and an ID beats
+   any number of classes, so a plain `.mdx-tab { font-size: 14px }` would simply
+   lose there. `:is()` takes the specificity of its most specific argument, so
+   the prefix scores as an id and the rules land - while `body` keeps the same
+   selector matching in the Electron hub, which has no #hub-root at all.
+   ========================================================================== */
+
+:is(#hub-root, body) .mdx {
+  --mdx-olive: var(--olive, #767a45);
+  --mdx-olive-bevel: var(--olive-bevel, rgba(150, 156, 90, 0.28));
+  --mdx-label: var(--label, #c9b98a);
+  --mdx-display: var(--display, "Rajdhani", "Oswald", "Segoe UI", system-ui, sans-serif);
+  --mdx-mono: var(--mono, ui-monospace, Consolas, monospace);
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+/* The pane's own padding + scroll move INTO .mdx-body, so the header can run
+   edge to edge and stay put while the body scrolls. Only `padding` and
+   `overflow` are touched: the mobile rules in hub.css toggle `display` on
+   .split-right to drive the phone overlay, and must keep winning. */
+:is(#hub-root, body) .split-right.mdx-host { padding: 0; overflow: hidden; }
+
+/* ---- header: name, facts, sub-tabs ---------------------------------------
+   Never scrolls (flex: 0 0 auto), and `sticky` on top of that for the one host
+   where the outer pane is the scroller (the phone overlay). */
+:is(#hub-root, body) .mdx-head {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  flex: 0 0 auto;
+  background:
+    linear-gradient(180deg, rgba(44, 53, 57, 0.6), rgba(16, 19, 23, 0.96)),
+    var(--bg-panel);
+  border-bottom: 1px solid var(--mdx-olive);
+  box-shadow: inset 0 1px 0 var(--mdx-olive-bevel), 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+:is(#hub-root, body) .mdx-head-top {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  padding: 13px 20px 9px;
+}
+:is(#hub-root, body) .mdx-title { min-width: 0; }
+:is(#hub-root, body) .mdx-kicker {
+  font-family: var(--mdx-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mdx-label);
+}
+:is(#hub-root, body) .mdx-head h2 {
+  margin: 0;
+  font-family: var(--mdx-display);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  color: #eef2f7;
+}
+:is(#hub-root, body) .mdx-meta {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-family: var(--mdx-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+/* hub.css gives .wiki-btn a 10px top margin for the old stacked header; here it
+   sits inline on the meta row. */
+:is(#hub-root, body) .mdx-meta .wiki-btn { margin-top: 0; font-size: 12px; padding: 3px 11px; }
+
+:is(#hub-root, body) .mdx-tabs { display: flex; gap: 2px; padding: 0 16px; }
+:is(#hub-root, body) .mdx-tab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px 9px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  background: none;
+  cursor: pointer;
+  font-family: var(--mdx-display);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+:is(#hub-root, body) .mdx-tab:hover:not(:disabled) {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.03);
+  border-color: transparent;
+  border-bottom-color: transparent;
+}
+:is(#hub-root, body) .mdx-tab.on,
+:is(#hub-root, body) .mdx-tab.on:hover:not(:disabled) {
+  color: #eef2f7;
+  background: var(--accent-soft);
+  border-bottom-color: var(--accent);
+}
+:is(#hub-root, body) .mdx-tab-n {
+  font-family: var(--mdx-mono);
+  font-size: 10px;
+  letter-spacing: 0;
+  padding: 0 5px;
+  border-radius: 2px;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text-dim);
+}
+:is(#hub-root, body) .mdx-tab.on .mdx-tab-n { color: var(--accent); border-color: rgba(77, 178, 255, 0.45); }
+
+/* ---- tab bodies ---- */
+:is(#hub-root, body) .mdx-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 14px 20px 14px;
+}
+:is(#hub-root, body) .mdx-panel { display: none; }
+:is(#hub-root, body) .mdx-panel.on { display: block; }
+
+/* ---- overview: stat tiles ----
+   auto-fit rather than a fixed 5, because the tile set is built from the facts
+   a map actually has: Terminal has no extracts and no transits, so it gets four
+   tiles, not five with two blanks. */
+:is(#hub-root, body) .mdx-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+  gap: 10px;
+}
+:is(#hub-root, body) .mdx-tile {
+  padding: 9px 12px 9px;
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--mdx-olive);
+  border-radius: 3px;
+  background: linear-gradient(180deg, rgba(44, 53, 57, 0.4), rgba(20, 23, 28, 0.9));
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+:is(#hub-root, body) .mdx-tile-v {
+  font-family: var(--mdx-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 24px;
+  line-height: 1.05;
+  color: #eef2f7;
+}
+:is(#hub-root, body) .mdx-tile-k {
+  margin-top: 3px;
+  font-family: var(--mdx-display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--mdx-label);
+}
+:is(#hub-root, body) .mdx-tile.mdx-accent { border-top-color: var(--accent); }
+:is(#hub-root, body) .mdx-tile.mdx-accent .mdx-tile-v { color: var(--accent); }
+:is(#hub-root, body) .mdx-tile.mdx-warn { border-top-color: var(--warn); }
+:is(#hub-root, body) .mdx-tile.mdx-warn .mdx-tile-v { color: var(--warn); }
+
+:is(#hub-root, body) .mdx-blurb { margin: 10px 0 0; color: var(--text-dim); line-height: 1.55; max-width: 78ch; }
+
+/* ---- overview: the two briefing columns ---- */
+:is(#hub-root, body) .mdx-two {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+  align-items: stretch;
+}
+:is(#hub-root, body) .mdx-col { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+:is(#hub-root, body) .mdx-block {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: linear-gradient(180deg, rgba(44, 53, 57, 0.3), rgba(20, 23, 28, 0.88));
+  box-shadow: inset 0 1px 0 var(--mdx-olive-bevel);
+  min-width: 0;
+}
+/* the basemap card takes the slack so the preview fills its column */
+:is(#hub-root, body) .mdx-block.mdx-grow { flex: 1 1 auto; display: flex; flex-direction: column; }
+:is(#hub-root, body) .mdx-block.mdx-grow .mdx-block-body { flex: 1 1 auto; display: flex; flex-direction: column; }
+:is(#hub-root, body) .mdx-block-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  border-bottom: 1px solid var(--line);
+}
+:is(#hub-root, body) .mdx-block-title {
+  font-family: var(--mdx-display);
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--mdx-label);
+  font-size: 11px;
+}
+:is(#hub-root, body) .mdx-more {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+}
+:is(#hub-root, body) .mdx-more:hover:not(:disabled) { text-decoration: underline; border-color: transparent; }
+:is(#hub-root, body) .mdx-block-body { padding: 8px 12px 9px; min-width: 0; }
+
+/* ---- threat board / bosses tab ---- */
+/* On the Bosses tab this list has the whole pane to itself; without a cap the
+   spawn bar stretches to 900px and stops reading as a quantity. */
+:is(#hub-root, body) .mdx-threats { display: flex; flex-direction: column; max-width: 680px; }
+:is(#hub-root, body) .mdx-threat { display: flex; align-items: center; gap: 10px; padding: 4px 0; min-width: 0; }
+:is(#hub-root, body) .mdx-face {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  object-fit: cover;
+  object-position: 50% 18%;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--bg-panel);
+  filter: grayscale(0.3);
+}
+:is(#hub-root, body) .mdx-face-none { background: rgba(0, 0, 0, 0.35); }
+:is(#hub-root, body) .mdx-threat-name {
+  font-family: var(--mdx-display);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  flex: 0 0 118px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+:is(#hub-root, body) .mdx-bar { flex: 1 1 auto; height: 6px; min-width: 30px; background: #060809; border-radius: 2px; overflow: hidden; }
+:is(#hub-root, body) .mdx-bar-fill { height: 100%; background: linear-gradient(90deg, var(--mdx-olive), var(--mdx-label)); }
+:is(#hub-root, body) .mdx-pct {
+  font-family: var(--mdx-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  color: var(--mdx-label);
+  flex: 0 0 38px;
+  text-align: right;
+}
+/* an unknown chance draws no bar at all - see pctOf() in hub-maps.js */
+:is(#hub-root, body) .mdx-threat-unknown { flex: 1 1 auto; font-size: 12px; color: var(--text-dim); }
+
+/* ---- exit split ---- */
+:is(#hub-root, body) .mdx-split { display: flex; height: 10px; border-radius: 2px; overflow: hidden; margin-bottom: 10px; background: #060809; }
+:is(#hub-root, body) .mdx-seg { display: block; }
+:is(#hub-root, body) .mdx-legend { display: flex; flex-direction: column; gap: 6px; }
+:is(#hub-root, body) .mdx-leg { display: flex; align-items: center; gap: 8px; font-size: 12px; min-width: 0; }
+:is(#hub-root, body) .mdx-sw { display: block; width: 9px; height: 9px; border-radius: 1px; flex: 0 0 9px; }
+:is(#hub-root, body) .mdx-leg-label {
+  font-family: var(--mdx-display);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+:is(#hub-root, body) .mdx-leg-note { color: var(--text-dim); min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+:is(#hub-root, body) .mdx-leg-count {
+  margin-left: auto;
+  font-family: var(--mdx-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  color: var(--text-dim);
+}
+/* faction colours. groupExtracts() keeps any faction the data invents, so an
+   unknown one falls through to the neutral swatch below. */
+:is(#hub-root, body) .mdx-sw,
+:is(#hub-root, body) .mdx-seg { background: var(--text-dim); }
+:is(#hub-root, body) .mdx-f-pmc.mdx-sw, :is(#hub-root, body) .mdx-f-pmc.mdx-seg { background: var(--accent); }
+:is(#hub-root, body) .mdx-f-scav.mdx-sw, :is(#hub-root, body) .mdx-f-scav.mdx-seg { background: var(--good); }
+:is(#hub-root, body) .mdx-f-shared.mdx-sw, :is(#hub-root, body) .mdx-f-shared.mdx-seg { background: var(--mdx-label); }
+
+/* ---- transits ---- */
+:is(#hub-root, body) .mdx-transits { display: flex; flex-wrap: wrap; gap: 7px; }
+:is(#hub-root, body) .mdx-transit {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 10px 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--bg-panel);
+  color: var(--text);
+  cursor: pointer;
+  min-width: 0;
+}
+:is(#hub-root, body) .mdx-transit:hover:not(:disabled) { border-color: var(--accent); }
+/* a transit whose destination is not in mapsinfo is a fact, not a link */
+:is(#hub-root, body) div.mdx-transit { cursor: default; }
+:is(#hub-root, body) .mdx-arrow { color: var(--mdx-label); font-family: var(--mdx-mono); font-size: 12px; }
+:is(#hub-root, body) .mdx-dest {
+  font-family: var(--mdx-display);
+  font-weight: 600;
+  font-size: 14px;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---- basemap preview on the overview ---- */
+:is(#hub-root, body) .mdx-mini {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: #0a0c0f;
+  box-shadow: inset 0 0 26px rgba(0, 0, 0, 0.7);
+  padding: 8px;
+  flex: 1 1 auto;
+  min-height: 190px;
+  max-height: 268px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: var(--text-dim);
+  cursor: zoom-in;
+}
+:is(#hub-root, body) .mdx-mini .basemap-svg { width: auto; max-width: 100%; max-height: 248px; opacity: 0.92; }
+:is(#hub-root, body) .mdx-mini:hover { border-color: var(--accent); }
+
+/* ---- access keys ----
+   Reuses .mini-item from hub.css (icon + name + click-through to Items), so a
+   key chip here behaves exactly like one on a barter. */
+:is(#hub-root, body) .mdx-keys { display: flex; flex-wrap: wrap; gap: 6px; }
+:is(#hub-root, body) .mdx-keys .mini-item { max-width: 100%; }
+:is(#hub-root, body) .mdx-keys-wide .mini-item { max-width: 320px; }
+
+/* ---- extracts tab ---- */
+:is(#hub-root, body) .mdx-excols { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 16px; }
+:is(#hub-root, body) .mdx-excol { min-width: 0; }
+:is(#hub-root, body) .mdx-exhead {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding-bottom: 6px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid var(--line);
+}
+:is(#hub-root, body) .mdx-exhead-title {
+  font-family: var(--mdx-display);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+:is(#hub-root, body) .mdx-exhead-count {
+  margin-left: auto;
+  font-family: var(--mdx-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 11px;
+  color: var(--text-dim);
+}
+:is(#hub-root, body) .mdx-ex {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 6px 4px 9px;
+  border-left: 2px solid var(--line);
+  font-size: 12px;
+  min-width: 0;
+}
+:is(#hub-root, body) .mdx-ex-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+:is(#hub-root, body) .mdx-f-pmc .mdx-exhead-title { color: var(--accent); }
+:is(#hub-root, body) .mdx-f-pmc .mdx-ex { border-left-color: rgba(77, 178, 255, 0.4); }
+:is(#hub-root, body) .mdx-f-scav .mdx-exhead-title { color: var(--good); }
+:is(#hub-root, body) .mdx-f-scav .mdx-ex { border-left-color: rgba(127, 224, 195, 0.35); }
+:is(#hub-root, body) .mdx-f-shared .mdx-exhead-title { color: var(--mdx-label); }
+:is(#hub-root, body) .mdx-f-shared .mdx-ex { border-left-color: rgba(201, 185, 138, 0.4); }
+
+/* the switch tag: hub.css has .tag, the mockup's amber variant lives here */
+:is(#hub-root, body) .mdx .tag-switch { color: var(--warn); border-color: rgba(255, 216, 77, 0.42); }
+
+/* ---- basemap tab ----
+   .svg-holder / .imap-open-btn / .imap-clickable are UNCHANGED and still owned
+   by hub.css + tarkov-map.css; the tab only gives the holder the whole body. */
+:is(#hub-root, body) .mdx-panel .svg-holder { max-height: none; margin-top: 8px; }
+
+/* ==========================================================================
+   PHONE (<=720px) - hub.css already turns .split-right into a full-width
+   overlay over the map list at this width; all that is left is to stop this
+   pane pushing anything sideways at 390px.
+   ========================================================================== */
+@media (max-width: 720px) {
+  :is(#hub-root, body) .mdx-head-top { flex-wrap: wrap; align-items: flex-start; gap: 8px; padding: 12px 14px 8px; }
+  :is(#hub-root, body) .mdx-head h2 { font-size: 24px; }
+  :is(#hub-root, body) .mdx-meta { margin-left: 0; width: 100%; gap: 10px; font-size: 11px; flex-wrap: wrap; white-space: normal; }
+  :is(#hub-root, body) .mdx-meta .wiki-btn { margin-left: auto; }
+
+  /* the sub-tabs are the one thing allowed to scroll sideways, and they do it
+     inside their own strip - the page never does */
+  :is(#hub-root, body) .mdx-tabs { padding: 0 8px; overflow-x: auto; scrollbar-width: none; }
+  :is(#hub-root, body) .mdx-tabs::-webkit-scrollbar { display: none; }
+  :is(#hub-root, body) .mdx-tab { padding: 8px 10px 9px; font-size: 13px; white-space: nowrap; }
+
+  :is(#hub-root, body) .mdx-body { padding: 12px 14px 26px; }
+  :is(#hub-root, body) .mdx-tiles { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 8px; }
+  :is(#hub-root, body) .mdx-tile-v { font-size: 21px; }
+  :is(#hub-root, body) .mdx-two { grid-template-columns: minmax(0, 1fr); gap: 12px; margin-top: 12px; }
+  :is(#hub-root, body) .mdx-threat-name { flex: 0 0 92px; font-size: 13px; }
+  :is(#hub-root, body) .mdx-mini { min-height: 160px; max-height: 240px; }
+  :is(#hub-root, body) .mdx-mini .basemap-svg { max-height: 220px; }
+  :is(#hub-root, body) .mdx-excols { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  :is(#hub-root, body) .mdx-keys .mini-item, :is(#hub-root, body) .mdx-keys-wide .mini-item { max-width: 100%; }
+}

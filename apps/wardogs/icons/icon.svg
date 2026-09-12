@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="WARDOGS Companion">
+  <rect width="64" height="64" rx="14" fill="#0d1012"/>
+  <path d="M32 8 L52 16 V33 C52 45 43 53 32 57 C21 53 12 45 12 33 V16 Z" fill="none" stroke="#5b7a8c" stroke-width="3.2" stroke-linejoin="round"/>
+  <path d="M20 30 L32 22 L44 30" fill="none" stroke="#5b7a8c" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 41 L32 33 L44 41" fill="none" stroke="#d4832e" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

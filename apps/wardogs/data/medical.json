@@ -1,0 +1,172 @@
+[
+ {
+  "id": "bandage",
+  "name": "Bandage",
+  "category": "HP Restore",
+  "sourceSection": "hp-restore",
+  "slotType": "Quick Slot",
+  "weightKg": 0.08,
+  "summary": "HP Restore - slot Quick Slot, weight 0.08 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Medical#hp-restore",
+  "beginner": {
+   "whatItIs": "A quick-slot item that puts a small amount of health back on you or on a teammate.",
+   "whyItMatters": "Healing a hurt squadmate is the most repeatable way to earn Medic progress and cash in the game, and it does not require anyone to go down first.",
+   "whenToUseIt": "Carry it always and use it on other people, not just yourself. It weighs almost nothing and it pays you for the thing that keeps your squad alive."
+  },
+  "icon": "/island/apps/wardogs/./sprites/medical-bandage.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "individual-first-aid-kit",
+  "name": "Individual First Aid Kit",
+  "category": "HP Restore",
+  "sourceSection": "hp-restore",
+  "slotType": "Quick Slot",
+  "weightKg": 0.16,
+  "summary": "HP Restore - slot Quick Slot, weight 0.16 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Medical#hp-restore",
+  "beginner": {
+   "whatItIs": "A quick-slot healing item that returns you or a teammate to full health in one use, where a bandage only gives part of it back.",
+   "whyItMatters": "It is the difference between fighting on and hiding somewhere while you patch yourself over and over. At 0.16 kg the reason to leave it behind is money rather than load, and the source has not confirmed what it costs.",
+   "whenToUseIt": "Carry one whenever you can afford it. Use a bandage for scratches and save this for coming out of a fight badly hurt with somewhere else you need to be."
+  },
+  "icon": "/island/apps/wardogs/./sprites/medical-individual-first-aid-kit.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "medical-bag",
+  "name": "Medical Bag",
+  "category": "HP Restore",
+  "sourceSection": "hp-restore",
+  "slotType": "Spec. Item",
+  "weightKg": 3.45,
+  "price": 2000,
+  "wardogLevel": "Medic Lvl 24",
+  "summary": "HP Restore - slot Spec. Item, weight 3.45 kg, $2,000.",
+  "sourceUrl": "https://wardogshandbook.com/Medical#hp-restore",
+  "beginner": {
+   "whatItIs": "A specialization-slot medical item that heals over time instead of instantly, and shortens how long you take to pick a teammate up while you are carrying it.",
+   "whyItMatters": "At 3.45 kg it is by a wide margin the heaviest thing in the medical list, and it takes the specialization slot a launcher or a repair tool would otherwise have. It also works more slowly on you than on somebody else.",
+   "whenToUseIt": "Only when you are genuinely playing medic for a squad that stays together. It opens at Medic level 24 and costs $2,000, and on a lone player it is load with no team to spend it on."
+  },
+  "icon": "/island/apps/wardogs/./sprites/medical-medical-bag.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "enox",
+  "name": "Enox",
+  "category": "HP Restore",
+  "sourceSection": "hp-restore",
+  "price": 450,
+  "summary": "HP Restore - $450.",
+  "sourceUrl": "https://wardogshandbook.com/Medical#hp-restore",
+  "beginner": {
+   "whatItIs": "A healing-category item priced at $450. What it actually does has never been published - the price is the only thing anybody has confirmed about it.",
+   "whyItMatters": "It sits in the same group as the bandage and the first aid kit, so it is probably a healing consumable, but nothing rules out something stranger. Buying one is a bet on an unknown.",
+   "whenToUseIt": "Leave it alone until Early Access says what it is. There is no way to plan around an item whose effect nobody has written down."
+  },
+  "icon": "/island/apps/wardogs/./sprites/medical-enox.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "adrenaline-pen",
+  "name": "Adrenaline Pen",
+  "category": "Stamina",
+  "sourceSection": "stamina",
+  "slotType": "Quick Slot",
+  "weightKg": 0.06,
+  "price": 250,
+  "singleUse": true,
+  "summary": "Stamina - slot Quick Slot, weight 0.06 kg, $250.",
+  "sourceUrl": "https://wardogshandbook.com/Medical#stamina",
+  "beginner": {
+   "whatItIs": "A single-use quick-slot injector that gives you unlimited tactical sprint for a short while and drops you into a lighter equipment weight class. It restores no health whatsoever.",
+   "whyItMatters": "It is the only thing in the medical list that buys distance instead of survival, and the weight-class part earns its place as much as the sprint does: it briefly gives back some of what your armour is costing you in mobility.",
+   "whenToUseIt": "Save it for a move you have to make in the open, or a retreat you are not going to win by fighting. Popping it as a general speed boost wastes a $250 one-shot."
+  },
+  "icon": "/island/apps/wardogs/./sprites/medical-adrenaline-pen.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "field-resuscitator",
+  "name": "Field Resuscitator",
+  "category": "Resuscitators",
+  "sourceSection": "resuscitators",
+  "slotType": "Quick Slot",
+  "weightKg": 0.39,
+  "singleUse": true,
+  "summary": "Resuscitator - slot Quick Slot, weight 0.39 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Medical#resuscitators",
+  "beginner": {
+   "whatItIs": "The baseline revive tool. You start every life carrying one at no cost, and it brings a downed teammate back faster than standing over them does.",
+   "whyItMatters": "It is why nobody has an excuse for leaving people on the floor. You did not pay for it and you cannot forget to buy it, because a fresh one arrives with every spawn.",
+   "whenToUseIt": "Always, by default. Extra ones cost money the source has not put a figure on, so treat the free one as your budget and go find somebody to use it on before the life ends."
+  },
+  "icon": "/island/apps/wardogs/./sprites/medical-field-resuscitator.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "emergency-resuscitator",
+  "name": "Emergency Resuscitator",
+  "category": "Resuscitators",
+  "sourceSection": "resuscitators",
+  "slotType": "Quick Slot",
+  "weightKg": 0.39,
+  "singleUse": true,
+  "summary": "Resuscitator - slot Quick Slot, weight 0.39 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Medical#resuscitators",
+  "beginner": {
+   "whatItIs": "A second single-use revive tool, one per life, that also shortens how long a pick-up takes. This one is bought rather than issued.",
+   "whyItMatters": "It is effectively a spare of the free tool you already carry, which lets one person get two teammates up in a single fight instead of one. What it costs has not been confirmed.",
+   "whenToUseIt": "Take it when you are the person your squad expects to do the reviving. If you are not, the free tool already covers you and the slot does more elsewhere."
+  },
+  "icon": "/island/apps/wardogs/./sprites/medical-emergency-resuscitator.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "defibrillator",
+  "name": "Defibrillator",
+  "category": "Resuscitators",
+  "sourceSection": "resuscitators",
+  "slotType": "Quick Slot",
+  "weightKg": 2.6,
+  "price": 1600,
+  "wardogLevel": "Medic Lvl 11",
+  "unlockPrice": 50000,
+  "alsoListedUnder": "Specializations",
+  "summary": "Resuscitator - slot Quick Slot, weight 2.6 kg, $1,600.",
+  "sourceUrl": "https://wardogshandbook.com/Medical#resuscitators",
+  "beginner": {
+   "whatItIs": "The fastest revive tool in the game: it puts a downed teammate straight back up instead of working at them. It weighs 2.6 kg and needs a battery loaded to charge and fire.",
+   "whyItMatters": "It carries the one-time unlock in the medical list - $50,000 at Medic level 11 - on top of $1,600 every time you kit up, and it is the one revive item that will not work without a second purchase in your kit.",
+   "whenToUseIt": "Only if you are the dedicated medic for a squad, where getting somebody up a few seconds sooner decides who wins the fight. For anybody else the free tool does the same job slower and costs nothing."
+  },
+  "icon": "/island/apps/wardogs/./sprites/medical-defibrillator.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "rebreather",
+  "name": "Rebreather",
+  "category": "Resuscitators",
+  "sourceSection": "resuscitators",
+  "price": 0,
+  "summary": "Resuscitator - $0.",
+  "sourceUrl": "https://wardogshandbook.com/Medical#resuscitators",
+  "beginner": {
+   "whatItIs": "A revive tool that costs nothing at all and still credits you with medic progress when you use it.",
+   "whyItMatters": "There is no argument against carrying one, because there is no price to weigh it against. Every pick-up it performs feeds the same track the expensive medical gear does.",
+   "whenToUseIt": "Keep one on you out of habit. Nothing else in the game gives you a cheaper guarantee that you can always get somebody back on their feet."
+  },
+  "icon": "/island/apps/wardogs/./sprites/medical-rebreather.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

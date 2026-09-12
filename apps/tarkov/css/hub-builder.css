@@ -1,0 +1,1222 @@
+/* ==========================================================================
+   WEAPON BUILDER (#/builder, js/hub-builder.js)
+
+   Escape from Tarkov's WEAPON MODDING screen, rebuilt for the web. The look
+   is taken from the in-game screen, region for region:
+
+     - a full-bleed near-black studio stage with a soft light shaft, bokeh
+       blur and a vignette; the weapon large and centred, nothing else in the
+       frame competing with it;
+     - slot cards FLOATING in the air above and below the gun, small, dark and
+       translucent, each one hovering over its own mount point (positions come
+       from layoutBoxes(); this file only dresses them);
+     - a thin leader line from each card down to a marker sitting ON the gun -
+       a square + uppercase label in green for vital slots, a plain white dot
+       for everything else, blue for the selected one, red when a required
+       slot is empty;
+     - the 12-row stat readout floating over the lower-left air;
+     - the workbench preset button stack down the left edge;
+     - BACK, bottom-right, plain text with no button chrome.
+
+   Type is Rajdhani (self-hosted, see public/fonts/fonts.css). The game uses
+   Bender, which is proprietary - Rajdhani is the closest squared-off technical
+   face already in the app, and the app is offline-first so a CDN font is not
+   an option. Colours follow the hex estimates in the reference SPEC.
+
+   Everything is prefixed wb- and scoped under #hub-root. Under 720px of stage
+   width the view drops to .flat: gun on top, the same cards as one scrollable
+   strip, the picker as a sheet in the dock.
+   ========================================================================== */
+
+#hub-root {
+  --wb-void: #0a0d10;
+  --wb-void-2: #12161a;
+  --wb-card: rgba(26, 35, 44, 0.82);
+  --wb-card-hi: rgba(40, 53, 65, 0.92);
+  --wb-edge: #3a4a58;
+  --wb-edge-hot: #3fb6f0;
+  --wb-vital: #4caf50;
+  --wb-lead: rgba(216, 222, 226, 0.55);
+  --wb-lead-vital: rgba(76, 175, 80, 0.7);
+  --wb-blue: #2ea3e0;
+  --wb-red: #c0392b;
+  --wb-meter-blue: #2e8fd8;
+  --wb-meter-red: #b33a3a;
+}
+
+/* ---- shell ---- */
+.wb-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background: var(--wb-void);
+}
+.wb-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* ---- the workbench preset sidebar ---- */
+.wb-side {
+  flex: 0 0 176px;
+  width: 176px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 10px;
+  background: linear-gradient(180deg, rgba(18, 22, 26, 0.92), rgba(10, 13, 16, 0.92));
+  border-right: 1px solid rgba(58, 74, 88, 0.4);
+  overflow-y: auto;
+}
+#hub-root .wb-name {
+  width: 100%;
+  background: rgba(10, 13, 16, 0.8);
+  border: 1px solid var(--wb-edge);
+  border-radius: 2px;
+  color: var(--text);
+  font-family: var(--display);
+  font-size: 14px;
+  font-style: italic;
+  padding: 6px 8px;
+}
+#hub-root .wb-name:disabled { opacity: 0.4; }
+.wb-side-stack { display: flex; flex-direction: column; gap: 1px; }
+#hub-root .wb-side-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 6px 8px;
+  background: transparent;
+  border: 0;
+  border-left: 2px solid transparent;
+  color: var(--text);
+  font-family: var(--display);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: left;
+  cursor: pointer;
+}
+#hub-root .wb-side-btn:hover:not(:disabled) { background: rgba(62, 82, 98, 0.28); border-left-color: var(--wb-blue); }
+#hub-root .wb-side-btn.on { background: rgba(46, 163, 224, 0.16); border-left-color: var(--wb-blue); }
+#hub-root .wb-side-btn:disabled { opacity: 0.32; cursor: default; }
+#hub-root .wb-side-btn.danger { color: #d9756a; }
+#hub-root .wb-side-btn.danger:hover:not(:disabled) { background: rgba(192, 57, 43, 0.2); border-left-color: var(--wb-red); }
+.wb-side-glyph { flex: 0 0 14px; text-align: center; opacity: 0.75; font-size: 12px; }
+.wb-side-label { flex: 1 1 auto; min-width: 0; }
+.wb-side-io { display: flex; gap: 6px; }
+#hub-root .wb-io-btn {
+  width: 40px;
+  height: 36px;
+  background: rgba(30, 40, 48, 0.7);
+  border: 1px solid var(--wb-edge);
+  border-radius: 2px;
+  color: var(--text);
+  font-size: 15px;
+  cursor: pointer;
+}
+#hub-root .wb-io-btn:hover { border-color: var(--wb-edge-hot); }
+.wb-side-count {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: auto;
+}
+
+/* ---- header ---- */
+.wb-head {
+  flex: 0 0 auto;
+  padding: 8px 16px 4px;
+  text-align: center;
+}
+.wb-title { display: flex; align-items: center; justify-content: center; gap: 10px; }
+.wb-title-glyph { font-size: 17px; color: var(--text-dim); }
+#hub-root .wb-title-text {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #f2f4f6;
+}
+.wb-sub {
+  margin-top: 1px;
+  font-size: 12px;
+  color: #9aa4ad;
+}
+.wb-filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+/* Flip (muzzle-left) and the opt-in 3D stage, beside the class checkboxes */
+.wb-headtools { display: inline-flex; gap: 6px; margin-left: 8px; }
+#hub-root .wb-toggle {
+  padding: 2px 9px;
+  background: transparent;
+  border: 1px solid var(--wb-edge);
+  border-radius: 2px;
+  color: #9aa4ad;
+  font-family: var(--display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#hub-root .wb-toggle:hover { color: var(--text); border-color: var(--wb-edge-hot); }
+#hub-root .wb-toggle.on { color: var(--text); border-color: var(--wb-blue); background: rgba(46, 163, 224, 0.16); }
+.wb-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #9aa4ad;
+  cursor: pointer;
+  user-select: none;
+}
+.wb-filter.on { color: var(--text); }
+.wb-filter input { position: absolute; opacity: 0; width: 0; height: 0; }
+.wb-filter-box {
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--wb-edge);
+  border-radius: 2px;
+  position: relative;
+  flex: 0 0 14px;
+}
+.wb-filter.on .wb-filter-box { border-color: #9aa4ad; }
+.wb-filter.on .wb-filter-box::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0;
+  width: 5px;
+  height: 9px;
+  border: solid var(--text);
+  border-width: 0 2px 2px 0;
+  transform: rotate(42deg);
+}
+.wb-filter input:focus-visible + .wb-filter-box { outline: 2px solid var(--wb-blue); outline-offset: 2px; }
+
+/* ---- stage: the studio ---- */
+.wb-stage {
+  position: relative;
+  flex: 0 0 auto;
+  margin: 2px 12px 0;
+  isolation: isolate;
+  /* near-black, one soft light shaft down the middle, a bokeh smear behind
+     the weapon and a vignette - the game's backdrop, not a flat panel */
+  background:
+    radial-gradient(120% 80% at 50% 40%, rgba(44, 60, 72, 0.55), rgba(10, 13, 16, 0) 62%),
+    radial-gradient(28% 44% at 34% 30%, rgba(70, 96, 110, 0.3), rgba(10, 13, 16, 0) 70%),
+    radial-gradient(22% 34% at 68% 62%, rgba(58, 84, 76, 0.22), rgba(10, 13, 16, 0) 70%),
+    linear-gradient(103deg, rgba(10, 13, 16, 0) 34%, rgba(150, 180, 200, 0.07) 46%, rgba(10, 13, 16, 0) 58%),
+    linear-gradient(180deg, #12161a, #0a0d10 78%);
+  border: 1px solid rgba(58, 74, 88, 0.35);
+  border-radius: 3px;
+  overflow: hidden;
+}
+/* the vignette sits over the backdrop but under everything drawn on it */
+.wb-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(100% 76% at 50% 48%, rgba(0, 0, 0, 0) 48%, rgba(0, 0, 0, 0.62) 100%);
+  z-index: 1;
+}
+.wb-stage.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+}
+.wb-empty { text-align: center; max-width: 460px; padding: 24px; position: relative; z-index: 2; }
+#hub-root .wb-empty h2 {
+  font-family: var(--display);
+  font-size: 24px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+#hub-root .wb-cta {
+  margin-top: 14px;
+  padding: 8px 18px;
+  background: rgba(46, 163, 224, 0.16);
+  border: 1px solid var(--wb-blue);
+  border-radius: 2px;
+  color: var(--text);
+  font-family: var(--display);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* the composite weapon picture. A <canvas>: the closest factory preset is
+   painted first, then every part this build changed is drawn over it. Sized
+   in JS to the picture's own aspect, so no object-fit is needed. */
+.wb-gun {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.6));
+  pointer-events: none;
+}
+.wb-caption {
+  position: absolute;
+  z-index: 4;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: rgba(154, 164, 173, 0.8);
+  text-align: center;
+  pointer-events: none;
+}
+/* the 3D lane's mount point - hidden until js/hub-builder-3d.js takes it */
+.wb-stage-3d { position: absolute; inset: 0; z-index: 2; touch-action: none; }
+/* the canvas inherits z-index auto, so without this it painted UNDER the 2D
+   photo that shares its stacking context - both weapons at once */
+.wb-stage-3d canvas { display: block; position: relative; z-index: 2; width: 100%; height: 100%; }
+/* belt and braces on top of renderStage()'s hidden flag: while .three is on the
+   2D picture is gone, whatever later pass re-created it */
+#hub-root .wb-stage.three .wb-gun { display: none !important; }
+#hub-root .wb-stage.three .wb-caption { display: none; }
+
+/* ---- leader lines + markers ---- */
+.wb-wires {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  pointer-events: none;
+  overflow: visible;
+}
+.wb-lead { stroke: var(--wb-lead); stroke-width: 1; }
+.wb-lead.cls-vital { stroke: var(--wb-lead-vital); }
+.wb-lead.selected { stroke: var(--wb-edge-hot); stroke-width: 1.6; }
+.wb-lead.missing { stroke: rgba(192, 57, 43, 0.85); stroke-dasharray: 4 3; }
+.wb-lead.hot { stroke: var(--wb-edge-hot); stroke-width: 1.6; }
+.wb-mark.dot { fill: #ffffff; stroke: rgba(10, 13, 16, 0.9); stroke-width: 1; }
+.wb-mark.square { fill: var(--wb-vital); stroke: rgba(10, 13, 16, 0.9); stroke-width: 1; }
+.wb-mark.selected { fill: none; stroke: var(--wb-edge-hot); stroke-width: 2.5; }
+.wb-mark.missing { fill: var(--wb-red); stroke: rgba(10, 13, 16, 0.9); }
+.wb-mark.hot { stroke: var(--wb-edge-hot); stroke-width: 2; }
+.wb-mark-label {
+  font-family: var(--display);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  fill: #e6ebef;
+  paint-order: stroke;
+  stroke: rgba(10, 13, 16, 0.85);
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+/* ---- the floating slot cards ---- */
+#hub-root .wb-card {
+  position: absolute;
+  z-index: 5;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  display: block;
+  background: var(--wb-card);
+  border: 1px solid var(--wb-edge);
+  border-radius: 2px;
+  cursor: pointer;
+  overflow: visible;
+  backdrop-filter: blur(2px);
+}
+#hub-root .wb-card:hover,
+#hub-root .wb-card:focus-visible {
+  border-color: var(--wb-edge-hot);
+  background: var(--wb-card-hi);
+  box-shadow: 0 0 0 1px rgba(63, 182, 240, 0.25), 0 0 14px rgba(46, 163, 224, 0.28);
+  outline: none;
+  z-index: 7;
+}
+#hub-root .wb-card.selected {
+  border-color: var(--wb-edge-hot);
+  box-shadow: 0 0 0 1px var(--wb-edge-hot), 0 0 16px rgba(46, 163, 224, 0.45);
+  z-index: 7;
+}
+#hub-root .wb-card.required {
+  border-color: var(--wb-red);
+  border-style: dashed;
+}
+#hub-root .wb-card.conflict { border-color: var(--warn); }
+/* the tiny slot-type pictograph, hung OUTSIDE the card's top-left corner */
+.wb-card-glyph {
+  position: absolute;
+  left: 0;
+  top: -12px;
+  font-size: 9px;
+  line-height: 1;
+  color: rgba(154, 164, 173, 0.85);
+  pointer-events: none;
+}
+/* the name strip across the top of the card */
+.wb-card-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 2px 3px;
+  font-family: var(--mono);
+  font-size: 9px;
+  line-height: 1.15;
+  color: #cdd5dd;
+  background: rgba(10, 13, 16, 0.55);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+#hub-root .wb-card.empty .wb-card-name {
+  color: #7d8893;
+  letter-spacing: 0.12em;
+  background: transparent;
+  text-align: center;
+  top: 22px;
+  font-size: 10px;
+}
+#hub-root .wb-card.required .wb-card-name { color: #d9756a; }
+.wb-card-icon {
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  top: 15px;
+  bottom: 8px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: saturate(0.82) brightness(1.02);
+  pointer-events: none;
+}
+/* the little category square, bottom-left, like the game's */
+.wb-card-badge {
+  position: absolute;
+  left: 3px;
+  bottom: 3px;
+  min-width: 9px;
+  height: 9px;
+  border: 1px solid rgba(154, 164, 173, 0.5);
+  border-radius: 1px;
+  font-family: var(--mono);
+  font-size: 7px;
+  line-height: 8px;
+  text-align: center;
+  color: #cdd5dd;
+}
+#hub-root .wb-card.filled .wb-card-badge { background: rgba(76, 175, 80, 0.5); border-color: rgba(76, 175, 80, 0.75); }
+#hub-root .wb-card .wb-card-badge.sub { background: rgba(46, 163, 224, 0.5); border-color: var(--wb-blue); padding: 0 2px; }
+#hub-root .wb-card.required .wb-card-badge { background: rgba(192, 57, 43, 0.55); border-color: var(--wb-red); }
+
+/* ---- status strip (see the one-line status block at the end) ---- */
+
+/* ---- the 12-row stat readout ---- */
+.wb-statpanel {
+  position: absolute;
+  left: 10px;
+  bottom: 42px;
+  z-index: 6;
+  display: flex;
+  align-items: stretch;
+  width: 320px;
+  max-width: calc(100% - 20px);
+  background: rgba(10, 13, 16, 0.78);
+  border: 1px solid rgba(58, 74, 88, 0.5);
+  border-radius: 2px;
+  backdrop-filter: blur(3px);
+  max-height: calc(100% - 60px);
+  overflow: hidden;
+}
+.wb-statpanel.collapsed { width: 26px; min-width: 26px; }
+.wb-statpanel.collapsed .wb-statrows { display: none; }
+/* Folded because the window was too short to seat it without shrinking the
+   weapon (layoutBoxes' statsInDock): the 12 rows go to the dock right under
+   the stage instead, and this chevron still opens the panel in place. */
+.wb-statpanel.docked { left: 10px !important; top: auto !important; bottom: 40px; width: 26px !important; }
+/* the same readout, laid out wide, under the stage */
+.wb-dockstats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(178px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.wb-dockstat {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 4px 9px;
+  background: var(--bg-panel);
+  font-size: 11px;
+}
+.wb-dockstat .wb-stat-value { margin-left: auto; }
+.wb-dockstat.nodata .wb-stat-value { color: var(--text-dim); }
+.wb-statrows { flex: 1 1 auto; min-width: 0; padding: 1px 0; }
+.wb-statrow {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 8px;
+  font-size: 10.5px;
+  line-height: 13px;
+  border-bottom: 1px solid rgba(58, 74, 88, 0.22);
+}
+.wb-statrow:last-child { border-bottom: 0; }
+.wb-statrow-cost { border-top: 1px solid rgba(58, 74, 88, 0.6); margin-top: 2px; }
+.wb-statrow.nodata .wb-stat-value { color: var(--text-dim); }
+.wb-stat-glyph { flex: 0 0 12px; text-align: center; color: rgba(154, 164, 173, 0.8); font-size: 10px; }
+#hub-root .wb-stat-label {
+  flex: 0 0 auto;
+  font-family: var(--display);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b9c2cb;
+  white-space: nowrap;
+}
+/* the meter bar sits BEHIND the value, filling the gap between label and
+   number - blue for ergonomics, red-maroon for the velocity row */
+.wb-stat-meter {
+  flex: 1 1 auto;
+  min-width: 20px;
+  height: 10px;
+  background: rgba(30, 40, 48, 0.6);
+  border-radius: 1px;
+  overflow: hidden;
+}
+.wb-stat-fill { display: block; height: 100%; }
+.wb-stat-meter.blue .wb-stat-fill { background: var(--wb-meter-blue); }
+.wb-stat-meter.red .wb-stat-fill { background: var(--wb-meter-red); }
+.wb-stat-value {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  font-size: 11px;
+  color: var(--text);
+  white-space: nowrap;
+}
+.wb-stat-delta {
+  font-family: var(--mono);
+  font-size: 10px;
+  padding-left: 5px;
+  white-space: nowrap;
+}
+.wb-stat-delta.good { color: var(--good); }
+.wb-stat-delta.bad { color: var(--bad); }
+#hub-root .wb-stat-chev {
+  flex: 0 0 24px;
+  background: rgba(30, 40, 48, 0.5);
+  border: 0;
+  border-left: 1px solid rgba(58, 74, 88, 0.5);
+  color: var(--text-dim);
+  font-size: 10px;
+  cursor: pointer;
+}
+#hub-root .wb-stat-chev:hover { color: var(--text); background: rgba(46, 163, 224, 0.2); }
+
+/* ---- the floating picker popup ---- */
+.wb-pop {
+  position: absolute;
+  z-index: 30;
+  width: 300px;
+  background: rgba(16, 21, 26, 0.97);
+  border: 1px solid var(--wb-edge-hot);
+  border-radius: 2px;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.65);
+}
+.wb-pop-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 6px 5px 9px;
+  border-bottom: 1px solid rgba(58, 74, 88, 0.5);
+}
+.wb-pop-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: var(--display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--label);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#hub-root .wb-pop-x {
+  background: transparent;
+  border: 1px solid var(--wb-edge);
+  border-radius: 2px;
+  color: var(--text-dim);
+  font-size: 10px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+#hub-root .wb-pop-x:hover { color: var(--text); border-color: var(--wb-edge-hot); }
+.wb-pop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  padding: 6px;
+  max-height: 230px;
+  overflow-y: auto;
+}
+#hub-root .wb-pop-card {
+  position: relative;
+  height: 74px;
+  padding: 0;
+  background: rgba(26, 35, 44, 0.9);
+  border: 1px solid var(--wb-edge);
+  border-radius: 2px;
+  cursor: pointer;
+  overflow: hidden;
+}
+#hub-root .wb-pop-card:hover { border-color: var(--wb-edge-hot); background: var(--wb-card-hi); }
+#hub-root .wb-pop-card.current { border-color: var(--wb-vital); }
+#hub-root .wb-pop-card.blocked { opacity: 0.4; cursor: default; border-style: dashed; border-color: var(--wb-red); }
+.wb-pop-cardhead {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  padding: 1px 3px;
+  background: rgba(10, 13, 16, 0.6);
+}
+.wb-pop-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: var(--mono);
+  font-size: 9px;
+  line-height: 12px;
+  color: #e2e8ee;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+.wb-pop-price { flex: 0 0 auto; font-family: var(--mono); font-size: 9px; line-height: 12px; color: var(--good); }
+.wb-pop-price.none { color: var(--text-dim); }
+.wb-pop-icon {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 17px;
+  bottom: 12px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: saturate(0.82);
+}
+.wb-pop-chips {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  bottom: 1px;
+  display: flex;
+  gap: 3px;
+  justify-content: flex-start;
+}
+.wb-chip { font-family: var(--mono); font-size: 8px; }
+.wb-chip.good { color: var(--good); }
+.wb-chip.bad { color: var(--bad); }
+.wb-pop-more { padding: 4px 9px 7px; font-size: 10px; color: var(--text-dim); }
+
+/* ---- the docked COMPATIBLE ITEMS panel ---- */
+/* An OVERLAY on the right edge, not a flex sibling: as a sibling it took 330px
+   off the stage the moment you clicked a slot, which dropped the screen into
+   flat mode mid-interaction and closed the popup that had just opened. */
+.wb-compat {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 35;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(14, 18, 22, 0.96);
+  border-left: 1px solid rgba(58, 74, 88, 0.5);
+  overflow: hidden;
+}
+/* [hidden] loses to display:flex, and a hidden-but-laid-out 330px panel stole
+   a third of the stage - which pushed the whole screen into flat/phone mode on
+   a 1280px desktop. Any wb- region with its own display MUST say this. */
+.wb-compat[hidden] { display: none; }
+.wb-compat-head { padding: 10px; display: flex; flex-direction: column; gap: 6px; border-bottom: 1px solid rgba(58, 74, 88, 0.4); }
+#hub-root .wb-compat-head h3 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f2f4f6;
+}
+.wb-compat-slot { font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+/* the shared .wb-search is flex:1 1 200px for the dock's horizontal head row;
+   in this COLUMN that makes it grow to eat the whole panel height */
+#hub-root .wb-compat-head .wb-search { flex: 0 0 auto; width: 100%; }
+.wb-compat-acts { display: flex; gap: 6px; flex-wrap: wrap; }
+.wb-compat-group {
+  padding: 5px 10px;
+  font-family: var(--display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--label);
+  background: rgba(30, 40, 48, 0.5);
+}
+.wb-compat-list { flex: 1 1 auto; overflow-y: auto; padding: 6px; display: flex; flex-direction: column; gap: 4px; }
+
+/* ---- dock: find / info / gun picker, under the stage ---- */
+.wb-dock { flex: 0 0 auto; padding: 12px 14px 22px; display: flex; flex-direction: column; gap: 12px; }
+.wb-picker {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 10px;
+}
+#hub-root .wb-picker-head .wb-search { flex: 1 1 200px; }
+.wb-picker-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+#hub-root .wb-picker-head h3 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.wb-crumb { font-family: var(--mono); font-size: 11px; }
+#hub-root .wb-search {
+  /* NOT flex:1 1 200px - in a COLUMN that basis is a HEIGHT, and the grow
+     let it eat the whole sheet. The row contexts opt in below instead. */
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  height: 36px;
+  min-width: 140px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--text);
+  font-size: 13px;
+  padding: 5px 8px;
+}
+#hub-root .wb-sort {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--text);
+  font-size: 12px;
+  padding: 4px 6px;
+}
+.wb-pick-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 4px;
+  max-height: 420px;
+  overflow-y: auto;
+}
+#hub-root .wb-pick-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 5px 7px;
+  background: var(--bg-raised);
+  border: 1px solid transparent;
+  border-radius: 2px;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+#hub-root .wb-pick-row:hover:not(:disabled) { border-color: var(--wb-edge-hot); background: rgba(46, 163, 224, 0.1); }
+#hub-root .wb-pick-row.current { border-color: var(--wb-vital); }
+#hub-root .wb-pick-row.wb-pick-conflict { opacity: 0.45; cursor: default; }
+.wb-pick-icon { width: 36px; height: 36px; flex: 0 0 36px; object-fit: contain; }
+.wb-pick-mid { flex: 1 1 auto; min-width: 0; }
+.wb-pick-name { font-size: 12px; line-height: 1.25; }
+.wb-pick-sub { font-size: 11px; }
+.wb-chain { font-family: var(--mono); white-space: normal; }
+.wb-blocked { font-family: var(--mono); font-size: 11px; color: var(--bad); }
+.wb-need { font-family: var(--mono); font-size: 10px; color: var(--warn); margin-left: 6px; }
+.wb-pick-right { display: flex; flex-direction: column; align-items: flex-end; gap: 1px; flex: 0 0 auto; }
+.wb-pick-stat { font-family: var(--mono); font-size: 10px; color: var(--text-dim); }
+.wb-pick-stat.good { color: var(--good); }
+.wb-pick-stat.bad { color: var(--bad); }
+.wb-pick-price { font-family: var(--mono); font-size: 11px; }
+.wb-fit { font-family: var(--display); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--wb-edge-hot); }
+
+/* info strip: the selected part + WHERE TO BUY */
+.wb-info { background: var(--bg-panel); border: 1px solid var(--line); border-radius: 3px; padding: 10px; }
+.wb-info-head { display: flex; gap: 12px; align-items: flex-start; }
+.wb-info-icon { width: 96px; height: 96px; flex: 0 0 96px; object-fit: contain; }
+.wb-info-text { flex: 1 1 auto; min-width: 0; }
+#hub-root .wb-info-text h3 { margin: 0 0 4px; font-size: 15px; }
+.wb-info-btns { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.wb-info-empty { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.wb-buy { margin-top: 12px; }
+#hub-root .wb-buy h4 {
+  margin: 0 0 6px;
+  font-family: var(--display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--label);
+}
+.wb-buy-table { width: 100%; max-width: 720px; }
+.wb-barter-reqs { display: flex; flex-wrap: wrap; gap: 6px; }
+.wb-mini { display: inline-flex; align-items: center; gap: 3px; font-size: 11px; }
+.wb-note { font-size: 11px; margin: 0; }
+.wb-note.warn { color: var(--warn); }
+.wb-share { display: flex; align-items: center; gap: 8px; }
+.wb-share input { flex: 1 1 auto; background: var(--bg); border: 1px solid var(--line); color: var(--text); padding: 4px 6px; font-size: 12px; }
+
+/* ---- saved builds + factory presets drawer ---- */
+.wb-drawer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 40;
+  width: 400px;
+  max-width: 92vw;
+  overflow-y: auto;
+  padding: 14px;
+  background: #0e1216;
+  border-left: 1px solid var(--wb-edge);
+  box-shadow: -14px 0 34px rgba(0, 0, 0, 0.6);
+}
+#hub-root .wb-drawer h3 {
+  margin: 12px 0 8px;
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--label);
+}
+#hub-root .wb-drawer h3:first-of-type { margin-top: 0; }
+#hub-root .wb-drawer-x {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: transparent;
+  border: 1px solid var(--wb-edge);
+  border-radius: 2px;
+  color: var(--text-dim);
+  padding: 2px 7px;
+  cursor: pointer;
+}
+.wb-preset-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 5px; }
+#hub-root .wb-preset-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+#hub-root .wb-preset-btn:hover { border-color: var(--wb-edge-hot); }
+.wb-preset-name { font-size: 11px; line-height: 1.2; min-width: 0; }
+.wb-build-row { display: flex; align-items: center; gap: 8px; padding: 6px; border-bottom: 1px solid var(--line); }
+.wb-build-row.current { background: var(--accent-soft); }
+
+/* ---- hover tooltip on a slot card ---- */
+.wb-tip {
+  position: absolute;
+  z-index: 45;
+  max-width: 230px;
+  padding: 6px 8px;
+  background: rgba(10, 13, 16, 0.97);
+  border: 1px solid var(--wb-edge);
+  border-radius: 2px;
+  font-size: 12px;
+  pointer-events: none;
+}
+.wb-tip-name { color: var(--text); }
+.wb-tip-src { font-family: var(--mono); font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+.wb-tip-req { font-family: var(--mono); font-size: 11px; color: var(--bad); margin-top: 2px; }
+
+/* ---- BACK ---- */
+/* the docked COMPATIBLE ITEMS panel overlays the right edge while the picker is
+   open, and BACK was underneath it */
+/* the base .wb-back rule below is id-scoped, so this has to be too or it loses
+   the specificity fight and BACK stays under the docked list */
+#hub-root .wb-wrap.picking .wb-back { right: 348px; }
+#hub-root .wb-back {
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+  z-index: 46;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: transparent;
+  border: 0;
+  padding: 4px 6px;
+  color: #e6ebef;
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+#hub-root .wb-back:hover { color: var(--wb-edge-hot); }
+
+/* ==========================================================================
+   FLAT / PHONE (<720px of stage width)
+   The floating cloud has nowhere to float, so: the gun on top with its markers
+   still drawn on it, the same cards as one horizontally scrollable strip below
+   it, the stat readout collapsible under that, and the picker as a sheet in
+   the dock instead of a popup.
+   TOUCH AND SCROLL BEHAVIOUR HERE IS PENDING-DEVICE - an emulated pass only
+   proves the layout.
+   ========================================================================== */
+.wb-stage.flat { display: block; padding: 0; min-height: 0; }
+.wb-stage.flat .wb-gun { position: static; }
+.wb-stage.flat .wb-caption { position: static; width: auto; }
+.wb-stage.flat .wb-statpanel { position: static; width: calc(100% - 20px); margin: 4px 10px 0; }
+.wb-stage.flat .wb-banner { position: static; }
+.wb-strip {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+  padding: 16px 10px 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+}
+/* #hub-root .wb-card sets position:absolute at id specificity, so the flat
+   override has to carry the id too or every card stacks at 0,0. */
+#hub-root .wb-stage.flat .wb-strip .wb-card { position: static; flex: 0 0 60px; scroll-snap-align: center; }
+
+@media (max-width: 900px) {
+  .wb-side { flex-basis: 132px; width: 132px; padding: 10px 6px; }
+  #hub-root .wb-side-btn { font-size: 11px; padding: 5px 6px; }
+  .wb-compat { width: 280px; }
+}
+@media (max-width: 720px) {
+  /* the weapon fills the frame and carries no overlay of any kind */
+  .wb-stage {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0;
+  }
+  .wb-stage::after { display: none; }          /* no vignette dimming the gun */
+  .wb-stage .wb-gun { position: static; filter: none; opacity: 1; }
+  .wb-banner, .wb-caption, .wb-wires, .wb-statpanel { display: none !important; }
+  .wb-side, .wb-compat, .wb-pop { display: none !important; }
+  .wb-dock { padding-top: 0; }
+  /* the column is only as tall as its content: with the dock hidden, a
+     stretched main left ~200px of dead air between the pills and BACK */
+  .wb-main { flex: 0 0 auto; overflow: visible; }
+  .wb-wrap { justify-content: flex-start; }
+  .wb-wrap { flex-direction: column; overflow-y: auto; }
+  .wb-side {
+    flex: 0 0 auto;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(58, 74, 88, 0.4);
+    padding: 8px 10px;
+  }
+  #hub-root .wb-name { width: 100%; }
+  .wb-side-stack { flex-direction: row; flex-wrap: wrap; gap: 4px; }
+  #hub-root .wb-side-btn { width: auto; border-left: 0; border: 1px solid var(--line); border-radius: 2px; font-size: 11px; }
+  .wb-side-glyph { display: none; }
+  .wb-side-io, .wb-side-count { display: none; }
+  .wb-main { overflow: visible; }
+  .wb-head { padding: 10px 10px 6px; }
+  #hub-root .wb-title-text { font-size: 20px; letter-spacing: 0.12em; }
+  .wb-filters { gap: 14px; margin-top: 8px; }
+  .wb-filter { font-size: 12px; }
+  .wb-stage { margin: 4px 8px 0; }
+  .wb-dock { padding-left: 10px; padding-right: 10px; }
+  .wb-pick-list { grid-template-columns: minmax(0, 1fr); max-height: none; }
+  .wb-info-head { flex-direction: column; }
+  .wb-info-icon { width: 80px; height: 80px; flex-basis: 80px; }
+  .wb-buy-table { max-width: 100%; }
+  .wb-tip { display: none; }
+  .wb-compat { display: none; }
+  .wb-drawer { width: 100%; max-width: 100%; }
+  /* On a phone BACK stops floating entirely - fixed, it landed on top of the
+     stat readout. It becomes the last row of the page instead, where the bottom
+     tab bar already handles navigation. */
+  #hub-root .wb-back {
+    position: static;
+    display: block;
+    width: calc(100% - 20px);
+    margin: 4px 10px 14px;
+    font-size: 14px;
+    padding: 8px 12px;
+    background: rgba(10, 13, 16, 0.92);
+    border: 1px solid var(--wb-edge);
+    border-radius: 2px;
+  }
+}
+
+/* ==========================================================================
+   THE ONE-LINE STATUS (replaces the green slab)
+   ========================================================================== */
+.wb-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex: 0 0 7px;
+  background: var(--wb-vital);
+}
+.bad > .wb-dot, .wb-status.bad .wb-dot { background: #d9756a; }
+.wb-banner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  font-size: 11.5px;
+  background: rgba(10, 13, 16, 0.82);
+  border-top: 1px solid rgba(58, 74, 88, 0.4);
+  color: #b9c2cb;
+}
+.wb-banner.good, .wb-banner.bad { background: rgba(10, 13, 16, 0.82); }
+.wb-banner.bad .wb-banner-text { color: #d9756a; }
+.wb-banner-text { font-family: var(--mono); }
+
+/* ==========================================================================
+   PHONE (<= 700px of stage). The weapon owns the screen.
+   ========================================================================== */
+.wb-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 12px 6px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.wb-status.bad .wb-status-text { color: #d9756a; }
+
+.wb-phone-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+#hub-root .wb-gunname {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 6px 0;
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  font-family: var(--display);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+#hub-root .wb-menu-btn {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 34px;
+  background: rgba(30, 40, 48, 0.6);
+  border: 1px solid var(--wb-edge);
+  border-radius: 2px;
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* the icon strip - 64px tiles, no names */
+.wb-strip {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 12px 4px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+}
+#hub-root .wb-tile {
+  position: relative;
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  background: rgba(26, 35, 44, 0.9);
+  border: 1px solid var(--wb-edge);
+  border-radius: 3px;
+  cursor: pointer;
+  scroll-snap-align: center;
+}
+#hub-root .wb-tile.required { border-color: var(--wb-red); box-shadow: inset 0 0 0 1px var(--wb-red); }
+#hub-root .wb-tile.selected { border-color: var(--wb-edge-hot); box-shadow: 0 0 0 1px var(--wb-edge-hot); }
+.wb-tile-icon { position: absolute; inset: 4px; width: auto; height: auto; object-fit: contain; }
+.wb-tile-plus { font-size: 22px; color: #6d7883; line-height: 62px; }
+
+/* four pills, tap for the full readout */
+.wb-pills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  padding: 6px 12px 10px;
+  cursor: pointer;
+}
+.wb-pill {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 5px 7px;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  min-width: 0;
+}
+.wb-pill-k {
+  font-family: var(--display);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--label);
+}
+.wb-pill-v {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* the one bottom sheet */
+.wb-sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  max-height: 76vh;
+  display: flex;
+  flex-direction: column;
+  background: #0e1216;
+  border-top: 1px solid var(--wb-edge);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -14px 40px rgba(0, 0, 0, 0.7);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.wb-sheet-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px 4px;
+}
+.wb-sheet-acts { display: flex; align-items: center; gap: 6px; margin-left: auto; }
+#hub-root .wb-sheet-icon {
+  width: 34px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid var(--wb-edge);
+  border-radius: 2px;
+  color: var(--text-dim);
+  font-size: 15px;
+  cursor: pointer;
+}
+#hub-root .wb-sheet-icon.on { color: var(--text); border-color: var(--wb-blue); background: rgba(46, 163, 224, 0.16); }
+#hub-root .wb-search-one { width: 100%; height: 40px; flex: 0 0 auto; }
+#hub-root .wb-sheet-x {
+  width: 34px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid var(--wb-edge);
+  border-radius: 2px;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+.wb-sheet-body { overflow-y: auto; padding: 0 12px 16px; display: flex; flex-direction: column; gap: 8px; }
+.wb-sheet-top { display: flex; align-items: center; gap: 10px; }
+.wb-sheet-title {
+  flex: 1 1 auto;
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--label);
+}
+.wb-sheet-list { display: flex; flex-direction: column; gap: 4px; }
+.wb-sheet-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 5px 2px;
+  border-bottom: 1px solid rgba(58, 74, 88, 0.25);
+  font-size: 12px;
+}
+.wb-sheet-stat .wb-stat-value { margin-left: auto; }
+.wb-sheet-stat.nodata .wb-stat-value { color: var(--text-dim); }
+.wb-menu-list { display: flex; flex-direction: column; gap: 1px; margin-top: 4px; }
+#hub-root .wb-menu-row {
+  padding: 11px 10px;
+  background: var(--bg-raised);
+  border: 0;
+  border-radius: 2px;
+  color: var(--text);
+  font-family: var(--display);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: left;
+  cursor: pointer;
+}
+#hub-root .wb-menu-row.on { background: rgba(46, 163, 224, 0.18); color: #fff; }
+#hub-root .wb-menu-row.danger { color: #d9756a; }
+#hub-root .wb-menu-row:disabled { opacity: 0.35; }

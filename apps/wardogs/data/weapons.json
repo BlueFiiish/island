@@ -1,0 +1,749 @@
+[
+ {
+  "id": "bushmaster-m17s",
+  "name": "Bushmaster M17s",
+  "category": "Assault Rifles",
+  "sourceSection": "assault-rifles",
+  "fireMode": [
+   "Semi Auto",
+   "Burst Fire"
+  ],
+  "weightKg": 3.17,
+  "price": 0,
+  "acceptsAttachments": false,
+  "caliber": "5.56x45mm",
+  "tags": [
+   "Free"
+  ],
+  "magazines": [
+   "STANAG 20 RND Magazine",
+   "STANAG 60 RND Magazine"
+  ],
+  "summary": "Assault Rifle - caliber 5.56x45mm, weight 3.17 kg, $0.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#assault-rifles",
+  "beginner": {
+   "whatItIs": "The assault rifle you already own the moment you first load in. It fires single shots or short bursts, feeds 5.56x45mm, and costs nothing to buy back after a death.",
+   "whyItMatters": "Free is the whole point. Everything you carry can be lost when you die, so starting from a rifle that costs zero to replace means a bad run sets you back only what you chose to add to it.",
+   "whenToUseIt": "Use it while your bank is small, and keep it in mind afterwards as the rifle to drop back to on a run where you would rather risk nothing."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-bushmaster-m17s.webp"
+ },
+ {
+  "id": "t-21",
+  "name": "T-21",
+  "category": "Assault Rifles",
+  "sourceSection": "assault-rifles",
+  "fireMode": [
+   "Semi Auto",
+   "Full Auto"
+  ],
+  "weightKg": 3.27,
+  "price": 600,
+  "acceptsAttachments": true,
+  "caliber": "5.56x45mm",
+  "magazines": [
+   "STANAG 20 RND Magazine",
+   "STANAG 60 RND Magazine"
+  ],
+  "summary": "Assault Rifle - caliber 5.56x45mm, weight 3.27 kg, $600.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#assault-rifles",
+  "beginner": {
+   "whatItIs": "A 5.56x45mm rifle with a genuine full-auto setting at $600 a match, and the first assault rifle on the vendor screen that will accept attachments.",
+   "whyItMatters": "The free starters are locked to single shots and short bursts and will not mount anything at all. This is where a rifle stops being a fixed object and becomes something you can put a sight and a grip on.",
+   "whenToUseIt": "Buy it on your first trip to the vendor. Against the $10,000 a new account starts with, you can lose it a dozen times over and still be kitting up."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-t-21.webp"
+ },
+ {
+  "id": "ak74",
+  "name": "AK74",
+  "category": "Assault Rifles",
+  "sourceSection": "assault-rifles",
+  "fireMode": [
+   "Semi Auto",
+   "Full Auto"
+  ],
+  "weightKg": 3,
+  "price": 1600,
+  "acceptsAttachments": true,
+  "caliber": "5.45x39mm",
+  "magazines": [
+   "AK74 75 RND Drum Magazine"
+  ],
+  "summary": "Assault Rifle - caliber 5.45x39mm, weight 3 kg, $1,600.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#assault-rifles",
+  "beginner": {
+   "whatItIs": "A full-auto assault rifle in 5.45x39mm, and one of the cheapest rifles you can actually buy rather than start with.",
+   "whyItMatters": "It is the first step up from the free rifle into a weapon that will hold a trigger down, and it uses a calibre nothing else in your early kit competes for.",
+   "whenToUseIt": "Buy it once you have enough banked that losing one kit will not stop you deploying again, and you want an answer at close range that the burst-only starter cannot give you."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-ak74.webp"
+ },
+ {
+  "id": "galil",
+  "name": "GALIL",
+  "category": "Assault Rifles",
+  "sourceSection": "assault-rifles",
+  "fireMode": [
+   "Semi Auto",
+   "Full Auto"
+  ],
+  "weightKg": 3.95,
+  "price": 2200,
+  "wardogLevel": "Assault Lvl 10",
+  "unlockPrice": 35000,
+  "acceptsAttachments": true,
+  "caliber": "5.56x45mm",
+  "magazines": [
+   "Galil 35 RND Magazine",
+   "Galil 50 RND Magazine"
+  ],
+  "summary": "Assault Rifle - caliber 5.56x45mm, weight 3.95 kg, $2,200.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#assault-rifles",
+  "beginner": {
+   "whatItIs": "A 5.56x45mm full-auto rifle behind two separate gates: Assault level 10, then a one-time $35,000 to unlock it, before you start paying $2,200 each time you take it out.",
+   "whyItMatters": "It is the first rifle that hands you a real magazine decision, a 35 round or a 50 round, so feeding the gun becomes part of building the loadout instead of something the gun decides for you.",
+   "whenToUseIt": "Go for it once kills have carried your Assault track to 10 and $35,000 is money you can lose without stopping. Before that the same cash buys a great many matches with a rifle you already own."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-galil.webp"
+ },
+ {
+  "id": "m4",
+  "name": "M4",
+  "category": "Assault Rifles",
+  "sourceSection": "assault-rifles",
+  "fireMode": [
+   "Semi Auto",
+   "Full Auto"
+  ],
+  "weightKg": 2.92,
+  "price": 2800,
+  "wardogLevel": "Assault Lvl 20",
+  "acceptsAttachments": true,
+  "caliber": "5.56x45mm",
+  "magazines": [
+   "STANAG 20 RND Magazine",
+   "STANAG 60 RND Magazine"
+  ],
+  "summary": "Assault Rifle - caliber 5.56x45mm, weight 2.92 kg, $2,800.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#assault-rifles",
+  "beginner": {
+   "whatItIs": "A full-auto 5.56x45mm rifle at 2.92 kg, the lightest assault rifle the source documents, sitting behind Assault level 20 at $2,800 a match.",
+   "whyItMatters": "The source publishes a weight for every weapon and every piece of armour and clearly treats it as a cost, even though it never spells out exactly what carrying more does to you. This rifle asks for less of that budget than anything else in its class.",
+   "whenToUseIt": "Pick it when the rest of your kit is already heavy - high-tier armour, a launcher, a hammer - and you want the rifle to be the part of the loadout that is not the problem."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-m4.webp"
+ },
+ {
+  "id": "fal",
+  "name": "FAL",
+  "category": "Assault Rifles",
+  "sourceSection": "assault-rifles",
+  "fireMode": [
+   "Semi Auto",
+   "Full Auto"
+  ],
+  "weightKg": 4.25,
+  "price": 6500,
+  "wardogLevel": "Assault Lvl 35",
+  "acceptsAttachments": true,
+  "caliber": ".308 Win",
+  "magazines": [
+   "FAL & BMR-308 20 RND Magazine",
+   "FAL 30 RND Magazine"
+  ],
+  "summary": "Assault Rifle - caliber .308 Win, weight 4.25 kg, $6,500.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#assault-rifles",
+  "beginner": {
+   "whatItIs": "A full-auto rifle chambered in .308 Win, a round the game rates at 60 base damage against standard 5.56's 28, gated at Assault level 35 and $6,500 a match.",
+   "whyItMatters": "Nothing else in the assault rifle rack fires a round anywhere near this heavy. It is also the caliber that waits longest for its armour-piercing variant, at WARDOG level 140, so what you are buying is per-shot weight right now rather than an upgrade path later.",
+   "whenToUseIt": "When you can afford the rifle and the feeding of it - .308 runs $4 a round against 5.56's $1.50 - and you expect fights where landing one shot has to be worth something."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-fal.webp"
+ },
+ {
+  "id": "a-91",
+  "name": "A-91",
+  "category": "Assault Rifles",
+  "sourceSection": "assault-rifles",
+  "fireMode": [
+   "Semi Auto",
+   "Burst Fire"
+  ],
+  "weightKg": 3.17,
+  "acceptsAttachments": false,
+  "caliber": "5.56x45mm",
+  "magazines": [
+   "STANAG 20 RND Magazine",
+   "STANAG 60 RND Magazine"
+  ],
+  "summary": "Assault Rifle - caliber 5.56x45mm, weight 3.17 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#assault-rifles",
+  "beginner": {
+   "whatItIs": "A 5.56x45mm rifle firing single shots or short bursts, with no mounting points for attachments. The source publishes no price for it, and every number it does publish matches the free starter exactly.",
+   "whyItMatters": "The source states that three free starting rifles share this caliber, and this is one of the three weapons that fit that description, so the useful question is not whether to buy it but which one your account happens to hand you.",
+   "whenToUseIt": "Fight with it until the vendor is affordable, and let its complete lack of attachment points rather than its damage be the thing that tells you it is time to move on."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-a-91.webp"
+ },
+ {
+  "id": "kh-2002",
+  "name": "KH-2002",
+  "category": "Assault Rifles",
+  "sourceSection": "assault-rifles",
+  "fireMode": [
+   "Semi Auto",
+   "Burst Fire"
+  ],
+  "weightKg": 3.17,
+  "acceptsAttachments": false,
+  "caliber": "5.56x45mm",
+  "magazines": [
+   "STANAG 20 RND Magazine",
+   "STANAG 60 RND Magazine"
+  ],
+  "summary": "Assault Rifle - caliber 5.56x45mm, weight 3.17 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#assault-rifles",
+  "beginner": {
+   "whatItIs": "The third rifle sharing the free starter profile - 5.56x45mm, semi and burst only, 3.17 kg, no attachment mounts, and no price published anywhere by the source.",
+   "whyItMatters": "Burst fire is a real limit in a game that drops a hundred players around one moving circle, because you do not get to choose the range you fight at. A fixed short burst is the same whether the target is across a field or already in the doorway.",
+   "whenToUseIt": "Early, and deliberately at distance. The burst that fights you inside a building is closer to an advantage when you are picking at somebody a long way off."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-kh-2002.webp"
+ },
+ {
+  "id": "ggx-17",
+  "name": "GGX 17",
+  "category": "Pistols",
+  "sourceSection": "pistols",
+  "fireMode": [
+   "Semi Auto"
+  ],
+  "weightKg": 0.63,
+  "price": 200,
+  "acceptsAttachments": true,
+  "caliber": "9x19mm",
+  "magazines": [
+   "GGX 33 RND Magazine",
+   "GGX 50 RND Drum Magazine"
+  ],
+  "summary": "Pistol - caliber 9x19mm, weight 0.63 kg, $200.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#pistols",
+  "beginner": {
+   "whatItIs": "A 9x19mm pistol available from level 1: $200, the cheapest pistol you pay for; the Bushmaster M17s is listed at $0. At 0.63 kg it is also the lightest.",
+   "whyItMatters": "It costs so little that carrying one is effectively free, it feeds the cheapest ammunition in the game at $1 a round, and it takes a 33 round magazine or a 50 round drum, which is far more capacity than a sidearm normally offers.",
+   "whenToUseIt": "Carry it more or less always. 9mm is also the first caliber to open its flesh-damage round, at WARDOG level 6, so this is usually the first gun you ever get to upgrade the ammunition for."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-ggx-17.webp"
+ },
+ {
+  "id": "judge",
+  "name": "Judge",
+  "category": "Pistols",
+  "sourceSection": "pistols",
+  "fireMode": [
+   "Double Action"
+  ],
+  "weightKg": 0.82,
+  "price": 250,
+  "wardogLevel": 18,
+  "unlockPrice": 15000,
+  "acceptsAttachments": true,
+  "caliber": ".45 Colt",
+  "summary": "Pistol - caliber .45 Colt, weight 0.82 kg, $250.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#pistols",
+  "beginner": {
+   "whatItIs": "A double-action pistol in .45 Colt, opened at WARDOG level 18 for a one-time $15,000 and then $250 every time you take it out.",
+   "whyItMatters": "It is the only weapon in the game chambered in .45 Colt. Every dollar you later spend on that caliber's ammunition upgrades applies to this pistol and to nothing else you will ever own.",
+   "whenToUseIt": "Only if you want it for its own sake. A caliber with exactly one gun behind it is a poor place to put an ammunition unlock until you already know you like how the gun shoots."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-judge.webp"
+ },
+ {
+  "id": "m1911",
+  "name": "M1911",
+  "category": "Pistols",
+  "sourceSection": "pistols",
+  "fireMode": [
+   "Semi Auto"
+  ],
+  "weightKg": 1.1,
+  "price": 300,
+  "wardogLevel": 40,
+  "acceptsAttachments": true,
+  "caliber": ".45 ACP",
+  "magazines": [
+   "M1911 7 RND Magazine",
+   "M1911 10 RND Magazine"
+  ],
+  "summary": "Pistol - caliber .45 ACP, weight 1.1 kg, $300.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#pistols",
+  "beginner": {
+   "whatItIs": "A .45 ACP pistol at $300 a match, gated at WARDOG level 40, feeding either a 7 or a 10 round magazine.",
+   "whyItMatters": "Its round is rated at 30 base damage against 9mm's 22 while costing the same $1, but it feeds a 7 or a 10 round magazine, so you get far fewer attempts than a submachine gun gives you. You are trading how many chances you get for what each one is worth.",
+   "whenToUseIt": "As a sidearm for somebody who expects to draw it rarely and wants the few shots in it to count, not as the thing you plan to win a close-range fight with."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-m1911.webp"
+ },
+ {
+  "id": "ggx-18",
+  "name": "GGX 18",
+  "category": "Pistols",
+  "sourceSection": "pistols",
+  "fireMode": [
+   "Semi Auto",
+   "Full Auto"
+  ],
+  "weightKg": 0.63,
+  "price": 800,
+  "wardogLevel": 70,
+  "acceptsAttachments": true,
+  "caliber": "9x19mm",
+  "magazines": [
+   "GGX 33 RND Magazine",
+   "GGX 50 RND Drum Magazine"
+  ],
+  "summary": "Pistol - caliber 9x19mm, weight 0.63 kg, $800.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#pistols",
+  "beginner": {
+   "whatItIs": "The full-auto version of the starting pistol: identical 9x19mm chambering, identical 0.63 kg, the same 33 round and 50 round magazines, with an automatic setting added. WARDOG level 70, $800 a match.",
+   "whyItMatters": "With the drum fitted this stops being a backup gun and becomes something closer to a very small automatic weapon that happens to live in the sidearm slot, without costing you any carry weight to do it.",
+   "whenToUseIt": "When your primary is deliberately slow - a bolt-action, a launcher, a marksman rifle - and you want the close-range answer already on your body rather than back at the vendor."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-ggx-18.webp"
+ },
+ {
+  "id": "deagle",
+  "name": "Deagle",
+  "category": "Pistols",
+  "sourceSection": "pistols",
+  "fireMode": [
+   "Semi Auto"
+  ],
+  "weightKg": 2,
+  "price": 900,
+  "wardogLevel": 90,
+  "acceptsAttachments": true,
+  "caliber": ".50AE",
+  "magazines": [
+   "Deagle 7 RND Magazine"
+  ],
+  "summary": "Pistol - caliber .50AE, weight 2 kg, $900.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#pistols",
+  "beginner": {
+   "whatItIs": "A .50AE pistol holding 7 rounds, weighing 2 kg - about three times the starting pistol - and unlocked at WARDOG level 90 for $900 a match.",
+   "whyItMatters": "Its round is rated at 49 base damage, beaten only by the rifle calibers, but .50AE costs $4 a round and does not open its flesh-damage variant until WARDOG level 95, which is late even measured against this gun's own gate.",
+   "whenToUseIt": "This is a late-account weapon by construction. Treat it as a heavy sidearm you eventually earn rather than as a rung on anybody's progression."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-deagle.webp"
+ },
+ {
+  "id": "amp-9",
+  "name": "AMP-9",
+  "category": "SMGs",
+  "sourceSection": "smgs",
+  "fireMode": [
+   "Semi Auto",
+   "Full Auto"
+  ],
+  "weightKg": 1.4,
+  "price": 900,
+  "acceptsAttachments": true,
+  "caliber": "9x19mm",
+  "magazines": [
+   "AMP-9 15 RND Magazine",
+   "AMP-9 30 RND Magazine",
+   "AMP-9 50 RND Magazine",
+   "AMP-9 20 RND Magazine"
+  ],
+  "summary": "SMG - caliber 9x19mm, weight 1.4 kg, $900.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#smgs",
+  "beginner": {
+   "whatItIs": "A 9x19mm submachine gun at $900 and 1.4 kg, offered with four different magazines - 15, 20, 30 and 50 rounds - and no level requirement at all.",
+   "whyItMatters": "No other weapon the source documents gives you four magazine sizes to choose between, and it is a full-auto primary you can buy on your first day with no class track to grind first.",
+   "whenToUseIt": "When you want to hold a trigger down and have not levelled anything yet. It also feeds the cheapest ammunition in the game, so running it does not quietly undo the saving on the gun."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-amp-9.webp"
+ },
+ {
+  "id": "pp-19-vityaz",
+  "name": "PP-19 Vityaz",
+  "category": "SMGs",
+  "sourceSection": "smgs",
+  "fireMode": [
+   "Semi Auto",
+   "Full Auto"
+  ],
+  "weightKg": 2.9,
+  "price": 1200,
+  "unlockPrice": 25000,
+  "acceptsAttachments": true,
+  "caliber": "9x19mm",
+  "magazines": [
+   "PP-19 Vityaz 10 RND Magazine",
+   "PP-19 Vityaz 30 RND Magazine",
+   "PP-19 Vityaz 50 RND Magazine"
+  ],
+  "summary": "SMG - caliber 9x19mm, weight 2.9 kg, $1,200.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#smgs",
+  "beginner": {
+   "whatItIs": "A 9x19mm submachine gun at $1,200 a match behind a one-time $25,000 unlock. At 2.9 kg it is roughly twice the weight of the other cheap 9mm automatic.",
+   "whyItMatters": "The source lists an unlock price for it and no level requirement, which would make it one of very few weapons money alone can open. Almost everything else on the rack sits behind a class track that cash cannot move.",
+   "whenToUseIt": "When cash is what you have and levels are what you do not. Look at the vendor yourself before committing the $25,000: a missing level gate in pre-release data may simply be a gap in what has been written down."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-pp-19-vityaz.webp"
+ },
+ {
+  "id": "mp5",
+  "name": "MP5",
+  "category": "SMGs",
+  "sourceSection": "smgs",
+  "fireMode": [
+   "Semi Auto",
+   "Full Auto"
+  ],
+  "weightKg": 2.54,
+  "price": 1500,
+  "wardogLevel": "Medic Lvl 15",
+  "acceptsAttachments": true,
+  "caliber": "9x19mm",
+  "magazines": [
+   "MP5 20 RND Magazine",
+   "MP5 30 RND Magazine",
+   "MP5 50 RND Magazine"
+  ],
+  "summary": "SMG - caliber 9x19mm, weight 2.54 kg, $1,500.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#smgs",
+  "beginner": {
+   "whatItIs": "A 9x19mm submachine gun at $1,500, opened by reaching Medic level 15 rather than by fighting anybody.",
+   "whyItMatters": "It is the clearest illustration of how unlocks actually work here. The gun sits behind healing and reviving teammates, so a player who never touches a bandage does not reach it no matter how many kills they pile up.",
+   "whenToUseIt": "It arrives on its own if you play medic at all, which is also the most repeatable way to earn in the game. If you specifically want this gun, the route to it is a first aid kit, not a rifle."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-mp5.webp"
+ },
+ {
+  "id": "super-45",
+  "name": "Super-45",
+  "category": "SMGs",
+  "sourceSection": "smgs",
+  "fireMode": [
+   "Semi Auto",
+   "Full Auto"
+  ],
+  "weightKg": 3,
+  "price": 2600,
+  "wardogLevel": "Medic Lvl 35",
+  "acceptsAttachments": true,
+  "caliber": ".45 ACP",
+  "magazines": [
+   "Super-45 13 RND Magazine",
+   "Super-45 30 RND Magazine",
+   "Super-45 40 RND Drum Magazine"
+  ],
+  "summary": "SMG - caliber .45 ACP, weight 3 kg, $2,600.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#smgs",
+  "beginner": {
+   "whatItIs": "A .45 ACP submachine gun at $2,600, opened at Medic level 35, feeding 13, 30 or 40 round magazines.",
+   "whyItMatters": "It is the only automatic weapon in the game chambered in .45 ACP, a round rated at 30 base damage against 9mm's 22 for the same $1 a round. The heavier hit costs you nothing per trigger pull - you pay for it once, at the vendor.",
+   "whenToUseIt": "Late in a medic run, when the 9mm guns have started to feel thin. Since the ammunition costs the same, there is no ongoing penalty for carrying it once the levels and the $2,600 are in reach."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-super-45.webp"
+ },
+ {
+  "id": "mp43",
+  "name": "MP43",
+  "category": "Shotguns",
+  "sourceSection": "shotguns",
+  "fireMode": [
+   "Break-Action"
+  ],
+  "weightKg": 3.2,
+  "price": 400,
+  "acceptsAttachments": true,
+  "caliber": "12 Gauge",
+  "magazines": [
+   "MP43 Internal Mag"
+  ],
+  "summary": "Shotgun - caliber 12 Gauge, weight 3.2 kg, $400.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#shotguns",
+  "beginner": {
+   "whatItIs": "A break-action 12 gauge shotgun at $400 with a fixed internal magazine, so you reload it round by round instead of swapping a magazine in.",
+   "whyItMatters": "12 gauge is the one caliber that plays by different rules. Its buckshot is actually worse against armoured targets than plain rifle ammunition is, and it is the only caliber with a fourth ammunition type, a rifled slug, which behaves like a rifle round again.",
+   "whenToUseIt": "Indoors and at arm's length, against people who have not spent money on armour yet. Against a geared target at any distance it is the wrong tool, and the reload will make sure you find out."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-mp43.webp"
+ },
+ {
+  "id": "m500",
+  "name": "M500",
+  "category": "Shotguns",
+  "sourceSection": "shotguns",
+  "fireMode": [
+   "Semi Auto"
+  ],
+  "weightKg": 3.52,
+  "price": 1200,
+  "wardogLevel": "Support Lvl 10",
+  "acceptsAttachments": true,
+  "caliber": "12 Gauge",
+  "summary": "Shotgun - caliber 12 Gauge, weight 3.52 kg, $1,200.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#shotguns",
+  "beginner": {
+   "whatItIs": "A semi-automatic 12 gauge shotgun at $1,200, opened at Support level 10, so it fires as fast as you can pull rather than one shell at a time.",
+   "whyItMatters": "Semi-automatic fire is the entire difference in a shotgun. A miss with the break-action ends the exchange and hands the other player the fight; a miss with this one is just a miss.",
+   "whenToUseIt": "In and around buildings, and on the defending side of a fight where people are coming to you. It turns up naturally if you spend your matches building and hauling supplies for the team."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-m500.webp"
+ },
+ {
+  "id": "m249-saw",
+  "name": "M249 SAW",
+  "category": "LMGs",
+  "sourceSection": "lmgs",
+  "fireMode": [
+   "Semi Auto",
+   "Full Auto"
+  ],
+  "weightKg": 7.5,
+  "price": 3200,
+  "wardogLevel": "Support Lvl 15",
+  "acceptsAttachments": true,
+  "caliber": "5.56x45mm",
+  "magazines": [
+   "M249 100 RND Fabric Magazine",
+   "STANAG 20 RND Magazine",
+   "STANAG 60 RND Magazine"
+  ],
+  "summary": "LMG - caliber 5.56x45mm, weight 7.5 kg, $3,200.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#lmgs",
+  "beginner": {
+   "whatItIs": "A 5.56x45mm light machine gun fed by a 100 round belt, weighing 7.5 kg, at $3,200 and Support level 15.",
+   "whyItMatters": "A hundred rounds of the game's most common ammunition at $1.50 each lets you keep a piece of ground under fire without stopping to reload. It weighs 7.5 kg, against 2.92 kg to 3.95 kg for the rifles that share the round, so it takes a large share of what you can carry.",
+   "whenToUseIt": "When your job is to hold ground rather than cross it. The weight and the reload are both arguments for setting up behind something solid and staying there."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-m249-saw.webp"
+ },
+ {
+  "id": "pkm",
+  "name": "PKM",
+  "category": "LMGs",
+  "sourceSection": "lmgs",
+  "fireMode": [
+   "Semi Auto",
+   "Full Auto"
+  ],
+  "weightKg": 7.5,
+  "price": 4500,
+  "wardogLevel": "Support Lvl 30",
+  "acceptsAttachments": true,
+  "caliber": "7.62x54mmR",
+  "magazines": [
+   "PKM 100 RND Box"
+  ],
+  "summary": "LMG - caliber 7.62x54mmR, weight 7.5 kg, $4,500.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#lmgs",
+  "beginner": {
+   "whatItIs": "A 7.62x54mmR light machine gun fed from a 100-round magazine, also 7.5 kg, at $4,500 and Support level 30.",
+   "whyItMatters": "Its round is rated at 55 base damage against the 5.56 belt gun's 28, but 7.62x54mmR runs $6 a round, so filling its 100-round magazine costs $600 of ammunition before you have fired a shot. This is the weapon where the ammunition bill can outgrow the gun.",
+   "whenToUseIt": "When the people you are shooting at are in serious armour, or the distances are long, and the match is going well enough that feeding it is not what ends your evening."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-pkm.webp"
+ },
+ {
+  "id": "sks",
+  "name": "SKS",
+  "category": "Marksman Rifles",
+  "sourceSection": "marksman-rifles",
+  "fireMode": [
+   "Semi Auto"
+  ],
+  "weightKg": 3.85,
+  "price": 2400,
+  "caliber": "7.62x39mm",
+  "summary": "Marksman Rifle - caliber 7.62x39mm, weight 3.85 kg, $2,400.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#marksman-rifles",
+  "beginner": {
+   "whatItIs": "A semi-automatic marksman rifle in 7.62x39mm at $2,400, with no level requirement on it whatsoever.",
+   "whyItMatters": "It is the only weapon in the game using 7.62x39mm, and that caliber opens its armour-piercing round at WARDOG level 63 - the earliest in the game, and well ahead of 5.56 at 85. Armour-piercing is the only ammunition that keeps working against high-tier armour, so getting there early genuinely matters.",
+   "whenToUseIt": "When you want reach sooner than any class track will hand it to you. It is one of the few mid-priced weapons that asks for money and nothing else."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-sks.webp"
+ },
+ {
+  "id": "svd",
+  "name": "SVD",
+  "category": "Marksman Rifles",
+  "sourceSection": "marksman-rifles",
+  "fireMode": [
+   "Semi Auto"
+  ],
+  "weightKg": 5.3,
+  "price": 4800,
+  "unlockPrice": 50000,
+  "caliber": "7.62x54mmR",
+  "magazines": [
+   "SVD 5 RND Magazine",
+   "SVD 10 RND Magazine"
+  ],
+  "summary": "Marksman Rifle - caliber 7.62x54mmR, weight 5.3 kg, $4,800.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#marksman-rifles",
+  "beginner": {
+   "whatItIs": "A semi-automatic marksman rifle in 7.62x54mmR at $4,800 a match, behind a one-time $50,000 unlock and no listed level requirement.",
+   "whyItMatters": "That $50,000 is the largest one-time weapon unlock the source documents, and what it buys is a 55-damage round delivered semi-automatically from a 5 or 10 round magazine - reach and per-shot weight without cycling a bolt between shots.",
+   "whenToUseIt": "Once $50,000 is genuinely spare. Until it is, the same money is a very long run of matches with a rifle you already have, and those matches are what raise the levels everything else is gated on."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-svd.webp"
+ },
+ {
+  "id": "bmr-308",
+  "name": "BMR-308",
+  "category": "Marksman Rifles",
+  "sourceSection": "marksman-rifles",
+  "fireMode": [
+   "Semi Auto"
+  ],
+  "weightKg": 3.9,
+  "price": 6000,
+  "wardogLevel": "Recon Lvl 30",
+  "caliber": ".308 Win",
+  "magazines": [
+   "FAL & BMR-308 20 RND Magazine"
+  ],
+  "summary": "Marksman Rifle - caliber .308 Win, weight 3.9 kg, $6,000.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#marksman-rifles",
+  "beginner": {
+   "whatItIs": "A semi-automatic marksman rifle in .308 Win at $6,000, opened at Recon level 30, sharing its 20 and 30 round magazines with the FAL.",
+   "whyItMatters": "It fires the heaviest round in the game, rated at 60, semi-automatically and at 3.9 kg - lighter than either of the game's other .308 weapons. That combination of weight, rate and round does not exist anywhere else on the rack.",
+   "whenToUseIt": "When you are spotting for a squad and want the option of taking the shot yourself. Recon levels come from marking targets for other people, so this rifle shows up as a reward for a job you were already doing."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-bmr-308.webp"
+ },
+ {
+  "id": "scout-rifle-td",
+  "name": "Scout Rifle TD",
+  "category": "Sniper Rifles",
+  "sourceSection": "sniper-rifles",
+  "weightKg": 2.95,
+  "price": 1100,
+  "caliberConfirmed": false,
+  "summary": "Sniper Rifle - weight 2.95 kg, $1,100.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#sniper-rifles",
+  "beginner": {
+   "whatItIs": "A sniper rifle at $1,100 and 2.95 kg. The source publishes no caliber and no fire mode for it, so those two facts are genuinely unpublished rather than left out of this page.",
+   "whyItMatters": "It is the cheapest and much the lightest thing in the sniper rack - the next rifle up is a kilogram heavier and four times the price - which makes it the only long-range option a new account can realistically carry and replace.",
+   "whenToUseIt": "As a first long-range weapon, with the caveat that you cannot plan an ammunition budget around it until the source says what it feeds. Read the vendor screen in game before you build a loadout on it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-scout-rifle-td.webp"
+ },
+ {
+  "id": "mosin-nagant",
+  "name": "Mosin Nagant",
+  "category": "Sniper Rifles",
+  "sourceSection": "sniper-rifles",
+  "fireMode": [
+   "Bolt-Action"
+  ],
+  "weightKg": 4.1,
+  "price": 4500,
+  "acceptsAttachments": true,
+  "caliber": "7.62x54mmR",
+  "magazines": [
+   "Mosin Standard Mag"
+  ],
+  "summary": "Sniper Rifle - caliber 7.62x54mmR, weight 4.1 kg, $4,500.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#sniper-rifles",
+  "beginner": {
+   "whatItIs": "A bolt-action rifle in 7.62x54mmR at $4,500 and 4.1 kg, and the only sniper rifle the source lists as accepting attachments.",
+   "whyItMatters": "Bolt-action means one shot and then a manual cycle, so everything rests on the first round landing. In exchange it is the cheapest way into a 55-damage rifle round, and the only rifle in its rack you can put an optic on.",
+   "whenToUseIt": "From a position you can hold and then leave. The cycle is long enough that a miss usually means being found, so it rewards waiting for a shot and punishes talking yourself into one."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-mosin-nagant.webp"
+ },
+ {
+  "id": "sv98",
+  "name": "SV98",
+  "category": "Sniper Rifles",
+  "sourceSection": "sniper-rifles",
+  "weightKg": 5.8,
+  "price": 5200,
+  "wardogLevel": "Recon Lvl 19",
+  "caliberConfirmed": false,
+  "magazines": [
+   "SV98 10 RND Magazine"
+  ],
+  "summary": "Sniper Rifle - weight 5.8 kg, $5,200.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#sniper-rifles",
+  "beginner": {
+   "whatItIs": "A sniper rifle with a 10 round magazine, at 5.8 kg and $5,200, opened at Recon level 19. The source publishes neither its caliber nor its fire mode.",
+   "whyItMatters": "Ten rounds is as deep as any magazine in the sniper rack, matched by the AMR 50 and nothing else, so you get more attempts from one position than a bolt-action gives you.",
+   "whenToUseIt": "When you expect to take more than one or two shots from the same place and would rather cycle a magazine than work the bolt after every round. Until the source names what it feeds you cannot budget its ammunition, so read the vendor screen in game before you build a loadout on it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-sv98.webp"
+ },
+ {
+  "id": "mk22",
+  "name": "MK22",
+  "category": "Sniper Rifles",
+  "sourceSection": "sniper-rifles",
+  "weightKg": 6.3,
+  "price": 6400,
+  "wardogLevel": "Recon Lvl 25",
+  "caliber": ".308 Win",
+  "magazines": [
+   "MK22 5 RND Magazine"
+  ],
+  "summary": "Sniper Rifle - caliber .308 Win, weight 6.3 kg, $6,400.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#sniper-rifles",
+  "beginner": {
+   "whatItIs": "A sniper rifle in .308 Win with a 5 round magazine, at 6.3 kg and $6,400, opened at Recon level 25.",
+   "whyItMatters": "It brings the 60-damage .308 round into the sniper rack rather than the marksman rack, and the five round magazine is a deliberate limit on how often you get to use it. The gun is built around the assumption that you will not need many.",
+   "whenToUseIt": "When you have a position you trust and one target that actually matters. Between the level, the $6,400 and .308 running $4 a round, this is not a rifle to sweep a treeline with."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-mk22.webp"
+ },
+ {
+  "id": "amr-50",
+  "name": "AMR 50",
+  "category": "Sniper Rifles",
+  "sourceSection": "sniper-rifles",
+  "weightKg": 12.5,
+  "price": 8800,
+  "wardogLevel": "Recon Lvl 35",
+  "caliber": ".50 Cal",
+  "magazines": [
+   "AMR 50 10 RND Magazine"
+  ],
+  "summary": "Sniper Rifle - caliber .50 Cal, weight 12.5 kg, $8,800.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#sniper-rifles",
+  "beginner": {
+   "whatItIs": "A .50 Cal anti-materiel rifle at 12.5 kg and $8,800 a match, opened at Recon level 35 - the heaviest and the most expensive weapon the source documents.",
+   "whyItMatters": "Its ammunition is a category of its own: $50 a round, sold in boxes of five for $250. The source documents a single type for it, the standard round, and publishes no flesh or piercing variant - so there is nothing to upgrade into and nothing to save for.",
+   "whenToUseIt": "Against vehicles and hard targets, from a spot you probably drove to. A full 10 round magazine is $500 before you have fired any of it, so every shot is a decision rather than an attempt."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-amr-50.webp"
+ },
+ {
+  "id": "compound-bow",
+  "name": "Compound Bow",
+  "category": "Bows",
+  "sourceSection": "bows",
+  "weightKg": 1.3,
+  "price": 800,
+  "caliberConfirmed": false,
+  "ammunition": "Standard Arrows",
+  "ammunitionIsCaliber": false,
+  "ammunitionPrice": 75,
+  "summary": "Bow - ammunition Standard Arrows, weight 1.3 kg, $800.",
+  "sourceUrl": "https://wardogshandbook.com/Weapons#bows",
+  "beginner": {
+   "whatItIs": "A bow firing standard arrows at $800 and 1.3 kg, with no caliber, no magazine and no ammunition tiers to buy into.",
+   "whyItMatters": "Against armour an arrow is rated exactly like a rifled slug and like standard rifle ammunition, holding from 70% of its damage at the lowest armour tier down to 35% at the highest. Unlike every gun it starts at its ceiling and never improves. Those armour percentages come from player-collected testing rather than confirmed numbers, so treat them as a guide.",
+   "whenToUseIt": "When you want a weapon whose running cost never changes. There are no better arrows waiting at a higher level, which makes it one of the few things in the game that is exactly as good at level 100 as it is on your first match.",
+   "reliability": "unverified-community-tested",
+   "reliabilityNote": "The source page these figures come from is labelled by the source itself as unverified, player-collected test data rather than confirmed or official numbers. Treat them as a starting point and expect them to move at Early Access."
+  },
+  "icon": "/island/apps/wardogs/./sprites/weapons-compound-bow.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

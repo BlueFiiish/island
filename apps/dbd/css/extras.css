@@ -1,0 +1,311 @@
+/* extras.css - the More tab (counters / maps / tomes / about).
+ *
+ * FILE FENCE: owned by the extras lane. Nothing here targets :root, html or
+ * body - every rule hangs off a .dbx-* class or a class this app already owns,
+ * so the island shell's CSS scoper has nothing to collapse or strip. Tokens all
+ * come from css/style.css (--panel, --line, --ink, --dim, --faint, --accent,
+ * --accent2, --accent-soft, --red, --green, --rar-*), so this file adds no
+ * palette of its own. ASCII only.
+ *
+ * Shared patterns deliberately reused rather than re-invented:
+ *   .view .vh .card .tbtn .wiki-chips     - style.css layout + chip row
+ *   .search-wrap .search .search-ic       - style.css search field
+ *   .sheet-head .sh-ti .sh-sub .sec-h     - style.css sheet chrome
+ *   .dbd-ic-wrap .diamond .ic32/48/72     - app.js icon helper markup
+ *   .hint .faint .muted .link .link-btn   - style.css utility text
+ */
+
+.dbx-root { display: block; }
+
+/* ---- shared bits ------------------------------------------------------- */
+
+.dbx-sub {
+  font-size: 11.5px;
+  color: var(--faint);
+  margin: 2px 2px 10px;
+}
+
+.dbx-note {
+  font-size: 12px;
+  color: var(--dim);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+}
+
+.dbx-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 13px;
+  margin: 12px 0 0;
+}
+
+.dbx-card-h {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: var(--accent2);
+  margin-bottom: 8px;
+}
+
+.dbx-p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--dim);
+  margin: 0 0 8px;
+}
+.dbx-p:last-child { margin-bottom: 0; }
+.dbx-p.faint { color: var(--faint); font-size: 12px; }
+.dbx-p b { color: var(--ink); }
+
+.dbx-bullets {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--dim);
+}
+.dbx-bullets li { margin: 0 0 6px; }
+.dbx-bullets li:last-child { margin-bottom: 0; }
+.dbx-bullets li::marker { color: var(--accent2); }
+.dbx-bullets.bad li::marker { color: var(--red); }
+.dbx-bullets.fine { font-size: 11.5px; color: var(--faint); margin-top: 8px; }
+.dbx-bullets.fine b { color: var(--dim); }
+
+.dbx-caret {
+  color: var(--faint);
+  font-size: 18px;
+  padding: 0 2px;
+  flex: none;
+}
+
+/* ---- counters: killer grid --------------------------------------------- */
+
+.dbx-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(104px, 1fr));
+  gap: 9px;
+}
+
+.dbx-kcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 11px 6px 10px;
+  min-height: 118px;
+}
+.dbx-kcard:active { background: var(--panel2); }
+.dbx-kcard.has { border-color: rgba(163, 33, 42, .42); }
+
+.dbx-kname {
+  font-size: 12px;
+  color: var(--ink);
+  line-height: 1.25;
+}
+.dbx-ksub {
+  font-size: 10px;
+  color: var(--faint);
+  line-height: 1.3;
+}
+
+/* ---- counters: sheet ---------------------------------------------------- */
+
+.dbx-threat {
+  background: var(--accent-soft);
+  border: 1px solid rgba(163, 33, 42, .45);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #f0e7e8;
+  margin-bottom: 4px;
+}
+.dbx-threat-lab {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  color: var(--red);
+  margin-bottom: 4px;
+}
+
+.dbx-src {
+  font-size: 11px;
+  color: var(--faint);
+  border-left: 2px solid var(--line2);
+  padding: 2px 0 2px 8px;
+  margin: 8px 0 0;
+  line-height: 1.45;
+}
+
+.dbx-actions { margin-top: 16px; }
+
+.dbx-sheet-note {
+  display: inline-block;
+  font-size: 11px;
+  border-radius: 999px;
+  border: 1px solid var(--line2);
+  background: var(--panel);
+  padding: 4px 10px;
+  margin: 0 0 10px;
+  color: var(--dim);
+}
+.dbx-sheet-note.own { color: var(--green); border-color: rgba(91, 185, 107, .45); }
+.dbx-sheet-note.lock { color: var(--faint); }
+
+/* ---- counters: "perks that help" row ------------------------------------ */
+
+.dbx-perkrow {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.dbx-perk {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  text-align: left;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 8px 10px;
+}
+.dbx-perk:active { background: var(--panel2); }
+.dbx-perk.missing { border-style: dashed; opacity: .7; }
+
+/* The diamond frame is a 45deg rotation, so its bounding box is wider than the
+   element. Margin (the same trick .sheet-head uses) keeps the corners off the
+   text instead of clipping them. */
+.dbx-perk .dbd-ic-wrap.diamond { margin: 9px 12px 9px 8px; }
+
+.dbx-perk-txt {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.dbx-perk-name {
+  font-size: 13px;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.dbx-perk-sub {
+  font-size: 10.5px;
+  color: var(--faint);
+}
+.dbx-perk-hint {
+  font-size: 10.5px;
+  color: var(--accent2);
+  margin-top: 2px;
+}
+
+.dbx-badge {
+  flex: none;
+  font-size: 10px;
+  border-radius: 999px;
+  padding: 3px 8px;
+  border: 1px solid var(--line2);
+  white-space: nowrap;
+}
+.dbx-badge.own { color: var(--green); border-color: rgba(91, 185, 107, .45); }
+.dbx-badge.lock { color: var(--faint); }
+
+/* ---- maps --------------------------------------------------------------- */
+
+.dbx-realmlist,
+.dbx-maplist {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dbx-realm,
+.dbx-maprow {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  text-align: left;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 9px 11px;
+}
+.dbx-realm:active,
+.dbx-maprow:active { background: var(--panel2); }
+
+.dbx-realm-txt,
+.dbx-maprow-txt {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.dbx-realm-name,
+.dbx-maprow-name {
+  font-size: 13.5px;
+  color: var(--ink);
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dbx-realm-sub,
+.dbx-maprow-sub {
+  font-size: 10.5px;
+  color: var(--faint);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---- about -------------------------------------------------------------- */
+
+.dbx-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(78px, 1fr));
+  gap: 7px;
+  margin-top: 4px;
+}
+.dbx-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 4px;
+}
+.dbx-stat-n { font-size: 16px; color: var(--ink); line-height: 1.1; }
+.dbx-stat-l { font-size: 9.5px; color: var(--faint); text-align: center; }
+
+.dbx-danger {
+  display: block;
+  width: 100%;
+  background: var(--accent-soft);
+  border: 1px solid rgba(163, 33, 42, .5);
+  color: #f0c8cb;
+  border-radius: 11px;
+  padding: 11px 12px;
+  font-size: 13px;
+  margin: 4px 0 8px;
+}
+.dbx-danger:active { background: rgba(163, 33, 42, .28); }
+
+/* ---- wider screens ------------------------------------------------------ */
+
+@media (min-width: 700px) {
+  .dbx-grid { grid-template-columns: repeat(auto-fill, minmax(122px, 1fr)); }
+  .dbx-perkrow { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+}

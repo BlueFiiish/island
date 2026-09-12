@@ -1,0 +1,382 @@
+[
+ {
+  "id": "9x19mm",
+  "name": "9x19mm",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "ammoTypes": [
+   "FMJ",
+   "HP",
+   "AP"
+  ],
+  "hpUnlockLevel": 6,
+  "hpUnlockPrice": 5000,
+  "apUnlockLevel": 75,
+  "baseDamage": 22,
+  "standardPerRound": 1,
+  "standardPerBox": 10,
+  "usedBy": [
+   "GGX 17",
+   "GGX 18",
+   "AMP-9",
+   "PP-19 Vityaz",
+   "MP5"
+  ],
+  "summary": "Caliber - base damage 22, types FMJ / HP / AP, standard round $ 1.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "The pistol and submachine gun round, and the cheapest ammunition on the list at a dollar a shot.",
+   "whyItMatters": "Its Flesh variant opens at a lower level than any other calibre's, so it is usually the first ammunition upgrade a new player is even allowed to buy.",
+   "whenToUseIt": "Feed it to a sidearm or an SMG for close-range work. It costs so little to run that it is the sensible round to learn the maps with."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-9x19mm.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "5-56x45mm",
+  "name": "5.56x45mm",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "ammoTypes": [
+   "FMJ",
+   "HP",
+   "AP"
+  ],
+  "hpUnlockLevel": 10,
+  "hpUnlockPrice": 5000,
+  "apUnlockLevel": 85,
+  "baseDamage": 28,
+  "standardPerRound": 1.5,
+  "standardPerBox": 15,
+  "usedBy": [
+   "Bushmaster M17s",
+   "T-21",
+   "GALIL",
+   "M4",
+   "A-91",
+   "KH-2002",
+   "M249 SAW"
+  ],
+  "summary": "Caliber - base damage 28, types FMJ / HP / AP, standard round $ 1.5.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "The rifle calibre shared by more weapons than any other in the game, including the free starting rifle.",
+   "whyItMatters": "Standardising on one calibre means a single stock of ammunition serves several of your guns, so you spend less money holding two supplies you only half use.",
+   "whenToUseIt": "Build around it early. It is the cheapest way to keep more than one weapon fed while your bank is still small."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-5-56x45mm.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "7-62x39mm",
+  "name": "7.62x39mm",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "ammoTypes": [
+   "FMJ",
+   "HP",
+   "AP"
+  ],
+  "hpUnlockLevel": 11,
+  "hpUnlockPrice": 5000,
+  "apUnlockLevel": 63,
+  "baseDamage": 42,
+  "standardPerBox": 40,
+  "usedBy": [
+   "SKS"
+  ],
+  "summary": "Caliber - base damage 42, types FMJ / HP / AP.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "A heavier rifle round that trades shots per second for damage per shot, currently carried by the SKS.",
+   "whyItMatters": "Its Piercing variant unlocks earlier than any other calibre's, so this is the first place in the game where you can buy a real answer to armour.",
+   "whenToUseIt": "Take it when you would rather land fewer, harder hits than more, lighter ones. Keep levelling it if you want armour penetration before the rest of the lobby has it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-7-62x39mm.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "5-45x39mm",
+  "name": "5.45x39mm",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "ammoTypes": [
+   "FMJ",
+   "HP",
+   "AP"
+  ],
+  "hpUnlockLevel": 16,
+  "hpUnlockPrice": 5000,
+  "apUnlockLevel": 93,
+  "baseDamage": 26,
+  "standardPerBox": 15,
+  "usedBy": [
+   "AK74"
+  ],
+  "summary": "Caliber - base damage 26, types FMJ / HP / AP.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "The AK74's rifle round: a small, fast bullet with modest damage behind it.",
+   "whyItMatters": "It sits close to the common rifle calibre on damage but only one weapon draws from it, so stocking it is a commitment to that single gun.",
+   "whenToUseIt": "Buy it when the AK74 is genuinely the rifle you want to run. If you swap rifles often, a calibre with more weapons behind it wastes less of your money."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-5-45x39mm.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "45-colt",
+  "name": ".45 Colt",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "ammoTypes": [
+   "FMJ",
+   "HP",
+   "AP"
+  ],
+  "hpUnlockLevel": 25,
+  "hpUnlockPrice": 5000,
+  "apUnlockLevel": 110,
+  "standardPerBox": 33,
+  "usedBy": [
+   "Judge"
+  ],
+  "summary": "Caliber - types FMJ / HP / AP.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "A revolver round used by the Judge, sold in boxes rather than as single rounds.",
+   "whyItMatters": "Its damage figure has not been published yet, so it is one of the few calibres you cannot compare against the others on paper before you commit.",
+   "whenToUseIt": "Only when you are set on the Judge. Treat its damage as unknown rather than assuming it matches the other large pistol rounds."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-45-colt.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "7-62x54mmr",
+  "name": "7.62x54mmR",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "ammoTypes": [
+   "FMJ",
+   "HP",
+   "AP"
+  ],
+  "hpUnlockLevel": 28,
+  "hpUnlockPrice": 5000,
+  "apUnlockLevel": 83,
+  "baseDamage": 55,
+  "standardPerRound": 6,
+  "standardPerBox": 30,
+  "usedBy": [
+   "PKM",
+   "SVD",
+   "Mosin Nagant"
+  ],
+  "summary": "Caliber - base damage 55, types FMJ / HP / AP, standard round $ 6.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "The long-range rifle and machine gun round, shared by the PKM, the SVD and the Mosin Nagant.",
+   "whyItMatters": "It hits hard for how early you can reach it, and three very different weapons all draw on the same stock, which keeps a reach-focused loadout on one supply.",
+   "whenToUseIt": "Run it when your kit is built around distance, whether that is a marksman rifle or a machine gun holding an angle. It costs several times what a pistol round does, so do not hose it downrange."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-7-62x54mmr.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "45-acp",
+  "name": ".45 ACP",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "ammoTypes": [
+   "FMJ",
+   "HP",
+   "AP"
+  ],
+  "hpUnlockLevel": 48,
+  "hpUnlockPrice": 5000,
+  "apUnlockLevel": 120,
+  "baseDamage": 30,
+  "standardPerRound": 1,
+  "standardPerBox": 10,
+  "usedBy": [
+   "M1911",
+   "Super-45"
+  ],
+  "summary": "Caliber - base damage 30, types FMJ / HP / AP, standard round $ 1.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "A heavier pistol round behind the M1911 and the Super-45, priced the same as the cheapest pistol ammunition.",
+   "whyItMatters": "You get more damage per shot than the small pistol round for identical money, but you wait far longer before either of its upgrades unlocks.",
+   "whenToUseIt": "Pick it over the cheaper pistol round when you want a sidearm that ends a close fight in fewer hits and you are not counting on ammunition upgrades to get there."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-45-acp.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "308-win",
+  "name": ".308 Win",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "ammoTypes": [
+   "FMJ",
+   "HP",
+   "AP"
+  ],
+  "hpUnlockLevel": 65,
+  "apUnlockLevel": 140,
+  "baseDamage": 60,
+  "standardPerRound": 4,
+  "standardPerBox": 40,
+  "usedBy": [
+   "FAL",
+   "BMR-308",
+   "MK22"
+  ],
+  "summary": "Caliber - base damage 60, types FMJ / HP / AP, standard round $ 4.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "A full-power rifle round with the highest published damage per shot of any calibre here, used by the FAL, the BMR-308 and the MK22.",
+   "whyItMatters": "It is expensive per shot and its armour-piercing variant is gated further out than anything else in the game, which makes it a calibre you grow into rather than start on.",
+   "whenToUseIt": "Bring it when one well-placed shot matters more than volume of fire, and when you can afford to miss a few and still buy the next loadout."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-308-win.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "50ae",
+  "name": ".50AE",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "ammoTypes": [
+   "FMJ",
+   "HP",
+   "AP"
+  ],
+  "hpUnlockLevel": 95,
+  "apUnlockLevel": 130,
+  "baseDamage": 49,
+  "standardPerRound": 4,
+  "standardPerBox": 20,
+  "usedBy": [
+   "Deagle"
+  ],
+  "summary": "Caliber - base damage 49, types FMJ / HP / AP, standard round $ 4.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "The Deagle's oversized pistol round, priced like rifle ammunition rather than pistol ammunition.",
+   "whyItMatters": "It puts rifle-weight damage into a sidearm slot, and you pay for that twice: at the counter, and in the very high level its upgrades sit behind.",
+   "whenToUseIt": "Carry it when the sidearm is meant to win fights on its own, not just cover a reload."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-50ae.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "12-gauge",
+  "name": "12 Gauge",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "ammoTypes": [
+   "FMJ",
+   "HP",
+   "AP",
+   "Rifled Slug"
+  ],
+  "usedBy": [
+   "MP43",
+   "M500"
+  ],
+  "summary": "Caliber - types FMJ / HP / AP / Rifled Slug.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "The shotgun round for the MP43 and the M500, and the only calibre with a fourth ammunition type on top of the usual three.",
+   "whyItMatters": "That fourth type, the rifled slug, turns a spreading weapon into a single-projectile one, which is a bigger change than any other calibre can offer you.",
+   "whenToUseIt": "Use it for indoor and doorway fighting. The slug opens at WARDOG level 41 and is worth taking if you want the same shotgun to stay useful past close range."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-12-gauge.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "50-cal",
+  "name": ".50 Cal",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "ammoTypes": [
+   "FMJ"
+  ],
+  "standardPerRound": 50,
+  "standardPerBox": 250,
+  "usedBy": [
+   "AMR 50"
+  ],
+  "summary": "Caliber - types FMJ, standard round $ 50.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "The anti-materiel round behind the AMR 50, and by a wide margin the most expensive ammunition in the game. Only the standard type is documented for it so far.",
+   "whyItMatters": "A single round is $50, more than any pistol box on the vendor screen ($10 to $33).",
+   "whenToUseIt": "Only with a plan behind it: a prepared position, a target worth the price, and a way out afterwards. It is not a round to carry casually."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-50-cal.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "338-norma-magnum",
+  "name": ".338 Norma Magnum",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "usedBy": [],
+  "summary": "Caliber.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "A calibre the game has confirmed exists, with no ammunition types, unlock levels, prices or damage published for it yet.",
+   "whyItMatters": "No weapon on the current list is recorded as feeding on it, so it points at content still to come rather than anything you can plan a loadout around.",
+   "whenToUseIt": "There is nothing to decide here yet. Check it again after Early Access, when the missing figures should be filled in."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-338-norma-magnum.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "12-7x55mm",
+  "name": "12.7x55mm",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "usedBy": [],
+  "summary": "Caliber.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "A heavy calibre listed as confirmed but otherwise undocumented: no types, no unlock levels, no prices, no damage.",
+   "whyItMatters": "Nothing in the current weapon list is recorded as firing it, which most likely means its weapon has not shipped yet.",
+   "whenToUseIt": "Not a choice available to you today. Worth a second look at Early Access to see which weapon turns up alongside it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-12-7x55mm.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ },
+ {
+  "id": "9x39mm",
+  "name": "9x39mm",
+  "category": "Calibers",
+  "sourceSection": "calibers",
+  "usedBy": [],
+  "summary": "Caliber.",
+  "sourceUrl": "https://wardogshandbook.com/Ammo#calibers",
+  "beginner": {
+   "whatItIs": "A rifle calibre confirmed by name only, with none of its figures published.",
+   "whyItMatters": "Like the other undocumented calibres, it has no weapon attached to it in the current list, so there is nothing to cost out or compare.",
+   "whenToUseIt": "Skip it for now and re-check once the game is out and its numbers exist."
+  },
+  "icon": "/island/apps/wardogs/./sprites/ammo-9x39mm.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "source-image-404"
+ }
+]

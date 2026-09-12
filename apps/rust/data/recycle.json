@@ -1,0 +1,25 @@
+{
+  "_source": "Fiiiish Island vault recycling.md (pinned vs rusthelp, Jun 2026). Monument recycler = 120% yield @ 5s; safe-zone = 80% @ 8s.",
+  "note": "Monument recyclers (24 across 19 monuments) return ~50% more than safe-zone (Outpost/Bandit Camp). Never recycle bodies/tech-trash at a safe zone if a monument is reachable.",
+  "components": [
+    {"name": "Rifle Body", "monument": "30 scrap +1 HQM (80% +1)", "safezone": "20 scrap +1 HQM", "keep": "Keep until you've crafted your AK."},
+    {"name": "Tech Trash", "monument": "24 scrap +1 HQM", "safezone": "16 scrap", "keep": "Needed for C4 (2 each). Keep a few."},
+    {"name": "Electric Fuse", "monument": "24 scrap", "safezone": "16 scrap", "keep": "Keep 1-2 for monument puzzles."},
+    {"name": "SMG Body", "monument": "18 scrap +1 HQM (80% +1)", "safezone": "12 scrap +1 HQM", "keep": ""},
+    {"name": "Semi Auto Body", "monument": "18 scrap +90 frags +1 HQM", "safezone": "12 scrap +60 frags +1 HQM", "keep": "Keep for SAR/SKS crafting."},
+    {"name": "Gears", "monument": "12 scrap +15 frags", "safezone": "8 scrap +10 frags", "keep": "Keep for garage doors / gates."},
+    {"name": "Metal Spring", "monument": "12 scrap +1 HQM", "safezone": "8 scrap", "keep": "Keep for gun crafting."},
+    {"name": "Sheet Metal", "monument": "9 scrap +120 frags +1 HQM", "safezone": "6 scrap +80 frags", "keep": "Early HQM faucet."},
+    {"name": "Metal Pipe", "monument": "6 scrap +1 HQM", "safezone": "4 scrap", "keep": "Keep for rockets / HV rockets."},
+    {"name": "Road Signs", "monument": "6 scrap +1 HQM", "safezone": "4 scrap", "keep": "Keep for armor (roadsign kit)."},
+    {"name": "Metal Blade", "monument": "2 scrap +18 frags", "safezone": "1 scrap +12 frags", "keep": ""},
+    {"name": "Propane Tank", "monument": "1 scrap +60 frags", "safezone": "+40 frags", "keep": "Keep for flame turret / heater."}
+  ],
+  "materials": [
+    {"name": "Tarp", "monument": "60 cloth", "safezone": "40 cloth", "keep": "Keep if you need a Hazmat."},
+    {"name": "Rope", "monument": "18 cloth", "safezone": "12 cloth", "keep": ""},
+    {"name": "Sewing Kit", "monument": "12 cloth + rope", "safezone": "8 cloth + rope", "keep": ""},
+    {"name": "Small Oil Refinery", "monument": "150 low grade fuel", "safezone": "100 low grade fuel", "keep": ""},
+    {"name": "Jackhammer", "monument": "3 metal blades + 36 scrap", "safezone": "2 blades + 24 scrap", "keep": "Junk weapons recycle well."}
+  ]
+}

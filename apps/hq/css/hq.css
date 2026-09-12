@@ -1,0 +1,964 @@
+/* ==========================================================================
+   Fiiiish HQ - the private edit-bay console.
+
+   DESIGN THESIS: this route is a MASTER CONTROL ROOM for footage, not a
+   content site. Everything a recording room shows you is a machine fact -
+   timecode, file size, which lamp is lit - so the page is built out of two
+   materials only: a hairline steel chassis (the shell's obsidian + line
+   tokens) and TALLY LAMPS. Every card carries a 2px state-coloured spine on
+   its left edge; every number is set in the shell mono face with tabular
+   figures, on a "slug line" that reads like a tape log. There is exactly one
+   piece of motion - the pulse on a lamp that means WORK IS HAPPENING RIGHT
+   NOW - and nothing else moves. The one indulgence is the brass accent
+   (#e0b45a): the island gold pushed warmer, so HQ reads as a back room of the
+   same building rather than a different product.
+
+   HARD RULES it inherits from the shell:
+     - dark only; every colour comes from a token declared here or in
+       tokens.css. Nothing is defined only inside a media query.
+     - this route is not an assembled `.fi-app` mount, so `.hq` may safely
+       carry backdrop-filter etc. - but the fixed console below still avoids
+       transform on any ancestor of a fixed child.
+     - every selector is `hq-` prefixed. This file is linked globally on the
+       /hq document, so a bare element selector would leak into shell chrome.
+   ========================================================================== */
+
+.hq {
+  /* --- route palette ---------------------------------------------------- */
+  --hq-brass: #e0b45a;
+  --hq-brass-hi: #f4d79a;
+  --hq-brass-dim: rgba(224, 180, 90, 0.13);
+  --hq-brass-line: rgba(224, 180, 90, 0.32);
+
+  /* --- state lamps: one colour per recording/job state ------------------- */
+  /* Derived from the shell semantics: accent-2 is reserved for ACTIVE, warn
+     for waiting, ok for delivered, threat for broken. `unsorted` is the only
+     state that asks Josia for something, so it gets the brass - the same
+     colour as every control on the page. */
+  --hq-s-unsorted: #e0b45a;
+  --hq-s-sorted: #8fb8d8;
+  --hq-s-queued: #d9861f;
+  --hq-s-editing: #46e0ff;
+  --hq-s-review: #6ab04c;
+  --hq-s-banked: #9a948a;
+  --hq-s-stopped: #c8b88a;
+  --hq-s-error: #ff4d46;
+
+  /* --- chassis ---------------------------------------------------------- */
+  --hq-well: #101014;
+  --hq-card: #141317;
+  --hq-card-2: #191820;
+  --hq-line: #2a2f36;
+  --hq-line-soft: rgba(42, 47, 54, 0.6);
+
+  --hq-console-h: 58px;
+
+  display: block;
+  padding: 0 0 calc(var(--hq-console-h) + env(safe-area-inset-bottom, 0px) + var(--s6));
+  min-height: 60vh;
+}
+
+/* HQ is designed for a phone held in one hand, and a slate is a 16:9 video
+   well - so on a wide screen an uncapped column turns one recording into a
+   1240px poster and pushes the next card off the fold. Cap the measure instead
+   of building a second, wider layout: the room reads the same on a laptop, just
+   centred. 760px keeps a 4K slate's peek at a comfortable ~427px tall. */
+@media (min-width: 720px) {
+  .hq .hq-pad {
+    max-width: 760px;
+    margin-inline: auto;
+  }
+  .hq .hq-strip {
+    padding-inline: max(var(--s4), calc((100% - 760px) / 2));
+  }
+}
+
+/* ==========================================================================
+   Status strip - the one line that says whether the room is live.
+   ========================================================================== */
+.hq .hq-strip {
+  position: sticky;
+  top: calc(var(--fi-topbar-h, 56px) + var(--fi-rail-h, 44px) + env(safe-area-inset-top, 0px));
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  padding: var(--s2) var(--s4);
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--hq-line);
+}
+.hq .hq-strip__facts {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* L6: once the poll fails the facts here are whatever the last successful
+   poll said, not the live state of the machine - dim them so they read as
+   history, not as current (hq.js appends the "(last seen HH:MM)" text). */
+.hq .hq-strip__facts--stale {
+  opacity: 0.55;
+  font-style: italic;
+}
+
+/* The connection lamp. Same vocabulary as the Tarkov hub's .tk-conn-state:
+   a neutral word, `.on` when linked, `.bad` when broken. */
+.hq .hq-conn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  flex: 0 0 auto;
+  font-size: var(--t-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8b94a2;
+}
+.hq .hq-conn__lamp {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: currentColor;
+  box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 18%, transparent);
+}
+.hq .hq-conn.on {
+  color: #7fe0c3;
+}
+.hq .hq-conn.bad {
+  color: var(--hq-s-error);
+}
+.hq .hq-conn.wait {
+  color: var(--hq-s-queued);
+}
+
+.hq .hq-gear {
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--hq-line);
+  background: var(--hq-card);
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1;
+}
+.hq .hq-gear:hover {
+  border-color: var(--hq-brass-line);
+  color: var(--hq-brass-hi);
+}
+
+/* ==========================================================================
+   Shared primitives
+   ========================================================================== */
+.hq .hq-pad {
+  padding: var(--s4);
+}
+.hq .hq-h {
+  font-family: var(--f-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 1.35rem;
+  line-height: 1;
+  margin: 0 0 var(--s2);
+}
+.hq .hq-sub {
+  color: var(--muted);
+  font-size: var(--t-sm);
+  margin: 0 0 var(--s4);
+}
+.hq .hq-mono {
+  font-family: var(--f-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.hq .hq-btn {
+  font: inherit;
+  font-size: var(--t-sm);
+  font-weight: 600;
+  color: var(--fg);
+  background: var(--hq-card-2);
+  border: 1px solid var(--hq-line);
+  border-radius: var(--r-md);
+  padding: 10px 14px;
+  min-height: 40px;
+  cursor: pointer;
+}
+.hq .hq-btn:hover {
+  border-color: var(--hq-brass-line);
+}
+.hq .hq-btn--primary {
+  background: var(--hq-brass-dim);
+  border-color: var(--hq-brass-line);
+  color: var(--hq-brass-hi);
+}
+.hq .hq-btn--primary:hover {
+  background: color-mix(in srgb, var(--hq-brass) 22%, transparent);
+}
+.hq .hq-btn--danger {
+  color: var(--hq-s-error);
+  border-color: color-mix(in srgb, var(--hq-s-error) 40%, transparent);
+}
+.hq .hq-btn[disabled] {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+.hq .hq-btn--wide {
+  width: 100%;
+}
+
+.hq .hq-input {
+  font: inherit;
+  font-family: var(--f-mono);
+  font-size: var(--t-sm);
+  width: 100%;
+  color: var(--fg);
+  background: var(--hq-well);
+  border: 1px solid var(--hq-line);
+  border-radius: var(--r-md);
+  padding: 11px 12px;
+  min-height: 42px;
+}
+.hq .hq-input:focus {
+  outline: 2px solid var(--hq-brass-line);
+  outline-offset: 1px;
+}
+.hq .hq-field {
+  display: block;
+  margin-bottom: var(--s4);
+}
+.hq .hq-sec {
+  margin-top: var(--s5);
+}
+.hq .hq-field__label {
+  display: block;
+  font-size: var(--t-xs);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--s2);
+}
+
+/* A calm state card - offline, empty, re-unlock. Never a broken page. */
+.hq .hq-note {
+  border: 1px solid var(--hq-line);
+  border-left: 2px solid var(--hq-brass);
+  border-radius: var(--r-md);
+  background: var(--hq-card);
+  padding: var(--s5) var(--s4);
+  margin: var(--s4) 0;
+}
+.hq .hq-note--bad {
+  border-left-color: var(--hq-s-error);
+}
+.hq .hq-note__title {
+  font-family: var(--f-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 1.05rem;
+  margin: 0 0 var(--s2);
+}
+.hq .hq-note__body {
+  color: var(--muted);
+  font-size: var(--t-sm);
+  margin: 0;
+}
+.hq .hq-note__body + .hq-note__body {
+  margin-top: var(--s2);
+}
+
+/* ==========================================================================
+   THE SLATE - one recording. The signature element.
+   ========================================================================== */
+.hq .hq-slate {
+  position: relative;
+  border: 1px solid var(--hq-line);
+  border-left: 2px solid var(--hq-state, var(--hq-line));
+  border-radius: var(--r-md);
+  background: var(--hq-card);
+  margin-bottom: var(--s3);
+  overflow: hidden;
+}
+
+/* The tape-log slug line: date, timecode, size - all machine facts, all mono,
+   separated by hairline middots. This is the row that makes the page read as
+   a log sheet rather than a feed. */
+.hq .hq-slate__slug {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  flex-wrap: wrap;
+  padding: 10px var(--s3);
+  border-bottom: 1px solid var(--hq-line-soft);
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+.hq .hq-slate__sep {
+  color: var(--hq-line);
+}
+.hq .hq-slate__state {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  color: var(--hq-state, var(--muted));
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.hq .hq-lamp {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: currentColor;
+  flex: 0 0 auto;
+}
+/* The ONE moving thing on the page: a job that is running right now. */
+.hq .hq-lamp--live {
+  animation: hq-pulse 1.6s ease-in-out infinite;
+}
+@keyframes hq-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 55%, transparent);
+  }
+  50% {
+    opacity: 0.55;
+    box-shadow: 0 0 0 4px transparent;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hq .hq-lamp--live {
+    animation: none;
+  }
+}
+
+/* Peek well: 16:9, black, the video sits in it. Poster = the thumb. */
+.hq .hq-peek {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  display: block;
+  overflow: hidden;
+}
+.hq .hq-peek__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+.hq .hq-peek__none {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: repeating-linear-gradient(
+    .hq 135deg,
+    .hq var(--hq-well) 0 10px,
+    color-mix(in srgb, var(--hq-well) 70%, #000) 10px 20px
+  );
+}
+.hq .hq-peek__tc {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  padding: 2px 6px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.72);
+  color: var(--fg);
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+.hq .hq-peek__play {
+  position: absolute;
+  left: 8px;
+  bottom: 6px;
+  padding: 2px 8px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.72);
+  color: var(--muted);
+  font-size: var(--t-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hq .hq-slate__body {
+  padding: var(--s3);
+}
+.hq .hq-slate__file {
+  font-family: var(--f-mono);
+  font-size: var(--t-sm);
+  color: var(--fg);
+  word-break: break-all;
+  margin: 0 0 var(--s2);
+}
+.hq .hq-slate__why {
+  color: var(--muted);
+  font-size: var(--t-sm);
+  margin: 0 0 var(--s3);
+}
+
+/* The detected-game chip: label + three confidence lamps + how it was decided.
+   Three squares, not a percentage - a share-of-polls number would imply a
+   precision the classifier does not have. */
+.hq .hq-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+  padding: 5px 10px;
+  border: 1px solid var(--hq-brass-line);
+  border-radius: 999px;
+  background: var(--hq-brass-dim);
+  color: var(--hq-brass-hi);
+  font-size: var(--t-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  max-width: 100%;
+}
+.hq .hq-chip--none {
+  border-color: var(--hq-line);
+  background: var(--hq-card-2);
+  color: var(--muted);
+}
+.hq .hq-dots {
+  display: inline-flex;
+  gap: 3px;
+}
+.hq .hq-dots__d {
+  width: 5px;
+  height: 5px;
+  background: currentColor;
+  opacity: 0.22;
+}
+.hq .hq-dots__d.on {
+  opacity: 1;
+}
+.hq .hq-chip__how {
+  color: var(--muted);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+.hq .hq-actions {
+  display: flex;
+  gap: var(--s2);
+  margin-top: var(--s3);
+  flex-wrap: wrap;
+}
+.hq .hq-actions .hq-btn {
+  flex: 1 1 auto;
+}
+
+/* ==========================================================================
+   State rail - Sorted -> Queued -> Editing -> Review. A real sequence, so the
+   stepped form is carrying information rather than decorating.
+   ========================================================================== */
+.hq .hq-rail {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: var(--s3) 0 var(--s2);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.hq .hq-rail::-webkit-scrollbar {
+  display: none;
+}
+.hq .hq-rail__step {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  flex: 0 0 auto;
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.42;
+}
+.hq .hq-rail__step.done {
+  opacity: 1;
+}
+.hq .hq-rail__step.at {
+  opacity: 1;
+  color: var(--hq-state, var(--hq-brass-hi));
+}
+.hq .hq-rail__link {
+  flex: 0 0 auto;
+  width: 14px;
+  height: 1px;
+  background: var(--hq-line);
+  margin: 0 6px;
+}
+.hq .hq-stage {
+  color: var(--muted);
+  font-size: var(--t-sm);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Games - a scroll strip of bays, then the folder view.
+   ========================================================================== */
+.hq .hq-tiles {
+  /* Hidden scrollbar, same as the state rail: on a phone there is no bar, and
+     on desktop a chrome-coloured one under the tiles reads as a seam. */
+  scrollbar-width: none;
+  display: flex;
+  gap: var(--s3);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: var(--s1) var(--s4) var(--s4);
+  margin: 0 calc(var(--s4) * -1);
+  scroll-snap-type: x proximity;
+}
+.hq .hq-tiles::-webkit-scrollbar {
+  display: none;
+}
+.hq .hq-tile {
+  flex: 0 0 auto;
+  width: 190px;
+  scroll-snap-align: start;
+  text-align: left;
+  border: 1px solid var(--hq-line);
+  border-top: 2px solid var(--hq-brass-line);
+  border-radius: var(--r-md);
+  background: var(--hq-card);
+  padding: var(--s3);
+  color: inherit;
+  display: block;
+}
+.hq .hq-tile.is-open {
+  border-color: var(--hq-brass);
+  background: var(--hq-card-2);
+}
+.hq .hq-tile__open {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.hq .hq-tile__name {
+  display: block;
+  font-family: var(--f-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 1.15rem;
+  line-height: 1;
+  margin-bottom: var(--s2);
+}
+.hq .hq-tile__count {
+  display: block;
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+.hq .hq-tile__tag {
+  display: inline-block;
+  margin-top: var(--s2);
+  font-size: var(--t-xs);
+  letter-spacing: 0.06em;
+  color: var(--hq-s-stopped);
+}
+
+/* Autopilot switch. A real checkbox under a painted track, so it is keyboard
+   reachable and announces its own state. */
+.hq .hq-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+  margin-top: var(--s3);
+  font-size: var(--t-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: pointer;
+}
+.hq .hq-switch__track {
+  position: relative;
+  flex: 0 0 auto;
+  width: 42px;
+  height: 24px;
+  border-radius: 999px;
+  background: var(--hq-well);
+  border: 1px solid var(--hq-line);
+  transition: background var(--d-2) var(--e-quick), border-color var(--d-2) var(--e-quick);
+}
+.hq .hq-switch__track::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: var(--muted);
+  transition: transform var(--d-2) var(--e-quick), background var(--d-2) var(--e-quick);
+}
+.hq .hq-switch__box {
+  position: absolute;
+  opacity: 0;
+  width: 42px;
+  height: 24px;
+  margin: 0;
+}
+.hq .hq-switch__box:checked + .hq-switch__track {
+  background: var(--hq-brass-dim);
+  border-color: var(--hq-brass);
+}
+.hq .hq-switch__box:checked + .hq-switch__track::after {
+  transform: translateX(18px);
+  background: var(--hq-brass-hi);
+}
+.hq .hq-switch__box:focus-visible + .hq-switch__track {
+  outline: 2px solid var(--hq-brass-line);
+  outline-offset: 2px;
+}
+.hq .hq-switch__wrap {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+
+/* ==========================================================================
+   Jobs
+   ========================================================================== */
+.hq .hq-bar {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--hq-well);
+  overflow: hidden;
+  margin: var(--s2) 0;
+}
+.hq .hq-bar__fill {
+  height: 100%;
+  background: var(--hq-state, var(--hq-brass));
+  width: 0;
+  transition: width var(--d-4) var(--e-quick);
+}
+.hq .hq-log {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--muted);
+  background: var(--hq-well);
+  border: 1px solid var(--hq-line);
+  border-radius: var(--r-md);
+  padding: var(--s3);
+  max-height: 220px;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  -webkit-overflow-scrolling: touch;
+}
+.hq .hq-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  margin: var(--s3) 0 0;
+}
+.hq .hq-links a {
+  color: var(--hq-brass-hi);
+  font-size: var(--t-sm);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  word-break: break-all;
+}
+
+/* ==========================================================================
+   Bottom sheet - the action sheet and the settings sheet share one shell.
+   ========================================================================== */
+.hq .hq-sheet[hidden] {
+  display: none;
+}
+.hq .hq-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: flex;
+  align-items: flex-end;
+}
+.hq .hq-sheet__scrim {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.66);
+}
+.hq .hq-sheet__panel {
+  position: relative;
+  width: 100%;
+  max-height: 84dvh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  background: var(--hq-card);
+  border-top: 2px solid var(--hq-brass);
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  padding: var(--s4) var(--s4) calc(var(--s6) + env(safe-area-inset-bottom, 0px));
+  box-shadow: var(--lift);
+  animation: hq-rise var(--d-3) var(--e-quick);
+}
+@keyframes hq-rise {
+  from {
+    transform: translateY(14px);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hq .hq-sheet__panel {
+    animation: none;
+  }
+}
+@media (min-width: 720px) {
+  .hq .hq-sheet {
+    align-items: center;
+    justify-content: center;
+  }
+  .hq .hq-sheet__panel {
+    max-width: 560px;
+    border-radius: var(--r-lg);
+    border: 1px solid var(--hq-brass-line);
+    border-top-width: 2px;
+    border-top-color: var(--hq-brass);
+    max-height: 80dvh;
+  }
+}
+.hq .hq-sheet__head {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  margin-bottom: var(--s4);
+}
+.hq .hq-sheet__title {
+  flex: 1 1 auto;
+  font-family: var(--f-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 1.2rem;
+  line-height: 1;
+  margin: 0;
+}
+.hq .hq-sheet__close {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--hq-line);
+  border-radius: var(--r-md);
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Game picker inside the action sheet: full-width rows, thumb sized. */
+.hq .hq-pick {
+  display: grid;
+  gap: var(--s2);
+}
+.hq .hq-pick__row {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  width: 100%;
+  min-height: 52px;
+  padding: var(--s3);
+  text-align: left;
+  border: 1px solid var(--hq-line);
+  border-radius: var(--r-md);
+  background: var(--hq-card-2);
+  color: var(--fg);
+  font-size: var(--t-base);
+  font-weight: 600;
+}
+.hq .hq-pick__row:hover {
+  border-color: var(--hq-brass-line);
+}
+.hq .hq-pick__meta {
+  margin-left: auto;
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.hq .hq-kv {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--s2) var(--s4);
+  margin: 0 0 var(--s4);
+  font-size: var(--t-sm);
+}
+.hq .hq-kv dt {
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: var(--t-xs);
+  align-self: center;
+}
+.hq .hq-kv dd {
+  margin: 0;
+  font-family: var(--f-mono);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+/* ==========================================================================
+   The console - fixed bottom tab bar, thumb reach, safe-area padded.
+   ========================================================================== */
+.hq .hq-console {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 70;
+  display: flex;
+  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid var(--hq-line);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.hq .hq-console__btn {
+  position: relative; /* the unsorted-count badge is absolutely placed inside */
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: var(--hq-console-h);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 6px 4px;
+  color: var(--muted);
+  font-size: var(--t-xs);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-top: 2px solid transparent;
+  margin-top: -1px;
+}
+.hq .hq-console__btn[aria-selected='true'] {
+  color: var(--hq-brass-hi);
+  border-top-color: var(--hq-brass);
+  background: var(--hq-brass-dim);
+}
+.hq .hq-console__glyph {
+  font-size: 15px;
+  line-height: 1;
+}
+.hq .hq-console__badge {
+  position: absolute;
+  transform: translate(16px, -13px);
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: var(--hq-brass);
+  color: #17130a;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: center;
+}
+.hq .hq-console__badge[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Unlock - the only screen a stranger can reach.
+   ========================================================================== */
+.hq .hq-unlock {
+  max-width: 460px;
+  margin: var(--s6) auto;
+}
+.hq .hq-unlock__eyebrow {
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--hq-brass);
+  margin: 0 0 var(--s2);
+}
+.hq .hq-unlock__title {
+  font-family: var(--f-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: clamp(2.4rem, 1.6rem + 3.4vw, 3.6rem);
+  line-height: 0.94;
+  margin: 0 0 var(--s3);
+}
+.hq .hq-unlock__sub {
+  color: var(--muted);
+  font-size: var(--t-sm);
+  margin: 0 0 var(--s5);
+}
+.hq .hq-status {
+  margin: var(--s3) 0 0;
+  font-size: var(--t-sm);
+  color: var(--muted);
+  min-height: 1.2em;
+}
+.hq .hq-status.bad {
+  color: var(--hq-s-error);
+}
+.hq .hq-status.ok {
+  color: var(--hq-s-review);
+}
+
+/* Toast - the confirmation that a file moved. Bottom-anchored above the
+   console so a thumb never covers it. */
+.hq .hq-toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--hq-console-h) + env(safe-area-inset-bottom, 0px) + var(--s3));
+  transform: translateX(-50%);
+  z-index: 95;
+  max-width: calc(100vw - var(--s6));
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--hq-brass-line);
+  background: var(--hq-card-2);
+  color: var(--hq-brass-hi);
+  font-size: var(--t-sm);
+  font-weight: 600;
+  box-shadow: var(--lift);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hq .hq-toast[hidden] {
+  display: none;
+}

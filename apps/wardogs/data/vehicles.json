@@ -1,0 +1,512 @@
+[
+ {
+  "id": "bobcat",
+  "name": "BobCat",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Transport",
+  "price": 500,
+  "seats": "1 Driver + 1 Passenger",
+  "armor": "Unarmored",
+  "logisticsCrates": false,
+  "standingSpace": "None",
+  "weaponMount": "None",
+  "maxSpeedKmh": 75,
+  "fuelCapacityL": 18,
+  "fuelEconomyLPerKm": 2.2,
+  "tags": [
+   "Quad Bike"
+  ],
+  "summary": "Ground Vehicle - seats 1 Driver + 1 Passenger, armor Unarmored, top speed 75 km/h, $500.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "A two-seat quad bike with no armour and the cheapest price tag on any vehicle in the game.",
+   "whyItMatters": "On a twelve-by-twelve kilometre map, walking is the real enemy. This is the cheapest way to stop walking, and it earns Driver progress while it does it.",
+   "whenToUseIt": "Take it when you are broke and far from the fight. Leave it behind before you get close - it protects you from nothing and it is loud."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-bobcat.png"
+ },
+ {
+  "id": "dune-buggy",
+  "name": "Dune Buggy",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Transport",
+  "price": 1500,
+  "wardogLevel": "Driver Lvl 10",
+  "unlockPrice": 35000,
+  "seats": "1 Driver + 2 Passengers",
+  "armor": "Unarmored",
+  "logisticsCrates": false,
+  "standingSpace": "None",
+  "weaponMount": "None",
+  "tags": [
+   "ATV"
+  ],
+  "summary": "Ground Vehicle - seats 1 Driver + 2 Passengers, armor Unarmored, $1,500.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "A three-seat open buggy with no armour, locked behind a Driver level and a large one-off unlock payment before you can buy one at all.",
+   "whyItMatters": "It is the first thing that shows you how vehicle unlocks really work: the price on the buy screen is not the price of getting there. You pay a lump sum once to add it to your list, then the sticker price every time you spawn one.",
+   "whenToUseIt": "Skip it early. It carries one more body than the cheapest quad and nothing else, so the unlock money is better spent on something armoured or something that flies."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-dune-buggy.png"
+ },
+ {
+  "id": "kodiak",
+  "name": "Kodiak",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Transport",
+  "price": 2500,
+  "seats": "1 Driver + 3 Passengers",
+  "logisticsCrates": "Optional",
+  "standingSpace": "None",
+  "weaponMount": "None",
+  "maxSpeedKmh": 154,
+  "fuelCapacityL": 50,
+  "fuelEconomyLPerKm": 2.9,
+  "tags": [
+   "SUV"
+  ],
+  "summary": "Ground Vehicle - seats 1 Driver + 3 Passengers, top speed 154 km/h, $2,500.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "A four-seat civilian SUV that can carry logistics crates, and the fastest thing on wheels in the game.",
+   "whyItMatters": "Speed is protection when you have no armour. Getting across open ground before anyone can range you beats surviving a hit you never had to take.",
+   "whenToUseIt": "Use it to move a full squad between zones in a hurry, or to run crates back to base. Do not park it where a fight is happening - it is glass."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-kodiak.png"
+ },
+ {
+  "id": "kodiak-pickup",
+  "name": "Kodiak [Pickup]",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Transport",
+  "price": 3000,
+  "unlockPrice": 15000,
+  "seats": "1 Driver + 5 Passengers",
+  "logisticsCrates": "Optional",
+  "standingSpace": "None",
+  "weaponMount": "None",
+  "maxSpeedKmh": 154,
+  "fuelCapacityL": 50,
+  "fuelEconomyLPerKm": 2.9,
+  "tags": [
+   "SUV"
+  ],
+  "summary": "Ground Vehicle - seats 1 Driver + 5 Passengers, top speed 154 km/h, $3,000.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "The open-bed version of the same SUV, seating six and still able to carry logistics crates.",
+   "whyItMatters": "Six seats is the whole squad plus spares in one trip, and it costs a fraction of what a helicopter with similar capacity costs.",
+   "whenToUseIt": "Bring it when the squad is rotating together and nobody wants to wait for a second run. The open bed means passengers are exposed, so unload before you are in anyone's line of sight."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-kodiak-pickup.png"
+ },
+ {
+  "id": "humvee",
+  "name": "Humvee",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Transport",
+  "price": 3000,
+  "wardogLevel": "Driver Lvl 15",
+  "unlockPrice": 25000,
+  "seats": "1 Driver + 3 Passengers",
+  "armor": "Armored",
+  "logisticsCrates": "Optional",
+  "standingSpace": "None",
+  "weaponMount": "None",
+  "tags": [
+   "SUV"
+  ],
+  "summary": "Ground Vehicle - seats 1 Driver + 3 Passengers, armor Armored, $3,000.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "A four-seat armoured utility truck with no gun on it, sitting behind a Driver level and an unlock payment.",
+   "whyItMatters": "This is the first vehicle that lets you drive into small-arms fire instead of away from it. Armour changes what a vehicle is for: it stops being transport and starts being cover that moves.",
+   "whenToUseIt": "Take it when the drive itself is the dangerous part - crossing a contested road, pushing toward a zone that is already being fought over. It carries no weapon, so it delivers a fight, it does not win one."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-humvee.png"
+ },
+ {
+  "id": "kodiak-m249",
+  "name": "Kodiak [M249]",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Transport",
+  "price": 3750,
+  "wardogLevel": "Driver Lvl 8",
+  "unlockPrice": 50000,
+  "seats": "1 Driver + 4 Passengers",
+  "logisticsCrates": "Optional",
+  "standingSpace": "None",
+  "weaponMount": "M249",
+  "tags": [
+   "SUV"
+  ],
+  "summary": "Ground Vehicle - seats 1 Driver + 4 Passengers, $3,750.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "The five-seat SUV with a machine gun mounted on it, gated behind a low Driver level and a heavy unlock payment.",
+   "whyItMatters": "It is the cheapest way to put a mounted gun on the field, which is a very different thing from a rifle: it keeps firing far longer before it needs to stop, so it holds ground a squad on foot cannot.",
+   "whenToUseIt": "Use it to cover an approach or to break up infantry who are dug in with no rocket among them. Back it off the moment anything anti-vehicle appears - the gun is the only thing on it that is dangerous, and the body around the gun is not armoured."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-kodiak-m249.png"
+ },
+ {
+  "id": "humvee-m249",
+  "name": "Humvee [M249]",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Transport",
+  "price": 3750,
+  "wardogLevel": "Driver Lvl 25",
+  "seats": "1 Driver + 4 Passengers",
+  "armor": "Armored",
+  "logisticsCrates": "Optional",
+  "standingSpace": "None",
+  "weaponMount": "M249",
+  "tags": [
+   "SUV"
+  ],
+  "summary": "Ground Vehicle - seats 1 Driver + 4 Passengers, armor Armored, $3,750.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "The armoured utility truck with a machine gun added, seating five.",
+   "whyItMatters": "Armour plus a mounted gun is the combination that lets a vehicle stay in a fight instead of visiting one. The gunner can keep working while the driver takes hits that would have ended an unarmoured truck.",
+   "whenToUseIt": "Bring it when you intend to hold a position rather than reach one. It wants a dedicated gunner - driving it solo wastes most of what you paid for."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-humvee-m249.png"
+ },
+ {
+  "id": "humvee-minigun",
+  "name": "Humvee [Minigun]",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Transport",
+  "price": 4500,
+  "wardogLevel": "Driver Lvl 35",
+  "seats": "1 Driver + 4 Passengers",
+  "armor": "Armored",
+  "logisticsCrates": "Optional",
+  "standingSpace": "None",
+  "weaponMount": "Minigun (M134D)",
+  "maxSpeedKmh": 113,
+  "fuelCapacityL": 65,
+  "fuelEconomyLPerKm": 3.3,
+  "tags": [
+   "SUV"
+  ],
+  "summary": "Ground Vehicle - seats 1 Driver + 4 Passengers, armor Armored, top speed 113 km/h, $4,500.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "The top of the armoured utility line: five seats, armour, and a minigun instead of a machine gun.",
+   "whyItMatters": "A minigun trades money for volume of fire. Against infantry in the open it ends arguments quickly, and the Driver level it demands means most players will not meet one early.",
+   "whenToUseIt": "Bring it to a zone fight where enemies keep arriving on foot and you have a gunner who will stay on the gun. It is a poor pick for quiet map traversal - it is expensive, thirsty and it announces you."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-humvee-minigun.png"
+ },
+ {
+  "id": "ural",
+  "name": "Ural",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Transport",
+  "price": 5000,
+  "wardogLevel": "Driver Lvl 4",
+  "unlockPrice": 50000,
+  "seats": "1 Driver + 2 Passengers",
+  "logisticsCrates": "Optional",
+  "standingSpace": "Exposed",
+  "weaponMount": "None",
+  "maxSpeedKmh": 79,
+  "fuelCapacityL": 85,
+  "fuelEconomyLPerKm": 4,
+  "tags": [
+   "Truck"
+  ],
+  "summary": "Ground Vehicle - seats 1 Driver + 2 Passengers, top speed 79 km/h, $5,000.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "A cargo truck with three seats and an open standing area in the back, so it moves far more people than its seat count suggests.",
+   "whyItMatters": "It is the cheapest mass-transport in the game and the earliest Driver unlock on the list, which makes it the vehicle a squad actually uses to redeploy together after a wipe.",
+   "whenToUseIt": "Use it to move a full squad or a stack of crates in one run. Everyone standing in the back is completely exposed, so treat the drop-off point as the plan, not an afterthought."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-ural.png"
+ },
+ {
+  "id": "ural-defender",
+  "name": "Ural Defender",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Transport",
+  "price": 6000,
+  "wardogLevel": "Driver Lvl 30",
+  "seats": "1 Driver + 2 Passengers",
+  "armor": "Partial (Standing Space Only)",
+  "logisticsCrates": "Optional",
+  "standingSpace": "Protected",
+  "weaponMount": "None",
+  "tags": [
+   "Heavy Truck"
+  ],
+  "summary": "Ground Vehicle - seats 1 Driver + 2 Passengers, armor Partial (Standing Space Only), $6,000.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "The cargo truck with armour plating added around the standing area only - the cab itself is not protected.",
+   "whyItMatters": "It flips which seat is the risky one. Passengers in the back survive fire that would have cut them down in the plain truck, while the driver is still taking it on the chin.",
+   "whenToUseIt": "Take it when you are the one driving people into somewhere hot and you accept that you are the exposed part. If nobody is shooting at the route, the cheaper truck does the same job for less money."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-ural-defender.png"
+ },
+ {
+  "id": "ural-defender-m249",
+  "name": "Ural Defender [M249]",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Transport",
+  "price": 6750,
+  "wardogLevel": "Driver Lvl 40",
+  "seats": "1 Driver + 2 Passengers",
+  "armor": "Partial (Standing Space Only)",
+  "logisticsCrates": "Optional",
+  "standingSpace": "Protected",
+  "weaponMount": "2x M249",
+  "maxSpeedKmh": 79,
+  "fuelCapacityL": 85,
+  "fuelEconomyLPerKm": 4,
+  "tags": [
+   "Heavy Truck"
+  ],
+  "summary": "Ground Vehicle - seats 1 Driver + 2 Passengers, armor Partial (Standing Space Only), top speed 79 km/h, $6,750.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "The armoured cargo truck with two machine guns fitted, and the highest Driver level requirement of any transport vehicle.",
+   "whyItMatters": "Two guns means two separate arcs at once, so a single vehicle can cover an approach from more than one direction while it is also delivering bodies.",
+   "whenToUseIt": "Bring it when the squad is committing to a contested zone and you have enough players to fill the guns. With one or two people aboard, most of what you paid for sits idle."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-ural-defender-m249.png"
+ },
+ {
+  "id": "flakpanzer-gepard",
+  "name": "Flakpanzer Gepard",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Combat",
+  "price": 10000,
+  "wardogLevel": 45,
+  "crew": 2,
+  "armament": [
+   "Duel 35mm Oerlikon GDF Cannons"
+  ],
+  "xpCategory": "Driver",
+  "maxSpeedKmh": 65,
+  "fuelCapacityL": 110,
+  "fuelEconomyLPerKm": 10,
+  "countermeasures": [
+   "Smoke"
+  ],
+  "tags": [
+   "Heavy Armored Vehicle"
+  ],
+  "summary": "Ground Vehicle - crew 2, top speed 65 km/h, $10,000.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "A tracked anti-air gun platform with a two-person crew, twin automatic cannons and smoke to break line of sight.",
+   "whyItMatters": "Helicopters are the fastest way to move and the hardest thing to answer with a rifle. This is the purpose-built answer, and it is the reason enemy pilots stop flying straight lines over your side of the map.",
+   "whenToUseIt": "Buy it when the enemy team is winning through the air. It is the single thirstiest vehicle in the game for fuel, so plan where it will sit rather than driving it around looking for work."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-flakpanzer-gepard.png"
+ },
+ {
+  "id": "l2a6",
+  "name": "L2A6",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Combat",
+  "price": 14000,
+  "wardogLevel": "Driver Lvl 35",
+  "unlockPrice": 500000,
+  "crew": 3,
+  "armament": [
+   "M249 Machine Gun",
+   "L55A1 Cannon",
+   "MG3A1 Coaxial Gun"
+  ],
+  "xpCategory": "Driver",
+  "maxSpeedKmh": 65,
+  "fuelCapacityL": 110,
+  "fuelEconomyLPerKm": 8,
+  "countermeasures": [
+   "Smoke"
+  ],
+  "tags": [
+   "Heavy Armored Vehicle"
+  ],
+  "summary": "Ground Vehicle - crew 3, top speed 65 km/h, $14,000.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "A crewed main battle tank with three seats, a cannon and two machine guns. At $14,000 a match it is the most expensive ground vehicle the source lists.",
+   "whyItMatters": "Its $500,000 one-time unlock is the largest on the vehicles list, and $14,000 of it goes again every time you kit one up, so bringing it turns a match into a bet rather than a fight.",
+   "whenToUseIt": "Bring it out when you have a crew who will stay with it and a bank that can absorb losing it. It is a poor solo purchase however good it looks."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-l2a6.png",
+  "levelGateDisputedBySource": true,
+  "levelGateNote": "The source gates this two ways and disagrees with itself: the Classes page lists it under Driver at level 35, while the Vehicles page says combat vehicles gate on plain WARDOG Level instead. The class reading is shown here because it is the more specific of the two, but if you are levelling for this one, read both screens in game."
+ },
+ {
+  "id": "sph-2",
+  "name": "SPH-2",
+  "category": "Ground Vehicles",
+  "sourceSection": "ground-vehicles",
+  "subcategory": "Combat",
+  "price": 8000,
+  "wardogLevel": 55,
+  "unlockPrice": 400000,
+  "crew": 3,
+  "armament": [
+   "L52 Cannon",
+   "M249 Machine Gun"
+  ],
+  "xpCategory": "Support",
+  "maxSpeedKmh": 65,
+  "fuelCapacityL": 105,
+  "fuelEconomyLPerKm": 8,
+  "tags": [
+   "Artillery Armored Vehicle"
+  ],
+  "summary": "Ground Vehicle - crew 3, top speed 65 km/h, $8,000.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#ground-vehicles",
+  "beginner": {
+   "whatItIs": "A tracked self-propelled howitzer with a three-person crew, built to shell targets from somewhere the targets cannot see.",
+   "whyItMatters": "It is the only vehicle in the game whose kills feed the Support class rather than Driver, and it demands the highest overall level of anything on the vehicle list - so it is a late-account tool, not a mid-match purchase.",
+   "whenToUseIt": "Use it when the enemy is holding a fixed position and your team cannot walk into it. Park it well behind the line: its armour is not meant to trade shots, and up close it loses to anything built for that."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-sph-2.png"
+ },
+ {
+  "id": "mh-6",
+  "name": "MH-6",
+  "category": "Air Vehicles",
+  "sourceSection": "air-vehicles",
+  "subcategory": "Transport",
+  "price": 6250,
+  "seats": "2 Crew + 4 Passengers",
+  "logisticsCrates": false,
+  "weaponMount": "None",
+  "summary": "Air Vehicle - seats 2 Crew + 4 Passengers, $6,250.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#air-vehicles",
+  "beginner": {
+   "whatItIs": "A small light helicopter with a two-person cockpit crew and room for four more, carrying no weapons and no cargo capacity.",
+   "whyItMatters": "It is the cheapest thing that flies and it needs no level to buy, which makes it the entry point into moving over terrain instead of through it. Air travel ignores every road, ridge and choke point on the map.",
+   "whenToUseIt": "Take it when the squad needs to be somewhere else now and the ground route is long or watched. It has nothing to fight with, so plan a landing spot that is not the objective itself."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-mh-6.png"
+ },
+ {
+  "id": "uh-1y",
+  "name": "UH-1Y",
+  "category": "Air Vehicles",
+  "sourceSection": "air-vehicles",
+  "subcategory": "Transport",
+  "price": 7400,
+  "wardogLevel": "Pilot Lvl 10",
+  "seats": "2 Crew + 11 Passengers",
+  "logisticsCrates": "Optional",
+  "weaponMount": "None",
+  "summary": "Air Vehicle - seats 2 Crew + 11 Passengers, $7,400.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#air-vehicles",
+  "beginner": {
+   "whatItIs": "A large troop helicopter that carries a full thirteen people with its crew, and can haul logistics crates.",
+   "whyItMatters": "Nothing else in the game moves that many players in one trip. One flight can put an entire force onto a zone at the same moment, which is a completely different fight from arriving in twos and threes.",
+   "whenToUseIt": "Use it for a planned squad-wide push or for shifting crates in bulk. It is unarmed and it is a big target, so it wants friendly air cover or a route that stays away from anti-air."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-uh-1y.png"
+ },
+ {
+  "id": "uh-1y-miniguns",
+  "name": "UH-1Y [Miniguns]",
+  "category": "Air Vehicles",
+  "sourceSection": "air-vehicles",
+  "subcategory": "Transport",
+  "price": 8000,
+  "seats": "4 Crew + 5 Passengers",
+  "logisticsCrates": "Optional",
+  "weaponMount": "2x M134D Minigun",
+  "summary": "Air Vehicle - seats 4 Crew + 5 Passengers, $8,000.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#air-vehicles",
+  "beginner": {
+   "whatItIs": "The same troop helicopter with two door miniguns fitted, trading passenger seats for gunner positions.",
+   "whyItMatters": "It lets a transport defend its own landing rather than depending on somebody else to. The guns fire from the doors, so the helicopter can suppress the ground it is about to put people onto.",
+   "whenToUseIt": "Bring it when the drop point is expected to be defended and you have the bodies to fill both guns. If the flight is quiet, the unarmed version carries more players for less money."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-uh-1y-miniguns.png"
+ },
+ {
+  "id": "ah-6m-miniguns",
+  "name": "AH-6M [Miniguns]",
+  "category": "Air Vehicles",
+  "sourceSection": "air-vehicles",
+  "subcategory": "Combat",
+  "price": 7000,
+  "crew": 2,
+  "armament": [
+   "Dual M134D Miniguns"
+  ],
+  "xpCategory": "Pilot",
+  "summary": "Air Vehicle - crew 2, $7,000.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#air-vehicles",
+  "beginner": {
+   "whatItIs": "A small two-seat attack helicopter armed with a pair of miniguns, credited to the Pilot class.",
+   "whyItMatters": "It is the cheapest way to threaten people from the air. Against infantry with nothing anti-air in their hands, a light gunship is close to unanswerable, and it is small enough to hide behind terrain between passes.",
+   "whenToUseIt": "Use it to break up infantry holding open ground or a rooftop. Leave immediately once anything anti-air turns up - it has no armour worth the word."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-ah-6m-miniguns.png"
+ },
+ {
+  "id": "ah-6r-rockets",
+  "name": "AH-6R [Rockets]",
+  "category": "Air Vehicles",
+  "sourceSection": "air-vehicles",
+  "subcategory": "Combat",
+  "price": 12500,
+  "crew": 2,
+  "armament": [
+   "Dual LAU-68 Rocket Pods"
+  ],
+  "xpCategory": "Pilot",
+  "summary": "Air Vehicle - crew 2, $12,500.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#air-vehicles",
+  "beginner": {
+   "whatItIs": "The same light attack helicopter airframe with rocket pods instead of miniguns.",
+   "whyItMatters": "Rockets solve what guns cannot: hardened positions, built structures and vehicles. It gives an air player a way to hurt things on the ground that would otherwise simply ignore a helicopter.",
+   "whenToUseIt": "Bring it against dug-in positions, player-built structures or parked vehicles. Against people running in the open the gun version is the better buy - rockets punish a bad aim far harder than a minigun does."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-ah-6r-rockets.png"
+ },
+ {
+  "id": "havoc",
+  "name": "Havoc",
+  "category": "Air Vehicles",
+  "sourceSection": "air-vehicles",
+  "subcategory": "Combat",
+  "price": 18000,
+  "unlockPrice": 500000,
+  "crew": 2,
+  "armament": [
+   "122mm Rockets + 30mm Cannon"
+  ],
+  "xpCategory": "Pilot",
+  "summary": "Air Vehicle - crew 2, $18,000.",
+  "sourceUrl": "https://wardogshandbook.com/Vehicles#air-vehicles",
+  "beginner": {
+   "whatItIs": "A heavy two-crew attack helicopter with rockets and a cannon, the most expensive vehicle in the game to buy and to unlock.",
+   "whyItMatters": "It is the single strongest thing one team can put in the air, and the price is the balance: losing one costs more than most players will make across several matches.",
+   "whenToUseIt": "Save it for a match your team is already set up to win, with a gunner you trust and someone watching for enemy anti-air. If the other side has an air-defence vehicle out, it is the wrong purchase no matter how well you fly."
+  },
+  "icon": "/island/apps/wardogs/./sprites/vehicles-havoc.png"
+ }
+]

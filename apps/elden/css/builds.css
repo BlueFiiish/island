@@ -1,0 +1,923 @@
+/* builds.css - the Builds tab: gilded archetype cards, the guide page, and the
+ * seat the planner mounts into.
+ *
+ * OWNED BY: P3 L6 (Builds UI). Pairs with js/builds.js.
+ * Every token here comes from css/style.css (the shell lane). This sheet
+ * declares NO token of its own and NO chrome: it styles only what lives inside
+ * the .pane-builds pane, so the shell can restyle the app without touching it.
+ *
+ * WHY EVERY RULE IS SCOPED TO .pane-builds
+ * The island shell concatenates every app stylesheet into one scoped block. An
+ * unscoped `.route` or `.variant` here would reach into the Wiki and Tracker
+ * panes. The one exception is the two shell primitives this tab re-uses
+ * unchanged (.er-ic-wrap, .btn) - those are never redeclared.
+ *
+ * NOTHING declared on :root, html or body. No transform / filter /
+ * backdrop-filter / contain / will-change / perspective on any ancestor of a
+ * position:fixed child. Wide content (the level-target table) scrolls inside
+ * its own container so the page body never scrolls sideways.
+ *
+ * THE LOOK. A guide card should read as a plate in an in-game menu, not a web
+ * card: a panel a shade above the ground, one gold hairline running across the
+ * top like a filigree rule, a Cinzel title in wide caps, and gold reserved for
+ * the two or three things that matter - the title, the lead stat, the pips.
+ *
+ * ASCII only. No @import. No url() to any file.
+ */
+
+/* ==========================================================================
+ * TAB CHROME
+ * ========================================================================== */
+
+.pane-builds .bstamp {
+  margin: 8px 0 0;
+  font-family: var(--font-d);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+/* The two segments. A pill rail rather than tabs: the tab bar at the bottom
+   already owns the "which section am I in" language, and repeating it here
+   reads as two competing navigations. */
+.pane-builds .bsegs {
+  display: flex;
+  gap: 8px;
+  margin: 4px 0 16px;
+  padding: 4px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.pane-builds .bseg {
+  flex: 1 1 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  padding: 9px 10px;
+  font-family: var(--font-d);
+  font-size: 11.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dim);
+  cursor: pointer;
+  transition: color 140ms ease, background-color 140ms ease, border-color 140ms ease;
+}
+
+.pane-builds .bseg:hover {
+  color: var(--accent-hi);
+}
+
+.pane-builds .bseg.on {
+  color: var(--accent);
+  background: var(--accent-dim);
+  border-color: var(--accent-line);
+}
+
+.pane-builds .bseg:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.pane-builds .bhidden {
+  margin: 14px 2px 0;
+  font-size: 14.5px;
+  text-align: center;
+}
+
+/* ==========================================================================
+ * THE ARCHETYPE CARDS - the most worked surface in the app
+ * ========================================================================== */
+
+.pane-builds .gcards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+/* A phone gets one full-width plate; from 560px up the cards pair off. The
+   breakpoint is the card's own comfortable minimum, not a device width. */
+@media (min-width: 560px) {
+  .pane-builds .gcards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.pane-builds .gcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding: 18px 15px 15px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  color: var(--ink);
+  font: inherit;
+  background:
+    linear-gradient(to bottom, rgba(255, 232, 186, 0.05), rgba(255, 232, 186, 0) 46%),
+    var(--panel);
+  box-shadow: var(--shadow-lift);
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+/* The filigree top rule. Two layers: a hairline that fades at both ends, and a
+   small bright lozenge dead centre - the same grammar as .filigree in the
+   shell, drawn without an extra element. */
+.pane-builds .gc-rule {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--accent-line) 22%, var(--accent-line) 78%, transparent);
+  pointer-events: none;
+}
+
+.pane-builds .gc-rule::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  width: 5px;
+  height: 5px;
+  margin-left: -2.5px;
+  background: var(--accent);
+  opacity: 0.8;
+  transform: rotate(45deg);
+  border-radius: 1px;
+}
+
+.pane-builds .gcard:hover {
+  border-color: var(--hair);
+  background:
+    linear-gradient(to bottom, rgba(255, 232, 186, 0.075), rgba(255, 232, 186, 0) 46%),
+    var(--panel2);
+}
+
+.pane-builds .gcard:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.pane-builds .gc-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.pane-builds .gc-heads {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pane-builds .gc-n {
+  font-family: var(--font-d);
+  font-size: 16.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  color: var(--accent);
+}
+
+.pane-builds .gc-c {
+  font-size: 13.5px;
+  letter-spacing: 0.05em;
+  color: var(--faint);
+  text-transform: uppercase;
+}
+
+.pane-builds .gc-flags {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  padding-top: 2px;
+}
+
+.pane-builds .gc-t {
+  font-family: var(--font-b);
+  font-style: italic;
+  font-size: 16.5px;
+  line-height: 1.4;
+  color: var(--ink);
+  opacity: 0.9;
+}
+
+.pane-builds .gc-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pane-builds .gc-stat {
+  font-family: var(--font-d);
+  font-size: 10.5px;
+  letter-spacing: 0.13em;
+  color: var(--dim);
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 3px 7px;
+}
+
+/* The lead stat is the one thing on the card worth a second of attention. */
+.pane-builds .gc-stat.lead {
+  color: var(--accent);
+  background: var(--accent-dim);
+  border-color: var(--accent-line);
+}
+
+.pane-builds .gc-go {
+  margin-top: 2px;
+  font-family: var(--font-d);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.pane-builds .gcard:hover .gc-go {
+  color: var(--accent);
+}
+
+/* Difficulty pips. Five slots always drawn, so the shape reads as a scale
+   rather than as "how many dots did this one get". */
+.pane-builds .pips {
+  display: inline-flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.pane-builds .pip {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid var(--line2);
+  background: transparent;
+}
+
+.pane-builds .pip.on {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 5px rgba(214, 168, 76, 0.45);
+}
+
+/* ==========================================================================
+ * THE GUIDE PAGE
+ * ========================================================================== */
+
+.pane-builds .bback {
+  appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  padding: 4px 2px 12px;
+  font-family: var(--font-d);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dim);
+  cursor: pointer;
+}
+
+.pane-builds .bback:hover {
+  color: var(--accent-hi);
+}
+
+.pane-builds .gh {
+  position: relative;
+  padding: 20px 15px 17px;
+  margin: 0 0 14px;
+  border: 1px solid var(--line2);
+  border-radius: 14px;
+  background:
+    radial-gradient(520px 220px at 82% -30%, rgba(214, 168, 76, 0.11), transparent 66%),
+    linear-gradient(to bottom, rgba(255, 232, 186, 0.05), rgba(255, 232, 186, 0) 50%),
+    var(--panel);
+  box-shadow: var(--shadow-lift);
+  overflow: hidden;
+}
+
+.pane-builds .gh-rule {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--accent-line) 20%, var(--accent) 50%, var(--accent-line) 80%, transparent);
+}
+
+.pane-builds .gh-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+}
+
+.pane-builds .gh-heads {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.pane-builds .gh-n {
+  margin: 0 0 5px;
+  font-family: var(--font-d);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.15;
+  color: var(--accent);
+}
+
+.pane-builds .gh-t {
+  margin: 0;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.35;
+  color: var(--ink);
+}
+
+.pane-builds .gh-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 13px 0 0;
+}
+
+.pane-builds .gh-diff {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.pane-builds .gh-dl {
+  font-family: var(--font-d);
+  font-size: 9.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.pane-builds .gh-f {
+  margin: 14px 0 0;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--dim);
+}
+
+.pane-builds .gacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0 0 20px;
+}
+
+.pane-builds .gacts .btn {
+  flex: 1 1 auto;
+  min-width: 44%;
+}
+
+/* ==========================================================================
+ * STAT PRIORITY + THE LEVEL-TARGET TABLE
+ * ========================================================================== */
+
+.pane-builds .prio {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.pane-builds .prio-i {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--panel2);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 5px 9px 5px 5px;
+}
+
+.pane-builds .prio-n {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  border: 1px solid var(--accent-line);
+  font-family: var(--font-n);
+  font-size: 10px;
+  color: var(--accent);
+}
+
+.pane-builds .prio-k {
+  font-family: var(--font-d);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+.pane-builds .prio-l {
+  font-size: 14px;
+  color: var(--dim);
+}
+
+/* Nine to ten numeric columns will not fit a 390px phone, and shrinking the
+   type until they do makes the one table a player actually reads unreadable.
+   It scrolls sideways inside its own box instead - the page never does. */
+.pane-builds .ttwrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: var(--panel2);
+}
+
+.pane-builds .ttable {
+  min-width: 430px;
+  font-family: var(--font-n);
+  font-size: 12.5px;
+}
+
+.pane-builds .tt-head,
+.pane-builds .tt-row {
+  display: grid;
+  grid-template-columns: 46px repeat(8, minmax(34px, 1fr));
+  align-items: center;
+}
+
+/* The runes column only exists when mechanics.runeCost has landed, so the
+   track count is set by a class on the table rather than by :has() - the app
+   has to render correctly on an older iOS Safari, and a wrong track count is a
+   visibly broken table, not a cosmetic loss. */
+.pane-builds .ttable.with-runes .tt-head,
+.pane-builds .ttable.with-runes .tt-row {
+  grid-template-columns: 46px repeat(8, minmax(34px, 1fr)) minmax(58px, 1.4fr);
+}
+
+.pane-builds .ttable.with-runes {
+  min-width: 500px;
+}
+
+.pane-builds .tt-head {
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-d);
+  font-size: 9.5px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+.pane-builds .tt-row {
+  padding: 9px 10px;
+  border-bottom: 1px solid rgba(214, 168, 76, 0.08);
+  color: var(--ink);
+}
+
+.pane-builds .tt-row:last-child {
+  border-bottom: 0;
+}
+
+.pane-builds .tt-head span,
+.pane-builds .tt-row span {
+  text-align: right;
+}
+
+.pane-builds .tt-head span:first-child,
+.pane-builds .tt-row span:first-child {
+  text-align: left;
+}
+
+.pane-builds .tt-l {
+  font-family: var(--font-d);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+.pane-builds .tt-row span.hi {
+  color: var(--accent-hi);
+}
+
+/* ==========================================================================
+ * GEAR + KIT PHASES
+ * ========================================================================== */
+
+.pane-builds .phase {
+  margin: 0 0 14px;
+}
+
+.pane-builds .phase:last-child {
+  margin-bottom: 0;
+}
+
+.pane-builds .phase-h {
+  margin: 0 0 7px;
+}
+
+.pane-builds .phase-tag {
+  display: inline-block;
+  font-family: var(--font-d);
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--faint);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 3px;
+}
+
+.pane-builds .brows {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* An id whose owning dataset has not landed. Deliberately NOT styled like a
+   live row: it must never look tappable, because it is not. */
+.pane-builds .brow-miss {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border: 1px dashed var(--line);
+  border-radius: 11px;
+  background: rgba(255, 232, 186, 0.015);
+}
+
+.pane-builds .bm-body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.pane-builds .bm-n {
+  color: var(--dim);
+  font-size: 15.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pane-builds .bm-s {
+  font-family: var(--font-d);
+  font-size: 9px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+/* ==========================================================================
+ * THE ROUTE
+ * ========================================================================== */
+
+.pane-builds .route {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* One hairline running the length of the route, with each step's number sat on
+   it: the route reads as a single thread rather than a stack of cards. */
+.pane-builds .route::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, var(--line2) 8%, var(--line2) 92%, transparent);
+}
+
+/* An ACT heading inside the route thread ("Early - level 40 by Stormveil").
+   It breaks the thread deliberately: the numbered line runs behind the steps,
+   and an act is where the player is allowed to stop and take stock. */
+.pane-builds .ract {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 4px 0 16px;
+  padding: 0;
+}
+
+.pane-builds .ract:first-child {
+  margin-top: 0;
+}
+
+.pane-builds .ract-l {
+  font-family: var(--font-d);
+  font-size: 10px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--bg);
+  border: 1px solid var(--accent-line);
+  border-radius: 7px;
+  padding: 5px 10px;
+}
+
+/* A prose paragraph an author wrote between steps - most often the "how you
+   reach the Land of Shadow" note under the DLC heading. */
+.pane-builds .rnote {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 16px 39px;
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent-line);
+  border-radius: 10px;
+  background: var(--panel);
+}
+
+.pane-builds .rnote p {
+  margin: 0;
+  font-style: italic;
+  font-size: 15.5px;
+  line-height: 1.5;
+  color: var(--dim);
+}
+
+.pane-builds .route.small .rnote {
+  margin-left: 35px;
+}
+
+.pane-builds .route.dlc .ract-l {
+  color: var(--accent-2);
+  border-color: var(--accent-2-line);
+}
+
+.pane-builds .rstep {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  padding: 0 0 16px;
+}
+
+.pane-builds .rstep:last-child {
+  padding-bottom: 0;
+}
+
+.pane-builds .rs-n {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: var(--panel2);
+  border: 1px solid var(--accent-line);
+  color: var(--accent);
+  font-family: var(--font-n);
+  font-size: 11.5px;
+}
+
+.pane-builds .rs-body {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding-top: 1px;
+}
+
+.pane-builds .rs-region {
+  display: inline-block;
+  margin: 0 0 5px;
+  font-family: var(--font-d);
+  font-size: 9.5px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid var(--accent-line);
+  border-radius: 5px;
+  padding: 2px 7px;
+}
+
+.pane-builds .rs-t {
+  margin: 0 0 8px;
+  font-size: 16.5px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.pane-builds .rs-body .brows {
+  margin: 0 0 8px;
+}
+
+.pane-builds .brows.boss {
+  margin: 0 0 8px;
+}
+
+.pane-builds .rs-map {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 6px 11px;
+  font-family: var(--font-d);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dim);
+  cursor: pointer;
+}
+
+.pane-builds .rs-map-ic {
+  font-size: 12px;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.pane-builds .rs-map:hover {
+  color: var(--accent-hi);
+  border-color: var(--hair);
+}
+
+.pane-builds .route.dlc .rs-n {
+  border-color: var(--accent-2-line);
+  color: var(--accent-2);
+}
+
+.pane-builds .route.dlc .rs-region {
+  color: var(--accent-2);
+  background: var(--accent-2-dim);
+  border-color: var(--accent-2-line);
+}
+
+.pane-builds .route.small .rs-t {
+  font-size: 15.5px;
+}
+
+.pane-builds .route.small .rs-n {
+  width: 23px;
+  height: 23px;
+  font-size: 10.5px;
+}
+
+.pane-builds .route.small::before {
+  left: 11px;
+}
+
+/* ==========================================================================
+ * VARIANTS
+ * ========================================================================== */
+
+.pane-builds .variant {
+  padding: 14px 13px;
+  margin: 0 0 11px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel2);
+}
+
+.pane-builds .variant:last-child {
+  margin-bottom: 0;
+}
+
+.pane-builds .var-n {
+  margin: 0 0 7px;
+  font-family: var(--font-d);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.pane-builds .var-twist {
+  margin: 0 0 11px;
+  font-style: italic;
+  font-size: 16.5px;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.pane-builds .swaps {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 0 11px;
+}
+
+.pane-builds .swap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.pane-builds .swap-side {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: 1 1 40%;
+  min-width: 0;
+  text-align: left;
+  background: var(--panel3);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  color: var(--dim);
+  font: inherit;
+  font-size: 14.5px;
+  line-height: 1.3;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.pane-builds .swap-side.flat {
+  cursor: default;
+}
+
+.pane-builds .swap-side.to {
+  color: var(--ink);
+  border-color: var(--line2);
+}
+
+.pane-builds button.swap-side:hover {
+  border-color: var(--hair);
+  color: var(--accent-hi);
+}
+
+.pane-builds .swap-arrow {
+  flex: 0 0 auto;
+  color: var(--accent);
+  font-size: 15px;
+}
+
+.pane-builds .var-note {
+  margin: 0 0 8px;
+  font-size: 15.5px;
+  line-height: 1.5;
+  color: var(--dim);
+}
+
+.pane-builds .var-note:last-child {
+  margin-bottom: 0;
+}
+
+.pane-builds .var-route {
+  margin-top: 11px;
+  padding-top: 11px;
+  border-top: 1px solid var(--line);
+}
+
+.pane-builds .var-rh {
+  margin: 0 0 9px;
+  font-family: var(--font-d);
+  font-size: 9.5px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+/* ==========================================================================
+ * THE PLANNER SEAT
+ * ========================================================================== */
+
+.pane-builds .planner-host {
+  min-height: 40px;
+}
+
+/* ==========================================================================
+ * BOTTOM CLEARANCE
+ * Deliberately NOT reserved here. css/style.css already pads #app by
+ * calc(var(--tab-h) + var(--safe-b) + 26px), which clears the fixed tab bar
+ * and the iOS home indicator for every tab. Adding the same reserve again on
+ * this pane would leave ~90px of dead space under every guide.
+ * ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .pane-builds .gcard,
+  .pane-builds .bseg {
+    transition: none;
+  }
+}
