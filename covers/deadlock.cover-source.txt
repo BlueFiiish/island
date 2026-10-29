@@ -1,0 +1,12 @@
+Deadlock cover art (600x900 portrait, 2:3)
+
+Source: official Steam store library capsule image (2x/retina), Deadlock
+(Steam app id 1422450), Valve Corporation.
+URL: https://cdn.cloudflare.steamstatic.com/steam/apps/1422450/library_600x900_2x.jpg
+Fetched: 2026-10-24
+Native resolution as served: 600x900 (no resize needed).
+Encoded: WEBP quality=88, method=6, 36010 bytes.
+
+Same non-commercial fair-use posture as the route's icons: official Valve
+promotional key art, used for a personal, non-commercial fan project. Not
+affiliated with or endorsed by Valve. Takedown requests honoured.

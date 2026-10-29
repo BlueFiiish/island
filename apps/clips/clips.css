@@ -1,0 +1,363 @@
+/* ==========================================================================
+   /island/clips - client page styling.
+
+   A shell-native (fi-chrome) route, so it reads the shell design tokens
+   directly (var(--accent) is the clips cyan #00E5FF from themes.css). Every
+   selector is `.fi-clips-` prefixed and the whole route lives under
+   `.fi-clips`, so nothing here can touch another route. Loaded as a plain
+   <link> (not an Astro scoped <style>) because clips.js builds the card grid
+   and clip rows at runtime - scoped hashes would never land on them.
+   ========================================================================== */
+
+.fi-clips {
+  display: block;
+  max-width: var(--page);
+  margin-inline: auto;
+  padding: var(--s5) var(--s4) var(--s9);
+}
+@media (min-width: 720px) {
+  .fi-clips {
+    padding-inline: var(--s6);
+  }
+}
+
+/* --- intro ---------------------------------------------------------------- */
+.fi-clips-head {
+  margin-bottom: var(--s5);
+}
+.fi-clips-head h1 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: var(--t-h1);
+  line-height: var(--lh-tight);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.fi-clips-head p {
+  margin-top: var(--s3);
+  color: var(--muted);
+  font-size: var(--t-lg);
+  max-width: 60ch;
+}
+
+/* --- status text (loading state) ------------------------------------------ */
+.fi-clips-msg {
+  font-size: var(--t-sm);
+  line-height: 1.5;
+}
+.fi-clips-msg--info {
+  color: var(--muted);
+}
+
+/* --- generic panel + empty states ---------------------------------------- */
+.fi-clips-box {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.028), transparent 38%), var(--panel);
+  border: var(--hair) solid var(--line);
+  border-radius: var(--r-lg);
+  padding: var(--s5);
+}
+.fi-clips-box + .fi-clips-box {
+  margin-top: var(--s4);
+}
+/* Sending clips in is moving to a Patreon patron perk - no link yet, so this
+   is a plain announcement box, not a CTA. */
+.fi-clips-teaser {
+  margin-top: var(--s6);
+}
+.fi-clips-teaser p {
+  color: var(--muted);
+  font-size: var(--t-sm);
+  line-height: 1.5;
+  max-width: 60ch;
+}
+.fi-clips-empty {
+  text-align: center;
+  padding: var(--s8) var(--s4);
+  color: var(--muted);
+  border: var(--hair) dashed var(--line);
+  border-radius: var(--r-lg);
+}
+.fi-clips-empty__mark {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: var(--s3);
+  opacity: 0.7;
+}
+.fi-clips-empty h3 {
+  font-family: var(--f-display);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-size: var(--t-h3);
+  color: var(--fg);
+  margin-bottom: var(--s2);
+}
+.fi-clips-empty p {
+  color: var(--muted);
+  font-size: var(--t-sm);
+  max-width: 44ch;
+  margin-inline: auto;
+}
+
+/* --- filter chips (gallery) ---------------------------------------------- */
+.fi-clips-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s3) var(--s5);
+  margin-bottom: var(--s5);
+}
+.fi-clips-filtergroup {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  flex-wrap: wrap;
+}
+.fi-clips-filtergroup__label {
+  font-size: var(--t-micro);
+  font-weight: 600;
+  letter-spacing: var(--ls-label);
+  text-transform: uppercase;
+  color: var(--muted-dim);
+}
+.fi-clips-chip {
+  font-family: var(--f-mono);
+  font-size: var(--t-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: var(--hair) solid var(--line);
+  border-radius: 999px;
+  padding: 4px 10px;
+  min-height: 28px;
+  transition: color var(--d-1) var(--e-quick), border-color var(--d-1) var(--e-quick),
+    background var(--d-1) var(--e-quick);
+}
+.fi-clips-chip:hover {
+  color: var(--fg);
+  border-color: var(--accent-line);
+}
+.fi-clips-chip[aria-pressed='true'] {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* --- gallery grid --------------------------------------------------------- */
+.fi-clips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: var(--s4);
+}
+/* Broadcast card: a true cyan gradient FRAME (radius-safe, via a masked
+   pseudo-element) plus a soft outer cyan glow. Magenta (#ff2e9f) is reserved
+   for hover/active only, per the scorecard's Clips palette. */
+.fi-clips-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: var(--hair) solid rgba(0, 229, 255, 0.16);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(0, 229, 255, 0.035), transparent 42%), var(--panel);
+  color: var(--fg);
+  box-shadow: 0 0 16px -8px rgba(0, 229, 255, 0.28), 0 8px 26px -18px rgba(0, 0, 0, 0.9);
+  transition: border-color var(--d-2) var(--e-quick), transform var(--d-2) var(--e-quick),
+    box-shadow var(--d-2) var(--e-quick);
+}
+.fi-clips-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(0, 229, 255, 0.72), rgba(0, 229, 255, 0.12) 55%, rgba(0, 229, 255, 0.02));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  transition: background var(--d-2) var(--e-quick);
+}
+.fi-clips-card:hover {
+  border-color: rgba(255, 46, 159, 0.42);
+  transform: translateY(-3px);
+  box-shadow: 0 0 22px -6px rgba(255, 46, 159, 0.4), 0 12px 30px -16px rgba(0, 0, 0, 0.95);
+}
+.fi-clips-card:hover::after {
+  background: linear-gradient(135deg, rgba(255, 46, 159, 0.82), rgba(255, 46, 159, 0.16) 55%, rgba(0, 229, 255, 0.14));
+}
+.fi-clips-thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  /* branded "no-signal" ground - shows through only when there is no <img>;
+     an object-fit:cover image sits on top and fully covers it. */
+  background: radial-gradient(120% 120% at 20% 0%, rgba(0, 229, 255, 0.12), transparent 55%),
+    radial-gradient(120% 120% at 100% 100%, rgba(255, 46, 159, 0.1), transparent 55%),
+    linear-gradient(135deg, #12141b, #08090c);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+/* ~3% scanline overlay - the broadcast "screen" texture. Sits above the ground
+   and any image but below badges (which are positioned, so paint later). */
+.fi-clips-thumb::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03) 0,
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+.fi-clips-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* No-signal placeholder mark: the clapperboard glyph over the branded ground,
+   with a mono "NO SIGNAL" caption drawn in by CSS (no JS change needed). */
+.fi-clips-thumb__ph {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.9rem;
+  line-height: 1;
+  color: rgba(0, 229, 255, 0.85);
+  text-shadow: 0 0 14px rgba(0, 229, 255, 0.45);
+  opacity: 0.92;
+}
+.fi-clips-thumb__ph::after {
+  content: 'No signal';
+  font-family: var(--f-mono);
+  font-size: var(--t-micro);
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted-dim);
+  text-shadow: none;
+}
+/* Broadcast "bug": the platform + duration chips read as angular chyron bugs -
+   a shallow parallelogram (clip-path) instead of a pill. Padding is bumped so the
+   4px slant never eats a glyph, even on the widest label ("Instagram"). */
+.fi-clips-badge {
+  position: absolute;
+  top: var(--s2);
+  left: var(--s2);
+  z-index: 3;
+  font-family: var(--f-mono);
+  font-size: var(--t-micro);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 9px;
+  border-radius: 2px;
+  clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border: var(--hair) solid rgba(255, 255, 255, 0.18);
+}
+.fi-clips-badge--youtube {
+  background: #ff0033;
+  border-color: #ff4d67;
+}
+.fi-clips-badge--tiktok {
+  background: #111;
+  border-color: #25f4ee;
+  color: #25f4ee;
+}
+.fi-clips-badge--instagram {
+  background: linear-gradient(45deg, #f09433, #dc2743 45%, #bc1888);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+/* duration = the broadcast TIME BUG: mono, cyan, on a dark screen chip, dropped
+   to the BOTTOM-right of the frame where a real lower-third clock sits (just
+   above the angled caption bar). */
+.fi-clips-badge--dur {
+  left: auto;
+  right: var(--s2);
+  top: auto;
+  bottom: var(--s2);
+  background: rgba(0, 0, 0, 0.78);
+  color: #7af1ff;
+  border-color: rgba(0, 229, 255, 0.32);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.1em;
+}
+/* BROADCAST LOWER-THIRD caption bar: the body is clipped into a parallelogram
+   with a slanted top edge (a diagonal seam against the thumb above it) and
+   fronted by an angled cyan "flag" chevron. Left padding is generous so the
+   title never rides under the flag - safe down to 390px (single-column cards
+   are ~358px wide there). Magenta flag on hover matches the R1 frame swap. */
+.fi-clips-card__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  padding: calc(var(--s3) + 4px) var(--s4) var(--s4) calc(var(--s4) + 8px);
+  flex: 1;
+  background: linear-gradient(180deg, rgba(0, 229, 255, 0.06), rgba(8, 9, 12, 0) 62%), var(--panel);
+  clip-path: polygon(0 8px, 100% 0, 100% 100%, 0 100%);
+}
+.fi-clips-card__body::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 7px;
+  background: linear-gradient(180deg, var(--accent), #0891a3);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+  transition: background var(--d-2) var(--e-quick);
+}
+.fi-clips-card:hover .fi-clips-card__body::before {
+  background: linear-gradient(180deg, #ff2e9f, #c01f77);
+}
+.fi-clips-card__title {
+  font-weight: 600;
+  font-size: var(--t-base);
+  line-height: 1.35;
+  color: var(--fg);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* meta row rendered as a broadcast ticker line: mono, tabular, cyan game tag */
+.fi-clips-card__meta {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  flex-wrap: wrap;
+  font-family: var(--f-mono);
+  font-variant-numeric: tabular-nums;
+  font-size: var(--t-xs);
+  letter-spacing: 0.02em;
+  color: var(--muted-dim);
+}
+.fi-clips-card__game {
+  font-family: var(--f-mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.fi-clips-card__dot {
+  color: var(--muted-dim);
+}
+
+.fi-clips-samplenote {
+  margin-top: var(--s5);
+  font-family: var(--f-mono);
+  font-size: var(--t-micro);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted-dim);
+}

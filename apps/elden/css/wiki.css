@@ -1,0 +1,621 @@
+/* wiki.css - the Wiki tab and the standard entity sheet.
+ *
+ * OWNED BY: P3 L5 (shell + Start + Wiki). Depends on style.css for tokens and
+ * the shared primitives (.panel, .stat-table, .numgrid, .bargrid, .dtable,
+ * .chiprow, .er-ic-wrap, .e-sec / .e-h). Nothing here is global.
+ *
+ * The entity sheet is the product surface the whole app points at, so it is
+ * dressed as an in-game menu panel: a framed portrait slot, a gold rule under
+ * every section heading, scaling letters in the game's own colour ladder, and
+ * the in-game description set in italic serif inside its own inset frame so a
+ * quoted item description is never mistaken for the app's own plain-English
+ * writing. That separation is the point: our three beginner sections sit ABOVE
+ * the numbers; FromSoftware's words sit apart, below them, visibly quoted.
+ *
+ * ASCII only. No url() to any file.
+ */
+
+/* ==========================================================================
+ * SEGMENT RAIL + CONTROLS
+ * ========================================================================== */
+
+.segscroll {
+  display: flex;
+  gap: 7px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 2px 2px 10px;
+  margin: 0 -12px 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.segscroll::-webkit-scrollbar {
+  display: none;
+}
+.seg {
+  flex: 0 0 auto;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--dim);
+  font-family: var(--font-d);
+  font-size: 11px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.seg:hover {
+  color: var(--ink);
+  border-color: var(--line2);
+}
+.seg.on {
+  color: #1a1206;
+  background: linear-gradient(to bottom, #e2ba62, var(--accent));
+  border-color: #eccb84;
+  font-weight: 600;
+  box-shadow: 0 0 18px rgba(214, 168, 76, 0.25);
+}
+
+.wcontrols {
+  margin-bottom: 12px;
+}
+
+.viewswitch {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--line);
+  margin-bottom: 10px;
+}
+.vsw {
+  padding: 6px 13px;
+  border-radius: 8px;
+  background: none;
+  border: 0;
+  color: var(--dim);
+  font-family: var(--font-d);
+  font-size: 10.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.vsw.on {
+  background: var(--accent-dim);
+  color: var(--accent-hi);
+  box-shadow: inset 0 0 0 1px var(--accent-line);
+}
+
+.chipscroll {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 9px;
+  margin: 0 -12px 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.chipscroll::-webkit-scrollbar {
+  display: none;
+}
+.fchip {
+  flex: 0 0 auto;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.26);
+  border: 1px solid var(--line);
+  color: var(--dim);
+  font-size: 14px;
+  white-space: nowrap;
+}
+.fchip.on {
+  color: var(--accent-hi);
+  border-color: var(--accent-line);
+  background: var(--accent-dim);
+}
+
+.wfilter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wfilter .wsearch {
+  flex: 1 1 auto;
+}
+.wcount {
+  flex: 0 0 auto;
+  color: var(--faint);
+  font-family: var(--font-d);
+  font-size: 9.5px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-align: right;
+  max-width: 9em;
+  line-height: 1.25;
+}
+
+/* ==========================================================================
+ * THE LIST
+ * ========================================================================== */
+
+.wlist.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.wlist.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+}
+@media (min-width: 620px) {
+  .wlist.grid {
+    grid-template-columns: repeat(auto-fill, minmax(178px, 1fr));
+  }
+}
+.wlist.empty {
+  display: block;
+}
+.wlist .btn.more {
+  grid-column: 1 / -1;
+}
+
+.ecard {
+  position: relative;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-align: left;
+  color: var(--ink);
+  box-shadow: var(--shadow-lift);
+}
+.ecard:hover {
+  border-color: var(--hair);
+  background: var(--panel2);
+}
+.ecard.row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 12px;
+}
+.ecard.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 10px 12px;
+  text-align: center;
+}
+.ec-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.ecard.grid .ec-body {
+  flex: 0 0 auto;
+  align-items: center;
+}
+.ec-n {
+  font-family: var(--font-d);
+  font-size: 13.5px;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
+  color: var(--ink);
+}
+.ecard.row .ec-n {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ec-s {
+  color: var(--faint);
+  font-size: 13.5px;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.ec-badges {
+  display: flex;
+  gap: 4px;
+  flex: 0 0 auto;
+}
+.ecard.grid .ec-badges {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+.ec-go {
+  flex: 0 0 auto;
+  color: var(--faint);
+  font-size: 17px;
+  line-height: 1;
+}
+.ecard.row:hover .ec-go {
+  color: var(--accent);
+}
+
+/* ==========================================================================
+ * THE ENTITY SHEET
+ * ========================================================================== */
+
+/* The framed portrait slot at the top of every sheet. */
+.ehead {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 18px;
+}
+.ehead .er-ic-wrap {
+  background:
+    radial-gradient(circle at 50% 30%, rgba(214, 168, 76, 0.2), rgba(0, 0, 0, 0.35)),
+    var(--panel2);
+  box-shadow: 0 0 34px rgba(214, 168, 76, 0.14), inset 0 1px 0 rgba(255, 232, 186, 0.1);
+}
+
+/* The boss / NPC banner. A single dark band with a gold hairline, a framed
+   portrait on the left and the one number that matters on the right - the shape
+   of the card the game shows you at a fog gate. Ember for bosses (the thing
+   that kills you), gold for NPCs (the thing that helps you). */
+.bhead {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 15px;
+  margin: 0 0 18px;
+  border-radius: 13px;
+  border: 1px solid var(--accent-line);
+  background:
+    radial-gradient(120% 160% at 0% 50%, rgba(214, 168, 76, 0.13), rgba(214, 168, 76, 0) 58%),
+    linear-gradient(to bottom, #17130d, #0d0b08);
+  box-shadow: inset 0 1px 0 rgba(255, 232, 186, 0.07);
+}
+.bhead.boss {
+  border-color: var(--accent-2-line);
+  background:
+    radial-gradient(120% 160% at 0% 50%, rgba(194, 84, 44, 0.18), rgba(194, 84, 44, 0) 58%),
+    linear-gradient(to bottom, #170f0b, #0d0908);
+}
+.bh-frame {
+  flex: 0 0 auto;
+  display: inline-flex;
+}
+.bhead .er-ic-wrap {
+  border-color: var(--accent-line);
+  background:
+    radial-gradient(circle at 50% 32%, rgba(214, 168, 76, 0.18), rgba(0, 0, 0, 0.4)),
+    var(--panel2);
+}
+.bhead.boss .er-ic-wrap {
+  border-color: var(--accent-2-line);
+}
+.bh-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.bh-meta {
+  color: var(--dim);
+  font-family: var(--font-d);
+  font-size: 10px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.bh-flag {
+  align-self: flex-start;
+  color: var(--accent-2);
+  border: 1px solid var(--accent-2-line);
+  background: var(--accent-2-dim);
+  border-radius: 6px;
+  padding: 2px 7px;
+  font-size: 12.5px;
+  line-height: 1.35;
+}
+.bh-flag.opt {
+  color: var(--dim);
+  border-color: var(--line);
+  background: rgba(0, 0, 0, 0.24);
+}
+.bh-runes {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+  padding-left: 10px;
+  border-left: 1px solid var(--line);
+}
+.bh-rn {
+  font-family: var(--font-d);
+  font-size: 21px;
+  line-height: 1.05;
+  color: var(--accent-hi);
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 20px rgba(214, 168, 76, 0.4);
+}
+.bh-rl {
+  color: var(--faint);
+  font-family: var(--font-d);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Scaling letters. The ladder is the game's own: S is the event, E is a
+   footnote. Colour is the only difference - shape and size stay constant so a
+   row of letters still reads as a row. */
+.scalerow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.sc-cell {
+  flex: 1 1 62px;
+  min-width: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  border-radius: 9px;
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid var(--line);
+}
+.sc-k {
+  color: var(--faint);
+  font-family: var(--font-d);
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.sc-l {
+  font-family: var(--font-d);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ink);
+}
+.sc-l.lS {
+  color: #f1d58a;
+  text-shadow: 0 0 16px rgba(241, 213, 138, 0.75);
+}
+.sc-l.lA {
+  color: #e0b45f;
+}
+.sc-l.lB {
+  color: #c9c0a4;
+}
+.sc-l.lC {
+  color: #a89e86;
+}
+.sc-l.lD {
+  color: #8a8069;
+}
+.sc-l.lE {
+  color: #6f6653;
+}
+
+/* The in-game description, visibly quoted and set apart from our own prose. */
+.ingame {
+  position: relative;
+  padding: 13px 15px 13px 17px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.26);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent-line);
+}
+.ingame + .ingame {
+  margin-top: 9px;
+}
+.ingame.lore {
+  border-left-color: var(--accent-2-line);
+}
+.ig-p {
+  margin: 0 0 9px;
+  color: var(--dim);
+  font-size: 17px;
+  line-height: 1.55;
+  font-style: italic;
+}
+.ig-p:last-child {
+  margin-bottom: 0;
+}
+
+/* Recipes. */
+.reclist {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.rec-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 11px;
+  border-radius: 9px;
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid var(--line);
+}
+.rec-row[data-entity] {
+  cursor: pointer;
+}
+.rec-row[data-entity]:hover {
+  border-color: var(--hair);
+}
+.rec-n {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rec-q {
+  flex: 0 0 auto;
+  color: var(--accent);
+  font-size: 14.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================================================
+ * QUEST STEPS - the one place in the app where order is the content
+ * ========================================================================== */
+
+.qsteps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.qstep {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.qstep:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.qnum {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--line2);
+  color: var(--faint);
+  font-family: var(--font-d);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+.qtick {
+  flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  margin-top: 2px;
+  border-radius: 6px;
+  border: 1px solid var(--line2);
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.qtick[aria-checked="true"] {
+  border-color: var(--accent-line);
+  background: var(--accent-dim);
+}
+.qtick[aria-checked="true"]::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid var(--accent-hi);
+  border-width: 0 2px 2px 0;
+  transform: rotate(42deg);
+}
+.qtick:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.qbody {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+.qtext {
+  color: var(--ink);
+  font-size: 16.5px;
+  line-height: 1.45;
+}
+.qstep.done .qtext {
+  color: var(--faint);
+  text-decoration: line-through;
+  text-decoration-color: var(--accent-line);
+}
+.qloc {
+  color: var(--faint);
+  font-family: var(--font-d);
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.lockout {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--accent-2-dim);
+  border: 1px solid var(--accent-2-line);
+  color: #e5a98c;
+  font-size: 14.5px;
+  line-height: 1.4;
+}
+.lock-ic {
+  flex: 0 0 auto;
+  color: var(--accent-2);
+}
+.qmap {
+  align-self: flex-start;
+  background: none;
+  border: 0;
+  padding: 2px 0;
+  color: var(--accent);
+  font-family: var(--font-d);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--accent-line);
+}
+.qmap:hover {
+  color: var(--accent-hi);
+}
+
+/* ==========================================================================
+ * SOFT CAPS
+ * ========================================================================== */
+
+.caps {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cap-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 12px;
+  border-radius: 9px;
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid var(--line);
+}
+.cap-l {
+  color: var(--dim);
+  font-size: 15.5px;
+}
+.cap-v {
+  color: var(--accent-hi);
+  font-family: var(--font-d);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}

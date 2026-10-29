@@ -1,0 +1,133 @@
+/* builds.css - the Builds-tab surface (js/builds.js). OWNER: the P4 "ui" lane.
+ * FILE FENCE: this file + js/builds.js.
+ *
+ * PORT NOTES (gates, not style opinions - same rules as css/style.css):
+ *  - No :root / html / body rule here, so the theme-parity gate still reads style.css's FIRST
+ *    :root as the route identity. The tokens live in style.css; this file only USES them.
+ *  - No transform / filter / backdrop-filter / contain / will-change / perspective on anything
+ *    that could land on the mount: the planner sheet is position:fixed.
+ *  - The planner sheet sits ABOVE the tab bar (z 50) and BELOW the entity sheet (z 60), so an
+ *    item opened from inside the planner stacks on top and closes back to it.
+ *  - Sheet height in dvh with the vh line first as the fallback; overscroll-behavior:contain;
+ *    the footer pads with the safe-area inset so the thumb buttons clear the home bar.
+ */
+
+/* ---- planner card on the tab ---- */
+.dbp{padding:6px 6px 10px}
+.dbp-h{display:flex;align-items:baseline;justify-content:space-between;gap:8px;padding:6px 6px 8px}
+.dbp-wait{padding:6px 6px 4px}
+.dbp-row{display:flex;align-items:center;gap:10px;width:100%;min-height:56px;text-align:left;background:none;border:0;border-top:1px solid var(--line);padding:8px 6px}
+.dbp-row:active{background:var(--panel2)}
+.dbp-t{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.dbp-k{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--faint)}
+.dbp-v{font-size:14.5px;font-weight:600;line-height:1.3;overflow-wrap:anywhere}
+.dbp-chev{flex:none;font-size:12px;color:var(--accent-hi)}
+.dbp-ph{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:10px;border:1px dashed var(--line2);color:var(--faint);flex:none}
+.dbp-icons{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.dbp-mini{display:inline-flex}
+.dbp-count{font-size:11px;color:var(--faint);margin-left:4px}
+.dbp-go{display:block;width:100%;min-height:50px;margin-top:10px;border:0;border-radius:12px;background:var(--accent);color:#0d0b12;font-size:16px;font-weight:700}
+.dbp-go:active{background:var(--accent-hi)}
+.dbp-go[disabled]{opacity:.5}
+
+/* ---- result ---- */
+.dbr-head{display:flex;gap:12px;align-items:center}
+.dbr-ht{display:flex;flex-direction:column;gap:2px;min-width:0}
+.dbr-rule{margin:4px 2px 10px;font-size:13px;line-height:1.5;color:var(--ink);border-left:3px solid var(--accent);padding:2px 0 2px 10px}
+.dbr-bud{margin:0 2px 10px;line-height:1.5}
+.dbr-order{margin:0 2px 8px}
+.dbr-list{list-style:none;margin:0;padding:0}
+.dbr-item{background:var(--panel);border:1px solid var(--line);border-radius:13px;margin-bottom:9px;padding:0 0 10px;overflow:hidden}
+.dbr-item.slot-weapon{border-left:3px solid var(--weapon)}
+.dbr-item.slot-vitality{border-left:3px solid var(--vitality)}
+.dbr-item.slot-spirit{border-left:3px solid var(--spirit)}
+.dbr-top{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:none;border:0;padding:10px 10px 6px}
+.dbr-top:active{background:var(--panel2)}
+.dbr-num{flex:none;width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;background:var(--accent-dim);color:var(--accent-hi);border:1px solid var(--accent-line)}
+.dbr-nm{display:flex;flex-direction:column;gap:4px;min-width:0;flex:1}
+.dbr-name{font-size:15px;font-weight:700;line-height:1.25}
+.dbr-chips{display:flex;flex-wrap:wrap;gap:5px}
+.dbr-rc{margin:0;padding:0 12px 0 44px;list-style:none}
+.dbr-rc.dbr-flat{padding:0}
+.dbr-rc li{position:relative;font-size:13px;line-height:1.5;color:var(--ink);padding:3px 0 3px 12px;overflow-wrap:anywhere}
+.dbr-rc li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--accent-hi)}
+.dbr-rc li.k-tier,.dbr-rc li.k-timing,.dbr-rc li.k-component,.dbr-rc li.k-evidence-thin{color:var(--dim)}
+.dbr-rc li.k-lock-cost{color:var(--accent-hi)}
+.dbr-n{display:inline-block;font-size:11.5px;font-weight:600;color:var(--gold);background:#241d0e;border:1px solid #5a4a1e;border-radius:999px;padding:0 7px;white-space:nowrap}
+.dbr-none{margin:2px 12px 0 44px;font-size:12px;color:var(--faint);line-height:1.45}
+.dbr-foot{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:8px 10px 0 44px}
+.dbr-lockbtn{margin-left:auto;min-height:40px;min-width:76px}
+.dbr-sh{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--faint);margin:0 0 8px;font-weight:600}
+.dbr-p{margin:0 0 6px;line-height:1.5}
+.dbr-sp{display:flex;gap:8px;align-items:flex-start;margin-bottom:7px;line-height:1.45}
+.dbr-sp .chip{flex:none}
+.dbr .note{margin-bottom:10px}
+.dbr-how summary{cursor:pointer;font-weight:600;font-size:13.5px;min-height:28px}
+.dbr-how p,.dbr-how li{font-size:12.5px;color:var(--dim);line-height:1.55}
+.dbr-how ul{padding-left:18px}
+
+/* ---- the planner bottom sheet ---- */
+.dbs{position:fixed;inset:0;z-index:58}
+.dbs[hidden]{display:none}
+.dbs-back{position:absolute;inset:0;background:rgba(6,4,12,.76);touch-action:none}
+.dbs-body{
+  position:absolute;left:0;right:0;bottom:0;margin:0 auto;max-width:760px;
+  height:88vh;
+  height:88dvh;
+  display:flex;flex-direction:column;
+  background:var(--bg2);border-top:1px solid var(--line2);border-radius:18px 18px 0 0;
+  box-shadow:0 -10px 40px rgba(0,0,0,.55);
+  animation:slideup .22s cubic-bezier(.2,.8,.2,1);
+}
+.dbs-top{flex:none;padding:12px 14px 6px;border-bottom:1px solid var(--line)}
+.dbs-tr{display:flex;gap:8px;align-items:center}
+.dbs-x{flex:none;min-height:40px}
+.dbs-steps{flex:1;min-width:0;display:flex;gap:6px;overflow-x:auto;padding:4px 0 6px;scrollbar-width:none}
+.dbs-steps::-webkit-scrollbar{display:none}
+.dbs-sc{flex:none;min-height:36px;padding:6px 12px;border-radius:999px;border:1px solid var(--line2);background:var(--panel);font-size:13px;color:var(--dim)}
+.dbs-sc.done{color:var(--ink);border-color:var(--accent-line)}
+.dbs-sc.done::after{content:" \2713";color:var(--accent-hi)}
+.dbs-sc.on{background:var(--accent);border-color:var(--accent);color:#0d0b12;font-weight:700}
+.dbs-sc.on::after{color:#0d0b12}
+.dbs-main{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:12px 14px 16px}
+.dbs-foot{flex:none;display:flex;gap:8px;align-items:center;padding:10px 14px calc(12px + var(--safe-b));border-top:1px solid var(--line);background:var(--bg2)}
+.dbs-foot .tbtn{min-height:50px;min-width:76px;font-size:15px}
+.dbs-foot .dbs-go{flex:1;margin-top:0}
+.dbs-foot .dbs-next{margin-left:auto}
+.dbs-lede{margin:0 0 10px;font-size:14px;line-height:1.5;color:var(--ink)}
+.dbs-cnt{display:inline-block;font-size:11.5px;color:var(--accent-hi);border:1px solid var(--accent-line);border-radius:999px;padding:0 8px;margin-left:4px}
+.dbs-q{margin-bottom:10px}
+.dbs-empty{padding:16px 4px;color:var(--dim);font-size:13px}
+
+.dbs-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+@media (min-width:560px){.dbs-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+.dbs-hero{position:relative;display:flex;flex-direction:column;align-items:center;gap:5px;min-height:84px;padding:8px 4px;border-radius:12px;border:1px solid var(--line);background:var(--panel)}
+.dbs-hero:active{background:var(--panel2)}
+.dbs-hero.on{border-color:var(--accent);background:var(--accent-soft);box-shadow:0 0 0 1px var(--accent) inset}
+.dbs-hero[disabled]{opacity:.4}
+.dbs-hn{font-size:11px;line-height:1.2;text-align:center;overflow-wrap:anywhere}
+.dbs-you{position:absolute;top:4px;right:4px;font-size:9.5px;color:var(--accent-2);border:1px solid var(--accent-2-line);border-radius:999px;padding:0 5px;background:var(--accent-2-dim)}
+
+.dbs-goal{display:flex;flex-direction:column;align-items:flex-start;gap:3px;position:relative;width:100%;min-height:56px;text-align:left;margin-bottom:8px;padding:10px 44px 10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--panel)}
+.dbs-goal:active{background:var(--panel2)}
+.dbs-goal.on{border-color:var(--accent);background:var(--accent-soft)}
+.dbs-goal[disabled]{opacity:.45}
+.dbs-gl{font-size:14.5px;font-weight:700}
+.dbs-gh{font-size:12.5px;color:var(--dim);line-height:1.4}
+.dbs-tick{position:absolute;right:12px;top:50%;margin-top:-13px;width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line2);color:var(--faint);font-size:14px}
+.dbs-goal.on .dbs-tick,.dbs-item.on .dbs-tick{background:var(--accent);border-color:var(--accent);color:#0d0b12}
+
+.dbs-item{display:flex;align-items:center;gap:10px;position:relative;width:100%;min-height:54px;text-align:left;margin-bottom:6px;padding:7px 46px 7px 9px;border-radius:12px;border:1px solid var(--line);background:var(--panel)}
+.dbs-item:active{background:var(--panel2)}
+.dbs-item.on{border-color:var(--accent);background:var(--accent-soft)}
+.dbs-item[disabled]{opacity:.45}
+.dbs-item.slot-weapon{border-left:3px solid var(--weapon)}
+.dbs-item.slot-vitality{border-left:3px solid var(--vitality)}
+.dbs-item.slot-spirit{border-left:3px solid var(--spirit)}
+.dbs-in{flex:1;min-width:0;font-size:14px;font-weight:600;line-height:1.25}
+
+.dbs-budget{margin-top:6px;margin-bottom:8px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--panel)}
+.dbs-budget.on{border-color:var(--accent);background:var(--accent-soft)}
+.dbs-step{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:8px}
+.dbs-step .tbtn{min-width:50px;min-height:46px;font-size:20px;line-height:1}
+.dbs-bv{min-width:110px;text-align:center;font-size:15px;font-weight:700}

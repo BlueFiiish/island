@@ -1,0 +1,154 @@
+[
+ {
+  "id": "forward-operating-base-fob",
+  "name": "Forward Operating Base (FOB)",
+  "category": "Logistics",
+  "sourceSection": "forward-operating-base",
+  "slotType": "Quick Slot",
+  "weightKg": 6.5,
+  "price": 7500,
+  "summary": "Logistics - slot Quick Slot, weight 6.5 kg, $7,500.",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "The quick-slot item that puts a Forward Operating Base on the ground where you are standing.",
+   "whyItMatters": "It is how a team stops running back and forth across the map. Once it is down it is shared - everyone on your side draws from it, and everyone loses it together.",
+   "whenToUseIt": "Place it once your side has ground worth holding and somewhere sheltered to hold it from. Dropping one in the open early mostly donates supplies to whoever finds it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-forward-operating-base-fob.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "build-supplies",
+  "name": "Build Supplies",
+  "category": "Forward Operating Base (FOB)",
+  "sourceSection": "forward-operating-base",
+  "startingAmount": 1250,
+  "capacity": 20000,
+  "purchasePrice": 10,
+  "summary": "Forward Operating Base (FOB).",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "The stockpile an FOB spends every time somebody raises a wall or a structure inside its radius. It is the only one of the four that starts you with a real cushion, 1,250 against 100 for the rest, and it tops out at 20,000.",
+   "whyItMatters": "Construction spends this and nothing else, so it decides whether your base gets finished. At $10 a unit from the terminal it is also the cheapest useful thing you can buy for a team that is trying to hold ground.",
+   "whenToUseIt": "Top it up before a push rather than during one. If the squad means to fortify, the money does more here than on a second gun you are going to lose anyway."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-build-supplies.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "fuel-supplies",
+  "name": "Fuel Supplies",
+  "category": "Forward Operating Base (FOB)",
+  "sourceSection": "forward-operating-base",
+  "startingAmount": 100,
+  "capacity": 20000,
+  "purchasePrice": 10,
+  "summary": "Forward Operating Base (FOB).",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "The stockpile the Refuel Station pulls from when it fills a vehicle. It starts at 100, holds up to 20,000, and you add to it at the terminal for $10 a unit.",
+   "whyItMatters": "A vehicle with an empty tank is scenery, and this stockpile is how a base puts fuel back into one out in the field; a Fuel Can carried separately is the other way. Heavy armour drinks several times what a light truck does, so a base that services tanks empties this fast.",
+   "whenToUseIt": "Stock it if your team runs vehicles at all, and stock it heavily if anybody has the big armour. If nobody is driving, the money belongs somewhere else."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-fuel-supplies.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ammo-supplies",
+  "name": "Ammo Supplies",
+  "category": "Forward Operating Base (FOB)",
+  "sourceSection": "forward-operating-base",
+  "startingAmount": 100,
+  "capacity": 20000,
+  "purchasePrice": 10,
+  "summary": "Forward Operating Base (FOB).",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "The FOB's shared ammunition stock. Like the other three it begins at 100, ceilings at 20,000, and costs $10 a unit to add to.",
+   "whyItMatters": "It is the difference between a forward base you can fight out of and one you keep having to leave. Rearming at your own structure saves the walk back to HQ, which on a map this size is most of a life.",
+   "whenToUseIt": "Fill it once the FOB is somewhere you actually intend to defend. There is little point stocking a base you put down for a single push."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-ammo-supplies.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mechanical-supplies",
+  "name": "Mechanical Supplies",
+  "category": "Forward Operating Base (FOB)",
+  "sourceSection": "forward-operating-base",
+  "startingAmount": 100,
+  "capacity": 20000,
+  "purchasePrice": 10,
+  "summary": "Forward Operating Base (FOB).",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "The stock the Repair Station works from. Same shape as the others - 100 to begin with, a 20,000 ceiling, $10 a unit - but it feeds repairs rather than construction.",
+   "whyItMatters": "It is a separate pool from the hand tools an individual carries, so a team can put damaged vehicles right at the base without anybody giving up their specialization slot to a repair tool.",
+   "whenToUseIt": "Keep some in reserve wherever your vehicles come back to. It costs nothing to leave stocked, and a tank you can patch instead of replace is the cheapest tank you will ever own."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-mechanical-supplies.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mechanical-supply-pallet",
+  "name": "Mechanical Supply Pallet",
+  "category": "Forward Operating Base (FOB)",
+  "sourceSection": "forward-operating-base",
+  "wardogLevel": 5,
+  "levelTrack": "WARDOG",
+  "unlockPrice": 10000,
+  "summary": "Forward Operating Base (FOB) - unlock $10,000.",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "One of three supply pallets that feed a Forward Operating Base, the one for mechanical supplies. Since Season 02 it is no longer free: it unlocks at WARDOG level 5 for a one-time $10,000.",
+   "whyItMatters": "Mechanical supplies are one of the four stockpiles an FOB holds, and the pallet is how you bring more of them in from outside the base. The source does not state how much one pallet carries, so do not plan around a number.",
+   "whenToUseIt": "Unlock it when your squad keeps a base and its vehicles running. It is the cheapest of the three pallets, so it is the one to buy first. Destroying a friendly supply pallet of any type costs you cash, so do not blow one up by mistake."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-mechanical-supply-pallet.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ammo-supply-pallet",
+  "name": "Ammo Supply Pallet",
+  "category": "Forward Operating Base (FOB)",
+  "sourceSection": "forward-operating-base",
+  "wardogLevel": 9,
+  "levelTrack": "WARDOG",
+  "unlockPrice": 25000,
+  "summary": "Forward Operating Base (FOB) - unlock $25,000.",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "One of three supply pallets that feed a Forward Operating Base, the one for ammunition supplies. Since Season 02 it is no longer free: it unlocks at WARDOG level 9 for a one-time $25,000.",
+   "whyItMatters": "Ammo supplies are one of the four stockpiles an FOB holds, and the pallet is how you bring more of them in from outside the base. The source does not state how much one pallet carries, so do not plan around a number.",
+   "whenToUseIt": "Unlock it when your side is holding ground from a base and running short on ammunition. Destroying a friendly supply pallet of any type costs you cash, so do not blow one up by mistake."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-ammo-supply-pallet.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "fuel-supply-pallet",
+  "name": "Fuel Supply Pallet",
+  "category": "Forward Operating Base (FOB)",
+  "sourceSection": "forward-operating-base",
+  "wardogLevel": 16,
+  "levelTrack": "WARDOG",
+  "unlockPrice": 50000,
+  "summary": "Forward Operating Base (FOB) - unlock $50,000.",
+  "sourceUrl": "https://wardogshandbook.com/Deployables#forward-operating-base",
+  "beginner": {
+   "whatItIs": "One of three supply pallets that feed a Forward Operating Base, the one for fuel supplies. Since Season 02 it is no longer free: it unlocks at WARDOG level 16 for a one-time $50,000.",
+   "whyItMatters": "Fuel supplies are one of the four stockpiles an FOB holds, and fuel is what keeps vehicles moving, so the pallet is how you bring more in from outside the base. The source does not state how much one pallet carries, so do not plan around a number.",
+   "whenToUseIt": "Unlock it when your squad runs vehicles from a base and keeps hitting empty tanks. It is the most expensive of the three pallets, so buy it after the cheaper two. Destroying a friendly supply pallet of any type costs you cash."
+  },
+  "icon": "/island/apps/wardogs/./sprites/deployables-fuel-supply-pallet.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

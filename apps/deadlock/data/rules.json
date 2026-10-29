@@ -1,0 +1,526 @@
+{
+ "_readme": "Game-rule constants. Every block names its source. Nothing here is hardcoded game knowledge: the API blocks are copied from generic-data / hero records, the wiki block is parsed from raw/wiki/Items.json.",
+ "itemPriceByTier": [
+  0,
+  800,
+  1600,
+  3200,
+  6400,
+  9999
+ ],
+ "costBonuses": {
+  "weapon": [
+   {
+    "gold_threshold": 800,
+    "bonus": 9,
+    "percent_on_graph": 7
+   },
+   {
+    "gold_threshold": 1600,
+    "bonus": 12,
+    "percent_on_graph": 7
+   },
+   {
+    "gold_threshold": 2400,
+    "bonus": 15,
+    "percent_on_graph": 8
+   },
+   {
+    "gold_threshold": 3200,
+    "bonus": 18,
+    "percent_on_graph": 8
+   },
+   {
+    "gold_threshold": 4800,
+    "bonus": 46,
+    "percent_on_graph": 9
+   },
+   {
+    "gold_threshold": 6400,
+    "bonus": 54,
+    "percent_on_graph": 9
+   },
+   {
+    "gold_threshold": 8000,
+    "bonus": 62,
+    "percent_on_graph": 10
+   },
+   {
+    "gold_threshold": 11200,
+    "bonus": 74,
+    "percent_on_graph": 10
+   },
+   {
+    "gold_threshold": 16000,
+    "bonus": 86,
+    "percent_on_graph": 10
+   },
+   {
+    "gold_threshold": 22400,
+    "bonus": 100,
+    "percent_on_graph": 11
+   },
+   {
+    "gold_threshold": 28800,
+    "bonus": 115,
+    "percent_on_graph": 11
+   }
+  ],
+  "vitality": [
+   {
+    "gold_threshold": 800,
+    "bonus": 9,
+    "percent_on_graph": 7
+   },
+   {
+    "gold_threshold": 1600,
+    "bonus": 12,
+    "percent_on_graph": 7
+   },
+   {
+    "gold_threshold": 2400,
+    "bonus": 15,
+    "percent_on_graph": 8
+   },
+   {
+    "gold_threshold": 3200,
+    "bonus": 20,
+    "percent_on_graph": 8
+   },
+   {
+    "gold_threshold": 4800,
+    "bonus": 38,
+    "percent_on_graph": 9
+   },
+   {
+    "gold_threshold": 6400,
+    "bonus": 42,
+    "percent_on_graph": 9
+   },
+   {
+    "gold_threshold": 8000,
+    "bonus": 46,
+    "percent_on_graph": 10
+   },
+   {
+    "gold_threshold": 11200,
+    "bonus": 50,
+    "percent_on_graph": 10
+   },
+   {
+    "gold_threshold": 16000,
+    "bonus": 54,
+    "percent_on_graph": 10
+   },
+   {
+    "gold_threshold": 22400,
+    "bonus": 60,
+    "percent_on_graph": 11
+   },
+   {
+    "gold_threshold": 28800,
+    "bonus": 66,
+    "percent_on_graph": 11
+   }
+  ],
+  "spirit": [
+   {
+    "gold_threshold": 800,
+    "bonus": 7,
+    "percent_on_graph": 7
+   },
+   {
+    "gold_threshold": 1600,
+    "bonus": 11,
+    "percent_on_graph": 7
+   },
+   {
+    "gold_threshold": 2400,
+    "bonus": 15,
+    "percent_on_graph": 8
+   },
+   {
+    "gold_threshold": 3200,
+    "bonus": 19,
+    "percent_on_graph": 8
+   },
+   {
+    "gold_threshold": 4800,
+    "bonus": 38,
+    "percent_on_graph": 9
+   },
+   {
+    "gold_threshold": 6400,
+    "bonus": 45,
+    "percent_on_graph": 9
+   },
+   {
+    "gold_threshold": 8000,
+    "bonus": 52,
+    "percent_on_graph": 10
+   },
+   {
+    "gold_threshold": 11200,
+    "bonus": 59,
+    "percent_on_graph": 10
+   },
+   {
+    "gold_threshold": 16000,
+    "bonus": 66,
+    "percent_on_graph": 10
+   },
+   {
+    "gold_threshold": 22400,
+    "bonus": 75,
+    "percent_on_graph": 11
+   },
+   {
+    "gold_threshold": 28800,
+    "bonus": 100,
+    "percent_on_graph": 11
+   }
+  ]
+ },
+ "costBonusesIdenticalAcrossHeroes": true,
+ "itemSlotInfo": {
+  "weapon": {
+   "max_purchases_for_tier": [
+    6,
+    6,
+    6
+   ]
+  },
+  "vitality": {
+   "max_purchases_for_tier": [
+    6,
+    6,
+    6
+   ]
+  },
+  "spirit": {
+   "max_purchases_for_tier": [
+    6,
+    6,
+    6
+   ]
+  }
+ },
+ "levels": [
+  {
+   "level": 0,
+   "apiKey": 1,
+   "souls": 0
+  },
+  {
+   "level": 1,
+   "apiKey": 2,
+   "souls": 200
+  },
+  {
+   "level": 2,
+   "apiKey": 3,
+   "souls": 500
+  },
+  {
+   "level": 3,
+   "apiKey": 4,
+   "souls": 900
+  },
+  {
+   "level": 4,
+   "apiKey": 5,
+   "souls": 1400
+  },
+  {
+   "level": 5,
+   "apiKey": 6,
+   "souls": 2000
+  },
+  {
+   "level": 6,
+   "apiKey": 7,
+   "souls": 2600
+  },
+  {
+   "level": 7,
+   "apiKey": 8,
+   "souls": 3200
+  },
+  {
+   "level": 8,
+   "apiKey": 9,
+   "souls": 3900
+  },
+  {
+   "level": 9,
+   "apiKey": 10,
+   "souls": 4600
+  },
+  {
+   "level": 10,
+   "apiKey": 11,
+   "souls": 5300
+  },
+  {
+   "level": 11,
+   "apiKey": 12,
+   "souls": 6000
+  },
+  {
+   "level": 12,
+   "apiKey": 13,
+   "souls": 6800
+  },
+  {
+   "level": 13,
+   "apiKey": 14,
+   "souls": 7600
+  },
+  {
+   "level": 14,
+   "apiKey": 15,
+   "souls": 8400
+  },
+  {
+   "level": 15,
+   "apiKey": 16,
+   "souls": 9200
+  },
+  {
+   "level": 16,
+   "apiKey": 17,
+   "souls": 10100
+  },
+  {
+   "level": 17,
+   "apiKey": 18,
+   "souls": 11000
+  },
+  {
+   "level": 18,
+   "apiKey": 19,
+   "souls": 11900
+  },
+  {
+   "level": 19,
+   "apiKey": 20,
+   "souls": 12800
+  },
+  {
+   "level": 20,
+   "apiKey": 21,
+   "souls": 13800
+  },
+  {
+   "level": 21,
+   "apiKey": 22,
+   "souls": 14900
+  },
+  {
+   "level": 22,
+   "apiKey": 23,
+   "souls": 16100
+  },
+  {
+   "level": 23,
+   "apiKey": 24,
+   "souls": 17400
+  },
+  {
+   "level": 24,
+   "apiKey": 25,
+   "souls": 18900
+  },
+  {
+   "level": 25,
+   "apiKey": 26,
+   "souls": 20600
+  },
+  {
+   "level": 26,
+   "apiKey": 27,
+   "souls": 22500
+  },
+  {
+   "level": 27,
+   "apiKey": 28,
+   "souls": 24600
+  },
+  {
+   "level": 28,
+   "apiKey": 29,
+   "souls": 26900
+  },
+  {
+   "level": 29,
+   "apiKey": 30,
+   "souls": 29400
+  },
+  {
+   "level": 30,
+   "apiKey": 31,
+   "souls": 32100
+  },
+  {
+   "level": 31,
+   "apiKey": 32,
+   "souls": 35000
+  },
+  {
+   "level": 32,
+   "apiKey": 33,
+   "souls": 38100
+  },
+  {
+   "level": 33,
+   "apiKey": 34,
+   "souls": 41400
+  },
+  {
+   "level": 34,
+   "apiKey": 35,
+   "souls": 44900
+  },
+  {
+   "level": 35,
+   "apiKey": 36,
+   "souls": 48600
+  }
+ ],
+ "trooperKillGoldShare": [
+  1,
+  0.54,
+  0.36,
+  0.25,
+  0.2,
+  0.16
+ ],
+ "heroKillGoldShare": [
+  1.25,
+  0.575,
+  0.283,
+  0.175,
+  0.11,
+  0.083
+ ],
+ "objectives": {
+  "gold_per_orb": 0,
+  "near_player_split_pct": 25,
+  "tier1_gold_kill": 1375,
+  "tier1_gold_orbs": 0,
+  "tier2_gold_kill": 3675,
+  "tier2_gold_orbs": 0,
+  "base_guardians_gold_kill": 1000,
+  "base_guardians_gold_orbs": 0,
+  "shrines_gold_kill": 2000,
+  "shrines_gold_orbs": 0,
+  "patron_phase1_gold_kill": 0,
+  "patron_phase1_gold_orbs": 0
+ },
+ "rejuvenator": {
+  "rejuvinator_expiration_warning_timing": 30,
+  "rejuvinator_buff_duration": 180,
+  "rejuvinator_drop_height": 500,
+  "rejuvinator_drop_duration": 6,
+  "trooper_health_mult": [
+   1.7,
+   2,
+   2.3
+  ],
+  "player_respawn_mult": [
+   0.5,
+   0.4,
+   0.3
+  ],
+  "rejuvinator_rebirth_duration": [
+   180,
+   180,
+   180
+  ]
+ },
+ "streetBrawl": {
+  "scoreToWin": 3,
+  "laneNumber": 4,
+  "roundLengthMinutes": [
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "buyTimeSeconds": [
+   50,
+   50,
+   50,
+   50,
+   50
+  ],
+  "goldPerRound": [
+   5600,
+   7400,
+   9400,
+   11600,
+   14000
+  ],
+  "respawnTimes": [
+   25,
+   25,
+   30,
+   30,
+   30
+  ]
+ },
+ "lanes": [
+  {
+   "name": "York",
+   "cssClass": "yellowLane",
+   "rgb": [
+    241,
+    204,
+    48
+   ]
+  },
+  {
+   "name": "Broadway",
+   "cssClass": "blueLane",
+   "rgb": [
+    41,
+    177,
+    204
+   ]
+  },
+  {
+   "name": "Greenwich",
+   "cssClass": "purpleLane",
+   "rgb": [
+    89,
+    178,
+    71
+   ]
+  }
+ ],
+ "slots": {
+  "source": "deadlock.wiki Items page (parsed from raw/wiki/Items.json)",
+  "verified": false,
+  "verifiedNote": "PENDING-GAME: the game is invite-only; nothing is verified in game.",
+  "baseSlots": 9,
+  "extraSlots": 3,
+  "totalSlots": 12,
+  "maxActiveItems": 4,
+  "conflicts": [
+   {
+    "id": "item-slot-count",
+    "claim": "PLAN.md and SOURCES.md (2026-09-01 guide synthesis): 12 universal slots plus 4 flex slots.",
+    "counterClaim": "deadlock.wiki Items and Heroes pages (read 2026-10-23): heroes start with 9 item slots, plus up to 3 extra slots unlocked by destroying Walkers.",
+    "status": "UNRESOLVED - PENDING-GAME. build_data records the wiki numbers under rules.slots; mechanics prose must not state either as verified fact.",
+    "public": {
+     "title": "How many item slots you get",
+     "lines": [
+      "deadlock.wiki says heroes start a match with 9 item slots and can unlock up to 3 more by destroying Walkers.",
+      "An early guide we read reported 12 universal item slots plus 4 flex slots."
+     ]
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,704 @@
+{
+ "_readme": "Titles, dates and links only (Valve forum + Steam news). The text of a patch is Valve's; read it at the link. updates = one row per Valve update, newest first, dated by the date in its title (a Steam post keeps its post time); latest = updates[0]. forum = the forum threads (date = the title date; lastPostAt = the thread's last-post time, which is NOT the patch date). news = every Steam and forum news post as fed.",
+ "latest": {
+  "title": "10-14-2026",
+  "postTitle": "Minor Update - 10-14-2026",
+  "patchDate": "2026-10-14",
+  "source": "steam",
+  "date": "2026-10-15T03:11:58Z",
+  "dateKind": "post-time",
+  "link": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+  "guid": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+  "at": 1792033918
+ },
+ "updates": [
+  {
+   "title": "10-14-2026",
+   "postTitle": "Minor Update - 10-14-2026",
+   "patchDate": "2026-10-14",
+   "source": "steam",
+   "date": "2026-10-15T03:11:58Z",
+   "dateKind": "post-time",
+   "link": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+   "at": 1792033918
+  },
+  {
+   "title": "10-05-2026",
+   "postTitle": "Minor Update - 10-05-2026",
+   "patchDate": "2026-10-05",
+   "source": "steam",
+   "date": "2026-10-05T23:05:32Z",
+   "dateKind": "post-time",
+   "link": "https://store.steampowered.com/news/app/1422450/view/703281025618282632",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/703281025618282632",
+   "at": 1791241532
+  },
+  {
+   "title": "09-29-2026",
+   "postTitle": "09-29-2026",
+   "patchDate": "2026-09-29",
+   "source": "forum",
+   "date": "2026-09-29T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-10-15T03:12:00Z",
+   "link": "https://forums.playdeadlock.com/threads/09-29-2026.166726/",
+   "guid": "urn:xenforo:thread:166726",
+   "at": 1792033920
+  },
+  {
+   "title": "09-16-2026",
+   "postTitle": "Minor Update - 09-16-2026",
+   "patchDate": "2026-09-16",
+   "source": "steam",
+   "date": "2026-09-16T20:16:43Z",
+   "dateKind": "post-time",
+   "link": "https://store.steampowered.com/news/app/1422450/view/698776157349216434",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/698776157349216434",
+   "at": 1789589803,
+   "alsoPosted": [
+    {
+     "source": "forum",
+     "link": "https://forums.playdeadlock.com/threads/09-16-2026-update.162572/",
+     "guid": "urn:xenforo:thread:162572"
+    }
+   ]
+  },
+  {
+   "title": "08-22-2026",
+   "postTitle": "08-22-2026 Update",
+   "patchDate": "2026-08-22",
+   "source": "forum",
+   "date": "2026-08-22T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-09-16T22:41:28Z",
+   "link": "https://forums.playdeadlock.com/threads/08-22-2026-update.162571/",
+   "guid": "urn:xenforo:thread:162571",
+   "at": 1789598488
+  },
+  {
+   "title": "08-12-2026",
+   "postTitle": "08-12-2026 Update",
+   "patchDate": "2026-08-12",
+   "source": "forum",
+   "date": "2026-08-12T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-09-16T22:41:13Z",
+   "link": "https://forums.playdeadlock.com/threads/08-12-2026-update.162570/",
+   "guid": "urn:xenforo:thread:162570",
+   "at": 1789598473
+  },
+  {
+   "title": "06-30-2026",
+   "postTitle": "06-30-2026 Update",
+   "patchDate": "2026-06-30",
+   "source": "forum",
+   "date": "2026-06-30T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-07-28T20:28:07Z",
+   "link": "https://forums.playdeadlock.com/threads/06-30-2026-update.146261/",
+   "guid": "urn:xenforo:thread:146261",
+   "at": 1785270487
+  },
+  {
+   "title": "05-22-2026",
+   "postTitle": "05-22-2026 Update",
+   "patchDate": "2026-05-22",
+   "source": "forum",
+   "date": "2026-05-22T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-06-12T00:59:45Z",
+   "link": "https://forums.playdeadlock.com/threads/05-22-2026-update.135477/",
+   "guid": "urn:xenforo:thread:135477",
+   "at": 1781225985
+  },
+  {
+   "title": "04-30-2026",
+   "postTitle": "04-30-2026 Update",
+   "patchDate": "2026-04-30",
+   "source": "forum",
+   "date": "2026-04-30T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-05-01T23:49:47Z",
+   "link": "https://forums.playdeadlock.com/threads/04-30-2026-update.129989/",
+   "guid": "urn:xenforo:thread:129989",
+   "at": 1777679387
+  },
+  {
+   "title": "04-10-2026",
+   "postTitle": "04-10-2026 Update",
+   "patchDate": "2026-04-10",
+   "source": "forum",
+   "date": "2026-04-10T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-04-11T04:03:53Z",
+   "link": "https://forums.playdeadlock.com/threads/04-10-2026-update.125825/",
+   "guid": "urn:xenforo:thread:125825",
+   "at": 1775880233
+  },
+  {
+   "title": "03-25-2026",
+   "postTitle": "03-25-2026 Update",
+   "patchDate": "2026-03-25",
+   "source": "forum",
+   "date": "2026-03-25T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-03-31T01:35:20Z",
+   "link": "https://forums.playdeadlock.com/threads/03-25-2026-update.121766/",
+   "guid": "urn:xenforo:thread:121766",
+   "at": 1774920920
+  },
+  {
+   "title": "03-21-2026",
+   "postTitle": "03-21-2026 Update",
+   "patchDate": "2026-03-21",
+   "source": "forum",
+   "date": "2026-03-21T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-03-21T19:34:30Z",
+   "link": "https://forums.playdeadlock.com/threads/03-21-2026-update.120256/",
+   "guid": "urn:xenforo:thread:120256",
+   "at": 1774121670
+  },
+  {
+   "title": "03-06-2026",
+   "postTitle": "03-06-2026 Update",
+   "patchDate": "2026-03-06",
+   "source": "forum",
+   "date": "2026-03-06T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-03-11T04:39:40Z",
+   "link": "https://forums.playdeadlock.com/threads/03-06-2026-update.114328/",
+   "guid": "urn:xenforo:thread:114328",
+   "at": 1773203980
+  },
+  {
+   "title": "01-30-2026",
+   "postTitle": "01-30-2026 Update",
+   "patchDate": "2026-01-30",
+   "source": "forum",
+   "date": "2026-01-30T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-02-17T23:35:49Z",
+   "link": "https://forums.playdeadlock.com/threads/01-30-2026-update.102822/",
+   "guid": "urn:xenforo:thread:102822",
+   "at": 1771371349
+  },
+  {
+   "title": "12-29-2025",
+   "postTitle": "12-29-2025 Update",
+   "patchDate": "2025-12-29",
+   "source": "forum",
+   "date": "2025-12-29T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-01-21T02:10:58Z",
+   "link": "https://forums.playdeadlock.com/threads/12-29-2025-update.95233/",
+   "guid": "urn:xenforo:thread:95233",
+   "at": 1768961458
+  },
+  {
+   "title": "12-16-2025",
+   "postTitle": "12-16-2025 Update",
+   "patchDate": "2025-12-16",
+   "source": "forum",
+   "date": "2025-12-16T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-12-17T20:33:46Z",
+   "link": "https://forums.playdeadlock.com/threads/12-16-2025-update.93983/",
+   "guid": "urn:xenforo:thread:93983",
+   "at": 1766003626
+  },
+  {
+   "title": "11-21-2025",
+   "postTitle": "11-21-2025 Update",
+   "patchDate": "2025-11-21",
+   "source": "forum",
+   "date": "2025-11-21T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-12-04T00:34:27Z",
+   "link": "https://forums.playdeadlock.com/threads/11-21-2025-update.90383/",
+   "guid": "urn:xenforo:thread:90383",
+   "at": 1764808467
+  },
+  {
+   "title": "10-24-2025",
+   "postTitle": "10-24-2025 Update",
+   "patchDate": "2025-10-24",
+   "source": "forum",
+   "date": "2025-10-24T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-10-24T23:54:51Z",
+   "link": "https://forums.playdeadlock.com/threads/10-24-2025-update.87198/",
+   "guid": "urn:xenforo:thread:87198",
+   "at": 1761350091
+  },
+  {
+   "title": "10-02-2025",
+   "postTitle": "10-02-2025 Update",
+   "patchDate": "2025-10-02",
+   "source": "forum",
+   "date": "2025-10-02T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-10-05T18:05:47Z",
+   "link": "https://forums.playdeadlock.com/threads/10-02-2025-update.84332/",
+   "guid": "urn:xenforo:thread:84332",
+   "at": 1759687547
+  },
+  {
+   "title": "09-04-2025",
+   "postTitle": "09-04-2025 Update",
+   "patchDate": "2025-09-04",
+   "source": "forum",
+   "date": "2025-09-04T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-09-04T23:33:38Z",
+   "link": "https://forums.playdeadlock.com/threads/09-04-2025-update.80693/",
+   "guid": "urn:xenforo:thread:80693",
+   "at": 1757028818
+  },
+  {
+   "title": "08-18-2025",
+   "postTitle": "08-18-2025 Update",
+   "patchDate": "2025-08-18",
+   "source": "forum",
+   "date": "2025-08-18T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-08-30T00:36:28Z",
+   "link": "https://forums.playdeadlock.com/threads/08-18-2025-update.75046/",
+   "guid": "urn:xenforo:thread:75046",
+   "at": 1756514188
+  },
+  {
+   "title": "07-29-2025",
+   "postTitle": "07-29-2025 Update",
+   "patchDate": "2025-07-29",
+   "source": "forum",
+   "date": "2025-07-29T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-08-08T19:07:41Z",
+   "link": "https://forums.playdeadlock.com/threads/07-29-2025-update.72760/",
+   "guid": "urn:xenforo:thread:72760",
+   "at": 1754680061
+  }
+ ],
+ "forum": [
+  {
+   "title": "09-29-2026",
+   "date": "2026-09-29T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-10-15T03:12:00Z",
+   "link": "https://forums.playdeadlock.com/threads/09-29-2026.166726/",
+   "guid": "urn:xenforo:thread:166726"
+  },
+  {
+   "title": "09-16-2026 Update",
+   "date": "2026-09-16T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-09-16T22:41:46Z",
+   "link": "https://forums.playdeadlock.com/threads/09-16-2026-update.162572/",
+   "guid": "urn:xenforo:thread:162572"
+  },
+  {
+   "title": "08-22-2026 Update",
+   "date": "2026-08-22T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-09-16T22:41:28Z",
+   "link": "https://forums.playdeadlock.com/threads/08-22-2026-update.162571/",
+   "guid": "urn:xenforo:thread:162571"
+  },
+  {
+   "title": "08-12-2026 Update",
+   "date": "2026-08-12T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-09-16T22:41:13Z",
+   "link": "https://forums.playdeadlock.com/threads/08-12-2026-update.162570/",
+   "guid": "urn:xenforo:thread:162570"
+  },
+  {
+   "title": "06-30-2026 Update",
+   "date": "2026-06-30T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-07-28T20:28:07Z",
+   "link": "https://forums.playdeadlock.com/threads/06-30-2026-update.146261/",
+   "guid": "urn:xenforo:thread:146261"
+  },
+  {
+   "title": "05-22-2026 Update",
+   "date": "2026-05-22T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-06-12T00:59:45Z",
+   "link": "https://forums.playdeadlock.com/threads/05-22-2026-update.135477/",
+   "guid": "urn:xenforo:thread:135477"
+  },
+  {
+   "title": "04-30-2026 Update",
+   "date": "2026-04-30T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-05-01T23:49:47Z",
+   "link": "https://forums.playdeadlock.com/threads/04-30-2026-update.129989/",
+   "guid": "urn:xenforo:thread:129989"
+  },
+  {
+   "title": "04-10-2026 Update",
+   "date": "2026-04-10T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-04-11T04:03:53Z",
+   "link": "https://forums.playdeadlock.com/threads/04-10-2026-update.125825/",
+   "guid": "urn:xenforo:thread:125825"
+  },
+  {
+   "title": "03-25-2026 Update",
+   "date": "2026-03-25T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-03-31T01:35:20Z",
+   "link": "https://forums.playdeadlock.com/threads/03-25-2026-update.121766/",
+   "guid": "urn:xenforo:thread:121766"
+  },
+  {
+   "title": "03-21-2026 Update",
+   "date": "2026-03-21T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-03-21T19:34:30Z",
+   "link": "https://forums.playdeadlock.com/threads/03-21-2026-update.120256/",
+   "guid": "urn:xenforo:thread:120256"
+  },
+  {
+   "title": "03-06-2026 Update",
+   "date": "2026-03-06T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-03-11T04:39:40Z",
+   "link": "https://forums.playdeadlock.com/threads/03-06-2026-update.114328/",
+   "guid": "urn:xenforo:thread:114328"
+  },
+  {
+   "title": "01-30-2026 Update",
+   "date": "2026-01-30T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-02-17T23:35:49Z",
+   "link": "https://forums.playdeadlock.com/threads/01-30-2026-update.102822/",
+   "guid": "urn:xenforo:thread:102822"
+  },
+  {
+   "title": "12-29-2025 Update",
+   "date": "2025-12-29T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2026-01-21T02:10:58Z",
+   "link": "https://forums.playdeadlock.com/threads/12-29-2025-update.95233/",
+   "guid": "urn:xenforo:thread:95233"
+  },
+  {
+   "title": "12-16-2025 Update",
+   "date": "2025-12-16T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-12-17T20:33:46Z",
+   "link": "https://forums.playdeadlock.com/threads/12-16-2025-update.93983/",
+   "guid": "urn:xenforo:thread:93983"
+  },
+  {
+   "title": "11-21-2025 Update",
+   "date": "2025-11-21T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-12-04T00:34:27Z",
+   "link": "https://forums.playdeadlock.com/threads/11-21-2025-update.90383/",
+   "guid": "urn:xenforo:thread:90383"
+  },
+  {
+   "title": "10-24-2025 Update",
+   "date": "2025-10-24T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-10-24T23:54:51Z",
+   "link": "https://forums.playdeadlock.com/threads/10-24-2025-update.87198/",
+   "guid": "urn:xenforo:thread:87198"
+  },
+  {
+   "title": "10-02-2025 Update",
+   "date": "2025-10-02T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-10-05T18:05:47Z",
+   "link": "https://forums.playdeadlock.com/threads/10-02-2025-update.84332/",
+   "guid": "urn:xenforo:thread:84332"
+  },
+  {
+   "title": "09-04-2025 Update",
+   "date": "2025-09-04T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-09-04T23:33:38Z",
+   "link": "https://forums.playdeadlock.com/threads/09-04-2025-update.80693/",
+   "guid": "urn:xenforo:thread:80693"
+  },
+  {
+   "title": "08-18-2025 Update",
+   "date": "2025-08-18T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-08-30T00:36:28Z",
+   "link": "https://forums.playdeadlock.com/threads/08-18-2025-update.75046/",
+   "guid": "urn:xenforo:thread:75046"
+  },
+  {
+   "title": "07-29-2025 Update",
+   "date": "2025-07-29T00:00:00Z",
+   "dateKind": "title-date",
+   "lastPostAt": "2025-08-08T19:07:41Z",
+   "link": "https://forums.playdeadlock.com/threads/07-29-2025-update.72760/",
+   "guid": "urn:xenforo:thread:72760"
+  }
+ ],
+ "news": [
+  {
+   "source": "steam",
+   "title": "Shh... This Won't Hurt a Bit.",
+   "date": "2026-10-20T20:59:53Z",
+   "link": "https://store.steampowered.com/news/app/1422450/view/669505296465396778",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/669505296465396778"
+  },
+  {
+   "source": "steam",
+   "title": "Paint the Town",
+   "date": "2026-10-16T21:00:07Z",
+   "link": "https://store.steampowered.com/news/app/1422450/view/669505296465396531",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/669505296465396531"
+  },
+  {
+   "source": "forum",
+   "title": "09-29-2026",
+   "date": "2026-09-29T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-10-15T03:12:00Z",
+   "link": "https://forums.playdeadlock.com/threads/09-29-2026.166726/",
+   "guid": "urn:xenforo:thread:166726"
+  },
+  {
+   "source": "steam",
+   "title": " Minor Update - 10-14-2026",
+   "date": "2026-10-14T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-10-15T03:11:58Z",
+   "link": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/669505296465396213"
+  },
+  {
+   "source": "steam",
+   "title": "Fairfax Industries Employee Spotlight",
+   "date": "2026-10-13T20:59:55Z",
+   "link": "https://store.steampowered.com/news/app/1422450/view/703281660030880788",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/703281660030880788"
+  },
+  {
+   "source": "steam",
+   "title": "Make Your Move.",
+   "date": "2026-10-09T21:00:04Z",
+   "link": "https://store.steampowered.com/news/app/1422450/view/703281660030879519",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/703281660030879519"
+  },
+  {
+   "source": "steam",
+   "title": "Mind the Birds!",
+   "date": "2026-10-06T20:59:54Z",
+   "link": "https://store.steampowered.com/news/app/1422450/view/703281025618282871",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/703281025618282871"
+  },
+  {
+   "source": "steam",
+   "title": " Minor Update - 10-05-2026",
+   "date": "2026-10-05T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-10-05T23:05:32Z",
+   "link": "https://store.steampowered.com/news/app/1422450/view/703281025618282632",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/703281025618282632"
+  },
+  {
+   "source": "steam",
+   "title": "Listen up, Crumbums! Your King is here.",
+   "date": "2026-10-02T20:59:51Z",
+   "link": "https://store.steampowered.com/news/app/1422450/view/703281025618281704",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/703281025618281704"
+  },
+  {
+   "source": "steam",
+   "title": "City Never Sleeps",
+   "date": "2026-09-29T20:25:11Z",
+   "link": "https://store.steampowered.com/news/app/1422450/view/694273194214819790",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/694273194214819790"
+  },
+  {
+   "source": "forum",
+   "title": "09-16-2026 Update",
+   "date": "2026-09-16T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-09-16T22:41:46Z",
+   "link": "https://forums.playdeadlock.com/threads/09-16-2026-update.162572/",
+   "guid": "urn:xenforo:thread:162572"
+  },
+  {
+   "source": "forum",
+   "title": "08-22-2026 Update",
+   "date": "2026-08-22T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-09-16T22:41:28Z",
+   "link": "https://forums.playdeadlock.com/threads/08-22-2026-update.162571/",
+   "guid": "urn:xenforo:thread:162571"
+  },
+  {
+   "source": "forum",
+   "title": "08-12-2026 Update",
+   "date": "2026-08-12T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-09-16T22:41:13Z",
+   "link": "https://forums.playdeadlock.com/threads/08-12-2026-update.162570/",
+   "guid": "urn:xenforo:thread:162570"
+  },
+  {
+   "source": "steam",
+   "title": " Minor Update - 09-16-2026",
+   "date": "2026-09-16T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-09-16T20:16:43Z",
+   "link": "https://store.steampowered.com/news/app/1422450/view/698776157349216434",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/698776157349216434"
+  },
+  {
+   "source": "forum",
+   "title": "06-30-2026 Update",
+   "date": "2026-06-30T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-07-28T20:28:07Z",
+   "link": "https://forums.playdeadlock.com/threads/06-30-2026-update.146261/",
+   "guid": "urn:xenforo:thread:146261"
+  },
+  {
+   "source": "forum",
+   "title": "05-22-2026 Update",
+   "date": "2026-05-22T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-06-12T00:59:45Z",
+   "link": "https://forums.playdeadlock.com/threads/05-22-2026-update.135477/",
+   "guid": "urn:xenforo:thread:135477"
+  },
+  {
+   "source": "forum",
+   "title": "04-30-2026 Update",
+   "date": "2026-04-30T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-05-01T23:49:47Z",
+   "link": "https://forums.playdeadlock.com/threads/04-30-2026-update.129989/",
+   "guid": "urn:xenforo:thread:129989"
+  },
+  {
+   "source": "forum",
+   "title": "04-10-2026 Update",
+   "date": "2026-04-10T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-04-11T04:03:53Z",
+   "link": "https://forums.playdeadlock.com/threads/04-10-2026-update.125825/",
+   "guid": "urn:xenforo:thread:125825"
+  },
+  {
+   "source": "forum",
+   "title": "03-25-2026 Update",
+   "date": "2026-03-25T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-03-31T01:35:20Z",
+   "link": "https://forums.playdeadlock.com/threads/03-25-2026-update.121766/",
+   "guid": "urn:xenforo:thread:121766"
+  },
+  {
+   "source": "forum",
+   "title": "03-21-2026 Update",
+   "date": "2026-03-21T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-03-21T19:34:30Z",
+   "link": "https://forums.playdeadlock.com/threads/03-21-2026-update.120256/",
+   "guid": "urn:xenforo:thread:120256"
+  },
+  {
+   "source": "forum",
+   "title": "03-06-2026 Update",
+   "date": "2026-03-06T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-03-11T04:39:40Z",
+   "link": "https://forums.playdeadlock.com/threads/03-06-2026-update.114328/",
+   "guid": "urn:xenforo:thread:114328"
+  },
+  {
+   "source": "forum",
+   "title": "01-30-2026 Update",
+   "date": "2026-01-30T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-02-17T23:35:49Z",
+   "link": "https://forums.playdeadlock.com/threads/01-30-2026-update.102822/",
+   "guid": "urn:xenforo:thread:102822"
+  },
+  {
+   "source": "forum",
+   "title": "12-29-2025 Update",
+   "date": "2025-12-29T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2026-01-21T02:10:58Z",
+   "link": "https://forums.playdeadlock.com/threads/12-29-2025-update.95233/",
+   "guid": "urn:xenforo:thread:95233"
+  },
+  {
+   "source": "forum",
+   "title": "12-16-2025 Update",
+   "date": "2025-12-16T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2025-12-17T20:33:46Z",
+   "link": "https://forums.playdeadlock.com/threads/12-16-2025-update.93983/",
+   "guid": "urn:xenforo:thread:93983"
+  },
+  {
+   "source": "forum",
+   "title": "11-21-2025 Update",
+   "date": "2025-11-21T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2025-12-04T00:34:27Z",
+   "link": "https://forums.playdeadlock.com/threads/11-21-2025-update.90383/",
+   "guid": "urn:xenforo:thread:90383"
+  },
+  {
+   "source": "forum",
+   "title": "10-24-2025 Update",
+   "date": "2025-10-24T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2025-10-24T23:54:51Z",
+   "link": "https://forums.playdeadlock.com/threads/10-24-2025-update.87198/",
+   "guid": "urn:xenforo:thread:87198"
+  },
+  {
+   "source": "forum",
+   "title": "10-02-2025 Update",
+   "date": "2025-10-02T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2025-10-05T18:05:47Z",
+   "link": "https://forums.playdeadlock.com/threads/10-02-2025-update.84332/",
+   "guid": "urn:xenforo:thread:84332"
+  },
+  {
+   "source": "forum",
+   "title": "09-04-2025 Update",
+   "date": "2025-09-04T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2025-09-04T23:33:38Z",
+   "link": "https://forums.playdeadlock.com/threads/09-04-2025-update.80693/",
+   "guid": "urn:xenforo:thread:80693"
+  },
+  {
+   "source": "forum",
+   "title": "08-18-2025 Update",
+   "date": "2025-08-18T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2025-08-30T00:36:28Z",
+   "link": "https://forums.playdeadlock.com/threads/08-18-2025-update.75046/",
+   "guid": "urn:xenforo:thread:75046"
+  },
+  {
+   "source": "forum",
+   "title": "07-29-2025 Update",
+   "date": "2025-07-29T00:00:00Z",
+   "dateKind": "title-date",
+   "postedAt": "2025-08-08T19:07:41Z",
+   "link": "https://forums.playdeadlock.com/threads/07-29-2025-update.72760/",
+   "guid": "urn:xenforo:thread:72760"
+  }
+ ]
+}

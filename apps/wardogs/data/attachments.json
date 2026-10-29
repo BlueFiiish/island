@@ -1,0 +1,2686 @@
+[
+ {
+  "id": "ak74-75-rnd-drum-magazine",
+  "name": "AK74 75 RND Drum Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "rounds": 75,
+  "weightKg": 2.08,
+  "wardogLevel": "Assault Lvl 36",
+  "levelTrack": "Assault",
+  "caliber": "5.45x39mm",
+  "weapons": [
+   "AK74"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AK74",
+  "summary": "Magazine - caliber 5.45x39mm, fits AK74, rounds 75.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A 75-round drum for the AK74 and the heaviest magazine on record here at 2.08 kg.",
+   "whyItMatters": "It holds more than triple a normal rifle load, so a fight can run long without you ever going empty, but that is two kilos of weight you carry for the whole match and the source lists no price for it.",
+   "whenToUseIt": "Take it when your job is to sit on a doorway or cover a drill and keep firing. Leave it off any loadout built around moving light."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-ak74-75-rnd-drum-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ak74-30-rnd-magazine",
+  "name": "AK74 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "rounds": 30,
+  "unlockedByDefault": true,
+  "unlockPrice": 0,
+  "caliber": "5.45x39mm",
+  "weapons": [
+   "AK74"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AK74",
+  "summary": "Magazine - caliber 5.45x39mm, fits AK74, rounds 30, unlock $0.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The standard 30-round 5.45x39mm magazine for the AK74, unlocked from the start with a $0 unlock.",
+   "whyItMatters": "Thirty rounds is the working load for this rifle, and because it is open from your first match you are never locked out of the gun's basic feed. The source lists no vendor price for it, and the 75-round drum for the same rifle sits behind Assault Level 36.",
+   "whenToUseIt": "Treat it as the default AK74 magazine until fights keep outlasting it. The drum is a later step for someone committed to the rifle."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-ak74-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amp-9-15-rnd-magazine",
+  "name": "AMP-9 15 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 30,
+  "rounds": 15,
+  "wardogLevel": "Medic Lvl 20",
+  "levelTrack": "Medic",
+  "unlockedWith": "AMP-9",
+  "caliber": "9x19mm",
+  "weapons": [
+   "AMP-9"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AMP-9",
+  "summary": "Magazine - caliber 9x19mm, fits AMP-9, rounds 15, $30.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The smallest AMP-9 magazine, fifteen rounds of 9mm for thirty dollars.",
+   "whyItMatters": "It is the cheapest way to get the gun firing at all, which is what you want on a spawn where the money is going into armour instead.",
+   "whenToUseIt": "Buy it when the AMP-9 is a backup you hope never to fire, and trade up the moment you can spare a hundred dollars."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amp-9-15-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amp-9-30-rnd-magazine",
+  "name": "AMP-9 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 100,
+  "rounds": 30,
+  "wardogLevel": "Medic Lvl 30",
+  "levelTrack": "Medic",
+  "unlockPrice": 50000,
+  "caliber": "9x19mm",
+  "weapons": [
+   "AMP-9"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AMP-9",
+  "summary": "Magazine - caliber 9x19mm, fits AMP-9, rounds 30, $100.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The middle AMP-9 magazine at thirty rounds of 9mm for a hundred dollars.",
+   "whyItMatters": "Thirty rounds is enough to finish a two-man fight without reloading, and it costs a fifth of what a decent optic does.",
+   "whenToUseIt": "Make this the default AMP-9 magazine once you are earning steadily. Drop to the fifteen only when you are genuinely broke."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amp-9-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amp-9-50-rnd-magazine",
+  "name": "AMP-9 50 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 180,
+  "rounds": 50,
+  "wardogLevel": "Medic Lvl 45",
+  "levelTrack": "Medic",
+  "unlockPrice": 75000,
+  "caliber": "9x19mm",
+  "weapons": [
+   "AMP-9"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AMP-9",
+  "summary": "Magazine - caliber 9x19mm, fits AMP-9, rounds 50, $180.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The largest confirmed AMP-9 magazine, fifty rounds of 9mm at a hundred and eighty dollars.",
+   "whyItMatters": "It roughly triples the fifteen-round load for six times the price, which is worth it only if you are actually emptying magazines rather than dying with one.",
+   "whenToUseIt": "Buy it when you are holding an objective and getting rushed by more than one person at a time."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amp-9-50-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amp-9-20-rnd-magazine",
+  "name": "AMP-9 20 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 70,
+  "rounds": 20,
+  "wardogLevel": "Medic Lvl 25",
+  "levelTrack": "Medic",
+  "unlockPrice": 12500,
+  "tags": [
+   "Caliber not confirmed"
+  ],
+  "weapons": [
+   "AMP-9"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AMP-9",
+  "summary": "Magazine - fits AMP-9, rounds 20, $70.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A twenty-round AMP-9 magazine at seventy dollars whose calibre the source could not confirm.",
+   "whyItMatters": "It sits awkwardly between the fifteen and the thirty: five more rounds than the cheap one for more than double the money, and the missing calibre line means nobody has confirmed it feeds the same ammunition as its siblings.",
+   "whenToUseIt": "Skip it unless the shop is out of the thirty. It is the one AMP-9 magazine whose calibre the source has not confirmed."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amp-9-20-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amr-50-10-rnd-magazine",
+  "name": "AMR 50 10 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 30,
+  "rounds": 10,
+  "caliber": ".50 Cal",
+  "weapons": [
+   "AMR 50"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "AMR 50",
+  "summary": "Magazine - caliber .50 Cal, fits AMR 50, rounds 10, $30.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A ten-round magazine of .50 calibre for the AMR 50, and at thirty dollars one of the cheapest items on the page.",
+   "whyItMatters": "Ten rounds is a lot for a rifle this size, and the price means feeding an anti-material rifle is never the expensive part of the loadout.",
+   "whenToUseIt": "Buy it any time you take the AMR 50 out. There is no alternative confirmed for the gun, so this is simply what it costs to run it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amr-50-10-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "deagle-7-rnd-magazine",
+  "name": "Deagle 7 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 50,
+  "rounds": 7,
+  "levelTrack": "WARDOG",
+  "wardogLevelConfirmed": false,
+  "wardogLevelPossiblyStale": 90,
+  "caliber": ".50AE",
+  "weapons": [
+   "Deagle"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Deagle",
+  "summary": "Magazine - caliber .50AE, fits Deagle, rounds 7, $50.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A seven-round .50AE magazine for the Deagle, held behind WARDOG Level 90.",
+   "whyItMatters": "Fifty dollars for the magazine is nothing; the ninety levels in front of it are the real price, and that is the honest reason most players never see this item.",
+   "whenToUseIt": "This is a late-account purchase. Until you are near the top of the level track, plan your pistol slot around something you can actually buy."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-deagle-7-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "evolys-50-rnd-box",
+  "name": "Evolys 50 RND Box",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 110,
+  "rounds": 50,
+  "wardogLevel": "Support Lvl 30",
+  "levelTrack": "Support",
+  "unlockedWith": "Evo-3 Ultra",
+  "caliber": ".308 Win",
+  "weapons": [
+   "Evo-3 Ultra"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Evo-3 Ultra",
+  "summary": "Magazine - caliber .308 Win, fits Evo-3 Ultra, rounds 50, $110.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A 50-round .308 Win box for the Evo-3 Ultra, priced at $110 and opened at Support Level 30.",
+   "whyItMatters": "It has no separate unlock price because it comes with the Evo-3 Ultra's own unlock, so the box adds just its $110 price to the cost of the gun. Fifty rounds is a long belt for a .308, which suits a gun used to hold a position.",
+   "whenToUseIt": "Take it whenever the Evo-3 Ultra is your Support weapon. There is no other Evo-3 Ultra magazine in the record to choose between."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-evolys-50-rnd-box.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "fal-and-bmr-308-20-rnd-magazine",
+  "name": "FAL & BMR-308 20 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 150,
+  "rounds": 20,
+  "caliber": ".308 Win",
+  "weapons": [
+   "FAL",
+   "BMR-308"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "FAL & BMR-308",
+  "summary": "Magazine - caliber .308 Win, fits FAL & BMR-308, rounds 20, $150.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A twenty-round .308 magazine that the source confirms on both the FAL and the BMR-308.",
+   "whyItMatters": "One magazine covering two rifles means the hundred and fifty dollars keeps working when you switch guns, instead of being stranded on a weapon you stopped taking.",
+   "whenToUseIt": "Buy it early if either rifle is in your rotation. It is the cheaper of the two confirmed options for that pair."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-fal-and-bmr-308-20-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "fal-30-rnd-magazine",
+  "name": "FAL 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 250,
+  "rounds": 30,
+  "tags": [
+   "Caliber not confirmed"
+  ],
+  "weapons": [
+   "FAL"
+  ],
+  "weaponsSource": "the item name",
+  "weaponGroup": "FAL & BMR-308",
+  "summary": "Magazine - fits FAL & BMR-308, rounds 30, $250.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirty-round magazine grouped with the FAL and BMR-308 at two hundred and fifty dollars, with no confirmed calibre line.",
+   "whyItMatters": "Ten extra rounds cost a hundred dollars more than the twenty, so it only pays for itself if you routinely reload mid-fight rather than between them.",
+   "whenToUseIt": "Take it on a loadout where you expect to hold ground with a hard-hitting rifle. On a hit-and-move plan the twenty is the better buy."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-fal-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "galil-35-rnd-magazine",
+  "name": "Galil 35 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 60,
+  "rounds": 35,
+  "caliber": "5.56x45mm",
+  "weapons": [
+   "GALIL"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Galil",
+  "summary": "Magazine - caliber 5.56x45mm, fits Galil, rounds 35, $60.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirty-five round 5.56 magazine for the GALIL at sixty dollars.",
+   "whyItMatters": "Five more rounds than a standard rifle load for a price you can pay on almost any spawn makes this the sensible baseline for the gun.",
+   "whenToUseIt": "Fit this by default whenever you take the GALIL, and only move up if your fights keep outlasting the magazine."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-galil-35-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "galil-50-rnd-magazine",
+  "name": "Galil 50 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 110,
+  "rounds": 50,
+  "caliber": "5.56x45mm",
+  "weapons": [
+   "GALIL"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Galil",
+  "summary": "Magazine - caliber 5.56x45mm, fits Galil, rounds 50, $110.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A fifty-round 5.56 magazine for the GALIL at a hundred and ten dollars.",
+   "whyItMatters": "It is fifteen more rounds for fifty more dollars, which is one of the better value steps on the whole magazine list.",
+   "whenToUseIt": "Move to it once you are winning fights and dying to the reload after them, particularly when you are the one pushing into a held building."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-galil-50-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ggx-33-rnd-magazine",
+  "name": "GGX 33 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 70,
+  "rounds": 33,
+  "wardogLevel": 23,
+  "levelTrack": "WARDOG",
+  "unlockPrice": 10000,
+  "caliber": "9x19mm",
+  "weapons": [
+   "GGX 17",
+   "GGX 18"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "GGX 17 And GGX 18",
+  "summary": "Magazine - caliber 9x19mm, fits GGX 17 And GGX 18, rounds 33, $70.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirty-three round 9mm magazine shared by the GGX 17 and GGX 18, gated at WARDOG Level 23 with a ten thousand dollar unlock.",
+   "whyItMatters": "The seventy dollar shop price is trivial next to the ten thousand you pay once to open it, so treat this as a milestone purchase rather than a loadout decision.",
+   "whenToUseIt": "Unlock it when you have a comfortable bank and you like either GGX enough to keep taking it. Buying it to try the gun once is the wrong order."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-ggx-33-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ggx-50-rnd-drum-magazine",
+  "name": "GGX 50 RND Drum Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 110,
+  "rounds": 50,
+  "wardogLevel": 80,
+  "levelTrack": "WARDOG",
+  "caliber": "9x19mm",
+  "weapons": [
+   "GGX 17",
+   "GGX 18"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "GGX 17 And GGX 18",
+  "summary": "Magazine - caliber 9x19mm, fits GGX 17 And GGX 18, rounds 50, $110.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A fifty-round drum for the GGX 17 and GGX 18, sitting behind WARDOG Level 80.",
+   "whyItMatters": "It is the largest pistol-calibre magazine confirmed for that pair, and the level gate puts it far past the point where you are still learning the gun.",
+   "whenToUseIt": "A late-account option for a player who has already decided the GGX is their sidearm. Everyone else should plan around the thirty-three."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-ggx-50-rnd-drum-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m14-10-rnd-magazine",
+  "name": "M14 10 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 60,
+  "rounds": 10,
+  "wardogLevel": "Recon Lvl 25",
+  "levelTrack": "Recon",
+  "unlockedWith": "M14",
+  "caliber": ".308 Win",
+  "weapons": [
+   "M14"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "M14",
+  "summary": "Magazine - caliber .308 Win, fits M14, rounds 10, $60.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The 10-round M14 magazine, 10 rounds of .308 Win at $60, opened at Recon Level 25 together with the rifle.",
+   "whyItMatters": "It comes with the M14's own unlock, so there is no separate unlock bill, and the $60 price is low next to the $110 and $180 larger magazines. Ten rounds means reloading between targets, which fits a rifle you fire carefully.",
+   "whenToUseIt": "Use it as your starter M14 magazine while you learn the rifle or save money. Move up to the 20 or 30 once you keep running dry in a fight."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-m14-10-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m14-20-rnd-magazine",
+  "name": "M14 20 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 110,
+  "rounds": 20,
+  "wardogLevel": "Recon Lvl 31",
+  "levelTrack": "Recon",
+  "unlockPrice": 27500,
+  "caliber": ".308 Win",
+  "weapons": [
+   "M14"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "M14",
+  "summary": "Magazine - caliber .308 Win, fits M14, rounds 20, $110.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A 20-round .308 Win magazine for the M14, priced at $110, opened at Recon Level 31 for a $27,500 unlock.",
+   "whyItMatters": "Ten more rounds than the 10-round for $50 more, but you pay a one-time $27,500 to open it, which is a milestone purchase rather than a loadout tweak.",
+   "whenToUseIt": "Unlock it once the M14 is a rifle you keep taking and your fights run past ten rounds. If you are still testing the gun, the 10-round is enough."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-m14-20-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m14-30-rnd-magazine",
+  "name": "M14 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 180,
+  "rounds": 30,
+  "wardogLevel": "Recon Lvl 36",
+  "levelTrack": "Recon",
+  "unlockPrice": 50000,
+  "caliber": ".308 Win",
+  "weapons": [
+   "M14"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "M14",
+  "summary": "Magazine - caliber .308 Win, fits M14, rounds 30, $180.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The 30-round M14 magazine, 30 rounds of .308 Win at $180, opened at Recon Level 36 for a $50,000 unlock.",
+   "whyItMatters": "It holds three times the 10-round load, but the $50,000 unlock is far above the 20-round's $27,500, so it is a commitment to the rifle.",
+   "whenToUseIt": "Worth buying when the M14 is your main weapon and you want to sustain fire in a held position. Skip it if you play the rifle as a patient single-shot marksman gun."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-m14-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m1911-7-rnd-magazine",
+  "name": "M1911 7 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 20,
+  "rounds": 7,
+  "wardogLevel": 40,
+  "levelTrack": "WARDOG",
+  "caliber": ".45 ACP",
+  "weapons": [
+   "M1911"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "M1911",
+  "summary": "Magazine - caliber .45 ACP, fits M1911, rounds 7, $20.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A seven-round .45 magazine for the M1911, twenty dollars, unlocked at WARDOG Level 40.",
+   "whyItMatters": "At twenty dollars it is one of the cheapest magazines on the page, but the level gate means the M1911 is not a starting-account pistol no matter how little the magazine costs.",
+   "whenToUseIt": "Once you have the level, this is the everyday load for the gun. Money is never the reason to leave it behind."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-m1911-7-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m1911-10-rnd-magazine",
+  "name": "M1911 10 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 35,
+  "rounds": 10,
+  "wardogLevel": 53,
+  "levelTrack": "WARDOG",
+  "caliber": ".45 ACP",
+  "weapons": [
+   "M1911"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "M1911",
+  "summary": "Magazine - caliber .45 ACP, fits M1911, rounds 10, $35.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A ten-round .45 magazine for the M1911 at thirty-five dollars, unlocked at WARDOG Level 53.",
+   "whyItMatters": "Three more rounds for fifteen more dollars is close to free, so the only real cost is the thirteen extra levels over the seven-round version.",
+   "whenToUseIt": "Switch to it the moment you reach the level. There is no situation where the smaller magazine is the better choice once both are open."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-m1911-10-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m249-100-rnd-fabric-magazine",
+  "name": "M249 100 RND Fabric Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 200,
+  "rounds": 100,
+  "caliber": "5.56x45mm",
+  "weapons": [
+   "M249 SAW"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "M249",
+  "summary": "Magazine - caliber 5.56x45mm, fits M249, rounds 100, $200.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A hundred-round 5.56 pouch for the M249 SAW at two hundred dollars.",
+   "whyItMatters": "A hundred rounds is what makes a machine gun a machine gun: you can keep a lane shut for a long time without the reload that lets someone move.",
+   "whenToUseIt": "Buy it whenever you take the M249 out to hold ground. If you cannot afford it, take a rifle instead of an underfed machine gun."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-m249-100-rnd-fabric-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m249-200-rnd-box",
+  "name": "M249 200 RND Box",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "rounds": 200,
+  "wardogLevel": "Support Lvl 26",
+  "levelTrack": "Support",
+  "caliber": "5.56x45mm",
+  "weapons": [
+   "M249 SAW"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "M249",
+  "summary": "Magazine - caliber 5.56x45mm, fits M249, rounds 200.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A 200-round 5.56x45mm box for the M249 SAW, opened at Support Level 26.",
+   "whyItMatters": "It holds 200 rounds against the fabric magazine's 100, so a lane can stay shut longer before the reload. The record lists no price, unlock cost or weight for it, so you cannot yet plan its cost or its burden.",
+   "whenToUseIt": "Choose it when you hold a position with the M249 and want fewer pauses. Check its price and weight in game before you commit."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-m249-200-rnd-box.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mk22-5-rnd-magazine",
+  "name": "MK22 5 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 30,
+  "rounds": 5,
+  "caliber": ".308 Win",
+  "weapons": [
+   "MK22"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "MK22",
+  "summary": "Magazine - caliber .308 Win, fits MK22, rounds 5, $30.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A five-round .308 magazine for the MK22 at thirty dollars.",
+   "whyItMatters": "Five rounds sounds thin until you remember what the gun is for: you are taking measured shots at distance, not spraying, and reloading between targets is normal.",
+   "whenToUseIt": "Take it any time the MK22 is your rifle. Position and patience matter far more here than magazine size."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mk22-5-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mosin-standard-mag",
+  "name": "Mosin Standard Mag",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "weapons": [
+   "Mosin Nagant"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Mosin",
+  "summary": "Magazine - fits Mosin.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The standard magazine for the Mosin Nagant, listed by name with no price, no round count and no calibre confirmed.",
+   "whyItMatters": "It appears in a table that states no compatibility line at all, so everything about it except the name is still unknown, and pretending otherwise would be guessing.",
+   "whenToUseIt": "Treat the Mosin as a rifle whose feeding options are undocumented for now, and re-check this entry as the source updates."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mosin-standard-mag.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mp43-internal-mag",
+  "name": "MP43 Internal Mag",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "weapons": [
+   "MP43"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "MP43",
+  "summary": "Magazine - fits MP43.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The MP43's built-in magazine, listed with no price, no round count and no confirmed calibre.",
+   "whyItMatters": "Being internal means it is part of the gun rather than something you shop for, so it is not really a purchase decision at all.",
+   "whenToUseIt": "Nothing to buy and nothing to choose. It is here so the MP43's feed is documented rather than missing."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mp43-internal-mag.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mp5-20-rnd-magazine",
+  "name": "MP5 20 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 70,
+  "rounds": 20,
+  "caliber": "9x19mm",
+  "weapons": [
+   "MP5"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "MP5",
+  "summary": "Magazine - caliber 9x19mm, fits MP5, rounds 20, $70.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A twenty-round 9mm magazine for the MP5 at seventy dollars.",
+   "whyItMatters": "It is the entry price for running the MP5 at all, and twenty rounds of a fast-firing gun goes quickly once a fight starts.",
+   "whenToUseIt": "Only when money is genuinely tight. On any normal spawn the thirty is worth the extra thirty dollars."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mp5-20-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mp5-30-rnd-magazine",
+  "name": "MP5 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 100,
+  "rounds": 30,
+  "wardogLevel": "Medic Lvl 8",
+  "levelTrack": "Medic",
+  "unlockPrice": 10000,
+  "caliber": "9x19mm",
+  "weapons": [
+   "MP5"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "MP5",
+  "summary": "Magazine - caliber 9x19mm, fits MP5, rounds 30, $100.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirty-round 9mm magazine for the MP5 at a hundred dollars.",
+   "whyItMatters": "This is the balanced option for the gun: enough rounds to finish a close-range fight, at a price that still leaves you money for armour.",
+   "whenToUseIt": "Make it your default MP5 magazine. Move off it only for a specific reason, in either direction."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mp5-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mp5-50-rnd-magazine",
+  "name": "MP5 50 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 230,
+  "rounds": 50,
+  "wardogLevel": "Medic Lvl 29",
+  "levelTrack": "Medic",
+  "unlockPrice": 50000,
+  "caliber": "9x19mm",
+  "weapons": [
+   "MP5"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "MP5",
+  "summary": "Magazine - caliber 9x19mm, fits MP5, rounds 50, $230.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A fifty-round 9mm magazine for the MP5 at two hundred and thirty dollars.",
+   "whyItMatters": "It more than doubles the twenty-round load, and on a gun that empties this fast the reload you skip is often the reason you survive the second attacker.",
+   "whenToUseIt": "Worth it when you are clearing buildings or defending a room. It is the most expensive 9mm magazine on the page, so buy it deliberately."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mp5-50-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pkm-100-rnd-box",
+  "name": "PKM 100 RND Box",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 100,
+  "rounds": 100,
+  "weapons": [
+   "PKM"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "PKM",
+  "summary": "Magazine - fits PKM, rounds 100, $100.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A hundred-round box for the PKM at a hundred dollars, with no confirmed calibre line in the source.",
+   "whyItMatters": "It is the cheapest hundred-round feed here by a wide margin, which makes sustained fire from the PKM unusually affordable.",
+   "whenToUseIt": "Buy it whenever the PKM is your gun. The unconfirmed calibre is a documentation gap, not a reason to run the weapon empty."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pkm-100-rnd-box.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pp-19-bizon-53-rnd-magazine",
+  "name": "PP-19 Bizon 53 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 200,
+  "rounds": 53,
+  "unlockedByDefault": true,
+  "unlockPrice": 0,
+  "caliber": "9x19mm",
+  "weapons": [
+   "PP-19 Bizon"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "PP-19 Bizon",
+  "summary": "Magazine - caliber 9x19mm, fits PP-19 Bizon, rounds 53, $200.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "The 53-round 9x19mm magazine for the PP-19 Bizon, priced at $200 and unlocked from the start.",
+   "whyItMatters": "Fifty-three rounds is a big load for a submachine gun, and it is open from the start with a $0 unlock, so the cost is the $200 you spend each time you take it into a match. No other Bizon magazine is listed in the record.",
+   "whenToUseIt": "Take it whenever you run the Bizon. Nothing is gated, so there is no decision other than whether you can afford the $200."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pp-19-bizon-53-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pp-19-vityaz-10-rnd-magazine",
+  "name": "PP-19 Vityaz 10 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 25,
+  "rounds": 10,
+  "wardogLevel": "Medic Lvl 17",
+  "levelTrack": "Medic",
+  "unlockPrice": 10000,
+  "caliber": "9x19mm",
+  "weapons": [
+   "PP-19 Vityaz"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "PP-19 Vityaz",
+  "summary": "Magazine - caliber 9x19mm, fits PP-19 Vityaz, rounds 10, $25.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A ten-round 9mm magazine for the PP-19 Vityaz at twenty-five dollars.",
+   "whyItMatters": "Ten rounds in a submachine gun is very little; this is a price tag rather than a plan, and it exists for the spawn where you have almost nothing.",
+   "whenToUseIt": "A stopgap only. Replace it as soon as you have earned enough for the thirty or the fifty."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pp-19-vityaz-10-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pp-19-vityaz-30-rnd-magazine",
+  "name": "PP-19 Vityaz 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "rounds": 30,
+  "caliber": "9x19mm",
+  "weapons": [
+   "PP-19 Vityaz"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "PP-19 Vityaz",
+  "summary": "Magazine - caliber 9x19mm, fits PP-19 Vityaz, rounds 30.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirty-round 9mm magazine for the PP-19 Vityaz, listed with no confirmed price.",
+   "whyItMatters": "Thirty rounds is the sensible working load for the gun, and the missing price is a gap in the source rather than a sign the item is unavailable.",
+   "whenToUseIt": "Plan around this as the standard PP-19 magazine, and check the actual shop cost yourself in game until the source fills the number in."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pp-19-vityaz-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pp-19-vityaz-50-rnd-magazine",
+  "name": "PP-19 Vityaz 50 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 200,
+  "rounds": 50,
+  "wardogLevel": "Medic Lvl 21",
+  "levelTrack": "Medic",
+  "unlockPrice": 15000,
+  "caliber": "9x19mm",
+  "weapons": [
+   "PP-19 Vityaz"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "PP-19 Vityaz",
+  "summary": "Magazine - caliber 9x19mm, fits PP-19 Vityaz, rounds 50, $200.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A fifty-round 9mm magazine for the PP-19 Vityaz at two hundred dollars.",
+   "whyItMatters": "It is five times the capacity of the ten-round option for eight times the money, so it pays off only if you are consistently living long enough to use it.",
+   "whenToUseIt": "Take it into an objective fight where you expect several people, not onto a loadout you are still learning the gun on."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pp-19-vityaz-50-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "super-45-13-rnd-magazine",
+  "name": "Super-45 13 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 30,
+  "rounds": 13,
+  "caliber": ".45 ACP",
+  "weapons": [
+   "Super-45"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Super-45",
+  "summary": "Magazine - caliber .45 ACP, fits Super-45, rounds 13, $30.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirteen-round .45 magazine for the Super-45 at thirty dollars.",
+   "whyItMatters": "It is the cheap way into the gun, and thirteen heavy rounds is not nothing, but it will run dry in one committed exchange.",
+   "whenToUseIt": "Use it while you are testing the Super-45 or saving for something else, and move up once the gun has earned a permanent slot."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-super-45-13-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "super-45-30-rnd-magazine",
+  "name": "Super-45 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 80,
+  "rounds": 30,
+  "wardogLevel": "Medic Lvl 43",
+  "levelTrack": "Medic",
+  "caliber": ".45 ACP",
+  "weapons": [
+   "Super-45"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Super-45",
+  "summary": "Magazine - caliber .45 ACP, fits Super-45, rounds 30, $80.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A thirty-round .45 magazine for the Super-45 at eighty dollars.",
+   "whyItMatters": "It more than doubles the small magazine for fifty extra dollars, which is the best value step in the Super-45 family.",
+   "whenToUseIt": "This is the everyday choice. Only go past it if you keep dying in the middle of a reload."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-super-45-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "super-45-40-rnd-drum-magazine",
+  "name": "Super-45 40 RND Drum Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 280,
+  "rounds": 40,
+  "caliber": ".45 ACP",
+  "weapons": [
+   "Super-45"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "Super-45",
+  "summary": "Magazine - caliber .45 ACP, fits Super-45, rounds 40, $280.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A forty-round drum for the Super-45 at two hundred and eighty dollars, the most expensive magazine on the page.",
+   "whyItMatters": "Ten rounds over the thirty for two hundred extra dollars is a steep rate, and that money competes directly with armour and a sight.",
+   "whenToUseIt": "Only on a rich loadout where you are holding a room and the reload is genuinely what has been killing you."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-super-45-40-rnd-drum-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "sv98-10-rnd-magazine",
+  "name": "SV98 10 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 40,
+  "rounds": 10,
+  "weapons": [
+   "SV98"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "SV98",
+  "summary": "Magazine - fits SV98, rounds 10, $40.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A ten-round magazine for the SV98 at forty dollars, from a table that states no calibre.",
+   "whyItMatters": "Ten rounds is generous for a bolt-action rifle, and forty dollars means ammunition capacity is never what limits your sniping.",
+   "whenToUseIt": "Buy it whenever you take the SV98. Where you set up matters far more than how many rounds you are holding."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-sv98-10-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "svd-5-rnd-magazine",
+  "name": "SVD 5 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 20,
+  "rounds": 5,
+  "caliber": "7.62x54mmR",
+  "weapons": [
+   "SVD"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "SVD",
+  "summary": "Magazine - caliber 7.62x54mmR, fits SVD, rounds 5, $20.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A five-round 7.62x54mmR magazine for the SVD at twenty dollars.",
+   "whyItMatters": "It is the cheapest way to put the SVD in the field, but five rounds means one missed pair of shots and you are reloading in the open.",
+   "whenToUseIt": "Fine on a broke spawn or a patient position. Otherwise the ten-round version is only twenty dollars more."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-svd-5-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "svd-10-rnd-magazine",
+  "name": "SVD 10 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 40,
+  "rounds": 10,
+  "wardogLevel": "Recon Lvl 17",
+  "levelTrack": "Recon",
+  "weapons": [
+   "SVD"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "SVD",
+  "summary": "Magazine - fits SVD, rounds 10, $40.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A ten-round SVD magazine at forty dollars, listed without a confirmed calibre.",
+   "whyItMatters": "Doubling the load for twenty dollars is close to free, and on a semi-automatic marksman rifle those extra rounds are the follow-up shots you actually take.",
+   "whenToUseIt": "Default to this over the five whenever you can spare the money, which is almost always."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-svd-10-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "tcx-spr-28-rnd-magazine",
+  "name": "TCX-SPR 28 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 50,
+  "rounds": 28,
+  "wardogLevel": "Assault Lvl 20",
+  "levelTrack": "Assault",
+  "unlockedWith": "TCX-SPR",
+  "caliber": "7.62x39mm",
+  "weapons": [
+   "TCX-SPR"
+  ],
+  "weaponsSource": "the source group heading",
+  "weaponGroup": "TCX-SPR",
+  "summary": "Magazine - caliber 7.62x39mm, fits TCX-SPR, rounds 28, $50.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A 28-round 7.62x39mm magazine for the TCX-SPR, priced at $50 and opened at Assault Level 20.",
+   "whyItMatters": "It comes with the TCX-SPR's own unlock and costs just $50, so the magazine is a small cost on top of the rifle. Twenty-eight rounds is an everyday rifle load rather than a belt.",
+   "whenToUseIt": "Take it with the TCX-SPR as your standard magazine. The record lists no larger option for this rifle."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-tcx-spr-28-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "stanag-20-rnd-magazine",
+  "name": "STANAG 20 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 10,
+  "rounds": 20,
+  "caliber": "5.56x45mm",
+  "weaponGroup": "Shared Across Weapons",
+  "weapons": [
+   "M4",
+   "T-21",
+   "A-91",
+   "KH-2002",
+   "M249 SAW",
+   "Bushmaster M17s"
+  ],
+  "weaponsSource": "a compatibility sentence on the source page",
+  "weaponsDisputedByWeaponCard": true,
+  "weaponsNote": "The source names all 6 of these rifles as sharing this magazine, but A-91, KH-2002, Bushmaster M17s carry \"Attachments - No\" on their own weapon card. Both readings are shown rather than one being picked silently; treat the overlap as unsettled until the source settles it.",
+  "summary": "Magazine - caliber 5.56x45mm, fits Shared Across Weapons, rounds 20, $10.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A twenty-round 5.56 magazine for ten dollars that fits all six rifles sharing the STANAG well.",
+   "whyItMatters": "It is the cheapest thing on the whole attachments page and it works across six guns, so it is the one purchase that is never wasted.",
+   "whenToUseIt": "Take it when you want the rifle to handle as lightly as possible, or when you are rebuilding a loadout from nothing after a bad run."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-stanag-20-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "stanag-30-rnd-magazine",
+  "name": "STANAG 30 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "rounds": 30,
+  "wardogLevel": "Assault Lvl 3",
+  "levelTrack": "Assault",
+  "unlockedWith": "T-21",
+  "caliber": "5.56x45mm",
+  "weaponGroup": "Shared Across Weapons",
+  "weapons": [
+   "M4",
+   "T-21",
+   "A-91",
+   "KH-2002",
+   "M249 SAW",
+   "Bushmaster M17s"
+  ],
+  "weaponsSource": "a compatibility sentence on the source page",
+  "weaponsDisputedByWeaponCard": true,
+  "weaponsNote": "The source names all 6 of these rifles as sharing this magazine, but A-91, KH-2002, Bushmaster M17s carry \"Attachments - No\" on their own weapon card. Both readings are shown rather than one being picked silently; treat the overlap as unsettled until the source settles it.",
+  "summary": "Magazine - caliber 5.56x45mm, fits Shared Across Weapons, rounds 30.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A 30-round 5.56x45mm STANAG magazine, opened at Assault Level 3 and unlocked with the T-21.",
+   "whyItMatters": "The source says six rifles share the STANAG magazines: the M4, the T-21, the M249 SAW and three more. Three of them (A-91, KH-2002, Bushmaster M17s) say \"Attachments - No\" on their own weapon cards, so treat the overlap as unsettled. The record lists no price for the 30-round.",
+   "whenToUseIt": "It sits between the 20-round at $10 and the 60-round at $180, so it is the natural default if you take a T-21 or M4. Check the in-game price and whether your rifle accepts it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-stanag-30-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "stanag-60-rnd-magazine",
+  "name": "STANAG 60 RND Magazine",
+  "category": "Magazines",
+  "sourceSection": "magazines",
+  "price": 180,
+  "rounds": 60,
+  "caliber": "5.56x45mm",
+  "weaponGroup": "Shared Across Weapons",
+  "weapons": [
+   "M4",
+   "T-21",
+   "A-91",
+   "KH-2002",
+   "M249 SAW",
+   "Bushmaster M17s"
+  ],
+  "weaponsSource": "a compatibility sentence on the source page",
+  "weaponsDisputedByWeaponCard": true,
+  "weaponsNote": "The source names all 6 of these rifles as sharing this magazine, but A-91, KH-2002, Bushmaster M17s carry \"Attachments - No\" on their own weapon card. Both readings are shown rather than one being picked silently; treat the overlap as unsettled until the source settles it.",
+  "summary": "Magazine - caliber 5.56x45mm, fits Shared Across Weapons, rounds 60, $180.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#magazines",
+  "beginner": {
+   "whatItIs": "A 60-round magazine that fits the six rifles sharing the STANAG well rather than belonging to any one gun.",
+   "whyItMatters": "Buying it once covers every rifle in that family, so it keeps paying off across loadouts instead of being stranded when you switch weapon.",
+   "whenToUseIt": "Fit it when you expect to be the one holding ground and reloading under pressure. The smaller STANAG is the lighter, faster-handling option when you would rather move than sustain."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-stanag-60-rnd-magazine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "vektor-frenix-x-micro-reflex-sight",
+  "name": "Vektor Frenix-X Micro Reflex Sight",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 820,
+  "zoom": "1.2x",
+  "zeroing": "Fixed",
+  "weightKg": 0.03,
+  "wardogLevel": "Medic Lvl 19",
+  "levelTrack": "Medic",
+  "adsTrade": "Moderate speed improvement",
+  "weaponGroup": "Short Optics",
+  "summary": "Optic - fits Short Optics, zoom 1.2x, weight 0.03 kg, $820.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A tiny close-range sight, thirty grams and the lightest optic on record, at eight hundred and twenty dollars.",
+   "whyItMatters": "The source rates it as bringing the gun up to your eye noticeably faster than iron sights, and it adds almost no weight, so the only real cost is the money.",
+   "whenToUseIt": "Put it on a gun you fight up close with and want to keep as quick as possible. It is a premium price for a small edge, so buy it once you can afford it comfortably."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-vektor-frenix-x-micro-reflex-sight.png"
+ },
+ {
+  "id": "four-reticle-reflex",
+  "name": "Four Reticle Reflex",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 580,
+  "zoom": "1.2x",
+  "zeroing": "Fixed",
+  "weightKg": 0.12,
+  "wardogLevel": "Assault Lvl 22",
+  "levelTrack": "Assault",
+  "adsTrade": "Moderate speed improvement",
+  "weaponGroup": "Short Optics",
+  "summary": "Optic - fits Short Optics, zoom 1.2x, weight 0.12 kg, $580.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A close-range sight at five hundred and eighty dollars that offers a choice of aiming marks rather than one fixed dot.",
+   "whyItMatters": "It is rated as a noticeable improvement in how fast you get on target compared with no optic, and being able to pick the mark that reads best against a background is a real comfort gain.",
+   "whenToUseIt": "A good middle buy for close-quarters loadouts, especially if a plain dot keeps getting lost against bright ground."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-four-reticle-reflex.png"
+ },
+ {
+  "id": "compact-t-2-red-dot",
+  "name": "Compact T-2 Red Dot",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 340,
+  "zoom": "1.2x",
+  "zeroing": "Fixed",
+  "weightKg": 0.13,
+  "wardogLevel": 17,
+  "levelTrack": "WARDOG",
+  "unlockPrice": 5000,
+  "adsTrade": "Minor speed improvement",
+  "weaponGroup": "Short Optics",
+  "summary": "Optic - fits Short Optics, zoom 1.2x, weight 0.13 kg, $340.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A low-magnification red dot sight with a fixed zero and a small speed gain when you bring the weapon up.",
+   "whyItMatters": "It is the sight that costs you nothing to aim with. A magnified scope trades handling for reach, and inside a building that trade is the wrong way round.",
+   "whenToUseIt": "Put it on anything you expect to fight with at close range - the factory zone, a treeline, a vehicle you just bailed out of."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-compact-t-2-red-dot.png"
+ },
+ {
+  "id": "holographic-sight",
+  "name": "Holographic Sight",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "zoom": "1.2x",
+  "zeroing": "Fixed",
+  "weightKg": 0.25,
+  "wardogLevel": "Medic Lvl 6",
+  "levelTrack": "Medic",
+  "adsTrade": "Minor speed improvement",
+  "weaponGroup": "Short Optics",
+  "summary": "Optic - fits Short Optics, zoom 1.2x, weight 0.25 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A close-range sight with a fixed aim point, listed with a weight of a quarter kilo and no confirmed price.",
+   "whyItMatters": "It gives a small speed gain over iron sights, so it is a straightforward upgrade whose only unknown is what the shop actually charges for it.",
+   "whenToUseIt": "Worth taking when you find it in the shop and the price is reasonable. Do not plan a budget around it until the cost is confirmed."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-holographic-sight.png"
+ },
+ {
+  "id": "kobra-reflex",
+  "name": "Kobra Reflex",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 520,
+  "zoom": "1.2x",
+  "zeroing": "Fixed",
+  "weightKg": 0.41,
+  "wardogLevel": 4,
+  "levelTrack": "WARDOG",
+  "unlockPrice": 7500,
+  "adsTrade": "Moderate speed improvement",
+  "weaponGroup": "Short Optics",
+  "summary": "Optic - fits Short Optics, zoom 1.2x, weight 0.41 kg, $520.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A close-range sight at $520, opened at WARDOG Level 4 with a $7,500 unlock.",
+   "whyItMatters": "It is rated as a solid gain in how quickly you get on target, but the one-off unlock costs more than fourteen of these sights, so it is an account investment rather than a loadout choice.",
+   "whenToUseIt": "Unlock it when you have money spare and you fight close often enough that the sight will be on most of your guns."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-kobra-reflex.png"
+ },
+ {
+  "id": "okp-7-reflex",
+  "name": "OKP 7 Reflex",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 840,
+  "zoom": "1.2x",
+  "zeroing": "Fixed",
+  "weightKg": 0.48,
+  "wardogLevel": "Assault Lvl 26",
+  "levelTrack": "Assault",
+  "adsTrade": "Moderate speed improvement",
+  "weaponGroup": "Short Optics",
+  "summary": "Optic - fits Short Optics, zoom 1.2x, weight 0.48 kg, $840.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A close-range sight at eight hundred and forty dollars and just under half a kilo, the heaviest of the short-range options.",
+   "whyItMatters": "It is rated as a solid speed gain over iron sights, but it is both the most expensive short-range sight and the heaviest, so you are paying twice for the same benefit others give.",
+   "whenToUseIt": "Take it if you prefer how it reads. On value alone the cheaper close-range sights do the same job."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-okp-7-reflex.png"
+ },
+ {
+  "id": "tricon-1-5x-compact-prism-scope",
+  "name": "Tricon 1.5x Compact Prism Scope",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 650,
+  "zoom": "1.5x",
+  "zeroing": "100m-200m",
+  "weightKg": 0.2,
+  "wardogLevel": 26,
+  "levelTrack": "WARDOG",
+  "adsTrade": "Minor speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 1.5x, weight 0.2 kg, $650.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 1.5x scope at six hundred and fifty dollars whose aim point you set for a hundred or two hundred metres.",
+   "whyItMatters": "It is the gentlest step into magnification: a small slowdown bringing the gun up, in exchange for actually being able to identify someone at range.",
+   "whenToUseIt": "A good first magnified sight if close-range sights leave you guessing at mid distance but a big scope feels sluggish."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-tricon-1-5x-compact-prism-scope.png"
+ },
+ {
+  "id": "cq-2x-prism-combat-scope",
+  "name": "CQ-2X Prism Combat Scope",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 640,
+  "zoom": "2x",
+  "zeroing": "100m-300m",
+  "weightKg": 0.31,
+  "wardogLevel": "Assault Lvl 12",
+  "levelTrack": "Assault",
+  "adsTrade": "Minor speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 2x, weight 0.31 kg, $640.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 2x scope at six hundred and forty dollars, adjustable from a hundred to three hundred metres.",
+   "whyItMatters": "It is a step up in reach from the 1.5x scope for the same minor cost to aiming speed, and the aim point can be set between 100 and 300 metres.",
+   "whenToUseIt": "A reasonable all-round pick when you do not know what range your next fight will be at; it gives up little speed to gain reach."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-cq-2x-prism-combat-scope.png"
+ },
+ {
+  "id": "2-5x-combat-optic",
+  "name": "2.5x Combat Optic",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "zoom": "2.5x",
+  "zeroing": "100m-300m",
+  "weightKg": 0.4,
+  "wardogLevel": "Assault Lvl 17",
+  "levelTrack": "Assault",
+  "unlockPrice": 10000,
+  "adsTrade": "Moderate speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 2.5x, weight 0.4 kg, unlock $10,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 2.5x sight adjustable from 100 to 300 metres, opened at Assault Level 17 for a $10,000 unlock.",
+   "whyItMatters": "It costs a noticeable amount of aiming speed and a large one-off unlock, so it has to earn its place with fights you could not otherwise take.",
+   "whenToUseIt": "Unlock it when your deaths are coming from people you cannot see clearly, not from people who beat you indoors."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-2-5x-combat-optic.png"
+ },
+ {
+  "id": "spitfire-3x",
+  "name": "Spitfire 3x",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 790,
+  "zoom": "3x",
+  "zeroing": "100m-300m",
+  "weightKg": 0.26,
+  "wardogLevel": 31,
+  "levelTrack": "WARDOG",
+  "adsTrade": "Moderate speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 3x, weight 0.26 kg, $790.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 3x scope at seven hundred and ninety dollars, adjustable from a hundred to three hundred metres and light for its magnification.",
+   "whyItMatters": "Three times magnification is real reach, and the noticeable cost to aiming speed is the price of it; the low weight softens the deal a little.",
+   "whenToUseIt": "Take it on open ground and long approaches. Swap it off before a loadout built for clearing rooms."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-spitfire-3x.png"
+ },
+ {
+  "id": "3x-tactical-prism-scope",
+  "name": "3x Tactical Prism Scope",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 740,
+  "zoom": "3x",
+  "zeroing": "100m-300m",
+  "weightKg": 0.43,
+  "wardogLevel": "Assault Lvl 33",
+  "levelTrack": "Assault",
+  "unlockPrice": 15000,
+  "adsTrade": "Minor speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 3x, weight 0.43 kg, $740.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 3x scope at $740, opened at Assault Level 33 for a $15,000 unlock.",
+   "whyItMatters": "It is the cheaper 3x to buy and the gentler one on aiming speed, but it sits behind a fifteen thousand dollar unlock.",
+   "whenToUseIt": "Worth the unlock if 3x is a magnification you already know you like. Try the Spitfire first if you are not sure."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-3x-tactical-prism-scope.png"
+ },
+ {
+  "id": "4x-combat-prism-scope-with-reflex",
+  "name": "4X Combat Prism Scope With Reflex",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 880,
+  "zoom": "4x",
+  "zeroing": "100m-400m",
+  "weightKg": 0.42,
+  "wardogLevel": "Support Lvl 21",
+  "levelTrack": "Support",
+  "adsTrade": "Moderate speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 4x, weight 0.42 kg, $880.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 4x scope at eight hundred and eighty dollars with a small secondary sight built in, adjustable out to four hundred metres.",
+   "whyItMatters": "The secondary sight is the point: it gives you a close-range option without swapping off the magnified one. The 6x Marksman Scope + Reflex also pairs a scope with a reflex, but it has no price or aiming-speed figure to compare.",
+   "whenToUseIt": "A good fit when a single loadout has to cover both an open approach and the building at the end of it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-4x-combat-prism-scope-with-reflex.png"
+ },
+ {
+  "id": "spectr-4x",
+  "name": "Spectr 4x",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "zoom": "4x",
+  "zeroing": "100m-400m",
+  "weightKg": 0.66,
+  "wardogLevel": "Assault Lvl 43",
+  "levelTrack": "Assault",
+  "adsTrade": "Moderate speed penalty",
+  "weaponGroup": "Medium Optics",
+  "summary": "Optic - fits Medium Optics, zoom 4x, weight 0.66 kg.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 4x scope adjustable out to four hundred metres, the heaviest optic on the page at 0.66 kg, with no confirmed price.",
+   "whyItMatters": "Its 4x reach and 0.66 kg weight come with a noticeable cost to aiming speed, which is a lot to give up for a single sight.",
+   "whenToUseIt": "For deliberate long-range work only, and check the shop price yourself until the source confirms one."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-spectr-4x.png"
+ },
+ {
+  "id": "cgm4-scope",
+  "name": "CGM4 Scope",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A sight confirmed as pairing with the AK74, GALIL, M4 and FAL, listed with no magnification, no aim-point range and no price.",
+   "whyItMatters": "Everything that would let you compare it against another sight is missing, so any claim about how it performs would be invented rather than sourced.",
+   "whenToUseIt": "Nothing to decide yet. Judge it in game and re-check this entry as the source updates."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-cgm4-scope.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mmgl-sight",
+  "name": "MMGL Sight",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A sight confirmed on the AK74, GALIL, M4 and FAL, with no magnification, aim-point range, weight or price recorded.",
+   "whyItMatters": "It sits in the same undocumented group as the CGM4 and PGO-7, which is a gap in the source rather than a statement that the sight is weak.",
+   "whenToUseIt": "Treat it as unknown for now. It is listed so the sight roster is complete rather than quietly short."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mmgl-sight.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pgo-7",
+  "name": "PGO-7",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 850,
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed, $850.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A sight priced at eight hundred and fifty dollars but with no magnification or aim-point range published.",
+   "whyItMatters": "At $850 it is one of the pricier sights the source lists, and one of the few where you know the cost without knowing what you get for it - even the $880 4X Combat Prism Scope With Reflex at least publishes its magnification.",
+   "whenToUseIt": "Do not buy it blind at that price. Look at it in game first, and re-check this entry as the source updates."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pgo-7.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "compact-p-1-red-dot",
+  "name": "Compact P-1 Red Dot",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 480,
+  "wardogLevel": 21,
+  "levelTrack": "WARDOG",
+  "unlockPrice": 12500,
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed, $480.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A red dot sight priced at $480, opened at WARDOG Level 21 with a $12,500 unlock.",
+   "whyItMatters": "The source lists no magnification, aim-point range, weight or aiming-speed effect for it, so price and unlock are all you have to judge it by. Its $12,500 unlock is a one-time cost on top of the $480.",
+   "whenToUseIt": "Treat it as a close-range option you try before you trust. Compare it in game with the red dots whose speed gain the source does publish."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-compact-p-1-red-dot.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pu-91-30-scope",
+  "name": "PU 91/30 Scope",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 780,
+  "zoom": "3.5x",
+  "wardogLevel": "Recon Lvl 10",
+  "levelTrack": "Recon",
+  "unlockPrice": 12500,
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed, zoom 3.5x, $780.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 3.5x scope priced at $780, opened at Recon Level 10 with a $12,500 unlock.",
+   "whyItMatters": "It is a mid-power magnification, and the cost is the Recon unlock and $780. The source gives no aim-point range, weight or aiming-speed figure for it.",
+   "whenToUseIt": "Consider it if you play the Recon class and want a scope early on the Recon track. Which rifles accept it is not recorded here, so check in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pu-91-30-scope.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "leatherwood-art-ii",
+  "name": "Leatherwood ART II",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "price": 950,
+  "wardogLevel": "Recon Lvl 27",
+  "levelTrack": "Recon",
+  "unlockPrice": 35000,
+  "tags": [
+   "Category Unconfirmed"
+  ],
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed, $950.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A sight priced at $950, opened at Recon Level 27 with a $35,000 unlock, whose type the source has not confirmed.",
+   "whyItMatters": "The source does not say what kind of sight it is and publishes no magnification or aiming-speed figure, so the $35,000 unlock and $950 price buy you something unknown.",
+   "whenToUseIt": "Hold off until the source tells you what it is. Judge it in game before spending the unlock."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-leatherwood-art-ii.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "6-10x-scope-moa",
+  "name": "6-10x Scope MOA",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "zoom": "6-10x",
+  "wardogLevel": "Recon Lvl 19",
+  "levelTrack": "Recon",
+  "unlockPrice": 45000,
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed, zoom 6-10x, unlock $45,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A variable 6-10x scope, opened at Recon Level 19 with a $45,000 unlock and no price listed.",
+   "whyItMatters": "It costs a large unlock to open. The source gives no weight, aim-point range or aiming-speed figure for it.",
+   "whenToUseIt": "Meant for long-range Recon play. Compare it with the MRAD version at the same zoom, which needs a higher level but a smaller unlock."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-6-10x-scope-moa.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "6-10x-scope-mrad",
+  "name": "6-10x Scope MRAD",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "zoom": "6-10x",
+  "wardogLevel": "Recon Lvl 28",
+  "levelTrack": "Recon",
+  "unlockPrice": 40000,
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed, zoom 6-10x, unlock $40,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A variable 6-10x scope, opened at Recon Level 28 with a $40,000 unlock and no price listed.",
+   "whyItMatters": "It matches the zoom of the MOA version but sits at a higher level and a $5,000 smaller unlock. The record does not say how the two differ beyond their names.",
+   "whenToUseIt": "Pick between the two scopes by what level and cash you have now, then judge the reticle in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-6-10x-scope-mrad.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "6x-marksman-scope-plus-reflex",
+  "name": "6x Marksman Scope + Reflex",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "zoom": "6x",
+  "wardogLevel": "Recon Lvl 43",
+  "levelTrack": "Recon",
+  "unlockPrice": 75000,
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed, zoom 6x, unlock $75,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A 6x scope with a reflex sight built in, opened at Recon Level 43 with a $75,000 unlock and no price listed.",
+   "whyItMatters": "The reflex gives it a close-range option alongside the 6x zoom, but it sits far up the Recon track and needs a $75,000 unlock. No aiming-speed figure is published.",
+   "whenToUseIt": "A late Recon purchase for someone who wants one sight for both long and close fights. Do not plan around it until you reach the level."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-6x-marksman-scope-plus-reflex.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "frontier-2-5x-10x-precision-scope",
+  "name": "Frontier 2.5x-10x Precision Scope",
+  "category": "Optics",
+  "sourceSection": "optics",
+  "zoom": "2.5-10x",
+  "wardogLevel": "Recon Lvl 47",
+  "levelTrack": "Recon",
+  "weaponGroup": "Band Unconfirmed",
+  "summary": "Optic - fits Band Unconfirmed, zoom 2.5-10x.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#optics",
+  "beginner": {
+   "whatItIs": "A variable 2.5-10x scope opened at Recon Level 47, with no price and no unlock cost listed.",
+   "whyItMatters": "It covers a wide zoom range in one sight, but the record gives you just its level, so its cost is a gap in the source rather than a free item.",
+   "whenToUseIt": "A late-Recon option. Check its price and weight in game once you reach the level."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-frontier-2-5x-10x-precision-scope.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "rk6-tactical-foregrip",
+  "name": "RK6 Tactical Foregrip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "wardogLevel": 15,
+  "levelTrack": "WARDOG",
+  "summary": "Foregrip.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "A front grip opened at WARDOG Level 15, with no price or unlock cost in the record.",
+   "whyItMatters": "The source publishes no numbers for what any grip actually does, so treat the level as the main confirmed fact. It is one of the grips on the account-level track, unlike the CQR, RVG and AFG grips that follow a class level.",
+   "whenToUseIt": "Fit it once it opens and judge the feel yourself. Do not pay for a later grip expecting a documented improvement, because none is published."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-rk6-tactical-foregrip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "45-degree-angled-foregrip",
+  "name": "45-Degree Angled Foregrip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "wardogLevel": 33,
+  "levelTrack": "WARDOG",
+  "summary": "Foregrip.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "An angled front grip opened at WARDOG Level 33, with no confirmed shop or unlock price.",
+   "whyItMatters": "The source saw it already unlocked on an account it was reading, which tells you nothing about what it costs a new player, so plan for a price rather than assume it is free.",
+   "whenToUseIt": "Try it against the RK6 when you reach the level and keep whichever suits how you hold an angle."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-45-degree-angled-foregrip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "mini-angled-foregrip",
+  "name": "Mini Angled Foregrip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "wardogLevel": 38,
+  "levelTrack": "WARDOG",
+  "unlockPrice": 12500,
+  "summary": "Foregrip - unlock $12,500.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "An angled front grip opened at WARDOG Level 38 for a twelve and a half thousand dollar unlock.",
+   "whyItMatters": "Its $12,500 unlock competes with a good sight, which you can at least read the numbers on. The source publishes no numbers for what any grip does.",
+   "whenToUseIt": "Buy sights and magazines first. Come back to this once the rest of your loadout is settled and you want to fine-tune how the gun handles."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-mini-angled-foregrip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "tdg-vertical-foregrip",
+  "name": "TDG Vertical Foregrip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "wardogLevel": 58,
+  "levelTrack": "WARDOG",
+  "summary": "Foregrip.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "A vertical front grip opened at WARDOG Level 58, with no confirmed cost.",
+   "whyItMatters": "The record holds no price or unlock cost for it, so the fifty-eight levels are the main thing you can plan around.",
+   "whenToUseIt": "A late-account option. Until then, build your handling around the grips your level already allows."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-tdg-vertical-foregrip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "cqr-tactical-front-rail-grip",
+  "name": "CQR Tactical Front Rail Grip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "wardogLevel": "Assault Lvl 14",
+  "levelTrack": "Assault",
+  "unlockPrice": 10000,
+  "summary": "Foregrip - unlock $10,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "A front rail grip opened at Assault Level 14 with a $10,000 unlock and no vendor price in the record.",
+   "whyItMatters": "Season 02 put it on the Assault track, so it follows your class level rather than your account level. The source publishes no numbers for what any grip does, so the unlock is a bet on feel.",
+   "whenToUseIt": "Worth a look once your Assault class reaches level 14 and you have $10,000 spare. Judge the feel yourself."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-cqr-tactical-front-rail-grip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "afg-angled-foregrip",
+  "name": "AFG Angled Foregrip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "wardogLevel": "Medic Lvl 11",
+  "levelTrack": "Medic",
+  "summary": "Foregrip.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "An angled front grip opened at Medic Level 11, with no price or unlock cost listed.",
+   "whyItMatters": "The source moved it onto the Medic track in Season 02 and publishes no numbers for what any foregrip does, so the level is the main fact to plan around.",
+   "whenToUseIt": "A reasonable early grip for a Medic. Try it against the account-level grips and keep whichever feels steadier."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-afg-angled-foregrip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "rvg-vertical-foregrip",
+  "name": "RVG Vertical Foregrip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "wardogLevel": "Assault Lvl 38",
+  "levelTrack": "Assault",
+  "unlockPrice": 25000,
+  "summary": "Foregrip - unlock $25,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "A vertical front grip opened at Assault Level 38 with a $25,000 unlock.",
+   "whyItMatters": "Season 02 moved it from the Medic track and raised its unlock from $10,000 to $25,000, so older advice about its cost is out of date. The source publishes no numbers for its effect.",
+   "whenToUseIt": "Buy sights and magazines first, then come back to this when the rest of your Assault loadout is settled."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-rvg-vertical-foregrip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "shift-foregrip",
+  "name": "Shift Foregrip",
+  "category": "Foregrips",
+  "sourceSection": "foregrips",
+  "summary": "Foregrip.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#foregrips",
+  "beginner": {
+   "whatItIs": "A foregrip the source knows mainly from a Season 02 cut to its vendor price. No level or unlock cost is published for it.",
+   "whyItMatters": "With no level, unlock cost or effect published, it is a name on the list rather than a purchase you can plan.",
+   "whenToUseIt": "Ignore it for now and use a foregrip whose level you can see. Check the vendor if you want to find out."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-shift-foregrip.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "tread-brake",
+  "name": "Tread Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "priceSeason1": 620,
+  "caliber": "5.56x45mm",
+  "wardogLevel": "Support Lvl 27",
+  "levelTrack": "Support",
+  "summary": "Muzzle Device - caliber 5.56x45mm.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A muzzle device costing six hundred and twenty dollars, listed for 5.56x45mm. Three rifles are so far verified to take it: the T-21, the GALIL and the M4.",
+   "whyItMatters": "The source says it changes recoil and how fast you aim, but publishes no amounts, so you are buying a named effect rather than a measured one.",
+   "whenToUseIt": "A low-commitment way to try a muzzle device on a 5.56 rifle. The source now prints just its Season 1 price, so check what it costs in game and compare it against running no attachment at all."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-tread-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "orpheus-max-brake",
+  "name": "Orpheus Max Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "priceSeason1": 1020,
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A muzzle brake that cost one thousand and twenty dollars in Season 1; the source has not published its current price or a calibre for it.",
+   "whyItMatters": "It costs more than any sight on the page while publishing even less about what it does, which is a hard purchase to justify from the numbers alone.",
+   "whenToUseIt": "Leave it until you have tried the cheaper brakes and can feel a difference worth four hundred extra dollars."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-orpheus-max-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "cqb-74-brake",
+  "name": "CQB 74 Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "priceSeason1": 680,
+  "wardogLevel": "Assault Lvl 16",
+  "levelTrack": "Assault",
+  "unlockPrice": 15000,
+  "summary": "Muzzle Device - unlock $15,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A muzzle brake that cost $680 in Season 1, opened at Assault Level 16 with a $15,000 unlock; the source has not published its current price.",
+   "whyItMatters": "Its vendor card names its effects: it pulls the gun down less as you fire, drifts sideways a little less, tightens the spread slightly and costs a small amount of aiming speed. That makes it a brake you can judge before buying.",
+   "whenToUseIt": "The pick when you are losing fights because the gun climbs off target during a burst. Skip it if your problem is being slow to aim in the first place."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-cqb-74-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "45-acp-pistol-compensator",
+  "name": ".45 ACP Pistol Compensator",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": 43,
+  "levelTrack": "WARDOG",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A compensator for .45 ACP pistols, opened at WARDOG Level 43, with no price, unlock cost or effects confirmed by the source.",
+   "whyItMatters": "The gate is the one confirmed fact. A compensator is meant to steady the gun as it fires, but the source publishes no effect amounts for this one.",
+   "whenToUseIt": "A late-account option for a .45 ACP pistol such as the M1911. Compare it with running no muzzle device once you reach the level."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-45-acp-pistol-compensator.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "cross-rifle-muzzle-brake",
+  "name": "Cross Rifle Muzzle Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 780,
+  "caliber": "7.62x39mm",
+  "wardogLevel": "Assault Lvl 32",
+  "levelTrack": "Assault",
+  "unlockPrice": 35000,
+  "summary": "Muzzle Device - caliber 7.62x39mm, $780.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake for 7.62x39mm, priced at $780, opened at Assault Level 32, with a $35,000 unlock.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, and this one costs a one-time $35,000 to unlock and then $780 to buy, with no effect amounts published.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-cross-rifle-muzzle-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "clutch-lok-muzzle-brake",
+  "name": "Clutch Lok Muzzle Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 1100,
+  "caliber": "7.62x39mm",
+  "wardogLevel": "Assault Lvl 37",
+  "levelTrack": "Assault",
+  "unlockPrice": 37500,
+  "summary": "Muzzle Device - caliber 7.62x39mm, $1,100.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake for 7.62x39mm, priced at $1,100, opened at Assault Level 37, with a $37,500 unlock.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, and this one costs a one-time $37,500 to unlock and then $1,100 to buy, with no effect amounts published.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-clutch-lok-muzzle-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "srd762ti-qd-suppressor",
+  "name": "SRD762TI-QD Suppressor",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 1350,
+  "caliber": "7.62x39mm",
+  "wardogLevel": "Assault Lvl 40",
+  "levelTrack": "Assault",
+  "unlockPrice": 40000,
+  "summary": "Muzzle Device - caliber 7.62x39mm, $1,350.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A suppressor for 7.62x39mm, priced at $1,350, opened at Assault Level 40, with a $40,000 unlock.",
+   "whyItMatters": "A suppressor is a muzzle device that muffles the sound of the shot, and this one costs a one-time $40,000 to unlock and then $1,350 to buy, with no effect amounts published.",
+   "whenToUseIt": "Consider it if you want a quiet shot on this setup, and judge its handling in game because no numbers are published."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-srd762ti-qd-suppressor.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "sl7i-bl-suppressor",
+  "name": "SL7i-BL Suppressor",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 1400,
+  "caliber": ".308 Win",
+  "wardogLevel": "Support Lvl 40",
+  "levelTrack": "Support",
+  "unlockPrice": 35000,
+  "summary": "Muzzle Device - caliber .308 Win, $1,400.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A suppressor for .308 Win, priced at $1,400, opened at Support Level 40, with a $35,000 unlock.",
+   "whyItMatters": "A suppressor is a muzzle device that muffles the sound of the shot, and this one costs a one-time $35,000 to unlock and then $1,400 to buy, with no effect amounts published.",
+   "whenToUseIt": "Consider it if you want a quiet shot on this setup, and judge its handling in game because no numbers are published."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-sl7i-bl-suppressor.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "30-cal-ss-phosphate-muzzle-brake",
+  "name": ".30 Cal SS Phosphate Muzzle Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 950,
+  "caliber": ".308 Win",
+  "wardogLevel": "Recon Lvl 37",
+  "levelTrack": "Recon",
+  "unlockPrice": 22500,
+  "summary": "Muzzle Device - caliber .308 Win, $950.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake for .308 Win, priced at $950, opened at Recon Level 37, with a $22,500 unlock.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, and this one costs a one-time $22,500 to unlock and then $950 to buy, with no effect amounts published.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-30-cal-ss-phosphate-muzzle-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "30-cal-steel-black-flash-hider",
+  "name": ".30 Cal Steel Black Flash Hider",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 730,
+  "caliber": ".308 Win",
+  "wardogLevel": "Recon Lvl 42",
+  "levelTrack": "Recon",
+  "unlockPrice": 27500,
+  "summary": "Muzzle Device - caliber .308 Win, $730.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A flash hider for .308 Win, priced at $730, opened at Recon Level 42, with a $27,500 unlock.",
+   "whyItMatters": "A flash hider is a muzzle device that cuts the flash at the end of the barrel, and this one costs a one-time $27,500 to unlock and then $730 to buy, with no effect amounts published.",
+   "whenToUseIt": "Try it against a plain barrel on a gun you fire a lot, and keep it if it suits how you shoot."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-30-cal-steel-black-flash-hider.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "birdcage-flash-hider",
+  "name": "Birdcage Flash Hider",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 600,
+  "wardogLevel": "Assault Lvl 2",
+  "levelTrack": "Assault",
+  "unlockPrice": 5000,
+  "summary": "Muzzle Device - $600.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A flash hider, priced at $600, opened at Assault Level 2, with a $5,000 unlock; the record lists no calibre.",
+   "whyItMatters": "A flash hider is a muzzle device that cuts the flash at the end of the barrel, and this one costs a one-time $5,000 to unlock and then $600 to buy, with no effect amounts published.",
+   "whenToUseIt": "Try it against a plain barrel on a gun you fire a lot, and keep it if it suits how you shoot. The record names no calibre, so check that it fits your weapon."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-birdcage-flash-hider.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "hexagon-brake",
+  "name": "Hexagon Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Assault Lvl 5",
+  "levelTrack": "Assault",
+  "unlockPrice": 12500,
+  "summary": "Muzzle Device - unlock $12,500.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake, opened at Assault Level 5, with a $12,500 unlock; the record lists no price, no calibre.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, and this one costs a one-time $12,500 to unlock, with no effect amounts published.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-hexagon-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "3-prong-flash-hider",
+  "name": "3 Prong Flash Hider",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Assault Lvl 8",
+  "levelTrack": "Assault",
+  "unlockPrice": 7500,
+  "summary": "Muzzle Device - unlock $7,500.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A flash hider, opened at Assault Level 8, with a $7,500 unlock; the record lists no price, no calibre.",
+   "whyItMatters": "A flash hider is a muzzle device that cuts the flash at the end of the barrel, and this one costs a one-time $7,500 to unlock, with no effect amounts published.",
+   "whenToUseIt": "Try it against a plain barrel on a gun you fire a lot, and keep it if it suits how you shoot. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-3-prong-flash-hider.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pbs-4-suppressor",
+  "name": "PBS-4 Suppressor",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Assault Lvl 19",
+  "levelTrack": "Assault",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A suppressor, opened at Assault Level 19; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A suppressor is a muzzle device that muffles the sound of the shot, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Consider it if you want a quiet shot on this setup, and judge its handling in game because no numbers are published. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pbs-4-suppressor.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "topcomp-brake",
+  "name": "TopComp Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Assault Lvl 21",
+  "levelTrack": "Assault",
+  "unlockPrice": 20000,
+  "summary": "Muzzle Device - unlock $20,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake, opened at Assault Level 21, with a $20,000 unlock; the record lists no price, no calibre.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, and this one costs a one-time $20,000 to unlock, with no effect amounts published.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-topcomp-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "rc-556-suppressor",
+  "name": "RC-556 Suppressor",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 1310,
+  "wardogLevel": "Assault Lvl 24",
+  "levelTrack": "Assault",
+  "summary": "Muzzle Device - $1,310.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A suppressor, priced at $1,310, opened at Assault Level 24; the record lists no unlock cost, no calibre.",
+   "whyItMatters": "A suppressor is a muzzle device that muffles the sound of the shot, and this one is priced at $1,310, with no effect amounts published.",
+   "whenToUseIt": "Consider it if you want a quiet shot on this setup, and judge its handling in game because no numbers are published. The record names no calibre, so check that it fits your weapon."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-rc-556-suppressor.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "tgp-a-suppressor-5-45",
+  "name": "TGP-A Suppressor 5.45",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "caliber": "5.45x39mm",
+  "wardogLevel": "Assault Lvl 27",
+  "levelTrack": "Assault",
+  "summary": "Muzzle Device - caliber 5.45x39mm.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A suppressor for 5.45x39mm, opened at Assault Level 27; the record lists no price, no unlock cost.",
+   "whyItMatters": "A suppressor is a muzzle device that muffles the sound of the shot, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Consider it if you want a quiet shot on this setup, and judge its handling in game because no numbers are published. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-tgp-a-suppressor-5-45.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ar-multi-caliber-suppressor",
+  "name": "AR Multi-Caliber Suppressor",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Assault Lvl 29",
+  "levelTrack": "Assault",
+  "unlockPrice": 22500,
+  "summary": "Muzzle Device - unlock $22,500.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A suppressor, opened at Assault Level 29, with a $22,500 unlock; the record lists no price, no calibre.",
+   "whyItMatters": "A suppressor is a muzzle device that muffles the sound of the shot, and this one costs a one-time $22,500 to unlock, with no effect amounts published.",
+   "whenToUseIt": "Consider it if you want a quiet shot on this setup, and judge its handling in game because no numbers are published. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-ar-multi-caliber-suppressor.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "eclipse-flash-hider",
+  "name": "Eclipse Flash Hider",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Medic Lvl 1",
+  "levelTrack": "Medic",
+  "unlockPrice": 7500,
+  "summary": "Muzzle Device - unlock $7,500.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A flash hider, opened at Medic Level 1, with a $7,500 unlock; the record lists no price, no calibre.",
+   "whyItMatters": "A flash hider is a muzzle device that cuts the flash at the end of the barrel, and this one costs a one-time $7,500 to unlock, with no effect amounts published.",
+   "whenToUseIt": "Try it against a plain barrel on a gun you fire a lot, and keep it if it suits how you shoot. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-eclipse-flash-hider.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ballista-brake",
+  "name": "Ballista Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Medic Lvl 12",
+  "levelTrack": "Medic",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake, opened at Medic Level 12; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-ballista-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "qd-5-suppressor",
+  "name": "QD-5 Suppressor",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Medic Lvl 13",
+  "levelTrack": "Medic",
+  "unlockPrice": 12500,
+  "summary": "Muzzle Device - unlock $12,500.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A suppressor, opened at Medic Level 13, with a $12,500 unlock; the record lists no price, no calibre.",
+   "whyItMatters": "A suppressor is a muzzle device that muffles the sound of the shot, and this one costs a one-time $12,500 to unlock, with no effect amounts published.",
+   "whenToUseIt": "Consider it if you want a quiet shot on this setup, and judge its handling in game because no numbers are published. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-qd-5-suppressor.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pp-19-vityaz-flash-hider",
+  "name": "PP-19 Vityaz Flash Hider",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Medic Lvl 18",
+  "levelTrack": "Medic",
+  "unlockPrice": 17500,
+  "summary": "Muzzle Device - unlock $17,500.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A flash hider, opened at Medic Level 18, with a $17,500 unlock; the record lists no price, no calibre.",
+   "whyItMatters": "A flash hider is a muzzle device that cuts the flash at the end of the barrel, and this one costs a one-time $17,500 to unlock, with no effect amounts published.",
+   "whenToUseIt": "Try it against a plain barrel on a gun you fire a lot, and keep it if it suits how you shoot. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pp-19-vityaz-flash-hider.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pp-19-01-vityaz-9x19-suppressor",
+  "name": "PP-19-01 Vityaz 9x19 Suppressor",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "caliber": "9x19mm",
+  "wardogLevel": "Medic Lvl 24",
+  "levelTrack": "Medic",
+  "unlockPrice": 20000,
+  "summary": "Muzzle Device - caliber 9x19mm, unlock $20,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A suppressor for 9x19mm, opened at Medic Level 24, with a $20,000 unlock; the record lists no price.",
+   "whyItMatters": "A suppressor is a muzzle device that muffles the sound of the shot, and this one costs a one-time $20,000 to unlock, with no effect amounts published.",
+   "whenToUseIt": "Consider it if you want a quiet shot on this setup, and judge its handling in game because no numbers are published. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pp-19-01-vityaz-9x19-suppressor.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amp-9-tactical-flash-hider",
+  "name": "AMP-9 Tactical Flash Hider",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Medic Lvl 26",
+  "levelTrack": "Medic",
+  "unlockPrice": 45000,
+  "summary": "Muzzle Device - unlock $45,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A flash hider, opened at Medic Level 26, with a $45,000 unlock; the record lists no price, no calibre.",
+   "whyItMatters": "A flash hider is a muzzle device that cuts the flash at the end of the barrel, and this one costs a one-time $45,000 to unlock, with no effect amounts published.",
+   "whenToUseIt": "Try it against a plain barrel on a gun you fire a lot, and keep it if it suits how you shoot. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amp-9-tactical-flash-hider.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amp-9-9x19-suppressor",
+  "name": "AMP-9 9x19 Suppressor",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "caliber": "9x19mm",
+  "wardogLevel": "Medic Lvl 27",
+  "levelTrack": "Medic",
+  "summary": "Muzzle Device - caliber 9x19mm.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A suppressor for 9x19mm, opened at Medic Level 27; the record lists no price, no unlock cost.",
+   "whyItMatters": "A suppressor is a muzzle device that muffles the sound of the shot, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Consider it if you want a quiet shot on this setup, and judge its handling in game because no numbers are published. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amp-9-9x19-suppressor.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "dual-port-brake",
+  "name": "Dual Port Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Medic Lvl 28",
+  "levelTrack": "Medic",
+  "unlockPrice": 22500,
+  "summary": "Muzzle Device - unlock $22,500.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake, opened at Medic Level 28, with a $22,500 unlock; the record lists no price, no calibre.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, and this one costs a one-time $22,500 to unlock, with no effect amounts published.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-dual-port-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "super-45-flash-hider",
+  "name": "Super-45 Flash Hider",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Medic Lvl 36",
+  "levelTrack": "Medic",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A flash hider, opened at Medic Level 36; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A flash hider is a muzzle device that cuts the flash at the end of the barrel, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Try it against a plain barrel on a gun you fire a lot, and keep it if it suits how you shoot. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-super-45-flash-hider.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "ghost-lite-muzzle-brake",
+  "name": "Ghost LITE Muzzle Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Medic Lvl 40",
+  "levelTrack": "Medic",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake, opened at Medic Level 40; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-ghost-lite-muzzle-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "deadeye-flash-hider",
+  "name": "Deadeye Flash Hider",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Recon Lvl 6",
+  "levelTrack": "Recon",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A flash hider, opened at Recon Level 6; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A flash hider is a muzzle device that cuts the flash at the end of the barrel, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Try it against a plain barrel on a gun you fire a lot, and keep it if it suits how you shoot. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-deadeye-flash-hider.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "dtk-1-brake",
+  "name": "DTK-1 Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Recon Lvl 9",
+  "levelTrack": "Recon",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake, opened at Recon Level 9; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-dtk-1-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "srvv-brake",
+  "name": "SRVV Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Recon Lvl 22",
+  "levelTrack": "Recon",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake, opened at Recon Level 22; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-srvv-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "bmr-308-flash-hider",
+  "name": "BMR-308 Flash Hider",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 930,
+  "wardogLevel": "Recon Lvl 24",
+  "levelTrack": "Recon",
+  "unlockPrice": 50000,
+  "summary": "Muzzle Device - $930.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A flash hider, priced at $930, opened at Recon Level 24, with a $50,000 unlock; the record lists no calibre.",
+   "whyItMatters": "A flash hider is a muzzle device that cuts the flash at the end of the barrel, and this one costs a one-time $50,000 to unlock and then $930 to buy, with no effect amounts published.",
+   "whenToUseIt": "Try it against a plain barrel on a gun you fire a lot, and keep it if it suits how you shoot. The record names no calibre, so check that it fits your weapon."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-bmr-308-flash-hider.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "bmr-308-suppressor",
+  "name": "BMR-308 Suppressor",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "levelTrack": "Recon",
+  "wardogLevelConfirmed": false,
+  "unlockPrice": 25000,
+  "summary": "Muzzle Device - unlock $25,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A suppressor for the BMR-308 with a $25,000 unlock on the Recon track; the unlock level is not confirmed by the source.",
+   "whyItMatters": "A suppressor muffles the sound of the shot, but the source publishes no effect amounts and no price for it, and it does not confirm the level that opens it.",
+   "whenToUseIt": "Check the vendor for its level and price before saving for the unlock. Judge its handling in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-bmr-308-suppressor.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "constrictor-brake",
+  "name": "Constrictor Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Recon Lvl 34",
+  "levelTrack": "Recon",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake, opened at Recon Level 34; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-constrictor-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "amr-50-cal-muzzle-brake",
+  "name": "AMR 50 Cal Muzzle Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 1380,
+  "wardogLevel": "Recon Lvl 38",
+  "levelTrack": "Recon",
+  "summary": "Muzzle Device - $1,380.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake, priced at $1,380, opened at Recon Level 38; the record lists no unlock cost, no calibre.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, and this one is priced at $1,380, with no effect amounts published.",
+   "whenToUseIt": "Try it on the rifle it is named for and compare it with no muzzle device. The record names no calibre, so check that it fits your weapon."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-amr-50-cal-muzzle-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "slicktap-brake",
+  "name": "Slicktap Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Recon Lvl 44",
+  "levelTrack": "Recon",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake, opened at Recon Level 44; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-slicktap-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "50-cal-heavy-suppressor",
+  "name": ".50 Cal Heavy Suppressor",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Recon Lvl 48",
+  "levelTrack": "Recon",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A suppressor, opened at Recon Level 48; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A suppressor is a muzzle device that muffles the sound of the shot, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Consider it if you want a quiet shot on this setup, and judge its handling in game because no numbers are published. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-50-cal-heavy-suppressor.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "three-port-brake",
+  "name": "Three Port Brake",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Recon Lvl 49",
+  "levelTrack": "Recon",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A brake, opened at Recon Level 49; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A brake is a muzzle device meant to tame recoil, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Try it on a rifle that climbs in a burst and compare it with no muzzle device. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-three-port-brake.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "improved-cylinder-choke",
+  "name": "Improved Cylinder Choke",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Support Lvl 13",
+  "levelTrack": "Support",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A choke, opened at Support Level 13; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A choke is a shotgun muzzle device that shapes how tightly the pellets spread, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Use it on the shotgun you already play, and compare the spread against the stock barrel. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-improved-cylinder-choke.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "full-choke",
+  "name": "Full Choke",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 1150,
+  "wardogLevel": "Support Lvl 16",
+  "levelTrack": "Support",
+  "summary": "Muzzle Device - $1,150.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A choke, priced at $1,150, opened at Support Level 16; the record lists no unlock cost, no calibre.",
+   "whyItMatters": "A choke is a shotgun muzzle device that shapes how tightly the pellets spread, and this one is priced at $1,150, with no effect amounts published.",
+   "whenToUseIt": "Use it on the shotgun you already play, and compare the spread against the stock barrel."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-full-choke.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "slotted-flash-hider",
+  "name": "Slotted Flash Hider",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "wardogLevel": "Support Lvl 19",
+  "levelTrack": "Support",
+  "summary": "Muzzle Device.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A flash hider, opened at Support Level 19; the record lists no price, no unlock cost, no calibre.",
+   "whyItMatters": "A flash hider is a muzzle device that cuts the flash at the end of the barrel, but the source publishes no effect amounts for it, so you are buying a name and a level gate rather than a measured gain.",
+   "whenToUseIt": "Try it against a plain barrel on a gun you fire a lot, and keep it if it suits how you shoot. The record names no calibre, so check that it fits your weapon. Check its price in game."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-slotted-flash-hider.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "12-gauge-suppressor",
+  "name": "12 Gauge Suppressor",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 1170,
+  "caliber": "12 Gauge",
+  "wardogLevel": "Support Lvl 32",
+  "levelTrack": "Support",
+  "summary": "Muzzle Device - caliber 12 Gauge, $1,170.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A suppressor for 12 Gauge, priced at $1,170, opened at Support Level 32; the record lists no unlock cost.",
+   "whyItMatters": "A suppressor is a muzzle device that muffles the sound of the shot, and this one is priced at $1,170, with no effect amounts published.",
+   "whenToUseIt": "Consider it if you want a quiet shot on this setup, and judge its handling in game because no numbers are published."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-12-gauge-suppressor.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "gol-multi-caliber-suppressor",
+  "name": "GOL Multi-Caliber Suppressor",
+  "category": "Muzzle Devices",
+  "sourceSection": "muzzle-devices",
+  "price": 1450,
+  "summary": "Muzzle Device - $1,450.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#muzzle-devices",
+  "beginner": {
+   "whatItIs": "A multi-caliber suppressor priced at $1,450, with no level, unlock cost or calibre in the record.",
+   "whyItMatters": "A suppressor muffles the sound of the shot. The name says it handles several calibres, but the record names none, and the source publishes no effect amounts.",
+   "whenToUseIt": "Check in game which of your weapons accept it before you buy."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-gol-multi-caliber-suppressor.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "evolys-bipod",
+  "name": "Evolys Bipod",
+  "category": "Bipods",
+  "sourceSection": "bipods",
+  "price": 1450,
+  "weapon": "Evo-3 Ultra",
+  "wardogLevel": "Support Lvl 33",
+  "levelTrack": "Support",
+  "unlockPrice": 75000,
+  "summary": "Bipod - $1,450.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#bipods",
+  "beginner": {
+   "whatItIs": "A bipod for the Evo-3 Ultra, priced at $1,450, opened at Support Level 33 with a $75,000 unlock.",
+   "whyItMatters": "A bipod is a fold-out stand under the barrel that steadies a gun resting on the ground or a ledge; the source publishes no recoil or sway numbers for any bipod here. Bipods are weapon-specific, so this one fits the Evo-3 Ultra and nothing else, and its unlock is $75,000.",
+   "whenToUseIt": "Buy it when the Evo-3 Ultra is the gun you hold a position with. If you move a lot it adds cost for little."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-evolys-bipod.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m14-bipod",
+  "name": "M14 Bipod",
+  "category": "Bipods",
+  "sourceSection": "bipods",
+  "price": 1480,
+  "weapon": "M14",
+  "wardogLevel": "Recon Lvl 29",
+  "levelTrack": "Recon",
+  "unlockPrice": 25000,
+  "summary": "Bipod - $1,480.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#bipods",
+  "beginner": {
+   "whatItIs": "A bipod for the M14, priced at $1,480, opened at Recon Level 29 with a $25,000 unlock.",
+   "whyItMatters": "A bipod is a fold-out stand under the barrel that steadies a gun resting on the ground or a ledge; the source publishes no recoil or sway numbers for any bipod here. It is weapon-specific, so it matters to M14 players.",
+   "whenToUseIt": "Take it with a patient M14 setup where you stay down and fire from cover. Skip it if you run and gun."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-m14-bipod.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "pkm-bipod",
+  "name": "PKM Bipod",
+  "category": "Bipods",
+  "sourceSection": "bipods",
+  "weapon": "PKM",
+  "wardogLevel": "Support Lvl 17",
+  "levelTrack": "Support",
+  "unlockPrice": 25000,
+  "summary": "Bipod - unlock $25,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#bipods",
+  "beginner": {
+   "whatItIs": "A bipod for the PKM, opened at Support Level 17 with a $25,000 unlock and no price listed.",
+   "whyItMatters": "A bipod is a fold-out stand under the barrel that steadies a gun resting on the ground or a ledge; the source publishes no recoil or sway numbers for any bipod here. Bipods are weapon-specific, and this one is made for the PKM.",
+   "whenToUseIt": "A natural pairing for a PKM used to cover a lane. Check its price in game, since the record lists none."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-pkm-bipod.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m249-bipod",
+  "name": "M249 Bipod",
+  "category": "Bipods",
+  "sourceSection": "bipods",
+  "weapon": "M249",
+  "wardogLevel": "Support Lvl 24",
+  "levelTrack": "Support",
+  "unlockPrice": 50000,
+  "summary": "Bipod - unlock $50,000.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#bipods",
+  "beginner": {
+   "whatItIs": "A bipod for the M249, opened at Support Level 24 with a $50,000 unlock and no price listed.",
+   "whyItMatters": "A bipod is a fold-out stand under the barrel that steadies a gun resting on the ground or a ledge; the source publishes no recoil or sway numbers for any bipod here. It is weapon-specific to the M249, so it is a commitment to that gun.",
+   "whenToUseIt": "Buy it when you use the M249 to hold ground from a fixed spot. Check its price in game, since the record lists none."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-m249-bipod.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "sv98-bipod",
+  "name": "SV98 Bipod",
+  "category": "Bipods",
+  "sourceSection": "bipods",
+  "weapon": "SV98",
+  "levelTrack": "Recon",
+  "wardogLevelConfirmed": false,
+  "unlockPrice": 17500,
+  "summary": "Bipod - unlock $17,500.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#bipods",
+  "beginner": {
+   "whatItIs": "A bipod for the SV98 with a $17,500 unlock on the Recon track; the unlock level is not confirmed by the source.",
+   "whyItMatters": "A bipod is a fold-out stand under the barrel that steadies a gun resting on the ground or a ledge; the source publishes no recoil or sway numbers for any bipod here. It is weapon-specific to the SV98, so it matters to SV98 players.",
+   "whenToUseIt": "A sensible add-on for a patient SV98 setup. Check the vendor for its level and price, since the source does not confirm them."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-sv98-bipod.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "sks-bipod",
+  "name": "SKS Bipod",
+  "category": "Bipods",
+  "sourceSection": "bipods",
+  "price": 810,
+  "weapon": "SKS",
+  "summary": "Bipod - $810.",
+  "sourceUrl": "https://wardogshandbook.com/Attachments#bipods",
+  "beginner": {
+   "whatItIs": "A bipod for the SKS, priced at $810, with no level or unlock cost listed.",
+   "whyItMatters": "A bipod is a fold-out stand under the barrel that steadies a gun resting on the ground or a ledge; the source publishes no recoil or sway numbers for any bipod here. It is made for the SKS, and at $810 it costs less than the Evolys and M14 bipods.",
+   "whenToUseIt": "Take it if you play the SKS from a fixed position. The record lists no level gate, so check the vendor."
+  },
+  "icon": "/island/apps/wardogs/./sprites/attachments-sks-bipod.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

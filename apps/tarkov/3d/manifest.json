@@ -1,0 +1,1840 @@
+{
+  "version": 1,
+  "pilot": "T2 3D pilot - self-modelled M4A1 (AR) + AK-74N (AK) chassis, 25 archetype parts",
+  "generated": "2026-09-11",
+  "base": "3d/glb/",
+  "axes": {
+    "world": "x_forward_y_left_z_up",
+    "note": "GLBs are exported with export_yup=false, so glTF axes ARE Blender axes. The viewer sets camera.up = (0,0,1). Default side view parks the camera on +Y, which puts the muzzle (+X) on the LEFT of the screen, matching the 2D composite.",
+    "socket": "empty local +Y = mount normal (out), local +Z = bore-forward reference, local +X = Y x Z. Part GLBs are authored in that same frame with the mounting face at the origin, so attaching is an identity-transform parent."
+  },
+  "compression": "KHR_mesh_quantization - decoded natively by three's GLTFLoader. NOT meshopt or draco: their decoders run WebAssembly, which the island shell CSP (script-src 'self' 'unsafe-inline') forbids.",
+  "guns": {
+    "5447a9cd4bdc2dbd208b4567": {
+      "key": "m4a1",
+      "name": "M4A1 (clean-room blockout)",
+      "file": "m4a1.glb",
+      "lengthM": 0.838,
+      "sockets": [
+        "mod_reciever",
+        "mod_barrel",
+        "mod_gas_block",
+        "mod_charge",
+        "mod_charge_001",
+        "mod_handguard",
+        "mod_scope",
+        "mod_sight_rear",
+        "mod_muzzle",
+        "mod_launcher",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock"
+      ],
+      "childSockets": {
+        "handguard_ris": [
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_mount_002",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_tactical_002",
+          "mod_foregrip",
+          "mod_sight_front",
+          "mod_bipod"
+        ]
+      },
+      "chassisSlots": [
+        "mod_reciever",
+        "mod_barrel",
+        "mod_gas_block",
+        "mod_charge",
+        "mod_charge_001"
+      ],
+      "defaultParts": {
+        "mod_handguard": "handguard_ris",
+        "mod_magazine": "mag_stanag_30",
+        "mod_stock": "stock_collapsible",
+        "mod_pistol_grip": "grip_pistol",
+        "mod_muzzle": "muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.155,
+          0,
+          -0.012
+        ],
+        "radius": 0.95,
+        "minRadius": 0.34,
+        "maxRadius": 2.4
+      },
+      "platform": "ar",
+      "caliber": "Caliber556x45NATO"
+    },
+    "5bf3e03b0db834001d2c4a9c": {
+      "key": "ak74n",
+      "name": "AK-74 (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber545x39",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_30",
+        "mod_stock": "ak_stock_fixed",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "5644bd2b4bdc2d3b4c8b4572": {
+      "key": "ak74n",
+      "name": "AK-74N (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber545x39",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_30",
+        "mod_stock": "ak_stock_fixed",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "5ac4cd105acfc40016339859": {
+      "key": "ak74n",
+      "name": "AK-74M (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber545x39",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_30",
+        "mod_stock": "ak_stock_folding",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "5bf3e0490db83400196199af": {
+      "key": "ak74n",
+      "name": "AKS-74 (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber545x39",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_30",
+        "mod_stock": "ak_stock_folding",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "5ab8e9fcd8ce870019439434": {
+      "key": "ak74n",
+      "name": "AKS-74N (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber545x39",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_30",
+        "mod_stock": "ak_stock_folding",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "59d6088586f774275f37482f": {
+      "key": "ak74n",
+      "name": "AKM (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber762x39",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_762_30",
+        "mod_stock": "ak_stock_fixed",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "5a0ec13bfcdbcb00165aa685": {
+      "key": "ak74n",
+      "name": "AKMN (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber762x39",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_762_30",
+        "mod_stock": "ak_stock_fixed",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "5ac66cb05acfc40198510a10": {
+      "key": "ak74n",
+      "name": "AK-101 (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber556x45NATO",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_30",
+        "mod_stock": "ak_stock_folding",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "5ac66d015acfc400180ae6e4": {
+      "key": "ak74n",
+      "name": "AK-102 (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber556x45NATO",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_30",
+        "mod_stock": "ak_stock_folding",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "5ac66d2e5acfc43b321d4b53": {
+      "key": "ak74n",
+      "name": "AK-103 (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber762x39",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_762_30",
+        "mod_stock": "ak_stock_folding",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "5ac66d725acfc43b321d4b60": {
+      "key": "ak74n",
+      "name": "AK-104 (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber762x39",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_762_30",
+        "mod_stock": "ak_stock_folding",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "5ac66d9b5acfc4001633997a": {
+      "key": "ak74n",
+      "name": "AK-105 (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber545x39",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_30",
+        "mod_stock": "ak_stock_folding",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "59e6152586f77473dc057aa1": {
+      "key": "ak74n",
+      "name": "VPO-136 Vepr-KM (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber762x39",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_762_30",
+        "mod_stock": "ak_stock_fixed",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    },
+    "59e6687d86f77411d949b251": {
+      "key": "ak74n",
+      "name": "VPO-209 (clean-room AK blockout)",
+      "file": "ak74n.glb",
+      "platform": "ak",
+      "caliber": "Caliber366TKM",
+      "lengthM": 0.943,
+      "sockets": [
+        "mod_gas_block",
+        "mod_charge",
+        "mod_reciever",
+        "mod_magazine",
+        "mod_pistol_grip",
+        "mod_stock",
+        "mod_muzzle",
+        "mod_sight_rear",
+        "mod_sight_front",
+        "mod_mount_000",
+        "mod_launcher",
+        "mod_handguard"
+      ],
+      "childSockets": {
+        "ak_handguard_wood": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_handguard_rail": [
+          "mod_foregrip",
+          "mod_tactical_000",
+          "mod_tactical_001",
+          "mod_mount_000",
+          "mod_mount_001",
+          "mod_bipod"
+        ],
+        "ak_dustcover": [
+          "mod_mount"
+        ],
+        "ak_dustcover_rail": [
+          "mod_mount",
+          "mod_scope"
+        ],
+        "ak_side_mount": [
+          "mod_scope",
+          "mod_mount"
+        ],
+        "ak_stock_fixed": [
+          "mod_stock"
+        ],
+        "ak_stock_folding": [
+          "mod_stock"
+        ]
+      },
+      "chassisSlots": [
+        "mod_gas_block",
+        "mod_charge"
+      ],
+      "defaultParts": {
+        "mod_reciever": "ak_dustcover",
+        "mod_handguard": "ak_handguard_wood",
+        "mod_magazine": "ak_mag_762_30",
+        "mod_stock": "ak_stock_fixed",
+        "mod_pistol_grip": "ak_grip",
+        "mod_muzzle": "ak_muzzle_brake"
+      },
+      "view": {
+        "target": [
+          0.18,
+          0,
+          -0.01
+        ],
+        "radius": 1,
+        "minRadius": 0.34,
+        "maxRadius": 2.6
+      }
+    }
+  },
+  "archetypes": {
+    "mag_stanag_30": {
+      "file": "mag_stanag_30.glb",
+      "label": "30-rd box magazine",
+      "fitsSlots": [
+        "magazine"
+      ],
+      "categoryMatch": [
+        "Magazine"
+      ],
+      "keywords": [
+        "30-round",
+        "30 round",
+        "20-round",
+        "10-round",
+        "stanag",
+        "pmag",
+        "battlemag",
+        "l5 awm"
+      ],
+      "priority": 10,
+      "platform": "ar",
+      "calibers": [
+        "Caliber556x45NATO",
+        "Caliber762x35"
+      ]
+    },
+    "mag_drum_60": {
+      "file": "mag_drum_60.glb",
+      "label": "High-capacity drum",
+      "fitsSlots": [
+        "magazine"
+      ],
+      "categoryMatch": [
+        "Magazine",
+        "Cylinder Magazine",
+        "Spring Driven Cylinder"
+      ],
+      "keywords": [
+        "drum",
+        "d-60",
+        "d60",
+        "50-round",
+        "60-round",
+        "60 round",
+        "100-round",
+        "100 round",
+        "beta",
+        "x-15",
+        "x product"
+      ],
+      "priority": 30,
+      "platform": "ar",
+      "calibers": [
+        "Caliber556x45NATO",
+        "Caliber762x35"
+      ]
+    },
+    "muzzle_brake": {
+      "file": "muzzle_brake.glb",
+      "label": "Muzzle brake / flash hider",
+      "fitsSlots": [
+        "muzzle"
+      ],
+      "categoryMatch": [
+        "Flashhider",
+        "Comb. muzzle device",
+        "Muzzle device"
+      ],
+      "keywords": [
+        "brake",
+        "flash",
+        "hider",
+        "compensator",
+        "muzzle",
+        "thread"
+      ],
+      "priority": 10,
+      "platform": "ar"
+    },
+    "muzzle_suppressor": {
+      "file": "muzzle_suppressor.glb",
+      "label": "Suppressor",
+      "fitsSlots": [
+        "muzzle"
+      ],
+      "categoryMatch": [
+        "Silencer"
+      ],
+      "keywords": [
+        "suppressor",
+        "silencer",
+        "sdn",
+        "pbs",
+        "sound"
+      ],
+      "priority": 30,
+      "platform": "ar"
+    },
+    "optic_reddot": {
+      "file": "optic_reddot.glb",
+      "label": "Red dot / reflex sight",
+      "fitsSlots": [
+        "scope",
+        "sight_rear",
+        "sight_front",
+        "mount"
+      ],
+      "categoryMatch": [
+        "Reflex sight",
+        "Compact reflex sight",
+        "Ironsight"
+      ],
+      "keywords": [
+        "reflex",
+        "red dot",
+        "holographic",
+        "holosight",
+        "rmr",
+        "micro",
+        "sight"
+      ],
+      "priority": 10
+    },
+    "optic_scope_4x": {
+      "file": "optic_scope_4x.glb",
+      "label": "Magnified optic",
+      "fitsSlots": [
+        "scope",
+        "mount"
+      ],
+      "categoryMatch": [
+        "Assault scope",
+        "Scope",
+        "Special scope",
+        "Night Vision",
+        "Thermal Vision"
+      ],
+      "keywords": [
+        "scope",
+        "4x",
+        "6x",
+        "acog",
+        "magnifier",
+        "telescopic",
+        "optic",
+        "pso",
+        "riflescope"
+      ],
+      "priority": 30
+    },
+    "foregrip_vertical": {
+      "file": "foregrip_vertical.glb",
+      "label": "Vertical foregrip",
+      "fitsSlots": [
+        "foregrip",
+        "bipod"
+      ],
+      "categoryMatch": [
+        "Foregrip",
+        "Bipod"
+      ],
+      "keywords": [
+        "foregrip",
+        "vertical",
+        "grip",
+        "bipod",
+        "handstop"
+      ],
+      "priority": 10
+    },
+    "grip_pistol": {
+      "file": "grip_pistol.glb",
+      "label": "Pistol grip",
+      "fitsSlots": [
+        "pistol_grip"
+      ],
+      "categoryMatch": [
+        "Pistol grip"
+      ],
+      "keywords": [
+        "grip"
+      ],
+      "priority": 10,
+      "platform": "ar"
+    },
+    "stock_collapsible": {
+      "file": "stock_collapsible.glb",
+      "label": "Collapsible stock",
+      "fitsSlots": [
+        "stock"
+      ],
+      "categoryMatch": [
+        "Stock"
+      ],
+      "keywords": [
+        "collapsible",
+        "carbine",
+        "adjustable",
+        "telescoping",
+        "buffer",
+        "tube",
+        "ctr",
+        "moe",
+        "sopmod",
+        "ubr"
+      ],
+      "priority": 20,
+      "platform": "ar"
+    },
+    "stock_fixed": {
+      "file": "stock_fixed.glb",
+      "label": "Fixed stock",
+      "fitsSlots": [
+        "stock"
+      ],
+      "categoryMatch": [
+        "Stock"
+      ],
+      "keywords": [
+        "fixed",
+        "a2",
+        "solid",
+        "standard",
+        "wooden",
+        "polymer stock"
+      ],
+      "priority": 10,
+      "platform": "ar"
+    },
+    "tactical_light": {
+      "file": "tactical_light.glb",
+      "label": "Light / laser box",
+      "fitsSlots": [
+        "tactical",
+        "mount",
+        "flashlight"
+      ],
+      "categoryMatch": [
+        "Flashlight",
+        "Comb. tact. device",
+        "Mount"
+      ],
+      "keywords": [
+        "light",
+        "laser",
+        "tactical",
+        "peq",
+        "lam",
+        "designator",
+        "illuminator",
+        "torch"
+      ],
+      "priority": 10
+    },
+    "handguard_ris": {
+      "file": "handguard_ris.glb",
+      "label": "Quad-rail handguard",
+      "fitsSlots": [
+        "handguard"
+      ],
+      "categoryMatch": [
+        "Handguard"
+      ],
+      "keywords": [
+        "handguard",
+        "rail",
+        "ris",
+        "rail system",
+        "mlok",
+        "keymod"
+      ],
+      "priority": 10,
+      "platform": "ar"
+    },
+    "ak_mag_30": {
+      "file": "ak_mag_30.glb",
+      "platform": "ak",
+      "label": "AK 30-rd box magazine (5.45/5.56)",
+      "fitsSlots": [
+        "magazine"
+      ],
+      "categoryMatch": [
+        "Magazine"
+      ],
+      "keywords": [
+        "30-round",
+        "30 round",
+        "10-round",
+        "20-round"
+      ],
+      "calibers": [
+        "Caliber545x39",
+        "Caliber556x45NATO"
+      ],
+      "priority": 10
+    },
+    "ak_mag_45": {
+      "file": "ak_mag_45.glb",
+      "platform": "ak",
+      "label": "AK 45-rd magazine",
+      "fitsSlots": [
+        "magazine"
+      ],
+      "categoryMatch": [
+        "Magazine"
+      ],
+      "keywords": [
+        "45-round",
+        "45 round",
+        "40-round",
+        "rpk"
+      ],
+      "calibers": [
+        "Caliber545x39",
+        "Caliber762x39",
+        "Caliber556x45NATO",
+        "Caliber366TKM"
+      ],
+      "priority": 20
+    },
+    "ak_mag_60": {
+      "file": "ak_mag_60.glb",
+      "platform": "ak",
+      "label": "AK 60-rd quad-stack",
+      "fitsSlots": [
+        "magazine"
+      ],
+      "categoryMatch": [
+        "Magazine",
+        "Cylinder Magazine"
+      ],
+      "keywords": [
+        "60-round",
+        "60 round",
+        "75-round",
+        "95-round",
+        "drum",
+        "quad"
+      ],
+      "calibers": [
+        "Caliber545x39",
+        "Caliber762x39",
+        "Caliber556x45NATO",
+        "Caliber366TKM"
+      ],
+      "priority": 30
+    },
+    "ak_muzzle_brake": {
+      "file": "ak_muzzle_brake.glb",
+      "platform": "ak",
+      "label": "AK muzzle brake",
+      "fitsSlots": [
+        "muzzle"
+      ],
+      "categoryMatch": [
+        "Flashhider",
+        "Comb. muzzle device",
+        "Muzzle device"
+      ],
+      "keywords": [
+        "brake",
+        "compensator",
+        "flash",
+        "hider",
+        "muzzle",
+        "dtk",
+        "booster"
+      ],
+      "priority": 10
+    },
+    "ak_suppressor": {
+      "file": "ak_suppressor.glb",
+      "platform": "ak",
+      "label": "AK suppressor",
+      "fitsSlots": [
+        "muzzle"
+      ],
+      "categoryMatch": [
+        "Silencer"
+      ],
+      "keywords": [
+        "suppressor",
+        "silencer",
+        "pbs",
+        "sound"
+      ],
+      "priority": 30
+    },
+    "ak_dustcover": {
+      "file": "ak_dustcover.glb",
+      "platform": "ak",
+      "label": "Dust cover",
+      "fitsSlots": [
+        "reciever"
+      ],
+      "categoryMatch": [
+        "Receiver",
+        "Gear mod",
+        "Weapon mod"
+      ],
+      "keywords": [
+        "dust cover",
+        "cover",
+        "receiver"
+      ],
+      "priority": 10
+    },
+    "ak_dustcover_rail": {
+      "file": "ak_dustcover_rail.glb",
+      "platform": "ak",
+      "label": "Dust cover with rail",
+      "fitsSlots": [
+        "reciever"
+      ],
+      "categoryMatch": [
+        "Receiver",
+        "Mount",
+        "Gear mod",
+        "Weapon mod"
+      ],
+      "keywords": [
+        "rail",
+        "picatinny",
+        "b-13",
+        "b-33",
+        "ultimak",
+        "railed"
+      ],
+      "priority": 30
+    },
+    "ak_side_mount": {
+      "file": "ak_side_mount.glb",
+      "platform": "ak",
+      "label": "Side-rail optic mount",
+      "fitsSlots": [
+        "mount"
+      ],
+      "categoryMatch": [
+        "Mount"
+      ],
+      "keywords": [
+        "side",
+        "mount",
+        "b-13",
+        "b-3",
+        "bracket",
+        "dovetail"
+      ],
+      "priority": 20
+    },
+    "ak_handguard_wood": {
+      "file": "ak_handguard_wood.glb",
+      "platform": "ak",
+      "label": "AK handguard set",
+      "fitsSlots": [
+        "handguard"
+      ],
+      "categoryMatch": [
+        "Handguard"
+      ],
+      "keywords": [
+        "handguard",
+        "wood",
+        "polymer",
+        "forearm"
+      ],
+      "priority": 10
+    },
+    "ak_handguard_rail": {
+      "file": "ak_handguard_rail.glb",
+      "platform": "ak",
+      "label": "AK railed handguard",
+      "fitsSlots": [
+        "handguard"
+      ],
+      "categoryMatch": [
+        "Handguard",
+        "Mount"
+      ],
+      "keywords": [
+        "rail",
+        "b-10",
+        "b-11",
+        "zenit",
+        "picatinny"
+      ],
+      "priority": 30
+    },
+    "ak_stock_fixed": {
+      "file": "ak_stock_fixed.glb",
+      "platform": "ak",
+      "label": "AK fixed stock",
+      "fitsSlots": [
+        "stock"
+      ],
+      "categoryMatch": [
+        "Stock"
+      ],
+      "keywords": [
+        "fixed",
+        "wood",
+        "polymer",
+        "buttstock"
+      ],
+      "priority": 10
+    },
+    "ak_stock_folding": {
+      "file": "ak_stock_folding.glb",
+      "platform": "ak",
+      "label": "AK folding stock",
+      "fitsSlots": [
+        "stock"
+      ],
+      "categoryMatch": [
+        "Stock"
+      ],
+      "keywords": [
+        "folding",
+        "folder",
+        "triangle",
+        "skeleton",
+        "side-fold",
+        "telescop",
+        "collapsible"
+      ],
+      "priority": 30
+    },
+    "ak_grip": {
+      "file": "ak_grip.glb",
+      "platform": "ak",
+      "label": "AK pistol grip",
+      "fitsSlots": [
+        "pistol_grip"
+      ],
+      "categoryMatch": [
+        "Pistol grip"
+      ],
+      "keywords": [
+        "grip"
+      ],
+      "priority": 10
+    },
+    "ak_mag_762_30": {
+      "file": "ak_mag_762_30.glb",
+      "platform": "ak",
+      "label": "AK 30-rd box magazine (7.62x39)",
+      "fitsSlots": [
+        "magazine"
+      ],
+      "categoryMatch": [
+        "Magazine"
+      ],
+      "keywords": [
+        "30-round",
+        "30 round",
+        "10-round",
+        "20-round"
+      ],
+      "calibers": [
+        "Caliber762x39",
+        "Caliber366TKM"
+      ],
+      "priority": 10
+    }
+  },
+  "mapping": {
+    "slotKey": "lowercase(nameId) minus a leading 'mod_' minus a trailing '_<digits>'; 'pistol*' collapses to 'pistol_grip'. Identical to PilotHubBuilder.slotKey so the two layers can never disagree.",
+    "rules": [
+      "1. Candidates = archetypes whose fitsSlots contains the slot's slotKey.",
+      "2. +100 if the item's category name (or any ancestor category name) is in categoryMatch.",
+      "3. +60 per keyword found in the item's lowercased name or short name - MORE than a category hit, because Tarkov files a 60-round drum under the same plain \"Magazine\" category as a STANAG box, so only the name can separate them.",
+      "4. + priority, as the tiebreak when two archetypes score identically on category and keywords.",
+      "4b. PLATFORM GATE: an archetype carrying a `platform` only matches a gun with the same `platform` (ar | ak), so an AR handguard can never land on an AK and an AK dust cover can never land on an M4. Archetypes with no `platform` (optics, foregrip, light) are shared on purpose.",
+      "4c. CALIBER GATE: an archetype carrying `calibers` only matches a gun whose `caliber` is in that list. Magazines carry it; nothing else needs to.",
+      "5. Best score wins; a score of 0 is NOT a match.",
+      "6. No match, or no archetype for the slot at all => render the labelled ghost box at the socket. Nothing ever fails to render.",
+      "7. An EMPTY slot uses guns[id].defaultParts[nameId] when present, so the gun always reads as a complete weapon.",
+      "8. A gun id with no entry in `guns` has no 3D at all - the viewer reports supports(gunId)=false and the 3D toggle must be hidden for it."
+    ],
+    "fallback": "ghost"
+  },
+  "ghost": {
+    "size": [
+      0.075,
+      0.055,
+      0.045
+    ],
+    "color": "#7bd0ff",
+    "opacity": 0.28,
+    "note": "Drawn at the socket, grown along the socket's +Y, with the item's short name as a label in the 2D overlay."
+  },
+  "categories": {
+    "5448bc234bdc2d3c308b4569": "Magazine",
+    "610720f290b75a49ff2e5e25": "Cylinder Magazine",
+    "627a137bf21bc425b06ab944": "Spring Driven Cylinder",
+    "550aa4bf4bdc2dd6348b456b": "Flashhider",
+    "550aa4cd4bdc2dd8348b456c": "Silencer",
+    "550aa4dd4bdc2dc9348b4569": "Comb. muzzle device",
+    "5448fe394bdc2d0d028b456c": "Muzzle device",
+    "55818ad54bdc2ddc698b4569": "Reflex sight",
+    "55818acf4bdc2dde698b456b": "Compact reflex sight",
+    "55818ac54bdc2d5b648b456e": "Ironsight",
+    "55818add4bdc2d5b648b456f": "Assault scope",
+    "55818ae44bdc2dde698b456c": "Scope",
+    "55818aeb4bdc2ddc698b456a": "Special scope",
+    "5a2c3a9486f774688b05e574": "Night Vision",
+    "5d21f59b6dbe99052b54ef83": "Thermal Vision",
+    "5448fe7a4bdc2d6f028b456b": "Sights",
+    "55818af64bdc2d5b648b4570": "Foregrip",
+    "55818afb4bdc2dde698b456d": "Bipod",
+    "55818a594bdc2db9688b456a": "Stock",
+    "55818a684bdc2ddd698b456d": "Pistol grip",
+    "55818a104bdc2db9688b4569": "Handguard",
+    "555ef6e44bdc2de9068b457e": "Barrel",
+    "55818a304bdc2db5418b457d": "Receiver",
+    "56ea9461d2720b67698b456f": "Gas block",
+    "55818a6f4bdc2db9688b456b": "Charging handle",
+    "55818b224bdc2dde698b456f": "Mount",
+    "55818b084bdc2d5b648b4571": "Flashlight",
+    "55818b164bdc2ddc698b456c": "Comb. tact. device",
+    "55818b014bdc2ddc698b456b": "UBGL",
+    "5a74651486f7744e73386dd1": "Auxiliary Mod",
+    "550aa4154bdc2dd8348b456b": "Functional mod",
+    "55802f4a4bdc2ddb688b4569": "Essential mod",
+    "55802f3e4bdc2de7118b4584": "Gear mod",
+    "5448fe124bdc2da5018b4567": "Weapon mod"
+  },
+  "categoryParents": {
+    "610720f290b75a49ff2e5e25": "5448bc234bdc2d3c308b4569",
+    "627a137bf21bc425b06ab944": "610720f290b75a49ff2e5e25",
+    "550aa4bf4bdc2dd6348b456b": "5448fe394bdc2d0d028b456c",
+    "550aa4cd4bdc2dd8348b456c": "5448fe394bdc2d0d028b456c",
+    "550aa4dd4bdc2dc9348b4569": "5448fe394bdc2d0d028b456c",
+    "55818add4bdc2d5b648b456f": "5448fe7a4bdc2d6f028b456b",
+    "55818ad54bdc2ddc698b4569": "5448fe7a4bdc2d6f028b456b",
+    "55818ac54bdc2d5b648b456e": "5448fe7a4bdc2d6f028b456b",
+    "55818ae44bdc2dde698b456c": "5448fe7a4bdc2d6f028b456b",
+    "55818aeb4bdc2ddc698b456a": "5448fe7a4bdc2d6f028b456b",
+    "55818acf4bdc2dde698b456b": "5448fe7a4bdc2d6f028b456b",
+    "5a2c3a9486f774688b05e574": "55818aeb4bdc2ddc698b456a",
+    "5d21f59b6dbe99052b54ef83": "55818aeb4bdc2ddc698b456a"
+  },
+  "platforms": {
+    "ar": {
+      "chassis": "m4a1.glb",
+      "note": "mod_reciever = UPPER RECEIVER and is baked chassis; the handguard is a sibling of the barrel under it."
+    },
+    "ak": {
+      "chassis": "ak74n.glb",
+      "note": "no mod_barrel at all; mod_muzzle hangs off the ROOT, the handguard hangs off the GAS BLOCK, and mod_reciever means DUST COVER - a real swappable socket."
+    }
+  },
+  "notMapped": {
+    "AKS-74U / AKS-74UB / AKS-74UN": "short-barrelled chassis - the full-length AK blockout would render visibly wrong; needs its own build_ak_u.py",
+    "AKMS / AKMSN": "their slot set did not match the AK-74N reference set in the data probe; not mapped rather than guessed",
+    "SAG AK-545 / AK-545 Short": "no mod_reciever and no mod_stock; mod_stock_000 instead - a different chassis",
+    "Rifle Dynamics RD-704": "mod_stock_000 instead of mod_stock",
+    "PP-19-01 Vityaz / Saiga-9": "9x19 SMG proportions, not a rifle chassis"
+  }
+}

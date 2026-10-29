@@ -1,0 +1,763 @@
+[
+ {
+  "id": "ailment",
+  "term": "Ailment",
+  "beginner": {
+   "whatItIs": "A lasting bad effect a hit can leave behind on whatever it struck, tied to the damage type that caused it. The full list is bleeding, ignite, chill, freeze, shock, electrocute and poison.",
+   "whyItMatters": "Bleeding, ignite and poison keep dealing damage after the hit is over, while chill, freeze, shock and electrocute take the target out of the fight or soften it up for the next hit. A build that stacks one of them gets damage or control it never paid for in weapon numbers.",
+   "whenToUseIt": "Check what damage type your main skill actually deals before you plan around an ailment, because each one is worked out from its own damage type by default. A fire skill will not freeze anything no matter how much freeze chance you buy."
+  },
+  "seeAlso": [
+   "Damage type",
+   "Curse",
+   "Resistance"
+  ]
+ },
+ {
+  "id": "area-of-effect",
+  "term": "Area of effect",
+  "beginner": {
+   "whatItIs": "The patch of ground a skill covers when it goes off. Skills that hit a zone rather than a single target have one, and gear, passives and supports can grow or shrink it.",
+   "whyItMatters": "Area size decides how many enemies one button press catches, which is a large part of your clear speed against packs.",
+   "whenToUseIt": "Grow it when you are clearing crowds and keep having to chase stragglers. Shrink it when a skill spreads its damage thin and you would rather land all of it on one enemy."
+  },
+  "seeAlso": [
+   "Skill gem",
+   "Support gem"
+  ]
+ },
+ {
+  "id": "armour",
+  "term": "Armour",
+  "beginner": {
+   "whatItIs": "A defence number on gear that cuts the physical damage of hits you take. It does nothing against damage over time, and nothing against fire, cold, lightning or chaos.",
+   "whyItMatters": "How much it cuts depends on the size of the hit compared with your armour number, so it soaks ordinary attacks well and gives back much less against one enormous slam. The reduction cannot pass ninety percent.",
+   "whenToUseIt": "Build it when what is killing you is physical and arrives as a steady stream of normal attacks. Pair it with something else - energy shield, evasion, or simply more life - for the big telegraphed boss hits it handles poorly."
+  },
+  "seeAlso": [
+   "Energy shield",
+   "Evasion",
+   "Damage type"
+  ]
+ },
+ {
+  "id": "ascendancy",
+  "term": "Ascendancy",
+  "beginner": {
+   "whatItIs": "A specialisation you choose for your class after clearing a trial. It unlocks a small extra passive tree that only that specialisation can take.",
+   "whyItMatters": "Each ascendancy point buys a much larger effect than an ordinary passive point does, and the choice is what turns a generic class into a specific build.",
+   "whenToUseIt": "Pick it before your first trial, since the tree you unlock shapes everything you build afterwards. You can change it later by redoing a trial with no ascendancy points spent, but treat that as a repair job rather than part of the plan."
+  },
+  "seeAlso": [
+   "Ascension Trial",
+   "Passive skill tree",
+   "Attribute"
+  ]
+ },
+ {
+  "id": "ascension-trial",
+  "term": "Ascension Trial",
+  "beginner": {
+   "whatItIs": "A self-contained challenge run that awards ascendancy points. Clearing one for the first time is what lets you choose an ascendancy at all.",
+   "whyItMatters": "There are four tiers of trial and each grants two points, so a finished character has eight ascendancy points to spend. Skipping them leaves a hole in the build that ordinary gear cannot fill.",
+   "whenToUseIt": "Run the first one as soon as the campaign offers it, since two ascendancy points early usually do more for a character than the same number of ordinary passive points. Come back for the later tiers once you can clear them without a scare."
+  },
+  "seeAlso": [
+   "Ascendancy",
+   "Passive skill tree"
+  ]
+ },
+ {
+  "id": "atlas",
+  "term": "Atlas",
+  "beginner": {
+   "whatItIs": "The endgame map. Once the campaign is over you open areas on it with waystones, and it keeps expanding outward as you clear more of it.",
+   "whyItMatters": "Everything after the story happens here: it is where high-level gear, currency and the pinnacle bosses come from.",
+   "whenToUseIt": "You reach it after the campaign, not before. Treat the low tiers as a gear check - if early maps are killing you, the answer is usually resistances and life rather than pushing a higher tier."
+  },
+  "seeAlso": [
+   "Waystone",
+   "Boss",
+   "Resistance"
+  ]
+ },
+ {
+  "id": "attribute",
+  "term": "Attribute",
+  "beginner": {
+   "whatItIs": "One of the three numbers every character has: Strength, Dexterity and Intelligence. Gear and gems each ask for a minimum amount of one or two of them before you are allowed to equip or socket the thing.",
+   "whyItMatters": "Attributes are the gate on what you can actually use. A build that ignores them ends up holding items it cannot equip, which is the single most common reason a new character stalls in the campaign.",
+   "whenToUseIt": "Check the attribute line on an item or gem before you plan around it. If you are short by a few points, an attribute node on the tree or a ring with the right stat is usually cheaper than rebuilding around a different item."
+  },
+  "seeAlso": [
+   "Passive skill tree",
+   "Skill gem",
+   "Support gem"
+  ]
+ },
+ {
+  "id": "base-item",
+  "term": "Base item",
+  "beginner": {
+   "whatItIs": "The plain version of a piece of gear before any random lines are added: the boots, the bow, the helmet. Magic, rare and unique items are all built on top of one.",
+   "whyItMatters": "The base sets the defence numbers, the attribute requirements, the implicit modifier and which random modifiers can appear at all. Two rares reading almost the same can be far apart because their bases are.",
+   "whenToUseIt": "Look at the base before you spend currency improving an item. Money poured into a weak base is money you will spend again on the good one later."
+  },
+  "seeAlso": [
+   "Implicit modifier",
+   "Modifier",
+   "Rarity"
+  ]
+ },
+ {
+  "id": "boss",
+  "term": "Boss",
+  "beginner": {
+   "whatItIs": "A named enemy with its own arena, its own set of telegraphed attacks and, usually, a story or progression reason to fight it.",
+   "whyItMatters": "Bosses are the game's real difficulty check. They punish a build that has damage but no defences, and they gate acts, ascendancy points and endgame access.",
+   "whenToUseIt": "Learn the tells rather than out-gearing them. Most boss attacks in this game are dodgeable, and reading them does more for your survival than another gear upgrade."
+  },
+  "seeAlso": [
+   "Dodge roll",
+   "Checkpoint",
+   "Atlas"
+  ]
+ },
+ {
+  "id": "charge",
+  "term": "Charge",
+  "beginner": {
+   "whatItIs": "A counter that orbits your character as a glowing bead. There are three kinds - endurance, frenzy and power - and you can hold up to three of each by default.",
+   "whyItMatters": "Charges do nothing on their own. Their whole value is that skills, supports and passives spend them for a bigger effect, so a build either has a way to make and spend them or should ignore them entirely.",
+   "whenToUseIt": "Only build around charges once you have both halves: something that reliably generates them, and something that pays out when they are spent. They also expire fifteen seconds after the last one you gained."
+  },
+  "seeAlso": [
+   "Skill gem",
+   "Passive skill tree"
+  ]
+ },
+ {
+  "id": "charm",
+  "term": "Charm",
+  "beginner": {
+   "whatItIs": "A small protective trinket you slot into your belt, up to three at once. It fires on its own when the condition printed on it happens, instead of waiting for a keypress.",
+   "whyItMatters": "A charm covers the deaths you cannot react to - a freeze, a stun, a sudden burn - because it triggers before you have registered the danger.",
+   "whenToUseIt": "Slot one against whatever has been ending your runs. Charms spend charges earned from killing monsters, and reaching a checkpoint recharges them completely."
+  },
+  "seeAlso": [
+   "Checkpoint",
+   "Flask",
+   "Ailment"
+  ]
+ },
+ {
+  "id": "checkpoint",
+  "term": "Checkpoint",
+  "beginner": {
+   "whatItIs": "A save marker inside a zone, usually placed before a boss or somewhere worth remembering. Reaching one refills your life, mana, flasks and charms.",
+   "whyItMatters": "It is your respawn point and a free full heal in one. When you die you choose between town and the last checkpoint you reached, so how far back you get thrown is decided before the fight starts.",
+   "whenToUseIt": "Walk to one before any fight you expect to be hard, because the refill alone is worth the detour. You can also teleport between checkpoints inside an area rather than walking."
+  },
+  "seeAlso": [
+   "Flask",
+   "Charm",
+   "Boss"
+  ]
+ },
+ {
+  "id": "class",
+  "term": "Class",
+  "beginner": {
+   "whatItIs": "The character type you pick at the start. It sets which attributes you begin high in, where you start on the shared passive board, and which ascendancy specialisations you may later choose from.",
+   "whyItMatters": "Class matters less than new players expect, because your damage comes from gems rather than from the class. What the class really buys you is a starting position and a shortlist of ascendancies.",
+   "whenToUseIt": "Pick a class for the ascendancy you want to end up as rather than for the numbers on the character-select screen. If you have no ascendancy in mind yet, pick the attribute you want to build around."
+  },
+  "seeAlso": [
+   "Ascendancy",
+   "Attribute",
+   "Passive skill tree"
+  ]
+ },
+ {
+  "id": "corrupted",
+  "term": "Corrupted",
+  "beginner": {
+   "whatItIs": "A permanent stamp on an item that closes it to further crafting. A Vaal Orb is the common way to do it, and it changes the item unpredictably in the same moment.",
+   "whyItMatters": "Corruption cannot be undone, and the outcome ranges from a real upgrade to a piece of gear you throw away. Whatever it rolls is what you keep.",
+   "whenToUseIt": "Corrupt an item only when it is finished and you can afford to lose it. Never corrupt gear you are still part-way through improving."
+  },
+  "seeAlso": [
+   "Currency item",
+   "Modifier",
+   "Quality"
+  ]
+ },
+ {
+  "id": "critical-hit",
+  "term": "Critical hit",
+  "beginner": {
+   "whatItIs": "A hit that rolls lucky and lands harder. By default a critical hit deals double damage, and a critical damage bonus pushes that higher.",
+   "whyItMatters": "Attacks use the critical hit chance printed on your weapon, while spells use the one printed on the skill. The same passive investment therefore pays out very differently depending on what you are holding.",
+   "whenToUseIt": "Build critical hit when your weapon or skill already starts with a decent base chance, because increases are percentages of that base. On a low base, plain added damage is usually the better spend."
+  },
+  "seeAlso": [
+   "Damage type",
+   "Skill gem"
+  ]
+ },
+ {
+  "id": "currency-item",
+  "term": "Currency item",
+  "beginner": {
+   "whatItIs": "A stackable item that does something to your gear when you use it - rerolling a stat, upgrading an item's rarity, adding a modifier. There is no gold; these are both the tools and the money.",
+   "whyItMatters": "Because they are consumed by crafting and accepted in trade at the same time, every one you spend on a bad item is one you cannot spend on a good one.",
+   "whenToUseIt": "Use the cheap, common ones freely on gear you are wearing right now. Save the rare ones until you have an item worth finishing."
+  },
+  "seeAlso": [
+   "Gold",
+   "Rarity",
+   "Unique item"
+  ]
+ },
+ {
+  "id": "curse",
+  "term": "Curse",
+  "beginner": {
+   "whatItIs": "A skill that lays a lasting weakness on enemies instead of damaging them directly - dropping a resistance, slowing them down, making everything they take hurt more.",
+   "whyItMatters": "A curse multiplies the damage you already deal, so it grows alongside your damage instead of competing with it for gear.",
+   "whenToUseIt": "Add one when a single tough enemy is the problem and your damage is close but not quite enough. Some supports turn curses into an aura around you, which suits packs more than single targets."
+  },
+  "seeAlso": [
+   "Skill gem",
+   "Support gem",
+   "Resistance"
+  ]
+ },
+ {
+  "id": "damage-type",
+  "term": "Damage type",
+  "beginner": {
+   "whatItIs": "One of the five kinds of damage in the game: physical, fire, cold, lightning and chaos. Every hit is made of one or more of them.",
+   "whyItMatters": "The type decides what defends against it. Armour reduces physical only, and fire, cold, lightning and chaos are each cut by their own resistance instead.",
+   "whenToUseIt": "Read the type before you blame your gear. When one kind of damage keeps ending your runs, the fix is that resistance or that defence, not simply more life."
+  },
+  "seeAlso": [
+   "Armour",
+   "Resistance",
+   "Ailment"
+  ]
+ },
+ {
+  "id": "dodge-roll",
+  "term": "Dodge roll",
+  "beginner": {
+   "whatItIs": "A roll every character has from level one, on the space bar by default. It costs nothing, has no cooldown, and holding the button makes you sprint instead.",
+   "whyItMatters": "It is your main way out of a telegraphed attack. It avoids projectiles and melee attacks at the start of the roll and grants stun resistance, but it does not make you invulnerable for the whole roll.",
+   "whenToUseIt": "Roll on the enemy's wind-up rather than after the hit lands. Rolling into the middle of a long attack can drop you straight back inside it."
+  },
+  "seeAlso": [
+   "Stun",
+   "Boss"
+  ]
+ },
+ {
+  "id": "drop-level",
+  "term": "Drop level",
+  "beginner": {
+   "whatItIs": "The lowest area level at which a particular item can begin to drop. It is a property of the item type, not of the copy sitting in your inventory.",
+   "whyItMatters": "It tells you whether an item is even obtainable where you are, which is what makes a target farmable rather than a hope. It is also why some uniques never appear during the campaign.",
+   "whenToUseIt": "Read it when you are hunting a specific item, and pick a zone at or above that level. Keep it separate in your head from item level, which is about what a piece can roll rather than where it appears."
+  },
+  "seeAlso": [
+   "Item level",
+   "Unique item",
+   "Waystone"
+  ]
+ },
+ {
+  "id": "energy-shield",
+  "term": "Energy shield",
+  "beginner": {
+   "whatItIs": "A second bar layered over your life. Damage eats the shield first, and the shield refills itself quickly once you have avoided being hit for a few seconds.",
+   "whyItMatters": "Because it recharges on its own it rewards fights where you can break contact, and it costs no flask charges to bring back. Two things get around it: chaos damage removes two points of shield for every point of damage dealt, and bleeding ignores it completely.",
+   "whenToUseIt": "Lean on it when your gear rolls the intelligence-flavoured defences and you can disengage between packs. Do not rely on it alone in places where chaos damage is common."
+  },
+  "seeAlso": [
+   "Life",
+   "Damage type",
+   "Ailment"
+  ]
+ },
+ {
+  "id": "evasion",
+  "term": "Evasion",
+  "beginner": {
+   "whatItIs": "A rating that gives enemy hits a chance to miss you outright. Whether a hit lands is your evasion rating measured against that enemy's accuracy.",
+   "whyItMatters": "When it works you take nothing at all, which armour cannot do - but it is a chance, and a run of bad luck arrives eventually.",
+   "whenToUseIt": "Build it when your gear is dexterity-flavoured and you fight at range or in short bursts. Back it with life or energy shield, because evasion does nothing to soften the hits that do get through."
+  },
+  "seeAlso": [
+   "Armour",
+   "Energy shield",
+   "Dodge roll"
+  ]
+ },
+ {
+  "id": "explicit-modifier",
+  "term": "Explicit modifier",
+  "beginner": {
+   "whatItIs": "A random stat line rolled onto the item itself, as opposed to one inherited from its base. These are the lines that crafting currency adds, removes and rerolls.",
+   "whyItMatters": "They are the part of an item you can change, so they are where currency actually goes. They are also what the prefix and suffix limits count.",
+   "whenToUseIt": "Count them before crafting. If a rare already has its maximum on the side you need, an orb that adds a modifier has nowhere to put one."
+  },
+  "seeAlso": [
+   "Implicit modifier",
+   "Modifier",
+   "Currency item"
+  ]
+ },
+ {
+  "id": "flask",
+  "term": "Flask",
+  "beginner": {
+   "whatItIs": "A refillable bottle in its own slot that restores life or mana when used. Flasks are never consumed - they run on charges.",
+   "whyItMatters": "Flask charges come from killing enemies, so your healing depends on the fight producing kills. Walking into a boss room on empty flasks is a common way to lose a character.",
+   "whenToUseIt": "Top up on ordinary enemies before a boss door, and touch a checkpoint to refill completely. Replace the flask itself as you level, since a low-level flask heals a small fraction of a grown character's bar."
+  },
+  "seeAlso": [
+   "Checkpoint",
+   "Life",
+   "Mana"
+  ]
+ },
+ {
+  "id": "gem-socket",
+  "term": "Gem socket",
+  "beginner": {
+   "whatItIs": "A slot on a skill gem that holds a support gem. The sockets are on the gem itself, not on your gear - that is the part players coming from other games get wrong.",
+   "whyItMatters": "A skill gem carries two to five sockets and every one you fill makes that skill stronger. Jeweller's Orbs are what add more sockets to a gem.",
+   "whenToUseIt": "Fill every socket on your main skill before you spend anything on a second one. An unfilled socket is power sitting on the floor."
+  },
+  "seeAlso": [
+   "Skill gem",
+   "Support gem",
+   "Currency item"
+  ]
+ },
+ {
+  "id": "gem-tag",
+  "term": "Gem tag",
+  "beginner": {
+   "whatItIs": "The keywords printed on a gem - Attack, Spell, Projectile, Fire, Minion, Persistent and so on. They describe what the gem is rather than what it does.",
+   "whyItMatters": "Tags are the matching rules of the whole system. A support only applies to a skill whose tags it accepts, and passive nodes and gear modifiers key off the same words, so tags decide what stacks with what.",
+   "whenToUseIt": "Read the tags before you buy a support or plan a tree branch. If the tag is not on your skill, the bonus does not reach it no matter how good the number looks."
+  },
+  "seeAlso": [
+   "Support gem",
+   "Skill gem",
+   "Modifier"
+  ]
+ },
+ {
+  "id": "gem-tier",
+  "term": "Gem tier",
+  "beginner": {
+   "whatItIs": "A rank on a gem. Several gems exist in more than one tier, where the higher tier is a stronger version that becomes available later, sometimes with extra behaviour rather than only bigger numbers.",
+   "whyItMatters": "It means a gem you dismissed early can be worth revisiting, and it explains why two entries with nearly the same name are not duplicates. It also affects what a gem costs to acquire.",
+   "whenToUseIt": "Check whether a support you rely on has a higher tier before assuming your setup is finished. Upgrade the supports on your main skill before the ones on skills you rarely press."
+  },
+  "seeAlso": [
+   "Support gem",
+   "Uncut gem",
+   "Required level"
+  ]
+ },
+ {
+  "id": "gold",
+  "term": "Gold",
+  "beginner": {
+   "whatItIs": "Coins that drop from monsters and chests. Gold is not a crafting material - it is money you spend at vendors and on refunding passive points.",
+   "whyItMatters": "It belongs to your account rather than to one character, and it cannot be traded to another player. That makes it the one resource you can spend without wondering what it was worth.",
+   "whenToUseIt": "Spend it on vendor gear while levelling and on respec costs when a passive choice turns out wrong. Hoarding it achieves nothing."
+  },
+  "seeAlso": [
+   "Currency item",
+   "Respec",
+   "Passive skill tree"
+  ]
+ },
+ {
+  "id": "implicit-modifier",
+  "term": "Implicit modifier",
+  "beginner": {
+   "whatItIs": "A line that every copy of a base item type carries, printed above the divider that separates it from the random lines.",
+   "whyItMatters": "It comes with the base rather than being rolled, so it is guaranteed. A unique item usually keeps the implicit of the base it was built on.",
+   "whenToUseIt": "Use it when choosing between two bases for the same slot - the implicit is often the real difference between them. It is not something crafting can take away or replace."
+  },
+  "seeAlso": [
+   "Base item",
+   "Modifier",
+   "Rune"
+  ]
+ },
+ {
+  "id": "item-class",
+  "term": "Item class",
+  "beginner": {
+   "whatItIs": "The category an item belongs to - Bow, Sceptre, Gloves, Amulet and so on. It decides which equipment slot the item uses and which modifiers can appear on it.",
+   "whyItMatters": "It is the coarsest filter on whether an item is relevant to you at all, and it is what skill and passive restrictions are written against. A skill limited to one weapon class will not fire with anything else equipped.",
+   "whenToUseIt": "Check a skill's weapon restriction against the item class you are holding before building around it. Use item class to narrow a search before you look at any stat line."
+  },
+  "seeAlso": [
+   "Base item",
+   "Rarity",
+   "Weapon set"
+  ]
+ },
+ {
+  "id": "item-level",
+  "term": "Item level",
+  "beginner": {
+   "whatItIs": "A hidden number recording how deep the area was where an item dropped. It decides which modifiers, and which strengths of them, can appear on that item.",
+   "whyItMatters": "A low item level caps how good a piece can ever become, however much currency you pour into it. Rare monsters drop items one level higher than normal, and unique monsters two levels higher.",
+   "whenToUseIt": "Check it before committing currency to a base you intend to craft on. For gear you are simply wearing through the campaign, ignore it."
+  },
+  "seeAlso": [
+   "Base item",
+   "Modifier",
+   "Currency item"
+  ]
+ },
+ {
+  "id": "league",
+  "term": "League",
+  "beginner": {
+   "whatItIs": "The world a character lives in. Leagues split on three lines: permanent or temporary, softcore or hardcore, and trade or solo self-found. A character belongs to exactly one and cannot party or trade across the divide.",
+   "whyItMatters": "The choice sets the value of everything you find. In a fresh temporary league nobody has anything yet, so ordinary drops are worth trading; turning trade off makes every upgrade something you must find or craft yourself.",
+   "whenToUseIt": "Put a first character in the current temporary league with no extra restrictions - it is the busiest and the best supported by guides. Check which league a build guide was written for before following its prices."
+  },
+  "seeAlso": [
+   "Gold",
+   "Currency item",
+   "Atlas"
+  ]
+ },
+ {
+  "id": "life",
+  "term": "Life",
+  "beginner": {
+   "whatItIs": "Your health pool. When it empties the character dies and you choose to revive in town or at the last checkpoint you reached.",
+   "whyItMatters": "Other defences reduce or avoid damage; life is what absorbs whatever gets through anyway. It is the stat that turns a mistake into a survivable mistake.",
+   "whenToUseIt": "Take life on the tree and on gear steadily through the campaign rather than in one late lump. A character dying to everything is usually short on life and resistances together, not on damage."
+  },
+  "seeAlso": [
+   "Energy shield",
+   "Flask",
+   "Resistance"
+  ]
+ },
+ {
+  "id": "mana",
+  "term": "Mana",
+  "beginner": {
+   "whatItIs": "The pool your skills spend when you use them. It refills on its own over time and can be topped up with a mana flask.",
+   "whyItMatters": "Running dry mid-fight leaves you standing in the open with no attack, which is a survival problem as much as a damage one.",
+   "whenToUseIt": "Fix mana the moment your main skill starts stuttering - a mana flask, a mana roll on a ring, or a cheaper support. Using the skill less often is not a fix."
+  },
+  "seeAlso": [
+   "Flask",
+   "Skill gem",
+   "Spirit"
+  ]
+ },
+ {
+  "id": "minion",
+  "term": "Minion",
+  "beginner": {
+   "whatItIs": "A creature you summon that fights on its own. Some last a few seconds; permanent ones stay until they die and are paid for out of your spirit.",
+   "whyItMatters": "Minions deal your damage from a distance and soak hits meant for you, which means the build's power lives in gear and passives that boost them rather than in your own weapon.",
+   "whenToUseIt": "A reasonable pick for a first character, since something else stands in the danger. Harder work against bosses that clear the room, because rebuilding the army costs time you do not have."
+  },
+  "seeAlso": [
+   "Spirit",
+   "Skill gem",
+   "Support gem"
+  ]
+ },
+ {
+  "id": "modifier",
+  "term": "Modifier",
+  "beginner": {
+   "whatItIs": "One line of stats on an item. Prefixes tend to cover damage, life, mana and movement speed; suffixes tend to cover resistances and accuracy. Together they are called affixes.",
+   "whyItMatters": "A magic item holds up to one prefix and one suffix, and a rare holds up to three of each. That ceiling is what makes crafting a series of choices instead of a stack of upgrades.",
+   "whenToUseIt": "Read the lines, not the colour of the name. A rare with six lines you do not need is worse for you than a magic item with the two you do."
+  },
+  "seeAlso": [
+   "Implicit modifier",
+   "Rarity",
+   "Currency item"
+  ]
+ },
+ {
+  "id": "passive-skill-tree",
+  "term": "Passive skill tree",
+  "beginner": {
+   "whatItIs": "The large shared board of upgrades every character spends points on. You earn those points by levelling up and from certain quests.",
+   "whyItMatters": "It holds small stat nodes, bigger notables, jewel sockets, and keystones that rewrite a rule of the game for you. Where your class starts on the board is a large part of what separates one class from another.",
+   "whenToUseIt": "Plan a route toward one or two notables instead of taking whatever sits next to you. Refunding a point costs gold, so a wrong turn is recoverable but not free."
+  },
+  "seeAlso": [
+   "Attribute",
+   "Ascendancy",
+   "Respec"
+  ]
+ },
+ {
+  "id": "persistent-skill",
+  "term": "Persistent skill",
+  "beginner": {
+   "whatItIs": "A skill you toggle on and leave running rather than casting. Most of them reserve spirit for as long as they stay active.",
+   "whyItMatters": "They are how a character carries permanent buffs, auras and standing help. Your spirit total is the ceiling, so switching one on can mean switching another off.",
+   "whenToUseIt": "Fill your spirit with the ones your build actually uses and leave the others switched off. Re-check them whenever you change gear, because the spirit an item grants leaves with the item."
+  },
+  "seeAlso": [
+   "Spirit",
+   "Reservation",
+   "Weapon set"
+  ]
+ },
+ {
+  "id": "primary-attribute",
+  "term": "Primary attribute",
+  "beginner": {
+   "whatItIs": "The attribute a gem leans on hardest. It is the label on a gem page telling you whether it is a Strength, Dexterity or Intelligence gem, and some gems split their requirement across two attributes instead of one.",
+   "whyItMatters": "It is the quickest way to tell whether a gem fits the character you are already playing. A gem whose primary attribute is the one your class starts low in will cost you passive points or gear slots to reach.",
+   "whenToUseIt": "Use it as a filter when you are browsing gems. Match it to what your character already has plenty of, and only reach outside that when the gem is worth paying for."
+  },
+  "seeAlso": [
+   "Attribute",
+   "Skill gem",
+   "Class"
+  ]
+ },
+ {
+  "id": "quality",
+  "term": "Quality",
+  "beginner": {
+   "whatItIs": "A percentage on an item or gem that improves what it already does. Most things cap at twenty percent quality.",
+   "whyItMatters": "Quality is applied after every other modifier, so it multiplies the finished number rather than being lost among them. On a weapon it raises physical damage, on armour it raises defences, and on a skill gem it either sharpens an existing effect or adds a new one.",
+   "whenToUseIt": "Add quality to gear you have decided to keep, using the currency that matches that item type. Spending it on a levelling item you will replace in two acts is waste."
+  },
+  "seeAlso": [
+   "Currency item",
+   "Base item",
+   "Skill gem"
+  ]
+ },
+ {
+  "id": "rarity",
+  "term": "Rarity",
+  "beginner": {
+   "whatItIs": "The tier of an item, shown by the colour of its name: normal, magic, rare or unique. It decides how many random modifiers the item can carry.",
+   "whyItMatters": "Normal items have none, magic items up to two, rare items up to six, and uniques carry a fixed set instead of rolling freely. That ladder is what currency items move an item along.",
+   "whenToUseIt": "Judge an item by its modifiers rather than its colour. Rarity tells you how much room the item has, not whether anything in it is useful to you."
+  },
+  "seeAlso": [
+   "Modifier",
+   "Unique item",
+   "Currency item"
+  ]
+ },
+ {
+  "id": "required-level",
+  "term": "Required level",
+  "beginner": {
+   "whatItIs": "The character level you must reach before you are allowed to equip an item or use a gem. It sits alongside the attribute requirements, and both have to be met.",
+   "whyItMatters": "It is the reason a drop you are excited about sometimes cannot be used for another ten levels, and it is what keeps a build's power curve tied to levelling rather than to luck.",
+   "whenToUseIt": "Read it before planning around a piece, and keep an item you cannot use yet rather than selling it. If something you already own stops being usable, check whether you respecced away the attributes rather than the level."
+  },
+  "seeAlso": [
+   "Attribute",
+   "Item level",
+   "Skill gem"
+  ]
+ },
+ {
+  "id": "reservation",
+  "term": "Reservation",
+  "beginner": {
+   "whatItIs": "The slice of your spirit that a persistent skill locks away while it is switched on. Reserved spirit stays unavailable until you turn that skill off.",
+   "whyItMatters": "It is why two useful auras can be impossible to run at the same time, and why an item granting spirit can quietly unlock a whole extra buff.",
+   "whenToUseIt": "Check your reserved total whenever a skill refuses to activate. The usual answer is more spirit from gear rather than a smaller build."
+  },
+  "seeAlso": [
+   "Spirit",
+   "Persistent skill"
+  ]
+ },
+ {
+  "id": "resistance",
+  "term": "Resistance",
+  "beginner": {
+   "whatItIs": "A percentage that cuts incoming fire, cold, lightning or chaos damage. Each of the four has its own value, and the normal ceiling is seventy-five percent.",
+   "whyItMatters": "The campaign removes ten percent from your elemental resistances around the end of each act up to act four, and the penalty reaches sixty percent by the endgame. Deaths that feel unfair are usually a resistance that quietly went negative while you were not looking.",
+   "whenToUseIt": "Get all four back to the ceiling before you chase more damage, and re-check them every time the game tells you a penalty has been applied."
+  },
+  "seeAlso": [
+   "Damage type",
+   "Modifier",
+   "Life"
+  ]
+ },
+ {
+  "id": "respec",
+  "term": "Respec",
+  "beginner": {
+   "whatItIs": "Refunding a passive point you already spent so you can put it somewhere else. It costs gold.",
+   "whyItMatters": "It turns a bad tree decision into a bill rather than a dead character. Switching an attribute travel node to a different attribute costs half of a normal refund.",
+   "whenToUseIt": "Respec when a skill you committed to stops working, not every time you read a new build online. Refunding twenty points in one go is a real gold cost mid-campaign."
+  },
+  "seeAlso": [
+   "Gold",
+   "Passive skill tree",
+   "Ascendancy"
+  ]
+ },
+ {
+  "id": "rune",
+  "term": "Rune",
+  "beginner": {
+   "whatItIs": "A socketable stone that adds a fixed enchantment line to a weapon or piece of armour. Runes go into gear, unlike support gems, which go into skills.",
+   "whyItMatters": "A rune is a guaranteed stat you can add to an item you already own, which is often a cheap way to patch a missing resistance without touching the item's random lines.",
+   "whenToUseIt": "Slot one as soon as a resistance or a damage type is short. Three lesser runes combine into a regular one at the Reforging Bench, and three regulars into a greater one."
+  },
+  "seeAlso": [
+   "Modifier",
+   "Implicit modifier",
+   "Resistance"
+  ]
+ },
+ {
+  "id": "skill-gem",
+  "term": "Skill gem",
+  "beginner": {
+   "whatItIs": "The item that gives you an attack or a spell. You socket it into your character's skill panel and the ability appears on your bar.",
+   "whyItMatters": "In this game your damage comes from gems, not from your class. Two characters of the same class with different gems play nothing alike, and swapping a gem is how you change what your character does.",
+   "whenToUseIt": "Pick one gem as your main damage skill early and feed it everything. Spreading levels and supports across four skills at once is what makes a character feel weak in Act 2."
+  },
+  "seeAlso": [
+   "Support gem",
+   "Gem socket",
+   "Attribute"
+  ]
+ },
+ {
+  "id": "spirit",
+  "term": "Spirit",
+  "beginner": {
+   "whatItIs": "A separate resource that keeps permanent things running: toggled buffs, permanent minions and trigger gems. Characters start with none of it.",
+   "whyItMatters": "The campaign hands out up to a hundred permanent spirit through quest rewards, and further spirit comes from gear such as sceptres and from ascendancy passives. Everything permanent your character does is paid for out of that pool.",
+   "whenToUseIt": "Treat it as a budget you set once and revisit when it grows. Weapon sets can carry different spirit totals, so look at your toggles again after a swap."
+  },
+  "seeAlso": [
+   "Persistent skill",
+   "Reservation",
+   "Minion"
+  ]
+ },
+ {
+  "id": "stack-size",
+  "term": "Stack size",
+  "beginner": {
+   "whatItIs": "How many copies of a stackable item fit in one inventory square. Currency items each have their own limit, and a currency stash tab usually allows a much larger one.",
+   "whyItMatters": "It is the practical limit on how much you can carry back from a run, so it shapes what is worth picking up. It is also the unit prices are quoted in when players trade.",
+   "whenToUseIt": "Glance at it when deciding whether a pile of something is worth the inventory space. Move stacks into a currency tab rather than leaving them in your bag."
+  },
+  "seeAlso": [
+   "Currency item",
+   "Gold"
+  ]
+ },
+ {
+  "id": "stun",
+  "term": "Stun",
+  "beginner": {
+   "whatItIs": "An interrupt caused by hits. A light stun is a brief stagger that any hit can cause; a heavy stun lasts longer and fills a bar on the target before it goes off.",
+   "whyItMatters": "Being stunned cancels whatever you were doing, which is how a survivable hit turns into a death. Physical damage and melee damage both build stun faster than other damage does.",
+   "whenToUseIt": "Stack it on your own side when you fight with a mace or another heavy physical weapon, since the bar fills from damage dealt. Defend against it with stun modifiers on gear and by rolling out of wind-ups."
+  },
+  "seeAlso": [
+   "Dodge roll",
+   "Damage type"
+  ]
+ },
+ {
+  "id": "support-gem",
+  "term": "Support gem",
+  "beginner": {
+   "whatItIs": "A gem that does nothing on its own and instead changes a skill gem you attach it to - more damage, more projectiles, a different element, a trade-off.",
+   "whyItMatters": "Supports are where most of a build's power comes from. A plain skill with good supports beats a fancy skill with none, usually by a wide margin.",
+   "whenToUseIt": "Every time you unlock a new support socket, put something in it. An empty socket is free damage you are choosing not to take."
+  },
+  "seeAlso": [
+   "Skill gem",
+   "Gem socket"
+  ]
+ },
+ {
+  "id": "uncut-gem",
+  "term": "Uncut gem",
+  "beginner": {
+   "whatItIs": "The raw drop that becomes a gem. Monsters and quests give you uncut skill gems and uncut support gems, and you cut one into the specific gem you want.",
+   "whyItMatters": "An uncut gem carries a number, and that number is both the level the cut gem starts at and the ceiling on which gems it can produce. That makes a high uncut gem a real resource rather than a chore to convert.",
+   "whenToUseIt": "Cut the low ones freely to try things out. Save the higher ones for the skill you have actually settled on rather than the one you are experimenting with this hour."
+  },
+  "seeAlso": [
+   "Skill gem",
+   "Support gem",
+   "Gem tier"
+  ]
+ },
+ {
+  "id": "unique-item",
+  "term": "Unique item",
+  "beginner": {
+   "whatItIs": "An item with a fixed name, a fixed set of modifiers and its own artwork. Every copy has the same lines, though the numbers roll within a range.",
+   "whyItMatters": "Uniques usually do one specific thing no rare item can do, and builds get designed around that one thing rather than around the item's raw stats.",
+   "whenToUseIt": "Wear one when its special line is what your build needs. A unique whose special line does nothing for you is almost always worse than a good rare in the same slot."
+  },
+  "seeAlso": [
+   "Rarity",
+   "Modifier",
+   "Currency item"
+  ]
+ },
+ {
+  "id": "waystone",
+  "term": "Waystone",
+  "beginner": {
+   "whatItIs": "An item you load into the map device to open an endgame map. Its tier sets the level of the area behind it.",
+   "whyItMatters": "Waystones roll modifiers like any other item, and those modifiers become the map's own rules. Each extra one makes the map harder and richer, and cuts how many revives you get inside it.",
+   "whenToUseIt": "Run tiers you clear comfortably and step up one at a time. Keep the heavily modified stones until your character can finish a map without needing its revives."
+  },
+  "seeAlso": [
+   "Atlas",
+   "Modifier",
+   "Rarity"
+  ]
+ },
+ {
+  "id": "weapon-set",
+  "term": "Weapon set",
+  "beginner": {
+   "whatItIs": "Two separate weapon loadouts your character carries at once. Skills use whichever set is active and will swap to the other on their own when they need it.",
+   "whyItMatters": "Each set has its own passive points to allocate and can grant a different amount of spirit, so a swap changes far more than what is in your hands.",
+   "whenToUseIt": "Keep one set for clearing packs and one for single-target damage, or one for damage and one carrying defensive stats. Set the swap per skill in that skill's own panel so it happens without you thinking about it."
+  },
+  "seeAlso": [
+   "Spirit",
+   "Persistent skill",
+   "Passive skill tree"
+  ]
+ }
+]

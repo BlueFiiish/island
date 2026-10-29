@@ -1,0 +1,480 @@
+{
+ "game": "Deadlock",
+ "slug": "deadlock",
+ "appId": 1422450,
+ "pulledAt": "2026-10-23T18:03:02Z",
+ "fetch": {
+  "oldest": "2026-10-23T18:03:02Z",
+  "oldestInput": "api/heroes.json",
+  "newest": "2026-10-24T20:20:35Z",
+  "newestInput": "analytics/build-items-hero-88.json",
+  "inputs": 145,
+  "logMissing": 0
+ },
+ "analyticsPulledAt": "2026-10-24T20:18:10Z",
+ "patch": {
+  "title": "10-14-2026",
+  "postTitle": "Minor Update - 10-14-2026",
+  "patchDate": "2026-10-14",
+  "date": "2026-10-15T03:11:58Z",
+  "dateKind": "post-time",
+  "source": "steam",
+  "link": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+  "guid": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+  "newestSteamUpdate": {
+   "title": "Minor Update - 10-14-2026",
+   "date": "2026-10-14T00:00:00Z",
+   "link": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+   "guid": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+   "lagHours": -27.2,
+   "coveredByLabel": true
+  }
+ },
+ "client": {
+  "clientVersion": 6819,
+  "serverVersion": 6819,
+  "versionDate": "2026-10-22T16:40:35",
+  "latestKnownBuild": 6819,
+  "knownBuilds": 857
+ },
+ "access": {
+  "name": "Deadlock",
+  "comingSoon": true,
+  "releaseDate": "To be announced",
+  "limitedAccess": true,
+  "shortDescription": "Deadlock is a multiplayer game in early development.",
+  "note": "Never describe the game as early access or open beta while limitedAccess is true. Steam store entry, read from raw/api/steam-appdetails.json."
+ },
+ "counts": {
+  "heroes": 44,
+  "items": 173,
+  "abilities": 176,
+  "mechanics": 15,
+  "glossary": 27,
+  "itemsBySlot": {
+   "weapon": 56,
+   "vitality": 61,
+   "spirit": 56
+  },
+  "itemsByTier": {
+   "1": 23,
+   "2": 43,
+   "3": 46,
+   "4": 44,
+   "5": 17
+  },
+  "itemsByCost": {
+   "800": 23,
+   "1600": 43,
+   "3200": 46,
+   "6400": 44,
+   "9999": 17
+  },
+  "streetBrawlLegendaries": 17,
+  "heroesInDevelopmentFlag": 2,
+  "rawHeroRecords": 65,
+  "rawItemRecords": 781
+ },
+ "roster": {
+  "rule": "in_development must be false, UNLESS development_state equals allowWhenDevelopmentState",
+  "allowWhenDevelopmentState": "release",
+  "count": 44,
+  "strictCount": 42,
+  "minMatchesToAdmit": 10000,
+  "admittedByException": [
+   {
+    "id": "baba",
+    "apiId": 88,
+    "developmentState": "release",
+    "matches": 217215
+   },
+   {
+    "id": "violet",
+    "apiId": 86,
+    "developmentState": "release",
+    "matches": 656204
+   }
+  ],
+  "decision": "Counted as playable: the live API marks them development_state=release, player_selectable=true, and the analytics window shows real play. Switch back to the strict count with config heroFilter.inDevelopment.allowWhenDevelopmentState = null."
+ },
+ "itemCooldownFallback": {
+  "key": "AbilityCooldown",
+  "minSeconds": 2,
+  "items": [
+   "celestial-blessing",
+   "echo-shard",
+   "frostbite-charm",
+   "knockdown",
+   "magic-carpet",
+   "mercurial-magnum",
+   "mystic-burst",
+   "mystical-piano",
+   "quicksilver-reload",
+   "shadow-weave",
+   "tankbuster",
+   "unstable-concoction"
+  ],
+  "activeWithoutCooldown": [
+   "blood-tribute",
+   "golden-goose-egg"
+  ]
+ },
+ "groups": {
+  "heroes": {
+   "file": "heroes.json",
+   "count": 44,
+   "label": "Heroes",
+   "singular": "Hero",
+   "dir": "heroes",
+   "tag": "hero",
+   "layout": "pages",
+   "notes": true,
+   "tab": "Heroes"
+  },
+  "items": {
+   "file": "items.json",
+   "count": 173,
+   "label": "Items",
+   "singular": "Item",
+   "dir": "items",
+   "tag": "item",
+   "layout": "pages",
+   "notes": true,
+   "tab": "Items"
+  },
+  "abilities": {
+   "file": "abilities.json",
+   "count": 176,
+   "label": "Abilities",
+   "singular": "Ability",
+   "dir": "abilities",
+   "tag": "ability",
+   "layout": "embedded",
+   "parent": "heroes",
+   "notes": false
+  },
+  "mechanics": {
+   "file": "mechanics.json",
+   "count": 15,
+   "label": "Mechanics",
+   "singular": "Mechanic",
+   "dir": "mechanics",
+   "tag": "mechanic",
+   "layout": "pages",
+   "notes": true,
+   "tab": "More"
+  },
+  "glossary": {
+   "file": "glossary.json",
+   "count": 27,
+   "label": "Glossary",
+   "singular": "Term",
+   "dir": "glossary",
+   "tag": "concept",
+   "layout": "pages",
+   "notes": true,
+   "tab": "Start",
+   "aggregate": {
+    "file": "glossary.md",
+    "title": "Glossary",
+    "intro": "Plain-language meanings for every word a newcomer meets in the first hour. Each term links to its own page."
+   }
+  }
+ },
+ "notes": {
+  "heroes": {
+   "entities": 44,
+   "withNotes": 44,
+   "withAllThreeSections": 44
+  },
+  "items": {
+   "entities": 173,
+   "withNotes": 173,
+   "withAllThreeSections": 173
+  },
+  "mechanics": {
+   "entities": 15,
+   "withNotes": 15,
+   "withAllThreeSections": 15
+  },
+  "glossary": {
+   "entities": 27,
+   "withNotes": 27,
+   "withAllThreeSections": 27
+  }
+ },
+ "analytics": {
+  "window": {
+   "fromUnix": 1792033920,
+   "toUnix": 1792778586,
+   "days": 8.6,
+   "patch": {
+    "title": "10-14-2026",
+    "guid": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+    "link": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+    "at": 1792033918
+   },
+   "straddlesPatch": false,
+   "closed": true,
+   "settleHours": 24,
+   "lateIngestion": {
+    "measuredOn": "2026-10-24",
+    "settleHoursUsed": 24,
+    "matchGrowthPct": [
+     0.3,
+     0.7
+    ],
+    "winRatePointsMax": 0.1,
+    "evidence": "Round-3 verification 2026-10-24: re-querying the closed window 1792033920-1792778586 (settled 24 h) returned 0.3-0.7% more matches per hero (abrams 307,807 shipped, 309,636 live; apollo 311,247 / 313,319; deadman-danny 741,905 / 745,595) and win rates within 0.1 point. The first 24 h after a window closes is not enough for match ingestion to finish.",
+    "publicNote": "The match counts are a snapshot taken about a day after the window closed. Matches keep arriving for a few days, so counting the same window later gives a slightly bigger number (up to about 1% more). Win rates barely move (under 0.1 percentage point).",
+    "settleHoursAtPull": 24
+   }
+  },
+  "filters": "all ranks; normal game mode (not Street Brawl); ranked and unranked matches, as the data source returns them by default",
+  "sampleNote": "The match counts are a snapshot taken about a day after the window closed. Matches keep arriving for a few days, so counting the same window later gives a slightly bigger number (up to about 1% more). Win rates barely move (under 0.1 percentage point).",
+  "minSampleForRate": 100,
+  "minMatchesItemPerHero": 30,
+  "minMatchesPair": 30,
+  "heroesWithStats": 44,
+  "heroesWithItemData": 44,
+  "itemsWithGlobalStats": 156,
+  "counterPairs": 1892,
+  "synergyPairs": 946,
+  "totalHeroMatches": 13882208,
+  "totalMatchesForBans": 613752
+ },
+ "sprites": {
+  "manifest": 437,
+  "present": 437,
+  "bytes": 7422804,
+  "missing": 0
+ },
+ "sources": {
+  "deadlock-api": {
+   "name": "deadlock-api.com",
+   "url": "https://api.deadlock-api.com",
+   "licence": "MIT (code and data); game assets are Valve property, extracted not licensed"
+  },
+  "deadlock-wiki": {
+   "name": "deadlock.wiki",
+   "url": "https://deadlock.wiki",
+   "licence": "CC BY-NC-SA 4.0 (game assets excepted). Facts read through api.php; prose never copied."
+  },
+  "valve-forum": {
+   "name": "Valve changelog forum",
+   "url": "https://forums.playdeadlock.com/forums/changelog.10/",
+   "licence": "Valve forum terms. Titles, dates and links only."
+  },
+  "steam": {
+   "name": "Steam store",
+   "url": "https://store.steampowered.com/app/1422450",
+   "licence": "Steam terms. Access status and links only."
+  }
+ },
+ "licence": {
+  "summary": "deadlock-api code and data: MIT. Game art: (c) Valve, extracted not licensed - attributed, not claimed. deadlock.wiki: CC BY-NC-SA, facts only, no prose copied. Beginner text: original.",
+  "dataLicence": "MIT (deadlock-api.com)",
+  "artLicence": "Valve Corporation property; fan-site use, attribution required"
+ },
+ "attribution": "Game assets (c) Valve Corporation; data via deadlock-api.com (MIT). Not endorsed by Valve. Beginner text is original; facts cross-checked against deadlock.wiki (CC BY-NC-SA) and the Valve changelog.",
+ "crossChecks": [
+  {
+   "name": "shop items (not Street Brawl)",
+   "ours": 156,
+   "theirs": 156,
+   "ok": true,
+   "source": "deadlock.wiki Items",
+   "note": null
+  },
+  {
+   "name": "Street Brawl legendaries",
+   "ours": 17,
+   "theirs": 17,
+   "ok": true,
+   "source": "deadlock.wiki Items",
+   "note": null
+  },
+  {
+   "name": "playable heroes",
+   "ours": 44,
+   "theirs": 44,
+   "ok": true,
+   "source": "deadlock.wiki Heroes",
+   "note": null
+  },
+  {
+   "name": "heroes with analytics rows",
+   "ours": 44,
+   "theirs": 44,
+   "ok": true,
+   "source": "api /v1/analytics/hero-stats",
+   "note": "hero-stats rows with matches in the window"
+  },
+  {
+   "name": "abilities = 4 x heroes",
+   "ours": 176,
+   "theirs": 176,
+   "ok": true,
+   "source": "structure",
+   "note": null
+  },
+  {
+   "name": "shop items by slot sum",
+   "ours": 173,
+   "theirs": 173,
+   "ok": true,
+   "source": "structure",
+   "note": null
+  }
+ ],
+ "sourceClaims": [
+  {
+   "id": "item-slot-count",
+   "claim": "PLAN.md and SOURCES.md (2026-09-01 guide synthesis): 12 universal slots plus 4 flex slots.",
+   "counterClaim": "deadlock.wiki Items and Heroes pages (read 2026-10-23): heroes start with 9 item slots, plus up to 3 extra slots unlocked by destroying Walkers.",
+   "status": "UNRESOLVED - PENDING-GAME. build_data records the wiki numbers under rules.slots; mechanics prose must not state either as verified fact.",
+   "public": {
+    "title": "How many item slots you get",
+    "lines": [
+     "deadlock.wiki says heroes start a match with 9 item slots and can unlock up to 3 more by destroying Walkers.",
+     "An early guide we read reported 12 universal item slots plus 4 flex slots."
+    ]
+   }
+  },
+  {
+   "id": "hero-count",
+   "claim": "Scout 2026-10-23 and the in_development=false filter: 42 playable heroes.",
+   "counterClaim": "deadlock.wiki Heroes page says 44; hero-stats analytics shows 44 heroes with matches; Violet and Baba have development_state=release.",
+   "status": "RESOLVED to 44 in config.heroFilter.inDevelopment (one-line switch back to 42).",
+   "public": {
+    "title": "How many heroes there are",
+    "lines": [
+     "An early count of the playable roster came to 42 heroes.",
+     "deadlock.wiki says there are 44, and match data shows 44 heroes being played, so this app lists 44."
+    ]
+   }
+  },
+  {
+   "id": "weapon-dps-derivation",
+   "claim": "deadlock-api weapon_info.damage_per_second (and _with_reload), derived by the API from bullet_damage, bullets, cycle_time, intra_burst_cycle_time and reload_duration.",
+   "counterClaim": "deadlock.wiki weapon cards (fetched 2026-10-24) disagree for the weapons flagged by config.weaponDps.rules: Baba 28 vs API 85.2 and Drifter 44 vs 132.7 (the API multiplies by bullets = 3 pellets, the wiki counts one), Rat King 60 vs 40, Solomon 60 vs 52.2, Paige 70 vs 58.3, The Doorman 38 vs 35.3 (the API adds intra_burst_cycle_time to a weapon with burst_shot_count 1). The other 24 heroes checked agree within 1 DPS.",
+   "status": "UNRESOLVED - PENDING-GAME. weapon.dps ships the API value (primary source); the flagged heroes are listed under entities with both numbers. Prose must not state a DPS number for these heroes as fact.",
+   "public": {
+    "title": "Weapon damage per second for a few heroes",
+    "lines": [
+     "The community data feed (deadlock-api.com) reported these damage per second figures: Baba 85.2, Drifter 132.7, Paige 58.3, Rat King 40, Solomon 52.2, The Doorman 35.3.",
+     "deadlock.wiki says its weapon cards show: Baba 28, Drifter 44, Paige 70, Rat King 60, Solomon 60, The Doorman 38."
+    ]
+   },
+   "entities": [
+    {
+     "hero": "baba",
+     "rules": [
+      "pelletsNotSummed"
+     ],
+     "dpsApi": 85.2,
+     "dpsWikiCard": 28
+    },
+    {
+     "hero": "drifter",
+     "rules": [
+      "pelletsNotSummed"
+     ],
+     "dpsApi": 132.7,
+     "dpsWikiCard": 44
+    },
+    {
+     "hero": "paige",
+     "rules": [
+      "intraBurstOnSingleShot"
+     ],
+     "dpsApi": 58.3,
+     "dpsWikiCard": 70
+    },
+    {
+     "hero": "rat-king",
+     "rules": [
+      "intraBurstOnSingleShot"
+     ],
+     "dpsApi": 40,
+     "dpsWikiCard": 60
+    },
+    {
+     "hero": "solomon",
+     "rules": [
+      "intraBurstOnSingleShot"
+     ],
+     "dpsApi": 52.2,
+     "dpsWikiCard": 60
+    },
+    {
+     "hero": "the-doorman",
+     "rules": [
+      "intraBurstOnSingleShot"
+     ],
+     "dpsApi": 35.3,
+     "dpsWikiCard": 38
+    }
+   ]
+  }
+ ],
+ "verification": {
+  "status": "PENDING-GAME",
+  "note": "Deadlock is an invite-only playtest. Nothing here was verified in game; every number is data-vs-source (deadlock-api, deadlock.wiki, Valve changelog).",
+  "spotChecks": [
+   {
+    "entity": "ability:apollo-flawless-advance",
+    "key": "DashSpeed",
+    "where": "tier 3",
+    "engineUnits": 550,
+    "shown": "+14 m/s (converted from game units, unconfirmed)",
+    "reason": "bare API bonus on an engine-unit property, read as engine units (x0.0254); no second source confirms it; PENDING-GAME spot check"
+   },
+   {
+    "entity": "ability:paradox-time-wall",
+    "key": "AbilityCastRange",
+    "where": "stat",
+    "engineUnits": 200,
+    "shown": "5.1m (converted from game units, unconfirmed)",
+    "reason": "bare API number on a metres property, read as engine units (x0.0254); no second source confirms it; PENDING-GAME spot check"
+   }
+  ]
+ },
+ "abilityPropertyStats": {
+  "promote": [
+   "Radius$",
+   "^(Stun|Silence|Immobilize|Slow|Debuff|Tether)Duration$"
+  ],
+  "promoted": 100,
+  "byKey": {
+   "AuraRadius": 3,
+   "ChargeMultiHitRadius": 1,
+   "DashRadius": 5,
+   "DebuffDuration": 5,
+   "ExplodeRadius": 3,
+   "ExplosionRadius": 3,
+   "GroveRadius": 1,
+   "ImmobilizeDuration": 4,
+   "ImpactRadius": 3,
+   "LeashRadius": 1,
+   "Radius": 44,
+   "ResourceRadius": 1,
+   "ShoveRadius": 1,
+   "SilenceDuration": 2,
+   "SlashRadius": 4,
+   "SlowDuration": 4,
+   "SpottedRadius": 1,
+   "StunDuration": 11,
+   "TetherDuration": 2,
+   "WaveEndRadius": 1
+  }
+ },
+ "freshness": {
+  "trigger": "A new dated update (a thread in the Valve changelog forum, forums.playdeadlock.com/forums/changelog.10/, or a Steam news post such as \"Minor Update - 10-14-2026\") means the data is stale. Secondary signal: a new id in /v1/assets/client-versions. Event-driven, no cron. Run tools\\check_freshness.ps1, then tools\\refresh.ps1 -Force.",
+  "latestPatchGuid": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+  "latestPatchTitle": "10-14-2026",
+  "latestSteamUpdateGuid": "https://store.steampowered.com/news/app/1422450/view/669505296465396213",
+  "latestClientBuild": 6819
+ },
+ "warnings": []
+}

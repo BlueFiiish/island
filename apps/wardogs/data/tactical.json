@@ -1,0 +1,129 @@
+[
+ {
+  "id": "m18-smoke-grenade-white",
+  "name": "M18 Smoke Grenade: White",
+  "category": "Grenades",
+  "sourceSection": "grenades",
+  "slotType": "Quick Slot",
+  "weightKg": 0.54,
+  "price": 100,
+  "unlockPrice": 7500,
+  "summary": "Grenade - slot Quick Slot, weight 0.54 kg, $100.",
+  "sourceUrl": "https://wardogshandbook.com/Tactical#grenades",
+  "beginner": {
+   "whatItIs": "A 0.54 kg thrown grenade that lays down a cloud of white smoke. It does no damage - it hides things.",
+   "whyItMatters": "Together with its black variant, it is the one kind of item in this group that helps you move rather than helps you kill, and moving across open ground is most of what a match is. Each one is $100 once you have paid the $7,500 unlock.",
+   "whenToUseIt": "Throw it before you cross something you cannot cross safely, or between yourself and whoever is shooting at you. A black variant now sits on the Medic track, and the source documents no difference in how the two behave."
+  },
+  "icon": "/island/apps/wardogs/./sprites/tactical-m18-smoke-grenade-white.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "m18-smoke-grenade-black",
+  "name": "M18 Smoke Grenade: Black",
+  "category": "Grenades",
+  "sourceSection": "grenades",
+  "wardogLevel": "Medic Lvl 23",
+  "levelTrack": "Medic",
+  "summary": "Grenade.",
+  "sourceUrl": "https://wardogshandbook.com/Tactical#grenades",
+  "beginner": {
+   "whatItIs": "The black-smoke version of the M18 smoke grenade. It opens at Medic level 23, moved up from 21 in Season 02, and the source gives no price, weight or unlock cost for it.",
+   "whyItMatters": "Smoke is concealment: it blocks sight so a squad can cross open ground, reach a downed teammate or move a vehicle unseen. The source says just that this is the black variant of the white grenade, whose job is to hide troop or vehicle movement. Whether the black smoke behaves differently is not documented, so treat it as the same tool in another colour.",
+   "whenToUseIt": "Throw it between your squad and whoever is watching when you cross open ground or revive someone in sight of the enemy, which suits the medic who has to walk into the open to pick people up. It cannot be thrown from an enclosed vehicle seat. Check the vendor screen in game before you rely on its price."
+  },
+  "icon": "/island/apps/wardogs/./sprites/tactical-m18-smoke-grenade-black.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "molotov-cocktail",
+  "name": "Molotov Cocktail",
+  "category": "Grenades",
+  "sourceSection": "grenades",
+  "price": 340,
+  "unlockPrice": 25000,
+  "wardogLevel": "Assault Lvl 13",
+  "levelTrack": "Assault",
+  "summary": "Grenade - $340.",
+  "sourceUrl": "https://wardogshandbook.com/Tactical#grenades",
+  "beginner": {
+   "whatItIs": "A thrown fire grenade, new in Season 02. It splashes flames where it lands, doing impact damage and then burning anyone standing in the fire over time. It costs $340 to take one into a match, after a one-time $25,000 unlock on the Assault track.",
+   "whyItMatters": "Fire denies an area rather than hitting one person: enemies have to leave the flames or keep burning, so it can push a squad out of a room or off a doorway. It also burns destructible foliage, and rain weakens the fire, which makes it less dependable in wet weather. No burn numbers are published, so you cannot count on how long it lasts.",
+   "whenToUseIt": "Throw it at a doorway, stairwell or cover spot you do not want to storm, then take the exits with your squad. Skip it in the rain, and do not throw it onto ground your own team has to cross. It can be thrown overarm or underarm but not from an enclosed vehicle seat."
+  },
+  "icon": "/island/apps/wardogs/./sprites/tactical-molotov-cocktail.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "c4-charge",
+  "name": "C4 Charge",
+  "category": "Explosives",
+  "sourceSection": "explosives",
+  "price": 250,
+  "summary": "Explosive - $250.",
+  "sourceUrl": "https://wardogshandbook.com/Tactical#explosives",
+  "beginner": {
+   "whatItIs": "An explosive you place on something and set off later with a separate detonator you have to be carrying.",
+   "whyItMatters": "It is the cheapest way to destroy something without being next to it when it happens, but it only works as a pair - the charge alone does nothing.",
+   "whenToUseIt": "Place it where you expect the other side to come through, then be somewhere else. Do not buy it unless you are also carrying the detonator."
+  },
+  "icon": "/island/apps/wardogs/./sprites/tactical-c4-charge.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "improvised-explosive-device",
+  "name": "Improvised Explosive Device",
+  "category": "Explosives",
+  "sourceSection": "explosives",
+  "price": 300,
+  "summary": "Explosive - $300.",
+  "sourceUrl": "https://wardogshandbook.com/Tactical#explosives",
+  "beginner": {
+   "whatItIs": "A $300 placed explosive. How it is set off has never been published.",
+   "whyItMatters": "The price sits just above C4, which hints that it is meant as a step up in some way, but nothing about its trigger, its blast or its weight is confirmed. Buying one is buying an unknown.",
+   "whenToUseIt": "Wait for Early Access. There is no sensible way to place a device when nobody has written down what makes it go off."
+  },
+  "icon": "/island/apps/wardogs/./sprites/tactical-improvised-explosive-device.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "at-mine",
+  "name": "AT Mine",
+  "category": "Explosives",
+  "sourceSection": "explosives",
+  "price": 650,
+  "summary": "Explosive - $650.",
+  "sourceUrl": "https://wardogshandbook.com/Tactical#explosives",
+  "beginner": {
+   "whatItIs": "A $650 placed explosive built for vehicles. It is expected to go off when one drives over it, though even that is not stated outright.",
+   "whyItMatters": "Vehicles use roads and bridges because everything else is slow, which makes them predictable, and $650 buys something that punishes that. It costs a fraction of an anti-tank launcher - the RPG-7 is $2,000 and the MAAWS $2,600.",
+   "whenToUseIt": "Put it on the route into the contested area rather than inside it. A mine only earns its money where a driver has no interesting choice about where to go."
+  },
+  "icon": "/island/apps/wardogs/./sprites/tactical-at-mine.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ },
+ {
+  "id": "claymore",
+  "name": "Claymore",
+  "category": "Explosives",
+  "sourceSection": "explosives",
+  "price": 900,
+  "unlockPrice": 90000,
+  "summary": "Explosive - $900.",
+  "sourceUrl": "https://wardogshandbook.com/Tactical#explosives",
+  "beginner": {
+   "whatItIs": "A $900 placed explosive, the dearest in the group, understood to fire in one direction and at people rather than at vehicles.",
+   "whyItMatters": "A directional charge is a way of guarding a doorway or a stairwell while you are looking somewhere else. Its blast shape and its trigger are both unconfirmed, so treat the behaviour as expected rather than known.",
+   "whenToUseIt": "Put it behind you when you are holding a position with one obvious way in. It is poor value out in the open where nobody has to walk past it."
+  },
+  "icon": "/island/apps/wardogs/./sprites/tactical-claymore.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

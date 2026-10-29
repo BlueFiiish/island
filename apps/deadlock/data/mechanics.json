@@ -1,0 +1,590 @@
+[
+ {
+  "id": "how-souls-work",
+  "name": "How Souls Work",
+  "category": "Economy",
+  "related": [
+   "souls",
+   "soul-orb",
+   "last-hit",
+   "deny",
+   "denying",
+   "shop-tiers-and-investment",
+   "death-and-respawn"
+  ],
+  "researchPages": [
+   "Souls",
+   "Soul_Orb",
+   "Last_Hit",
+   "Deny"
+  ],
+  "facts": [
+   {
+    "label": "Souls earned to reach each level (on top of the 600 starting souls; in-game totals in brackets)",
+    "value": "level 0 at 0 earned (600 total), level 1 at 200 earned (800 total), level 2 at 500 earned (1,100 total), level 5 at 2,000 earned (2,600 total), level 9 at 4,600 earned (5,200 total), level 10 at 5,300 earned (5,900 total), level 15 at 9,200 earned (9,800 total), level 19 at 12,800 earned (13,400 total), level 20 at 13,800 earned (14,400 total), level 25 at 20,600 earned (21,200 total), level 30 at 32,100 earned (32,700 total), level 35 at 48,600 earned (49,200 total); every player starts at level 0 with 600 souls, so the total includes them",
+    "derive": "levelCurve"
+   },
+   {
+    "label": "Trooper soul-share fractions, in listed order",
+    "value": "1, 0.54, 0.36, 0.25, 0.2, 0.16",
+    "derive": "trooperShare"
+   },
+   {
+    "label": "Hero-kill soul-share fractions, in listed order",
+    "value": "1.25, 0.575, 0.283, 0.175, 0.11, 0.083",
+    "derive": "heroShare"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Souls are the one number that is both your money and your experience. You collect them from troopers, heroes and buildings. You spend them in the shop and the total also decides your level.",
+   "whyItMatters": "Every player starts the match with 600 souls, and your level follows your total souls. The first level-up comes at 800 total souls and the highest level at 49,200, so you gain levels steadily as you collect. When several players share a kill, the souls are split by fractions that shrink for each extra person, so who is nearby when something dies matters.",
+   "whenToUseIt": "Think about it all game. Try to be the one who collects the souls from each trooper. Souls from troopers, heroes and buildings are secured and stay with you when you die. Unsecured souls from neutral sources such as Haunts, crates and Sinner's Sacrifices are always lost when you die. Above a threshold of 50 plus 5 per minute they drop in a Soul Bag, and below it they vanish; see the Death and Respawn page."
+  }
+ },
+ {
+  "id": "lanes-and-troopers",
+  "name": "Lanes and Troopers",
+  "category": "Map and objectives",
+  "related": [
+   "lane",
+   "trooper",
+   "guardians",
+   "walkers",
+   "last-hit",
+   "deny"
+  ],
+  "researchPages": [
+   "Lane",
+   "Lanes",
+   "Trooper",
+   "Troopers"
+  ],
+  "facts": [
+   {
+    "label": "Lanes on the map",
+    "value": "3 lanes: York, Broadway, Greenwich",
+    "derive": "laneNames"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "The map has 3 lanes: York, Broadway and Greenwich. Troopers are the small soldiers that walk down each lane in waves and fight the other team's troopers.",
+   "whyItMatters": "Troopers are the steadiest early source of souls, and which team's troopers are winning decides where the fight takes place. The lanes also hold the Guardians and Walkers you need to destroy.",
+   "whenToUseIt": "Use it at the start of a match to choose where to stand. Stay near your own troopers so you can finish the enemy ones, and watch where the wave is before you walk forward."
+  }
+ },
+ {
+  "id": "guardians",
+  "name": "Guardians",
+  "category": "Map and objectives",
+  "related": [
+   "guardian",
+   "walkers",
+   "lanes-and-troopers",
+   "item-slots-and-flex-slots",
+   "the-patron"
+  ],
+  "researchPages": [
+   "Guardian",
+   "Guardians"
+  ],
+  "facts": [
+   {
+    "label": "Souls for destroying a lane Guardian",
+    "value": "1,375 souls",
+    "derive": "objTier1"
+   },
+   {
+    "label": "Souls for destroying a base Guardian",
+    "value": "1,000 souls",
+    "derive": "objBaseGuardian"
+   },
+   {
+    "label": "Souls for destroying a Shrine",
+    "value": "2,000 souls",
+    "derive": "objShrine"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Guardians are defensive buildings. Every lane opens with a lane Guardian, two Base Guardians sit deeper in toward the base, and on top of those each team keeps two Shrines inside its base.",
+   "whyItMatters": "Destroying one pays your team souls: 1,375 for a lane Guardian, 1,000 for a base Guardian and 2,000 for a Shrine. Each lane is defended in order: the lane Guardian, then the Walker, then the Base Guardians.",
+   "whenToUseIt": "Go after one when your troopers are pushing the lane or after you win a fight nearby. Bring the trooper wave with you: Base Guardians, Shrines and Walkers take much less damage from players and heal until your troopers reach them."
+  }
+ },
+ {
+  "id": "walkers",
+  "name": "Walkers",
+  "category": "Map and objectives",
+  "related": [
+   "walker",
+   "guardians",
+   "the-patron",
+   "item-slots-and-flex-slots",
+   "lanes-and-troopers"
+  ],
+  "researchPages": [
+   "Walker",
+   "Walkers"
+  ],
+  "facts": [
+   {
+    "label": "Souls for destroying a Walker",
+    "value": "3,675 souls",
+    "derive": "objTier2"
+   },
+   {
+    "label": "Walker damage resistance at the start of the match (percent)",
+    "value": "65% (deadlock.wiki Walker)",
+    "fromSource": "raw/wiki/Walker.json"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "A Walker is the second building you meet when you push a lane: a giant that waits behind the lane Guardian. Each team has one per lane.",
+   "whyItMatters": "Destroying a Walker pays 3,675 souls to the team in total, and part of it goes to the nearby attackers and the rest is shared across the team. The sources disagree on the exact split, so it is not stated here. No single player gets the whole amount, but it is still a big step toward items. The wiki also says that destroying Walkers unlocks extra item slots, but the exact number of slots is still unresolved, so check in the game.",
+   "whenToUseIt": "Attack one with your trooper wave beside it and bring your team: until your troopers reach it, a Walker takes 65% less damage from players and heals itself. The best time is after you have killed the enemy heroes or when they are far away."
+  }
+ },
+ {
+  "id": "the-patron",
+  "name": "The Patron",
+  "category": "Map and objectives",
+  "related": [
+   "patron",
+   "walkers",
+   "guardians"
+  ],
+  "researchPages": [
+   "Patron"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "The Patron is each team's final target: a giant boss that sits deepest inside its base. Bring the enemy Patron down and the match is yours.",
+   "whyItMatters": "Everything else on the map leads to it. While either enemy Shrine still stands, the Patron takes no damage at all in its first phase, so the lanes have to be won first.",
+   "whenToUseIt": "Treat it as the end of your plan, not the start. Go for it when the Shrines are down and the other team is dead or slow to return."
+  }
+ },
+ {
+  "id": "mid-boss-and-rejuvenator",
+  "name": "Mid Boss and Rejuvenator",
+  "category": "Map and objectives",
+  "related": [
+   "mid-boss",
+   "rejuvenator",
+   "death-and-respawn",
+   "soul-urn"
+  ],
+  "researchPages": [
+   "Mid_Boss",
+   "Rejuvenator"
+  ],
+  "facts": [
+   {
+    "label": "Rejuvenator buff duration",
+    "value": "180 seconds",
+    "derive": "rejuvDuration"
+   },
+   {
+    "label": "Rejuvenator expiry warning",
+    "value": "30 seconds before it ends",
+    "derive": "rejuvWarning"
+   },
+   {
+    "label": "Respawn multipliers, in listed order",
+    "value": "0.5, 0.4, 0.3",
+    "derive": "rejuvRespawn"
+   },
+   {
+    "label": "Trooper health multipliers, in listed order",
+    "value": "1.7, 2, 2.3",
+    "derive": "rejuvTrooperHealth"
+   },
+   {
+    "label": "Rejuvenator revive delay (seconds)",
+    "value": "3 seconds (deadlock.wiki Rejuvenator)",
+    "fromSource": "raw/wiki/Rejuvenator.json"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "The Mid Boss is a strong monster in a pit under the middle of the map. When it dies it leaves behind the Rejuvenator, a green crystal that either team can claim with heavy melee strikes.",
+   "whyItMatters": "The team that kills the Mid Boss gets permanent bonuses. The Rejuvenator then gives revive credits, up to 3, for a team buff that lasts 180 seconds and warns you 30 seconds before it ends.",
+   "whenToUseIt": "Try for the Mid Boss when your team has more people alive than the enemy. Once the crystal lands, hit it quickly with heavy melee, because a player from either team can claim it."
+  }
+ },
+ {
+  "id": "soul-urn",
+  "name": "Soul Urn",
+  "category": "Map and objectives",
+  "related": [
+   "how-souls-work",
+   "mid-boss-and-rejuvenator",
+   "lanes-and-troopers"
+  ],
+  "researchPages": [
+   "Soul_Urn"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "The Soul Urn is a carry objective. It first shows up 10 minutes into the match and returns every 5 minutes after that. A player claims it with a melee strike and runs it to a drop-off point across the map.",
+   "whyItMatters": "Delivering it gives the carrier souls and buffs. A melee hit on the carrier makes them drop it, so carrying it is risky.",
+   "whenToUseIt": "Go for it when the lanes are quiet and you can get through safely. Bring a teammate to protect you, because enemies will try to knock the urn out of your hands."
+  }
+ },
+ {
+  "id": "denying",
+  "name": "Denying",
+  "category": "Economy",
+  "related": [
+   "deny",
+   "soul-orb",
+   "last-hit",
+   "how-souls-work",
+   "lanes-and-troopers"
+  ],
+  "researchPages": [
+   "Denying",
+   "Deny",
+   "Soul_Orb"
+  ],
+  "facts": [
+   {
+    "label": "Who a deny pays",
+    "value": "A deny is shooting a floating orb the enemy team would collect (an orb from one of your own troopers that they killed); its souls then go to the player who hit it and to nearby allies, not to the enemy. The ground orb cannot be denied.",
+    "derive": "orbDeny"
+   },
+   {
+    "label": "Soul sharing distance",
+    "value": "Allied heroes within 45 m of the orb when it breaks, or within 30 m of the hero who killed the trooper, share the souls",
+    "derive": "orbShareDistance"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Denying is shooting the floating Soul Orb of one of your own troopers after the enemy kills it. The enemy laner cannot collect those souls, and they go to you and any nearby teammates instead. The Deny entry in the glossary has the short version.",
+   "whyItMatters": "A deny takes souls away from the other player before they can pick them up and hands them to your side. Over the first minutes of a lane, that gap decides who can buy an item first.",
+   "whenToUseIt": "Use it when the enemy has just killed one of your own troopers and its floating orb is still there: shoot the orb once it lights up. Shooting the orb of an enemy trooper is confirming it, which collects the souls for you; that is not a deny. A trooper finished with a melee attack leaves only a ground orb, and that one cannot be denied."
+  }
+ },
+ {
+  "id": "item-slots-and-flex-slots",
+  "name": "Item Slots and Flex Slots",
+  "category": "Items",
+  "related": [
+   "active-item",
+   "guardians",
+   "walkers",
+   "shop-tiers-and-investment",
+   "component-discounts"
+  ],
+  "researchPages": [
+   "Items",
+   "Flex_Slot",
+   "Active_Items",
+   "Shop"
+  ],
+  "facts": [
+   {
+    "label": "Item slots and how extra slots unlock",
+    "value": "deadlock.wiki says 9 item slots at the start, plus up to 3 extra slots unlocked by destroying Walkers (12 in all). An older guide reported 12 universal + 4 flex slots, and the sources disagree; nothing here is verified in game.",
+    "derive": "slotClaims"
+   },
+   {
+    "label": "Active items at one time",
+    "value": "No more than 4 active items at once",
+    "derive": "activeItemCap"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Your items sit in slots, and extra slots open up during the match. The sources disagree on the exact numbers, so this page does not give a count.",
+   "whyItMatters": "The sources disagree: one says 9 slots plus up to 3 more from destroying Walkers, and an older guide says 12 plus 4 flex slots. It is unresolved until someone checks in the game. The wiki also states a rule of no more than 4 active items at one time.",
+   "whenToUseIt": "Plan your build with some spare room, and check your own slot count in the game before you decide how many items to buy. Plan around the wiki's limit of 4 active items."
+  }
+ },
+ {
+  "id": "shop-tiers-and-investment",
+  "name": "Shop Tiers and Investment Bonuses",
+  "category": "Items",
+  "related": [
+   "item-tier",
+   "investment-bonus",
+   "component-discounts",
+   "item-slots-and-flex-slots",
+   "how-souls-work"
+  ],
+  "researchPages": [
+   "Items",
+   "Shop"
+  ],
+  "facts": [
+   {
+    "label": "Price of each shop tier",
+    "value": "tier 1 = 800, tier 2 = 1,600, tier 3 = 3,200, tier 4 = 6,400 souls",
+    "derive": "tierPrices"
+   },
+   {
+    "label": "Items per tier in the shop",
+    "value": "tier 1: 23, tier 2: 43, tier 3: 46, tier 4: 44 (plus 17 Street Brawl legendaries at 9,999)",
+    "derive": "tierCounts"
+   },
+   {
+    "label": "Investment thresholds (total souls spent in one item type)",
+    "value": "800, 1,600, 2,400, 3,200, 4,800, 6,400, 8,000, 11,200, 16,000, 22,400, 28,800 souls",
+    "derive": "investThresholds"
+   },
+   {
+    "label": "Weapon investment bonus at each threshold",
+    "value": "800: 9 | 1,600: 12 | 2,400: 15 | 3,200: 18 | 4,800: 46 | 6,400: 54 | 8,000: 62 | 11,200: 74 | 16,000: 86 | 22,400: 100 | 28,800: 115",
+    "derive": "investWeapon"
+   },
+   {
+    "label": "Vitality investment bonus at each threshold",
+    "value": "800: 9 | 1,600: 12 | 2,400: 15 | 3,200: 20 | 4,800: 38 | 6,400: 42 | 8,000: 46 | 11,200: 50 | 16,000: 54 | 22,400: 60 | 28,800: 66",
+    "derive": "investVitality"
+   },
+   {
+    "label": "Spirit investment bonus at each threshold",
+    "value": "800: 7 | 1,600: 11 | 2,400: 15 | 3,200: 19 | 4,800: 38 | 6,400: 45 | 8,000: 52 | 11,200: 59 | 16,000: 66 | 22,400: 75 | 28,800: 100",
+    "derive": "investSpirit"
+   },
+   {
+    "label": "Biggest relative jump in the bonus table",
+    "value": "weapon 18 -> 46 at 4,800; vitality 20 -> 38 at 4,800; spirit 19 -> 38 at 4,800",
+    "derive": "investSpike"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Shop items come in four price tiers: 800, 1,600, 3,200 and 6,400 souls, and every item in a tier costs the same. Separately, the total souls you have spent on each type of item (weapon, vitality, spirit) unlocks bonus stats called investment bonuses.",
+   "whyItMatters": "Each item type has its own bonus table. At 4,800 souls every type takes its biggest relative step up: weapon goes from 18 to 46, vitality from 20 to 38 and spirit from 19 to 38. After that the bonus keeps rising more slowly. The bonus is tied to the items you own, so selling an item takes its spending away again.",
+   "whenToUseIt": "Think about it whenever you plan a build. Items of the same type add up toward the same thresholds, so a second weapon item pushes your weapon total toward the next step, while a spread of types fills several tables more slowly."
+  }
+ },
+ {
+  "id": "component-discounts",
+  "name": "Component Discounts",
+  "category": "Items",
+  "related": [
+   "component-item",
+   "shop-tiers-and-investment",
+   "item-slots-and-flex-slots"
+  ],
+  "researchPages": [
+   "Items",
+   "Shop"
+  ],
+  "facts": [
+   {
+    "label": "Shop items that list a component",
+    "value": "62 of 173",
+    "derive": "componentCount"
+   },
+   {
+    "label": "Most components any one item lists",
+    "value": "2",
+    "derive": "componentMax"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Some higher-tier items are built from a cheaper item called a component. If you own the component when you buy the bigger item, the component is used up and the price drops by what the component cost.",
+   "whyItMatters": "Buying the cheap item first costs you nothing extra, because its price comes straight back off the bigger one. Extra Spirit costs 800 souls and is a component of Improved Spirit, so Improved Spirit costs you only 800 more once you own it.",
+   "whenToUseIt": "Check an item's 'Built from' list before you buy. If you know you want the bigger item later, buying its component on an early shop trip is not wasted money."
+  }
+ },
+ {
+  "id": "movement",
+  "name": "Movement",
+  "category": "Movement",
+  "related": [
+   "parrying-and-melee",
+   "death-and-respawn"
+  ],
+  "researchPages": [
+   "Movement"
+  ],
+  "facts": [
+   {
+    "label": "Base move speed across heroes",
+    "value": "6.2 to 8.2 m/s",
+    "derive": "moveSpeedRange"
+   },
+   {
+    "label": "Ground dash distance across heroes",
+    "value": "10 m",
+    "derive": "groundDashRange"
+   },
+   {
+    "label": "Air dash distance across heroes",
+    "value": "8 m",
+    "derive": "airDashRange"
+   },
+   {
+    "label": "Stamina bars across heroes",
+    "value": "2 to 4",
+    "derive": "staminaRange"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Movement is how you get around the map: running, dashing, jumping and sliding. Stamina bars pay for dashes and jumps in the air.",
+   "whyItMatters": "Base move speed runs from 6.2 to 8.2 m/s across heroes, ground dashes cover 10 m and air dashes 8 m, and heroes have between 2 and 4 stamina bars. Good movement is how you dodge, chase and avoid being caught.",
+   "whenToUseIt": "Practice it before your first serious match. Save stamina for the moment you need to escape or close a gap, rather than spending all of it while walking."
+  }
+ },
+ {
+  "id": "parrying-and-melee",
+  "name": "Parrying and Melee",
+  "category": "Combat",
+  "related": [
+   "movement",
+   "last-hit",
+   "weapon-damage"
+  ],
+  "researchPages": [
+   "Parry"
+  ],
+  "facts": [
+   {
+    "label": "Light melee damage across heroes",
+    "value": "42 to 63",
+    "derive": "lightMeleeRange"
+   },
+   {
+    "label": "Heavy melee damage across heroes",
+    "value": "116 to 128",
+    "derive": "heavyMeleeRange"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Every hero has a close-range strike called a melee. A tap of Q, the default key, gives a quick light melee; keep Q down and you wind up a slower heavy melee. A parry is the move that answers an enemy's melee.",
+   "whyItMatters": "Melee damage is 42 to 63 for a light hit and 116 to 128 for a heavy hit across heroes. Melee is also how you pick up the Soul Urn and hit the Rejuvenator.",
+   "whenToUseIt": "Use light melee for quick finishing hits on troopers, and heavy melee when you can afford the wind-up. Watch for a heavy melee from an enemy and try to parry it."
+  }
+ },
+ {
+  "id": "death-and-respawn",
+  "name": "Death and Respawn",
+  "category": "Combat",
+  "related": [
+   "how-souls-work",
+   "mid-boss-and-rejuvenator",
+   "movement"
+  ],
+  "researchPages": [
+   "Respawn"
+  ],
+  "facts": [
+   {
+    "label": "Respawn time cap (seconds)",
+    "value": "90 seconds (deadlock.wiki Respawn)",
+    "fromSource": "raw/wiki/Respawn.json"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "When your health reaches zero you die and wait on a respawn timer before returning to base. Every death costs you all of your unsecured souls. If you were carrying more than a threshold of 50 plus 5 per minute of game time, they drop in a Soul Bag that other heroes can pick up; below it they are simply gone.",
+   "whyItMatters": "The timer gets longer as the match goes on, capped at 90 seconds, and it grows by 10 more seconds when the kill comes from a unit rather than a player. You can still shop and chat while you wait.",
+   "whenToUseIt": "Spend your dead time in the shop. Secured souls stay with you when you die, but unsecured souls from neutral sources are lost on every death. The threshold of 50 plus 5 per minute only decides whether they leave a Soul Bag for someone else to pick up, not whether you lose them. So after picking up neutral souls try not to die before they become secured. Spending only protects them once you spend more than your secured souls, because unsecured souls are spent after secured ones."
+  }
+ },
+ {
+  "id": "street-brawl",
+  "name": "Street Brawl",
+  "category": "Modes",
+  "related": [
+   "shop-tiers-and-investment",
+   "death-and-respawn"
+  ],
+  "researchPages": [
+   "Street_Brawl"
+  ],
+  "facts": [
+   {
+    "label": "Rounds to win",
+    "value": "3",
+    "derive": "sbScoreToWin"
+   },
+   {
+    "label": "Round length (minutes, by round)",
+    "value": "3, 3, 3, 3, 3",
+    "derive": "sbRoundLength"
+   },
+   {
+    "label": "Buy phase (seconds)",
+    "value": "50, 50, 50, 50, 50",
+    "derive": "sbBuyTime"
+   },
+   {
+    "label": "Souls handed out per round",
+    "value": "5,600, 7,400, 9,400, 11,600, 14,000",
+    "derive": "sbGold"
+   },
+   {
+    "label": "Respawn time (seconds, by round)",
+    "value": "25, 25, 30, 30, 30",
+    "derive": "sbRespawn"
+   },
+   {
+    "label": "Legendary items that exist only in this mode",
+    "value": "17 items at 9,999 souls",
+    "derive": "sbLegendaries"
+   }
+  ],
+  "src": [
+   "deadlock-api",
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Street Brawl is a separate game mode played in rounds, and a team needs 3 round wins to take the match. Each round begins with a 50 second item draft and lasts until a team takes the objective. Overtime starts at the 3 minute mark, and a round still going at 4.5 minutes moves on to Urgent Overtime.",
+   "whyItMatters": "Items are drafted, not bought: you pick from 3 sets of 3 offered items and get one reroll. Respawn is 25 seconds in rounds 1 and 2 and 30 seconds after that. The mode also has 17 legendary items that exist only here; the game data lists them at 9,999 souls, but like everything in this mode they come from the draft.",
+   "whenToUseIt": "Pick it when you want short matches. Use the 50 second draft to choose from the 3 sets you are offered, and use your one reroll if none of them suit you. Legendary items are never guaranteed and are never offered in rounds 1 and 2. The game data allows one as a rare offer in the last draft of round 3 and in rounds 4 and 5; the wiki only names rounds 4 and 5."
+  }
+ }
+]

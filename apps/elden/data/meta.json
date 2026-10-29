@@ -1,0 +1,787 @@
+{
+  "pulledAt": "2026-09-04T18:09:51.175Z",
+  "gameVersion": "1.17",
+  "dlcVersion": null,
+  "dlcIncluded": true,
+  "versionSource": "raw/regulation/regulation-vanilla-v1.17.js (file name; never typed)",
+  "regulation": {
+    "file": "regulation-vanilla-v1.17.js",
+    "sha256": "6ae98b99429cf63f3f2c6a737cf90f6e7507fa67c1dd7e45cad5937a2f3824a5",
+    "unwrapMethod": "raw",
+    "weaponRows": 3296,
+    "baseRows": 488
+  },
+  "datasets": [
+    "armor",
+    "ashes",
+    "bosses",
+    "classes",
+    "graces",
+    "items",
+    "mechanics",
+    "npcs",
+    "quests",
+    "regions",
+    "spells",
+    "spirits",
+    "start",
+    "talismans",
+    "weapons"
+  ],
+  "counts": {
+    "weapons": 487,
+    "weaponsShields": 81,
+    "weaponsSote": 102,
+    "weaponsInfusable": 234,
+    "weaponCalcRows": 3295,
+    "talismans": 155,
+    "talismansSote": 39,
+    "talismanFamilies": 17,
+    "spirits": 84,
+    "spiritsSote": 20,
+    "spiritsGhostGlovewort": 23,
+    "spiritsMultiSummon": 28,
+    "spells": 213,
+    "sorceries": 84,
+    "incantations": 129,
+    "spellsSote": 42,
+    "spellsChargeable": 109,
+    "mechanics": 17,
+    "mechanicsSoftCapStats": 8,
+    "mechanicsSoftCapEntries": 22,
+    "runeCost": 713,
+    "statusEffects": 7,
+    "scadutree": 21,
+    "items": 809,
+    "itemsSote": 173,
+    "itemsCraftable": 132,
+    "itemsWithIcon": 809,
+    "items_consumable": 187,
+    "items_crafting": 107,
+    "items_key": 106,
+    "items_bellBearing": 65,
+    "items_cookbook": 106,
+    "items_crystalTear": 37,
+    "items_greatRune": 9,
+    "items_tool": 87,
+    "items_whetblade": 6,
+    "items_gesture": 54,
+    "items_upgrade": 44,
+    "items_other": 1,
+    "crystalTears": 37,
+    "cookbooks": 106,
+    "greatRunes": 9,
+    "graces": 419,
+    "gracesLands": 279,
+    "gracesUnderground": 35,
+    "gracesShadow": 105,
+    "classes": 10,
+    "classGear": 77,
+    "bosses": 208,
+    "bossesMandatory": 11,
+    "bossesRemembrance": 21,
+    "bossesWithWikiImage": 169,
+    "bossDropsResolved": 204,
+    "bossDropsTotal": 218,
+    "ashes": 118,
+    "ashesSote": 25,
+    "ashesWithFp": 39,
+    "ashesWithClasses": 118,
+    "armor": 735,
+    "armor-sets": 124,
+    "armorSote": 145,
+    "armorAltered": 91,
+    "armorUnobtainable": 19,
+    "armorLoose": 209,
+    "start": 3,
+    "glossary": 0,
+    "startSteps": 0,
+    "classPicks": 0,
+    "quests": 49,
+    "questSteps": 631,
+    "questLockouts": 97,
+    "questLockoutsLinked": 80,
+    "questMissable": 49,
+    "questRewards": 301,
+    "questFiles": 49,
+    "npcs": 75,
+    "npcsWithQuest": 47,
+    "npcsPlaced": 64,
+    "regions": 26,
+    "regionsLands": 12,
+    "regionsUnderground": 6,
+    "regionsShadow": 8,
+    "regionsWithDesc": 18,
+    "sprites": 2610,
+    "spritesOnDisk": 2610,
+    "ids": 2560,
+    "guides": 12,
+    "map-pins": 624,
+    "mapTiles": 983
+  },
+  "floors": {
+    "weapons": {
+      "expected": 480,
+      "type": "hard",
+      "owner": "P1 L1a core",
+      "note": "armaments incl shields, staves, seals, bows, torches"
+    },
+    "classes": {
+      "expected": 10,
+      "type": "hard",
+      "owner": "P1 L1a core"
+    },
+    "armor": {
+      "expected": 712,
+      "type": "hard",
+      "owner": "P1 L1b gear",
+      "note": "individual pieces"
+    },
+    "talismans": {
+      "expected": 155,
+      "type": "hard",
+      "owner": "P1 L1b gear"
+    },
+    "spells": {
+      "expected": 213,
+      "type": "hard",
+      "owner": "P1 L1b gear",
+      "note": "sorceries + incantations"
+    },
+    "ashes": {
+      "expected": 116,
+      "type": "hard",
+      "owner": "P1 L1b gear"
+    },
+    "spirits": {
+      "expected": 84,
+      "type": "hard",
+      "owner": "P1 L1b gear"
+    },
+    "items": {
+      "expected": 145,
+      "type": "hard",
+      "owner": "P1 L1b gear",
+      "note": "floor = crystal tears 37 + cookbooks 104 + great runes 7 minus overlap; the full items set is larger"
+    },
+    "bosses": {
+      "expected": 250,
+      "type": "soft",
+      "owner": "P1 L1c world"
+    },
+    "graces": {
+      "expected": 414,
+      "type": "soft",
+      "owner": "P1 L1c world"
+    },
+    "regions": {
+      "expected": 15,
+      "type": "soft",
+      "owner": "P1 L1c world"
+    },
+    "npcs": {
+      "expected": 45,
+      "type": "soft",
+      "owner": "P1 L1c world"
+    },
+    "quests": {
+      "expected": 45,
+      "type": "soft",
+      "owner": "P1 L1c world"
+    },
+    "guides": {
+      "expected": 12,
+      "type": "hard",
+      "owner": "P3 L6 Builds UI"
+    },
+    "map-pins": {
+      "expected": 480,
+      "type": "soft",
+      "owner": "P1 L2 map",
+      "note": "graces 350 + dungeons 60 + bosses 61 + evergaols 10"
+    }
+  },
+  "sprites": {
+    "manifest": 2610,
+    "onDisk": 2610,
+    "estimatedBytes": 67261161,
+    "groups": {
+      "weapons": 486,
+      "talismans": 155,
+      "spirits": 84,
+      "spells": 213,
+      "items": 809,
+      "classes": 10,
+      "ashes": 118,
+      "armor": 735
+    }
+  },
+  "bytes": {
+    "data": 6154628,
+    "sprites": 67261161,
+    "map": 10435228
+  },
+  "sources": [
+    {
+      "id": "regulation",
+      "name": "ThomasJClark/elden-ring-weapon-calculator",
+      "url": "https://github.com/ThomasJClark/elden-ring-weapon-calculator",
+      "licence": "MIT",
+      "usedFor": "weapon rows, scaling curves, upgrade tables, status buildup"
+    },
+    {
+      "id": "wiki",
+      "name": "eldenring.wiki.gg (Eldenpedia)",
+      "url": "https://eldenring.wiki.gg/",
+      "licence": "CC BY-SA 4.0",
+      "usedFor": "infobox facts, in-game item descriptions, locations, mechanics tables"
+    },
+    {
+      "id": "ids",
+      "name": "CyberGiant7/Elden-Ring-Automatic-Checklist",
+      "url": "https://github.com/CyberGiant7/Elden-Ring-Automatic-Checklist",
+      "licence": "MIT (code and data); icons are FromSoftware property",
+      "usedFor": "item ids, event-flag ids, eventflag_bst.json, the icon set"
+    },
+    {
+      "id": "map",
+      "name": "CreateDDy/EldenRing_MapInteractive",
+      "url": "https://github.com/CreateDDy/EldenRing_MapInteractive",
+      "licence": "MIT (data); map art is FromSoftware property",
+      "usedFor": "map pins and base map imagery"
+    }
+  ],
+  "licence": "Text facts are taken from eldenring.wiki.gg under CC BY-SA 4.0. Weapon maths derive from elden-ring-weapon-calculator (MIT). Item ids, event flags and the icon set come from Elden-Ring-Automatic-Checklist (MIT). Map data comes from EldenRing_MapInteractive (MIT). In-game item description text and all game art belong to FromSoftware.",
+  "attribution": "Elden Ring and Shadow of the Erdtree are trademarks of FromSoftware / Bandai Namco - not affiliated. Text facts from eldenring.wiki.gg (CC BY-SA 4.0); weapon data via elden-ring-weapon-calculator (MIT); ids, flags and icon set via Elden-Ring-Automatic-Checklist (MIT); map data via EldenRing_MapInteractive (MIT). Icons and map art belong to FromSoftware and are used non-commercially; takedown requests honoured.",
+  "beginnerNotes": {
+    "files": 13,
+    "applied": 2969
+  },
+  "reports": [
+    {
+      "kind": "soft",
+      "msg": "weapons: 1 armament(s) have no wiki page (desc/weight/guard are null): 1 listed in raw/wiki/weapons/_missing.txt"
+    },
+    {
+      "kind": "soft",
+      "msg": "weapons: 10 armament(s) are not in the CyberGiant7 checklist - id falls back to a slug"
+    },
+    {
+      "kind": "soft",
+      "msg": "weapons: 1 armament(s) resolved to no icon at all"
+    },
+    {
+      "kind": "info",
+      "msg": "weapons: 333/487 skills resolved to an Ash of War id (unique skills have no ash and stay null)"
+    },
+    {
+      "kind": "soft",
+      "msg": "talismans: dropped 32 fetched page(s) that are not entities (32 no {{Infobox Item}} and no checklist id): Arsenal Charms, Assassin's Stained Daggers, Boltdrake Talismans, Cerulean Amber Medallions, Clarifying Horn Charms, Crimson Amber Medallions, Crucible Talismans, Dragoncrest Shield Talismans ... (+24)"
+    },
+    {
+      "kind": "info",
+      "msg": "talismans: stacks=false on 55 member(s) of a numbered family and 1 talisman(s) whose page states it outright; 99 stack"
+    },
+    {
+      "kind": "soft",
+      "msg": "talismans: 1 talisman(s) have no item_effect line in the infobox"
+    },
+    {
+      "kind": "info",
+      "msg": "spirits: 84 spirit ash(es), 20 SotE, 4 cost HP, 28 with a summon count read from their own text (the rest default to 1)"
+    },
+    {
+      "kind": "soft",
+      "msg": "spirits: 2 spirit ash(es) have no wiki page"
+    },
+    {
+      "kind": "soft",
+      "msg": "spirits: 3 spirit ash(es) declare neither an FP nor an HP cost"
+    },
+    {
+      "kind": "soft",
+      "msg": "spirits: 1 spirit ash(es) declare BOTH an FP and an HP cost - FP was kept"
+    },
+    {
+      "kind": "soft",
+      "msg": "spirits: 20 spirit ash(es) do not say which glovewort upgrades them"
+    },
+    {
+      "kind": "soft",
+      "msg": "spirits: 2 name(s) redirect to a page about a different entity (an enemy or an NPC article, not the ash) - the page was discarded rather than parsed: Latenna the Albinauric -> Latenna the Albinauric, Battlemage Hugues -> Battlemage"
+    },
+    {
+      "kind": "info",
+      "msg": "spells: 84 sorceries, 129 incantations (0 typed from the wiki category because the infobox left it blank); 109 chargeable"
+    },
+    {
+      "kind": "gap",
+      "msg": "mechanics: revered: neither \"Revered Spirit Ash\" nor \"About the Revered Spirit Ash Blessing\" carries a per-level table on eldenring.wiki.gg (checked 2026-09-01). Left EMPTY on purpose."
+    },
+    {
+      "kind": "gap",
+      "msg": "mechanics: ngPlus: the New Game Plus page carries no enemy/rune scaling table on eldenring.wiki.gg (checked 2026-09-01). Left EMPTY on purpose."
+    },
+    {
+      "kind": "gap",
+      "msg": "mechanics: metaLevels: community PvP/PvE meta levels have no source in the ranked list; left null."
+    },
+    {
+      "kind": "gap",
+      "msg": "mechanics: equipLoad: no load-bracket table found on the Equip Load page"
+    },
+    {
+      "kind": "soft",
+      "msg": "items: dropped 6 fetched page(s) that are not entities (6 no {{Infobox Item}} and no checklist id): Maps, Crafting Materials (Shadow of the Erdtree), Golden Runes, Perfume Arts, Throwing Pots, Throwing Pots (Shadow of the Erdtree)"
+    },
+    {
+      "kind": "info",
+      "msg": "items: 809 item(s) by kind - consumable 187, crafting 107, key 106, bellBearing 65, cookbook 106, crystalTear 37, greatRune 9, tool 87, whetblade 6, gesture 54, upgrade 44, other 1"
+    },
+    {
+      "kind": "info",
+      "msg": "items: 132 craftable, 125 with a parsed recipe, 360/365 ingredient reference(s) resolved to an id; 324/400 cookbook \"teaches\" reference(s) resolved"
+    },
+    {
+      "kind": "soft",
+      "msg": "items: 1 recipe ingredient name(s) are not in this dataset (kept with a null id): Altus Bloom"
+    },
+    {
+      "kind": "soft",
+      "msg": "items: 1 item(s) have no wiki page"
+    },
+    {
+      "kind": "soft",
+      "msg": "items: 67 item(s) have no item_effect line in the infobox"
+    },
+    {
+      "kind": "info",
+      "msg": "graces: 419 sites (lands 279, shadow 105, underground 35) across 26 region(s), from 54 upstream subcategory name(s)"
+    },
+    {
+      "kind": "info",
+      "msg": "graces: 14 record(s) in 7 name collision group(s) got a \"-<flagId>\" slug suffix; names are unchanged"
+    },
+    {
+      "kind": "info",
+      "msg": "graces: cross-check vs the wiki \"Sites of Grace\" page - it links 333 name(s), 299 of them are in the checklist roster (89.8%)"
+    },
+    {
+      "kind": "gap",
+      "msg": "graces.desc: a Site of Grace has no in-game item description and no wiki page of its own. The only licensed text about one would be wiki editorial prose, which may not be copied (PLAN.md section 3). desc is null for every grace and validate/graces.mjs does NOT apply the common descPresent assertion."
+    },
+    {
+      "kind": "gap",
+      "msg": "graces.icon: the grace icon is one shared map marker, not a per-entity sprite; it belongs to the P1 L2 map lane as a marker data URI (PLAN.md section 12), not to sprites/."
+    },
+    {
+      "kind": "gap",
+      "msg": "graces.pin: filled by the P1 L2 map lane in map-pins.json and joined at runtime on flagId. See \"THE JOIN KEY\" in this header."
+    },
+    {
+      "kind": "info",
+      "msg": "classes: 77/90 starting-gear links resolved to an id (keepsakes and Memory of Grace have none)"
+    },
+    {
+      "kind": "info",
+      "msg": "bosses: 208 flagged encounters (167 base, 41 SotE)"
+    },
+    {
+      "kind": "info",
+      "msg": "bosses: kinds dungeon 71, evergaol 13, field 99, main 11, remembrance 14; mandatory 11, remembrance 21"
+    },
+    {
+      "kind": "info",
+      "msg": "bosses: dungeon membership derived from 26 region page(s), 93 dungeon name(s)"
+    },
+    {
+      "kind": "info",
+      "msg": "bosses: drops 204/218 names resolved to an id (13 distinct unresolved; remembrances, hero runes and blessings have no checklist id, and items.json is P1 L1b)"
+    },
+    {
+      "kind": "soft",
+      "msg": "bosses: most common unresolved drop names - Banished Knight Oleg x2, Remembrance of the Black Blade x1, Crucible Axe Set x1, Remembrance of the Dragonlord x1, Remembrance of the Fire Giant x1, Remembrance of the Lichdragon x1, Messmer's Kindling x1, Remembrance of the Omen King x1"
+    },
+    {
+      "kind": "soft",
+      "msg": "bosses: 39 boss page(s) carry no {{Infobox Boss}}"
+    },
+    {
+      "kind": "soft",
+      "msg": "bosses: 9 boss(es) have no {{Minibox_Enemy}} entry on Enemies/Bosses"
+    },
+    {
+      "kind": "soft",
+      "msg": "bosses: 10 page(s) with several {{Infobox Boss}} blocks could not be separated by title or location - the highest-scoring block was used"
+    },
+    {
+      "kind": "soft",
+      "msg": "bosses: 47 boss(es) have no rune value in their infobox: Alecto, Black Knife Ringleader, Ancestor Spirit, Ancient Hero of Zamor (Altus Plateau), Ancient Hero of Zamor (Flame Peak), Ancient Hero of Zamor (Weeping Peninsula), Astel, Naturalborn of the Void, Astel, Stars of Darkness, Battlemage Hugues, Beastman of Farum Azula, Beastman of Farum Azula (Duo) ..."
+    },
+    {
+      "kind": "info",
+      "msg": "bosses: icon is null for all 208 by design (see the header, note 5); 169 have a wiki image a later lane could fetch"
+    },
+    {
+      "kind": "gap",
+      "msg": "bosses.recommendedLevel: no ranked source states a recommended level per boss; the wiki boss infobox has no such field and neither region pages nor the Bosses page carry one. Every boss ships recommendedLevel: null."
+    },
+    {
+      "kind": "gap",
+      "msg": "bosses.strategy: ORIGINAL prose, written later by the P2 writers. Wiki strategy text is CC BY-SA editorial prose and may not be copied (PLAN.md section 3)."
+    },
+    {
+      "kind": "gap",
+      "msg": "bosses.icon: see note 5 in the header - deliberate, budget-driven, PLAN.md section 5 exempts bosses from the icon floor."
+    },
+    {
+      "kind": "gap",
+      "msg": "bosses: \"Black Knight Garrew\" ships region: null - the page redirects to the generic \"Black Knight\" enemy article, which has no {{Infobox Boss}} and no per-instance location; not listed on Enemies/Bosses or any region page"
+    },
+    {
+      "kind": "gap",
+      "msg": "bosses: \"Curseblade Labirith\" ships region: null - has an {{Infobox Boss}} (runes 100,000) but its `location` parameter is empty, and it is not listed on Enemies/Bosses or any region page"
+    },
+    {
+      "kind": "gap",
+      "msg": "bosses: \"Dryleaf Dane (Boss)\" ships region: null - the page is the NPC article \"Dryleaf Dane\", whose {{Infobox Character}} location is empty; he is linked from three different region pages as an invader, so a region-page join would be a guess between them"
+    },
+    {
+      "kind": "info",
+      "msg": "ashes: 118 ash(es), 25 SotE, 118 with a resolved weapon-class list"
+    },
+    {
+      "kind": "soft",
+      "msg": "ashes: KNOWN GAP - 79/118 ash(es) have no FP cost. It lives on the skill's own \"Skill: <name>\" page, which is not in any page list yet. Left null, never zero."
+    },
+    {
+      "kind": "info",
+      "msg": "armor: id sources - 628 base/dlc lists, 88 altered_armor.json, 19 unobtainable.json, 12 wiki-only (slug id)"
+    },
+    {
+      "kind": "info",
+      "msg": "armor: src - 616 from the checklist, 88 inherited by an altered variant, 0 from a {{SotE}} page marker, 590 base"
+    },
+    {
+      "kind": "soft",
+      "msg": "armor: 6 piece(s) have no wiki page (see raw/wiki/armor/_missing.txt)"
+    },
+    {
+      "kind": "soft",
+      "msg": "armor: 5 piece(s) with a wiki page have no weight"
+    },
+    {
+      "kind": "info",
+      "msg": "armor-sets: 124 set(s) making 542 piece claim(s); 16 piece(s) belong to more than one set; 209 piece(s) belong to no set"
+    },
+    {
+      "kind": "soft",
+      "msg": "start: start.json and glossary.json are EMPTY SKELETONS in the contract shape - the Start tab prose (first-10-minutes steps, class shortlist, glossary) has not been written yet. See the header of tools/parse_start.mjs for the handover."
+    },
+    {
+      "kind": "info",
+      "msg": "start: classPicks will reference classes.json by id - 10 class ids are available"
+    },
+    {
+      "kind": "info",
+      "msg": "quests: name sources - ids.txt (2550) + data/ (16 file(s)) + datasets built this run"
+    },
+    {
+      "kind": "info",
+      "msg": "quests: compiled 49 questline(s) from 49 file(s), 631 steps, 97 lockout step(s), 301 resolved reward(s)"
+    },
+    {
+      "kind": "info",
+      "msg": "quests: 33 name(s) ship without an id - 19 lock triggers, 14 rewards. The name still renders; nothing links. See \"WHAT IS HARD AND WHAT IS A REPORT\" in build_quests.mjs."
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Age of Order (ending)\" - quests/brother-corhyn.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"the burning of the Sealing Tree at Church of the Bud\" - quests/dryleaf-dane.md [step 5 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Ensha's invasion of Roundtable Hold\" - quests/ensha-of-the-royal-remains.md [step 2 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Knifeprint Clue (key item)\" - quests/fia-deathbed-companion.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"the burning of the Sealing Tree at Church of the Bud\" - quests/hornsent.md [step 2 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Letter to Bernahl\" - quests/knight-bernahl.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Lord of Frenzied Flame (ending)\" - quests/lightseeker-hyetta.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Melina's invitation to Roundtable Hold\" - quests/melina.md [step 3 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"the Three Fingers embrace at Frenzied Flame Proscription\" - quests/melina.md [step 11 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"your second shardbearer kill\" - quests/merchant-kale.md [step 2 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Miquella's Needle (key item)\" - quests/millicent.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Miquella's Followers\" - quests/miquellas-followers.md [npc] - no page in tools/pages/npcs.txt matches - treated as a multi-NPC questline (npcResolved: false)"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Thiollier's move to the Garden of Deep Purple\" - quests/moore.md [step 3 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"the choice at Main Gate Cross\" - quests/moore.md [step 8 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Preceptor's Set (armor set)\" - quests/preceptor-seluvis.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Preceptor Seluvis's questline\" - quests/ranni-the-witch.md [step 8 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Blaidd the Half-Wolf's questline\" - quests/ranni-the-witch.md [step 14 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"the Frenzied Flame Proscription\" - quests/ranni-the-witch.md [step 16 lock (entering)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Dark Moon Ring\" - quests/ranni-the-witch.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Age of the Stars (ending)\" - quests/ranni-the-witch.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"the Secret Rite Scroll handover to Sir Ansbach\" - quests/redmane-freyja.md [step 6 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"the burning of the Sealing Tree at Church of the Bud\" - quests/redmane-freyja.md [step 10 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Zorayas's Letter\" - quests/rya-the-scout.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Sellia's Secret (key item)\" - quests/sage-gowry.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Lord of Frenzied Flame (ending)\" - quests/shabriri.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"the Secret Rite Scroll handover to Sir Ansbach\" - quests/sir-ansbach.md [step 8 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"the burning of the Sealing Tree at Church of the Bud\" - quests/sir-ansbach.md [step 12 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Rogier's Letter\" - quests/sorcerer-rogier.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Eccentric's Set\" - quests/sorceress-sellen.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Juno Hoslow, Knight of Blood\" - quests/tanith.md [step 8 lock (defeating)] - not in the flagged boss roster (CyberGiant7 has no event flag for every named invader)"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Drawing-Room Key (key item)\" - quests/tanith.md [rewards] - no id in ids.txt, data/ or this run"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"his move to the Garden of Deep Purple\" - quests/thiollier.md [step 5 lock (completing)] - names an event rather than a place or a step"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: no id for \"Volcano Manor Recusants\" - quests/volcano-manor-recusants.md [npc] - no page in tools/pages/npcs.txt matches - treated as a multi-NPC questline (npcResolved: false)"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/brother-corhyn.md [rewards] \"Age of Order (ending)\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/fia-deathbed-companion.md [rewards] \"Knifeprint Clue (key item)\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/knight-bernahl.md [rewards] \"Letter to Bernahl\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/lightseeker-hyetta.md [rewards] \"Lord of Frenzied Flame (ending)\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/millicent.md [rewards] \"Miquella's Needle (key item)\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/preceptor-seluvis.md [rewards] \"Preceptor's Set (armor set)\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/ranni-the-witch.md [rewards] \"Dark Moon Ring\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/ranni-the-witch.md [rewards] \"Age of the Stars (ending)\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/rya-the-scout.md [rewards] \"Zorayas's Letter\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/sage-gowry.md [rewards] \"Sellia's Secret (key item)\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/shabriri.md [rewards] \"Lord of Frenzied Flame (ending)\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/sorcerer-rogier.md [rewards] \"Rogier's Letter\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/sorceress-sellen.md [rewards] \"Eccentric's Set\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "quests: quests/tanith.md [rewards] \"Drawing-Room Key (key item)\" -> no near match"
+    },
+    {
+      "kind": "soft",
+      "msg": "npcs: the wiki NPCs page links 1 name(s) that tools/pages/npcs.txt does not list (mechanics and place links are filtered out already): Realm of Shadow"
+    },
+    {
+      "kind": "info",
+      "msg": "npcs: 75 characters (16 SotE), 64 placed in a region, 47 linked to a questline"
+    },
+    {
+      "kind": "soft",
+      "msg": "npcs: 3 page(s) carry no {{Infobox Character}}"
+    },
+    {
+      "kind": "soft",
+      "msg": "npcs: 14 NPC(s) have no role in their infobox"
+    },
+    {
+      "kind": "soft",
+      "msg": "npcs: 11 NPC(s) could not be placed in any region"
+    },
+    {
+      "kind": "soft",
+      "msg": "npcs: 1 NPC(s) in the page list are not linked from the wiki NPCs index page"
+    },
+    {
+      "kind": "gap",
+      "msg": "npcs.icon: NPC portraits upstream are full-size screenshots, not the 30 KB webp inventory icons the sprite budget in PLAN.md section 9 is sized for - the same reason bosses ship no icon. NPCs are not a core icon group in PLAN.md section 5."
+    },
+    {
+      "kind": "info",
+      "msg": "regions: 26 regions (lands 12, shadow 8, underground 6), 419 graces / 208 bosses / 79 npc placements distributed"
+    },
+    {
+      "kind": "soft",
+      "msg": "regions: 8 region page(s) carry no {{Quote}} map description, so desc is null: Altus Plateau, Mountaintops of the Giants, Crumbling Farum Azula, Roundtable Hold, Siofra River, Ainsel River, Deeproot Depths, Subterranean Shunning-Grounds"
+    },
+    {
+      "kind": "gap",
+      "msg": "regions.recommendedLevel: no ranked source in SOURCES.md states a level range per region. The wiki region infobox has no such field, and community ranges are unsourced. Every region ships recommendedLevel {min: null, max: null}; the Builds guides (P3 L6) carry level targets instead, backed by mechanics.runeCost."
+    },
+    {
+      "kind": "gap",
+      "msg": "regions.icon: the wiki region icon is a travel-screen glyph in a [[File:]] link inside the infobox title, not an inventory icon; regions are not a core icon group in PLAN.md section 5."
+    },
+    {
+      "kind": "info",
+      "msg": "residue sanitizer: cleaned 6 string field(s) that still carried raw {{ }} / [[ ]] wiki markup (backstop for B5-class parser gaps)"
+    }
+  ],
+  "generator": "tools/build_data.mjs",
+  "generatedAt": "2026-09-04T18:09:51.176Z",
+  "extraFiles": [
+    "armor-sets.json",
+    "glossary.json",
+    "weapon-calc.json"
+  ],
+  "pins": {
+    "total": 624,
+    "byKind": {
+      "grace": 350,
+      "dungeon": 60,
+      "evergaol": 10,
+      "boss": 204
+    },
+    "byWorld": {
+      "lands": 443,
+      "underground": 35,
+      "shadow": 146
+    },
+    "byOrigin": {
+      "createddy": 471,
+      "createddy:dungeon": 1,
+      "compass:legacy": 62,
+      "compass:group:m12_01_00": 2,
+      "compass:group:m12_03_00": 2,
+      "compass:group:m13_00_00": 2,
+      "compass:group:m14_00_00": 1,
+      "compass:group:m15_00_00": 3,
+      "compass:group:m16_00_00": 2,
+      "compass:group:m20_01_00": 2,
+      "compass:group:m22_00_00": 1,
+      "compass:group:m35_00_00": 2,
+      "compass:world": 73
+    },
+    "transform": {
+      "lands": {
+        "a": -7167,
+        "b": 16640.7,
+        "anchors": 139,
+        "residualMeanPx": 11.92,
+        "residualMaxPx": 39.83
+      },
+      "shadow": {
+        "a": -10205.14,
+        "b": 14776.74,
+        "anchors": 47,
+        "residualMeanPx": 13.13,
+        "residualMaxPx": 36.22
+      }
+    },
+    "mergedBy": "tools/build_pins.mjs (P1 L2 map lane) - additive merge, see the MERGE note in that file"
+  }
+}

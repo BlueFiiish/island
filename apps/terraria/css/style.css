@@ -1,0 +1,881 @@
+/* Terraria Companion — cosmic-dark theme, mobile-first PWA
+ *
+ * MODE IDENTITY (T2, 2026-08-31). The app has two skins and they differ by
+ * TOKEN ONLY - no rule below is hand-recoloured per mode:
+ *   vanilla  (default)          --accent = green   #59d98a
+ *   calamity (body[data-mode])  --accent = violet  #a970ff  (the pre-pivot look)
+ * --accent-soft and --accent-glow exist because three rules used to hardcode
+ * var(--accent-soft) / var(--accent-glow), which would have stayed violet in green mode.
+ * --cal is the mod's OWN colour and is mode-independent: the CAL badge is violet
+ * in both skins because it means "Calamity", not "current accent".
+ *
+ * `body[data-mode]` and not `:root[data-mode]` on purpose: the fiiiish-app shell
+ * collapses :root/html/body selectors onto its mount node, so this form survives
+ * as .fi-app[data-app="..."][data-mode="..."]. app.js stamps the attribute on
+ * <html>, <body> AND the mount, so both worlds match. */
+:root{
+  --bg:#0e0d1a; --bg2:#15132a; --panel:#1b1836; --panel2:#221e42;
+  --line:#302a55; --line2:#413879;
+  --ink:#e9e6ff; --dim:#a79fce; --faint:#7a72a6;
+  --accent:#59d98a; --accent-soft:#12301f; --accent-glow:rgba(89,217,138,.35);
+  --accent2:#35d0ba; --gold:#f2c14e; --red:#ff6a8a; --green:#59d98a;
+  --cal:#a970ff;
+  --shadow:0 8px 30px rgba(0,0,0,.45);
+  --tab-h:60px; --top-h:52px;
+  --safe-b:env(safe-area-inset-bottom,0px);
+}
+body[data-mode="calamity"]{
+  --accent:#a970ff; --accent-soft:var(--accent-soft); --accent-glow:var(--accent-glow);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:
+    radial-gradient(1200px 600px at 80% -10%, #241a45 0%, transparent 60%),
+    radial-gradient(1000px 700px at -10% 110%, #16283a 0%, transparent 55%),
+    var(--bg);
+  color:var(--ink);
+  font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,system-ui,sans-serif;
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block}
+button{font-family:inherit;color:inherit;cursor:pointer}
+b{color:#fff}
+
+/* ---- top bar ---- */
+#topbar{
+  position:sticky;top:0;z-index:40;height:var(--top-h);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 12px;background:rgba(14,13,26,.86);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:8px;font-size:16px;letter-spacing:.2px}
+.brand b{color:var(--accent)}
+.brand-logo{width:26px;height:26px}
+.top-right{display:flex;align-items:center;gap:8px}
+.share-btn{background:var(--panel);border:1px solid var(--line2);border-radius:9px;padding:6px 9px;font-size:14px}
+.patch-pill{font-size:11px;color:var(--accent2);border:1px solid var(--line2);border-radius:999px;padding:4px 9px;background:var(--panel);white-space:nowrap}
+
+/* ---- layout ---- */
+#app{max-width:760px;margin:0 auto;padding:12px 12px calc(var(--tab-h) + var(--safe-b) + 20px)}
+.view{animation:fade .18s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+h2.vh{font-size:18px;margin:4px 2px 12px;display:flex;align-items:center;gap:8px}
+.muted{color:var(--dim)}
+.faint{color:var(--faint)}
+.center{text-align:center}
+
+/* ---- search ---- */
+.search-wrap{position:relative;margin:2px 0 12px}
+.search{
+  width:100%;padding:13px 40px 13px 40px;border-radius:13px;
+  background:var(--panel);border:1px solid var(--line2);color:var(--ink);font-size:16px;
+}
+.search:focus{outline:none;border-color:var(--accent)}
+.search-ic{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--faint)}
+.search-clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);background:none;border:0;color:var(--faint);font-size:18px;padding:6px}
+.suggest{position:absolute;z-index:30;left:0;right:0;top:calc(100% + 6px);background:var(--panel2);border:1px solid var(--line2);border-radius:12px;box-shadow:var(--shadow);overflow:hidden;max-height:60vh;overflow-y:auto}
+.sug-row{display:flex;align-items:center;gap:10px;padding:9px 12px;border-bottom:1px solid var(--line)}
+.sug-row:last-child{border-bottom:0}
+.sug-row:active{background:var(--panel)}
+.sug-row .nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sug-row .tg{font-size:10px;color:var(--faint)}
+
+/* ---- sprites ---- */
+.spr{image-rendering:pixelated;image-rendering:crisp-edges;object-fit:contain;flex:none}
+.spr.s24{width:24px;height:24px}
+.spr.s32{width:32px;height:32px}
+.spr.s40{width:40px;height:40px}
+.spr.s56{width:56px;height:56px}
+.spr.s72{width:72px;height:72px}
+.spr-wrap{display:inline-flex;align-items:center;justify-content:center;background:rgba(0,0,0,.22);border:1px solid var(--line);border-radius:9px}
+.spr-wrap.miss{position:relative}
+.spr-wrap.miss::after{content:"?";position:absolute;color:var(--faint);font-weight:700}
+
+/* ---- generic card / chips ---- */
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:12px}
+.chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;padding:3px 8px;border-radius:999px;border:1px solid var(--line2);background:var(--panel2);color:var(--dim)}
+.chip.station{color:var(--gold);border-color:#5a4a1e;background:#241d0e}
+.chip.drop{color:var(--red);border-color:#5a2436;background:#2a1420}
+.chip.base{color:var(--accent2);border-color:#1c4a44;background:#0e2624}
+.chip.craft{color:var(--accent);border-color:#3a2a63;background:#1c1436}
+/* Content the mod removed: the wiki still documents it, the game no longer has it. */
+.chip.removed{color:#ffb27a;border-color:#6a4522;background:#2c1c0d}
+.item-cell.is-removed .nm{opacity:.6}
+.removed-note{margin:8px 0 2px;padding:8px 10px;border-radius:8px;font-size:12.5px;line-height:1.5;
+  color:#ffcda3;border:1px solid #6a4522;background:#241609}
+.chip.cls{color:#fff}
+.chip.melee{color:#ff8f6b}.chip.ranged{color:#8fd66b}.chip.mage{color:#6bb6ff}.chip.summoner{color:#c78fff}.chip.rogue{color:#ffd76b}
+.row{display:flex;align-items:center;gap:10px}
+.wrap{flex-wrap:wrap}
+.g8{gap:8px}.g6{gap:6px}
+
+/* ---- crafting tree ---- */
+.tree-head{display:flex;align-items:center;gap:12px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line2);border-radius:14px;padding:12px;margin-bottom:10px}
+.tree-head .ti{min-width:0}
+.tree-head h3{margin:0;font-size:17px;line-height:1.2}
+.tree-head .sub{font-size:12px;color:var(--dim);margin-top:3px}
+.tree-tools{display:flex;gap:8px;margin:0 0 8px;flex-wrap:wrap}
+.tbtn{background:var(--panel);border:1px solid var(--line2);border-radius:9px;padding:7px 11px;font-size:12.5px;color:var(--dim)}
+.tbtn.on{color:var(--ink);border-color:var(--accent);background:var(--accent-soft)}
+.crumbs{display:flex;align-items:center;gap:4px;flex-wrap:wrap;font-size:12px;margin-bottom:8px;color:var(--faint)}
+.crumbs a{color:var(--accent2);text-decoration:none}
+.crumbs .sep{color:var(--faint)}
+
+.tree{--ind:16px}
+.node{position:relative}
+.node .rowline{
+  display:flex;align-items:center;gap:9px;padding:7px 8px;border-radius:10px;
+  border:1px solid transparent;
+}
+.node .rowline:active{background:var(--panel)}
+.node.craftable > .rowline{cursor:pointer}
+.node .caret{width:18px;height:18px;flex:none;display:flex;align-items:center;justify-content:center;color:var(--faint);transition:transform .15s;font-size:11px}
+.node.open > .rowline .caret{transform:rotate(90deg);color:var(--accent)}
+.node .caret.leaf{opacity:.25}
+.node .qty{font-size:12px;color:var(--gold);font-weight:700;min-width:26px;text-align:right;flex:none}
+.node .nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px}
+.node .nm .tap{color:var(--ink)}
+.node.craftable .nm .tap{color:#efe9ff}
+.node .meta-tag{font-size:10px;flex:none}
+.node .kids{margin-left:var(--ind);padding-left:10px;border-left:1px solid var(--line);display:none}
+.node.open > .kids{display:block}
+.node .station-badge{font-size:10px;color:var(--gold);flex:none;opacity:.85}
+
+.raw-list .row{padding:7px 4px;border-bottom:1px solid var(--line)}
+.raw-list .row:last-child{border-bottom:0}
+.raw-list .qty{color:var(--gold);font-weight:700;min-width:40px;text-align:right}
+
+/* ---- empty / hint ---- */
+.hint{color:var(--dim);text-align:center;padding:26px 16px}
+.hint .big{font-size:44px;margin-bottom:8px}
+.quick{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+.quick .tbtn{color:var(--accent2)}
+
+/* ---- classes ---- */
+.class-picker{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px;margin-bottom:14px}
+.class-btn{background:var(--panel);border:1px solid var(--line2);border-radius:12px;padding:12px 6px;text-align:center;font-size:13px}
+.class-btn .em{font-size:22px;display:block;margin-bottom:3px}
+.class-btn.on{border-color:var(--accent);background:var(--accent-soft);color:#fff}
+.stage{margin-bottom:10px;border:1px solid var(--line);border-radius:13px;overflow:hidden;background:var(--panel)}
+.stage > summary{list-style:none;cursor:pointer;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.stage > summary::-webkit-details-marker{display:none}
+.stage[open] > summary{border-bottom:1px solid var(--line);background:var(--panel2)}
+.stage .stg-name{font-weight:600}
+.stage .stg-cnt{font-size:11px;color:var(--faint)}
+.stage-body{padding:10px 12px}
+.grp-h{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--faint);margin:14px 0 7px}
+.grp-h:first-child{margin-top:0}
+.grp-n{color:var(--accent);font-weight:700;margin-left:2px}
+.stage-note{display:flex;gap:8px;align-items:flex-start;background:var(--panel2);border:1px solid var(--line2);
+  border-left:3px solid var(--gold);border-radius:9px;padding:9px 11px;margin:0 0 4px;font-size:13px;line-height:1.5;color:var(--dim)}
+.stage-note .sn-ic{flex:none;font-size:13px;line-height:1.5}
+.stage-body .item-grid{margin-bottom:2px}
+
+/* ---- bosses ---- */
+.boss-list{display:flex;flex-direction:column;gap:8px}
+.boss-row{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.boss-row:active{border-color:var(--accent)}
+.boss-row .idx{font-size:11px;color:var(--faint);min-width:22px}
+.boss-row .bn{flex:1;min-width:0}
+.boss-row .bn .t{font-weight:600}
+.boss-row .bn .d{font-size:11px;color:var(--faint)}
+.boss-row .cnt{font-size:11px;color:var(--accent2)}
+
+/* ---- items browse ---- */
+.filters{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px}
+.fbtn{background:var(--panel);border:1px solid var(--line2);border-radius:999px;padding:6px 11px;font-size:12px;color:var(--dim)}
+.fbtn.on{color:#fff;border-color:var(--accent);background:var(--accent-soft)}
+.item-grid{display:grid;grid-template-columns:1fr;gap:7px}
+.item-cell{display:flex;align-items:center;gap:11px;background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:8px 11px}
+.item-cell:active{border-color:var(--accent)}
+.item-cell .nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px}
+.item-cell .tags{display:flex;gap:4px;flex:none}
+.load-more{width:100%;padding:12px;text-align:center;color:var(--accent2);background:var(--panel);border:1px solid var(--line2);border-radius:12px;margin-top:8px}
+
+/* ---- bottom sheet ----
+   MOBILE SCROLL CONTRACT (fixed 2026-08-30 after an iPhone report of "the
+   slider moves but the screen is static"). Four things have to hold or the
+   sheet stops being its own scroll area and the swipe leaks to the page
+   underneath - which is far worse inside the fiiiish-app shell, where the
+   shell page behind is a tall scroller of its own:
+     1. the sheet must be measured in dvh, not vh. iOS resolves vh against the
+        LARGE viewport (URL bar hidden), so 88vh was ~100% of what is actually
+        on screen: no backdrop left to tap, and both edges of the sheet sat in
+        Safari's own pull-to-refresh / toolbar-reveal gesture zones.
+     2. overscroll-behavior:contain - without it a flick that reaches the end
+        of the sheet chains straight into the document behind it.
+     3. the page behind is scroll-locked in JS while the sheet is open
+        (pageLock() in app.js) - CSS alone cannot do it here.
+     4. no backdrop-filter on the scrim. A blurred backdrop directly beneath a
+        scrolling overlay is the classic iOS Safari stale-paint trigger: the
+        scroll indicator travels while the pixels never repaint. The flat scrim
+        is a touch darker to make up for the lost blur. */
+.sheet{position:fixed;inset:0;z-index:60}
+.sheet[hidden]{display:none}
+.sheet-backdrop{position:absolute;inset:0;background:rgba(6,5,14,.72);touch-action:none}
+.sheet-body{position:absolute;left:0;right:0;bottom:0;max-height:88vh;max-height:88dvh;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;transform:translateZ(0);background:var(--bg2);border-top:1px solid var(--line2);border-radius:18px 18px 0 0;padding:14px 14px calc(20px + var(--safe-b));box-shadow:0 -10px 40px rgba(0,0,0,.5);animation:slideup .22s cubic-bezier(.2,.8,.2,1)}
+@keyframes slideup{from{transform:translateY(30px);opacity:.6}to{transform:none;opacity:1}}
+.sheet-grab{width:38px;height:4px;border-radius:2px;background:var(--line2);margin:0 auto 12px}
+.sheet h3{margin:0 0 2px;font-size:18px}
+.sheet .sec-h{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--faint);margin:16px 0 7px}
+.sheet .obtain{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:10px;margin-bottom:8px}
+.usedin{display:flex;flex-wrap:wrap;gap:6px}
+.usedin .u{font-size:12px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:5px 8px;display:flex;align-items:center;gap:5px}
+.big-btn{display:block;width:100%;text-align:center;padding:13px;border-radius:12px;background:var(--accent);color:#120a24;font-weight:700;border:0;margin-top:14px;font-size:15px}
+.big-btn.alt{background:var(--panel2);color:var(--ink);border:1px solid var(--line2)}
+
+/* ---- tab bar ---- */
+#tabbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;height:calc(var(--tab-h) + var(--safe-b));
+  padding-bottom:var(--safe-b);
+  display:flex;background:rgba(16,14,32,.94);backdrop-filter:blur(12px);border-top:1px solid var(--line2);
+}
+.tab{flex:1;background:none;border:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--faint);font-size:10.5px}
+.tab .ic{font-size:19px;line-height:1}
+.tab.on{color:var(--accent)}
+.tab.on .ic{filter:drop-shadow(0 0 6px color-mix(in srgb, var(--accent) 60%, transparent))}
+
+a.link{color:var(--accent2);text-decoration:none}
+.spinner{width:26px;height:26px;border:3px solid var(--line2);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:40px auto}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---- v2 (2026-08-28): descriptions, stats, data stamp, attribution ---- */
+
+/* header stamp pill: which Calamity version + when the wiki data was pulled */
+.patch-pill{display:flex;align-items:center;gap:6px;line-height:1.2}
+.patch-pill b{color:var(--ink);font-weight:600}
+.patch-pill .synced{color:var(--faint);font-size:10px;border-left:1px solid var(--line2);padding-left:6px}
+
+/* item description + in-game tooltip */
+.desc{margin:10px 0 2px;font-size:13.5px;line-height:1.6;color:var(--dim)}
+.tree-desc{margin:6px 2px 10px}
+
+/* footer attribution (CC BY-NC-SA requires visible credit) */
+#siteFoot{
+  max-width:760px;margin:0 auto;
+  padding:4px 14px calc(var(--tab-h) + var(--safe-b) + 22px);
+}
+#siteFoot p{margin:0;font-size:10.5px;line-height:1.6;color:var(--faint);text-align:center}
+.card.attrib{background:var(--bg2)}
+/* the footer now supplies the tab-bar clearance, so #app no longer needs it */
+#app{padding-bottom:12px}
+
+/* ============================================================================
+   COSMIC / ASTRAL + TERRARIA-RARITY PASS (2026-08-30)
+   1. Rarity-coloured glowing item borders  2. Starfield sparkle layer
+   3. Astral conic sweep on the search bar.  CSS-only, 0 off-origin deps.
+   ========================================================================== */
+
+/* ---- 1. rarity ramp (verified: calamitymod.wiki.gg/wiki/Rarity) ---------- */
+/* Each rar-<slug> only sets colour (--rc) + glow radius (--rg); the visible
+   treatment comes from .rar (cards/rows/sheet) or .rarn (crafting-tree rows),
+   so the slug classes are safe to drop on any element. */
+.rar-gray          {--rc:#8f88b0;--rg:0px}
+.rar-white         {--rc:#d6d0f2;--rg:0px}   /* common tier — quiet on purpose */
+.rar-blue          {--rc:#9696ff;--rg:6px}
+.rar-green         {--rc:#8cf58c;--rg:6px}
+.rar-orange        {--rc:#ffc896;--rg:6px}
+.rar-lightred      {--rc:#ff9c9c;--rg:8px}
+.rar-pink          {--rc:#ff96ff;--rg:8px}
+.rar-lightpurple   {--rc:#d67cff;--rg:8px}
+.rar-lime          {--rc:#a6ff3a;--rg:8px}
+.rar-yellow        {--rc:#ffe23a;--rg:10px}
+.rar-cyan          {--rc:#3ad0ff;--rg:10px}
+.rar-red           {--rc:#ff466f;--rg:10px}
+.rar-purple        {--rc:#c85cff;--rg:11px}
+.rar-fieryred      {--rc:#ff5a2a;--rg:11px}
+.rar-draedonsarsenal{--rc:#e2632f;--rg:11px}
+.rar-tier12        {--rc:#00ffc8;--rg:12px}   /* teal   */
+.rar-tier13        {--rc:#3bff3b;--rg:12px}   /* green  */
+.rar-tier14        {--rc:#ce84ff;--rg:13px}   /* violet */
+.rar-tier15        {--rc:#ffdc16;--rg:13px}   /* gold   */
+.rar-tier16        {--rc:#ff2bff;--rg:14px}   /* magenta*/
+.rar-tier17        {--rc:#ff3636;--rg:15px}   /* blood  */
+.rar-varies        {--rc:#9a93bd;--rg:0px}
+.rar-rainbow,.rar-tier18{--rc:#c9a6ff;--rg:14px}
+
+/* card / row / sheet-hero: coloured left bar + soft outer glow */
+.rar{
+  border-left:3px solid var(--rc,var(--line));
+  box-shadow:0 0 var(--rg,0px) color-mix(in srgb, var(--rc,#000) 42%, transparent);
+}
+
+/* crafting-tree row: lighter — coloured left tick, no glow (keeps deep trees calm) */
+.node.rarn > .rowline{border-left:2px solid var(--rc,transparent);padding-left:7px}
+
+/* animated shimmer for the two multicolour rarities (tier 18 + Rainbow).
+   Uses box-shadow (bar + glow) so the sprite colours are never hue-shifted. */
+.rar-rainbow.rar,.rar-tier18.rar{
+  border-left-color:transparent;
+  animation:rarShimmer 5s linear infinite;
+}
+@keyframes rarShimmer{
+  0%,100%{box-shadow:inset 3px 0 0 0 #ff6b6b, 0 0 14px color-mix(in srgb,#ff6b6b 45%,transparent)}
+  33%    {box-shadow:inset 3px 0 0 0 #ffdc16, 0 0 14px color-mix(in srgb,#ffdc16 45%,transparent)}
+  66%    {box-shadow:inset 3px 0 0 0 #57ffd8, 0 0 14px color-mix(in srgb,#57ffd8 45%,transparent)}
+}
+
+/* ---- 2. starfield sparkle layer (behind everything, low density) --------- */
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-repeat:no-repeat;
+  background-image:
+    radial-gradient(1.4px 1.4px at 12% 18%, rgba(255,255,255,.55), transparent),
+    radial-gradient(1.2px 1.2px at 82% 12%, rgba(197,222,255,.50), transparent),
+    radial-gradient(1px 1px   at 47% 26%, rgba(255,255,255,.42), transparent),
+    radial-gradient(1.3px 1.3px at 68% 38%, rgba(214,196,255,.48), transparent),
+    radial-gradient(1px 1px   at 26% 52%, rgba(255,255,255,.38), transparent),
+    radial-gradient(1.2px 1.2px at 90% 58%, rgba(160,240,224,.42), transparent),
+    radial-gradient(1px 1px   at 8%  72%, rgba(255,255,255,.40), transparent),
+    radial-gradient(1.3px 1.3px at 58% 78%, rgba(210,196,255,.44), transparent),
+    radial-gradient(1px 1px   at 36% 88%, rgba(255,255,255,.36), transparent),
+    radial-gradient(1.2px 1.2px at 78% 92%, rgba(197,222,255,.40), transparent);
+}
+/* a few twinkling points, gently pulsing together */
+body::after{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-repeat:no-repeat;
+  background-image:
+    radial-gradient(1.6px 1.6px at 30% 22%, #ffffff, transparent),
+    radial-gradient(1.6px 1.6px at 72% 66%, #bfe0ff, transparent),
+    radial-gradient(1.6px 1.6px at 16% 84%, #d8c4ff, transparent);
+  opacity:.35;
+  animation:twinkle 5.5s ease-in-out infinite;
+}
+@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:.7}}
+
+/* ---- 3. astral conic sweep on the search wrapper ------------------------- */
+/* @property lets us animate the conic ANGLE (not a transform), so the ring
+   never rotates out of its box — no horizontal overflow. */
+@property --astral{syntax:'<angle>';inherits:false;initial-value:0deg}
+.search-wrap::before{
+  content:"";position:absolute;inset:-1.5px;border-radius:14.5px;z-index:0;
+  pointer-events:none;opacity:.4;
+  background:conic-gradient(from var(--astral),
+    #35d0ba, #a970ff, #ff5adf, #a970ff, #35d0ba);
+  animation:astralSpin 14s linear infinite;
+}
+.search-wrap .search{position:relative;z-index:1}
+.search-wrap .search-ic,.search-wrap .search-clear{z-index:2}
+@keyframes astralSpin{to{--astral:360deg}}
+
+/* motion off for users who ask for it — static, still-legible fallbacks */
+@media (prefers-reduced-motion: reduce){
+  body::after{animation:none;opacity:.4}
+  .search-wrap::before{animation:none}
+  .rar-rainbow.rar,.rar-tier18.rar{
+    animation:none;
+    border-left-color:#c9a6ff;
+    box-shadow:0 0 14px color-mix(in srgb,#c9a6ff 42%,transparent);
+  }
+}
+
+
+/* ============================================================================
+   ROUND 2 (2026-08-30): AESTHETIC DEPTH
+   1. Terraria in-game TOOLTIP signature on the item-detail sheet (rarity-glowing
+      name, item slot, rarity tier label) — reuses the R1 --rc rarity colours.
+   2. Silkscreen PIXEL display face on section headers + labels only (body stays
+      in the readable sans). Font is INLINED as a data URI so the app ships
+      self-contained standalone AND when ported to /island (no fonts/ dir copy,
+      no CDN). Silkscreen: OFL 1.1 (c) Jason Kottke.
+   ========================================================================== */
+
+@font-face{font-family:'Silkscreen';font-style:normal;font-weight:400;font-display:swap;
+  src:url(data:font/woff2;base64,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) format('woff2');}
+
+:root{ --pixel:'Silkscreen',ui-monospace,"Segoe UI",monospace; }
+
+/* ---- pixel headers / labels (HEADERS ONLY — never body or item names) ------ */
+h2.vh, .sec-h, .grp-h, .stage .stg-name, .brand span, .empty-title, .wk-ihead{
+  font-family:var(--pixel); font-weight:400; font-synthesis:none;
+}
+h2.vh{ font-size:15px; letter-spacing:.5px; text-transform:uppercase; line-height:1.3 }
+h2.vh :not(.vh){ letter-spacing:normal }               /* keep the emoji natural */
+.sec-h, .grp-h{ letter-spacing:.5px; color:#b3a9e0 }   /* brighter arcane label (AA-safe on dark) */
+.stage .stg-name{ font-size:12px; letter-spacing:.5px; text-transform:uppercase }
+.brand span{ font-size:12.5px; letter-spacing:.5px }   /* Silkscreen runs wide — shrink the wordmark */
+.brand b{ color:var(--accent) }
+
+/* empty-state arcane title */
+.empty-title{
+  font-size:17px; letter-spacing:.5px; text-transform:uppercase; color:var(--ink);
+  margin-bottom:8px; text-shadow:0 0 14px color-mix(in srgb, var(--accent) 42%, transparent);
+}
+
+/* same rarity-name glow on the crafting-tree header (item identity, consistency) */
+.tree-head.rar h3{
+  color:color-mix(in srgb, var(--rc) 80%, #fff);
+  text-shadow:0 0 calc(var(--rg,0px) + 4px) color-mix(in srgb, var(--rc) 55%, transparent);
+}
+
+/* multicolour rarities (Rainbow / Tier 18): static violet name — no motion,
+   so this is already reduced-motion safe. */
+.tree-head.rar-rainbow h3,.tree-head.rar-tier18 h3,
+.rar-rainbow .wk-title,.rar-tier18 .wk-title{
+  color:#dcc6ff; text-shadow:0 0 12px color-mix(in srgb,#c9a6ff 60%,transparent);
+}
+
+
+/* ============================================================================
+   ROUND 3 (2026-08-30): OBTAIN-FIRST SHEET, GRAPH VIEW, ZOOM/FULLSCREEN, PINS
+   ========================================================================== */
+
+/* ---- 1. item-sheet action row (sits directly under .tt-head) -------------- */
+.tt-actions{display:flex;gap:8px;margin:0 0 4px}
+.act-btn{
+  flex:1;min-width:0;padding:11px 10px;border-radius:11px;font-size:13.5px;font-weight:700;
+  border:1px solid var(--line2);background:var(--panel2);color:var(--ink);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.act-btn.tree{background:var(--accent);border-color:var(--accent);color:#120a24}
+.act-btn.tree:active{filter:brightness(.92)}
+.act-btn.pin{flex:0 0 auto;color:var(--dim)}
+.act-btn.pin.on{color:var(--gold);border-color:#5a4a1e;background:#241d0e}
+
+/* ---- 2. pinned chip row (Craft tab, above the search box) ---------------- */
+.pin-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:0 0 10px}
+.pin-row:empty{display:none}
+.pin-lbl{
+  font-family:var(--pixel);font-size:9.5px;letter-spacing:.5px;text-transform:uppercase;
+  color:var(--gold);opacity:.85;padding-right:2px;
+}
+.pin-chip{
+  display:inline-flex;align-items:center;gap:6px;max-width:100%;
+  background:var(--panel);border:1px solid var(--line2);border-radius:999px;padding:4px 4px 4px 6px;
+  font-size:12.5px;
+}
+.pin-chip.rarn{border-color:color-mix(in srgb,var(--rc,var(--line2)) 55%,var(--line2))}
+.pin-chip:active{border-color:var(--accent)}
+.pin-chip .pn{max-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pin-chip .spr-wrap{background:none;border:0}
+.pin-x{background:none;border:0;color:var(--faint);font-size:15px;line-height:1;padding:3px 6px;border-radius:999px}
+.pin-x:active{color:var(--red)}
+
+/* ---- 3. view segmented control ------------------------------------------ */
+.seg{display:inline-flex;border:1px solid var(--line2);border-radius:9px;overflow:hidden;background:var(--panel)}
+.segb{background:none;border:0;padding:7px 13px;font-size:12.5px;color:var(--dim)}
+.segb + .segb{border-left:1px solid var(--line2)}
+.segb.on{color:#fff;background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+
+/* ---- 4. graph view ------------------------------------------------------- */
+.tree-frame{
+  position:relative;border:1px solid var(--line2);border-radius:14px;overflow:hidden;
+  background:radial-gradient(900px 500px at 12% 0%, #1a1638 0%, transparent 65%), #0c0b18;
+}
+.gscroll{
+  overflow:auto;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;
+  height:62vh;min-height:340px;
+}
+.gsizer{position:relative}
+/* No will-change here on purpose: a deep tree is a several-thousand-px-tall
+   layer and promoting it permanently blows up memory on phones. */
+.gcontent{position:absolute;left:0;top:0;transform-origin:0 0}
+.gsvg{position:absolute;left:0;top:0;pointer-events:none;overflow:visible}
+.gsvg path{fill:none;stroke:#4b3f86;stroke-width:1.6}
+
+.gnode{
+  position:absolute;width:152px;height:48px;box-sizing:border-box;
+  display:flex;align-items:center;gap:7px;padding:5px 8px;
+  background:linear-gradient(180deg,var(--panel2),var(--panel));
+  border:1px solid var(--line2);border-radius:10px;cursor:pointer;
+}
+.gnode:active{border-color:var(--accent)}
+.gnode.gcraft{border-color:#4b3f86}
+.gnode.groot{border-color:var(--accent);box-shadow:0 0 12px var(--accent-glow)}
+.gnode.rarn{border-left:3px solid var(--rc,var(--line2))}
+.gnode .spr-wrap{background:none;border:0;flex:none}
+.gnode .gtxt{min-width:0;flex:1;display:flex;flex-direction:column;gap:1px}
+.gnode .gn{
+  font-size:11px;line-height:1.2;color:var(--ink);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.gnode .gst{font-size:9px;line-height:1.2;color:var(--gold);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gnode .gst.base{color:var(--faint)}
+.gnode .gst.dupt{color:var(--accent2)}
+.gnode .gq{
+  position:absolute;left:-6px;top:-7px;font-size:10px;font-weight:700;color:var(--gold);
+  background:#241d0e;border:1px solid #5a4a1e;border-radius:999px;padding:1px 5px;
+}
+.gnode.gdup{opacity:.78;border-style:dashed}
+
+.ghint{font-size:11px;color:var(--faint);margin:8px 2px 0;line-height:1.5}
+
+/* zoom / fullscreen controls, overlaid on the frame. Top-right, NOT bottom:
+   the frame is ~525px tall and the fixed #tabbar covers its bottom edge at
+   phone heights, which left zoom-out/reset/fullscreen unreachable on entry. */
+.gzoom{position:absolute;right:8px;top:8px;display:flex;flex-direction:column;gap:6px;z-index:2}
+.gzb{
+  width:38px;height:38px;border-radius:10px;font-size:16px;line-height:1;
+  background:rgba(20,17,42,.92);border:1px solid var(--line2);color:var(--ink);
+  display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);
+}
+.gzb:active{border-color:var(--accent)}
+.gclose{
+  display:none;position:absolute;right:8px;top:8px;z-index:2;
+  width:38px;height:38px;border-radius:10px;font-size:20px;line-height:1;
+  background:rgba(20,17,42,.92);border:1px solid var(--line2);color:var(--ink);
+}
+
+/* CSS "fullscreen" - iOS Safari has no Element.requestFullscreen, so the frame
+   just becomes a fixed, full-viewport layer. JS locks body scroll alongside. */
+/* z-index sits above the app's own chrome AND above the fiiiish-app shell top
+   bar / rail; setFs() lifts #sheet above THIS so tapping a node still works. */
+.tree-frame.fs{
+  position:fixed;inset:0;z-index:150;border:0;border-radius:0;
+  background:var(--bg);
+}
+.tree-frame.fs .gscroll{height:100dvh;min-height:0}
+.tree-frame.fs .gclose{display:flex;align-items:center;justify-content:center}
+/* in fullscreen the close X owns the top-right corner; stack the zoom column
+   below it, clear of the notch */
+.tree-frame.fs .gzoom{top:calc(54px + env(safe-area-inset-top,0px))}
+.tree-frame.fs .gclose{top:calc(8px + env(safe-area-inset-top,0px))}
+/* .view's .18s fade animation makes it a containing block for position:fixed,
+   clipping the fullscreen frame if fullscreen is entered mid-animation; kill
+   the animation while a fullscreen frame is inside (self-heals without :has) */
+.view:has(.tree-frame.fs){animation:none}
+
+
+/* ============================================================================
+   ROUND 4 (2026-08-30): ARMOR SETS + WEAPON "IN ACTION" DEMO
+   ========================================================================== */
+
+/* size a bare .spr-wrap placeholder (no <img> child) when a set has no
+   resolvable piece sprite to borrow — keeps grid rows from collapsing */
+.spr-wrap.miss.s24{width:24px;height:24px}
+.spr-wrap.miss.s32{width:32px;height:32px}
+.spr-wrap.miss.s40{width:40px;height:40px}
+.spr-wrap.miss.s56{width:56px;height:56px}
+
+/* ---- Armor chip: sets/pieces toggle row ----------------------------------- */
+.set-toolbar{display:flex;align-items:center;gap:9px;margin:0 0 9px}
+.set-toggle{background:var(--panel2);border-color:var(--accent2);color:var(--accent2)}
+
+/* set card reuses .item-cell's box; only the internals differ */
+.set-card{cursor:pointer}
+.set-grid .item-cell .tags{margin-left:auto}
+
+/* ---- item sheet: "Part of <Set>" link row ---------------------------------- */
+.set-link{
+  display:flex;align-items:center;gap:10px;width:100%;text-align:left;
+  background:var(--panel2);border:1px solid var(--line2);border-radius:11px;
+  padding:10px 11px;margin:2px 0 4px;
+}
+.set-link:active{border-color:var(--accent)}
+.sl-ic{font-size:17px;flex:none}
+.sl-body{min-width:0;flex:1;display:flex;flex-direction:column;gap:2px}
+.sl-t{font-size:13px;color:var(--ink);font-weight:600}
+.sl-b{font-size:11.5px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sl-go{color:var(--accent2);font-size:15px;flex:none}
+
+/* ---- item sheet: "In action" demo GIF -------------------------------------
+   Streamed straight from the wiki (never bundled — these are large/animated).
+   onerror hides the whole wrapper inline (see js/app.js demoBlock), so an
+   offline viewer or a missing wiki file just never sees the section.
+   SIZE CAP (Josia bug report, 2026-08-30): the raw wiki GIFs are up to
+   ~1000px tall and used to render at the sheet's full width with height:auto,
+   which swallowed the whole screen on desktop and pushed every section below
+   it off-screen. The media now lives in a fixed-height frame. */
+.demo-wrap{margin:2px 0 6px}
+/* width:fit-content keeps the frame hugging the media instead of stretching
+   into a full-width empty band on desktop; max-width:100% keeps it inside the
+   sheet, and the auto margins keep it centred. */
+.demo-frame{
+  background:var(--bg2);border:1px solid var(--line2);border-radius:12px;
+  padding:8px;display:flex;justify-content:center;align-items:center;
+  max-height:min(240px,40vh);overflow:hidden;
+  width:fit-content;max-width:100%;margin:0 auto;
+}
+.demo-gif{
+  max-width:100%;width:auto;height:auto;
+  max-height:min(224px,38vh);object-fit:contain;
+  border-radius:8px;background:transparent;display:block;border:0;
+}
+.demo-cap{font-size:10.5px;color:var(--faint);margin-top:5px}
+
+
+/* ============================================================================
+   ROUND 5 (2026-08-30): WIKI-STYLE ITEM + ARMOR-SET SHEETS
+   Approved mockup (calamity-wiki-mockup.html):
+     crumb/back -> H1 + rarity subline -> "Statistics" infobox (checkered art,
+     italic tooltip, 2-col stats table) -> "How to obtain" (obtain-note +
+     wiki-style recipe cards / drop table) -> "What it does" -> "Demo"
+     (size-capped, above) -> "Used in" chips.
+   Every rule here is a plain class selector so assemble-apps.mjs can scope the
+   whole sheet under .fi-app[data-app="calamity"] on the /island mount.
+   ========================================================================== */
+
+.spr.s48{width:48px;height:48px}
+.spr.s96{width:96px;height:96px}
+
+/* ---- crumb / back row ---------------------------------------------------- */
+.wk-crumb{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--dim);margin:0 0 8px}
+.wk-back{
+  background:var(--panel);border:1px solid var(--line2);border-radius:8px;
+  padding:5px 11px;color:var(--ink);font-size:12.5px;max-width:62%;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.wk-back:active{border-color:var(--accent)}
+.wk-path{min-width:0;color:var(--faint);font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ---- title + rarity subline ---------------------------------------------- */
+.wk-title{margin:2px 0 2px;font-size:21px;line-height:1.2;color:var(--ink)}
+.wk-title.rar-on{
+  color:color-mix(in srgb, var(--rc) 80%, #fff);
+  text-shadow:0 0 calc(var(--rg,0px) + 5px) color-mix(in srgb, var(--rc) 60%, transparent);
+}
+.wk-sub{font-size:12.5px;color:var(--faint);margin:0 0 12px;line-height:1.5}
+.wk-sub .wk-rar{color:var(--rc,var(--dim));font-weight:600}
+
+/* ---- infobox ------------------------------------------------------------- */
+.wk-infobox{background:var(--panel);border:1px solid var(--line2);border-radius:14px;overflow:hidden;margin-bottom:4px}
+.wk-infobox.rar{
+  border-color:color-mix(in srgb, var(--rc) 50%, var(--line2));
+  box-shadow:0 0 var(--rg,0px) color-mix(in srgb, var(--rc) 30%, transparent);
+}
+.wk-ihead{
+  background:var(--panel2);padding:8px 12px;text-align:center;
+  border-bottom:1px solid var(--line);
+  font-family:var(--pixel);font-size:11px;letter-spacing:.5px;text-transform:uppercase;color:#b3a9e0;
+}
+.wk-art{
+  display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;
+  padding:18px 12px;
+  background:repeating-conic-gradient(#141228 0% 25%, #100e20 0% 50%) 0 0/26px 26px;
+}
+.wk-art .spr-wrap{background:none;border:0;border-radius:0}
+.wk-tip{
+  padding:10px 14px;border-top:1px solid var(--line);
+  font-style:italic;color:var(--gold);font-size:12.5px;text-align:center;line-height:1.55;
+}
+.wk-tip .wk-flav{color:var(--faint)}
+.wk-stats{width:100%;border-collapse:collapse;font-size:12.5px;table-layout:fixed}
+.wk-stats tr{border-top:1px solid var(--line)}
+.wk-stats td{padding:7px 12px;vertical-align:top;word-break:break-word}
+.wk-stats td:first-child{color:var(--faint);width:40%}
+.wk-stats td:last-child{color:var(--ink)}
+.wk-stats td.wk-coin{color:var(--gold)}
+.wk-stats tr.wk-bonus-row td:last-child{color:var(--dim);font-size:12px;white-space:pre-line}
+.wk-stats .wk-bn{color:var(--accent);font-weight:700}
+/* an item with no tooltip AND no usable stat rows gets the sprite alone, never
+   an empty headed "Statistics" panel */
+.wk-infobox.wk-artonly .wk-art{padding:14px 12px}
+
+/* ---- section headers + lead paragraphs ----------------------------------- */
+.wk-h2{
+  font-family:var(--pixel);font-size:12px;letter-spacing:.5px;text-transform:uppercase;
+  color:var(--accent);margin:18px 0 9px;padding-bottom:6px;border-bottom:1px solid var(--line);
+}
+.wk-lead{color:var(--dim);font-size:13.5px;line-height:1.6;margin:0 0 8px}
+.wk-lead b{color:var(--ink)}
+.wk-grants{margin:6px 0 4px 18px;color:var(--dim);font-size:13px}
+.wk-grants li{margin-bottom:4px}
+.wk-grants b{color:var(--green);font-weight:600}
+
+/* ---- obtain note --------------------------------------------------------- */
+.wk-note{
+  display:flex;gap:8px;align-items:flex-start;
+  background:var(--panel);border:1px solid var(--line);border-radius:10px;
+  padding:8px 12px;font-size:12.5px;color:var(--dim);margin-bottom:9px;line-height:1.5;
+}
+.wk-note b{color:var(--ink)}
+.wk-inline-link{background:none;border:0;padding:0;color:var(--accent2);font-size:12.5px;text-decoration:underline}
+
+/* ---- wiki-style recipe card ---------------------------------------------- */
+.wk-recipe{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  overflow:hidden;margin-bottom:9px;font-size:13px;
+}
+.wk-recipe.is-conv{opacity:.82;border-style:dashed}
+.wk-station{background:var(--panel2);padding:7px 12px;color:var(--dim);border-bottom:1px solid var(--line);font-size:12.5px}
+.wk-station b{color:var(--ink)}
+.wk-station i{color:var(--faint);font-size:11px;font-style:italic}
+.wk-row{display:flex;align-items:center;gap:10px;padding:7px 12px;border-bottom:1px solid var(--line);cursor:pointer}
+.wk-row:active{background:var(--panel2)}
+.wk-row .spr-wrap{background:none;border:0}
+.wk-ing{color:var(--accent2);min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis}
+.wk-amt{margin-left:auto;color:var(--faint);flex:none}
+.wk-result{display:flex;align-items:center;gap:10px;padding:8px 12px;background:rgba(89,217,138,.06);cursor:pointer}
+.wk-result .spr-wrap{background:none;border:0}
+.wk-result b{min-width:0;overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
+.wk-tag{
+  font-size:10px;color:var(--green);border:1px solid rgba(89,217,138,.4);
+  border-radius:6px;padding:1px 7px;margin-left:auto;flex:none;white-space:nowrap;
+}
+
+/* ---- drop table -----------------------------------------------------------
+   .wk-recipe is overflow:hidden, so a wide drop row (e.g. Divine Geode's
+   "50-60 (+75-90 when defeated during the night)") used to be CLIPPED
+   unreachably at 390px. The table now gets its own horizontal scroller AND
+   every cell may wrap, so the content is reachable either way. */
+.wk-tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+.wk-drops{width:100%;border-collapse:collapse;font-size:12.5px}
+.wk-drops th{
+  text-align:left;padding:6px 12px;color:var(--faint);font-weight:400;
+  font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;border-bottom:1px solid var(--line);
+}
+.wk-drops td{
+  padding:7px 12px;border-top:1px solid var(--line);color:var(--ink);
+  vertical-align:top;white-space:normal;overflow-wrap:anywhere;
+}
+.wk-drops td.wk-src{color:var(--red);min-width:8em}
+.wk-drops td.wk-num{color:var(--dim)}
+
+/* ---- armor-set piece cards ----------------------------------------------- */
+.wk-piece{
+  display:flex;gap:12px;background:var(--panel);border:1px solid var(--line);
+  border-radius:12px;padding:11px 12px;margin-bottom:9px;align-items:flex-start;cursor:pointer;
+}
+.wk-piece:active{border-color:var(--accent)}
+.wk-ic{
+  flex:0 0 46px;height:46px;display:flex;align-items:center;justify-content:center;
+  background:var(--bg2);border:1px solid var(--line);border-radius:9px;
+}
+.wk-ic .spr-wrap{background:none;border:0}
+.wk-pbody{min-width:0;flex:1}
+.wk-nm{font-weight:700;font-size:13.5px;color:var(--accent2)}
+.wk-slot{font-size:10px;color:var(--faint);text-transform:uppercase;letter-spacing:.08em;margin-left:6px}
+.wk-ptip{font-size:12px;color:var(--dim);font-style:italic;margin:2px 0;white-space:pre-line}
+.wk-mini{font-size:11.5px;color:var(--faint)}
+.wk-mini b{color:var(--ink);font-weight:600}
+.wk-chev{margin-left:auto;color:var(--faint);align-self:center;flex:none}
+
+/* ---- highlighted set-bonus box ------------------------------------------- */
+.wk-bonus{
+  background:linear-gradient(180deg,color-mix(in srgb, var(--accent) 12%, transparent),color-mix(in srgb, var(--accent) 4%, transparent));
+  border:1px solid var(--accent);border-radius:12px;padding:12px 14px;
+  font-size:13px;color:var(--dim);margin-bottom:6px;white-space:pre-line;line-height:1.6;
+}
+.wk-bonus .wk-bn{color:var(--accent);font-weight:700;margin-bottom:4px;white-space:normal}
+
+/* ---- used-in chips ------------------------------------------------------- */
+.wk-chips{display:flex;flex-wrap:wrap;gap:7px}
+.wk-chip{
+  display:flex;align-items:center;gap:7px;max-width:100%;
+  background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:5px 12px 5px 7px;font-size:12px;color:var(--accent2);cursor:pointer;
+}
+.wk-chip:active{border-color:var(--accent)}
+.wk-chip .spr-wrap{background:none;border:0}
+.wk-chip span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wk-more{font-size:11.5px;color:var(--faint);margin-top:7px}
+
+/* =====================  T2 - MOD ENGINE UI  ===============================
+ * Mode chip row, mod picker sheet, CAL badge, src filter and the
+ * "Calamity changes" delta block. Every colour here is a token, so the whole
+ * surface re-skins with --accent when the mode flips - except .cal-badge,
+ * which is deliberately pinned to --cal (it means "Calamity", not "accent").
+ */
+
+/* ---- mode chip row (lives between the topbar and #app) ------------------- */
+.modebar{
+  max-width:760px;margin:0 auto;padding:10px 12px 0;
+  display:flex;align-items:center;gap:8px;
+}
+.modebar:empty{display:none}
+.modechip{
+  display:inline-flex;align-items:center;gap:7px;border-radius:999px;
+  padding:6px 13px;font-size:13px;font-weight:700;
+  border:1px solid var(--line2);background:var(--panel);
+}
+.modechip .dot{width:8px;height:8px;border-radius:50%;background:currentColor;flex:none}
+.modechip.van{color:var(--accent);border-color:color-mix(in srgb, var(--accent) 50%, transparent)}
+.modechip.cal{
+  color:var(--cal);border-color:color-mix(in srgb, var(--cal) 55%, transparent);
+  background:linear-gradient(180deg,color-mix(in srgb, var(--cal) 14%, transparent),color-mix(in srgb, var(--cal) 4%, transparent));
+}
+.mods-btn{
+  margin-left:auto;background:var(--panel);border:1px solid var(--line2);
+  border-radius:9px;padding:6px 12px;font-size:12.5px;color:var(--accent2);font-weight:600;
+}
+.mods-btn:active{border-color:var(--accent)}
+
+/* ---- the CAL badge ------------------------------------------------------- */
+.cal-badge{
+  display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.06em;
+  border-radius:5px;padding:1.5px 6px;margin-left:6px;vertical-align:2px;
+  color:var(--cal);border:1px solid color-mix(in srgb, var(--cal) 50%, transparent);
+  background:color-mix(in srgb, var(--cal) 10%, transparent);
+  white-space:nowrap;flex:none;
+}
+.cal-badge.title{font-size:11px;vertical-align:3px}
+.item-cell .cal-badge{margin:3px 0 0;align-self:center}
+.pin-chip .cal-badge{margin-left:4px}
+
+/* ---- mod picker sheet ---------------------------------------------------- */
+.mod-sheet{background:var(--panel);border:1px solid var(--line2);border-radius:16px;overflow:hidden;margin-top:12px}
+.mod-head{padding:11px 14px;background:var(--panel2);font-weight:700;font-size:13.5px;border-bottom:1px solid var(--line)}
+.mod-row{display:flex;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid var(--line);cursor:pointer}
+.mod-row:last-child{border-bottom:none}
+.mod-row.dis{opacity:.45;cursor:default}
+.mod-row:not(.dis):active{background:var(--panel2)}
+.mod-ic{width:38px;height:38px;flex:none;border-radius:9px;background:var(--bg2);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;font-size:18px}
+.mod-body{min-width:0;display:flex;flex-direction:column;gap:2px}
+.mod-nm{font-weight:700;font-size:14px;color:var(--ink)}
+.mod-desc{font-size:12px;color:var(--faint)}
+.mod-tog{
+  margin-left:auto;width:44px;height:25px;border-radius:999px;background:var(--line);
+  position:relative;flex:none;transition:background .15s;
+}
+.mod-tog::after{content:'';position:absolute;top:3px;left:3px;width:19px;height:19px;border-radius:50%;
+  background:var(--faint);transition:left .15s,background .15s}
+.mod-tog.on{background:color-mix(in srgb, var(--cal) 50%, transparent)}
+.mod-tog.on::after{left:22px;background:var(--cal)}
+.mod-tog.base.on{background:color-mix(in srgb, var(--green) 40%, transparent)}
+.mod-tog.base.on::after{background:var(--green)}
+.mod-soon{margin-left:auto;flex:none;font-size:10.5px;color:var(--faint);
+  border:1px solid var(--line);border-radius:6px;padding:2px 7px}
+.mod-note{margin-top:12px;padding:11px 13px;border-radius:11px;background:var(--bg2);
+  border:1px solid var(--line);font-size:12px;color:var(--faint);line-height:1.6}
+.mode-card .big-btn.alt{margin-top:12px}
+
+/* ---- items tab: the "what am I looking at" line + src filter ------------- */
+.mode-count{font-size:12px;color:var(--faint);margin:0 2px 10px}
+.mode-count b{color:var(--ink)}
+.src-filters{display:flex;gap:6px;margin:0 0 10px;flex-wrap:wrap}
+.sfbtn{background:var(--panel);border:1px solid var(--line);border-radius:9px;
+  padding:5px 11px;font-size:12px;color:var(--dim)}
+.sfbtn.on{color:#fff;border-color:var(--accent);background:var(--accent-soft)}
+.sfbtn.cal{color:var(--cal)}
+.sfbtn.cal.on{border-color:var(--cal);background:color-mix(in srgb, var(--cal) 14%, transparent);color:#fff}
+
+/* ---- "Calamity changes" delta block ------------------------------------- */
+.cc-block{
+  border:1px solid color-mix(in srgb, var(--cal) 45%, transparent);border-radius:12px;
+  padding:12px 13px;margin-bottom:8px;
+  background:linear-gradient(180deg,color-mix(in srgb, var(--cal) 9%, transparent),transparent);
+}
+.cc-lead{font-size:12.5px;color:var(--dim);line-height:1.6;margin-bottom:10px}
+.cc-table{width:100%;border-collapse:collapse;font-size:12.5px}
+.cc-table th{
+  text-align:left;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--faint);font-weight:700;padding:0 8px 6px 0;
+}
+.cc-table td{padding:6px 8px 6px 0;border-top:1px solid var(--line);vertical-align:top}
+.cc-table td:first-child{color:var(--faint);white-space:nowrap}
+.cc-table .wk-old{color:var(--dim);text-decoration:line-through;text-decoration-color:var(--faint)}
+.cc-table .wk-arrow{color:var(--cal);width:16px;text-align:center}
+.cc-table .wk-new{color:var(--cal);font-weight:700}
+.cc-h{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);margin:12px 0 6px}
+.cc-desc{font-size:13px;color:var(--dim);line-height:1.65;margin:0}
+.cc-link{display:inline-block;margin-top:11px;font-size:12.5px;color:var(--cal);text-decoration:underline}
+.wk-hidden-note{display:block;margin-top:5px;color:var(--faint);font-size:12px}
+
+/* Narrow phones: the topbar has to fit brand + share + pill, so the word
+   "Companion" yields first (the mode chip below carries the identity). */
+@media (max-width:430px){
+  .brand b{display:none}
+}
+
+/* A recipe/shimmer card the MOD adds to a base-game item. Tinted + badged so it
+   is never mistaken for one of the item's real vanilla recipes. Violet (--cal),
+   not --accent: it means "Calamity", the same as the badge it carries. */
+.wk-recipe.is-cal{border-color:color-mix(in srgb, var(--cal) 42%, transparent)}
+.wk-recipe.is-cal .wk-station{
+  background:color-mix(in srgb, var(--cal) 13%, var(--panel2));
+  border-bottom-color:color-mix(in srgb, var(--cal) 30%, transparent);
+}

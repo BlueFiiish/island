@@ -1,0 +1,26 @@
+[
+ {
+  "id": "control-zone",
+  "name": "Control Zone",
+  "category": "Game Mode",
+  "sourceSection": "the-mode",
+  "dataCompleteness": "partial",
+  "factions": 3,
+  "playersPerFaction": 33,
+  "playersPerMatch": 100,
+  "playersPerMatchIsApproximate": true,
+  "pointsPerCycle": 1,
+  "cycleSeconds": "10-15",
+  "pointsToWin": 100,
+  "summary": "Game Mode - players about 100, points to win 100.",
+  "sourceUrl": "https://wardogshandbook.com/GameModes#the-mode",
+  "beginner": {
+   "whatItIs": "WARDOGS ships one mode, and this is it. Three factions of about thirty-three players each load onto the same map, one big circle sits somewhere on it and keeps moving, and every ten to fifteen seconds whichever faction has the most people standing inside that circle takes a point. First faction to a hundred points wins, and the faction you are put on never changes for the rest of the match.",
+   "whyItMatters": "The scoreboard counts attendance, not kills. A faction can win most of the gunfights and still lose, because nothing you do outside the circle moves the number that ends the match. That flips what a good play looks like for a new player: getting four people alive into the circle and keeping them there beats getting two kills on a ridge overlooking it, and a squad that spends the match hunting is a squad its faction is playing without.",
+   "whenToUseIt": "Every match is this, so treat the whole page as the rules rather than a choice. Three things change what you actually do. The smaller Hot Zone counts each player inside it twice, so a few bodies there outweigh a crowd in the main circle and it is where the heaviest fighting lands. Dying sends you back to HQ, which is a long walk, until your faction reaches twenty points and parks its APC inside the circle - the only other place you can spawn. And the FOB is never a spawn point no matter how far forward it sits, so plan the trip back before you take the fight."
+  },
+  "icon": "/island/apps/wardogs/./sprites/game-modes-control-zone.svg",
+  "iconIsPlaceholder": true,
+  "iconPlaceholderReason": "no-source-image"
+ }
+]

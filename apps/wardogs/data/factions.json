@@ -1,0 +1,53 @@
+[
+ {
+  "id": "lonestar",
+  "name": "Lonestar",
+  "category": "Faction",
+  "sourceSection": "the-three-factions",
+  "archetype": "Western Para-Military",
+  "teamColour": "blue",
+  "colourHex": "#3b82f6",
+  "summary": "Faction - Western Para-Military, blue.",
+  "sourceUrl": "https://wardogshandbook.com/Factions#the-three-factions",
+  "beginner": {
+   "whatItIs": "Lonestar is one of the three armies a match is split into. It is the Western private-military side, and its soldiers read as blue on your screen.",
+   "whyItMatters": "Every match drops ninety-nine players into three sides of thirty-three, and you are placed on one of them before you spawn. On Lonestar, blue is the one colour you must not shoot at; red and green are both hostile to you, and to each other.",
+   "whenToUseIt": "There is nothing to pick here. Check your colour the moment you load in, and treat everything that is not blue as a target for the rest of the match."
+  },
+  "icon": "/island/apps/wardogs/./sprites/factions-lonestar.webp"
+ },
+ {
+  "id": "valkyra",
+  "name": "Valkyra",
+  "category": "Faction",
+  "sourceSection": "the-three-factions",
+  "archetype": "Soviet People's Republic",
+  "teamColour": "red",
+  "colourHex": "#ef4444",
+  "summary": "Faction - Soviet People's Republic, red.",
+  "sourceUrl": "https://wardogshandbook.com/Factions#the-three-factions",
+  "beginner": {
+   "whatItIs": "Valkyra is the Soviet-styled side of the three, written as a state trying to restore its old republic. Its soldiers show up red.",
+   "whyItMatters": "Landing on Valkyra changes what counts as friendly and nothing else. The shop sells your side the same weapons, gear and vehicles it sells the other two, so there is no equipment advantage or handicap to plan a match around.",
+   "whenToUseIt": "You cannot choose it and you cannot swap out of it partway through. Use it purely as a reading aid: red near you is your own side, so hold fire and look for blue and green instead."
+  },
+  "icon": "/island/apps/wardogs/./sprites/factions-valkyra.webp"
+ },
+ {
+  "id": "manticore",
+  "name": "Manticore",
+  "category": "Faction",
+  "sourceSection": "the-three-factions",
+  "archetype": "Kingdom of Persia",
+  "teamColour": "green",
+  "colourHex": "#22c55e",
+  "summary": "Faction - Kingdom of Persia, green.",
+  "sourceUrl": "https://wardogshandbook.com/Factions#the-three-factions",
+  "beginner": {
+   "whatItIs": "Manticore is the third side, a Persian force fighting out of Tehran, and it marks its soldiers green.",
+   "whyItMatters": "A third colour on the field means most fights you walk into have two enemy sides in them rather than one. Kit is not part of the difference: the brand names on vehicles in the shop, PATRIOT or AZAR VM among them, are manufacturers and tell you nothing about who is driving.",
+   "whenToUseIt": "Assignment happens for you, so the only call is how you read a fight. Once you know you are green, a firefight already running between blue and red is not one you are obliged to join."
+  },
+  "icon": "/island/apps/wardogs/./sprites/factions-manticore.webp"
+ }
+]

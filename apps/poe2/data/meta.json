@@ -1,0 +1,508 @@
+{
+ "game": "Path of Exile 2",
+ "slug": "poe2",
+ "pulledAt": "2026-09-01T19:05:59Z",
+ "pulledAtVersion": "0.5.4f",
+ "pulledAtVersionReleaseDate": "2026-08-13",
+ "latestKnownVersion": "0.5.5",
+ "latestKnownVersionReleaseDate": "2026-09-04",
+ "asOf": "2026-09-04",
+ "latestReleasedVersion": "0.5.5",
+ "latestReleasedVersionReleaseDate": "2026-09-04",
+ "latestKnownVersionIsAnnouncedOnly": false,
+ "versionsBehind": 1,
+ "knownVersions": [
+  "0.5.5",
+  "0.5.4f",
+  "0.5.4e",
+  "0.5.4d",
+  "0.5.4c",
+  "0.5.4b",
+  "0.5.4",
+  "0.5.3",
+  "0.5.2",
+  "0.5.1",
+  "0.5.0b",
+  "0.5.0",
+  "0.4.0l",
+  "0.4.0k",
+  "0.4.0j",
+  "0.4.0i",
+  "0.4.0h",
+  "0.4.0g",
+  "0.4.0f",
+  "0.4.0e",
+  "0.4.0d",
+  "0.4.0c",
+  "0.4.0b",
+  "0.4.0",
+  "0.3.1f",
+  "0.3.1e",
+  "0.3.1d",
+  "0.3.1c",
+  "0.3.1b",
+  "0.3.1",
+  "0.3.0c",
+  "0.3.0b",
+  "0.3.0",
+  "0.2.1e",
+  "0.2.1d",
+  "0.2.1c",
+  "0.2.1b",
+  "0.2.1",
+  "0.2.0h",
+  "0.2.0g",
+  "0.2.0f",
+  "0.2.0e",
+  "0.2.0d",
+  "0.2.0c",
+  "0.2.0b",
+  "0.2.0",
+  "0.1.1g",
+  "0.1.1f",
+  "0.1.1e",
+  "0.1.1d",
+  "0.1.1c",
+  "0.1.1b",
+  "0.1.1",
+  "0.1.0f",
+  "0.1.0e",
+  "0.1.0d",
+  "0.1.0c",
+  "0.1.0b",
+  "0.1.0"
+ ],
+ "knownVersionDates": {
+  "0.5.5": "2026-09-04",
+  "0.5.4f": "2026-08-13",
+  "0.5.4e": "2026-07-29",
+  "0.5.4d": "2026-07-24",
+  "0.5.4c": "2026-07-16",
+  "0.5.4b": "2026-07-02",
+  "0.5.4": "2026-06-25",
+  "0.5.3": "2026-06-18",
+  "0.5.2": "2026-06-12",
+  "0.5.1": "2026-06-05",
+  "0.5.0b": "2026-05-30",
+  "0.5.0": "2026-05-29",
+  "0.4.0l": "2026-05-25",
+  "0.4.0k": "2026-05-07",
+  "0.4.0j": "2026-04-20",
+  "0.4.0i": "2026-03-25",
+  "0.4.0h": "2026-03-17",
+  "0.4.0g": "2026-03-06",
+  "0.4.0f": "2026-02-26",
+  "0.4.0e": "2026-02-09",
+  "0.4.0d": "2026-01-14",
+  "0.4.0c": "2025-12-18",
+  "0.4.0b": "2025-12-16",
+  "0.4.0": "2025-12-12",
+  "0.3.1f": "2025-12-08",
+  "0.3.1e": "2025-12-04",
+  "0.3.1d": "2025-10-31",
+  "0.3.1c": "2025-10-23",
+  "0.3.1b": "2025-10-09",
+  "0.3.1": "2025-10-01",
+  "0.3.0c": "2025-09-11",
+  "0.3.0b": "2025-09-04",
+  "0.3.0": "2025-08-29",
+  "0.2.1e": "2025-08-27",
+  "0.2.1d": "2025-08-20",
+  "0.2.1c": "2025-08-04",
+  "0.2.1b": "2025-07-11",
+  "0.2.1": "2025-06-06",
+  "0.2.0h": "2025-05-15",
+  "0.2.0g": "2025-05-01",
+  "0.2.0f": "2025-04-16",
+  "0.2.0e": "2025-04-10",
+  "0.2.0d": "2025-04-08",
+  "0.2.0c": "2025-04-07",
+  "0.2.0b": "2025-04-05",
+  "0.2.0": "2025-04-04",
+  "0.1.1g": "2025-03-27",
+  "0.1.1f": "2025-03-06",
+  "0.1.1e": "2025-02-26",
+  "0.1.1d": "2025-02-17",
+  "0.1.1c": "2025-02-05",
+  "0.1.1b": "2025-01-24",
+  "0.1.1": "2025-01-17",
+  "0.1.0f": "2025-01-09",
+  "0.1.0e": "2024-12-18",
+  "0.1.0d": "2024-12-12",
+  "0.1.0c": "2024-12-10",
+  "0.1.0b": "2024-12-09",
+  "0.1.0": "2024-12-06"
+ },
+ "pullStages": {
+  "categories": "2026-09-01T19:11:49Z",
+  "cargo": "2026-09-03T18:10:09Z",
+  "pages": "2026-09-01T19:08:33Z",
+  "sprites": "2026-09-03T17:29:05Z"
+ },
+ "entityFetch": {
+  "oldest": "2026-09-01T19:05:59Z",
+  "oldestInput": "cargo/items-active-gems.json",
+  "newest": "2026-09-01T19:11:49Z",
+  "newestInput": "categories (stage)",
+  "inputs": 13
+ },
+ "scope": "V1 core set: classes (ascendancies nested), skill gems, support gems, unique items, currency items, bosses, glossary. Passive tree deferred to v2.",
+ "counts": {
+  "classes": 12,
+  "ascendancies": 23,
+  "skillGems": 368,
+  "supportGems": 550,
+  "uniques": 451,
+  "currency": 261,
+  "bosses": 168,
+  "glossary": 55
+ },
+ "rawRowsSeen": {
+  "activeGems": 361,
+  "metaGems": 26,
+  "supportGems": 594,
+  "uniques": 477,
+  "currency": 276
+ },
+ "collapsed": {
+  "skillGems": {
+   "rawRows": 387,
+   "shippedRecords": 368,
+   "droppedRemovedRows": 11,
+   "droppedNonArticleRows": 2,
+   "droppedUnnamedRows": 0,
+   "variantRows": 6,
+   "accountedFor": 387
+  },
+  "supportGems": {
+   "rawRows": 594,
+   "shippedRecords": 550,
+   "droppedRemovedRows": 44,
+   "droppedNonArticleRows": 0,
+   "droppedUnnamedRows": 0,
+   "variantRows": 0,
+   "accountedFor": 594
+  },
+  "uniques": {
+   "rawRows": 477,
+   "shippedRecords": 451,
+   "droppedRemovedRows": 15,
+   "droppedNonArticleRows": 0,
+   "droppedUnnamedRows": 0,
+   "variantRows": 11,
+   "accountedFor": 477
+  },
+  "currency": {
+   "rawRows": 276,
+   "shippedRecords": 261,
+   "droppedRemovedRows": 14,
+   "droppedNonArticleRows": 0,
+   "droppedUnnamedRows": 0,
+   "variantRows": 1,
+   "accountedFor": 276
+  }
+ },
+ "currencyScope": "The whole in-game StackableCurrency item class, nothing excluded by name. Splinters, catalysts, artifacts and every level of Thaumaturgic Flux are included; category is derived from each row's own Cargo tags. This is NOT a curated list - see meta.collapsed for the full row accounting.",
+ "bossCategories": [
+  "Act 1 unique monsters",
+  "Act 2 unique monsters",
+  "Act 3 unique monsters",
+  "Act 4 unique monsters",
+  "Act 5 unique monsters",
+  "Act 6 unique monsters",
+  "Act 99 unique monsters",
+  "Act interlude unique monsters",
+  "Boss monsters",
+  "Bosses",
+  "Encounter bosses",
+  "Encounter unique monsters",
+  "Interlude unique monsters",
+  "Map boss unique monsters",
+  "Pinnacle bosses",
+  "Trial unique monsters"
+ ],
+ "bossCategoryCounts": {
+  "Act 6 unique monsters": 0,
+  "Act 4 unique monsters": 11,
+  "Act 2 unique monsters": 11,
+  "Encounter bosses": 0,
+  "Bosses": 2,
+  "Pinnacle bosses": 10,
+  "Act 5 unique monsters": 1,
+  "Interlude unique monsters": 2,
+  "Trial unique monsters": 9,
+  "Encounter unique monsters": 31,
+  "Act 99 unique monsters": 0,
+  "Act 1 unique monsters": 14,
+  "Act interlude unique monsters": 16,
+  "Act 3 unique monsters": 11,
+  "Boss monsters": 2,
+  "Map boss unique monsters": 55
+ },
+ "beginnerCoverage": {
+  "classes": {
+   "total": 12,
+   "withBeginnerNotes": 12
+  },
+  "skillGems": {
+   "total": 368,
+   "withBeginnerNotes": 368
+  },
+  "supportGems": {
+   "total": 550,
+   "withBeginnerNotes": 550
+  },
+  "uniques": {
+   "total": 451,
+   "withBeginnerNotes": 451
+  },
+  "currency": {
+   "total": 261,
+   "withBeginnerNotes": 261
+  },
+  "bosses": {
+   "total": 168,
+   "withBeginnerNotes": 168
+  }
+ },
+ "coverageContract": {
+  "_README": [
+   "DERIVED, not hand-typed: each entry comes from the \"coverage\" field of that group's own file in tools/beginner-notes/ (a staged group from tools/beginner-notes/staged/).",
+   "A group in `required` must have EVERY entity carrying all three non-empty beginner sections, or validate.mjs exits 1.",
+   "A group in `pending` owes its prose, and validate.mjs will not demand a description for it yet.",
+   "EVERY group that owns a prose file appears in exactly one of the two lists - the six entity groups, the glossary, and every staged wiki-only group alike. validate.mjs group E rebuilds this population from the prose directory itself and fails when a group is missing from both lists or named in one with no file behind it, so an omission here cannot read as a guarantee.",
+   "`groups` names the surface each one reaches: \"app+wiki\" ships in app/data/ and in the vault wiki; \"wiki-only\" is staged prose this builder cannot produce yet, so it reaches the vault wiki only and the app route does not carry it."
+  ],
+  "source": "tools/beginner-notes/GROUP.json (and staged/GROUP.json) \"coverage\" field",
+  "groups": {
+   "classes": {
+    "file": "classes.json",
+    "coverage": "required",
+    "surface": "app+wiki"
+   },
+   "skillGems": {
+    "file": "skill-gems.json",
+    "coverage": "required",
+    "surface": "app+wiki"
+   },
+   "supportGems": {
+    "file": "support-gems.json",
+    "coverage": "required",
+    "surface": "app+wiki"
+   },
+   "uniques": {
+    "file": "uniques.json",
+    "coverage": "required",
+    "surface": "app+wiki"
+   },
+   "currency": {
+    "file": "currency.json",
+    "coverage": "required",
+    "surface": "app+wiki"
+   },
+   "bosses": {
+    "file": "bosses.json",
+    "coverage": "required",
+    "surface": "app+wiki"
+   },
+   "glossary": {
+    "file": "glossary.json",
+    "coverage": "required",
+    "surface": "app+wiki"
+   },
+   "mechanics": {
+    "file": "staged/mechanics.json",
+    "coverage": "required",
+    "surface": "wiki-only"
+   }
+  },
+  "required": [
+   "classes",
+   "skillGems",
+   "supportGems",
+   "uniques",
+   "currency",
+   "bosses",
+   "glossary",
+   "mechanics"
+  ],
+  "pending": []
+ },
+ "wiki": {
+  "classes": {
+   "file": "classes.json",
+   "dir": "classes",
+   "type": "class",
+   "title": "Classes",
+   "mode": "pages"
+  },
+  "skillGems": {
+   "file": "skill-gems.json",
+   "dir": "skill-gems",
+   "type": "skill-gem",
+   "title": "Skill Gems",
+   "mode": "pages"
+  },
+  "supportGems": {
+   "file": "support-gems.json",
+   "dir": "support-gems",
+   "type": "support-gem",
+   "title": "Support Gems",
+   "mode": "pages"
+  },
+  "uniques": {
+   "file": "uniques.json",
+   "dir": "uniques",
+   "type": "item",
+   "title": "Unique Items",
+   "mode": "pages"
+  },
+  "currency": {
+   "file": "currency.json",
+   "dir": "currency",
+   "type": "item",
+   "title": "Currency Items",
+   "mode": "pages"
+  },
+  "bosses": {
+   "file": "bosses.json",
+   "dir": "bosses",
+   "type": "boss",
+   "title": "Bosses",
+   "mode": "pages"
+  },
+  "glossary": {
+   "file": "glossary.json",
+   "dir": "glossary",
+   "type": "concept",
+   "title": "Glossary",
+   "mode": "single",
+   "nameField": "term",
+   "page": "glossary.md"
+  }
+ },
+ "coreIcons": {
+  "classes": {
+   "total": 12,
+   "withLocalIcon": 12
+  },
+  "skillGems": {
+   "total": 368,
+   "withLocalIcon": 368
+  },
+  "supportGems": {
+   "total": 550,
+   "withLocalIcon": 550
+  },
+  "uniques": {
+   "total": 451,
+   "withLocalIcon": 451
+  },
+  "currency": {
+   "total": 261,
+   "withLocalIcon": 261
+  },
+  "bosses": {
+   "total": 168,
+   "withLocalIcon": 168
+  },
+  "total": 1810,
+  "withLocalIcon": 1810,
+  "placeholders": 101,
+  "placeholderReason": "poe2wiki either declares no image for these entities or declares one it does not host. No licence-cleared alternate image source exists and hotlinking is forbidden by the local-asset rule, so a local stand-in is drawn instead."
+ },
+ "sourceGaps": {
+  "bossPagesWithoutInfobox": 8,
+  "entitiesWithoutSourceImage": {
+   "classes": 0,
+   "skillGems": 9,
+   "supportGems": 0,
+   "uniques": 0,
+   "currency": 0,
+   "bosses": 92
+  },
+  "wikiFilesDeclaredButNotHosted": 29,
+  "nonCanonicalSourcePages": [],
+  "sentinelsScrubbed": 210,
+  "recordsWithoutCachedSource": {
+   "skillGems": 0,
+   "supportGems": 0,
+   "uniques": 0,
+   "currency": 0,
+   "classes": 0,
+   "bosses": 0
+  }
+ },
+ "sourceClaims": {
+  "bossSkillsPartial": [
+   {
+    "id": "torvian-hand-of-the-saviour",
+    "name": "Torvian, Hand of the Saviour",
+    "reason": "The source page lists 3 further attacks in a layout this extractor cannot read a name out of, so this list is incomplete."
+   }
+  ],
+  "bossesWithSkillNames": 50,
+  "unreleased": [
+   {
+    "group": "classes",
+    "id": "duelist",
+    "name": "Duelist"
+   },
+   {
+    "group": "classes",
+    "id": "marauder",
+    "name": "Marauder"
+   },
+   {
+    "group": "classes",
+    "id": "shadow",
+    "name": "Shadow"
+   },
+   {
+    "group": "classes",
+    "id": "templar",
+    "name": "Templar"
+   },
+   {
+    "group": "bosses",
+    "id": "thrax-cyclops-of-trarthus",
+    "name": "Thrax, Cyclops of Trarthus"
+   }
+  ],
+  "unreleasedDetectableIn": [
+   "classes",
+   "bosses"
+  ],
+  "unreleasedNotDetectableIn": {
+   "groups": [
+    "skillGems",
+    "supportGems",
+    "uniques",
+    "currency"
+   ],
+   "why": "those groups are built from Cargo rows, and the {{unreleased}} template lives in page wikitext, which is cached only for class and boss pages."
+  }
+ },
+ "sprites": {
+  "manifestFiles": 1834,
+  "onDisk": 1822,
+  "bytes": 32615162
+ },
+ "remoteEnrichmentMedia": 0,
+ "licence": "CC BY-NC-SA 3.0",
+ "attribution": "Game data from the Path of Exile 2 Wiki (poe2wiki.net), CC BY-NC-SA 3.0. Beginner notes written for this app. Path of Exile 2 is a trademark of Grinding Gear Games. Non-commercial fan project, not affiliated with or endorsed by Grinding Gear Games.",
+ "sources": [
+  {
+   "name": "Path of Exile 2 Wiki",
+   "url": "https://www.poe2wiki.net",
+   "use": "data",
+   "licence": "CC BY-NC-SA 3.0"
+  },
+  {
+   "name": "GGG Early Access Patch Notes",
+   "url": "https://www.pathofexile.com/forum/view-forum/2212",
+   "use": "freshness trigger",
+   "licence": "not redistributed"
+  }
+ ]
+}

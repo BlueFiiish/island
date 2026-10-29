@@ -1,0 +1,541 @@
+/* tracker.css - the Tracker tab (prestige entry, planner, shrine).
+ *
+ * FILE FENCE: this file + js/tracker.js.
+ *
+ * TEMPLATE CONTRACT (NEW-GAME-TEMPLATE section 2):
+ *   - No :root / html / body rule anywhere. Every token is declared on
+ *     .dbdt-scope, which is stamped on our view root AND on every sheet body
+ *     we emit, so sheet content (rendered outside our root by the shell) still
+ *     resolves the same tokens.
+ *   - Nothing here can touch the app mount, so no containing-block property
+ *     (transform / filter / backdrop-filter / contain / will-change /
+ *     perspective) is ever applied to it. What transforms below sit on leaf
+ *     decoration with no position:fixed descendant.
+ *   - Shell tokens (--bg/--panel/--line/--ink/--dim/--accent/--gold) are read
+ *     through var(.., fallback) so this file also renders correctly standalone
+ *     and under the island shell's own route theme.
+ *   - No backdrop-filter, no remote font, no remote image reference.
+ *   - Phone-first: single column, 44px-class touch targets, wrapping controls.
+ *
+ * THE LOOK - continuous with style.css and loadout.css: charcoal panels, a
+ * blood-red accent for "you have it", amber/gold for the shrine, and the same
+ * diamond perk tiles the wiki tab uses (reused via DBD.icon, not restyled).
+ */
+
+/* --------------------------------------------------------------- tokens */
+
+.dbdt-scope {
+  --tr-ink: var(--ink, #eceef0);
+  --tr-dim: var(--dim, #a8a8b3);
+  --tr-faint: var(--faint, #6f6f7a);
+  --tr-line: var(--line, #28282f);
+  --tr-line2: var(--line2, #38383f);
+  --tr-panel: var(--panel, #18181e);
+  --tr-panel2: var(--panel2, #1f1f27);
+  --tr-red: var(--accent, #a3212a);
+  --tr-red-soft: var(--accent-soft, #2a0f12);
+  --tr-gold: var(--gold, #e0a458);
+  --tr-amber: var(--accent2, #c9954a);
+  --tr-green: var(--green, #5bb96b);
+
+  --tr-r: 13px;
+  --tr-gap: 10px;
+  --tr-tap: 40px;
+
+  color: var(--tr-ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+}
+
+.dbdt-root { display: block; }
+
+/* ---------------------------------------------------------------- shell */
+
+.dbdt-card {
+  background: var(--tr-panel);
+  border: 1px solid var(--tr-line);
+  border-radius: var(--tr-r);
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.dbdt-h {
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: .2px;
+}
+
+.dbdt-sec-h {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  color: var(--tr-faint);
+  margin: 0 0 6px;
+}
+
+.dbdt-fine {
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--tr-faint);
+  margin: 4px 0 8px;
+}
+.dbdt-fine.path { color: var(--tr-amber); }
+.dbdt-fine b { color: var(--tr-ink); }
+
+.dbdt-empty {
+  color: var(--tr-dim);
+  font-size: 13px;
+  text-align: center;
+  padding: 18px 10px;
+}
+
+.dbdt-loading {
+  color: var(--tr-dim);
+  font-size: 13.5px;
+  text-align: center;
+  padding: 40px 16px;
+}
+
+.dbdt-warn {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--tr-gold);
+  background: rgba(224, 164, 88, .09);
+  border: 1px solid rgba(224, 164, 88, .32);
+  border-radius: 9px;
+  padding: 8px 10px;
+  margin: 0 0 10px;
+}
+
+/* ------------------------------------------------------ header + stats */
+
+.dbdt-head-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.dbdt-save {
+  font-size: 10.5px;
+  letter-spacing: .3px;
+  color: var(--tr-faint);
+  border: 1px solid var(--tr-line2);
+  background: var(--tr-panel2);
+  border-radius: 999px;
+  padding: 3px 9px;
+  white-space: nowrap;
+}
+.dbdt-save.busy { color: var(--tr-gold); border-color: rgba(224, 164, 88, .45); }
+.dbdt-save.err { color: #ff8a8a; border-color: rgba(255, 138, 138, .5); }
+
+.dbdt-total {
+  font-size: 14px;
+  color: var(--tr-dim);
+  margin-bottom: 10px;
+}
+.dbdt-total b { color: var(--tr-ink); font-size: 20px; }
+
+.dbdt-pctchip {
+  display: inline-block;
+  font-size: 11px;
+  color: var(--tr-amber);
+  border: 1px solid var(--tr-line2);
+  border-radius: 999px;
+  padding: 2px 8px;
+  margin-left: 4px;
+}
+
+.dbdt-bar-row {
+  display: grid;
+  grid-template-columns: 62px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0;
+}
+.dbdt-bar-lab { font-size: 11.5px; color: var(--tr-dim); }
+.dbdt-bar {
+  display: block;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--tr-panel2);
+  border: 1px solid var(--tr-line);
+  overflow: hidden;
+}
+.dbdt-bar-fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--tr-red), var(--tr-amber));
+  transition: width .18s ease;
+}
+.dbdt-bar-num {
+  font-size: 11px;
+  color: var(--tr-faint);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------------- role tabs + tools */
+
+.dbdt-roletabs {
+  display: flex;
+  gap: 6px;
+  margin: 8px 0;
+}
+.dbdt-roletab {
+  flex: 1;
+  min-height: var(--tr-tap);
+  background: var(--tr-panel2);
+  border: 1px solid var(--tr-line2);
+  border-radius: 10px;
+  color: var(--tr-dim);
+  font-size: 13px;
+  letter-spacing: .3px;
+  padding: 8px 6px;
+}
+.dbdt-roletab span {
+  display: inline-block;
+  font-size: 10.5px;
+  color: var(--tr-faint);
+  margin-left: 4px;
+}
+.dbdt-roletab.on {
+  color: var(--tr-ink);
+  border-color: var(--tr-red);
+  background: var(--tr-red-soft);
+}
+.dbdt-roletab.on span { color: var(--tr-amber); }
+
+.dbdt-tools {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin: 8px 0 10px;
+}
+.dbdt-search {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: var(--tr-tap);
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--tr-panel2);
+  border: 1px solid var(--tr-line2);
+  color: var(--tr-ink);
+  font-family: inherit;
+  font-size: 16px;               /* 16px keeps iOS from zooming on focus */
+}
+.dbdt-search:focus { outline: none; border-color: var(--tr-red); }
+
+.dbdt-chip {
+  flex: 0 0 auto;
+  min-height: var(--tr-tap);
+  background: var(--tr-panel2);
+  border: 1px solid var(--tr-line2);
+  border-radius: 10px;
+  color: var(--tr-dim);
+  font-size: 12px;
+  padding: 8px 11px;
+  white-space: nowrap;
+}
+.dbdt-chip.on { color: var(--tr-ink); border-color: var(--tr-red); background: var(--tr-red-soft); }
+
+/* --------------------------------------------------------- character rows */
+
+.dbdt-rows { display: block; }
+
+.dbdt-row {
+  border: 1px solid var(--tr-line);
+  border-radius: 11px;
+  background: var(--tr-panel2);
+  margin-bottom: 8px;
+  padding: 7px 8px;
+}
+.dbdt-row.open { border-color: var(--tr-line2); }
+
+.dbdt-row-main {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  text-align: left;
+  padding: 3px 2px;
+  min-height: 38px;
+}
+.dbdt-row-txt { display: flex; flex-direction: column; min-width: 0; flex: 1 1 auto; }
+.dbdt-row-name {
+  font-size: 13.5px;
+  color: var(--tr-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dbdt-row-sum { font-size: 10.5px; color: var(--tr-faint); }
+.dbdt-caret { color: var(--tr-faint); font-size: 16px; padding: 0 4px; flex: none; }
+
+.dbdt-ctrl {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.dbdt-step {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 1px solid var(--tr-line2);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--tr-panel);
+}
+.dbdt-stepbtn {
+  min-width: var(--tr-tap);
+  min-height: 34px;
+  color: var(--tr-dim);
+  font-size: 17px;
+  line-height: 1;
+}
+.dbdt-stepbtn:active { background: var(--tr-red-soft); color: var(--tr-ink); }
+.dbdt-pnum {
+  width: 54px;
+  min-height: 34px;
+  text-align: center;
+  background: var(--tr-panel2);
+  border: 0;
+  border-left: 1px solid var(--tr-line2);
+  border-right: 1px solid var(--tr-line2);
+  color: var(--tr-ink);
+  font-family: inherit;
+  font-size: 16px;               /* 16px keeps iOS from zooming on focus */
+  font-variant-numeric: tabular-nums;
+  -moz-appearance: textfield;
+}
+.dbdt-pnum::-webkit-outer-spin-button,
+.dbdt-pnum::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.dbdt-pnum:focus { outline: none; background: var(--tr-red-soft); }
+
+.dbdt-quick { display: flex; gap: 5px; }
+.dbdt-q {
+  min-width: 42px;
+  min-height: 34px;
+  border: 1px solid var(--tr-line2);
+  border-radius: 9px;
+  background: var(--tr-panel);
+  color: var(--tr-dim);
+  font-size: 12px;
+  letter-spacing: .4px;
+  padding: 6px 8px;
+}
+.dbdt-q.on {
+  color: var(--tr-ink);
+  border-color: var(--tr-red);
+  background: var(--tr-red-soft);
+  box-shadow: inset 0 0 0 1px rgba(163, 33, 42, .35);
+}
+
+/* ------------------------------------------------------------ perk rows */
+
+.dbdt-perklist {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--tr-line);
+  display: grid;
+  gap: 5px;
+}
+.dbdt-perklist.wide { margin-top: 10px; }
+
+.dbdt-perk,
+.dbdt-shrine-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  padding: 6px 8px;
+  min-height: 44px;
+  border: 1px solid var(--tr-line);
+  border-radius: 10px;
+  background: var(--tr-panel);
+}
+.dbdt-perk.has { border-color: rgba(163, 33, 42, .42); }
+
+.dbdt-perk-txt { display: flex; flex-direction: column; min-width: 0; flex: 1 1 auto; }
+.dbdt-perk-name {
+  font-size: 12.5px;
+  color: var(--tr-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dbdt-perk-sub {
+  font-size: 10.5px;
+  color: var(--tr-faint);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.dbdt-tag {
+  font-size: 9.5px;
+  letter-spacing: .3px;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 1px 6px;
+  border: 1px solid var(--tr-line2);
+}
+.dbdt-tag.manual { color: var(--tr-gold); border-color: rgba(224, 164, 88, .45); }
+.dbdt-tag.own { color: var(--tr-green); border-color: rgba(91, 185, 107, .42); }
+
+.dbdt-pips { display: inline-flex; gap: 3px; flex: none; }
+.dbdt-pips i {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  transform: rotate(45deg);      /* leaf decoration only - no fixed children */
+  background: var(--tr-panel2);
+  border: 1px solid var(--tr-line2);
+}
+.dbdt-pips i.on { background: var(--tr-red); border-color: var(--tr-amber); }
+
+.dbdt-noart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: 7px;
+  background: var(--tr-panel2);
+  border: 1px solid var(--tr-line2);
+  color: var(--tr-faint);
+  font-size: 13px;
+}
+
+.dbdt-general {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  min-height: var(--tr-tap);
+  margin-top: 4px;
+  padding: 9px 10px;
+  border: 1px dashed var(--tr-line2);
+  border-radius: 10px;
+  color: var(--tr-dim);
+  font-size: 12.5px;
+  background: none;
+}
+.dbdt-general span { color: var(--tr-faint); font-size: 11px; }
+
+/* -------------------------------------------------------------- planner */
+
+.dbdt-plan {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  margin-bottom: 7px;
+  border: 1px solid var(--tr-line);
+  border-radius: 11px;
+  background: var(--tr-panel2);
+}
+.dbdt-plan-rank {
+  flex: none;
+  width: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--tr-amber);
+  font-variant-numeric: tabular-nums;
+}
+.dbdt-plan-txt { display: flex; flex-direction: column; min-width: 0; flex: 1 1 auto; gap: 1px; }
+.dbdt-plan-name {
+  font-size: 13px;
+  color: var(--tr-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dbdt-plan-name .dbdt-fine { display: inline; margin: 0; }
+.dbdt-plan-gain { font-size: 11.5px; color: var(--tr-green); }
+.dbdt-plan-gain .dbdt-fine { display: inline; margin: 0; }
+.dbdt-plan-perks {
+  font-size: 10.5px;
+  color: var(--tr-faint);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------- shrine */
+
+.dbdt-shrine-row { margin-bottom: 6px; }
+
+.dbdt-badge {
+  flex: none;
+  font-size: 10px;
+  letter-spacing: .3px;
+  border-radius: 999px;
+  padding: 3px 9px;
+  border: 1px solid var(--tr-line2);
+  color: var(--tr-dim);
+  white-space: nowrap;
+}
+.dbdt-badge.owned { color: var(--tr-green); border-color: rgba(91, 185, 107, .45); }
+.dbdt-badge.part { color: var(--tr-gold); border-color: rgba(224, 164, 88, .45); }
+.dbdt-badge.locked { color: var(--tr-faint); }
+
+/* ----------------------------------------------------- the override sheet */
+
+/* .dbdt-sheet is stamped on the wrapper we hand to DBD.openSheet, which
+   renders OUTSIDE our root - the .dbdt-scope token block above rides along on
+   the same element so everything here still resolves. */
+.dbdt-sheet { display: block; }
+
+.dbdt-tierbtns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.dbdt-tierbtn {
+  min-height: 42px;
+  border: 1px solid var(--tr-line2);
+  border-radius: 10px;
+  background: var(--tr-panel);
+  color: var(--tr-dim);
+  font-size: 13px;
+  letter-spacing: .4px;
+}
+.dbdt-tierbtn.on {
+  color: var(--tr-ink);
+  border-color: var(--tr-red);
+  background: var(--tr-red-soft);
+}
+
+.dbdt-reset {
+  display: inline-block;
+  min-height: 38px;
+  margin: 2px 0 6px;
+  padding: 8px 12px;
+  border: 1px solid var(--tr-line2);
+  border-radius: 9px;
+  background: var(--tr-panel);
+  color: var(--tr-amber);
+  font-size: 12px;
+}
+
+/* ------------------------------------------------------------ responsive */
+
+@media (min-width: 520px) {
+  .dbdt-row-main { min-height: 42px; }
+  .dbdt-perklist { grid-template-columns: 1fr 1fr; }
+  .dbdt-bar-row { grid-template-columns: 76px 1fr auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dbdt-bar-fill { transition: none; }
+}

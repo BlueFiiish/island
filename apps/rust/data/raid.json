@@ -1,0 +1,56 @@
+{
+  "_source": "Fiiiish Island vault raid-costs.md (re-verified Jun/Jul 2026 vs rusthelp). Building HP + explosive damage unchanged by Built Different and Common Ground updates.",
+  "sulfurPerBoom": {
+    "c4": 2200,
+    "rocket": 1400,
+    "satchel": 480,
+    "beancan": 120,
+    "landmine": 60,
+    "explo556": 25,
+    "hv": 200
+  },
+  "labels": {
+    "c4": "C4",
+    "rocket": "Rocket",
+    "satchel": "Satchel",
+    "beancan": "Beancan",
+    "landmine": "Landmine",
+    "explo556": "Explo 5.56",
+    "hv": "HV Rocket"
+  },
+  "targets": [
+    {"name": "Twig Wall", "group": "Walls", "hp": 10, "costs": {"explo556": 1}, "note": "Melee it or 1 explosive round."},
+    {"name": "Wood Wall", "group": "Walls", "hp": 250, "costs": {"c4": 1, "rocket": 1, "explo556": 47}, "note": "Fire arrows / incendiary is cheapest — wood burns."},
+    {"name": "Stone Wall", "group": "Walls", "hp": 500, "costs": {"c4": 2, "rocket": 4, "satchel": 10, "beancan": 46, "explo556": 185}, "note": "Soft (inside) side ~25% less. 2 C4 is the go-to."},
+    {"name": "Sheet Metal Wall", "group": "Walls", "hp": 1000, "costs": {"c4": 4, "rocket": 8, "satchel": 23, "beancan": 131, "explo556": 400}, "note": "Soft side ~3 C4. Breach from inside if you can. (7 rockets leaves ~40 HP.)"},
+    {"name": "Armored Wall", "group": "Walls", "hp": 2000, "costs": {"c4": 8, "rocket": 15, "satchel": 46, "beancan": 223, "explo556": 799}, "note": "Soft side ~6 C4. Rarely worth raiding head-on."},
+
+    {"name": "Wooden Door", "group": "Doors", "hp": 200, "costs": {"explo556": 16}, "note": "Fire / 16 explo. Cheapest door in the game."},
+    {"name": "Sheet Metal Door", "group": "Doors", "hp": 250, "costs": {"c4": 1, "rocket": 2, "satchel": 4, "beancan": 18, "landmine": 12, "explo556": 63}, "note": "Most common raid target: 1 C4 pops it."},
+    {"name": "Garage Door", "group": "Doors", "hp": 600, "costs": {"c4": 2, "rocket": 3, "satchel": 9, "beancan": 42, "landmine": 29, "explo556": 150}, "note": "No soft side."},
+    {"name": "Armored Door", "group": "Doors", "hp": 1000, "costs": {"c4": 3, "rocket": 5, "satchel": 15, "beancan": 69, "landmine": 48, "explo556": 250}, "note": "Best door. 3 C4 or 48 landmines."},
+
+    {"name": "Stone Floor / Foundation", "group": "Floors", "hp": 500, "costs": {"c4": 2, "rocket": 4, "satchel": 10, "beancan": 46, "explo556": 185}, "note": "Same HP as the wall of its tier. Ceiling breach into loot rooms."},
+    {"name": "Sheet Metal Floor", "group": "Floors", "hp": 1000, "costs": {"c4": 4, "rocket": 8, "satchel": 23, "beancan": 131, "explo556": 400}, "note": "Identical to sheet wall."},
+
+    {"name": "High External Wood Wall", "group": "External", "hp": 500, "costs": {"c4": 1, "rocket": 2}, "note": "Wood burns — 2 incendiary rockets is cheapest. Usually laddered, not raided."},
+    {"name": "High External Stone Wall", "group": "External", "hp": 500, "costs": {"c4": 2, "rocket": 4, "satchel": 10}, "note": "Same HP as a stone wall. Ladder / gate-camp instead of raiding."},
+    {"name": "High External Stone Gate", "group": "External", "hp": 500, "costs": {"c4": 2, "rocket": 4, "satchel": 10}, "note": "3,000 stone + 5 gears to craft."},
+
+    {"name": "Tool Cupboard (TC)", "group": "Deployables", "hp": 100, "costs": {"explo556": 8}, "note": "The soft underbelly — 8 explo (200 sulfur) kills it. Take TC, place your own, peel the base for free."},
+    {"name": "Auto Turret", "group": "Deployables", "hp": 1000, "costs": {"c4": 2, "rocket": 3, "explo556": 106}, "note": "Better to shoot it offline than to boom it."},
+    {"name": "Vending Machine", "group": "Deployables", "hp": 1250, "costs": {"c4": 5}, "note": "Rarely worth it."},
+    {"name": "Garage Door / Shop Front", "group": "Deployables", "hp": 600, "costs": {"c4": 2, "rocket": 3, "satchel": 9}, "note": "Shop fronts share door HP."}
+  ],
+  "bradley": {
+    "name": "Bradley APC",
+    "hp": 1000,
+    "note": "Explosive-only. Regenerates if left 5 min. Aim rear/treads. Drops 3 crates.",
+    "methods": [
+      {"method": "HV Rocket", "count": "4 (bring 6-7)", "why": "Cheapest viable kill. Misses are why guides say 4-7."},
+      {"method": "Rocket", "count": "8", "why": "Works, ~2x the sulfur of HV."},
+      {"method": "C4", "count": "3", "why": "Instant + reliable but 6,600 sulfur."},
+      {"method": "F1 Grenade", "count": "~40-50", "why": "Cheap-metal option, risky to land."}
+    ]
+  }
+}

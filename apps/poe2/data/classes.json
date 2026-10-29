@@ -1,0 +1,580 @@
+[
+ {
+  "id": "druid",
+  "name": "Druid",
+  "page": "Druid",
+  "wiki": "https://www.poe2wiki.net/wiki/Druid",
+  "attributes": {
+   "str": 11,
+   "dex": 7,
+   "int": 11
+  },
+  "primaryAttributes": [
+   "str",
+   "int"
+  ],
+  "weaponFocus": "Primal Spells",
+  "startingGear": [
+   "Voltaic Staff",
+   "Changeling Talisman",
+   "Volcano"
+  ],
+  "playable": true,
+  "ascendancies": [
+   {
+    "id": "oracle",
+    "name": "Oracle",
+    "wiki": "https://www.poe2wiki.net/wiki/Oracle",
+    "internalId": "Druid1",
+    "flavourText": "There are many paths to achieve your goals... and you see them all.",
+    "iconTarget": "oracle-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/oracle-portrait.png"
+   },
+   {
+    "id": "shaman",
+    "name": "Shaman",
+    "wiki": "https://www.poe2wiki.net/wiki/Shaman",
+    "internalId": "Druid2",
+    "flavourText": "Wraeclast has suffered for too long. You are vengeance incarnate.",
+    "iconTarget": "shaman-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/shaman-portrait.png"
+   }
+  ],
+  "description": "A Strength and Intelligence character who casts primal spells and takes on animal forms. He opens with a staff, a talisman and Volcano, a fire spell that raises a burning eruption which keeps damaging whatever stands on it for eight seconds, so his first fights are fought at range.",
+  "iconTarget": "druid-portrait.png",
+  "icon": "/island/apps/poe2/./sprites/druid-portrait.png",
+  "iconIsPlaceholder": false,
+  "beginner": {
+   "whatItIs": "A Strength and Intelligence character who casts primal spells and takes on animal forms. He opens with a staff, a talisman and Volcano, a fire spell that raises a burning eruption which keeps damaging whatever stands on it for eight seconds, so his first fights are fought at range.",
+   "whyItMatters": "His attributes start at 11 Strength and 11 Intelligence instead of one high number, and 16 of the 20 shapeshifting skill gems in this dataset ask for an even split of those same two attributes. The flat start is what pays for the animal forms rather than being a compromise between them.",
+   "whenToUseIt": "Take him when you want to move between casting and a shifted form inside the same fight. Two ascendancies, Oracle and Shaman, are in the data pulled for this app, so check the current patch notes before planning around any others."
+  }
+ },
+ {
+  "id": "duelist",
+  "name": "Duelist",
+  "page": "Duelist",
+  "wiki": "https://www.poe2wiki.net/wiki/Duelist",
+  "attributes": {
+   "str": 11,
+   "dex": 11,
+   "int": 7
+  },
+  "primaryAttributes": [
+   "str",
+   "dex"
+  ],
+  "weaponFocus": "",
+  "startingGear": [],
+  "playable": false,
+  "unreleased": true,
+  "ascendancies": [],
+  "description": "An announced Strength and Dexterity character. The source describes him as specialising in sword skills and starting with a pair of shortswords, but he cannot be created in the build this data was pulled from and none of his ascendancies have been named.",
+  "iconTarget": "placeholder-character-portrait.png",
+  "icon": "/island/apps/poe2/./sprites/placeholder-character-portrait.png",
+  "iconIsPlaceholder": false,
+  "beginner": {
+   "whatItIs": "An announced Strength and Dexterity character. The source describes him as specialising in sword skills and starting with a pair of shortswords, but he cannot be created in the build this data was pulled from and none of his ascendancies have been named.",
+   "whyItMatters": "He appears on the class roster with his attributes already fixed at 11 Strength and 11 Dexterity, which is why he has a page here at all, but nothing in the current game lets you select him.",
+   "whenToUseIt": "There is nothing to pick yet. The Mercenary starts on the same 11 Strength and 11 Dexterity split if that attribute pairing is what you were after."
+  }
+ },
+ {
+  "id": "huntress",
+  "name": "Huntress",
+  "page": "Huntress",
+  "wiki": "https://www.poe2wiki.net/wiki/Huntress",
+  "attributes": {
+   "str": 7,
+   "dex": 15,
+   "int": 7
+  },
+  "primaryAttributes": [
+   "dex"
+  ],
+  "weaponFocus": "Spear",
+  "startingGear": [
+   "Hardwood Spear",
+   "Leather Buckler",
+   "Whirling Slash"
+  ],
+  "playable": true,
+  "ascendancies": [
+   {
+    "id": "amazon",
+    "name": "Amazon",
+    "wiki": "https://www.poe2wiki.net/wiki/Amazon",
+    "internalId": "Huntress1",
+    "flavourText": "You became a weapon of war so that others could live in peace.",
+    "iconTarget": "amazon-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/amazon-portrait.png"
+   },
+   {
+    "id": "spirit-walker",
+    "name": "Spirit Walker",
+    "wiki": "https://www.poe2wiki.net/wiki/Spirit_Walker",
+    "internalId": "Huntress2",
+    "flavourText": "You were chosen by the Sacred Wisps the enact the Spirit's will.",
+    "iconTarget": "spirit-walker-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/spirit-walker-portrait.png"
+   },
+   {
+    "id": "ritualist",
+    "name": "Ritualist",
+    "wiki": "https://www.poe2wiki.net/wiki/Ritualist",
+    "internalId": "Huntress3",
+    "flavourText": "Corruption cost you your home, but taught you so much more...",
+    "iconTarget": "ritualist-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/ritualist-portrait.png"
+   }
+  ],
+  "description": "A Dexterity character who fights with a spear and a buckler, which is a small shield. Her opening skill, Whirling Slash, is a circular melee spin that slows the enemies caught in it by 30 percent and knocks them back when she steps out, so she works in close but is built to shove things off her.",
+  "iconTarget": "huntress-portrait.png",
+  "icon": "/island/apps/poe2/./sprites/huntress-portrait.png",
+  "iconIsPlaceholder": false,
+  "beginner": {
+   "whatItIs": "A Dexterity character who fights with a spear and a buckler, which is a small shield. Her opening skill, Whirling Slash, is a circular melee spin that slows the enemies caught in it by 30 percent and knocks them back when she steps out, so she works in close but is built to shove things off her.",
+   "whyItMatters": "She starts at 15 Dexterity against 7 in each of the other two attributes, so early on the gear and gems she can actually equip are the Dexterity ones. That keeps her equipment decisions simple while everything else about the game is still new.",
+   "whenToUseIt": "Choose her when you want quick melee with a shield in the off hand, and would rather learn to dodge and reposition than manage a resource bar."
+  }
+ },
+ {
+  "id": "marauder",
+  "name": "Marauder",
+  "page": "Marauder",
+  "wiki": "https://www.poe2wiki.net/wiki/Marauder",
+  "attributes": {
+   "str": 15,
+   "dex": 7,
+   "int": 7
+  },
+  "primaryAttributes": [
+   "str"
+  ],
+  "weaponFocus": "",
+  "startingGear": [],
+  "playable": false,
+  "unreleased": true,
+  "ascendancies": [],
+  "description": "An announced Strength character. The roster records him at 15 Strength against 7 in each of the other two attributes, but he is not playable in the build this data was pulled from, his weapon focus is unstated, and his ascendancies are unnamed.",
+  "iconTarget": "placeholder-character-portrait.png",
+  "icon": "/island/apps/poe2/./sprites/placeholder-character-portrait.png",
+  "iconIsPlaceholder": false,
+  "beginner": {
+   "whatItIs": "An announced Strength character. The roster records him at 15 Strength against 7 in each of the other two attributes, but he is not playable in the build this data was pulled from, his weapon focus is unstated, and his ascendancies are unnamed.",
+   "whyItMatters": "His attribute spread is identical to the Warrior's, so the Warrior is what the current roster offers for a pure Strength start.",
+   "whenToUseIt": "Nothing to select yet. Play the Warrior for a Strength character now, and watch the patch notes for the release that adds this one."
+  }
+ },
+ {
+  "id": "mercenary",
+  "name": "Mercenary",
+  "page": "Mercenary",
+  "wiki": "https://www.poe2wiki.net/wiki/Mercenary",
+  "attributes": {
+   "str": 11,
+   "dex": 11,
+   "int": 7
+  },
+  "primaryAttributes": [
+   "str",
+   "dex"
+  ],
+  "weaponFocus": "Crossbow",
+  "startingGear": [
+   "Makeshift Crossbow",
+   "Fragmentation Rounds"
+  ],
+  "playable": true,
+  "ascendancies": [
+   {
+    "id": "tactician",
+    "name": "Tactician",
+    "wiki": "https://www.poe2wiki.net/wiki/Tactician",
+    "internalId": "Mercenary1",
+    "flavourText": "Countless wars have left you with skills somewhat resembling a decent officer...",
+    "iconTarget": "tactician-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/tactician-portrait.png"
+   },
+   {
+    "id": "witchhunter",
+    "name": "Witchhunter",
+    "wiki": "https://www.poe2wiki.net/wiki/Witchhunter",
+    "internalId": "Mercenary2",
+    "flavourText": "There's something very wrong with this world... and you're going to fix it.",
+    "iconTarget": "witchhunter-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/witchhunter-portrait.png"
+   },
+   {
+    "id": "gemling-legionnaire",
+    "name": "Gemling Legionnaire",
+    "wiki": "https://www.poe2wiki.net/wiki/Gemling_Legionnaire",
+    "internalId": "Mercenary3",
+    "flavourText": "The more you embrace virtue gems, the more power they offer...",
+    "iconTarget": "gemling-legionnaire-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/gemling-legionnaire-portrait.png"
+   }
+  ],
+  "description": "A Strength and Dexterity character who fights with a crossbow. He starts with a crossbow and Fragmentation Rounds, a bolt type that is loaded into the weapon's clip before it is fired and passes through the first thing it hits.",
+  "iconTarget": "mercenary-portrait.png",
+  "icon": "/island/apps/poe2/./sprites/mercenary-portrait.png",
+  "iconIsPlaceholder": false,
+  "beginner": {
+   "whatItIs": "A Strength and Dexterity character who fights with a crossbow. He starts with a crossbow and Fragmentation Rounds, a bolt type that is loaded into the weapon's clip before it is fired and passes through the first thing it hits.",
+   "whyItMatters": "Crossbow ammunition is loaded rather than simply shot, so part of what he can do in a fight is decided before the fight starts. All seven grenade gems in this dataset are crossbow-only too, which means the one weapon covers both a single target and a crowd.",
+   "whenToUseIt": "Choose him when you want to fight at range with a weapon instead of spells, and you like breaking up a group with explosives before it closes the distance."
+  }
+ },
+ {
+  "id": "monk",
+  "name": "Monk",
+  "page": "Monk",
+  "wiki": "https://www.poe2wiki.net/wiki/Monk",
+  "attributes": {
+   "str": 7,
+   "dex": 11,
+   "int": 11
+  },
+  "primaryAttributes": [
+   "dex",
+   "int"
+  ],
+  "weaponFocus": "Quarterstaff",
+  "startingGear": [
+   "Wrapped Quarterstaff",
+   "Falling Thunder"
+  ],
+  "playable": true,
+  "ascendancies": [
+   {
+    "id": "martial-artist",
+    "name": "Martial Artist",
+    "wiki": "https://www.poe2wiki.net/wiki/Martial_Artist",
+    "internalId": "Monk1",
+    "flavourText": "They made you a human weapon... but that strength has set you free.",
+    "iconTarget": "martial-artist-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/martial-artist-portrait.png"
+   },
+   {
+    "id": "invoker",
+    "name": "Invoker",
+    "wiki": "https://www.poe2wiki.net/wiki/Invoker",
+    "internalId": "Monk2",
+    "flavourText": "True strength lies within. One must only focus... and believe.",
+    "iconTarget": "invoker-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/invoker-portrait.png"
+   },
+   {
+    "id": "acolyte-of-chayula",
+    "name": "Acolyte of Chayula",
+    "wiki": "https://www.poe2wiki.net/wiki/Acolyte_of_Chayula",
+    "internalId": "Monk3",
+    "flavourText": "The truth of your faith threatens to break your very soul... but in that struggle lies power beyond belief.",
+    "iconTarget": "acolyte-of-chayula-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/acolyte-of-chayula-portrait.png"
+   }
+  ],
+  "description": "A Dexterity and Intelligence character who fights with a quarterstaff. His opening skill, Falling Thunder, turns 60 percent of its physical damage into lightning, so his hits are part weapon and part element from the first fight.",
+  "iconTarget": "monk-portrait.png",
+  "icon": "/island/apps/poe2/./sprites/monk-portrait.png",
+  "iconIsPlaceholder": false,
+  "beginner": {
+   "whatItIs": "A Dexterity and Intelligence character who fights with a quarterstaff. His opening skill, Falling Thunder, turns 60 percent of its physical damage into lightning, so his hits are part weapon and part element from the first fight.",
+   "whyItMatters": "He begins on 11 Dexterity and 11 Intelligence rather than one dominant attribute, and his opening skill mixes weapon damage with an element instead of keeping the two apart, so both halves of his gear matter to him.",
+   "whenToUseIt": "Take him when you want fast close-range fighting that still deals elemental damage, and you are content to do it with both hands on the staff and no shield."
+  }
+ },
+ {
+  "id": "ranger",
+  "name": "Ranger",
+  "page": "Ranger",
+  "wiki": "https://www.poe2wiki.net/wiki/Ranger",
+  "attributes": {
+   "str": 7,
+   "dex": 15,
+   "int": 7
+  },
+  "primaryAttributes": [
+   "dex"
+  ],
+  "weaponFocus": "Bow",
+  "startingGear": [
+   "Crude Bow",
+   "Broadhead Quiver",
+   "Lightning Arrow"
+  ],
+  "playable": true,
+  "ascendancies": [
+   {
+    "id": "deadeye",
+    "name": "Deadeye",
+    "wiki": "https://www.poe2wiki.net/wiki/Deadeye",
+    "internalId": "Ranger1",
+    "flavourText": "A woman can change the world with a single well-placed arrow.",
+    "iconTarget": "deadeye-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/deadeye-portrait.png"
+   },
+   {
+    "id": "pathfinder",
+    "name": "Pathfinder",
+    "wiki": "https://www.poe2wiki.net/wiki/Pathfinder",
+    "internalId": "Ranger3",
+    "flavourText": "There are venoms and virtues aplenty in the wilds, if you know where to look.",
+    "iconTarget": "pathfinder-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/pathfinder-portrait.png"
+   }
+  ],
+  "description": "A Dexterity character who fights with a bow. She starts with a bow, a quiver and Lightning Arrow, which turns 80 percent of its physical damage into lightning and fires beams at up to four more enemies near the one she aimed at.",
+  "iconTarget": "ranger-portrait.png",
+  "icon": "/island/apps/poe2/./sprites/ranger-portrait.png",
+  "iconIsPlaceholder": false,
+  "beginner": {
+   "whatItIs": "A Dexterity character who fights with a bow. She starts with a bow, a quiver and Lightning Arrow, which turns 80 percent of its physical damage into lightning and fires beams at up to four more enemies near the one she aimed at.",
+   "whyItMatters": "All of her damage sits at long range, so her safety comes from distance and movement rather than from soaking hits. That shapes every gear decision she makes afterwards.",
+   "whenToUseIt": "Pick her as a first character when you want things dead before they arrive, and are willing to keep moving to keep that true. Two ascendancies, Deadeye and Pathfinder, are in the data pulled for this app."
+  }
+ },
+ {
+  "id": "shadow",
+  "name": "Shadow",
+  "page": "Shadow",
+  "wiki": "https://www.poe2wiki.net/wiki/Shadow",
+  "attributes": {
+   "str": 7,
+   "dex": 11,
+   "int": 11
+  },
+  "primaryAttributes": [
+   "dex",
+   "int"
+  ],
+  "weaponFocus": "",
+  "startingGear": [],
+  "playable": false,
+  "unreleased": true,
+  "ascendancies": [],
+  "description": "An announced Dexterity and Intelligence character. He is not playable in the build this data was pulled from, his weapon focus has not been stated, and his ascendancies have no names yet.",
+  "iconTarget": "placeholder-character-portrait.png",
+  "icon": "/island/apps/poe2/./sprites/placeholder-character-portrait.png",
+  "iconIsPlaceholder": false,
+  "beginner": {
+   "whatItIs": "An announced Dexterity and Intelligence character. He is not playable in the build this data was pulled from, his weapon focus has not been stated, and his ascendancies have no names yet.",
+   "whyItMatters": "The roster fixes his attributes at 11 Dexterity and 11 Intelligence, and that is the only thing the pulled data actually knows about him, so any guide describing his skills is describing something the game has not shipped.",
+   "whenToUseIt": "Nothing to select yet. The Monk starts on the same 11 Dexterity and 11 Intelligence pairing if that is the combination you wanted to try."
+  }
+ },
+ {
+  "id": "sorceress",
+  "name": "Sorceress",
+  "page": "Sorceress",
+  "wiki": "https://www.poe2wiki.net/wiki/Sorceress",
+  "attributes": {
+   "str": 7,
+   "dex": 7,
+   "int": 15
+  },
+  "primaryAttributes": [
+   "int"
+  ],
+  "weaponFocus": "Elemental Spells",
+  "startingGear": [
+   "Ashen Staff",
+   "Spark"
+  ],
+  "playable": true,
+  "ascendancies": [
+   {
+    "id": "stormweaver",
+    "name": "Stormweaver",
+    "wiki": "https://www.poe2wiki.net/wiki/Stormweaver",
+    "internalId": "Sorceress1",
+    "flavourText": "The rumble of thunder heralds your approach. Woe to those that draw your ire.",
+    "iconTarget": "stormweaver-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/stormweaver-portrait.png"
+   },
+   {
+    "id": "chronomancer",
+    "name": "Chronomancer",
+    "wiki": "https://www.poe2wiki.net/wiki/Chronomancer",
+    "internalId": "Sorceress2",
+    "flavourText": "The tapestry of time is yours to weave; an element you alone may master.",
+    "iconTarget": "chronomancer-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/chronomancer-portrait.png"
+   },
+   {
+    "id": "disciple-of-varashta",
+    "name": "Disciple of Varashta",
+    "wiki": "https://www.poe2wiki.net/wiki/Disciple_of_Varashta",
+    "internalId": "Sorceress3",
+    "flavourText": "By your command, they will earn redemption...one duty at a time.",
+    "iconTarget": "disciple-of-varashta-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/disciple-of-varashta-portrait.png"
+   }
+  ],
+  "description": "An Intelligence character who casts elemental spells. She starts with a staff and Spark, which throws four to nine lightning projectiles that skitter along the ground and last two seconds each, so her damage is elemental rather than physical from the first fight.",
+  "iconTarget": "sorceress-portrait.png",
+  "icon": "/island/apps/poe2/./sprites/sorceress-portrait.png",
+  "iconIsPlaceholder": false,
+  "beginner": {
+   "whatItIs": "An Intelligence character who casts elemental spells. She starts with a staff and Spark, which throws four to nine lightning projectiles that skitter along the ground and last two seconds each, so her damage is elemental rather than physical from the first fight.",
+   "whyItMatters": "Her damage is fire, cold and lightning, so what she struggles against changes with the enemy in front of her. Deciding which element to lead with is part of playing her, not an afterthought once the build is finished.",
+   "whenToUseIt": "Take her when you want a caster whose damage comes straight out of her own spells, with no minions or corpses to look after while you are still learning the gem system."
+  }
+ },
+ {
+  "id": "templar",
+  "name": "Templar",
+  "page": "Templar",
+  "wiki": "https://www.poe2wiki.net/wiki/Templar",
+  "attributes": {
+   "str": 11,
+   "dex": 7,
+   "int": 11
+  },
+  "primaryAttributes": [
+   "str",
+   "int"
+  ],
+  "weaponFocus": "",
+  "startingGear": [],
+  "playable": false,
+  "unreleased": true,
+  "ascendancies": [],
+  "description": "An announced Strength and Intelligence character. The roster records his attributes at 11 Strength and 11 Intelligence, but his weapon focus is unstated, his ascendancies are unnamed, and he cannot be created yet.",
+  "iconTarget": "placeholder-character-portrait.png",
+  "icon": "/island/apps/poe2/./sprites/placeholder-character-portrait.png",
+  "iconIsPlaceholder": false,
+  "beginner": {
+   "whatItIs": "An announced Strength and Intelligence character. The roster records his attributes at 11 Strength and 11 Intelligence, but his weapon focus is unstated, his ascendancies are unnamed, and he cannot be created yet.",
+   "whyItMatters": "He shares the Druid's attribute start exactly, so the Druid is the playable way to try that pairing while this class is still unreleased.",
+   "whenToUseIt": "Nothing to select yet. This page fills itself in on the first data pull taken after a patch adds him."
+  }
+ },
+ {
+  "id": "warrior",
+  "name": "Warrior",
+  "page": "Warrior",
+  "wiki": "https://www.poe2wiki.net/wiki/Warrior",
+  "attributes": {
+   "str": 15,
+   "dex": 7,
+   "int": 7
+  },
+  "primaryAttributes": [
+   "str"
+  ],
+  "weaponFocus": "Mace",
+  "startingGear": [
+   "Wooden Club",
+   "Splintered Tower Shield",
+   "Rolling Slam"
+  ],
+  "playable": true,
+  "ascendancies": [
+   {
+    "id": "titan",
+    "name": "Titan",
+    "wiki": "https://www.poe2wiki.net/wiki/Titan",
+    "internalId": "Warrior1",
+    "flavourText": "Incredible might has always laid buried within you. Now is the time to rise.",
+    "iconTarget": "titan-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/titan-portrait.png"
+   },
+   {
+    "id": "warbringer",
+    "name": "Warbringer",
+    "wiki": "https://www.poe2wiki.net/wiki/Warbringer",
+    "internalId": "Warrior2",
+    "flavourText": "Your home has been threatened. A good man must be roused to war.",
+    "iconTarget": "warbringer-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/warbringer-portrait.png"
+   },
+   {
+    "id": "smith-of-kitava",
+    "name": "Smith of Kitava",
+    "wiki": "https://www.poe2wiki.net/wiki/Smith_of_Kitava",
+    "internalId": "Warrior3",
+    "flavourText": "You hunger for power, and by force of arms, you will take it.",
+    "iconTarget": "smith-of-kitava-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/smith-of-kitava-portrait.png"
+   }
+  ],
+  "description": "The starting class built around Strength. He opens with a club, a tower shield and Rolling Slam, a ground slam that lands twice, and he fights in melee range with slow, heavy hits.",
+  "iconTarget": "warrior-portrait.png",
+  "icon": "/island/apps/poe2/./sprites/warrior-portrait.png",
+  "iconIsPlaceholder": false,
+  "beginner": {
+   "whatItIs": "The starting class built around Strength. He opens with a club, a tower shield and Rolling Slam, a ground slam that lands twice, and he fights in melee range with slow, heavy hits.",
+   "whyItMatters": "His attributes begin at 15 Strength against 7 in each of the others, and Rolling Slam adds a full second to his total attack time, so the class is built around committing to a hit and living with the recovery instead of spamming attacks.",
+   "whenToUseIt": "Pick him as a first character when you want to survive your own early mistakes at close range, and you will trade movement freedom for weight behind each swing."
+  }
+ },
+ {
+  "id": "witch",
+  "name": "Witch",
+  "page": "Witch",
+  "wiki": "https://www.poe2wiki.net/wiki/Witch",
+  "attributes": {
+   "str": 7,
+   "dex": 7,
+   "int": 15
+  },
+  "primaryAttributes": [
+   "int"
+  ],
+  "weaponFocus": "Occult Spells",
+  "startingGear": [
+   "Withered Wand",
+   "Rattling Sceptre",
+   "Unearth"
+  ],
+  "playable": true,
+  "ascendancies": [
+   {
+    "id": "infernalist",
+    "name": "Infernalist",
+    "wiki": "https://www.poe2wiki.net/wiki/Infernalist",
+    "internalId": "Witch1",
+    "flavourText": "You seek power at any cost... and there is no price too high to pay.",
+    "iconTarget": "infernalist-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/infernalist-portrait.png"
+   },
+   {
+    "id": "blood-mage",
+    "name": "Blood Mage",
+    "wiki": "https://www.poe2wiki.net/wiki/Blood_Mage",
+    "internalId": "Witch2",
+    "flavourText": "Your search for power took you on a journey inwards.",
+    "iconTarget": "blood-mage-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/blood-mage-portrait.png"
+   },
+   {
+    "id": "lich",
+    "name": "Lich",
+    "wiki": "https://www.poe2wiki.net/wiki/Lich",
+    "internalId": "Witch3",
+    "flavourText": "Death if your domain, your flesh merely a material to be mastered.",
+    "iconTarget": "lich-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/lich-portrait.png"
+   },
+   {
+    "id": "abyssal-lich",
+    "name": "Abyssal Lich",
+    "wiki": "https://www.poe2wiki.net/wiki/Abyssal_Lich",
+    "internalId": "Witch3b",
+    "flavourText": "The Well of Souls is yours to command.",
+    "iconTarget": "abyssal-lich-portrait.png",
+    "icon": "/island/apps/poe2/./sprites/abyssal-lich-portrait.png"
+   }
+  ],
+  "description": "The starting class built around Intelligence. She opens with a wand, a sceptre and Unearth, a spell that raises spikes of bone out of the ground, and her whole kit assumes you are casting rather than swinging.",
+  "iconTarget": "witch-portrait.png",
+  "icon": "/island/apps/poe2/./sprites/witch-portrait.png",
+  "iconIsPlaceholder": false,
+  "beginner": {
+   "whatItIs": "The starting class built around Intelligence. She opens with a wand, a sceptre and Unearth, a spell that raises spikes of bone out of the ground, and her whole kit assumes you are casting rather than swinging.",
+   "whyItMatters": "Her 15 Intelligence start opens up the spell gems and gear that ask for Intelligence right away, and Unearth pulls bone constructs out of the corpses around her that then fight for 15 seconds, so she has minions before the game has explained minions to her.",
+   "whenToUseIt": "Choose her for a first character if you want to kill at range and would rather learn how minions and occult damage work than learn weapon timings."
+  }
+ }
+]

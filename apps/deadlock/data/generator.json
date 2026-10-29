@@ -1,0 +1,3311 @@
+{
+ "_readme": "Resolved L2 generator configuration. Source: tools/seeds/generator.json (tool settings, hand-authored) resolved by build_data.mjs against data/items.json + data/rules.json. Goal and threat item lists are DERIVED from item stat keys; the slot rule is rules.slots (deadlock.wiki, UNVERIFIED in game). Read by js/generator.js; never hand-edited.",
+ "version": 1,
+ "limits": {
+  "maxGoals": 3,
+  "maxEnemies": 6,
+  "maxLocks": 6,
+  "swapRounds": 40,
+  "alternativesPerItem": 1
+ },
+ "weights": {
+  "_readme": "q = 1 + evidence*E + goals*G + counters*C - timing*T, floored at qMin; an item is worth cost * q; investment adds investment * spend * bonus/topBonus per item type.",
+  "evidence": 1,
+  "goals": 1.2,
+  "counters": 0.8,
+  "timing": 0.8,
+  "investment": 0.25,
+  "qMin": 0.05
+ },
+ "evidence": {
+  "_readme": "E = liftShare * clamp(tierLift / liftScalePct, -1, 1) * n / (n + shrinkMatches) + buyShareShare * buyShare. tierLift = this item's win rate on the hero minus the purchase-weighted win rate of the other items of the same tier on that hero (late items look better because winning players can afford them; comparing within a tier removes most of that).",
+  "liftShare": 0.4,
+  "buyShareShare": 0.6,
+  "liftScalePct": 4,
+  "shrinkMatches": 5000,
+  "buyShareFloor": 0.1,
+  "negativeLiftDamp": 0.9,
+  "_gateReadme": "PICK GATE (a lock is the only way past it): an item with fewer than minSample matches on the chosen hero, or one that loses against its own tier while fewer than buyShareFloor of the hero matches buy it, is never picked. FIT CAP: the goal and counter lift of any other item is multiplied by min(1, buyShare / buyShareFloor) and by (1 - negativeLiftDamp * clamp(-tierLift / liftScalePct, 0, 1)) when the item loses against its own tier, so a goal cannot carry an item almost nobody on this hero buys into the build.",
+  "minSample": 100
+ },
+ "counters": {
+  "_readme": "An enemy is a threat of a kind when that hero's players put a bigger share of their item souls into it than the average hero: excess = share / average - 1, capped at excessCap. A threat counts only above minExcess.",
+  "excessCap": 1,
+  "minExcess": 0.15
+ },
+ "measureMinWeight": 0.5,
+ "slots": {
+  "base": 9,
+  "extraMax": 3,
+  "maxActive": 4,
+  "verified": false,
+  "source": "deadlock.wiki Items page (parsed from raw/wiki/Items.json)"
+ },
+ "startSouls": 600,
+ "phases": [
+  {
+   "id": "early",
+   "label": "Early game",
+   "help": "The souls a player holds in total at level 9 (game numbering: everyone starts at level 0).",
+   "level": 9,
+   "soulsEarned": 4600,
+   "startSouls": 600,
+   "budget": 5200,
+   "extraSlots": 0
+  },
+  {
+   "id": "mid",
+   "label": "Mid game",
+   "help": "The souls a player holds in total at level 19 (game numbering: everyone starts at level 0).",
+   "level": 19,
+   "soulsEarned": 12800,
+   "startSouls": 600,
+   "budget": 13400,
+   "extraSlots": 0
+  },
+  {
+   "id": "late",
+   "label": "Late game",
+   "help": "What players of this hero end a match with on average.",
+   "budgetFrom": "heroAverageNetWorth",
+   "extraSlots": 3
+  }
+ ],
+ "goals": [
+  {
+   "id": "take-hits",
+   "label": "Take more hits",
+   "help": "Health, resists and barriers.",
+   "keys": {
+    "BulletResist+": 1,
+    "TechResist+": 1,
+    "BonusBaseHealth": 1,
+    "BulletResistBelowThreshold": 1,
+    "TechResistBelowThreshold": 1,
+    "BuffBulletResist": 1,
+    "BuffTechResist": 1,
+    "DeflectionPercent": 1,
+    "DeathImmunityDuration": 1,
+    "CombatBarrier": 0.8,
+    "VexBarrierCombatBarrier": 0.8,
+    "GuardianWardCombatBarrier": 0.6,
+    "BulletResistPerStack": 0.6,
+    "BonusHealth+": 0.5,
+    "MeleeResistPercent": 0.4
+   },
+   "exclude": {},
+   "items": {
+    "arctic-blast": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +10%"
+     ]
+    },
+    "battle-vest": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +18%"
+     ]
+    },
+    "berserker": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +8%"
+     ]
+    },
+    "blood-tribute": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +8%"
+     ]
+    },
+    "boundless-spirit": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +75"
+     ]
+    },
+    "bullet-lifesteal": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +90"
+     ]
+    },
+    "bullet-resilience": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +30%",
+      "Bullet Resist +15%"
+     ]
+    },
+    "bullet-resist-shredder": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +9%"
+     ]
+    },
+    "cheat-death": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +15%",
+      "Death Immunity Duration 4.5s",
+      "Bonus Health +200"
+     ]
+    },
+    "close-quarters": {
+     "w": 0.4,
+     "why": [
+      "Melee Resist +20%"
+     ]
+    },
+    "cold-front": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +6%"
+     ]
+    },
+    "colossus": {
+     "w": 1,
+     "why": [
+      "Base Health +25%",
+      "Bullet Resist 35%",
+      "Spirit Resist 35%"
+     ]
+    },
+    "counterspell": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +50"
+     ]
+    },
+    "crippling-headshot": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +125"
+     ]
+    },
+    "crushing-fists": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +12%"
+     ]
+    },
+    "cultist-sacrifice": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +50"
+     ]
+    },
+    "debuff-reducer": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +90"
+     ]
+    },
+    "decay": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +65"
+     ]
+    },
+    "disarming-hex": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +75"
+     ]
+    },
+    "dispel-magic": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +10%"
+     ]
+    },
+    "divine-barrier": {
+     "w": 0.8,
+     "why": [
+      "Barrier 600"
+     ]
+    },
+    "diviners-kevlar": {
+     "w": 0.8,
+     "why": [
+      "Barrier 1000"
+     ]
+    },
+    "echo-shard": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +5%",
+      "Spirit Resist +5%"
+     ]
+    },
+    "enchanters-emblem": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +18%"
+     ]
+    },
+    "escalating-exposure": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +17%"
+     ]
+    },
+    "escalating-resilience": {
+     "w": 0.6,
+     "why": [
+      "Bullet Resist per Stack 2%",
+      "Bonus Health +75"
+     ]
+    },
+    "ethereal-shift": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +30%"
+     ]
+    },
+    "extra-health": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +210"
+     ]
+    },
+    "fleetfoot": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +6%"
+     ]
+    },
+    "fortitude": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +375"
+     ]
+    },
+    "frenzy": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +160"
+     ]
+    },
+    "fury-trance": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +40%",
+      "Bonus Health +100"
+     ]
+    },
+    "greater-expansion": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +10%"
+     ]
+    },
+    "grit": {
+     "w": 0.8,
+     "why": [
+      "Barrier 200"
+     ]
+    },
+    "guardian-ward": {
+     "w": 0.6,
+     "why": [
+      "Barrier 250"
+     ]
+    },
+    "headhunter": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +50"
+     ]
+    },
+    "headshot-booster": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +30"
+     ]
+    },
+    "healing-tempo": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +10%"
+     ]
+    },
+    "heroic-aura": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +17%"
+     ]
+    },
+    "hollow-point": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +125"
+     ]
+    },
+    "hunters-aura": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +100"
+     ]
+    },
+    "indomitable": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +10%",
+      "Spirit Resist +10%",
+      "Barrier 325"
+     ]
+    },
+    "infuser": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +10%",
+      "Bonus Health +100"
+     ]
+    },
+    "inhibitor": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +150"
+     ]
+    },
+    "juggernaut": {
+     "w": 0.4,
+     "why": [
+      "Melee Resist +25%"
+     ]
+    },
+    "knockdown": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +75"
+     ]
+    },
+    "leech": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +180"
+     ]
+    },
+    "lifestrike": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +125"
+     ]
+    },
+    "lightning-scroll": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +50"
+     ]
+    },
+    "magic-carpet": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +125"
+     ]
+    },
+    "majestic-leap": {
+     "w": 0.8,
+     "why": [
+      "Barrier 200"
+     ]
+    },
+    "melee-charge": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +6%"
+     ]
+    },
+    "metal-skin": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +12%"
+     ]
+    },
+    "mystic-regeneration": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +50"
+     ]
+    },
+    "mystic-slow": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +50"
+     ]
+    },
+    "mystic-vulnerability": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +8%"
+     ]
+    },
+    "plated-armor": {
+     "w": 1,
+     "why": [
+      "Deflection Percent 30%",
+      "Bonus Health +130"
+     ]
+    },
+    "point-blank": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +75",
+      "Melee Resist +30%"
+     ]
+    },
+    "radiant-regeneration": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +90"
+     ]
+    },
+    "reactive-barrier": {
+     "w": 0.8,
+     "why": [
+      "Barrier 325"
+     ]
+    },
+    "rebuttal": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +75",
+      "Melee Resist +18%"
+     ]
+    },
+    "restorative-locket": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +8%"
+     ]
+    },
+    "rusted-barrel": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +60"
+     ]
+    },
+    "scourge": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +40%",
+      "Bonus Health +100"
+     ]
+    },
+    "silence-wave": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +50"
+     ]
+    },
+    "silencer": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +12%"
+     ]
+    },
+    "siphon-bullets": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +10%"
+     ]
+    },
+    "spellbreaker": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +18%",
+      "Bonus Health +90"
+     ]
+    },
+    "spirit-lifesteal": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +90"
+     ]
+    },
+    "spirit-rend": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +75"
+     ]
+    },
+    "spirit-resilience": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +30%",
+      "Spirit Resist +15%"
+     ]
+    },
+    "spirit-sap": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +50"
+     ]
+    },
+    "spirit-shielding": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +18%",
+      "Barrier 300"
+     ]
+    },
+    "spirit-snatch": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +75"
+     ]
+    },
+    "spiritual-overflow": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +90"
+     ]
+    },
+    "stalker": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +50"
+     ]
+    },
+    "superior-duration": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +8%"
+     ]
+    },
+    "suppressor": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +8%"
+     ]
+    },
+    "tankbuster": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +50"
+     ]
+    },
+    "torment-pulse": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +100",
+      "Melee Resist +18%"
+     ]
+    },
+    "unstoppable": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +125"
+     ]
+    },
+    "vampiric-burst": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +10%",
+      "Bonus Health +100"
+     ]
+    },
+    "veil-walker": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +125"
+     ]
+    },
+    "warp-stone": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +30%"
+     ]
+    },
+    "weakening-headshot": {
+     "w": 0.5,
+     "why": [
+      "Bonus Health +60"
+     ]
+    },
+    "weapon-shielding": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +18%",
+      "Barrier 300"
+     ]
+    },
+    "witchmail": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +22%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "heal-yourself",
+   "label": "Heal yourself",
+   "help": "Lifesteal and regeneration.",
+   "keys": {
+    "BulletLifestealPercent": 1,
+    "AbilityLifestealPercentHero": 1,
+    "BonusSpiritLifesteal": 1,
+    "BonusHealthRegen+": 0.8,
+    "Regeneration": 0.8,
+    "TotalHealthRegen": 0.8,
+    "LifestrikeHeal": 0.8,
+    "LifestealHeal": 0.8,
+    "HealthStealPctHero": 0.8,
+    "ImbueAbilityLifesteal": 0.6,
+    "HealPercentPerHeadshot": 0.6,
+    "HealFromHero": 0.6,
+    "HealLifePercentOutOfCombat": 0.5,
+    "HealOnKill": 0.4,
+    "OutOfCombatHealthRegen+": 0.2
+   },
+   "exclude": {},
+   "items": {
+    "active-reload": {
+     "w": 1,
+     "why": [
+      "Bullet Lifesteal +16%"
+     ]
+    },
+    "battle-vest": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +3"
+     ]
+    },
+    "blood-tribute": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +4"
+     ]
+    },
+    "boundless-spirit": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +4"
+     ]
+    },
+    "bullet-lifesteal": {
+     "w": 1,
+     "why": [
+      "Bullet Lifesteal +13%"
+     ]
+    },
+    "bullet-resilience": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +3"
+     ]
+    },
+    "cultist-sacrifice": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +2"
+     ]
+    },
+    "divine-barrier": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +1.5"
+     ]
+    },
+    "enchanters-emblem": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +2"
+     ]
+    },
+    "enduring-speed": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +2"
+     ]
+    },
+    "extra-regen": {
+     "w": 0.8,
+     "why": [
+      "Health Regen +2.5",
+      "Out of Combat Regen +1.5"
+     ]
+    },
+    "fortitude": {
+     "w": 0.5,
+     "why": [
+      "Max Health Regen +2.25%"
+     ]
+    },
+    "frenzy": {
+     "w": 1,
+     "why": [
+      "Bullet Lifesteal +10%"
+     ]
+    },
+    "fury-trance": {
+     "w": 1,
+     "why": [
+      "Bullet Lifesteal +14%"
+     ]
+    },
+    "golden-goose-egg": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +1"
+     ]
+    },
+    "grit": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +1"
+     ]
+    },
+    "guardian-ward": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +1.5"
+     ]
+    },
+    "headhunter": {
+     "w": 0.6,
+     "why": [
+      "Heal Per Headshot 4%"
+     ]
+    },
+    "healbane": {
+     "w": 0.4,
+     "why": [
+      "Heal On Hero Kill 275"
+     ]
+    },
+    "healing-booster": {
+     "w": 0.8,
+     "why": [
+      "Health Regen +3",
+      "Out of Combat Regen +1"
+     ]
+    },
+    "healing-nova": {
+     "w": 0.8,
+     "why": [
+      "Total HP Regen 325"
+     ]
+    },
+    "healing-rite": {
+     "w": 0.8,
+     "why": [
+      "Total HP Regen 300"
+     ]
+    },
+    "healing-tempo": {
+     "w": 0.8,
+     "why": [
+      "Health Regen +6",
+      "Out of Combat Regen +4"
+     ]
+    },
+    "hollow-point": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +4.5"
+     ]
+    },
+    "improved-spirit": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +1.5"
+     ]
+    },
+    "indomitable": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +2"
+     ]
+    },
+    "infuser": {
+     "w": 1,
+     "why": [
+      "Spirit Lifesteal +70%"
+     ]
+    },
+    "juggernaut": {
+     "w": 0.8,
+     "why": [
+      "Health Regen +8"
+     ]
+    },
+    "leech": {
+     "w": 1,
+     "why": [
+      "Bullet Lifesteal +28%",
+      "Spirit Lifesteal +28%"
+     ]
+    },
+    "lifestrike": {
+     "w": 0.8,
+     "why": [
+      "Heal on Melee Hit 120"
+     ]
+    },
+    "melee-lifesteal": {
+     "w": 0.8,
+     "why": [
+      "Heal on Melee Hit 100"
+     ]
+    },
+    "monster-rounds": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +1"
+     ]
+    },
+    "mystic-regeneration": {
+     "w": 0.8,
+     "why": [
+      "Regeneration 4 HP/s"
+     ]
+    },
+    "mystic-reverb": {
+     "w": 1,
+     "why": [
+      "Spirit Lifesteal +8%",
+      "Imbued Lifesteal +22%"
+     ]
+    },
+    "radiant-regeneration": {
+     "w": 0.8,
+     "why": [
+      "Regeneration 4 HP/s"
+     ]
+    },
+    "reactive-barrier": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +1"
+     ]
+    },
+    "restorative-shot": {
+     "w": 0.6,
+     "why": [
+      "Healing From Heroes 50"
+     ]
+    },
+    "shadow-weave": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +5"
+     ]
+    },
+    "siphon-bullets": {
+     "w": 0.8,
+     "why": [
+      "Max HP Steal 2.5%"
+     ]
+    },
+    "spirit-lifesteal": {
+     "w": 1,
+     "why": [
+      "Spirit Lifesteal +13%"
+     ]
+    },
+    "spirit-rend": {
+     "w": 1,
+     "why": [
+      "Spirit Lifesteal +10%"
+     ]
+    },
+    "spirit-resilience": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +3"
+     ]
+    },
+    "spirit-shielding": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +2.5"
+     ]
+    },
+    "spirit-shredder": {
+     "w": 1,
+     "why": [
+      "Spirit Lifesteal +10%"
+     ]
+    },
+    "spiritual-overflow": {
+     "w": 1,
+     "why": [
+      "Spirit Lifesteal +13%",
+      "Spirit Lifesteal +10%"
+     ]
+    },
+    "sprint-boots": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +2"
+     ]
+    },
+    "superior-cooldown": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +4"
+     ]
+    },
+    "transcendent-cooldown": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +4"
+     ]
+    },
+    "trophy-collector": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +2"
+     ]
+    },
+    "vampiric-burst": {
+     "w": 1,
+     "why": [
+      "Bullet Lifesteal +13%"
+     ]
+    },
+    "weapon-shielding": {
+     "w": 0.2,
+     "why": [
+      "Out of Combat Regen +2.5"
+     ]
+    }
+   }
+  },
+  {
+   "id": "gun-damage",
+   "label": "Hit harder with your gun",
+   "help": "Weapon damage, fire rate and ammo.",
+   "keys": {
+    "BaseAttackDamagePercent+": 1,
+    "BonusFireRate+": 1,
+    "HeadShotBonusDamage": 0.8,
+    "CloseRangeBonusWeaponPower": 0.8,
+    "LongRangeBonusWeaponPower": 0.8,
+    "WeaponPowerPerStack": 0.8,
+    "CritDamagePercent": 0.8,
+    "RicochetDamagePercent": 0.8,
+    "BulletSplitShot": 0.8,
+    "DamagePerChain": 0.6,
+    "BonusClipSizePercent+": 0.6,
+    "BonusBulletSpeedPercent+": 0.4,
+    "AmmoReloadPercent": 0.4
+   },
+   "exclude": {},
+   "items": {
+    "active-reload": {
+     "w": 1,
+     "why": [
+      "Fire Rate +25%",
+      "Max Ammo +20%"
+     ]
+    },
+    "armor-piercer": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +8%",
+      "Bullet Velocity +60%"
+     ]
+    },
+    "ballistic-enchantment": {
+     "w": 0.8,
+     "why": [
+      "Weapon Damage per Stack +20%"
+     ]
+    },
+    "battle-vest": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +18%",
+      "Fire Rate +7%"
+     ]
+    },
+    "berserker": {
+     "w": 0.8,
+     "why": [
+      "Weapon Damage per Stack +7%"
+     ]
+    },
+    "blood-tribute": {
+     "w": 1,
+     "why": [
+      "Fire Rate +35%"
+     ]
+    },
+    "bullet-lifesteal": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +6%"
+     ]
+    },
+    "bullet-resist-shredder": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +9%"
+     ]
+    },
+    "burst-fire": {
+     "w": 1,
+     "why": [
+      "Fire Rate +10%"
+     ]
+    },
+    "capacitor": {
+     "w": 1,
+     "why": [
+      "Fire Rate +5%",
+      "Shock Damage 43"
+     ]
+    },
+    "close-quarters": {
+     "w": 0.8,
+     "why": [
+      "Weapon Damage +20%"
+     ]
+    },
+    "colossus": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +15%"
+     ]
+    },
+    "cultist-sacrifice": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +10%"
+     ]
+    },
+    "escalating-resilience": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +18%",
+      "Max Ammo +35%"
+     ]
+    },
+    "express-shot": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +8%",
+      "Bullet Velocity +60%"
+     ]
+    },
+    "extended-magazine": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +8%",
+      "Max Ammo +30%"
+     ]
+    },
+    "fleetfoot": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +6%"
+     ]
+    },
+    "focus-lens": {
+     "w": 1,
+     "why": [
+      "Fire Rate +10%"
+     ]
+    },
+    "frenzy": {
+     "w": 1,
+     "why": [
+      "Fire Rate +15%"
+     ]
+    },
+    "fury-trance": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +6%"
+     ]
+    },
+    "glass-cannon": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +80%"
+     ]
+    },
+    "headhunter": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +5%",
+      "Head Shot Bonus Damage +75"
+     ]
+    },
+    "headshot-booster": {
+     "w": 0.8,
+     "why": [
+      "Head Shot Bonus Damage +45"
+     ]
+    },
+    "healing-tempo": {
+     "w": 1,
+     "why": [
+      "Fire Rate +35%"
+     ]
+    },
+    "heroic-aura": {
+     "w": 1,
+     "why": [
+      "Fire Rate +26%"
+     ]
+    },
+    "high-velocity-rounds": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +8%",
+      "Bullet Velocity +60%"
+     ]
+    },
+    "hollow-point": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +35%"
+     ]
+    },
+    "inhibitor": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +10%"
+     ]
+    },
+    "intensifying-magazine": {
+     "w": 0.6,
+     "why": [
+      "Max Ammo +20%"
+     ]
+    },
+    "kinetic-dash": {
+     "w": 1,
+     "why": [
+      "Fire Rate +25%"
+     ]
+    },
+    "leech": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +12%"
+     ]
+    },
+    "long-range": {
+     "w": 0.8,
+     "why": [
+      "Weapon Damage +40%"
+     ]
+    },
+    "lucky-shot": {
+     "w": 0.8,
+     "why": [
+      "Bonus Weapon Damage +100%",
+      "Max Ammo +30%"
+     ]
+    },
+    "mercurial-magnum": {
+     "w": 1,
+     "why": [
+      "Fire Rate +22%",
+      "Max Ammo +20%",
+      "Bullets Reloaded 100%"
+     ]
+    },
+    "opening-rounds": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +8%",
+      "Bullet Velocity +60%"
+     ]
+    },
+    "phantom-strike": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +15%"
+     ]
+    },
+    "point-blank": {
+     "w": 0.8,
+     "why": [
+      "Weapon Damage +50%"
+     ]
+    },
+    "quicksilver-reload": {
+     "w": 1,
+     "why": [
+      "Fire Rate +10%",
+      "Bullets Reloaded 100%"
+     ]
+    },
+    "rapid-rounds": {
+     "w": 1,
+     "why": [
+      "Fire Rate +9%"
+     ]
+    },
+    "recharging-rush": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +10%",
+      "Max Ammo +20%"
+     ]
+    },
+    "restorative-shot": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +6%"
+     ]
+    },
+    "ricochet": {
+     "w": 1,
+     "why": [
+      "Fire Rate +18%",
+      "Ricochet Damage 65%"
+     ]
+    },
+    "sharpshooter": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +10%",
+      "Weapon Damage +60%",
+      "Bullet Velocity +60%"
+     ]
+    },
+    "siphon-bullets": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +15%"
+     ]
+    },
+    "spellslinger": {
+     "w": 1,
+     "why": [
+      "Fire Rate +11%"
+     ]
+    },
+    "spiritual-overflow": {
+     "w": 1,
+     "why": [
+      "Fire Rate +25%"
+     ]
+    },
+    "split-shot": {
+     "w": 0.8,
+     "why": [
+      "Weapon Multishot 5"
+     ]
+    },
+    "swift-striker": {
+     "w": 1,
+     "why": [
+      "Fire Rate +20%"
+     ]
+    },
+    "tesla-bullets": {
+     "w": 0.6,
+     "why": [
+      "Shock Damage 33"
+     ]
+    },
+    "titanic-magazine": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +14%",
+      "Max Ammo +100%"
+     ]
+    },
+    "vampiric-burst": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +6%"
+     ]
+    },
+    "weighted-shots": {
+     "w": 1,
+     "why": [
+      "Weapon Damage +30%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "ability-damage",
+   "label": "Hit harder with abilities",
+   "help": "Spirit power, cooldowns and ability duration.",
+   "keys": {
+    "TechPower+": 1,
+    "SpiritPower+": 1,
+    "BonusSpirit+": 1,
+    "TechPowerPercent+": 1,
+    "TechDamagePercent+": 0.8,
+    "ImbuedTechPower": 0.8,
+    "CooldownReduction+": 0.8,
+    "CurrentHealthDamage": 0.8,
+    "BonusAbilityDurationPercent+": 0.6,
+    "BonusAbilityCharges": 0.6,
+    "SpiritDamage": 0.6,
+    "ExplosionDamage": 0.6,
+    "TechRangeMultiplier+": 0.4
+   },
+   "exclude": {},
+   "items": {
+    "alchemical-fire": {
+     "w": 1,
+     "why": [
+      "Spirit Power +10"
+     ]
+    },
+    "arcane-surge": {
+     "w": 1,
+     "why": [
+      "Spirit Power +20",
+      "Ability Duration +15%"
+     ]
+    },
+    "ballistic-enchantment": {
+     "w": 0.4,
+     "why": [
+      "Ability Range +22%"
+     ]
+    },
+    "boundless-spirit": {
+     "w": 1,
+     "why": [
+      "Spirit Power +30",
+      "Spirit Power +15%"
+     ]
+    },
+    "compress-cooldown": {
+     "w": 0.8,
+     "why": [
+      "Ability Cooldown Reduction +18%"
+     ]
+    },
+    "counterspell": {
+     "w": 1,
+     "why": [
+      "Spirit Power +20"
+     ]
+    },
+    "cultist-sacrifice": {
+     "w": 0.4,
+     "why": [
+      "Ability Range +12%"
+     ]
+    },
+    "decay": {
+     "w": 1,
+     "why": [
+      "Spirit Power +8"
+     ]
+    },
+    "divine-barrier": {
+     "w": 0.4,
+     "why": [
+      "Ability Range +10%"
+     ]
+    },
+    "diviners-kevlar": {
+     "w": 1,
+     "why": [
+      "Spirit Power +40",
+      "Ability Duration +15%"
+     ]
+    },
+    "duration-extender": {
+     "w": 0.6,
+     "why": [
+      "Ability Duration +22%"
+     ]
+    },
+    "enchanters-emblem": {
+     "w": 1,
+     "why": [
+      "Spirit Power +15",
+      "Ability Cooldown Reduction +5%"
+     ]
+    },
+    "ethereal-shift": {
+     "w": 1,
+     "why": [
+      "Spirit Power +20"
+     ]
+    },
+    "extra-charge": {
+     "w": 0.6,
+     "why": [
+      "Bonus Ability Charges +1"
+     ]
+    },
+    "extra-spirit": {
+     "w": 1,
+     "why": [
+      "Spirit Power +10"
+     ]
+    },
+    "greater-expansion": {
+     "w": 0.4,
+     "why": [
+      "Ability Range +30%"
+     ]
+    },
+    "guardian-ward": {
+     "w": 0.4,
+     "why": [
+      "Ability Range +8%"
+     ]
+    },
+    "healbane": {
+     "w": 1,
+     "why": [
+      "Spirit Power +7"
+     ]
+    },
+    "healing-nova": {
+     "w": 1,
+     "why": [
+      "Spirit Power +8",
+      "Ability Range +5%"
+     ]
+    },
+    "improved-spirit": {
+     "w": 1,
+     "why": [
+      "Spirit Power +18"
+     ]
+    },
+    "infuser": {
+     "w": 1,
+     "why": [
+      "Spirit Power +6",
+      "Spirit Power +30"
+     ]
+    },
+    "knockdown": {
+     "w": 0.4,
+     "why": [
+      "Ability Range +5%"
+     ]
+    },
+    "leech": {
+     "w": 1,
+     "why": [
+      "Spirit Power +12"
+     ]
+    },
+    "magic-carpet": {
+     "w": 1,
+     "why": [
+      "Spirit Power +14",
+      "Ability Duration +15%"
+     ]
+    },
+    "mercurial-magnum": {
+     "w": 1,
+     "why": [
+      "Spirit Power +7"
+     ]
+    },
+    "mystic-expansion": {
+     "w": 0.4,
+     "why": [
+      "Ability Range +20%"
+     ]
+    },
+    "mystic-reverb": {
+     "w": 0.8,
+     "why": [
+      "Damage 50%"
+     ]
+    },
+    "mystic-shot": {
+     "w": 1,
+     "why": [
+      "Spirit Power +7"
+     ]
+    },
+    "opening-rounds": {
+     "w": 1,
+     "why": [
+      "Spirit Power +7"
+     ]
+    },
+    "phantom-strike": {
+     "w": 1,
+     "why": [
+      "Spirit Power +8"
+     ]
+    },
+    "rapid-recharge": {
+     "w": 0.6,
+     "why": [
+      "Bonus Ability Charges +2"
+     ]
+    },
+    "rescue-beam": {
+     "w": 0.4,
+     "why": [
+      "Ability Range +6%"
+     ]
+    },
+    "spellslinger": {
+     "w": 0.8,
+     "why": [
+      "Ability Cooldown Reduction +5%"
+     ]
+    },
+    "spirit-burn": {
+     "w": 0.6,
+     "why": [
+      "Explosion Damage 50",
+      "Ability Range +6%"
+     ]
+    },
+    "spirit-lifesteal": {
+     "w": 1,
+     "why": [
+      "Spirit Power +6"
+     ]
+    },
+    "spirit-snatch": {
+     "w": 0.6,
+     "why": [
+      "Spirit Damage 50"
+     ]
+    },
+    "spirit-strike": {
+     "w": 0.6,
+     "why": [
+      "Spirit Damage 40"
+     ]
+    },
+    "spiritual-overflow": {
+     "w": 1,
+     "why": [
+      "Spirit Power +6",
+      "Spirit Power +30",
+      "Ability Duration +13%"
+     ]
+    },
+    "superior-cooldown": {
+     "w": 0.8,
+     "why": [
+      "Ability Cooldown Reduction +20%"
+     ]
+    },
+    "superior-duration": {
+     "w": 0.6,
+     "why": [
+      "Ability Duration +28%"
+     ]
+    },
+    "suppressor": {
+     "w": 1,
+     "why": [
+      "Spirit Power +6"
+     ]
+    },
+    "surge-of-power": {
+     "w": 0.8,
+     "why": [
+      "Imbued Ability Spirit Power +28"
+     ]
+    },
+    "tankbuster": {
+     "w": 0.8,
+     "why": [
+      "Current Health Bonus Damage 7.5%"
+     ]
+    },
+    "transcendent-cooldown": {
+     "w": 0.8,
+     "why": [
+      "Ability Cooldown Reduction +25%"
+     ]
+    },
+    "veil-walker": {
+     "w": 1,
+     "why": [
+      "Spirit Power +6"
+     ]
+    },
+    "vortex-web": {
+     "w": 0.4,
+     "why": [
+      "Ability Range +8%"
+     ]
+    },
+    "witchmail": {
+     "w": 1,
+     "why": [
+      "Spirit Power +14"
+     ]
+    }
+   }
+  },
+  {
+   "id": "anti-heal",
+   "label": "Shut down healing",
+   "help": "Cuts the healing your targets receive.",
+   "keys": {
+    "HealAmpReceivePenaltyPercent-": 1,
+    "HealAmpRegenPenaltyPercent-": 1
+   },
+   "exclude": {
+    "cheat-death": "Its Incoming Healing cut applies to you while you are death immune, not to enemies (the item's own text)."
+   },
+   "items": {
+    "crippling-headshot": {
+     "w": 1,
+     "why": [
+      "Incoming Healing -35%"
+     ]
+    },
+    "decay": {
+     "w": 1,
+     "why": [
+      "Incoming Healing -50%"
+     ]
+    },
+    "healbane": {
+     "w": 1,
+     "why": [
+      "Incoming Healing -35%"
+     ]
+    },
+    "inhibitor": {
+     "w": 1,
+     "why": [
+      "Incoming Healing -40%"
+     ]
+    },
+    "spirit-burn": {
+     "w": 1,
+     "why": [
+      "Incoming Healing -70%"
+     ]
+    },
+    "toxic-bullets": {
+     "w": 1,
+     "why": [
+      "Incoming Healing -35%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "break-tanks",
+   "label": "Break tanky targets",
+   "help": "Lowers enemy bullet or spirit resist.",
+   "keys": {
+    "BulletArmorReduction-": 1,
+    "BulletResistReduction-": 1,
+    "MagicResistReduction-": 1,
+    "TechArmorDamageReduction-": 1,
+    "MagicIncreasePerStack": 0.6,
+    "CurrentHealthDamage": 0.6
+   },
+   "exclude": {},
+   "items": {
+    "alchemical-fire": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -7%"
+     ]
+    },
+    "bullet-resist-shredder": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -10%"
+     ]
+    },
+    "crippling-headshot": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -16%",
+      "Spirit Resist -16%"
+     ]
+    },
+    "crushing-fists": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -5%"
+     ]
+    },
+    "disarming-hex": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -13%"
+     ]
+    },
+    "escalating-exposure": {
+     "w": 1,
+     "why": [
+      "Spirit Resist On Spirit Damage -8%",
+      "Spirit Amp per Stack +4.5%"
+     ]
+    },
+    "focus-lens": {
+     "w": 1,
+     "why": [
+      "Spirit Resist -9%"
+     ]
+    },
+    "hollow-point": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -10%"
+     ]
+    },
+    "hunters-aura": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -10%"
+     ]
+    },
+    "mystic-vulnerability": {
+     "w": 1,
+     "why": [
+      "Spirit Resist -8%"
+     ]
+    },
+    "rusted-barrel": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -8%"
+     ]
+    },
+    "spirit-rend": {
+     "w": 1,
+     "why": [
+      "Spirit Resist on Headshot -7%",
+      "Spirit Resist -8%"
+     ]
+    },
+    "spirit-sap": {
+     "w": 1,
+     "why": [
+      "Spirit Resist -9%"
+     ]
+    },
+    "spirit-shredder": {
+     "w": 1,
+     "why": [
+      "Spirit Resist -8%"
+     ]
+    },
+    "spirit-strike": {
+     "w": 1,
+     "why": [
+      "Spirit Resist -6%"
+     ]
+    },
+    "stalker": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -6%"
+     ]
+    },
+    "tankbuster": {
+     "w": 0.6,
+     "why": [
+      "Current Health Bonus Damage 7.5%"
+     ]
+    },
+    "weakening-headshot": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -12%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "lock-down",
+   "label": "Slow and stop enemies",
+   "help": "Slows, stuns, roots and silences.",
+   "keys": {
+    "SlowPercent-": 1,
+    "MovementSpeedSlow-": 1,
+    "MaxSlowPercent-": 1,
+    "FreezeDuration": 1,
+    "StunDuration": 1,
+    "TetherDuration": 0.8,
+    "FireRateSlow-": 0.6,
+    "filter:status_stun": 1,
+    "filter:status_immobilize": 1,
+    "filter:status_grounded": 0.8,
+    "filter:status_curse": 1,
+    "filter:mobility_reduction": 0.8
+   },
+   "exclude": {},
+   "items": {
+    "arctic-blast": {
+     "w": 1,
+     "why": [
+      "Freeze Duration 1s",
+      "shop filter status immobilize",
+      "shop filter mobility reduction"
+     ]
+    },
+    "capacitor": {
+     "w": 1,
+     "why": [
+      "Max Move Speed -60%",
+      "shop filter mobility reduction"
+     ]
+    },
+    "cold-front": {
+     "w": 1,
+     "why": [
+      "Move Speed -48%"
+     ]
+    },
+    "colossus": {
+     "w": 1,
+     "why": [
+      "Move Speed -24%"
+     ]
+    },
+    "crushing-fists": {
+     "w": 1,
+     "why": [
+      "Stun Duration 0.75s",
+      "shop filter status stun"
+     ]
+    },
+    "cursed-relic": {
+     "w": 1,
+     "why": [
+      "shop filter status curse"
+     ]
+    },
+    "hunters-aura": {
+     "w": 0.6,
+     "why": [
+      "Fire Rate -15%"
+     ]
+    },
+    "juggernaut": {
+     "w": 0.6,
+     "why": [
+      "Fire Rate -40%"
+     ]
+    },
+    "knockdown": {
+     "w": 0.8,
+     "why": [
+      "shop filter status grounded"
+     ]
+    },
+    "lifestrike": {
+     "w": 1,
+     "why": [
+      "Move Speed -48%"
+     ]
+    },
+    "lightning-scroll": {
+     "w": 1,
+     "why": [
+      "Move Speed on Spirit Damage -24%"
+     ]
+    },
+    "mystic-reverb": {
+     "w": 1,
+     "why": [
+      "Move Speed -32%"
+     ]
+    },
+    "mystic-slow": {
+     "w": 1,
+     "why": [
+      "Move Speed -24%"
+     ]
+    },
+    "phantom-strike": {
+     "w": 1,
+     "why": [
+      "Move Speed -40%",
+      "shop filter status grounded"
+     ]
+    },
+    "point-blank": {
+     "w": 1,
+     "why": [
+      "Move Speed -20%"
+     ]
+    },
+    "rusted-barrel": {
+     "w": 0.6,
+     "why": [
+      "Fire Rate -32%"
+     ]
+    },
+    "slowing-bullets": {
+     "w": 1,
+     "why": [
+      "Move Speed -24%"
+     ]
+    },
+    "slowing-hex": {
+     "w": 1,
+     "why": [
+      "Move Speed -16%",
+      "shop filter status grounded"
+     ]
+    },
+    "suppressor": {
+     "w": 0.6,
+     "why": [
+      "Fire Rate -28%"
+     ]
+    },
+    "vortex-web": {
+     "w": 1,
+     "why": [
+      "Move Speed -28%",
+      "Tether Duration 0.5s"
+     ]
+    },
+    "weighted-shots": {
+     "w": 1,
+     "why": [
+      "Move Speed -24%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "move-fast",
+   "label": "Move faster",
+   "help": "Move speed, stamina, dashes and teleports.",
+   "keys": {
+    "BonusMoveSpeed+": 1,
+    "Stamina+": 1,
+    "BonusSprintSpeed+": 0.8,
+    "StaminaCooldownReduction+": 0.8,
+    "ActiveBonusMoveSpeed": 0.8,
+    "AirMoveIncreasePercent": 0.6,
+    "FlyMoveSpeed": 0.6,
+    "SlideScale": 0.4,
+    "filter:jump_and_dash": 1,
+    "filter:teleport": 1
+   },
+   "exclude": {},
+   "items": {
+    "active-reload": {
+     "w": 1,
+     "why": [
+      "Move Speed +0.75 m/s"
+     ]
+    },
+    "arcane-surge": {
+     "w": 1,
+     "why": [
+      "Stamina +1",
+      "Stamina Recovery +12%",
+      "shop filter jump and dash"
+     ]
+    },
+    "blood-tribute": {
+     "w": 1,
+     "why": [
+      "Move Speed +2 m/s"
+     ]
+    },
+    "burst-fire": {
+     "w": 1,
+     "why": [
+      "Move Speed +1.25 m/s",
+      "Slide Distance +50%"
+     ]
+    },
+    "counterspell": {
+     "w": 1,
+     "why": [
+      "Move Speed +1.75 m/s"
+     ]
+    },
+    "disarming-hex": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +0.75 m/s"
+     ]
+    },
+    "dispel-magic": {
+     "w": 0.8,
+     "why": [
+      "Move Speed +2 m/s"
+     ]
+    },
+    "divine-barrier": {
+     "w": 1,
+     "why": [
+      "Move Speed +2.75 m/s"
+     ]
+    },
+    "enduring-speed": {
+     "w": 1,
+     "why": [
+      "Move Speed +2 m/s"
+     ]
+    },
+    "ethereal-shift": {
+     "w": 1,
+     "why": [
+      "Move Speed +3 m/s"
+     ]
+    },
+    "extra-stamina": {
+     "w": 1,
+     "why": [
+      "Stamina +1",
+      "Stamina Recovery +12%"
+     ]
+    },
+    "fleetfoot": {
+     "w": 0.8,
+     "why": [
+      "Move Speed +3 m/s",
+      "Slide Distance +35%"
+     ]
+    },
+    "fortitude": {
+     "w": 1,
+     "why": [
+      "Move Speed +1.5 m/s"
+     ]
+    },
+    "fury-trance": {
+     "w": 0.8,
+     "why": [
+      "Move Speed +1 m/s"
+     ]
+    },
+    "golden-goose-egg": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +1 m/s"
+     ]
+    },
+    "guardian-ward": {
+     "w": 1,
+     "why": [
+      "Move Speed +2.75 m/s"
+     ]
+    },
+    "headhunter": {
+     "w": 1,
+     "why": [
+      "Move Speed +1.75 m/s"
+     ]
+    },
+    "healing-rite": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +2 m/s"
+     ]
+    },
+    "healing-tempo": {
+     "w": 1,
+     "why": [
+      "Move Speed +1.25 m/s"
+     ]
+    },
+    "heroic-aura": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +1.5 m/s",
+      "Move Speed +2.25 m/s"
+     ]
+    },
+    "hunters-aura": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +0.75 m/s"
+     ]
+    },
+    "juggernaut": {
+     "w": 1,
+     "why": [
+      "Move Speed +2.5 m/s"
+     ]
+    },
+    "kinetic-dash": {
+     "w": 1,
+     "why": [
+      "Stamina +1",
+      "Stamina Recovery +12%",
+      "shop filter jump and dash"
+     ]
+    },
+    "lightning-scroll": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +0.75 m/s"
+     ]
+    },
+    "long-range": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +0.75 m/s"
+     ]
+    },
+    "magic-carpet": {
+     "w": 0.6,
+     "why": [
+      "Bonus Fly Speed +7 m/s"
+     ]
+    },
+    "majestic-leap": {
+     "w": 1,
+     "why": [
+      "shop filter jump and dash"
+     ]
+    },
+    "mystic-slow": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +0.75 m/s"
+     ]
+    },
+    "phantom-strike": {
+     "w": 1,
+     "why": [
+      "shop filter teleport"
+     ]
+    },
+    "radiant-regeneration": {
+     "w": 1,
+     "why": [
+      "Move Speed +1.75 m/s"
+     ]
+    },
+    "rescue-beam": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +0.75 m/s"
+     ]
+    },
+    "rusted-barrel": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +0.5 m/s"
+     ]
+    },
+    "shadow-weave": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +2 m/s"
+     ]
+    },
+    "sharpshooter": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +1 m/s"
+     ]
+    },
+    "slowing-hex": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +0.5 m/s"
+     ]
+    },
+    "sprint-boots": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +2 m/s"
+     ]
+    },
+    "stalker": {
+     "w": 1,
+     "why": [
+      "Move Speed +1.5 m/s"
+     ]
+    },
+    "stamina-mastery": {
+     "w": 1,
+     "why": [
+      "Stamina +2",
+      "Stamina Recovery +18%",
+      "Air Jump/Dash Distance +23%"
+     ]
+    },
+    "surge-of-power": {
+     "w": 1,
+     "why": [
+      "Move Speed +1.75 m/s"
+     ]
+    },
+    "swift-striker": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +0.75 m/s"
+     ]
+    },
+    "trophy-collector": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +2 m/s"
+     ]
+    },
+    "veil-walker": {
+     "w": 1,
+     "why": [
+      "Invis Move Speed 3.5 m/s"
+     ]
+    },
+    "vortex-web": {
+     "w": 0.8,
+     "why": [
+      "Sprint Speed +0.75 m/s"
+     ]
+    },
+    "warp-stone": {
+     "w": 1,
+     "why": [
+      "shop filter teleport"
+     ]
+    }
+   }
+  },
+  {
+   "id": "shrug-off-cc",
+   "label": "Shrug off slows and stuns",
+   "help": "Debuff resist, slow resist and cleanses.",
+   "keys": {
+    "StatusResistancePercent+": 1,
+    "InnateStatusResistancePercent": 0.8,
+    "SlowResistancePercent+": 0.8,
+    "filter:anti_cc": 1,
+    "filter:debuff_resist": 1
+   },
+   "exclude": {},
+   "items": {
+    "blood-tribute": {
+     "w": 1,
+     "why": [
+      "Debuff Resist +35%",
+      "Debuff Resist +8%"
+     ]
+    },
+    "cheat-death": {
+     "w": 1,
+     "why": [
+      "shop filter debuff resist"
+     ]
+    },
+    "counterspell": {
+     "w": 1,
+     "why": [
+      "shop filter anti cc"
+     ]
+    },
+    "debuff-reducer": {
+     "w": 1,
+     "why": [
+      "Debuff Resist +25%"
+     ]
+    },
+    "dispel-magic": {
+     "w": 1,
+     "why": [
+      "shop filter debuff resist"
+     ]
+    },
+    "divine-barrier": {
+     "w": 1,
+     "why": [
+      "shop filter debuff resist"
+     ]
+    },
+    "enduring-speed": {
+     "w": 0.8,
+     "why": [
+      "Slow Resist +25%"
+     ]
+    },
+    "ethereal-shift": {
+     "w": 1,
+     "why": [
+      "shop filter anti cc"
+     ]
+    },
+    "fleetfoot": {
+     "w": 0.8,
+     "why": [
+      "Slow Resist +40%"
+     ]
+    },
+    "indomitable": {
+     "w": 1,
+     "why": [
+      "shop filter anti cc"
+     ]
+    },
+    "juggernaut": {
+     "w": 0.8,
+     "why": [
+      "Slow Resist +50%"
+     ]
+    },
+    "reactive-barrier": {
+     "w": 1,
+     "why": [
+      "shop filter anti cc"
+     ]
+    },
+    "scourge": {
+     "w": 1,
+     "why": [
+      "Debuff Resist +20%"
+     ]
+    },
+    "spellbreaker": {
+     "w": 1,
+     "why": [
+      "Debuff Resist +25%"
+     ]
+    },
+    "unstoppable": {
+     "w": 1,
+     "why": [
+      "Debuff Resist +25%",
+      "shop filter anti cc"
+     ]
+    },
+    "weighted-shots": {
+     "w": 1,
+     "why": [
+      "Debuff Resist +22%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "farm-fast",
+   "label": "Farm troopers faster",
+   "help": "Damage to troopers and extra souls over time.",
+   "keys": {
+    "NonPlayerBonusWeaponPower+": 1,
+    "BonusGoldPerMinute": 1,
+    "StackingGoldPerMinute": 1,
+    "WeaponPowerPerStackNonHero": 0.6,
+    "NonPlayerBulletResist": 0.6
+   },
+   "exclude": {},
+   "items": {
+    "ballistic-enchantment": {
+     "w": 0.6,
+     "why": [
+      "Non-Hero Weapon Damage +5%"
+     ]
+    },
+    "cultist-sacrifice": {
+     "w": 1,
+     "why": [
+      "Weapon Damage vs. NPCs +30%",
+      "Bullet Resist vs. NPCs +30%"
+     ]
+    },
+    "golden-goose-egg": {
+     "w": 1,
+     "why": [
+      "Soul Value per Minute 80"
+     ]
+    },
+    "monster-rounds": {
+     "w": 1,
+     "why": [
+      "Weapon Damage vs. NPCs +25%",
+      "Bullet Resist vs. NPCs +25%"
+     ]
+    },
+    "trophy-collector": {
+     "w": 1,
+     "why": [
+      "Souls per Minute 16"
+     ]
+    }
+   }
+  },
+  {
+   "id": "melee",
+   "label": "Win melee fights",
+   "help": "Melee damage and melee reach.",
+   "keys": {
+    "BonusMeleeDamagePercent+": 1,
+    "BonusHeavyMeleeDamage": 1,
+    "MeleeDistanceScale": 0.6,
+    "LifestrikeHeal": 0.4
+   },
+   "exclude": {},
+   "items": {
+    "colossus": {
+     "w": 1,
+     "why": [
+      "Melee Damage +30%"
+     ]
+    },
+    "crushing-fists": {
+     "w": 1,
+     "why": [
+      "Melee Damage +22%",
+      "Bonus Heavy Damage +25%",
+      "Heavy Melee Distance +60%"
+     ]
+    },
+    "lifestrike": {
+     "w": 1,
+     "why": [
+      "Melee Damage +16%"
+     ]
+    },
+    "melee-charge": {
+     "w": 1,
+     "why": [
+      "Melee Damage +10%",
+      "Bonus Heavy Damage +25%",
+      "Heavy Melee Distance +50%"
+     ]
+    },
+    "melee-lifesteal": {
+     "w": 1,
+     "why": [
+      "Melee Damage +12%",
+      "Heal on Melee Hit 100"
+     ]
+    },
+    "spirit-snatch": {
+     "w": 1,
+     "why": [
+      "Melee Damage +7%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "help-team",
+   "label": "Help your team",
+   "help": "Heals and buffs for allies.",
+   "keys": {
+    "HealAmpCastPercent+": 1,
+    "HealPercentAmount": 1,
+    "TotalHealthRegen": 0.4
+   },
+   "exclude": {},
+   "items": {
+    "healing-booster": {
+     "w": 1,
+     "why": [
+      "Outgoing Healing +20%"
+     ]
+    },
+    "healing-nova": {
+     "w": 0.4,
+     "why": [
+      "Total HP Regen 325"
+     ]
+    },
+    "healing-rite": {
+     "w": 0.4,
+     "why": [
+      "Total HP Regen 300"
+     ]
+    },
+    "healing-tempo": {
+     "w": 1,
+     "why": [
+      "Outgoing Healing +25%"
+     ]
+    },
+    "rescue-beam": {
+     "w": 1,
+     "why": [
+      "Heal Amount 20%"
+     ]
+    }
+   }
+  }
+ ],
+ "threats": [
+  {
+   "id": "gun",
+   "label": "gun damage",
+   "noun": "weapon items",
+   "measure": {
+    "slot": "weapon"
+   },
+   "answer": {
+    "keys": {
+     "BulletResist+": 1,
+     "BulletResistBelowThreshold": 1,
+     "BuffBulletResist": 1,
+     "DeflectionPercent": 1,
+     "BulletResistPerStack": 0.6
+    }
+   },
+   "answerItems": {
+    "battle-vest": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +18%"
+     ]
+    },
+    "berserker": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +8%"
+     ]
+    },
+    "bullet-resilience": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +30%",
+      "Bullet Resist +15%"
+     ]
+    },
+    "bullet-resist-shredder": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +9%"
+     ]
+    },
+    "cheat-death": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +15%"
+     ]
+    },
+    "colossus": {
+     "w": 1,
+     "why": [
+      "Bullet Resist 35%"
+     ]
+    },
+    "crushing-fists": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +12%"
+     ]
+    },
+    "echo-shard": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +5%"
+     ]
+    },
+    "escalating-resilience": {
+     "w": 0.6,
+     "why": [
+      "Bullet Resist per Stack 2%"
+     ]
+    },
+    "fleetfoot": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +6%"
+     ]
+    },
+    "heroic-aura": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +17%"
+     ]
+    },
+    "indomitable": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +10%"
+     ]
+    },
+    "melee-charge": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +6%"
+     ]
+    },
+    "metal-skin": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +12%"
+     ]
+    },
+    "plated-armor": {
+     "w": 1,
+     "why": [
+      "Deflection Percent 30%"
+     ]
+    },
+    "siphon-bullets": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +10%"
+     ]
+    },
+    "superior-duration": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +8%"
+     ]
+    },
+    "suppressor": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +8%"
+     ]
+    },
+    "vampiric-burst": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +10%"
+     ]
+    },
+    "warp-stone": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +30%"
+     ]
+    },
+    "weapon-shielding": {
+     "w": 1,
+     "why": [
+      "Bullet Resist +18%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "spirit",
+   "label": "spirit damage",
+   "noun": "spirit items",
+   "measure": {
+    "slot": "spirit"
+   },
+   "answer": {
+    "keys": {
+     "TechResist+": 1,
+     "TechResistBelowThreshold": 1,
+     "BuffTechResist": 1,
+     "TechDamageReduction-": 0.8,
+     "SpiritDamageReductionProc": 0.8
+    }
+   },
+   "answerItems": {
+    "arctic-blast": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +10%"
+     ]
+    },
+    "blood-tribute": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +8%"
+     ]
+    },
+    "cold-front": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +6%"
+     ]
+    },
+    "colossus": {
+     "w": 1,
+     "why": [
+      "Spirit Resist 35%"
+     ]
+    },
+    "dispel-magic": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +10%"
+     ]
+    },
+    "echo-shard": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +5%"
+     ]
+    },
+    "enchanters-emblem": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +18%"
+     ]
+    },
+    "escalating-exposure": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +17%"
+     ]
+    },
+    "ethereal-shift": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +30%"
+     ]
+    },
+    "fury-trance": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +40%"
+     ]
+    },
+    "greater-expansion": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +10%"
+     ]
+    },
+    "healing-tempo": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +10%"
+     ]
+    },
+    "indomitable": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +10%"
+     ]
+    },
+    "infuser": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +10%"
+     ]
+    },
+    "mystic-vulnerability": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +8%"
+     ]
+    },
+    "restorative-locket": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +8%"
+     ]
+    },
+    "scourge": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +40%"
+     ]
+    },
+    "silencer": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +12%",
+      "Spirit Damage Reduction -25%"
+     ]
+    },
+    "spellbreaker": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +18%",
+      "Spirit Damage Reduction 65%"
+     ]
+    },
+    "spirit-resilience": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +30%",
+      "Spirit Resist +15%"
+     ]
+    },
+    "spirit-shielding": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +18%"
+     ]
+    },
+    "witchmail": {
+     "w": 1,
+     "why": [
+      "Spirit Resist +22%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "healing",
+   "label": "healing",
+   "noun": "healing items",
+   "measure": {
+    "goal": "heal-yourself"
+   },
+   "answer": {
+    "goal": "anti-heal"
+   },
+   "answerItems": {
+    "crippling-headshot": {
+     "w": 1,
+     "why": [
+      "Incoming Healing -35%"
+     ]
+    },
+    "decay": {
+     "w": 1,
+     "why": [
+      "Incoming Healing -50%"
+     ]
+    },
+    "healbane": {
+     "w": 1,
+     "why": [
+      "Incoming Healing -35%"
+     ]
+    },
+    "inhibitor": {
+     "w": 1,
+     "why": [
+      "Incoming Healing -40%"
+     ]
+    },
+    "spirit-burn": {
+     "w": 1,
+     "why": [
+      "Incoming Healing -70%"
+     ]
+    },
+    "toxic-bullets": {
+     "w": 1,
+     "why": [
+      "Incoming Healing -35%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "tanky",
+   "label": "tankiness",
+   "noun": "health and resist items",
+   "measure": {
+    "goal": "take-hits"
+   },
+   "answer": {
+    "goal": "break-tanks"
+   },
+   "answerItems": {
+    "alchemical-fire": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -7%"
+     ]
+    },
+    "bullet-resist-shredder": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -10%"
+     ]
+    },
+    "crippling-headshot": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -16%",
+      "Spirit Resist -16%"
+     ]
+    },
+    "crushing-fists": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -5%"
+     ]
+    },
+    "disarming-hex": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -13%"
+     ]
+    },
+    "escalating-exposure": {
+     "w": 1,
+     "why": [
+      "Spirit Resist On Spirit Damage -8%",
+      "Spirit Amp per Stack +4.5%"
+     ]
+    },
+    "focus-lens": {
+     "w": 1,
+     "why": [
+      "Spirit Resist -9%"
+     ]
+    },
+    "hollow-point": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -10%"
+     ]
+    },
+    "hunters-aura": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -10%"
+     ]
+    },
+    "mystic-vulnerability": {
+     "w": 1,
+     "why": [
+      "Spirit Resist -8%"
+     ]
+    },
+    "rusted-barrel": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -8%"
+     ]
+    },
+    "spirit-rend": {
+     "w": 1,
+     "why": [
+      "Spirit Resist on Headshot -7%",
+      "Spirit Resist -8%"
+     ]
+    },
+    "spirit-sap": {
+     "w": 1,
+     "why": [
+      "Spirit Resist -9%"
+     ]
+    },
+    "spirit-shredder": {
+     "w": 1,
+     "why": [
+      "Spirit Resist -8%"
+     ]
+    },
+    "spirit-strike": {
+     "w": 1,
+     "why": [
+      "Spirit Resist -6%"
+     ]
+    },
+    "stalker": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -6%"
+     ]
+    },
+    "tankbuster": {
+     "w": 0.6,
+     "why": [
+      "Current Health Bonus Damage 7.5%"
+     ]
+    },
+    "weakening-headshot": {
+     "w": 1,
+     "why": [
+      "Bullet Resist -12%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "control",
+   "label": "slows and stuns",
+   "noun": "slow and stun items",
+   "measure": {
+    "goal": "lock-down"
+   },
+   "answer": {
+    "goal": "shrug-off-cc"
+   },
+   "answerItems": {
+    "blood-tribute": {
+     "w": 1,
+     "why": [
+      "Debuff Resist +35%",
+      "Debuff Resist +8%"
+     ]
+    },
+    "cheat-death": {
+     "w": 1,
+     "why": [
+      "shop filter debuff resist"
+     ]
+    },
+    "counterspell": {
+     "w": 1,
+     "why": [
+      "shop filter anti cc"
+     ]
+    },
+    "debuff-reducer": {
+     "w": 1,
+     "why": [
+      "Debuff Resist +25%"
+     ]
+    },
+    "dispel-magic": {
+     "w": 1,
+     "why": [
+      "shop filter debuff resist"
+     ]
+    },
+    "divine-barrier": {
+     "w": 1,
+     "why": [
+      "shop filter debuff resist"
+     ]
+    },
+    "enduring-speed": {
+     "w": 0.8,
+     "why": [
+      "Slow Resist +25%"
+     ]
+    },
+    "ethereal-shift": {
+     "w": 1,
+     "why": [
+      "shop filter anti cc"
+     ]
+    },
+    "fleetfoot": {
+     "w": 0.8,
+     "why": [
+      "Slow Resist +40%"
+     ]
+    },
+    "indomitable": {
+     "w": 1,
+     "why": [
+      "shop filter anti cc"
+     ]
+    },
+    "juggernaut": {
+     "w": 0.8,
+     "why": [
+      "Slow Resist +50%"
+     ]
+    },
+    "reactive-barrier": {
+     "w": 1,
+     "why": [
+      "shop filter anti cc"
+     ]
+    },
+    "scourge": {
+     "w": 1,
+     "why": [
+      "Debuff Resist +20%"
+     ]
+    },
+    "spellbreaker": {
+     "w": 1,
+     "why": [
+      "Debuff Resist +25%"
+     ]
+    },
+    "unstoppable": {
+     "w": 1,
+     "why": [
+      "Debuff Resist +25%",
+      "shop filter anti cc"
+     ]
+    },
+    "weighted-shots": {
+     "w": 1,
+     "why": [
+      "Debuff Resist +22%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "mobility",
+   "label": "mobility",
+   "noun": "movement items",
+   "measure": {
+    "goal": "move-fast"
+   },
+   "answer": {
+    "goal": "lock-down"
+   },
+   "answerItems": {
+    "arctic-blast": {
+     "w": 1,
+     "why": [
+      "Freeze Duration 1s",
+      "shop filter status immobilize",
+      "shop filter mobility reduction"
+     ]
+    },
+    "capacitor": {
+     "w": 1,
+     "why": [
+      "Max Move Speed -60%",
+      "shop filter mobility reduction"
+     ]
+    },
+    "cold-front": {
+     "w": 1,
+     "why": [
+      "Move Speed -48%"
+     ]
+    },
+    "colossus": {
+     "w": 1,
+     "why": [
+      "Move Speed -24%"
+     ]
+    },
+    "crushing-fists": {
+     "w": 1,
+     "why": [
+      "Stun Duration 0.75s",
+      "shop filter status stun"
+     ]
+    },
+    "cursed-relic": {
+     "w": 1,
+     "why": [
+      "shop filter status curse"
+     ]
+    },
+    "hunters-aura": {
+     "w": 0.6,
+     "why": [
+      "Fire Rate -15%"
+     ]
+    },
+    "juggernaut": {
+     "w": 0.6,
+     "why": [
+      "Fire Rate -40%"
+     ]
+    },
+    "knockdown": {
+     "w": 0.8,
+     "why": [
+      "shop filter status grounded"
+     ]
+    },
+    "lifestrike": {
+     "w": 1,
+     "why": [
+      "Move Speed -48%"
+     ]
+    },
+    "lightning-scroll": {
+     "w": 1,
+     "why": [
+      "Move Speed on Spirit Damage -24%"
+     ]
+    },
+    "mystic-reverb": {
+     "w": 1,
+     "why": [
+      "Move Speed -32%"
+     ]
+    },
+    "mystic-slow": {
+     "w": 1,
+     "why": [
+      "Move Speed -24%"
+     ]
+    },
+    "phantom-strike": {
+     "w": 1,
+     "why": [
+      "Move Speed -40%",
+      "shop filter status grounded"
+     ]
+    },
+    "point-blank": {
+     "w": 1,
+     "why": [
+      "Move Speed -20%"
+     ]
+    },
+    "rusted-barrel": {
+     "w": 0.6,
+     "why": [
+      "Fire Rate -32%"
+     ]
+    },
+    "slowing-bullets": {
+     "w": 1,
+     "why": [
+      "Move Speed -24%"
+     ]
+    },
+    "slowing-hex": {
+     "w": 1,
+     "why": [
+      "Move Speed -16%",
+      "shop filter status grounded"
+     ]
+    },
+    "suppressor": {
+     "w": 0.6,
+     "why": [
+      "Fire Rate -28%"
+     ]
+    },
+    "vortex-web": {
+     "w": 1,
+     "why": [
+      "Move Speed -28%",
+      "Tether Duration 0.5s"
+     ]
+    },
+    "weighted-shots": {
+     "w": 1,
+     "why": [
+      "Move Speed -24%"
+     ]
+    }
+   }
+  },
+  {
+   "id": "melee",
+   "label": "melee",
+   "noun": "melee items",
+   "measure": {
+    "goal": "melee"
+   },
+   "answer": {
+    "keys": {
+     "MeleeResistPercent": 1
+    }
+   },
+   "answerItems": {
+    "close-quarters": {
+     "w": 1,
+     "why": [
+      "Melee Resist +20%"
+     ]
+    },
+    "juggernaut": {
+     "w": 1,
+     "why": [
+      "Melee Resist +25%"
+     ]
+    },
+    "point-blank": {
+     "w": 1,
+     "why": [
+      "Melee Resist +30%"
+     ]
+    },
+    "rebuttal": {
+     "w": 1,
+     "why": [
+      "Melee Resist +18%"
+     ]
+    },
+    "torment-pulse": {
+     "w": 1,
+     "why": [
+      "Melee Resist +18%"
+     ]
+    }
+   }
+  }
+ ]
+}

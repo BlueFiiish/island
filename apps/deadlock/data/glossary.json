@@ -1,0 +1,592 @@
+[
+ {
+  "id": "souls",
+  "name": "Souls",
+  "category": "Economy",
+  "related": [
+   "how-souls-work",
+   "soul-orb",
+   "shop-tiers-and-investment"
+  ],
+  "researchPages": [
+   "Souls"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Souls are the money and the experience of a match at once. You spend them in the shop, and collecting them also levels your hero up.",
+   "whyItMatters": "More souls means more items and more levels, so most of what you do in a lane is about getting them. Finishing off troopers and popping the orbs they leave behind pays, so does beating enemy heroes in a fight, and so does knocking down Guardians and Walkers.",
+   "whenToUseIt": "You start a match with 600 of them. Shop prices are in souls and your level follows how many you have collected, so glance at your total before you decide between one more fight and a trip to the shop."
+  }
+ },
+ {
+  "id": "soul-orb",
+  "name": "Soul Orb",
+  "category": "Economy",
+  "related": [
+   "souls",
+   "deny",
+   "denying"
+  ],
+  "researchPages": [
+   "Soul_Orb"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "A Soul Orb is a glowing ball of souls that pops out when a trooper dies. Two come out of each one: an orb that falls to the ground, which the enemy cannot deny, and a floating orb that someone has to shoot.",
+   "whyItMatters": "The shot is what pays out. If your team shoots the floating orb, the souls are yours; if an enemy shoots it first, they take those souls instead, so a lane is really a fight over who hits the orbs.",
+   "whenToUseIt": "After every trooper dies, check for its floating orb and shoot it as soon as it lights up. If it belongs to the enemy, shooting it is also the way to take it away from them, which is called a deny."
+  }
+ },
+ {
+  "id": "last-hit",
+  "name": "Last Hit",
+  "category": "Economy",
+  "related": [
+   "trooper",
+   "deny",
+   "souls"
+  ],
+  "researchPages": [
+   "Last_Hit"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "A last hit means landing the blow that kills a trooper, instead of letting a teammate or the enemy do it. Killing the trooper releases its souls, and the floating orb it leaves still has to be shot to claim them.",
+   "whyItMatters": "Troopers are the steadiest source of souls early on, so a few last hits more than the player across from you adds up to an item sooner. A melee attack that finishes a trooper skips the floating orb and pays you at once.",
+   "whenToUseIt": "Use it all through the first minutes in your lane. Let your own troopers wear the enemy ones down, then step in with the killing shot rather than spending bullets on troopers that are still healthy."
+  }
+ },
+ {
+  "id": "deny",
+  "name": "Deny",
+  "category": "Economy",
+  "related": [
+   "denying",
+   "soul-orb",
+   "last-hit"
+  ],
+  "researchPages": [
+   "Deny",
+   "Denying"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "To deny is to shoot the floating Soul Orb of one of your own troopers after the enemy has killed it. The enemy loses those souls, and they go to you and any teammates close by instead. The orb on the ground cannot be denied.",
+   "whyItMatters": "A deny does two jobs at once: the enemy loses souls they were counting on and your side gains them. Over a whole lane phase that gap in souls decides who buys items first.",
+   "whenToUseIt": "Use it when the enemy has just killed one of your own troopers and its floating orb has not been taken yet. Shooting the orb of an enemy trooper is confirming, not a deny. It is most worth the effort when the other player is busy or out of position."
+  }
+ },
+ {
+  "id": "trooper",
+  "name": "Trooper",
+  "category": "Map",
+  "related": [
+   "lanes-and-troopers",
+   "last-hit",
+   "lane"
+  ],
+  "researchPages": [
+   "Trooper",
+   "Troopers"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Troopers are the small soldiers that each team sends down every lane in waves, riding in on ziplines. They walk toward the enemy base and fight anything they meet on the way.",
+   "whyItMatters": "They are your first source of souls, and the side that wins the fight between troopers pushes the lane toward the enemy. Where the troopers stand tells you who is currently winning the lane.",
+   "whenToUseIt": "Stay near your own troopers in the early game so you are in range to kill the enemy ones. Pull back when a wave has been pushed deep into your side, because that is where you are easiest to catch."
+  }
+ },
+ {
+  "id": "lane",
+  "name": "Lane",
+  "category": "Map",
+  "related": [
+   "lanes-and-troopers",
+   "trooper",
+   "guardian"
+  ],
+  "researchPages": [
+   "Lane",
+   "Lanes"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "The map has three main lanes, each a street of its own colour: Yellow (York), Blue (Broadway) and Green (Greenwich). Troopers march along them and each lane holds its own Guardians and Walker.",
+   "whyItMatters": "A match mostly happens in the lanes, and the defences you must beat to win sit inside them. Picking where to stand decides who you fight and which troopers you can farm.",
+   "whenToUseIt": "Pick a lane at the start and learn its colour and name. Later, move to another lane when yours is quiet or when a teammate needs help pushing one of the enemy's defences."
+  }
+ },
+ {
+  "id": "guardian",
+  "name": "Guardian",
+  "category": "Map",
+  "related": [
+   "guardians",
+   "walker",
+   "lane"
+  ],
+  "researchPages": [
+   "Guardian",
+   "Guardians"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "A Guardian is a defensive building that stands in a lane. Pushing up a lane toward the enemy, its Guardian is the first building you run into; the Walker comes next, and two Base Guardians sit closer to the enemy base.",
+   "whyItMatters": "Defences fall in order along a lane, so the lane Guardian is the first step toward winning it. Taking one also pays souls to your team.",
+   "whenToUseIt": "Go for one after your troopers have pushed the lane or after you have won a fight nearby. Keep your troopers close while you attack it."
+  }
+ },
+ {
+  "id": "walker",
+  "name": "Walker",
+  "category": "Map",
+  "related": [
+   "walkers",
+   "guardian",
+   "patron"
+  ],
+  "researchPages": [
+   "Walker",
+   "Walkers"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "A Walker is the giant building that waits behind a lane's Guardian, so it is the second thing you have to break on the way down that lane. Every team has three, one per lane, and they stand between you and the enemy Patron.",
+   "whyItMatters": "A Walker starts with 6,000 health and gives bonus damage resistance to the heroes of its own team standing near it. Destroying one is a big step toward winning and a big payout of souls.",
+   "whenToUseIt": "Start on one once your trooper wave has reached it, and bring the team; before that it takes much less damage from players and heals itself. Attack when the enemy heroes are dead or far away, because defending them is what the Walker is for."
+  }
+ },
+ {
+  "id": "patron",
+  "name": "Patron",
+  "category": "Map",
+  "related": [
+   "the-patron",
+   "walker",
+   "guardian"
+  ],
+  "researchPages": [
+   "Patron"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Every team's base ends with its own Patron, a giant boss sitting deepest inside it. Bring down the enemy's Patron and your team wins.",
+   "whyItMatters": "Everything else on the map is a step toward it. While its protections are standing it cannot be killed at all, so you earn the final fight by winning lanes first.",
+   "whenToUseIt": "Think about it as the end of the game plan. Attack it once both enemy Shrines are down and the enemy team is dead or slow to come back."
+  }
+ },
+ {
+  "id": "mid-boss",
+  "name": "Mid Boss",
+  "category": "Map",
+  "related": [
+   "mid-boss-and-rejuvenator",
+   "rejuvenator"
+  ],
+  "researchPages": [
+   "Mid_Boss"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "The Mid Boss is a strong neutral monster that lives in a pit under the middle of the map. A shield protects it, and it only fights players who step into its pit.",
+   "whyItMatters": "Killing it gives your whole team permanent bonuses and a large pile of souls, and it leaves behind the Rejuvenator. A team that takes it can swing a match in its favour.",
+   "whenToUseIt": "Try for it when your team is ahead in numbers and the enemy is busy or dead. Do not go in short-handed, since you must break its shield first and the enemy can arrive while you are inside."
+  }
+ },
+ {
+  "id": "rejuvenator",
+  "name": "Rejuvenator",
+  "category": "Map",
+  "related": [
+   "mid-boss-and-rejuvenator",
+   "mid-boss",
+   "death-and-respawn"
+  ],
+  "researchPages": [
+   "Rejuvenator"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "The Rejuvenator is a green crystal that lands over the Mid Boss pit after the boss dies. Hitting it with a heavy close-range attack gives your team revive credits, up to three.",
+   "whyItMatters": "Its credits give your team a buff: a hero who dies while it lasts (180 seconds in the data) comes back to life on the spot after 3 seconds, with full health. Either team can take it, so winning the Mid Boss fight does not guarantee you keep the reward.",
+   "whenToUseIt": "As soon as the crystal lands, hit it. Every heavy melee you land on it is worth a credit, to a maximum of three, so keep swinging and watch for enemies who want to steal it."
+  }
+ },
+ {
+  "id": "spirit-power",
+  "name": "Spirit Power",
+  "category": "Stats",
+  "related": [
+   "cooldown",
+   "ultimate"
+  ],
+  "researchPages": [
+   "Spirit_Power"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "The higher your Spirit Power, the stronger your abilities and spirit items get. Many abilities add a share of your Spirit Power to their damage, and some also get stronger in other ways.",
+   "whyItMatters": "It is the number that tells you how hard your abilities hit. It mostly helps abilities and spirit items, so a hero who mostly casts gets a lot out of it and one who mostly shoots gets less.",
+   "whenToUseIt": "Buy items that give it if your hero wins fights with abilities. Skip it if your hero mostly relies on a gun, and look at Weapon Damage instead."
+  }
+ },
+ {
+  "id": "weapon-damage",
+  "name": "Weapon Damage",
+  "category": "Stats",
+  "related": [
+   "parrying-and-melee",
+   "bullet-resist"
+  ],
+  "researchPages": [
+   "Items"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Weapon Damage is the stat behind how hard your gun hits. Items from the weapon type raise it, and some also raise related things like magazine size.",
+   "whyItMatters": "It scales every bullet you fire, so it helps a hero who keeps shooting through a fight more than one who fights with abilities.",
+   "whenToUseIt": "Pick weapon items if your hero does most of their damage with the gun. If your hero's best moments come from abilities, put that souls spending into Spirit Power instead."
+  }
+ },
+ {
+  "id": "bullet-resist",
+  "name": "Bullet Resist",
+  "category": "Stats",
+  "related": [
+   "weapon-damage"
+  ],
+  "researchPages": [
+   "Bullet_Resist"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Bullet Resist is a stat that cuts the weapon and melee damage you take. A resist is a percentage of damage that does not reach you, and it does not reduce spirit damage, which is what most abilities deal.",
+   "whyItMatters": "It is the stat that makes a hero harder to shoot down, so it matters most against enemies who rely on a gun. Several sources of resist combine by multiplying, not adding, so stacking them has diminishing returns.",
+   "whenToUseIt": "Add it when the other team has damage dealers who win by shooting you. Prefer other defences when the damage that is killing you comes from abilities."
+  }
+ },
+ {
+  "id": "cooldown",
+  "name": "Cooldown",
+  "category": "Stats",
+  "related": [
+   "ultimate",
+   "spirit-power"
+  ],
+  "researchPages": [],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "A cooldown is the wait, counted in seconds, before you can use an ability or an active item again.",
+   "whyItMatters": "A long cooldown means a mistake costs you a lot, since the ability is gone for the next fight too. Ultimates usually have the longest ones; Haze's, for example, is 165 seconds.",
+   "whenToUseIt": "Check it before you commit to a fight. If your big ability is still on cooldown, wait or play it safe rather than walking in without it."
+  }
+ },
+ {
+  "id": "ultimate",
+  "name": "Ultimate",
+  "category": "Abilities",
+  "related": [
+   "ability-points",
+   "cooldown"
+  ],
+  "researchPages": [
+   "Heroes"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "An ultimate is a hero's fourth and strongest ability. It usually has the longest cooldown and is the last one you unlock, at 3,800 souls collected.",
+   "whyItMatters": "It is the move that most often wins or ends a fight, so wasting it on one weak target leaves you without it when the real fight starts.",
+   "whenToUseIt": "Use it when enemies are bunched together or when you need to finish a kill or escape. Hold it if the fight is not worth it, since its cooldown will be long."
+  }
+ },
+ {
+  "id": "ability-points",
+  "name": "Ability Points",
+  "category": "Abilities",
+  "related": [
+   "ultimate",
+   "how-souls-work"
+  ],
+  "researchPages": [
+   "Ability_Points"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Ability Points are what you spend to upgrade your hero's abilities. A level-up that does not unlock a new ability gives them to you instead. Every ability can be upgraded three times: the first step takes 1 point, the second takes 2 and the last one takes 5.",
+   "whyItMatters": "Upgrades make an ability stronger without any souls, so where you put your points shapes how your hero plays. You can earn 32 over a full game.",
+   "whenToUseIt": "Spend them as soon as you have them, putting them into the ability you use most. You can take an upgrade back within about ten seconds if you have not used an ability since, so a misclick is not final."
+  }
+ },
+ {
+  "id": "active-item",
+  "name": "Active Item",
+  "category": "Items",
+  "related": [
+   "item-slots-and-flex-slots",
+   "cooldown"
+  ],
+  "researchPages": [
+   "Active_Items"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "An active item is a shop item you have to press a button to use, such as a wave that silences enemies. It gives a temporary effect and then has to cool down before the next use.",
+   "whyItMatters": "Each one is bound to its own key, and you can only own up to four at a time. That makes them a choice about how many buttons you want to press in the middle of a fight.",
+   "whenToUseIt": "Buy one when your build has room for a button and the effect solves a problem you keep having. Hold it for the key moment rather than spending it on the first target you meet."
+  }
+ },
+ {
+  "id": "investment-bonus",
+  "name": "Investment Bonus",
+  "category": "Items",
+  "related": [
+   "shop-tiers-and-investment",
+   "item-tier"
+  ],
+  "researchPages": [
+   "Items"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "An investment bonus is a stat bonus you get for how many souls you have spent on one type of item. The types are weapon, vitality and spirit, and each has its own table of bonuses.",
+   "whyItMatters": "The more you spend in one type, the bigger the bonus, up to a limit of 28,800 souls per type. All three tables take their biggest step at 4,800 souls, so concentrating on a type pays off.",
+   "whenToUseIt": "Think about it when you decide what to buy next. Choose items that add to the type you are already building up, and know that selling an item takes its share of the bonus back."
+  }
+ },
+ {
+  "id": "item-tier",
+  "name": "Item Tier",
+  "category": "Items",
+  "related": [
+   "shop-tiers-and-investment",
+   "component-item"
+  ],
+  "researchPages": [
+   "Items"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "An item's tier is its price bracket: tier 1 costs 800 souls, tier 2 costs 1,600, tier 3 costs 3,200 and tier 4 costs 6,400. A separate tier 5 of legendary items exists only in the Street Brawl mode, where items are drafted rather than bought; the data lists them at 9,999 souls.",
+   "whyItMatters": "Every item in a tier costs the same, so the tier alone tells you whether you can afford it. Some higher-tier items are built from a cheaper one, which lowers what you pay.",
+   "whenToUseIt": "Use it as a quick filter in the shop. With 1,200 souls a tier 2 item is out of reach and a tier 1 item is not, so you can decide before you open the page."
+  }
+ },
+ {
+  "id": "component-item",
+  "name": "Component Item",
+  "category": "Items",
+  "related": [
+   "component-discounts",
+   "item-tier"
+  ],
+  "researchPages": [
+   "Items"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "A component item is a cheaper item that a bigger item is built from. If you own it when you buy the bigger item, it is used up and its price comes off the bill.",
+   "whyItMatters": "Buying the small item first costs you nothing extra in the end, because you get its full price back as a discount. For instance Extra Spirit costs 800 souls and takes 800 off the items built from it.",
+   "whenToUseIt": "Check what an item is built from before you buy. If you plan to end up with the bigger item, buying the component on an early shop trip is a way to spend your souls well."
+  }
+ },
+ {
+  "id": "shrine",
+  "name": "Shrine",
+  "category": "Map",
+  "related": [
+   "patron",
+   "guardian",
+   "walker"
+  ],
+  "researchPages": [
+   "Lanes",
+   "Patron"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "A Shrine is one of the two defensive structures inside each team's base, standing between the lanes and the Patron. Like Walkers and the Patron, Shrines hit back with spirit damage.",
+   "whyItMatters": "The Patron cannot be hurt in its first phase while either enemy Shrine is still up, and breaking a Shrine also makes your troopers from that side much tougher until the match ends.",
+   "whenToUseIt": "Go for the Shrines once you have pushed into the enemy base and their team is mostly dead or far away. Protect your own when the enemy breaks into your base, because losing both opens the way to your Patron."
+  }
+ },
+ {
+  "id": "urn",
+  "name": "Urn",
+  "category": "Map",
+  "aliases": [
+   "Soul Urn"
+  ],
+  "related": [
+   "soul-urn",
+   "souls",
+   "mid-boss"
+  ],
+  "researchPages": [
+   "Soul_Urn"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "The Soul Urn (often just called the urn) is a carryable objective that first appears after ten minutes and comes back every few minutes, alternating between two lanes. You grab it with a melee hit and run it to a drop-off point on the far side of the map.",
+   "whyItMatters": "Delivering it pays the carrier souls and statue buffs, and the team that is behind gets extra help while carrying it. While holding it you move faster and ignore slows, but you cannot ride a zipline, and an enemy melee hit knocks it out of your hands.",
+   "whenToUseIt": "Contest it when it spawns near your side or when your team needs to catch up. If you carry it, stick with teammates; if an enemy carries it, one melee hit is enough to make them drop it."
+  }
+ },
+ {
+  "id": "zipline",
+  "name": "Zipline",
+  "category": "Map",
+  "related": [
+   "lane",
+   "trooper",
+   "movement"
+  ],
+  "researchPages": [
+   "Lanes",
+   "Movement"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "A zipline is the overhead rail that runs along each lane from one base toward the other. Heroes ride it to travel fast, and troopers arrive on it too.",
+   "whyItMatters": "It is the quickest way back to a lane after you respawn or shop. How far along it you can ride depends on how far your own troopers have pushed, so winning a lane also makes it faster to reach.",
+   "whenToUseIt": "Hop on it whenever you need to cross a long distance, such as returning to lane or joining a fight in another lane. Be careful near enemies, because riding it makes you an easy target."
+  }
+ },
+ {
+  "id": "parry",
+  "name": "Parry",
+  "category": "Combat",
+  "related": [
+   "parrying-and-melee",
+   "cooldown"
+  ],
+  "researchPages": [
+   "Parry"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "A parry is a short defensive move every hero has: you raise a guard for a moment, and an enemy melee attack that lands during it is blocked. The attacker is then stunned for a few seconds and takes extra damage from everyone.",
+   "whyItMatters": "It turns an enemy's melee attack, especially a slow heavy one, into a free kill window for your team. A parry that catches nothing goes on a cooldown of several seconds, so guessing wrong leaves you open.",
+   "whenToUseIt": "Use it when you see an enemy wind up a heavy melee or lunge at you with a melee ability. Do not spam it, because after a miss you cannot parry again for a while."
+  }
+ },
+ {
+  "id": "spirit-resist",
+  "name": "Spirit Resist",
+  "category": "Stats",
+  "related": [
+   "bullet-resist",
+   "spirit-power",
+   "walker"
+  ],
+  "researchPages": [
+   "Bullet_Resist",
+   "Spirit_Power"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "Spirit Resist is a stat that cuts the spirit damage you take. Hits from enemy abilities are mostly spirit damage, a lot of item effects are too, and so is the fire you take from enemy structures such as the Patron, the Shrines and the Walkers.",
+   "whyItMatters": "It is the partner of Bullet Resist: one protects you from guns, the other from abilities. Some enemy abilities and items lower it, which makes you take more spirit damage.",
+   "whenToUseIt": "Add it when most of your deaths come from enemy abilities rather than gunfire, or when you plan to stand near enemy structures. Against heroes who win with their gun, Bullet Resist is the better buy."
+  }
+ },
+ {
+  "id": "flex-slot",
+  "name": "Flex Slot",
+  "category": "Items",
+  "related": [
+   "item-slots-and-flex-slots",
+   "walker",
+   "item-tier"
+  ],
+  "researchPages": [
+   "Flex_Slot"
+  ],
+  "facts": [],
+  "src": [
+   "deadlock-wiki"
+  ],
+  "beginner": {
+   "whatItIs": "A flex slot is an extra item slot you can unlock during a match, on top of the slots you start with. It holds one more item, so your build can grow past its starting size.",
+   "whyItMatters": "More slots means more items working for you at once. Sources disagree on the exact number of slots and how they are earned, but the wiki ties the extra slots to destroying enemy Walkers, so taking objectives also grows your build.",
+   "whenToUseIt": "Plan your build around it once your team starts taking Walkers. Put whatever your hero needs most in it, such as a second defensive item or one more piece of your main damage type."
+  }
+ }
+]
